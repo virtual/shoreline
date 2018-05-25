@@ -18,5 +18,8 @@
         "on-build-webpack": "^0.1.0",
         "webpack-watch": "^0.2.0",
         "yargs": "^4.6.0"
+    },
+    "dependencies": {
+        "livereload": "^0.7.0"
     }
 }

@@ -8,5 +8,6 @@
     </head>
     <body>
         @yield('body')
+      xx2
     </body>
 </html>
