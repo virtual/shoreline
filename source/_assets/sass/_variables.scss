@@ -1,3 +1,4 @@
+$value: 2033;
 
 // Body
 $body-bg: #fff;
@@ -9,47 +10,34 @@ $font-size-base: 1rem;
 $line-height-base: 1.6;
 $body-color:                #000 !default; 
 
-
-
 // Variables
 //
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
-
 //
 // Color system
 //
  
-$palette2a: #f7bc44;
-$palette2al: #fbdda1;
-$palette2b: #ededed;
-$palette2c: #181e35;
-$palette2d: #b31008;
-$palette2e: #8d0a0a;
-$palette2f: #6fc8cc;
+$shoreline-green: #00685e !default;
+$text-dark: #444 !default;
+$link-blue: #0074b3; 
+$shoreline-yellow: #ffb500; 
+$minty-green: #f5f7f7;
+$text-black: #000000;
+$text-midgray: #757575;
+$white: #ffffff;
+$pale-grey: #f2faf9;
+$shoreline-orange: #d43c00;
+$shoreline-bright-green: #00c278;
 
-$blue:    #00629B !default; 
-$orange:  #DC4405 !default;
-$yellow:  $palette2a !default;
-$lightyellow: #fbdda1 !default;
-$green:   #00685E !default; 
-$lightgreen: #43B02A !default;
+$grid-gutter-width: 40px !default;
 
-
-
-
-
-$primary:       $palette2e !default;
-$secondary:     $palette2d !default;
-$light:         $palette2b !default;
-$dark:          $palette2c !default;
-$success:       $lightgreen !default; 
-
-
-.bg-lightyellow { background-color: $palette2al;} 
-.bg-yellow {background-color: $palette2a;}
-
+$primary:       $shoreline-green !default;
+$secondary:     $shoreline-yellow !default;
+$light:         $minty-green !default;
+$dark:          $text-dark !default;
+$success:       $shoreline-bright-green !default; 
 
 // Grid breakpoints
 //

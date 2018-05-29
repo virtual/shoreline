@@ -1,11 +1,3 @@
-.bg-lightyellow {
-  background-color: #fbdda1;
-}
-
-.bg-yellow {
-  background-color: #f7bc44;
-}
-
 @media print {
   * {
     background: none !important;
@@ -215,6 +207,10 @@
 .text-light a,
 .text-white a {
   color: #fff;
+}
+
+a {
+  color: #0074b3;
 }
 
 main > .container {
