@@ -1,2 +1,111 @@
-body { color:#0f0; padding: 30px; }
-h1 { color:#f00; }  
+ 
+// Variables
+@import "variables";
+ 
+// Customizations
+@import "_style_print.scss";
+ 
+.text-light, .text-white { 
+  a { color: #fff; 
+  }
+}
+
+
+main > .container { margin-top: 1rem; padding: 2rem 0;}
+main h1 {  text-align:center; font-size: 2rem; padding-bottom: .5rem; text-transform: uppercase}
+.padded { padding: 3rem 0 2.5rem 0;} 
+img { max-width: 100%; width: auto; height: auto;  }
+h2 { font-weight: 600; }
+h2.smaller { font-size: 1.5rem;}
+
+
+section { min-height:1px;}
+
+.container-fluid { max-width: 1170px}
+
+ 
+html {
+  font-size: 1rem;
+}
+ 
+
+/**
+ * 1. Avoid the IE 10-11 `min-height` bug.
+ * 2. Set `flex-shrink` to `0` to prevent some browsers from
+ *    letting these items shrink to smaller than their content's default
+ *    minimum size. See http://bit.ly/1Mn35US for details.
+ * 3. Use `%` instead of `vh` since `vh` is buggy in older mobile Safari.
+ */
+ html {
+  height: 100%;
+} 
+body { background-color:#fff;}
+ .flex-layout {
+  display: flex;
+  height: 100%;  
+  flex-direction: column;
+  min-height: 1px;
+}
+
+.flex-layout header,
+.flex-layout #footer {
+  flex: none; 
+}
+ 
+.flex-layout-body {
+  // display: flex;
+  flex: 1 0 auto; 
+  flex-direction: column;  
+  min-height: 1px;
+}
+.flex-layout-content { 
+  flex: 1 0 auto; 
+  flex-direction: column;   
+} 
+.contact-section {
+  flex: none;
+} 
+
+::-moz-selection { 
+  color: #fff;
+  background: #8d0a0a;
+}
+::selection {
+  color: #fff;
+  background: #8d0a0a;
+}
+kbd.ouc {
+  display:none;
+  background: #085330;
+  color: #fff;
+  font-family: Helvetica;
+  font-size: .8rem;
+  padding: .5rem;
+  position: absolute;
+  z-index: 100;
+}
+
+.sr-only.show-on-focus {  
+  width: auto; 
+  height: 0;
+  transition: all ease-out .3s;
+  padding: .5rem;
+  color:#b31008;
+  border: 3px solid rgba(141, 10, 10, 0.67);
+  background:#fff; 
+  position: absolute;
+  top: -5px;
+  left: 0;
+}
+.sr-only.show-on-focus:focus {
+  height: auto; 
+  clip: auto;
+  overflow: auto;
+  top:0;
+  clip-path: initial;
+  
+  white-space: normal;
+  display: inline-block;
+
+  z-index: 1000;
+}

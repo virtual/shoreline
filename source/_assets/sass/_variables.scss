@@ -1,0 +1,85 @@
+
+// Body
+$body-bg: #fff;
+
+// Typography
+$font-family-sans-serif: 'Libre Franklin', Tahoma, Verdana, Segoe, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, "Geneva", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default; 
+$headings-font-family: $font-family-sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.6;
+$body-color:                #000 !default; 
+
+
+
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+
+//
+// Color system
+//
+ 
+$palette2a: #f7bc44;
+$palette2al: #fbdda1;
+$palette2b: #ededed;
+$palette2c: #181e35;
+$palette2d: #b31008;
+$palette2e: #8d0a0a;
+$palette2f: #6fc8cc;
+
+$blue:    #00629B !default; 
+$orange:  #DC4405 !default;
+$yellow:  $palette2a !default;
+$lightyellow: #fbdda1 !default;
+$green:   #00685E !default; 
+$lightgreen: #43B02A !default;
+
+
+
+
+
+$primary:       $palette2e !default;
+$secondary:     $palette2d !default;
+$light:         $palette2b !default;
+$dark:          $palette2c !default;
+$success:       $lightgreen !default; 
+
+
+.bg-lightyellow { background-color: $palette2al;} 
+.bg-yellow {background-color: $palette2a;}
+
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 480px,
+  md: 768px,
+  lg: 992px,
+  xl: 11170px
+) !default;
+ 
+  
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 480px,
+  md: 768px,
+  lg: 992px,
+  xl: 1170px
+) !default;
+ 
+
+$h1-font-size:                $font-size-base * 2.25 !default;
+$h2-font-size:                $font-size-base * 1.875 !default;
+$h3-font-size:                $font-size-base * 1.5 !default;
+$h4-font-size:                $font-size-base * 1.25 !default;
+$h5-font-size:                $font-size-base * 1.125 !default;
+$h6-font-size:                $font-size-base * .875 !default;

@@ -72,6 +72,13 @@
 
 /***/ }),
 
+/***/ "./source/_assets/sass/bootstrap.scss":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./source/_assets/sass/main.scss":
 /***/ (function(module, exports) {
 
@@ -83,7 +90,8 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__("./source/_assets/js/main.js");
-module.exports = __webpack_require__("./source/_assets/sass/main.scss");
+__webpack_require__("./source/_assets/sass/main.scss");
+module.exports = __webpack_require__("./source/_assets/sass/bootstrap.scss");
 
 
 /***/ })
