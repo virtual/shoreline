@@ -39,172 +39,81 @@
 </head>
 
 <body>
+<header id="header">
+  <div id="skiptocontent">
+    <a href="#maincontent" title="Skip Main Navigation">Skip Main Navigation</a>
+  </div>
+  <div class="container-fluid d-none d-md-block">
+    <div class="row">
+      <div class="col-sm-3 header-logo">
 
-  <header id="header">
-    <div id="skiptocontent">
-      <a href="#maincontent" title="Skip Main Navigation">Skip Main Navigation</a>
-    </div>
-    
-
-
-    <div class="container-fluid d-none d-md-block">
-      <div class="row">
-        <div class="col-sm-3 header-logo">
-
-          @if (trim($__env->yieldContent('homepage')))
-          <!-- H1 on homepage only -->
-          <h1>
-              <a class="navbar-brand" href="/">
-                <img src="images/acc-logo-black.png" alt="Shoreline Community College" />
-                <span class="sr-only">Shoreline Community College</span>
-              </a>
-            </h1>
-          @else 
+        @if (trim($__env->yieldContent('homepage')))
+        <!-- H1 on homepage only -->
+        <h1>
           <a class="navbar-brand" href="/">
             <img src="images/acc-logo-black.png" alt="Shoreline Community College" />
             <span class="sr-only">Shoreline Community College</span>
           </a>
-      @endif
- 
+        </h1>
+        @else
+        <a class="navbar-brand" href="/">
+          <img src="images/acc-logo-black.png" alt="Shoreline Community College" />
+          <span class="sr-only">Shoreline Community College</span>
+        </a>
+        @endif
+
+      </div>
+      <div class="col-md-9 d-flex header-actions">
+        <div class="navbar-container d-flex">
+          <nav class="navbar navbar-expand-sm navmenu quicklinks">
+            @include ('_partials.quicklinks')
+          </nav>
         </div>
-        <div class="col-md-9 d-flex header-actions">
-          <div class="navbar-container d-flex">
-            <nav class="navbar navbar-expand-sm navmenu quicklinks">
-              @include ('_partials.quicklinks')
-            </nav>
-          </div>
-          <div class="search-container d-flex">
-            @include ('_partials.searchform')
-          </div>
+        <div class="search-container d-flex">
+          @include ('_partials.searchform')
         </div>
       </div>
     </div>
- 
+  </div>
+</header>
+
+<div id="maincontent" class="flex-layout-body">
+  @if (trim($__env->yieldContent('nav')))
+  <div class="layout-has-nav">
+    <div class="nav-container">
+
+      <nav class="subnav navbar navbar-expand-md navbar-light">
+        <!--<h2>
+          <span role="button" data-toggle="collapse" data-target="#submenu" aria-controls="submenu" aria-expanded="false" aria-label="Toggle navigation"
+            aria-hidden="true" class="fas fa-bars toggle">
+            <span class="sr-only">Expand Submenu</span>
+          </span> yield('menuheader')</h2>-->
+        <a class="sr-only show-on-focus" href="#interior">Skip Navigation</a>
+        <div class="collapse navbar-collapse" id="submenu">
+          @yield('nav')
+        </div>
+      </nav>
+    </div>
+    @endif
 
 
-  </header>
-
-  <div id="maincontent" class="flex-layout-body">
-    <!-- feature area -->
-   if(View::hasSection('feature')) yield('feature') endif if(View::hasSection('headerfeature')) yield('headerfeature')
-    endif if(View::hasSection('subfeature-text'))
-
-    <div class="padded bg-light pb-5">
-      <div class="padded bg-yellow">
+    <main id="interior">
+      <div class="padded content-section ">
         <div class="container-fluid">
-          yield('subfeature-text')
+          @yield('content')
         </div>
-        <!-- /.container-fluid -->
       </div>
-    </div>
-    endif if(View::hasSection('subfeature'))
-    <div class="padded bg-light">
-      <div class="container-fluid">
-        yield('subfeature')
-      </div>
-      <!-- /.container-fluid -->
-    </div>
-    endif if(View::hasSection('content'))if(View::hasSection('nav'))
-    <div class="layout-has-nav">
-      <div class="nav-container">
-
-        <nav class="subnav navbar navbar-expand-md navbar-light">
-
-          <h2>
-            <span role="button" data-toggle="collapse" data-target="#submenu" aria-controls="submenu" aria-expanded="false"
-              aria-label="Toggle navigation" aria-hidden="true" class="fas fa-bars toggle">
-              <span class="sr-only">Expand Submenu</span>
-            </span> yield('menuheader')</h2>
-          <a class="sr-only show-on-focus" href="#interior">Skip Navigation</a>
-          <div class="collapse navbar-collapse" id="submenu">
-            yield('nav')
-          </div>
-        </nav>
-      </div>
-      endif
-
-      <main id="interior">
-        <div class="padded content-section ">
-          <div class="container-fluid">
-            @yield('content')
-          </div>
-        </div>
-      </main>
-     if(View::hasSection('nav'))
-    </div>
-    endif endif if(View::hasSection('highlights-feature'))
-    <section class="padded bg-white">
-      <div class="container-fluid">
-        yield('highlights-feature')
-      </div>
-      <!-- /.container-fluid -->
-    </section>
-    endif if(View::hasSection('spotlight'))
-    <section class="padded bg-white">
-      <div class="container-fluid">
-        yield('spotlight')
-      </div>
-      <!-- /.container-fluid -->
-    </section>
-    endif if(View::hasSection('eventfeed'))
-    <section class="eventfeed-section padded bg-lightgray">
-      <div class="container-fluid">
-        yield('eventfeed')
-      </div>
-      <!-- /.container-fluid -->
-    </section>
-    endif if(View::hasSection('link-module'))
-    <section class="padded">
-      <div class="container-fluid">
-        <h2 class="sr-only">Additional Resources</h2>
-        yield('link-module')
-      </div>
-      <!-- /.container-fluid -->
-    </section>
-    endif if(View::hasSection('link-module2'))
-    <section class="padded bg-dark text-light">
-      <div class="container-fluid">
-        <h2 class="sr-only">Additional Resources</h2>
-        yield('link-module2')
-      </div>
-      <!-- /.container-fluid -->
-    </section>
-    endif if(View::hasSection('visit-links'))
-    <section>
-      <div class="container-fluid">
-        <h2 class="sr-only">Visit ACC</h2>
-        yield('visit-links')
-      </div>
-      <!-- /.container-fluid -->
-    </section>
-    endif if(View::hasSection('cta-cards'))
-    <section class="padded bg-white">
-      <div class="container-fluid">
-        <h2 class="sr-only">Visit ACC</h2>
-        yield('cta-cards')
-      </div>
-      <!-- /.container-fluid -->
-    </section>
-    endif if(View::hasSection('connect')) yield('connect') endif
-
-
-
-
+    </main>
+  @if (trim($__env->yieldContent('nav')))
   </div>
+  @endif
 
-  <!-- FOOTER -->
-  <div id="footer">
+</div>
 
-   if(View::hasSection('contact'))
-    <section class="contact-section padded bg-light">
-      <div class="container-fluid">
-        <h2 class="sr-only">Contact</h2>
-        yield('contact')
-      </div>
-    </section>
-    endif
-     @include('_partials/footer')
-  </div>
+<!-- FOOTER -->
+<div id="footer">
+  @include('_partials/footer')
+</div>
 </body>
 
 </html>
