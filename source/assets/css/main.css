@@ -246,6 +246,51 @@
   content: " \2192";
 }
 
+.quote-feature {
+  color: #000;
+}
+
+.quote-feature img {
+  width: 40%;
+  text-align: left;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00685e), to(#00685e)) no-repeat 1.5rem 1.5rem;
+  background: linear-gradient(#00685e, #00685e) no-repeat 1.5rem 1.5rem;
+  background-color: transparent;
+  padding: .75rem;
+}
+
+.quote-feature blockquote {
+  font-size: 2rem;
+  color: #444;
+}
+
+.quote-feature blockquote:before {
+  content: "";
+  background-image: url("/resources/img/icons/copy-6@3x.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  height: 20.6px;
+  width: 26.2px;
+  display: block;
+  background-size: contain;
+}
+
+.quote-feature figcaption {
+  font-size: 1rem;
+  color: #444;
+}
+
+.quote-feature figcaption strong {
+  color: #000;
+}
+
+@media (min-width: 768px) {
+  .quote-feature blockquote:before {
+    width: 52.4px;
+    height: 41.1px;
+  }
+}
+
 .text-light a,
 .text-white a {
   color: #fff;

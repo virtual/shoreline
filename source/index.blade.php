@@ -24,6 +24,19 @@
     </div>
  </section>
 
+ <section class="sectional theme-02 ">
+    <div class="inner">
+        @include('_partials.quote', [ 
+          'desc' => "As corny as it sounds, it's been amazing to be here and have the opportunities that I've had…",
+          'alt' => 'Pavielle Montes',
+          'attribution' => 'Pavielle Montes',
+          'attribution2' => 'Associate of Arts and High School Diploma',
+          'img' => '/resources/img/stock/stefan-stefancik-257625-unsplash.jpg',          
+          'link' => 'https://www.youtube.com/watch?v=YkLwzgPoQcA'
+          ]) 
+    </div>
+ </section>
+
 @endsection
 
 
