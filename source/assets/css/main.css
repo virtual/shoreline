@@ -246,22 +246,27 @@
   content: " \2192";
 }
 
+[class^="col"] {
+  background: #face8d;
+}
+
 .quote-feature {
   color: #000;
 }
 
 .quote-feature img {
-  width: 40%;
   text-align: left;
-  background: -webkit-gradient(linear, left top, left bottom, from(#00685e), to(#00685e)) no-repeat 1.5rem 1.5rem;
-  background: linear-gradient(#00685e, #00685e) no-repeat 1.5rem 1.5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00685e), to(#00685e)) no-repeat 1rem 1rem;
+  background: linear-gradient(#00685e, #00685e) no-repeat 1rem 1rem;
   background-color: transparent;
-  padding: .75rem;
+  padding: 0 1rem 1rem 0;
+  margin-bottom: 0.70625rem;
 }
 
 .quote-feature blockquote {
   font-size: 2rem;
   color: #444;
+  position: relative;
 }
 
 .quote-feature blockquote:before {
@@ -285,9 +290,33 @@
 }
 
 @media (min-width: 768px) {
+  .quote-feature {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
   .quote-feature blockquote:before {
     width: 52.4px;
     height: 41.1px;
+    position: absolute;
+    left: -4.25rem;
+  }
+
+  .quote-feature .quote-feature-text {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+    padding-left: 6rem;
+  }
+
+  .quote-feature .quote-feature-img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
   }
 }
 
@@ -406,12 +435,12 @@ body {
 
 ::-moz-selection {
   color: #fff;
-  background: #8d0a0a;
+  background: #00685e;
 }
 
 ::selection {
   color: #fff;
-  background: #8d0a0a;
+  background: #00685e;
 }
 
 kbd.ouc {
@@ -431,7 +460,7 @@ kbd.ouc {
   -webkit-transition: all ease-out .3s;
   transition: all ease-out .3s;
   padding: .5rem;
-  color: #b31008;
+  color: #00685e;
   border: 3px solid rgba(141, 10, 10, 0.67);
   background: #fff;
   position: absolute;

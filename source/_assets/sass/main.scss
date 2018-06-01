@@ -72,11 +72,11 @@ body { background-color:#fff;}
 
 ::-moz-selection { 
   color: #fff;
-  background: #8d0a0a;
+  background: $primary;
 }
 ::selection {
   color: #fff;
-  background: #8d0a0a;
+  background: $primary;
 }
 kbd.ouc {
   display:none;
@@ -94,7 +94,7 @@ kbd.ouc {
   height: 0;
   transition: all ease-out .3s;
   padding: .5rem;
-  color:#b31008;
+  color:$primary;
   border: 3px solid rgba(141, 10, 10, 0.67);
   background:#fff; 
   position: absolute;
