@@ -206,7 +206,11 @@
 
 .card {
   padding: 2rem;
-  border-radius: .5rem;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -217,10 +221,10 @@
   color: #0074b3;
 }
 
-.card h2:hover,
-.card h3:hover,
-.card h4:hover,
-.card h5:hover {
+.card:hover h2,
+.card:hover h3,
+.card:hover h4,
+.card:hover h5 {
   text-decoration: underline;
 }
 
@@ -235,7 +239,11 @@
 }
 
 .card.theme-secondary {
-  border-top: 0.375rem solid #ffb500;
+  border-top: 5px solid #ffb500;
+}
+
+.more-arrow:after {
+  content: " \2192";
 }
 
 .text-light a,
@@ -396,5 +404,11 @@ kbd.ouc {
   white-space: normal;
   display: inline-block;
   z-index: 1000;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.4375rem;
+  }
 }
 

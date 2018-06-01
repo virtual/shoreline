@@ -1,9 +1,14 @@
 .card {
   padding: 2rem;
-  border-radius: .5rem;
+  background: #FFFFFF;
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.05);
+  border-radius: 5px;
+
   cursor: pointer;
-  h2, h3, h4, h5 { color: $link-blue;
-    &:hover { text-decoration: underline;} 
+  h2, h3, h4, h5 { color: $link-blue; }
+  &:hover {
+    h2, h3, h4, h5 { text-decoration: underline;} 
   }
   &>a {
     position: absolute;
@@ -14,5 +19,5 @@
   } 
 }
 .card.theme-secondary {
-  border-top: .375rem solid $secondary;
+  border-top: 5px solid $secondary;
 }

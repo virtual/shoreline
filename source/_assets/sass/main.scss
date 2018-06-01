@@ -1,10 +1,11 @@
- 
+$value: 2035433; 
 // Variables
 @import "variables";
  
 // Customizations
 @import "_style_print.scss";
 @import "_style_card.scss";
+@import "_style_classes.scss";
  
 .text-light, .text-white { 
   a { color: #fff; 
@@ -110,4 +111,11 @@ kbd.ouc {
   display: inline-block;
 
   z-index: 1000;
+}
+
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.4375rem;
+  }
 }

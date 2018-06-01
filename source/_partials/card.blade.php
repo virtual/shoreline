@@ -6,7 +6,7 @@
   <span class="sr-only">Facebook</span> 
 
   <div class="card-body">
-    <h5 class="card-title">{{ $heading }}</h5>
+    <h3 class="more-arrow card-title">{{ $heading }}</h3>
     <p class="card-text">{{ $desc }}</p>
   </div>
 </div>
