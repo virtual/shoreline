@@ -1,0 +1,41 @@
+@include headings(1,6) { font-weight: 600; }
+h1, .h1 {
+  line-height: 1.25;
+  font-weight: 900;
+}
+h3, .h3 {
+  line-height: 1.33;
+}
+h4, .h4 { 
+  line-height: 1.26;
+}
+h5, .h5 { 
+  line-height: 1.5;
+}
+h6, .h6 {  
+  line-height: 1.85;
+}
+@media (min-width: $screen-md) {
+  // DESKTOP Heading sizes
+  h1, .h1 {
+    font-size: 3.4375rem;
+    line-height: 1.16;
+  }
+  h2, .h2 {
+    font-size: 2rem;
+    line-height: 1.25;
+  }
+  h3, .h3 { 
+    font-size: 1.5rem;
+    line-height: 1.67;
+  }
+  h4, .h4 { 
+    font-size: 1.1875rem;
+    line-height: 1.68;
+  }
+  h5, .h5 { 
+    font-size: 1rem;
+    line-height: 1.5;
+  }   
+}
+ 

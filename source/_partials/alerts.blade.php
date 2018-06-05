@@ -15,7 +15,7 @@
 <p>Alert: For urgent, unplanned schedule changes or campus-wide alerts</p>
 
 <div class="alert alert-success" role="alert">
-  <h2>Success: January 20, 2016</h2>
+  <h3>H3 Success: January 20, 2016</h3>
   <p>This is where further info about your announcement goes. This <a href="#">text can be hyperlinked</a> if necessary, or there could be an
     optional button that links to something with more information about the alert.</p>
   <a class="btn btn-primary" href="#" role="button">Label</a>

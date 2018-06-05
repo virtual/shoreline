@@ -5,6 +5,7 @@ $value: 2035433;
 @import "_custom_functions.scss"; 
  
 // Customizations
+@import "_style_typography.scss"; 
 @import "_style_print.scss";
 @import "_style_card.scss";
 @import "_style_classes.scss";
@@ -132,13 +133,9 @@ kbd.ouc {
   z-index: 1000;
 }
 
-
 @media (min-width: $screen-md) {
-  h1 {
-    font-size: 3.4375rem;
-  }
   p, ul, dl, ol {
     font-size: 1.1875rem;
-  line-height: 1.68;  }
+    line-height: 1.68;
+    }
 }
-
