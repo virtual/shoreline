@@ -8,6 +8,11 @@
 - `cd code/test`
 - `npm run watch` or  `npm run watch-poll` - Watch and compile changes, must be done from vagrant server
 - use `http://localhost:3000/` for dev
+
+### Put on Github:
+
+- `npm run prod`
+- `npm run docs`
  
 ## New Dev Environments
 

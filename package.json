@@ -4,10 +4,11 @@
         "local": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --env=local --config=node_modules/laravel-mix/setup/webpack.config.js",
         "staging": "cross-env NODE_ENV=staging node_modules/webpack/bin/webpack.js --progress --hide-modules --env=staging --config=node_modules/laravel-mix/setup/webpack.config.js",
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --env=production --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
         "dev": "npm run local",
         "watch": "npm run local -- --watch",
         "watch-poll": "npm run watch -- --watch-poll",
-        "docs": "npm run production && rm -rf docs && mv build_production docs"
+        "docs": "rm -rf docs && mv build_production docs"
     },
     "devDependencies": {
         "browser-sync": "^2.23.6",
