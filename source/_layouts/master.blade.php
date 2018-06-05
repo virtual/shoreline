@@ -51,13 +51,13 @@
         <!-- H1 on homepage only -->
         <h1>
           <a class="navbar-brand" href="/">
-            <img src="images/acc-logo-black.png" alt="Shoreline Community College" />
+            <img src="{{ $page->baseUrl }}/resources/img/logos/shoreline-color.png" alt="Shoreline Community College" />
             <span class="sr-only">Shoreline Community College</span>
           </a>
         </h1>
         @else
         <a class="navbar-brand" href="/">
-          <img src="images/acc-logo-black.png" alt="Shoreline Community College" />
+          <img src="{{ $page->baseUrl }}/resources/img/logos/shoreline-color.png" alt="Shoreline Community College" />
           <span class="sr-only">Shoreline Community College</span>
         </a>
         @endif
@@ -66,11 +66,11 @@
       <div class="col-md-9 d-flex header-actions">
         <div class="navbar-container d-flex">
           <nav class="navbar navbar-expand-sm navmenu quicklinks">
-            @include ('_partials.quicklinks')
+            <!-- @include ('_partials.quicklinks') -->
           </nav>
         </div>
         <div class="search-container d-flex">
-          @include ('_partials.searchform')
+          <!-- @include ('_partials.searchform') -->
         </div>
       </div>
     </div>

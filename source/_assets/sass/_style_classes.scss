@@ -1,4 +1,9 @@
 .more-arrow:after {
-  content:" \2192"; 
+  content:" \2192";  
+} 
+.clear { clear:both; }
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
- 

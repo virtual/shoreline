@@ -1,0 +1,81 @@
+$btn-important: $shoreline-orange;
+$btn-primary: $primary;
+$btn-secondary: transparent;
+$btn-tertiary: transparent;
+.btn {
+  white-space: normal;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.1875rem;
+  border: solid 2px transparent;
+  line-height: 1.37;
+  border-radius: 1.5625rem;
+  padding-top: 0.90625rem;
+  padding-bottom: 0.90625rem;
+}
+
+.btn-important {
+  background-color: $btn-important;
+  color: set-text-color($btn-important);
+  &:hover {
+    background-color: darken($btn-important, 5);
+  }
+}
+
+.btn-primary {
+  background-color: $btn-primary;
+  color: set-text-color($btn-primary);
+  border: transparent;
+}
+
+.btn-secondary {
+  background-color: $btn-secondary;
+  color: $primary;
+  border: solid 2px rgba(0, 0, 0, 0.1);
+  &:hover {
+    background-color: inherit;
+    border: solid 2px $primary;
+    color: $primary;
+  }
+}
+
+.btn-tertiary {
+  background-color: $btn-tertiary;
+  color: $primary;
+  border: transparent;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  &:hover {
+    background-color: $pale-gray;
+  }
+}
+
+.bg-primary {
+  $btn-primary: #fff;
+  $btn-secondary: $primary;
+  $btn-tertiary: $primary;
+  .btn-primary {
+    background-color: #fff;
+    color: $primary;
+    border: transparent;
+    &:hover {
+      color: $primary;
+      background-color: #fff;
+    }
+  }
+  .btn-secondary,
+  .btn-tertiary {
+    background-color: $primary;
+    color: set-text-color($primary);
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+      color: set-text-color($primary);
+    }
+  }
+  .btn-secondary {
+    border: solid 2px rgba(255, 255, 255, 0.3);
+    &:hover {
+      border: solid 2px rgba(255, 255, 255, 0.3);
+    }
+  }
+}

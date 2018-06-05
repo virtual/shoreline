@@ -1,6 +1,6 @@
 <footer role="contentinfo">
     <div class="stripe">&nbsp;</div>
-    <div class="large-footer">
+    <div class="large-footer container-fluid">
        <div class="inner">
           <div class="row">
              <div class="col-4 ">
