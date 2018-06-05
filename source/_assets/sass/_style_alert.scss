@@ -4,7 +4,8 @@ $alert-announcement: $shoreline-yellow;
 $alert-warning: $shoreline-orange;
 
 .alert {
-  border-radius: 0;
+  border-radius: .25rem;
+  border-color: #fff;
 }
 .alert-primary, .alert-announcement {
   background: $alert-announcement;
@@ -13,4 +14,7 @@ $alert-warning: $shoreline-orange;
 .alert-secondary, .alert-warning {
   background: $alert-warning;
   color: set-text-color($alert-warning);
+}
+.alert-warning{
+  border-top: .5rem solid $shoreline-yellow;
 }

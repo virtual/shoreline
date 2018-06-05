@@ -34,6 +34,13 @@
 }
 @function set-text-color($color) {
   @if (luminance($color) > .45) {
+    @return #222222; // Lighter backgorund, return dark color
+  } @else {
+    @return #ffffff; // Darker background, return light color
+  }
+}
+@function set-heading-color($color) {
+  @if (luminance($color) > .45) {
     @return #000000; // Lighter backgorund, return dark color
   } @else {
     @return #ffffff; // Darker background, return light color
