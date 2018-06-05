@@ -1,12 +1,16 @@
 $value: 2035433; 
 // Variables
 @import "variables";
+
+@import "_custom_functions.scss"; 
  
 // Customizations
 @import "_style_print.scss";
 @import "_style_card.scss";
 @import "_style_classes.scss";
 @import "_style_quote.scss"; 
+@import "_style_alert.scss"; 
+
  
 .text-light, .text-white { 
   a { color: #fff; 

@@ -320,6 +320,22 @@
   }
 }
 
+.alert {
+  border-radius: 0;
+}
+
+.alert-primary,
+.alert-announcement {
+  background: #ffb500;
+  color: #000000;
+}
+
+.alert-secondary,
+.alert-warning {
+  background: #d43c00;
+  color: #ffffff;
+}
+
 .text-light a,
 .text-white a {
   color: #fff;

@@ -1,0 +1,16 @@
+
+
+$alert-announcement: $shoreline-yellow;
+$alert-warning: $shoreline-orange;
+
+.alert {
+  border-radius: 0;
+}
+.alert-primary, .alert-announcement {
+  background: $alert-announcement;
+  color: set-text-color($alert-announcement);
+}
+.alert-secondary, .alert-warning {
+  background: $alert-warning;
+  color: set-text-color($alert-warning);
+}
