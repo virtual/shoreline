@@ -5,16 +5,29 @@ $alert-warning: $shoreline-orange;
 
 .alert {
   border-radius: .25rem;
-  border-color: #fff;
+  border-color: #fff; 
+  padding: 1rem;
 }
 .alert-primary, .alert-announcement {
   background: $alert-announcement;
   color: set-text-color($alert-announcement);
+  @include headings(1, 6) {color: set-heading-color($alert-announcement);}
 }
 .alert-secondary, .alert-warning {
   background: $alert-warning;
   color: set-text-color($alert-warning);
+  @include headings(1, 6) {color: set-heading-color($alert-warning);}  
 }
 .alert-warning{
   border-top: .5rem solid $shoreline-yellow;
+}
+@media (min-width: $screen-sm) {
+  .alert.alert-padded {
+    padding: 2.5rem;
+    }
+  }
+@media (min-width: $screen-lg) {
+.alert.alert-padded {
+  padding: 3.5rem 6.5rem
+  }
 }
