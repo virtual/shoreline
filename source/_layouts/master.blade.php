@@ -15,7 +15,7 @@
   <meta property="og:site_name" content="Shoreline Community College" />
   <meta property="og:description" content="Shoreline Community College..." />
   <meta property="og:locale" content="en_us" />
-  <link rel="image_src" href="images/thumbnail.jpg" />
+  <link rel="image_src" href="{{ $page->baseUrl }}/images/thumbnail.jpg" />
 
   <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/bootstrap.css">
   <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/main.css">

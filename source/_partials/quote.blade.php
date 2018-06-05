@@ -1,6 +1,6 @@
 <figure class="quote-feature ">
   <div class="quote-feature-img">
-    <img src="{{ $img }}" alt="{{ $alt }}" />
+    <img src="{{ $page->baseUrl }}{{ $img }}" alt="{{ $alt }}" />
   </div>
   <div class="quote-feature-text">
     <blockquote>

@@ -25,7 +25,11 @@ h2.smaller { font-size: 1.5rem;}
 
 section { min-height:1px;}
 
-.container-fluid { max-width: 1170px}
+.container-fluid { max-width: 1200px}
+
+@media (min-width: 1240px) {
+  .container-fluid { padding-left: 0; padding-right: 0}
+}
 
  
 html {

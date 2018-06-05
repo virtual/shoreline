@@ -27,7 +27,7 @@
  <section class="sectional theme-02 ">
     <div class="inner">
         @include('_partials.quote', [ 
-          'desc' => "As corny as it sounds, it's been amazing to be here and have the opportunities that I've had…",
+          'desc' => "As corny as it sounds, it has been amazing to be here and have the opportunities that I've had…",
           'alt' => 'Pavielle Montes',
           'attribution' => 'Pavielle Montes',
           'attribution2' => 'Associate of Arts and High School Diploma',
