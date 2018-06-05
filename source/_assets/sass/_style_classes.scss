@@ -7,3 +7,23 @@
   display: table;
   clear: both;
 }
+
+p, ul, dl, ol {
+  color: $text-dark;
+} 
+
+.bg-primary {
+  color: set-text-color($primary);
+  * { color: inherit; }
+  a {
+    color: inherit;
+    @include link-underline($primary, set-text-color($primary), $primary); // border-bottom: 1px solid rgba(255, 255, 255, 1); 
+  }
+  a:hover {
+    // border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    @include link-underline($primary, #b1d1ce, $primary);
+  }
+  @include headings(1, 6) {
+    color: set-heading-color($primary);
+  }
+}

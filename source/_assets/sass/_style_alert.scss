@@ -7,6 +7,7 @@ $alert-warning: $shoreline-orange;
   border-radius: .25rem;
   border-color: #fff; 
   padding: 1rem;
+  * { color: inherit;}
 }
 .alert-primary, .alert-announcement {
   background: $alert-announcement;

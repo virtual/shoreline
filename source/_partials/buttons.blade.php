@@ -17,8 +17,9 @@
 </div>
 <div class="row py-3">
   <div class="col-6 py-3">
+    <h4>Light Background</h4>
     <div class="row">
-      <div class="col-6">
+      <div class="col-12">
 
         <button type="button" class="btn btn-primary btn-block">Primary CTA</button>
         <button type="button" class="btn btn-secondary btn-block">Label</button>
@@ -26,14 +27,19 @@
         <button type="button" class="btn btn-tertiary btn-block">Tertiary Button</button>
       </div>
     </div>
+    <p class="small">Default / Hover</p>    
+    <p>Stand out as a competitive applicant to four-year schools by <a href="#">graduating with Honors</a> on your transcript and diploma. Specialized seminars enhance the transfer process.</p>    
   </div>
   <div class="col-6 bg-primary py-3">
+    <h4>Dark Background</h4>
     <div class="row">
-      <div class="col-6">
+      <div class="col-12">
         <button type="button" class="btn btn-primary btn-block">Primary CTA</button>
         <button type="button" class="btn btn-secondary btn-block">Label</button>
         <button type="button" class="btn btn-tertiary btn-block">Tertiary Button</button>
       </div>
     </div>
+    <p class="small">Default / Hover</p>
+    <p>Stand out as a competitive applicant to four-year schools by <a href="#">graduating with Honors</a> on your transcript and diploma. Specialized seminars enhance the transfer process.</p>
   </div>
 </div>

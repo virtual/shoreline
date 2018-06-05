@@ -11,7 +11,7 @@ $value: 2035433;
 @import "_style_quote.scss"; 
 @import "_style_alert.scss"; 
 @import "_style_buttons.scss"; 
-
+@import "_style_shame.scss"; 
  
 .text-light, .text-white { 
   a { color: #fff; 
@@ -59,6 +59,16 @@ body { background-color:#fff;}
   flex-direction: column;
   min-height: 1px;
 }
+
+
+body {
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+p, ul, dl, ol {
+  font-size: 1.1875rem;
+  line-height: 1.68; 
+} 
 
 .flex-layout header,
 .flex-layout #footer {
@@ -129,3 +139,4 @@ kbd.ouc {
     font-size: 3.4375rem;
   }
 }
+

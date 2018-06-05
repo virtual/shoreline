@@ -4,6 +4,7 @@ $btn-secondary: transparent;
 $btn-tertiary: transparent;
 .btn {
   white-space: normal;
+  min-width: 150px;
   cursor: pointer;
   font-weight: 700;
   font-size: 1.1875rem;
@@ -50,7 +51,8 @@ $btn-tertiary: transparent;
   }
 }
 
-.bg-primary {
+// All classes that have inverse colored backgrounds, including alerts
+.bg-primary, .alert {
   $btn-primary: #fff;
   $btn-secondary: $primary;
   $btn-tertiary: $primary;
