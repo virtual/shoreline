@@ -7,7 +7,10 @@ $alert-warning: $shoreline-orange;
   border-radius: .25rem;
   border-color: #fff; 
   padding: 1rem;
-  * { color: inherit;}
+  * { color: inherit; }
+ 
+  a { text-decoration: underline; }
+  a:hover { color: inherit; }
 }
 .alert-primary, .alert-announcement {
   background: $alert-announcement;
@@ -23,6 +26,8 @@ $alert-warning: $shoreline-orange;
   border-top: .5rem solid $shoreline-yellow;
 }
 @media (min-width: $screen-sm) {
+ 
+  
   .alert.alert-padded {
     padding: 2.5rem;
     }

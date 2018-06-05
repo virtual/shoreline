@@ -11,11 +11,10 @@ $value: 2035433;
 @import "_style_quote.scss"; 
 @import "_style_alert.scss"; 
 @import "_style_buttons.scss"; 
-@import "_style_shame.scss"; 
+@import "_style_shame.scss";
  
-.text-light, .text-white { 
-  a { color: #fff; 
-  }
+.text-light, .text-white {
+  a { color: #fff;   }
 }
 
 a { color: $link-blue}
@@ -66,8 +65,8 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 p, ul, dl, ol {
-  font-size: 1.1875rem;
-  line-height: 1.68; 
+  font-size: 1rem;
+    line-height: 1.5; 
 } 
 
 .flex-layout header,
@@ -134,9 +133,12 @@ kbd.ouc {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: $screen-md) {
   h1 {
     font-size: 3.4375rem;
   }
+  p, ul, dl, ol {
+    font-size: 1.1875rem;
+  line-height: 1.68;  }
 }
 
