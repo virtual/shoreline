@@ -35,15 +35,15 @@
           'alt' => 'Pavielle Montes',
           'attribution' => 'Pavielle Montes',
           'attribution2' => 'Associate of Arts and High School Diploma',
-          'img' => '/resources/img/stock/stefan-stefancik-257625-unsplash.jpg',          
+          'img' => '/resources/img/testimonials/shoreline-williams72.jpg',          
           'link' => 'https://www.youtube.com/watch?v=YkLwzgPoQcA'
           ]) 
           @include('_partials.quote', [ 
-          'desc' => "As corny as it sounds, it has been amazing to be here and have the opportunities that I've had…",
+          'desc' => "I have come to believe that the whole world is an enigma, a harmless enigma that is made terrible by our own mad attempt to interpret it as though it had an underlying truth.",
           'alt' => 'Pavielle Montes',
           'attribution' => 'Pavielle Montes',
           'attribution2' => 'Associate of Arts and High School Diploma',
-          'img' => '/resources/img/stock/stefan-stefancik-257625-unsplash.jpg',          
+          'img' => '/resources/img/testimonials/shoreline-williams72h.jpg',          
           'link' => 'https://www.youtube.com/watch?v=YkLwzgPoQcA'
           ]) 
         </div>

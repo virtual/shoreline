@@ -54,7 +54,8 @@ $(function () {
       var $this = $(this);
       if ($this.attr("class").split(' ').length === 1) {
         $this.addClass('simple-slickslider');
-        $this.slick({arrows: true,
+        $this.slick({
+          arrows: false,
           infinite: true,
           dots: true,
           prevArrow:"<button type='button' aria-label='Previous' class='slick-prev pull-left'><span class='fas fa-chevron-left' aria-hidden='true'></span></button>",

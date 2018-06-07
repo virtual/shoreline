@@ -142,16 +142,21 @@
   .slick-next { right: -1rem;} 
 }
 
-.slick-slider>div>.caption,.slick-slider>div{display:none;-moz-opacity:0;-khtml-opacity:0;opacity:0}
+.slick-slider>div>.caption,.slick-slider>div{display:none;opacity:0}
 .slick-slider>div:first-child{display:block;}
-.slick-slider.slick-initialized>div, .slick-slider.content-feature>div:first-child{display:block;-moz-opacity:1;-khtml-opacity:1;opacity:1; }
+.slick-slider.slick-initialized>div, .slick-slider.content-feature>div:first-child{display:block;opacity:1; }
  
-.slick-slider .slick-dots li button:before, .slick-slider .slick-dots li.slick-active button:before {color: #f7bc44;}
+// Correct for quote slide
+.slick-slider .slick-dots li {
+  margin:0;
+}
+.slick-slider .slick-dots li button:before, .slick-slider .slick-dots li.slick-active button:before {color: #000;}
 .slick-slider .slick-dots li button:before {
-  opacity: .65;
-  font-size: 1rem;
+  opacity: .3;
+  font-size: 0.75rem; // needs extra tlc to get to the right size
 }
 .slick-slider .slick-dots li.slick-active button:before  { opacity: 1; }
+// end Correct for quote slide
 
 @media (min-width: 768px) {
   .simple-slickslider {
@@ -188,7 +193,6 @@
 .simple-slickslider {
   padding:0;
   padding-bottom: 1.5rem;
-  background:rgba(0,0,0,0.80); 
   .slick-dots {
     position: absolute;
     bottom: .5rem;

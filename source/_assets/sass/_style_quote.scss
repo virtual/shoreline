@@ -1,21 +1,22 @@
 
 .quote-feature {
-  color:#000;    
+  line-height: 1.25;
   img { 
     text-align: left;  
     background:linear-gradient($primary, $primary) no-repeat 10px 10px;
     background-color: transparent;
     padding: 0 10px 10px 0;
     margin-bottom: 0.70625rem; 
-  }  
+  } 
+
   blockquote {
-    font-size: 2rem;
+    font-size: 2rem; 
     color: $text-dark;
     position: relative;
   }
   blockquote:before {
     content: "";
-    background-image: url('/resources/img/icons/copy-6@3x.png');
+    background-image: url('../../resources/img/icons/copy-6@3x.png');
     background-position: top left; 
     background-repeat: no-repeat;
     height: 20.6px;
@@ -26,7 +27,7 @@
   figcaption { font-size: 1rem; color: $text-dark; }
   figcaption strong { color:#000; }
 }
-@media (min-width: 768px) {
+@media (min-width: $screen-md) {
   .quote-feature {
     display:flex; 
     align-items: center;
@@ -42,6 +43,18 @@
     }
     .quote-feature-img {
       flex: 0 0 25%;
-    }
+    } 
+  }
+}
+@media (min-width: $screen-lg) {
+  .quote-feature .quote-feature-img.vertical {
+  // Add extra padding; checked through main.js
+    padding: 0 1.75rem;
+  }
+}
+@media (min-width: $screen-xl) {
+  .quote-feature .quote-feature-img.vertical {
+  // Add extra padding; checked through main.js
+    padding: 0 3.75rem;
   }
 }
