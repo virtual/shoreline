@@ -9,7 +9,9 @@ $value: 2035433;
 @import "_style_print.scss";
 @import "_style_card.scss";
 @import "_style_classes.scss";
+@import "_style_topnav.scss";
 @import "_style_quote.scss"; 
+@import "_style_form.scss"; 
 @import "_style_alert.scss"; 
 @import "_style_buttons.scss"; 
 @import "_style_footer.scss"; 
@@ -21,8 +23,8 @@ $value: 2035433;
 
 a { color: $link-blue}
 
-main > .container { margin-top: 1rem; padding: 2rem 0;}
-main h1 {  text-align:center; font-size: 2rem; padding-bottom: .5rem; text-transform: uppercase}
+// main > .container { margin-top: 1rem; padding: 2rem 0;}
+// main h1 {  text-align:center; font-size: 2rem; padding-bottom: .5rem; text-transform: uppercase}
 .padded { padding: 3rem 0 2.5rem 0;} 
 img { max-width: 100%; width: auto; height: auto;  }
 h2 { font-weight: 600; }

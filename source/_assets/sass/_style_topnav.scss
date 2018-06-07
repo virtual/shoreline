@@ -1,0 +1,22 @@
+.topnav {
+  font-size: .8rem;
+  background-color: #002824; 
+  ul, li { list-style: none; display: inline-block; margin:0; padding:0;}
+  a { text-decoration: none; }
+  .nav-link { display:inline-block; color:#fff; padding: .5rem; }
+}
+#skiptocontent a {
+  padding: 8px;
+  position: absolute; 
+  top: -50px;
+  left: 0px;
+  color: white;
+  background: $secondary;
+  -webkit-transition: top .1s ease-in-out, background .1s linear;
+  transition: top .1s ease-in-out, background .1s linear;
+  z-index: 100;
+  outline: 1;
+}
+#skiptocontent a:focus {
+  top: 0px; 
+}

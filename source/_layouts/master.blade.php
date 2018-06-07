@@ -41,6 +41,7 @@
 </head>
 
 <body>
+    @include('_partials.topbar')
 <header id="header">
   <div id="skiptocontent">
     <a href="#maincontent" title="Skip Main Navigation">Skip Main Navigation</a>
