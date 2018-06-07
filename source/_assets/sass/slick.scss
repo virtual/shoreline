@@ -1,3 +1,4 @@
+@import "variables";
 /* Slider */
 
 .slick-slider {
@@ -124,27 +125,27 @@
 
   
 
-.content-feature {
+// .content-feature {
   
-  &.slick-slider {     
-    padding: 0 25px;
-    margin: 0 25px;}
-}
+//   &.slick-slider {     
+//     padding: 0 25px;
+//     margin: 0 25px;}
+// }
 
 
-.slick-slider {
-  .slick-prev, .slick-next { 
-    z-index:3; 
-    width: 3rem;
-    &:before { font-size: 3rem;}
-  }
-  .slick-prev { left: -1rem;}
-  .slick-next { right: -1rem;} 
-}
+// .slick-slider {
+//   .slick-prev, .slick-next { 
+//     z-index:3; 
+//     width: 3rem;
+//     &:before { font-size: 3rem;}
+//   }
+//   .slick-prev { left: -1rem;}
+//   .slick-next { right: -1rem;} 
+// }
 
-.slick-slider>div>.caption,.slick-slider>div{display:none;opacity:0}
-.slick-slider>div:first-child{display:block;}
-.slick-slider.slick-initialized>div, .slick-slider.content-feature>div:first-child{display:block;opacity:1; }
+// .slick-slider>div>.caption,.slick-slider>div{display:none;opacity:0}
+// .slick-slider>div:first-child{display:block;}
+// .slick-slider.slick-initialized>div, .slick-slider.content-feature>div:first-child{display:block;opacity:1; }
  
 // Correct for quote slide
 .slick-slider .slick-dots li {
@@ -165,29 +166,29 @@
 }
 
 
-.slick-arrow .fas {
-  color: #062598;
-  font-size: 2rem;
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  text-align:center;
-}
-.slick-arrow.slick-prev .fas{ left: -2px;}
-.slick-arrow.slick-next .fas{ right: -2px;}
-.slick-prev:before, .slick-next:before { content: none !important; }
-.slick-slider .slick-arrow { width: 3rem; height: 3rem; border-radius: 50%;
-  border: 1px solid #062598; background:rgba(49, 64, 125, 0.41);
-  opacity: .3;
-  transition: background cubic-bezier(0.65, 0.05, 0.36, 1) .2s;
-}
-  .slick-slider .slick-arrow:hover {
-    opacity: 1;
-    background: rgba(24, 30, 53, 1) !important;
-    border: 1px solid #fff; 
-    .fas { color:#fff;}
-  }
+// .slick-arrow .fas {
+//   color: #062598;
+//   font-size: 2rem;
+//   position: relative;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   text-align:center;
+// }
+// .slick-arrow.slick-prev .fas{ left: -2px;}
+// .slick-arrow.slick-next .fas{ right: -2px;}
+// .slick-prev:before, .slick-next:before { content: none !important; }
+// .slick-slider .slick-arrow { width: 3rem; height: 3rem; border-radius: 50%;
+//   border: 1px solid #062598; background:rgba(49, 64, 125, 0.41);
+//   opacity: .3;
+//   transition: background cubic-bezier(0.65, 0.05, 0.36, 1) .2s;
+// }
+//   .slick-slider .slick-arrow:hover {
+//     opacity: 1;
+//     background: rgba(24, 30, 53, 1) !important;
+//     border: 1px solid #fff; 
+//     .fas { color:#fff;}
+//   }
   
 
 .simple-slickslider {
@@ -232,3 +233,37 @@
   }
   .simple-slickslider .slick-dots { bottom: 1rem;}
 } 
+
+
+// Joe's custom arrows, demo on quotes
+.slick-slider {
+  .slick-arrow { 
+    z-index: 3;
+      width: 3.4375rem;
+      height: 2.5rem;
+      border-radius: 24px;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05); 
+      // border: solid 1px rgba(0, 0, 0, 0.5); // debugging
+      border: solid 1px rgba(0, 0, 0, 0.05);
+      background-color:#fff;
+      &:before { display:none;}
+      &:hover { background-color: $pale-gray}
+    
+      .button-left:before, .button-right:before {
+      content: "";
+      background-image: url('../../resources/img/icons/arrow@3x.png');
+      background-position: center;
+      margin: 0 auto; 
+      background-repeat: no-repeat;
+      height: 1rem;
+      width: 1rem;
+      display: block;
+      background-size: contain;
+    } 
+    .button-left:before {
+      background-image: url('../../resources/img/icons/arrow@3x.png');
+      transform: rotate(180deg);
+    }
+ 
+  }
+}

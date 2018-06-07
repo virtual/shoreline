@@ -55,11 +55,11 @@ $(function () {
       if ($this.attr("class").split(' ').length === 1) {
         $this.addClass('simple-slickslider');
         $this.slick({
-          arrows: false,
+          arrows: true,
           infinite: true,
           dots: true,
-          prevArrow:"<button type='button' aria-label='Previous' class='slick-prev pull-left'><span class='fas fa-chevron-left' aria-hidden='true'></span></button>",
-          nextArrow:"<button type='button' aria-label='Next' class='slick-next pull-right'><span class='fas fa-chevron-right' aria-hidden='true'></span></button>"
+          prevArrow:"<button type='button' aria-label='Previous' class='slick-prev pull-left'><span class='button-left' aria-hidden='true'></span></button>",
+          nextArrow:"<button type='button' aria-label='Next' class='slick-next pull-right'><span class='button-right' aria-hidden='true'></span></button>"
         });
       }
   });
