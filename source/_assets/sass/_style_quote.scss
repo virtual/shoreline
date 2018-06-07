@@ -1,6 +1,6 @@
 
 .quote-feature {
-  line-height: 1.25;
+  line-height: 1.25; 
   img { 
     text-align: left;  
     background:linear-gradient($primary, $primary) no-repeat 10px 10px;
@@ -24,7 +24,7 @@
     display: block;
     background-size: contain;
   }
-  figcaption { font-size: 1rem; color: $text-dark; }
+  figcaption { font-size: 1rem; color: $text-dark; line-height: 1.5 }
   figcaption strong { color:#000; }
 }
 @media (min-width: $screen-md) {

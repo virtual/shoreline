@@ -28,7 +28,7 @@
  </section>
 
  <section class="sectional theme-02 ">
-    <div class="inner">
+    <div class="inner py-5">
       <div class="slick-slider">
         @include('_partials.quote', [ 
           'desc' => "As corny as it sounds, it has been amazing to be here and have the opportunities that I've had…",
