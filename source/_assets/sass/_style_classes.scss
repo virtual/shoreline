@@ -14,7 +14,7 @@ p, ul, dl, ol {
 
 .bg-primary {
   color: set-text-color($primary);
-  * { color: inherit; }
+  * { color: inherit; } 
   a {
     color: inherit;
     @include link-underline($primary, set-text-color($primary), $primary); // border-bottom: 1px solid rgba(255, 255, 255, 1); 

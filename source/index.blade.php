@@ -29,6 +29,7 @@
 
  <section class="sectional theme-02 ">
     <div class="inner">
+      <div class="slick-slider">
         @include('_partials.quote', [ 
           'desc' => "As corny as it sounds, it has been amazing to be here and have the opportunities that I've had…",
           'alt' => 'Pavielle Montes',
@@ -37,6 +38,15 @@
           'img' => '/resources/img/stock/stefan-stefancik-257625-unsplash.jpg',          
           'link' => 'https://www.youtube.com/watch?v=YkLwzgPoQcA'
           ]) 
+          @include('_partials.quote', [ 
+          'desc' => "As corny as it sounds, it has been amazing to be here and have the opportunities that I've had…",
+          'alt' => 'Pavielle Montes',
+          'attribution' => 'Pavielle Montes',
+          'attribution2' => 'Associate of Arts and High School Diploma',
+          'img' => '/resources/img/stock/stefan-stefancik-257625-unsplash.jpg',          
+          'link' => 'https://www.youtube.com/watch?v=YkLwzgPoQcA'
+          ]) 
+        </div>
     </div>
  </section>
 

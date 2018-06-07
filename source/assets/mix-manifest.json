@@ -1,5 +1,8 @@
 {
-    "/js/main.js": "/js/main.js?id=37b292ebbda589c3a91c",
+    "/js/main.js": "/js/main.js?id=cc630b31899c008f6f3a",
     "/css/main.css": "/css/main.css?id=723735052475c265e0ff",
-    "/css/bootstrap.css": "/css/bootstrap.css?id=3a510d8aa9ddaf492034"
+    "/css/slick.css": "/css/slick.css?id=01ba0ab4281377618b73",
+    "/css/slick-theme.css": "/css/slick-theme.css?id=8a42f6a210c518306cdb",
+    "/css/bootstrap.css": "/css/bootstrap.css?id=3a510d8aa9ddaf492034",
+    "/js/slick-app.js": "/js/slick-app.js?id=bb90bd1151efae2dc505"
 }
