@@ -1,6 +1,57 @@
 @extends('_layouts.master')
 
 @section('content')
+<div class="breadcrumb" aria-label="breadcrumb">
+  <ol>
+    <li>
+      <a href="http://www.example.com/books">Home</a> 
+    </li>
+    <li>
+      <a href="http://www.example.com/sciencefiction">Science Fiction</a>
+    </li>
+    <li>
+      <a class="active" aria-current="page" href="http://www.example.com/books/sciencefiction/awardwinners">Award Winners</a>
+    </li>
+  </ol>
+</div>
+<div class="breadcrumb" aria-label="breadcrumb">
+    <ol class="condensed">
+        <li>
+          <a href="http://www.example.com/books">Home</a> 
+        </li>
+        <li>
+          <a href="http://www.example.com/sciencefiction">Science Fiction</a>
+        </li>
+        <li>
+          <a href="http://www.example.com/books">Books</a> 
+        </li>
+        <li>
+          <a href="http://www.example.com/sciencefiction">Science Fiction</a>
+        </li>
+      <li>
+        <a class="active" aria-current="page" href="http://www.example.com/books/sciencefiction/awardwinners">Award Winners</a>
+      </li>
+    </ol>
+  </div>
+  <div class="breadcrumb" aria-label="breadcrumb">
+      <ol>
+          <li>
+            <a href="http://www.example.com/books">Home</a> 
+          </li>
+          <li>
+            <a href="http://www.example.com/sciencefiction">Science Fiction</a>
+          </li>
+          <li>
+            <a href="http://www.example.com/books">Books</a> 
+          </li>
+          <li>
+            <a href="http://www.example.com/sciencefiction">Science Fiction</a>
+          </li>
+        <li>
+          <a class="active" aria-current="page" href="http://www.example.com/books/sciencefiction/awardwinners">Award Winners</a>
+        </li>
+      </ol>
+    </div>
 
 <h1>Lorem ipsum dolor sit amet consectetuer adipiscing 
     elit</h1>
