@@ -22,51 +22,49 @@
     viverra nulla ut metus varius laoreet. Quisque rutrum. 
     Aenean imperdiet. Etiam ultricies nisi vel augue. 
     Curabitur ullamcorper ultricies nisi.</p>
-
 <div class="row py-3">
-    <div class="col-md-4 col-12 py-3">
-      <div class="p-3">
-      <h4>Light Background</h4>
-        
+  <div class="col-md-4 col-12 py-3">
+    <div class="p-3">
+      <p class="small">Dark</p>
+
       @include('_partials.headers')
-      </div>
-    </div>
-    <div class="col-md-4 col-12 py-3">
-      <div class="p-3 primary">
-      <h4>Light Background</h4>
-      @include('_partials.headers')
-      </div>
-    </div>
-    <div class="col-md-4 col-12 py-3">
-      <div class="bg-primary p-3">
-        <h4>Dark Background</h4>
-        @include('_partials.headers')
-      </div>
     </div>
   </div>
+  <div class="col-md-4 col-12 py-3">
+    <div class="p-3 primary">
+      <p class="small">Green</p>
+      @include('_partials.headers')
+    </div>
+  </div>
+  <div class="col-md-4 col-12 py-3">
+    <div class="bg-primary p-3">
+      <p class="small">White</p>
+      @include('_partials.headers')
+    </div>
+  </div>
+</div>
   
 <hr/>
-  <div class="row py-3">
-      <div class="col-md-4 col-12 py-3">
-        <div class="p-3">
-        <h4>Light Background</h4>
-          
+<div class="row py-3">
+  <div class="col-md-4 col-12 py-3">
+    <div class="p-3">
+      <p class="small">Dark</p>
         @include('_partials.text')
-        </div>
-      </div>
-      <div class="col-md-4 col-12 py-3">
-        <div class="p-3 primary">
-        <h4>Light Background</h4>
-        @include('_partials.text')
-        </div>
-      </div>
-      <div class="col-md-4 col-12 py-3">
-        <div class="bg-primary p-3">
-          <h4>Dark Background</h4>
-          @include('_partials.text')
-        </div>
-      </div>
     </div>
+  </div>
+  <div class="col-md-4 col-12 py-3">
+    <div class="p-3 gray">
+      <p class="small">Mid-Gray</p>
+        @include('_partials.text')
+    </div>
+  </div>
+  <div class="col-md-4 col-12 py-3">
+    <div class="bg-primary p-3">
+      <p class="small">White</p>
+        @include('_partials.text')
+    </div>
+  </div>
+</div>
 
 
     <hr/>
@@ -104,6 +102,8 @@
     Cum sociis natoque penatibus et magnis dis parturient 
     montes, nascetur ridiculus mus. Donec quam felis, 
     ultricies nec, pellentesque eu, pretium quis, sem.</p>
+    <h3 class="primary">Summer 2018 online payment plan enrollment opens May 11, 2018</h3>
+    <p>Payment plan must be in place by your tuition due date.</p>
     <table class="data">
       <tr>
         <th>Entry Header 1</th>

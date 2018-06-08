@@ -28,3 +28,16 @@ p, ul, dl, ol {
     color: set-heading-color($primary);
   }
 }
+
+.gray {
+  color: $text-lightgray;
+  p, ul, dl, ol { color: $text-lightgray;
+    &.small, &.medium, &.large { color: darken($text-lightgray, 10)}
+  }
+  
+}
+p, ul, dl, ol {
+  &.gray {color: $text-lightgray;
+  &.small, &.medium, &.large { color: darken($text-lightgray, 10)}
+  }
+}
