@@ -1,24 +1,72 @@
-
 .breadcrumb {
   background: none;
   padding: 0;
   font-size: 1rem;
   color: $text-dark;
   line-height: 1.5;
-  ol { list-style:none;padding: 0; font-size: inherit; line-height: inherit;}
+  ol {
+    list-style: none;
+    padding: 0;
+    font-size: inherit;
+    line-height: inherit;
+    clear: both;
+    width: 100%;
+    display: block;
+    margin-bottom: 0;
+  }
+  ol+ol {
+    margin-top: .5rem;
+  }
   li {
     line-height: inherit;
     font-size: inherit;
-    display:inline; 
+    display: inline;
     padding: 0;
-    a { color: inherit; }
-    a.active { color: $primary; font-weight: 700; cursor: default; } 
-  } 
-  li + li:before { content: '>'}
+    a {
+      color: inherit;
+    }
+    a.active {
+      color: $primary;
+      font-weight: 700;
+      cursor: default;
+    }
+  }
+  li+li:before {
+    content: '>'
+  }
   ol.condensed {
-    li:nth-of-type(10n+2), li:nth-of-type(10n+3), li:nth-of-type(10n+4), li:nth-of-type(10n+5), li:nth-of-type(10n+6), li:nth-of-type(10n+7), li:nth-of-type(10n+8), li:nth-of-type(10n+9), li:nth-of-type(10n){ display:none;}
-    li:last-child { display:inline !important; }
-    li:after { content: "..."}
-    li:last-child:after { content: ''}
+    li:nth-of-type(10n+2),
+    li:nth-of-type(10n+3),
+    li:nth-of-type(10n+4),
+    li:nth-of-type(10n+5),
+    li:nth-of-type(10n+6),
+    li:nth-of-type(10n+7),
+    li:nth-of-type(10n+8),
+    li:nth-of-type(10n+9),
+    li:nth-of-type(10n) {
+      display: none;
+    }
+    li:last-child {
+      display: inline !important;
+    }
+    li:after {
+      content: "..."
+    }
+    li:last-child:after {
+      content: ''
+    }
+  }
+}
+
+.bg-primary,
+.breadcrumb.bg-primary {
+  color: #fff;
+  li a {
+    text-shadow: none;
+    background-image: none;
+  }
+  li a.active {
+    color: inherit;
+    font-weight: normal
   }
 }
