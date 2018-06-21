@@ -573,6 +573,181 @@ table th {
   border-width: 2px;
 }
 
+dl.list-inline {
+  width: 100%;
+}
+
+dl.list-inline dt, dl.list-inline dd {
+  margin-bottom: 0;
+}
+
+dl.list-inline dd {
+  padding: 0 0 1.5rem;
+}
+
+dl.list-inline dt {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 0 0 0;
+}
+
+dl.list-inline dt:first-of-type {
+  border-top: 0;
+}
+
+dl.list-inline dt {
+  clear: both;
+}
+
+dl.list-inline .dl-icon + dd {
+  padding-left: 3.1875rem;
+}
+
+dl.list-inline .dl-icon:before {
+  content: "";
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  left: 0;
+  background-image: url("/resources/img/icons/icons.svg");
+}
+
+dl.list-inline .dl-icon {
+  position: relative;
+  padding-left: 3.1875rem;
+}
+
+dl.list-inline .dl-icon.icon-bg-book:before {
+  background-position: 0 0;
+}
+
+dl.list-inline .dl-icon.icon-bg-calendar:before {
+  background-position: 0 -32px;
+}
+
+dl.list-inline .dl-icon.icon-bg-clock-o:before {
+  background-position: 0 -64px;
+}
+
+dl.list-inline .dl-icon.icon-bg-credit-card:before {
+  background-position: 0 -96px;
+}
+
+dl.list-inline .dl-icon.icon-bg-map-marker:before {
+  background-position: 0 -128px;
+}
+
+dl.list-inline .dl-icon.icon-bg-money:before {
+  background-position: 0 -160px;
+}
+
+dl.list-inline .dl-icon.icon-bg-mortar-board:before {
+  background-position: 0 -192px;
+}
+
+dl.list-inline .dl-icon.icon-bg-trophy-board:before {
+  background-position: 0 -232px;
+}
+
+@media (min-width: 768px) {
+  dl.list-inline {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  dl.list-inline dd, dl.list-inline dt {
+    width: 66.67%;
+    display: inline-block;
+    padding: 1.5rem 0;
+  }
+  dl.list-inline .dl-icon + dd {
+    padding-left: initial;
+  }
+  dl.list-inline dt {
+    float: left;
+    width: 33.33%;
+  }
+  dl.list-inline dd {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  dl.list-inline dd:first-of-type {
+    border-top: 0;
+  }
+}
+
+.icon-bg-calendar-dims {
+  width: 300px;
+  height: 300px;
+}
+
+.icon-bg-clock-o, .icon-bg-clock-o\:regular {
+  background-image: url("/resources/img/icons/icons.svg");
+  background-position: 0 -600px;
+  background-repeat: no-repeat;
+}
+
+.icon-bg-clock-o-dims {
+  width: 300px;
+  height: 300px;
+}
+
+.icon-bg-credit-card, .icon-bg-credit-card\:regular {
+  background-image: url("/resources/img/icons/icons.svg");
+  background-position: 0 -900px;
+  background-repeat: no-repeat;
+}
+
+.icon-bg-credit-card-dims {
+  width: 300px;
+  height: 300px;
+}
+
+.icon-bg-map-marker, .icon-bg-map-marker\:regular {
+  background-image: url("/resources/img/icons/icons.svg");
+  background-position: 0 -1200px;
+  background-repeat: no-repeat;
+}
+
+.icon-bg-map-marker-dims {
+  width: 300px;
+  height: 300px;
+}
+
+.icon-bg-money, .icon-bg-money\:regular {
+  background-image: url("/resources/img/icons/icons.svg");
+  background-position: 0 -1500px;
+  background-repeat: no-repeat;
+}
+
+.icon-bg-money-dims {
+  width: 300px;
+  height: 300px;
+}
+
+.icon-bg-mortar-board, .icon-bg-mortar-board\:regular {
+  background-image: url("/resources/img/icons/icons.svg");
+  background-position: 0 -1800px;
+  background-repeat: no-repeat;
+}
+
+.icon-bg-mortar-board-dims {
+  width: 300px;
+  height: 300px;
+}
+
+.icon-bg-trophy, .icon-bg-trophy\:regular {
+  background-image: url("/resources/img/icons/icons.svg");
+  background-position: 0 -2100px;
+  background-repeat: no-repeat;
+}
+
+.icon-bg-trophy-dims {
+  width: 300px;
+  height: 300px;
+}
+
 .breadcrumb {
   background: none;
   padding: 0;

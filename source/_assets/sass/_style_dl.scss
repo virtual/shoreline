@@ -1,0 +1,72 @@
+$dl-border: rgba(0, 0, 0, 0.1);
+dl.list-inline {
+  width: 100%; 
+  dt, dd { margin-bottom:0;}
+  dd {padding: 0 0 1.5rem; }
+  dt { border-top: 1px solid $dl-border; padding: 1.5rem 0 0 0; }
+  dt:first-of-type { border-top:0;}
+  dt { clear:both;}
+
+  .dl-icon + dd { padding-left: 3.1875rem; }
+  .dl-icon:before {
+    content: "";
+    
+    background-size: 2rem;
+    background-repeat: no-repeat; 
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    left:0;
+    background-image:url('/resources/img/icons/icons.svg');
+  }
+
+  .dl-icon {
+    position:relative;
+    padding-left: 3.1875rem; 
+    &.icon-bg-book:before { background-position:0 0;}
+    &.icon-bg-calendar:before{background-position:0 -32px;}
+    &.icon-bg-clock-o:before{background-position:0 -64px;}
+    &.icon-bg-credit-card:before{background-position:0 -96px;}
+    &.icon-bg-map-marker:before{background-position:0 -128px;}
+    &.icon-bg-money:before{background-position:0 -160px;}
+    &.icon-bg-mortar-board:before{background-position:0 -192px;}
+    &.icon-bg-trophy-board:before{background-position:0 -232px;}
+  }
+}
+
+
+@media (min-width: $screen-md) {
+  dl.list-inline {
+    border-bottom: 1px solid $dl-border; 
+    margin:0; padding:0;
+    display:block;
+
+    dd, dt { width:66.67%; display:inline-block; padding: 1.5rem 0; }
+    .dl-icon + dd { padding-left: initial; }
+    dt { 
+      float:left;
+      width: 33.33%;
+    }
+    dd {
+      border-top: 1px solid $dl-border; }
+    dd:first-of-type { border-top:0;}
+  }
+}
+
+
+
+
+.icon-bg-calendar-dims{width:300px;height:300px}
+.icon-bg-clock-o,.icon-bg-clock-o\:regular{background-image:url('/resources/img/icons/icons.svg');background-position:0 -600px;background-repeat:no-repeat}
+.icon-bg-clock-o-dims{width:300px;height:300px}
+.icon-bg-credit-card,.icon-bg-credit-card\:regular{background-image:url('/resources/img/icons/icons.svg');background-position:0 -900px;background-repeat:no-repeat}
+.icon-bg-credit-card-dims{width:300px;height:300px}
+.icon-bg-map-marker,.icon-bg-map-marker\:regular{background-image:url('/resources/img/icons/icons.svg');background-position:0 -1200px;background-repeat:no-repeat}
+.icon-bg-map-marker-dims{width:300px;height:300px}
+.icon-bg-money,.icon-bg-money\:regular{background-image:url('/resources/img/icons/icons.svg');background-position:0 -1500px;background-repeat:no-repeat}
+.icon-bg-money-dims{width:300px;height:300px}
+.icon-bg-mortar-board,.icon-bg-mortar-board\:regular{background-image:url('/resources/img/icons/icons.svg');background-position:0 -1800px;background-repeat:no-repeat}
+.icon-bg-mortar-board-dims{width:300px;height:300px}
+.icon-bg-trophy,.icon-bg-trophy\:regular{background-image:url('/resources/img/icons/icons.svg');background-position:0 -2100px;background-repeat:no-repeat}
+.icon-bg-trophy-dims{width:300px;height:300px}
+

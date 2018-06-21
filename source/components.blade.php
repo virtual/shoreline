@@ -1,10 +1,15 @@
 @extends('_layouts.master')
 
+
+
 @section('content')
+@include('_partials.overview')
 
 @include('_partials.buttons')
 
 @include('_partials.alerts')
+
+
 
 <section class="sectional section1 sectional-padded theme-01 sectional-inverted ">
     <div class="inner">
