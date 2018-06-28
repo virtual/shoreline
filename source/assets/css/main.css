@@ -1126,7 +1126,7 @@ section {
   max-width: 1200px;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1280px) {
   .container-fluid {
     padding-left: 0;
     padding-right: 0;
@@ -1148,10 +1148,6 @@ html {
   height: 100%;
 }
 
-body {
-  background-color: #fff;
-}
-
 .flex-layout {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1165,8 +1161,10 @@ body {
 }
 
 body {
+  background-color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 p, ul, dl, ol {
