@@ -1,0 +1,133 @@
+
+
+// ul li:before {
+//   content: "\2022";
+//   /* position: absolute; */
+//   left: -0.8em;
+//   font-size: 2em;
+//   /* top: auto; */
+//   height: 8px;
+//   width: 8px;
+//   display: inline-block;
+//   background: #000;
+//   border-radius: 50%;
+//   float: left;
+// // }
+// ul li:before {
+//   content: "";
+//   /* position: absolute; */
+//   left: -0.8em;
+//   font-size: 2em;
+//   /* top: auto; */
+//   height: 8px;
+//   width: 8px;
+//   display: inline-block;
+//   background: #000;
+//   border-radius: 50%;
+//   float: left;
+//   top: 8px;
+//   margin-right: 6px;
+//   position: relative;
+//   left: 0;
+// }
+main {
+  ol, ul {
+    li { margin-bottom: .75rem; margin-top: .75rem; }
+  }
+  ul li {
+    list-style: none;
+    position: relative;
+    padding-left: 1.75rem;
+    text-indent: -2rem;
+  }
+  ul { 
+    list-style: none;
+    padding: 0;
+    li {
+      list-style: none;
+      position: relative;
+      // text-indent: -1rem;
+    }
+    // li:before {
+    //     content:"\2022";
+    //     position: absolute;
+    //     left: -0.8em;          /* Adjust this value so that it appears where you want. */
+    //     font-size: 2em;   
+    //     top: auto;
+    //     bottom: auto;
+    // }
+  }
+
+  ul li:before {
+    content: "";
+    left: -0.8em;
+    font-size: 2em;
+    height: .5rem;
+    width: .5rem;
+    background: #000;
+    border-radius: 50%;
+    float: left;
+    top: .75rem;
+    margin-right: 0;
+    position: relative;
+    left: -1.5rem;
+    margin-right: 1.5rem;
+    padding: 0;
+  }
+  // ol,
+  // ul {
+  //   overflow: hidden;
+  //   padding-left: 2.5em;
+  // }
+  ol a,
+  ul a {
+    display: inline-block;
+    vertical-align: top;
+  }
+  ol ol,
+  ol ul,
+  ul ol,
+  ul ul {
+    margin-bottom: .5em;
+    padding-left: 1.5em;
+  }
+  ol {
+    overflow: visible;
+    margin: 0;
+    margin-left: 2rem;
+    padding: 0;
+    color: transparent;
+    list-style-type: none;
+    counter-reset: li-counter;
+  }
+  ol li {
+    position: relative;
+    overflow: visible;
+    color: initial;
+    list-style-type: none;
+    list-style-type: none;
+  }
+  ol li::before {
+    position: absolute;
+    top: 0;
+    left: -2rem;
+    z-index: -99;
+    overflow: hidden;
+    background-color: #fff;
+    color: #000;
+    content: counter(li-counter);
+    counter-increment: li-counter;
+    text-align: right;
+    font-weight: bold;
+  }
+  // ul li {
+  //   margin-bottom: .75em;
+  //   list-style-type: disc;
+  //   line-height: 2em;
+  // }
+  // ul li:hover,
+  // ul li:focus,
+  // ul li:active {
+  //   list-style-type: disc;
+  // }
+}

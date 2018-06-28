@@ -3,6 +3,9 @@
 
 
 @section('content')
+
+@include('_partials.lists')
+
 @include('_partials.overview')
 
 @include('_partials.buttons')

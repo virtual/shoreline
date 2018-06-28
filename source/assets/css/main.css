@@ -1026,6 +1026,91 @@ a.btn {
   }
 }
 
+main ol li, main ul li {
+  margin-bottom: .75rem;
+  margin-top: .75rem;
+}
+
+main ul li {
+  list-style: none;
+  position: relative;
+  padding-left: 1.75rem;
+  text-indent: -2rem;
+}
+
+main ul {
+  list-style: none;
+  padding: 0;
+}
+
+main ul li {
+  list-style: none;
+  position: relative;
+}
+
+main ul li:before {
+  content: "";
+  left: -0.8em;
+  font-size: 2em;
+  height: .5rem;
+  width: .5rem;
+  background: #000;
+  border-radius: 50%;
+  float: left;
+  top: .75rem;
+  margin-right: 0;
+  position: relative;
+  left: -1.5rem;
+  margin-right: 1.5rem;
+  padding: 0;
+}
+
+main ol a,
+main ul a {
+  display: inline-block;
+  vertical-align: top;
+}
+
+main ol ol,
+main ol ul,
+main ul ol,
+main ul ul {
+  margin-bottom: .5em;
+  padding-left: 1.5em;
+}
+
+main ol {
+  overflow: visible;
+  margin: 0;
+  margin-left: 2rem;
+  padding: 0;
+  color: transparent;
+  list-style-type: none;
+  counter-reset: li-counter;
+}
+
+main ol li {
+  position: relative;
+  overflow: visible;
+  color: initial;
+  list-style-type: none;
+  list-style-type: none;
+}
+
+main ol li::before {
+  position: absolute;
+  top: 0;
+  left: -2rem;
+  z-index: -99;
+  overflow: hidden;
+  background-color: #fff;
+  color: #000;
+  content: counter(li-counter);
+  counter-increment: li-counter;
+  text-align: right;
+  font-weight: bold;
+}
+
 footer {
   border-top: 1rem solid #ebf7eb;
   padding-top: 4rem;
