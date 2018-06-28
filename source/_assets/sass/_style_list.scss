@@ -131,3 +131,14 @@ main {
   //   list-style-type: disc;
   // }
 }
+
+main ul.list-group li {
+  text-indent: initial; 
+  padding-left: 1.25rem;
+    &:before { content: none;}
+}
+main ul.list-inline li {
+  text-indent: initial;
+  padding:0;
+  &:before { content: none;}
+}

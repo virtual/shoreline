@@ -31,9 +31,7 @@
       cursor: default;
     }
   }
-  li+li:before {
-    content: '>'
-  }
+ 
   ol.condensed {
     li:nth-of-type(10n+2),
     li:nth-of-type(10n+3),
@@ -49,15 +47,24 @@
     li:last-child {
       display: inline !important;
     }
-    li:after {
-      content: "..."
-    }
-    li:last-child:after {
-      content: ''
-    }
+    
   }
 }
-
+main .breadcrumb ol.condensed {
+  li:after {
+    content: "..."
+  }
+  li:last-child:after {
+    content: ''
+  }
+}
+main .breadcrumb ol {
+  margin-left:0;
+  li:before { content: none; padding:0; position: relative; left:auto;top:auto; font-weight: normal;}
+  li+li:before {
+    content: '>'
+  }
+} 
 .bg-primary,
 .breadcrumb.bg-primary {
   color: #fff;

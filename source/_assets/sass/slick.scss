@@ -1,6 +1,6 @@
 @import "variables";
 /* Slider */
-
+main .slick-slider ul li:before { content: none; }
 .slick-slider {
     position: relative;
     display: block;
@@ -20,6 +20,7 @@
     //max-height: 100vh;
     // flex-direction: row;
 }
+
 .slick-slider *{
   min-height: 0;
   min-width: 0;
