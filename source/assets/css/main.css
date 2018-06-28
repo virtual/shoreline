@@ -22,6 +22,10 @@ h6 {
   font-weight: 600;
 }
 
+h1, .h1, h2, .h2 {
+  color: #00685e;
+}
+
 h1, .h1 {
   line-height: 1.25;
   font-weight: 900;
@@ -297,6 +301,58 @@ h6, .h6 {
 
 .primary {
   color: #00685e;
+}
+
+.primary h1 {
+  color: #00685e;
+}
+
+.primary h2 {
+  color: #00685e;
+}
+
+.primary h3 {
+  color: #00685e;
+}
+
+.primary h4 {
+  color: #00685e;
+}
+
+.primary h5 {
+  color: #00685e;
+}
+
+.primary h6 {
+  color: #00685e;
+}
+
+.dark {
+  color: #000;
+}
+
+.dark h1 {
+  color: #000;
+}
+
+.dark h2 {
+  color: #000;
+}
+
+.dark h3 {
+  color: #000;
+}
+
+.dark h4 {
+  color: #000;
+}
+
+.dark h5 {
+  color: #000;
+}
+
+.dark h6 {
+  color: #000;
 }
 
 .more-arrow:after {

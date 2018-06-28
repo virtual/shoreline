@@ -88,26 +88,38 @@
       </ol>
     </div>
 
-<h1>Lorem ipsum dolor sit amet consectetuer adipiscing 
-    elit</h1>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing 
-    elit. Aenean commodo ligula eget dolor. Aenean massa 
+<h1>Default Header Colors</h1>
+    <p>Lorem  n commodo ligula eget dolor. Aenean massa 
     <strong>strong</strong>. Cum sociis natoque penatibus 
     et magnis dis  ede justo, fringilla vel, aliquet nec, 
     vulputate eget, arcu. In enim justo, rhoncus ut, 
     imperdiet a, venenatis vitae, justo. Nullam dictum 
     felis eu pede <a class="external ext" href="#">link</a> 
     mollis pretium. Integer tincidunt. Cras dapibus. 
-    Vivamus elementum semper nisi. Aenean vulputate 
-    eleifend tellus. Aenean leo ligula, porttitor eu, 
-    consequat vitae, eleifend ac t metus varius laoreet. Quisque rutrum. 
-    Aenean imperdiet. Etiam ultricies nisi vel augue. 
+    Vivamus ele  ultricies nisi vel augue. 
     Curabitur ullamcorper ultricies nisi.</p>
+     
+<h2>Aenean commodo <a href="#">link</a> ligula eget </h2>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing  
+montes, nascetur ridiculus mus. Donec quam felis, 
+ultricies nec, pellentesque eu, pretium quis, sem.</p> 
+<h3>Associate of Typography</h3>
+<p>Lorem ipsum dolor sit amet.</p>
+<h4>Associate of Typography</h4>
+<p>Lorem ipsum dolor sit amet.</p>
+<h5>Associate of Typography</h5>
+<p>Lorem ipsum dolor sit amet.</p>
+<h6>Associate of Typography</h6> 
+<p>Lorem ipsum dolor sit amet.</p>
+<p class="small">Default / Hover</p>
+<p>Stand out as a competitive applicant to four-year schools by
+<a href="#">graduating with Honors</a> on your transcript and diploma. Specialized seminars enhance the transfer process.</p>
+
+
 <div class="row py-3">
   <div class="col-md-4 col-12 py-3">
-    <div class="p-3">
-      <p class="small">Dark</p>
-
+    <div class="p-3 dark">
+      <p class="small">Dark</p> 
       @include('_partials.headers')
     </div>
   </div>

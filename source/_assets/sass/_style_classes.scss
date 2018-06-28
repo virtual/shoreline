@@ -1,4 +1,9 @@
-.primary { color: $primary; }
+.primary { color: $primary;
+  @include headings(1,6) { color: $primary; }
+}
+.dark { color: #000; 
+  @include headings(1,6) { color: #000; }
+}
 .more-arrow:after {
   content:" \2192";  
 } 
