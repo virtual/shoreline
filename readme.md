@@ -11,6 +11,7 @@
 
 ### Put on Github:
 
+- `rm -rf docs`
 - `npm run prod`
 - `npm run docs`
  

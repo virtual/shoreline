@@ -8,7 +8,7 @@
         "dev": "npm run local",
         "watch": "npm run local -- --watch",
         "watch-poll": "npm run watch -- --watch-poll",
-        "docs": "rm -rf docs && mv build_production docs"
+        "docs": "mv build_production docs"
     },
     "devDependencies": {
         "browser-sync": "^2.23.6",
