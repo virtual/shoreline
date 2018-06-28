@@ -15,8 +15,12 @@
     top: 0; left: 0;
     height: 100%; width: 100%;
     cursor:pointer;
-    opacity: 0;
+    opacity: 1;
+    text-indent: -9999px; // move text label off screen allowing for focus border
   } 
+  &>a:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 104, 94, 0.5);
+  }
 }
 .card.theme-secondary {
   border-top: 5px solid $secondary;
