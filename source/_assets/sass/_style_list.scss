@@ -1,35 +1,3 @@
-
-
-// ul li:before {
-//   content: "\2022";
-//   /* position: absolute; */
-//   left: -0.8em;
-//   font-size: 2em;
-//   /* top: auto; */
-//   height: 8px;
-//   width: 8px;
-//   display: inline-block;
-//   background: #000;
-//   border-radius: 50%;
-//   float: left;
-// // }
-// ul li:before {
-//   content: "";
-//   /* position: absolute; */
-//   left: -0.8em;
-//   font-size: 2em;
-//   /* top: auto; */
-//   height: 8px;
-//   width: 8px;
-//   display: inline-block;
-//   background: #000;
-//   border-radius: 50%;
-//   float: left;
-//   top: 8px;
-//   margin-right: 6px;
-//   position: relative;
-//   left: 0;
-// }
 main {
   ol, ul {
     li { margin-bottom: .75rem; margin-top: .75rem; }
@@ -169,6 +137,12 @@ main ul.list-inline li {
   padding:0;
   &:before { content: none;}
 }
+main ul, main ol {
+  &.list-def p {
+    font-size: 1.1875rem;
+    strong { font-size: 1.5rem; }
+  }
+}
 main ul.features {
   li:before {
     content: "";
@@ -187,4 +161,25 @@ main ul.features {
     background-image:url('../../resources/img/icons/list-check.svg');
     border-radius: 0; 
   }
+  
+  &.large-list {
+    
+    li {
+      padding-left: 2rem;
+      text-indent: -3.5rem;
+    }
+    li:before {
+      height: 1.5rem;
+      width: 1.5rem;
+      background-size: 1.5rem;
+      margin-right: 2rem;
+      left: -2rem;
+    }
+  }
+}
+.large-list {
+  font-size: 1.5rem;
+}
+main ol.large-list li:before {
+  color: $primary;
 }

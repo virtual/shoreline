@@ -6,6 +6,7 @@
         </li>
         <li><a class="nav-link" href="{{ $page->baseUrl }}/components/index.html">Components</a></li>
         <li><a class="nav-link" href="{{ $page->baseUrl }}/typography/index.html">Typography</a></li>
+        <li><a class="nav-link" href="{{ $page->baseUrl }}/lists/index.html">Lists</a></li>
       </ul> 
     </div>
   </nav>

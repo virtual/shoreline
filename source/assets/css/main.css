@@ -1172,6 +1172,14 @@ main ul.list-inline li:before {
   content: none;
 }
 
+main ul.list-def p, main ol.list-def p {
+  font-size: 1.1875rem;
+}
+
+main ul.list-def p strong, main ol.list-def p strong {
+  font-size: 1.5rem;
+}
+
 main ul.features li:before {
   content: "";
   font-size: 1em;
@@ -1188,6 +1196,27 @@ main ul.features li:before {
   width: 1rem;
   background-image: url("../../resources/img/icons/list-check.svg");
   border-radius: 0;
+}
+
+main ul.features.large-list li {
+  padding-left: 2rem;
+  text-indent: -3.5rem;
+}
+
+main ul.features.large-list li:before {
+  height: 1.5rem;
+  width: 1.5rem;
+  background-size: 1.5rem;
+  margin-right: 2rem;
+  left: -2rem;
+}
+
+.large-list {
+  font-size: 1.5rem;
+}
+
+main ol.large-list li:before {
+  color: #00685e;
 }
 
 footer {
