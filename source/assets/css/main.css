@@ -1488,7 +1488,6 @@ header h1 {
 .megamenu li {
   display: block;
   color: #00685e;
-  background: inherit;
   width: 100%;
 }
 
@@ -1499,16 +1498,8 @@ header h1 {
   padding: 10px 15px;
 }
 
-.megamenu li.dropdown:hover > a,
-.megamenu li.dropdown.show > a {
-  background: #00685e;
-  color: #fff;
-  text-decoration: none;
-}
-
 .megamenu .dropdown-menu {
   color: inherit;
-  background: #00685e;
 }
 
 .megamenu .dropdown-menu a {
@@ -1667,6 +1658,12 @@ header h1 {
   .megamenu li .nav-link {
     padding: 10px 8px;
   }
+  .megamenu li.dropdown:hover > a,
+  .megamenu li.dropdown.show > a {
+    background: #00685e;
+    color: #fff;
+    text-decoration: none;
+  }
   .megamenu .dropdown-menu {
     margin-top: -2px;
   }
@@ -1721,9 +1718,6 @@ header h1 {
   .navmenu ul li a {
     text-align: left;
   }
-  .megamenu li.dropdown > a {
-    background: #008275;
-  }
   .megamenu .dropdown-toggle-split {
     position: absolute;
     top: 0;
@@ -1737,7 +1731,6 @@ header h1 {
   #navbarCollapse > ul > li > a,
   #navbarCollapse > div > ul > li > a {
     position: relative;
-    text-transform: uppercase;
   }
   .searchform-mobile {
     margin-bottom: 1rem;
@@ -1753,9 +1746,6 @@ header h1 {
         -ms-flex: 1;
             flex: 1;
     margin-bottom: 0;
-  }
-  .searchform-mobile input.form-control {
-    width: 100%;
   }
   .searchform-mobile button.searchicon.btn.btn-primary {
     background: rgba(0, 0, 0, 0.2);

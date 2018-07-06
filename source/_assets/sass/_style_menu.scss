@@ -95,8 +95,7 @@ header h1 {
   }
   li {
     display: block;
-    color: $primary;
-    background: inherit;
+    color: $primary; 
     width: 100%;
     a,
     .nav-link {
@@ -105,15 +104,9 @@ header h1 {
       padding: 10px 15px;
     }
   }
-  li.dropdown:hover>a,
-  li.dropdown.show>a {
-    background: $primary;
-    color:#fff;
-    text-decoration: none;
-  }
+ 
   .dropdown-menu {
-    color: inherit;
-    background: $primary;
+    color: inherit;  
     a {
       color: inherit;
       display: block;
@@ -249,10 +242,17 @@ header h1 {
         padding: 10px 8px
       }
     }
+    li.dropdown:hover>a,
+    li.dropdown.show>a {
+    background: $primary;
+    color:#fff;
+    text-decoration: none;
+    }
     .dropdown-menu {
       margin-top: -2px;
     }
   }
+
 }
 
 @media (min-width: 840px) {
@@ -306,7 +306,7 @@ header h1 {
     text-align: left;
   }
   .megamenu li.dropdown>a {
-    background: lighten($primary, 5)
+    // background: lighten($primary, 5)
   }
   .megamenu .dropdown-toggle-split {
     //float:right;    
@@ -322,8 +322,7 @@ header h1 {
   }
   #navbarCollapse>ul>li>a,
   #navbarCollapse>div>ul>li>a {
-    position: relative;
-    text-transform: uppercase;
+    position: relative; 
   }
   .searchform-mobile {
     margin-bottom: 1rem;
@@ -334,10 +333,7 @@ header h1 {
     label {
       flex: 1;
       margin-bottom: 0;
-    }
-    input.form-control {
-      width: 100%;
-    }
+    } 
     button.searchicon.btn.btn-primary {
       background: rgba(0, 0, 0, 0.2);
       border: 1px solid rgba(255, 255, 255, 0.2);
