@@ -1,84 +1,3 @@
-header h1 {
-  margin: 0;
-}
-
-.navbar-brand {
-  line-height: 1.2rem;
-  padding: 25px 10px 25px 0;
-  font-family: Georgia;
-  font-size: 24px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: -0.6px;
-  text-align: center;
-  
-  color: $primary;
-  
-
-  small { clear:both;display:block;
-    font-family: $font-family-sans-serif;
-  font-size: 9px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: -.01rem;
-  
-  text-transform: uppercase;
-  text-align: center;
-  color: #016c68;}
-} 
-.navmenu a.navbar-brand {
-  color: $primary;
-}
-
-.navbar-brand img {
-  max-width: 200px;
-  height: auto;
-}
-
-.navbar-brand>.fa,
-.navbar-brand>.fas {
-  float: left;
-  font-size: 36px;
-  padding: 0 3px 0 0
-}
-
-.navbar {
-  padding: 0;
-}
-
-.navmenu .navbar-brand { 
-  padding: 8px 0;
-  img {
-    width: 75px;
-  }
-}
-.quicklinks:first-of-type {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-.quicklinks {
-  
-  font-size: .8125rem;  
-  position: relative; 
-  border-bottom:  1px solid rgba(0, 0, 0, 0.1);
-  
-  a.btn-important { color:#fff; min-width: 97px; padding: .5rem; font-size: inherit; text-align: center;}
-}
-.megamenu .quicklinks li {
-  display: inline-block;
-  width: auto;
-}
-.megamenu .quicklinks li a {
-  color: $text-dark;
-  // display:inline-block;
-  strong { color: $primary;}
-  &.btn-important { color:#fff; }
-}
-.quicklinks.list-2 { padding: 1.1875rem 0; }
-
 .navmenu {
   a {
     padding: 5px 10px;
@@ -113,7 +32,7 @@ header h1 {
   }
   li {
     display: block;
-    color: $primary; 
+    color: $primary;
     width: 100%;
     a,
     .nav-link {
@@ -122,9 +41,10 @@ header h1 {
       padding: 10px 15px;
     }
   }
- 
   .dropdown-menu {
-    color: inherit;  
+    color: inherit;
+    padding: 0;
+    border: 0;
     a {
       color: inherit;
       display: block;
@@ -134,11 +54,6 @@ header h1 {
       background: lighten($primary, 13);
       text-decoration: none;
     }
-  }
-  .dropdown-menu {
-    // display: none !important; 
-    padding: 0;
-    border: 0;
   }
   .dropdown.show .dropdown-menu {
     display: block !important;
@@ -167,28 +82,14 @@ header h1 {
   width: 80%;
   margin-bottom: 0;
 }
- 
 
-@media (min-width: $screen-md) {
+@media (min-width: $screen-lg) {
+  .megamenu .dropdown .dropdown-menu {
+    width: 220px;
+  }
   li.dropdown:last-child .dropdown-menu {
     right: 0;
     left: auto;
-  }
-  .searchbox input.form-control {
-    display: none;
-  }
-  #searchCollapse.navbar-collapse {
-    display: none !important;
-  }
-  .searchbox .btn {
-    background-color: transparent;
-    color: $primary;
-    border: 0;
-    border-radius: 0;
-  }
-  .searchbox.active .btn {
-    background: $primary;
-    color: #fff
   }
   .megamenu {
     .dropdown-menu {
@@ -205,38 +106,6 @@ header h1 {
   ul.navbar-nav.ml-auto {
     justify-content: flex-end;
     flex-wrap: wrap;
-  }
-  .search-container,
-  .navbar-container {
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }
-  .search-container {
-    max-width: 128px;
-    padding: 0 .5rem
-  }
-  .header-actions {
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-  }
-  .navbar-container {
-    ul {
-      display: flex;
-      margin: 0;
-      justify-content: flex-end;
-      flex-wrap: wrap;
-    }
-  }
-  .searchbox input.form-control {
-    position: absolute;
-    top: -1px;
-    right: 0;
-    width: 200px;
-  }
-  .searchbox .input-group-append {
-    margin-left: -1px;
-    position: relative;
-    z-index: 5;
   }
   ul.distributed {
     display: flex;
@@ -266,36 +135,24 @@ header h1 {
     }
     li.dropdown:hover>a,
     li.dropdown.show>a {
-    background: $primary;
-    color:#fff;
-    text-decoration: none;
+      background: $primary;
+      color: #fff;
+      text-decoration: none;
     }
     .dropdown-menu {
       margin-top: -2px;
     }
   }
-  .quicklinks, .quicklinks.list-2 {
-    border-bottom: 0; 
-    padding:0;
-    
+  .dropdown:hover>.dropdown-menu {
+    display: block;
   }
-  .header-actions {padding-top: 22px; padding-bottom: 22px; 
-    .has-button, .search-container  { top: -.25rem; position: relative;}
+  .dropdown-toggle-split {
+    transform: rotate(0);
+    display: none; // or try something different if needed for SR? hides arrow toggles
   }
-  .quicklinks:first-of-type {
-    border-top:0;
-    a { color: $link-blue;}
-  } 
-  .navmenu .quicklinks a strong { color:$primary}
-  .navbar.utility-wrapper { align-items: flex-start; }
-  .navbar-brand { padding-top:42px;}
 }
 
-@media (min-width: 840px) {
-  .megamenu {
-    font-size: 1.1rem;
-  }
-}
+ 
 
 @media (min-width: $screen-lg) {
   .megamenu {
@@ -312,7 +169,7 @@ header h1 {
   }
 }
 
-@media (max-width: $screen-md - 1) {
+@media (max-width: $screen-lg - 1) {
   .dropdown .dropdown-menu {
     float: none !important;
     position: relative !important;
@@ -321,32 +178,10 @@ header h1 {
   .megamenu .dropdown .dropdown-menu a {
     padding-left: 25px;
   }
-  .navbar-collapse .search-container,
-  .navbar-collapse .search-container .searchbox,
-  .form-inline {
-    display: block !important;
-    position: relative;
-    clear: both;
-    color: #fff;
-  }
-  .col-sm-9.d-flex.header-actions {
-    display: block !important;
-  }
-  .searchbox .btn {
-    color: #fff;
-  }
-  .navbar-nav {
-    display: block;
-  }
   .navmenu ul li a {
     text-align: left;
   }
-  .megamenu li.dropdown>a {
-    // background: lighten($primary, 5)
-  }
   .megamenu .dropdown-toggle-split {
-    //float:right;    
-    //border: 1px solid #fff;
     position: absolute;
     top: 0;
     right: 0;
@@ -358,26 +193,7 @@ header h1 {
   }
   #navbarCollapse>ul>li>a,
   #navbarCollapse>div>ul>li>a {
-    position: relative; 
-  }
-  .searchform-mobile {
-    margin-bottom: 1rem;
-    .form-inline .input-group {
-      width: 100%;
-      display: flex;
-    }
-    label {
-      flex: 1;
-      margin-bottom: 0;
-    } 
-    button.searchicon.btn.btn-primary {
-      background: rgba(0, 0, 0, 0.2);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-    }
-    p a {
-      color: #fff;
-      padding: .5rem;
-    }
+    position: relative;
   }
 }
 
@@ -394,17 +210,3 @@ header h1 {
 .dropdown.show .dropdown-toggle-split {
   transform: rotate(0);
 }
-
-@media (min-width: $screen-md) {
-  .searchicon .fa-search {
-    display: none;
-  }
-  .dropdown:hover>.dropdown-menu {
-    display: block;
-  }
-  .dropdown-toggle-split {
-    transform: rotate(0);
-    display: none; // or try something different if needed for SR? hides arrow toggles
-  }
-}
-

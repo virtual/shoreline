@@ -1,7 +1,7 @@
-<nav class="nav nav-underline megamenu navbar-expand-md navmenu">
+<nav class="nav nav-underline megamenu navbar-expand-lg navmenu">
     <h2 class="sr-only">Navigation</h2>
     <div class="container-fluid">
-      <div class="d-flex d-block d-md-none justify-content-between">
+      <div class="d-flex d-block d-lg-none justify-content-between">
         
         <button class="navbar-toggler primary" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
           aria-expanded="false" aria-label="Toggle navigation">
@@ -132,7 +132,7 @@
             </div>
           </li> 
         </ul>
-        <div class="d-block d-md-none"> 
+        <div class="d-block d-lg-none"> 
           @include ('_partials.quicklinks') 
         </div>
       </div>

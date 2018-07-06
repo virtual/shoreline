@@ -4,7 +4,7 @@
   </div>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-3 header-logo d-none d-md-block">
+      <div class="col-lg-3 header-logo d-none d-lg-block">
 
         @if (trim($__env->yieldContent('homepage')))
         <!-- H1 on homepage only -->
@@ -22,8 +22,8 @@
         @endif
 
       </div>
-      <div class="col-md-9">
-        <div class="header-actions d-none d-md-flex">
+      <div class="col-lg-9">
+        <div class="header-actions d-none d-lg-flex">
         <div class="navbar-container">
 
           <nav class="navbar navbar-expand-sm navmenu utility-wrapper" role="navigation" aria-label="Ancillary Navigation">
