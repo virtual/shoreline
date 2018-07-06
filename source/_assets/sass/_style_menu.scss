@@ -5,6 +5,33 @@ header h1 {
 .navbar-brand {
   line-height: 1.2rem;
   padding: 25px 10px 25px 0;
+  font-family: Georgia;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.6px;
+  text-align: center;
+  
+  color: $primary;
+  
+
+  small { clear:both;display:block;
+    font-family: $font-family-sans-serif;
+  font-size: 9px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -.01rem;
+  
+  text-transform: uppercase;
+  text-align: center;
+  color: #016c68;}
+} 
+.navmenu a.navbar-brand {
+  color: $primary;
 }
 
 .navbar-brand img {
@@ -23,8 +50,7 @@ header h1 {
   padding: 0;
 }
 
-.navmenu .navbar-brand {
-  float: right;
+.navmenu .navbar-brand { 
   padding: 8px 0;
   img {
     width: 75px;
@@ -130,6 +156,7 @@ header h1 {
   width: 80%;
   margin-bottom: 0;
 }
+ 
 
 @media (min-width: $screen-md) {
   li.dropdown:last-child .dropdown-menu {
@@ -347,3 +374,4 @@ header h1 {
     transform: rotate(0);
   }
 }
+

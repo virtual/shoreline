@@ -32,15 +32,16 @@
         <div class="search-container ">
           @include ('_partials.searchform')
         </div>
-        
-      <div class="row">
+
+        <div class="row">
           <div class="col-12">
-    
-              @include ('_partials.menu') 
+
+            
           </div>
         </div>
       </div>
     </div>
-
+    
   </div>
+  @include ('_partials.menu')
 </header>

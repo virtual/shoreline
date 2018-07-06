@@ -1,20 +1,21 @@
 <nav class="nav nav-underline megamenu navbar-expand-md navmenu">
     <h2 class="sr-only">Navigation</h2>
     <div class="container-fluid">
-      <a class="navbar-brand d-block d-md-none" href="/">
-        <img src="images/acc-logo-inverse.png" alt="Alvin Community College" />
-        <span class="sr-only">Alvin Community College</span>
-      </a>
-      <button class="navbar-toggler text-light" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span aria-hidden="true" class="fas fa-bars"></span> Menu
-      </button>
-
-      <button class="navbar-toggler text-light" type="button" data-toggle="collapse" data-target="#searchCollapse" aria-controls="searchCollapse"
-        aria-expanded="false" aria-label="Toggle search">
-        <span aria-hidden="true" class="fas fa-search"></span>
-        <span class="sr-only">Search</span>
-      </button>
+      <div class="d-flex d-block d-md-none justify-content-between">
+        
+        <button class="navbar-toggler primary" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span aria-hidden="true" class="fas fa-bars"></span> Menu
+        </button>
+        <a class="navbar-brand" href="/">
+          Shoreline <small>Community College</small>
+        </a>
+        <button class="navbar-toggler primary" type="button" data-toggle="collapse" data-target="#searchCollapse" aria-controls="searchCollapse"
+          aria-expanded="false" aria-label="Toggle search">
+          <span aria-hidden="true" class="fas fa-search"></span>
+          <span class="sr-only">Search</span>
+        </button>
+      </div>
       <div class="collapse navbar-collapse" id="searchCollapse">
         <div class="container">
           <div class="searchform-mobile">
