@@ -2,9 +2,9 @@
   <div id="skiptocontent">
     <a href="#maincontent" title="Skip Main Navigation">Skip Main Navigation</a>
   </div>
-  <div class="container-fluid d-none d-md-block">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-3 header-logo">
+      <div class="col-sm-3 header-logo d-none d-md-block">
 
         @if (trim($__env->yieldContent('homepage')))
         <!-- H1 on homepage only -->
@@ -22,7 +22,8 @@
         @endif
 
       </div>
-      <div class="col-md-9 header-actions d-flex">
+      <div class="col-md-9">
+        <div class="header-actions d-none d-md-flex">
         <div class="navbar-container">
 
           <nav class="navbar navbar-expand-sm navmenu utility-wrapper" role="navigation" aria-label="Ancillary Navigation">
@@ -32,10 +33,11 @@
         <div class="search-container ">
           @include ('_partials.searchform')
         </div>
+      </div>
 
+      @include ('_partials.menu')
       </div>
     </div>
     
   </div>
-  @include ('_partials.menu')
 </header>

@@ -35,7 +35,7 @@ header h1 {
 }
 
 .navbar-brand img {
-  max-width: 150px;
+  max-width: 200px;
   height: auto;
 }
 
@@ -277,14 +277,18 @@ header h1 {
   .quicklinks, .quicklinks.list-2 {
     border-bottom: 0; 
     padding:0;
+    
   }
-  .header-actions {padding-top: 22px; }
+  .header-actions {padding-top: 22px; padding-bottom: 22px; 
+    .has-button, .search-container  { top: -.25rem; position: relative;}
+  }
   .quicklinks:first-of-type {
     border-top:0;
     a { color: $link-blue;}
   } 
   .navmenu .quicklinks a strong { color:$primary}
   .navbar.utility-wrapper { align-items: flex-start; }
+  .navbar-brand { padding-top:42px;}
 }
 
 @media (min-width: 840px) {
@@ -400,6 +404,7 @@ header h1 {
   }
   .dropdown-toggle-split {
     transform: rotate(0);
+    display: none; // or try something different if needed for SR? hides arrow toggles
   }
 }
 

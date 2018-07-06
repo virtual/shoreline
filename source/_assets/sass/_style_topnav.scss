@@ -1,8 +1,8 @@
 .topnav {
-  font-size: .8rem;
-  background-color: #002824; 
+  background-color: #0c2321; 
   ul, li { list-style: none; display: inline-block; margin:0; padding:0;}
-  a { text-decoration: none; }
+  a { text-decoration: none; 
+    font-size: .8rem;}
   .nav-link { display:inline-block; color:#fff; padding: .5rem; }
 }
 #skiptocontent a {
