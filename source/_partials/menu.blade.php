@@ -132,20 +132,8 @@
             </div>
           </li> 
         </ul>
-        <div class="d-block d-md-none">
-          <ul>
-            <li class="dropdown">
-              <a href="#">Quick Access
-                <span role="link" class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <span class="sr-only">Toggle Dropdown</span>
-                </span>
-              </a>
-              <div class="dropdown-menu">
-                @include ('_partials.quicklinks')
-              </div>
-            </li>
-          </ul>
-
+        <div class="d-block d-md-none"> 
+          @include ('_partials.quicklinks') 
         </div>
       </div>
     </div>

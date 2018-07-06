@@ -1446,10 +1446,14 @@ header h1 {
   width: 75px;
 }
 
+.quicklinks:first-of-type {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .quicklinks {
   font-size: .8125rem;
   position: relative;
-  padding-top: 22px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .quicklinks a.btn-important {
@@ -1457,6 +1461,28 @@ header h1 {
   min-width: 97px;
   padding: .5rem;
   font-size: inherit;
+  text-align: center;
+}
+
+.megamenu .quicklinks li {
+  display: inline-block;
+  width: auto;
+}
+
+.megamenu .quicklinks li a {
+  color: #444;
+}
+
+.megamenu .quicklinks li a strong {
+  color: #00685e;
+}
+
+.megamenu .quicklinks li a.btn-important {
+  color: #fff;
+}
+
+.quicklinks.list-2 {
+  padding: 1.1875rem 0;
 }
 
 .navmenu a {
@@ -1602,6 +1628,10 @@ header h1 {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
+  .search-container {
+    max-width: 128px;
+    padding: 0 .5rem;
+  }
   .header-actions {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -1675,6 +1705,27 @@ header h1 {
   }
   .megamenu .dropdown-menu {
     margin-top: -2px;
+  }
+  .quicklinks, .quicklinks.list-2 {
+    border-bottom: 0;
+    padding: 0;
+  }
+  .header-actions {
+    padding-top: 22px;
+  }
+  .quicklinks:first-of-type {
+    border-top: 0;
+  }
+  .quicklinks:first-of-type a {
+    color: #0074b3;
+  }
+  .navmenu .quicklinks a strong {
+    color: #00685e;
+  }
+  .navbar.utility-wrapper {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
