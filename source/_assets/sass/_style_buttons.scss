@@ -21,7 +21,7 @@ a.btn { text-decoration: none; }
 .btn-block:first-child { margin-top: 1.1875rem; }
 .btn-block:last-child { margin-bottom: 1.1875rem; }
 
-.btn-important {
+.btn-important, a.btn-important {
   background-color: $btn-important;
   color: set-text-color($btn-important);
   &:hover {

@@ -4,23 +4,34 @@
   padding-bottom: 4rem;
   font-size: 1rem; 
   color: $text-dark;
-  a { color: inherit; }
+  text-align:center;
+  .footer-column-1 { display:none;}
+  .footer-column-1 a { color: inherit; }
   p, a, dl, ul, ol { font-size: inherit;}
   .footer-logo {
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     display: block;
-    img { width: auto; height: 50px; }
+    img { width: auto; max-height: 50px;  }
   } 
   .links { 
     a { color: $link-blue; }
     ul {
       list-style: none; 
+      padding:0;
     }
     li {
       line-height: 1rem;
       padding-bottom: .5rem;
     }
     li + li {padding-top: .5rem;}
+  }
+}
+@media (min-width: $screen-md) {
+  #footer footer { text-align: left; 
+    .footer-logo {
+      margin-bottom: 1rem;
+    }
+  .footer-column-1 { display:block;}
   }
 }
 
