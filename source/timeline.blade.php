@@ -53,7 +53,7 @@
 
         @include('_partials.timelinelist', [
         'heading' => 'Implement code on test server (Sept 24–28)',
-        'desc' => "Update page design and template files. Update snippets to function similarily on new framework.
+        'desc' => "Update page design and template files. Update snippets to function similarly on new framework.
         ",
         'id' => '5', 
         'img' => ''
@@ -93,28 +93,7 @@
         'img' => ''
         ])
   </div>
-  <!-- 
-    •	General Tentative Timelines discussed. 
-o	Now until March 23rd, 2018:  ACC works internally on Final PSD designs.
-o	March 23rd - April 30th, 2018:  HMTL Source Code created by OU Design partner (*Actual timeline may vary depending upon complexity of PSD designs, behavior of design code requested, etc.)
-o	May 1st - May 15th, 2018:   
-	All HTML design files review and analyzed by OU and verified to be functioning as expected, plus W3C and Accessibility Compliant.
-	Functional Specification meeting(s) via webex take place to go through all elements in each page type to define the development plan for developers for each template page type.
-o	May 16th - July 16th, 2018:  All development completed and delivered to ACC team for UAT.
-o	July 17th - July 24th, 2018:  ACC performs all required UAT (User Acceptance Testing) and reports any issues, bugs, questions, or requests back to OU.
-o	July 24th - July 31st, 2018:  OU Dev addresses all UAT feedback by ACC.
-o	Aug 1st - Aug 7th, 2018:  ACC verifies all UAT addressed, any additional UAT addressed by OU dev.
-o	Aug 8th - Aug 10th, 2018:  All Templates signed off by ACC, Sample Migration uploaded for ACC team to review and perform UAT on migrated content.
-o	Aug 11 - Aug 18th, 2018:  ACC performs all required UAT (User Acceptance Testing) and reports any issues, bugs, questions, or requests back to OU.
-o	Aug 19th - Aug 26st, 2018:  OU Dev addresses all UAT feedback by ACC.
-o	Aug 26th - Aug 31st, 2018:  ACC verifies all UAT addressed, any additional UAT addressed by OU dev. 
-	*All development completed by OU.
-o	September 1st, 2018:  ACC team to begin all post-migration clean up, build out of new content, adding additional content using new components built from new design.
-o	???? - Go-Live:  Ultimate Go-Live date is highly dependent on all milestones being met.  Some key milestones that can delay or compress the tentative timelines noted above and discussed on the call are: 
-	Design files - both delivery of PSD files, and ultimate HTML source code files.
-	Availability for ACC team to quickly perform all required UAT, and follow up checks.
 
-   -->
 @endsection
 
 
