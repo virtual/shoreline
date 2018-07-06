@@ -50,7 +50,7 @@
     
   }
 }
-main .breadcrumb ol.condensed {
+.breadcrumb ol.condensed {
   li:after {
     content: "..."
   }
@@ -58,15 +58,28 @@ main .breadcrumb ol.condensed {
     content: ''
   }
 }
-main .breadcrumb ol {
+.breadcrumb ol a { display: inline-block; vertical-align: top; }
+.breadcrumb ol li {
+  margin: auto;
+}
+.breadcrumb ol {
   margin-left:0;
   li:before { content: none; padding:0; position: relative; left:auto;top:auto; font-weight: normal;}
   li+li:before {
-    content: '>'
+    // content: '>';
+    content: '\f054';
+    font-family: $font-awesome;
+    display: inline-block;
+    text-align: center;
+    padding: .1rem .25rem;
+    font-weight: 900;
+    font-size: .625rem;
+    opacity: .7;
+    margin-top:.1rem;
   }
 } 
 .bg-primary,
-.breadcrumb.bg-primary {
+.bg-primary .breadcrumb {
   color: #fff;
   li a {
     text-shadow: none;
@@ -74,6 +87,6 @@ main .breadcrumb ol {
   }
   li a.active {
     color: inherit;
-    font-weight: normal
+    font-weight: bold;
   }
 }

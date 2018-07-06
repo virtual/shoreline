@@ -64,7 +64,14 @@
     </div>
     @endif
 
-
+    @if (trim($__env->yieldContent('content-header'))) 
+      <div class="bg-primary py-3">
+          <div class="container-fluid">
+      @yield('content-header') 
+      </div>
+    </div>
+    @endif
+      
     <main id="interior">
       <div class="padded content-section ">
         <div class="container-fluid">

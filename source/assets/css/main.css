@@ -795,19 +795,28 @@ dl.list-inline [class*="icon-bg-"].icon-bg-trophy-board:before {
   display: inline !important;
 }
 
-main .breadcrumb ol.condensed li:after {
+.breadcrumb ol.condensed li:after {
   content: "...";
 }
 
-main .breadcrumb ol.condensed li:last-child:after {
+.breadcrumb ol.condensed li:last-child:after {
   content: '';
 }
 
-main .breadcrumb ol {
+.breadcrumb ol a {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.breadcrumb ol li {
+  margin: auto;
+}
+
+.breadcrumb ol {
   margin-left: 0;
 }
 
-main .breadcrumb ol li:before {
+.breadcrumb ol li:before {
   content: none;
   padding: 0;
   position: relative;
@@ -816,25 +825,33 @@ main .breadcrumb ol li:before {
   font-weight: normal;
 }
 
-main .breadcrumb ol li + li:before {
-  content: '>';
+.breadcrumb ol li + li:before {
+  content: '\F054';
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  text-align: center;
+  padding: .1rem .25rem;
+  font-weight: 900;
+  font-size: .625rem;
+  opacity: .7;
+  margin-top: .1rem;
 }
 
 .bg-primary,
-.breadcrumb.bg-primary {
+.bg-primary .breadcrumb {
   color: #fff;
 }
 
 .bg-primary li a,
-.breadcrumb.bg-primary li a {
+.bg-primary .breadcrumb li a {
   text-shadow: none;
   background-image: none;
 }
 
 .bg-primary li a.active,
-.breadcrumb.bg-primary li a.active {
+.bg-primary .breadcrumb li a.active {
   color: inherit;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .alert {
