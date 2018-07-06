@@ -20,9 +20,6 @@
         <div class="container">
           <div class="searchform-mobile">
             @include ('_partials.searchform')
-            <p>
-              <a href="#">or click to browse our sitemap</a>
-            </p>
           </div>
 
         </div>
@@ -138,7 +135,7 @@
         <div class="d-block d-md-none">
           <ul>
             <li class="dropdown">
-              <a href="http://www.alvincollege.edu/">Quick Access
+              <a href="#">Quick Access
                 <span role="link" class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <span class="sr-only">Toggle Dropdown</span>
                 </span>

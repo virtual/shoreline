@@ -22,7 +22,7 @@
         @endif
 
       </div>
-      <div class="col-md-9 header-actions">
+      <div class="col-md-9 header-actions d-flex">
         <div class="navbar-container">
 
           <nav class="navbar navbar-expand-sm navmenu utility-wrapper" role="navigation" aria-label="Ancillary Navigation">
@@ -33,12 +33,6 @@
           @include ('_partials.searchform')
         </div>
 
-        <div class="row">
-          <div class="col-12">
-
-            
-          </div>
-        </div>
       </div>
     </div>
     

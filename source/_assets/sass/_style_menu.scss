@@ -58,7 +58,11 @@ header h1 {
 }
 
 .quicklinks {
-  font-size: .9rem;
+  font-size: .8125rem;  
+  position: relative;
+  padding-top: 22px;
+  a.btn-important { color:#fff; min-width: 97px; padding: .5rem; font-size: inherit;}
+
 }
 
 .navmenu {
