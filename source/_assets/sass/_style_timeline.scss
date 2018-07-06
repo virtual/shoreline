@@ -1,0 +1,158 @@
+.timeline {
+  position: relative;
+  width: 100%; 
+  position: relative;
+  padding: 0 0 60px 0;
+  margin-top: 0;
+  margin-top: 4px; 
+  &:after { clear:both; content:""; display:table;  }
+  .photoholder {
+    position: absolute;
+    right: 0;
+    display: none;
+  }
+
+  .collapse.in .photoholder {
+    float: right;
+    width: 30%;
+    padding: 0px 10px;
+    display: block;
+  }
+
+  .panel {
+    width: 100%;
+  }
+
+  .panel-collapse {
+    width: 70%;
+  }
+
+  .photoholder img {
+    width: 100%;
+    height: auto;
+  }
+
+  .glyphicon.glyphicon-one-fine-dot:before {
+    content: "\25cf";
+    font-size: 1.5em;
+    color: #0074b3;
+  }
+
+  .line {
+    position: absolute;
+    width: 2px;
+    display: block;
+    top: 32px;
+    bottom: 0px;
+    margin-left: 30px;
+    background: #0074b3;
+  }
+
+  .separator {
+    border-top: 1px solid #0074b3;
+    padding: 5px;
+    padding-left: 40px;
+    font-style: italic;
+    font-size: 0.9em;
+    margin-left: 30px;
+  }
+
+  .line::before {
+    top: -2px;
+  }
+
+  .line::after {
+    bottom: -2px;
+  }
+
+  .line::before,
+  .line::after {
+    content: "";
+    position: absolute;
+    left: -6px;
+    width: 0;
+    height: 0;
+    display: block;
+    border-radius: 50%;
+    background: #0074b3;
+  }
+
+  .panel {
+    position: relative;
+    margin: 10px 0px 0px 40px;
+    clear: both;
+    margin: 0 auto;
+    padding: 10px 0px 0 40px;
+    background: none;
+  }
+
+  .panel::before {
+    position: absolute;
+    display: block;
+    top: 8px;
+    left: -24px;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: inherit;
+    border-width: 12px;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+
+  .panel .panel-heading.icon * {
+    font-size: 14px;
+    vertical-align: middle;
+    line-height: 40px;
+  }
+
+  .panel > .panel-heading .icon {
+    position: absolute;
+    left: 11px;
+    /*display: block;*/
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    border-radius: 50%;
+    text-align: center;
+    float: left;
+  }
+
+  .panel-outline {
+    border-color: transparent;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .panel-outline .panel-body {
+    padding: 10px .5rem;
+  }
+
+  .panel-default {
+    border: 0;
+  }
+
+  .panel-default > .panel-heading {
+    font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: 0;
+    background: none;
+    font-weight: 400;
+  }
+
+  .panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border-top: 0;
+    padding-top: 0;
+    border-bottom: 0;
+  }
+
+  h4.panel-title { 
+    border: 0;
+    padding-top:.5rem; 
+  }
+
+  .panel {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
