@@ -1,0 +1,349 @@
+header h1 {
+  margin: 0;
+}
+
+.navbar-brand {
+  line-height: 1.2rem;
+  padding: 25px 10px 25px 0;
+}
+
+.navbar-brand img {
+  max-width: 150px;
+  height: auto;
+}
+
+.navbar-brand>.fa,
+.navbar-brand>.fas {
+  float: left;
+  font-size: 36px;
+  padding: 0 3px 0 0
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navmenu .navbar-brand {
+  float: right;
+  padding: 8px 0;
+  img {
+    width: 75px;
+  }
+}
+
+.quicklinks {
+  font-size: .9rem;
+}
+
+.navmenu {
+  a {
+    padding: 5px 10px;
+    color: #000;
+    text-align: center;
+    display: block;
+  }
+  .dropdown-menu a {
+    text-align: left;
+  }
+  .nav-link {
+    color: darken($primary, 10)
+  }
+}
+
+.navbar-toggler {
+  text-align: left;
+  padding-top: 15px;
+  padding-bottom: 15px
+}
+
+.megamenu {
+  position: relative;
+  z-index: 10;
+  color: $primary;
+  font-size: 1.1rem;
+  ul,
+  div {
+    margin-bottom: 0;
+    background: inherit;
+    padding-left: 0;
+  }
+  li {
+    display: block;
+    color: $primary;
+    background: inherit;
+    width: 100%;
+    a,
+    .nav-link {
+      color: $primary;
+      display: block;
+      padding: 10px 15px;
+    }
+  }
+  li.dropdown:hover>a,
+  li.dropdown.show>a {
+    background: $primary;
+    color:#fff;
+    text-decoration: none;
+  }
+  .dropdown-menu {
+    color: inherit;
+    background: $primary;
+    a {
+      color: inherit;
+      display: block;
+      padding: 5px 15px;
+    }
+    a:hover {
+      background: lighten($primary, 13);
+      text-decoration: none;
+    }
+  }
+  .dropdown-menu {
+    // display: none !important; 
+    padding: 0;
+    border: 0;
+  }
+  .dropdown.show .dropdown-menu {
+    display: block !important;
+  }
+  .dropdown .dropdown-menu {
+    border-radius: 0;
+    width: 100%;
+    a {
+      padding-left: 15px;
+    }
+  }
+}
+
+#searchCollapse .container {
+  padding-left: 15px;
+}
+
+#searchCollapse p {
+  padding: .5rem;
+  margin: 0;
+  font-size: .8rem;
+}
+
+.searchform-mobile label {
+  display: block;
+  width: 80%;
+  margin-bottom: 0;
+}
+
+@media (min-width: $screen-md) {
+  li.dropdown:last-child .dropdown-menu {
+    right: 0;
+    left: auto;
+  }
+  .searchbox input.form-control {
+    display: none;
+  }
+  #searchCollapse.navbar-collapse {
+    display: none !important;
+  }
+  .searchbox .btn {
+    background-color: transparent;
+    color: $primary;
+    border: 0;
+    border-radius: 0;
+  }
+  .searchbox.active .btn {
+    background: $primary;
+    color: #fff
+  }
+  .megamenu {
+    .dropdown-menu {
+      background: $light;
+      a:hover {
+        background: darken($light, 5);
+      }
+    }
+    li.dropdown>a {
+      padding-right: 1.5rem !important;
+      position: relative;
+    }
+  }
+  ul.navbar-nav.ml-auto {
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+  .search-container,
+  .navbar-container {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .header-actions {
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+  }
+  .navbar-container {
+    ul {
+      display: flex;
+      margin: 0;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+    }
+  }
+  .searchbox input.form-control {
+    position: absolute;
+    top: -1px;
+    right: 0;
+    width: 200px;
+  }
+  .searchbox .input-group-append {
+    margin-left: -1px;
+    position: relative;
+    z-index: 5;
+  }
+  ul.distributed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    li {
+      flex: auto;
+      flex-grow: 1;
+    }
+  }
+  .dropdown-toggle.dropdown-toggle-split {
+    top: .8rem;
+    left: auto;
+    position: absolute;
+  }
+  .megamenu {
+    font-size: 1rem;
+    li {
+      display: block;
+      width: auto;
+      width: initial;
+      a,
+      .nav-link {
+        padding: 10px 8px
+      }
+    }
+    .dropdown-menu {
+      margin-top: -2px;
+    }
+  }
+}
+
+@media (min-width: 840px) {
+  .megamenu {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .megamenu {
+    font-size: 1.15rem;
+  }
+  .megamenu li a,
+  .megamenu li .nav-link {
+    padding: 10px 15px
+  }
+  .megamenu {
+    li.dropdown>a {
+      padding-right: 1.8rem !important;
+    }
+  }
+}
+
+@media (max-width: $screen-md - 1) {
+  .dropdown .dropdown-menu {
+    float: none !important;
+    position: relative !important;
+    transform: none !important;
+  }
+  .megamenu .dropdown .dropdown-menu a {
+    padding-left: 25px;
+  }
+  .navbar-collapse .search-container,
+  .navbar-collapse .search-container .searchbox,
+  .form-inline {
+    display: block !important;
+    position: relative;
+    clear: both;
+    color: #fff;
+  }
+  .col-sm-9.d-flex.header-actions {
+    display: block !important;
+  }
+  .searchbox .btn {
+    color: #fff;
+  }
+  .navbar-nav {
+    display: block;
+  }
+  .navmenu ul li a {
+    text-align: left;
+  }
+  .megamenu li.dropdown>a {
+    background: lighten($primary, 5)
+  }
+  .megamenu .dropdown-toggle-split {
+    //float:right;    
+    //border: 1px solid #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: .5rem 1.125rem !important;
+    font-size: 1.25rem; // padding: .5rem 1rem !important;
+  }
+  .megamenu>div>div {
+    width: 100%;
+  }
+  #navbarCollapse>ul>li>a,
+  #navbarCollapse>div>ul>li>a {
+    position: relative;
+    text-transform: uppercase;
+  }
+  .searchform-mobile {
+    margin-bottom: 1rem;
+    .form-inline .input-group {
+      width: 100%;
+      display: flex;
+    }
+    label {
+      flex: 1;
+      margin-bottom: 0;
+    }
+    input.form-control {
+      width: 100%;
+    }
+    button.searchicon.btn.btn-primary {
+      background: rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    p a {
+      color: #fff;
+      padding: .5rem;
+    }
+  }
+}
+
+.dropdown-toggle-split {
+  padding-right: 0.5625rem;
+  padding-left: 0.5625rem;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  transform: rotate(-90deg);
+  transition: transform .1s ease-in-out;
+}
+
+.dropdown.show .dropdown-toggle-split {
+  transform: rotate(0);
+}
+
+@media (min-width: $screen-md) {
+  .searchicon .fa-search {
+    display: none;
+  }
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  .dropdown-toggle-split {
+    transform: rotate(0);
+  }
+}

@@ -42,43 +42,8 @@
 
 <body>
     @include('_partials.topbar')
-<header id="header">
-  <div id="skiptocontent">
-    <a href="#maincontent" title="Skip Main Navigation">Skip Main Navigation</a>
-  </div>
-  <div class="container-fluid d-none d-md-block">
-    <div class="row">
-      <div class="col-sm-3 header-logo">
+    @include('_partials.header')
 
-        @if (trim($__env->yieldContent('homepage')))
-        <!-- H1 on homepage only -->
-        <h1>
-          <a class="navbar-brand" href="/">
-            <img src="{{ $page->baseUrl }}/resources/img/logos/shoreline-color.png" alt="Shoreline Community College" />
-            <span class="sr-only">Shoreline Community College</span>
-          </a>
-        </h1>
-        @else
-        <a class="navbar-brand" href="/">
-          <img src="{{ $page->baseUrl }}/resources/img/logos/shoreline-color.png" alt="Shoreline Community College" />
-          <span class="sr-only">Shoreline Community College</span>
-        </a>
-        @endif
-
-      </div>
-      <div class="col-md-9 d-flex header-actions">
-        <div class="navbar-container d-flex">
-          <nav class="navbar navbar-expand-sm navmenu quicklinks">
-            <!-- @include ('_partials.quicklinks') -->
-          </nav>
-        </div>
-        <div class="search-container d-flex">
-          <!-- @include ('_partials.searchform') -->
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
 
 <div id="maincontent" class="flex-layout-body">
   @if (trim($__env->yieldContent('nav')))
