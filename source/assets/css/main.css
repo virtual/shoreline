@@ -1715,11 +1715,25 @@ header h1 {
   .dropdown:hover > .dropdown-menu {
     display: block;
   }
-  .dropdown-toggle-split {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-    display: none;
-  }
+}
+
+.dropdown-toggle-split {
+  padding-right: 0.5625rem;
+  padding-left: 0.5625rem;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: -webkit-transform .1s ease-in-out;
+  transition: -webkit-transform .1s ease-in-out;
+  transition: transform .1s ease-in-out;
+  transition: transform .1s ease-in-out, -webkit-transform .1s ease-in-out;
+}
+
+.dropdown.show .dropdown-toggle-split {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
 }
 
 @media (min-width: 992px) {
@@ -1732,6 +1746,11 @@ header h1 {
   }
   .megamenu li.dropdown > a {
     padding-right: 1.8rem !important;
+  }
+  .dropdown-toggle-split {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    display: none;
   }
 }
 
@@ -1762,25 +1781,6 @@ header h1 {
   #navbarCollapse > div > ul > li > a {
     position: relative;
   }
-}
-
-.dropdown-toggle-split {
-  padding-right: 0.5625rem;
-  padding-left: 0.5625rem;
-  position: relative;
-  z-index: 1;
-  display: inline-block;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  -webkit-transition: -webkit-transform .1s ease-in-out;
-  transition: -webkit-transform .1s ease-in-out;
-  transition: transform .1s ease-in-out;
-  transition: transform .1s ease-in-out, -webkit-transform .1s ease-in-out;
-}
-
-.dropdown.show .dropdown-toggle-split {
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
 }
 
 .quicklinks:first-of-type {
