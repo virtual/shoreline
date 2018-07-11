@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <meta name="theme-color" content="#8d0a0a">
+  <meta name="theme-color" content="#00685e">
   <title>Shoreline Community College</title>
   <meta property="og:title" content="Shoreline Community College" />
   <meta property="og:type" content="website" />
@@ -18,7 +18,7 @@
   <link rel="image_src" href="{{ $page->baseUrl }}/images/thumbnail.jpg" />
 
   <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/bootstrap.css">
-  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/main.css">
+  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/main.css?v=2">
   <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/slick.css">
   <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/slick-theme.css">
 
