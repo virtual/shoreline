@@ -1,3 +1,71 @@
+.layout-has-nav .nav-container {
+  width: 100%;
+}
+
+.layout-has-nav main {
+  width: 100%;
+}
+
+.layout-master {
+  position: relative;
+}
+
+@media (min-width: 480px) and (max-width: 1199px) {
+  .nav-container {
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .subnav .toggle {
+    display: none;
+  }
+  .layout-has-nav .nav-container {
+    width: 33.33%;
+    position: relative;
+    top: -150px;
+  }
+  .layout-has-nav main {
+    width: 66.66%;
+  }
+  .layout-has-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    min-height: 1px;
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .layout-has-nav .nav-container {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .layout-has-nav main {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .layout-has-nav .nav-container {
+    width: 25%;
+  }
+  .layout-has-nav main {
+    width: 75%;
+  }
+}
+
 h1 {
   font-weight: 600;
 }
@@ -295,8 +363,12 @@ h6, .h6 {
           box-shadow: 0 0 0 0.2rem rgba(0, 104, 94, 0.5);
 }
 
-.card.theme-secondary {
+.card {
   border-top: 5px solid #ffb500;
+}
+
+.card.theme-primary {
+  border-top: 5px solid #00685e;
 }
 
 .primary {
@@ -1593,6 +1665,28 @@ header h1 {
     color: #fff;
     padding: .5rem;
   }
+}
+
+.nav-container .card {
+  width: 100%;
+}
+
+.nav-container .card li {
+  margin-bottom: .5rem;
+}
+
+.nav-container .card li + li {
+  margin-top: .5rem;
+}
+
+.nav-container .card-program-heading h2 {
+  color: #000;
+  font-size: 1rem;
+}
+
+.nav-container .card-program-heading h2 a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .navmenu a {

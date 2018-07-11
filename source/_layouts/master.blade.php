@@ -44,10 +44,32 @@
     @include('_partials.topbar')
     @include('_partials.header')
 
+  <div class="layout-master">
+ @if (trim($__env->yieldContent('content-header')))
+  <div class="bg-primary py-3">
+    <div class="container-fluid">
+      @yield('content-header')
+    </div>
+  </div>
+  @endif
 
 <div id="maincontent" class="flex-layout-body">
   @if (trim($__env->yieldContent('nav')))
   <div class="layout-has-nav">
+    @endif
+
+
+
+
+    <main id="interior">
+      <div class="padded content-section ">
+        <div class="container-fluid">
+          @yield('content')
+        </div>
+      </div>
+    </main>
+
+    @if (trim($__env->yieldContent('nav')))
     <div class="nav-container">
 
       <nav class="subnav navbar navbar-expand-md navbar-light">
@@ -62,27 +84,10 @@
         </div>
       </nav>
     </div>
-    @endif
-
-    @if (trim($__env->yieldContent('content-header'))) 
-      <div class="bg-primary py-3">
-          <div class="container-fluid">
-      @yield('content-header') 
-      </div>
-    </div>
-    @endif
-      
-    <main id="interior">
-      <div class="padded content-section ">
-        <div class="container-fluid">
-          @yield('content')
-        </div>
-      </div>
-    </main>
-  @if (trim($__env->yieldContent('nav')))
+    @endif @if (trim($__env->yieldContent('nav')))
   </div>
   @endif
-
+  </div>
 </div>
 
 <!-- FOOTER -->

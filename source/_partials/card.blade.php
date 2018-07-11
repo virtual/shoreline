@@ -1,4 +1,4 @@
-<div class="card theme-{{ $theme }}">
+<div class="card">
   <a href="{{ $link }}">{{ $heading }}</a>
   
  

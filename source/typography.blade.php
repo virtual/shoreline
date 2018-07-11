@@ -1,21 +1,7 @@
 @extends('_layouts.master')
 
 
-@section('content-header')
-<div class="breadcrumb" aria-label="breadcrumb">
-  <ol>
-    <li><a href="http://www.example.com/books">Home</a></li>
-    <li><a href="http://www.example.com/sciencefiction">Science Fiction</a></li>
-    <li><a class="active" aria-current="page" href="http://www.example.com/books/sciencefiction/awardwinners">Award Winners</a></li>
-  </ol>
 
-</div>
-
-<h1>Professional &amp; Technical Programs</h1>
-<p>"Professional/Technical" or vocational studies, provide students with specialized knowledge and skills to either prepare
-  them to enter a particular field, or enhance existing skills while already employed.</p>
- 
-@endsection
 
 @section('content')
 

@@ -1,0 +1,56 @@
+ 
+
+ 
+.layout-has-nav {  
+  .nav-container { width: 100%;}
+  main { width:100%;}
+}
+.layout-master {
+  position: relative;
+}
+@media (min-width: $screen-sm) and (max-width: $screen-xl - 1) {
+  .nav-container { padding-right: 20px;}
+}
+
+@media (min-width: $screen-md) {
+  .subnav .toggle { display:none;}
+
+  .layout-has-nav { 
+    .nav-container { width: 33.33%;
+    
+ 
+      position: relative;
+      top: -150px; // TODO: This will probably be controlled by JS
+      // background: #c8dcbbd4; // debugging
+
+    
+    }
+    main { width:66.66%;}
+  }
+  
+  .layout-has-nav { 
+    display: flex;
+    flex-direction: row;  
+    min-height: 1px;
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    .nav-container {
+      // background: #eee;
+      flex: 1 0 auto; 
+      flex-direction: column;
+    }
+    main { 
+      flex: 1 0 auto;  
+      //background:#ccc;
+    }
+  }
+}  
+@media (min-width: $screen-lg) {
+  .layout-has-nav { 
+    .nav-container { width: 25%;}
+    main { width:75%;}
+  }
+}
+   
+  
