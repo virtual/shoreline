@@ -50,11 +50,31 @@
       display: block;
       padding: 5px 15px;
     }
-    a:hover {
-      background: lighten($primary, 13);
-      text-decoration: none;
+  }
+  .dropdown-toggle:after { // lg
+    content: "";
+    background-image: url(../../resources/img/icons/line@3x.png);
+    background-position: center;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    height: .7rem;
+    width: .7rem;
+    display: block;
+    background-size: contain;
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0;
+    transform: rotate(90deg);
+  }
+  .dropdown:hover, .dropdown.show { 
+    .dropdown-toggle:after {
+    transform: rotate(0); 
     }
   }
+
+
+
   .dropdown.show .dropdown-menu {
     display: block !important;
   }
@@ -76,7 +96,10 @@
   margin: 0;
   font-size: .8rem;
 }
-
+.searchform-mobile {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
 .searchform-mobile label {
   display: block;
   width: 80%;
@@ -86,22 +109,51 @@
 @media (min-width: $screen-lg) {
   .megamenu .dropdown .dropdown-menu {
     width: 220px;
+    // border-top: 2px solid $primary;
   }
   li.dropdown:last-child .dropdown-menu {
     right: 0;
     left: auto;
   }
   .megamenu {
+    font-size: 1rem;
+    li { width: auto;}
+
+    
     .dropdown-menu {
-      background: $light;
+      background: #f9f9f9;
+      margin-top: -2px;
+      a {
+        padding: 12px 20px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #373737;
+      }
+      .nav-link {
+        padding: 10px 8px
+      }
       a:hover {
         background: darken($light, 5);
+      }
+      li {
+        border-bottom: 1px solid #dfdfdf;
+        display: block;
+        width: auto;
+        width: initial;
+      }
+      li:last-child {
+        border-bottom: 0;
       }
     }
     li.dropdown>a {
       padding-right: 1.5rem !important;
       position: relative;
-    }
+    } 
+    li.dropdown:hover>a,
+    li.dropdown.show>a { 
+      color: $link-blue;
+      text-decoration: none;
+    } 
   }
   ul.navbar-nav.ml-auto {
     justify-content: flex-end;
@@ -118,31 +170,13 @@
     }
   }
   .dropdown-toggle.dropdown-toggle-split {
-    top: .8rem;
+    top: 1.2rem;
     left: auto;
     position: absolute;
+    right: 0;
+    display: inline-block;
   }
-  .megamenu {
-    font-size: 1rem;
-    li {
-      display: block;
-      width: auto;
-      width: initial;
-      a,
-      .nav-link {
-        padding: 10px 8px
-      }
-    }
-    li.dropdown:hover>a,
-    li.dropdown.show>a {
-      background: $primary;
-      color: #fff;
-      text-decoration: none;
-    }
-    .dropdown-menu {
-      margin-top: -2px;
-    }
-  }
+
   .dropdown:hover>.dropdown-menu {
     display: block;
   }
@@ -156,30 +190,31 @@
   position: relative;
   z-index: 1;
   display: inline-block;
-  transform: rotate(-90deg);
+  // transform: rotate(-90deg);
   transition: transform .1s ease-in-out;
 }
 
 .dropdown.show .dropdown-toggle-split {
-  transform: rotate(0);
+  // transform: rotate(0);
 }
 
 @media (min-width: $screen-lg) {
-  .megamenu {
-    font-size: 1.15rem;
-  }
   .megamenu li a,
   .megamenu li .nav-link {
-    padding: 10px 15px
+    // padding: 10px 15px
   }
   .megamenu {
-    li.dropdown>a {
-      padding-right: 1.8rem !important;
+    
+    .dropdown:hover, .dropdown.show { 
+      .dropdown-toggle:after {
+      transform: rotate(0);
+        background-image: url(../../resources/img/icons/arrow@3x.png);
+      }
     }
   }
   .dropdown-toggle-split {
-    transform: rotate(0);
-    display: none; // or try something different if needed for SR? hides arrow toggles
+    // transform: rotate(90deg);
+    //display: none; // or try something different if needed for SR? hides arrow toggles
   }
 }
 
@@ -188,6 +223,9 @@
     float: none !important;
     position: relative !important;
     transform: none !important;
+  }
+  li.dropdown {
+    border-top: 1px solid rgba(0, 0, 0, 0.1); 
   }
   .megamenu .dropdown .dropdown-menu a {
     padding-left: 25px;
@@ -199,8 +237,9 @@
     position: absolute;
     top: 0;
     right: 0;
-    padding: .5rem 1.125rem !important;
+    padding: 1rem 1.125rem !important;
     font-size: 1.25rem; // padding: .5rem 1rem !important;
+    border-left: 1px solid rgba(0, 0, 0, 0.1); 
   }
   .megamenu>div>div {
     width: 100%;
