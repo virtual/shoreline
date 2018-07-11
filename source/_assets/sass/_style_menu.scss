@@ -72,9 +72,6 @@
       transform: rotate(90deg);
     }
   }
-
-
-
   .dropdown.show .dropdown-menu {
     display: block !important;
   }
@@ -90,7 +87,6 @@
 #searchCollapse .container {
   padding-left: 15px;
 }
-
 #searchCollapse p {
   padding: .5rem;
   margin: 0;
@@ -99,12 +95,20 @@
 .searchform-mobile {
   padding-bottom: 1rem;
   padding-top: 1rem;
-}
-.searchform-mobile label {
-  display: block;
-  width: 80%;
-  margin-bottom: 0;
-}
+  label {
+    display: block;
+    width: 80%;
+    margin-bottom: 0;
+  }
+} 
+.dropdown-toggle-split {
+  padding-right: 0.5625rem;
+  padding-left: 0.5625rem;
+  position: relative;
+  z-index: 1;
+  display: inline-block; 
+  transition: transform .1s ease-in-out;
+} 
 
 @media (min-width: $screen-lg) {
   .megamenu .dropdown .dropdown-menu {
@@ -117,9 +121,7 @@
   }
   .megamenu {
     font-size: 1rem;
-    li { width: auto;}
-
-    
+    li { width: auto;}   
     .dropdown-menu {
       background: #f9f9f9;
       margin-top: -2px;
@@ -154,6 +156,15 @@
       color: $link-blue;
       text-decoration: none;
     } 
+    .dropdown-toggle:after {
+      transform: rotate(90deg);
+    }
+    .dropdown:hover, .dropdown.show { 
+      .dropdown-toggle:after {
+      transform: rotate(0);
+        background-image: url(../../resources/img/icons/arrow@3x.png);
+      }
+    }
   }
   ul.navbar-nav.ml-auto {
     justify-content: flex-end;
@@ -179,43 +190,7 @@
 
   .dropdown:hover>.dropdown-menu {
     display: block;
-  }
-
-}
-
- 
-.dropdown-toggle-split {
-  padding-right: 0.5625rem;
-  padding-left: 0.5625rem;
-  position: relative;
-  z-index: 1;
-  display: inline-block;
-  // transform: rotate(-90deg);
-  transition: transform .1s ease-in-out;
-}
-
-.dropdown.show .dropdown-toggle-split {
-  // transform: rotate(0);
-}
-
-@media (min-width: $screen-lg) {
-  .megamenu li a,
-  .megamenu li .nav-link {
-    // padding: 10px 15px
-  }
-  .megamenu {
-    
-    .dropdown:hover, .dropdown.show { 
-      .dropdown-toggle:after {
-      transform: rotate(0);
-        background-image: url(../../resources/img/icons/arrow@3x.png);
-      }
-    }
-  }
-  .dropdown-toggle-split {
-    // transform: rotate(90deg);
-    //display: none; // or try something different if needed for SR? hides arrow toggles
-  }
+  } 
 }
 
 @media (max-width: $screen-lg - 1) {
