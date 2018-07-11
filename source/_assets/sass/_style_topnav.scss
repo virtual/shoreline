@@ -1,5 +1,8 @@
 .topnav {
   background-color: #0c2321; 
+  ul {
+    width: 100%;
+  }
   ul, li { list-style: none; display: inline-block; margin:0; padding:0;}
   a { text-decoration: none; 
     font-size: .8rem;}
