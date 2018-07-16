@@ -97,13 +97,14 @@ jQuery(document).ready(function () {
     }
   });
 
-  // Smooth scroll to anchor
-  $("a.scrollable").click(function (event) {
-    event.preventDefault();
-    $("html, body").animate({
-      scrollTop: $($(this).attr("href")).offset().top - 40
-    }, 500);
-  });
+  // // Smooth scroll to anchor
+  // $("a.scrollable").click(function (event) {
+  //   event.preventDefault();
+  //   $("html, body").animate({
+  //     scrollTop: $($(this).attr("href")).offset().top - 40
+  //   }, 500);
+  // });
+
 
   $(".header-actions .searchicon").click(function (event) {
     if (!$(this).hasClass('active')) {
@@ -126,9 +127,14 @@ jQuery(document).ready(function () {
   // Smooth scroll to anchor
   $("a.scrollable").click(function (event) {
     event.preventDefault();
-    $("html, body").animate({
-      scrollTop: $($(this).attr("href")).offset().top - 40
-    }, 500);
+    var goToId = $(this).attr("href");
+    if ($(goToId).length) {
+      // If an anchor exists with this href
+      $("html, body").animate({
+        scrollTop: $($(this).attr("href")).offset().top - 40
+      }, 500);
+      $(goToId).focus();
+    }
   });
 
   $(document).keydown(function (e) {

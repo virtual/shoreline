@@ -1,0 +1,114 @@
+
+
+/* sectionals */
+
+/* 
+footer{ margin-top:-40px;}
+ 
+.col.content.span_4_of_4 {
+	padding-left: 0;
+} 
+@media (min-width: 992px) {
+	.col.content.span_4_of_4 {
+		max-width: 992px;
+		margin: 0 auto;
+	}
+}
+*/  
+.sectional:last-of-type {
+	padding-bottom: 50px;
+}
+.sectional {
+	background-color: #eee;
+	overflow: auto;
+}
+.sectional-background>* {
+	z-index: 2;
+	position: relative;
+}
+.sectional-background {
+	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 200px;
+}
+.sectional-background:before {
+	position: absolute;
+	content: " ";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;	
+	background-color: rgba(255, 255, 255, 0);
+	display: block;
+}
+.sectional-background.sectional.theme-01:before {
+	background-color: rgba(0, 108, 104, 0.75);
+}
+.sectional-background.sectional.theme-02:before {
+	background-color: rgba(0, 107, 166, 0.75);
+}
+.sectional-background.sectional.theme-03:before {
+	background-color: rgba(0, 0, 0, 0.75);
+}
+.sectional-background.sectional.theme-04:before {
+	background-color: rgba(255, 255, 255, 0.75);
+}
+.sectional.sectional-unpadded .inner {
+	padding-bottom: 0;
+	padding-top: 0;
+}
+.sectional-padded {
+	padding-top: 30px;
+	padding-bottom: 30px;
+} 
+.sectional.theme-01 {
+	background-color: #006c68;
+}
+.sectional.theme-02 {
+	background-color: #006ba6;
+}
+.sectional.theme-03 {
+	background-color: #000;
+}
+.sectional.theme-04 {
+	background-color: #fff;
+}
+.sectional-inverted * {
+	color: #fff;
+}
+.sectional2 img {
+	max-width: initial;
+	width: 100%;
+	height: auto;
+}
+/* sectional snippet overrides */
+
+.sectional-inverted h3.accordion-handle {
+	background: rgba(255, 255, 255, 0.21);
+	margin-bottom: 0;
+	border-bottom: 0;
+	font-weight: bold;
+}
+.sectional-inverted .accordion-content {
+	background: rgba(255, 255, 255, 0.1);
+}
+.sectional .accordion-inner {
+	padding: 10px 25px;
+}
+.sectional-inverted .accordion-handle:after {
+	background-image: url("/_resources/img/graphics/arrow-double-down-white.png");
+}
+.sectional-inverted .accordion-handle.active:after {
+	background-image: url(/_resources/img/graphics/arrow-double-up-white.png);
+}
+.sectional .accordion-content {
+	display: none;
+}
+.sectional .accordion-content.active {
+	display: block;
+}
+/* end sectionals */

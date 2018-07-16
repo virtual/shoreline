@@ -1,3 +1,6 @@
+.nav-container .navbar-collapse {
+  flex-direction: column;
+}
 .nav-container .card { width: 100%; 
   li { margin-bottom: .5rem; }
   li + li { margin-top: .5rem;}
