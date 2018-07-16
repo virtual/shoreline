@@ -1,12 +1,14 @@
+// TODO:  mobile styles
 .card {
-  padding: 2rem;
+  padding: 1rem;
   background: #FFFFFF;
   border: 1px solid rgba(0,0,0,0.05);
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.05);
   border-radius: 5px;
 
+  .card-title { font-size: 1.1875rem; }
   cursor: pointer;
-  h2, h3, h4, h5 { color: $link-blue; }
+  h2, h3, h4, h5 { color: $link-blue; font-weight: 400; }
   &:hover {
     h2, h3, h4, h5 { text-decoration: underline;} 
   }
@@ -21,10 +23,20 @@
   &>a:focus {
     box-shadow: 0 0 0 0.2rem rgba(0, 104, 94, 0.5);
   }
+  
+  & + .card { margin-top: 1rem;}
 }
 .card {
   border-top: 5px solid $secondary;
 }
+.card-body { padding: 0;}
 .card.theme-primary {
   border-top: 5px solid $primary;
+}
+
+@media (min-width: $screen-md) {
+  .card {
+    padding: 2rem;
+    .card-title { font-size: 2rem; }
+  }
 }

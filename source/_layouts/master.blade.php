@@ -61,7 +61,7 @@
 
 
 
-    <main id="interior">
+    <main class="content-container" id="interior">
       <div class="padded content-section ">
         <div class="container-fluid">
           @yield('content')
@@ -70,7 +70,7 @@
     </main>
 
     @if (trim($__env->yieldContent('nav')))
-    <div class="nav-container">
+    <div class="sidebar-container overview">
 
       <nav class="subnav navbar navbar-expand-md navbar-light">
         <!--<h2>
