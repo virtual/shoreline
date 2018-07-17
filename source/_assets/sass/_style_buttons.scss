@@ -106,7 +106,7 @@ a.btn { text-decoration: none; }
   width: 100%;
 }
 .btn-toggle:after {
-  content: "expand";
+  content: "collapse";
   float:right;
   padding-right: 2rem;
   font-size: 1rem;
@@ -116,4 +116,7 @@ a.btn { text-decoration: none; }
   background-repeat: no-repeat;
   background-position: right; 
   background-image: url(../../resources/img/icons/expand-toggle.svg);
+}
+.btn-toggle.collapsed:after {
+  content: "expand";
 }

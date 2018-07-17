@@ -465,6 +465,10 @@ h6, .h6 {
   clear: both;
 }
 
+.text-muted {
+  color: #757575 !important;
+}
+
 .bg-primary {
   color: #ffffff;
 }
@@ -568,6 +572,11 @@ h6, .h6 {
 
 .bg-primary h6 {
   color: #ffffff;
+}
+
+.content-header {
+  padding-top: 50px;
+  padding-bottom: 38px;
 }
 
 .gray {
@@ -952,11 +961,11 @@ dl.list-inline [class*="icon-bg-"].icon-bg-trophy-board:before {
   font-family: "Font Awesome 5 Free";
   display: inline-block;
   text-align: center;
-  padding: .1rem .25rem;
+  padding: 0 .45rem 0 .35rem;
   font-weight: 900;
   font-size: .625rem;
   opacity: .7;
-  margin-top: .1rem;
+  bottom: .1rem;
 }
 
 .bg-primary,
@@ -974,6 +983,10 @@ dl.list-inline [class*="icon-bg-"].icon-bg-trophy-board:before {
 .bg-primary .breadcrumb li a.active {
   color: inherit;
   font-weight: bold;
+}
+
+.content-header .breadcrumb {
+  margin-bottom: 1.5rem;
 }
 
 .alert {
@@ -1462,7 +1475,7 @@ a.btn {
 }
 
 .btn-toggle:after {
-  content: "expand";
+  content: "collapse";
   float: right;
   padding-right: 2rem;
   font-size: 1rem;
@@ -1472,6 +1485,10 @@ a.btn {
   background-repeat: no-repeat;
   background-position: right;
   background-image: url(../../resources/img/icons/expand-toggle.svg);
+}
+
+.btn-toggle.collapsed:after {
+  content: "expand";
 }
 
 ul, dl, ol {
@@ -1664,6 +1681,23 @@ main ul.features.large-list li:before {
 
 main ol.large-list li:before {
   color: #00685e;
+}
+
+.dl-inline {
+  display: inline-block;
+  padding-right: 0;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.dl-inline + .dl-inline {
+  margin-left: 50px;
+}
+
+.dl-small-header dt {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: normal;
 }
 
 header h1 {

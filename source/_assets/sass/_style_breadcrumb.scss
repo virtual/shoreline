@@ -71,11 +71,11 @@
     font-family: $font-awesome;
     display: inline-block;
     text-align: center;
-    padding: .1rem .25rem;
+    padding: 0 .45rem 0 .35rem;
     font-weight: 900;
     font-size: .625rem;
     opacity: .7;
-    margin-top:.1rem;
+    bottom: .1rem;
   }
 } 
 .bg-primary,
@@ -89,4 +89,8 @@
     color: inherit;
     font-weight: bold;
   }
+}
+
+.content-header .breadcrumb {
+  margin-bottom: 1.5rem;
 }

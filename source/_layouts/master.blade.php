@@ -46,7 +46,7 @@
 
   <div class="layout-master">
  @if (trim($__env->yieldContent('content-header')))
-  <div class="bg-primary py-3">
+  <div class="bg-primary content-header">
     <div class="container-fluid">
       @yield('content-header')
     </div>

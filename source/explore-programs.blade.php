@@ -13,7 +13,16 @@
 </div>
 
 <h1>Video Game Design</h1>
-<p>Dept & prog</p> 
+
+<dl class="dl-inline dl-small-header">
+  <dt>Department</dt>
+  <dd><a href="#">VCT</a></dd>
+</dl>
+<dl class="dl-inline dl-small-header">
+  <dt>Program</dt>
+  <dd><a href="#">Visual Arts</a></dd>
+</dl>
+
 @endsection
 
 @section('content')
@@ -48,7 +57,7 @@
      </ul>
 
      <h3>Career Opportunities</h3>
-     <p>* These are potential careers. Shoreline Community College does not guarantee graduates will obtain a specific job/career.</p>
+     <p class="text-muted">* These are potential careers. Shoreline Community College does not guarantee graduates will obtain a specific job/career.</p>
      </div>
      <div class="sidebar-container">
         @include('_partials.card', [
