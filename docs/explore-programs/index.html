@@ -277,7 +277,7 @@
   </div>
 </header>
   <div class="layout-master">
-   <div class="bg-primary py-3">
+   <div class="bg-primary content-header">
     <div class="container-fluid">
       <div class="breadcrumb" aria-label="breadcrumb">
   <ol>
@@ -291,7 +291,16 @@
 </div>
 
 <h1>Video Game Design</h1>
-<p>Dept & prog</p> 
+
+<dl class="dl-inline dl-small-header">
+  <dt>Department</dt>
+  <dd><a href="#">VCT</a></dd>
+</dl>
+<dl class="dl-inline dl-small-header">
+  <dt>Program</dt>
+  <dd><a href="#">Visual Arts</a></dd>
+</dl>
+
     </div>
   </div>
   
@@ -301,16 +310,106 @@
 
 
 
-    <main id="interior">
+    <main class="content-container" id="interior">
       <div class="padded content-section ">
         <div class="container-fluid">
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.</p>
+          <h2 class="sr-only" id="overview" tabindex="-1">Overview</h2>
+<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.</p>
 
+<section class="padded">
+  <dl class="list-inline">
+    <dt class="icon-bg-completion">Completion Award </dt>
+    <dd> Transfer</dd>
+    <dt class="icon-bg-calendar">Length</dt>
+    <dd> 90</dd>
+    <dt class="icon-bg-clock-o">Enrollment Period </dt>
+    <dd> Fall, Spring</dd>
+    <dt class="icon-bg-book">Application Deadline </dt>
+    <dd> N/A</dd>
+    <dt class="icon-bg-map-marker">Location </dt>
+    <dd> On Campus</dd>
+    <dt class="icon-bg-credit-card">Tuition &amp; Fees </dt>
+    <dd>
+      <button class="btn-toggle btn collapsed" type="button" data-toggle="collapse" data-target="#tuitionfees" aria-expanded="false" aria-controls="tuitionfees">
+        Toggle to expand
+        <span class="sr-only">tuition and fees</span> details </button>
+      <div class="collapse" id="tuitionfees">
+        <div class="table-wrapper-inner">
+          <table class="standard-table ">
+            <thead>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td style="background-color: #e0e0e0;" colspan="3">
+                  <strong>Non-Residents:</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <strong>Per Quarter
+                      <br> </strong>
+                    <strong>2016-2017</strong>
+                  </p>
+                </td>
+                <td>
+                  <strong>Residents</strong>
+                </td>
+                <td style="background-color: #e0e0e0;">
+                  <strong>Online Only</strong>
+                </td>
+
+                <td style="background-color: #e0e0e0;">
+                  <strong>On Campus</strong>
+                </td>
+                <td style="background-color: #e0e0e0;">
+                  <strong>Non-Citizen</strong>
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1 credit</td>
+                <td>$146.66</td>
+                <td>$160.38</td>
+                <td>$237.12</td>
+                <td>$323.66</td>
+              </tr>
+              <tr>
+                <td>5 credits</td>
+                <td>$597.30</td>
+                <td>$665.90</td>
+                <td>$1,049.60</td>
+                <td>$1,482.30</td>
+              </tr>
+              <tr>
+                <td>12 credits (full-time)</td>
+                <td>$1,267.32</td>
+                <td>$1,405.96</td>
+                <td>$2,179.46</td>
+                <td>$3,051.72</td>
+              </tr>
+              <tr>
+                <td>15 credits</td>
+                <td>$1,414.20</td>
+                <td>$1,555.00</td>
+                <td>
+                  <p>$2,337.65</p>
+                </td>
+                <td>$3,220.20</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+
+      </div>
+    </dd>
+  </dl>
+</section>        </div>
       </div>
     </main>
 
-        <div class="nav-container">
+        <div class="sidebar-container overview">
 
       <nav class="subnav navbar navbar-expand-md navbar-light">
         <!--<h2>
@@ -331,6 +430,8 @@
  </div>
 
  <a class="btn btn-important btn-block" href="/apply-and-aid/apply.aspx">Apply Now</a>
+ <a class="btn btn-secondary btn-block" href="/apply-and-aid/apply.aspx">Ask a Question</a>
+ <a class="btn btn-secondary btn-block" href="/apply-and-aid/apply.aspx">Visit Campus</a>
 
         </div>
       </nav>
@@ -339,10 +440,12 @@
     </div>
 </div>
 
-    
-<section class="sectional sectional-padded">
-  <div class="container-fluid"><!-- change .inner to .container-fluid -->
+    <section class="sectional sectional-padded">
+  <div class="container-fluid">
+      <div class="layout-has-nav">
+    <div class="content-container"> 
      <h2 tabindex="-1" id="outcomes" class="primary">Outcomes &amp; Careers</h2>
+     
      <h3>What you'll learn</h3>
      <ul>
         
@@ -359,16 +462,79 @@
         </li>
         
      </ul>
-     <div class="card"><a href="/programs/documents/catalog-2014-2015.pdf">Course Descriptions</a><div class="card-body">
-           <h3 class="more-arrow card-title">Course Descriptions</h3>
-           <p class="card-text">Browse the course descriptions to explore classes available in this subject</p>
-        </div>
+
+     <h3>Career Opportunities</h3>
+     <p class="text-muted">* These are potential careers. Shoreline Community College does not guarantee graduates will obtain a specific job/career.</p>
      </div>
-     <div class="card"><a href="/programs/documents/catalog-2014-2015.pdf">Sample Schedule</a><div class="card-body">
-           <h3 class="more-arrow card-title">Sample Schedule</h3>
-           <p class="card-text">Get a glimpse at what your quarterly schedule might look like in this program option</p>
-        </div>
+     <div class="sidebar-container">
+        <div class="card">
+  <a href="https://www.youtube.com/watch?v=YkLwzgPoQcA">Course Descriptions</a>
+  
+ 
+  <span class="" aria-hidden="true"></span>
+  <span class="sr-only">Facebook</span> 
+
+  <div class="card-body">
+    <h3 class="more-arrow card-title">Course Descriptions</h3>
+    <p class="card-text">Browse the course descriptions to explore classes available in this subject</p>
+  </div>
+</div>        <div class="card">
+  <a href="http://jigsaw.tighten.co/docs/blade-templates-and-partials/">Sample Schedule</a>
+  
+ 
+  <span class="far fa-map" aria-hidden="true"></span>
+  <span class="sr-only">Facebook</span> 
+
+  <div class="card-body">
+    <h3 class="more-arrow card-title">Sample Schedule</h3>
+    <p class="card-text">Get a glimpse at what your quarterly schedule might look like in this program option</p>
+  </div>
+</div>
      </div>
+     </div>
+    </div>
+</section>
+<section class="sectional sectional-padded theme-04">
+  <div class="container-fluid">
+     <h2 tabindex="-1" id="reqs">Eligiblity &amp; Requirements</h2>
+     <ul>
+     <li>Earned grades of at least 2.0 in college level required non-nursing courses</li>
+     <li>Placement test scores taken no more than one year prior to the first day of the application period with the following minimum test scores: Math placement above intermediate algebra (MATH 099); English Reading and Writing placement into ENGL& 101</li>
+     <li>BIOL 211 (required if taking biology courses at Shoreline)</li>
+     <li>CHEM 121* (General Chemistry) - 5 credits, completed within 10 years of application to the program</li>
+     <li>ENGL 101* (English Composition) - 5 credits</li>
+     <li>BIOL 241* (Anatomy & Physiology I) - 5 credits, completed within 5 years of application to the program</li>
+     <li>BIOL 242* (Anatomy & Physiology II) - 5 credits, completed within 5 years of application to the program</li>
+     <li>BIOL 260 (Microbiology) – 5 credits, completed within 5 years of application to the program</li>
+     <li>NUTR 101 (Human Nutrition) – 5 credits, must be completed prior to entering the Nursing Program</li>
+     <li>PSYC 200 (Lifespan Development) – 5 credits</li>
+     <li>MATH 146* (Statistics) – 5 credits</li>
+    </ul>
+  </div>
+</section>
+<section class="sectional sectional-padded">
+  <div class="container-fluid">
+     <h2 tabindex="-1" id="apply">How to Apply</h2>
+     <p>Uniquely optimize resource sucking outsourcing through user friendly methods of empowerment.
+        Credibly maintain premium methods of empowerment for enterprise-wide channels. Proactively
+        seize cutting-edge methodologies through reliable core competencies. Continually pursue
+        flexible ideas vis-a-vis open-source materials. Globally implement dynamic networks
+        vis-a-vis premium quality vectors.
+     </p>
+     
+     <p>Dynamically conceptualize team building interfaces whereas end-to-end technology.
+        Synergistically synergize user-centric models for sticky catalysts for change. Rapidiously
+        seize process-centric action items via best-of-breed initiatives. Assertively exploit
+        business.
+     </p>
+  </div>
+</section>
+<section class="sectional sectional-padded theme-04">
+  <div class="container-fluid">
+     <h2 tabindex="-1" id="related">Related Programs</h2>
+     <ul>
+        <li><a href="https://test.shoreline.edu//programs/visual-communication-technology/web-design.aspx">Web Design AAAS</a></li>
+     </ul>
   </div>
 </section>
 
