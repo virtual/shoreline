@@ -1,6 +1,5 @@
-// TODO: Line spacing on outcomes and careers list
-
-main {
+ul, dl, ol { color: #222; } 
+main, .sectional {
   ol, ul {
     li { margin-bottom: .75rem; margin-top: .75rem; }
   }
@@ -51,7 +50,7 @@ main {
   // }
   ol a,
   ul a {
-    display: inline-block;
+    // display: inline-block; // ! causing display errors
     vertical-align: top;
   }
   ol ol,
@@ -164,8 +163,7 @@ main ul.features {
     border-radius: 0; 
   }
   
-  &.large-list {
-    
+  &.large-list { 
     li {
       padding-left: 2rem;
       text-indent: -3.5rem;
@@ -181,6 +179,8 @@ main ul.features {
 }
 .large-list {
   font-size: 1.5rem;
+  color:#000;
+  li, li p { color: inherit; } // Black text shown on large features
 }
 main ol.large-list li:before {
   color: $primary;

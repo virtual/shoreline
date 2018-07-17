@@ -391,7 +391,7 @@ h6, .h6 {
     padding: 2rem;
   }
   .card .card-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -463,10 +463,6 @@ h6, .h6 {
   content: "";
   display: table;
   clear: both;
-}
-
-p, ul, dl, ol {
-  color: #444;
 }
 
 .bg-primary {
@@ -1072,26 +1068,7 @@ dl.list-inline [class*="icon-bg-"].icon-bg-trophy-board:before {
   }
 }
 
-/* sectionals */
-/* 
-footer{ margin-top:-40px;}
- 
-.col.content.span_4_of_4 {
-	padding-left: 0;
-} 
-@media (min-width: 992px) {
-	.col.content.span_4_of_4 {
-		max-width: 992px;
-		margin: 0 auto;
-	}
-}
-*/
-.sectional:last-of-type {
-  padding-bottom: 50px;
-}
-
 .sectional {
-  background-color: #eee;
   overflow: auto;
   position: relative;
 }
@@ -1474,29 +1451,33 @@ a.btn {
   }
 }
 
-main ol li, main ul li {
+ul, dl, ol {
+  color: #222;
+}
+
+main ol li, main ul li, .sectional ol li, .sectional ul li {
   margin-bottom: .75rem;
   margin-top: .75rem;
 }
 
-main ul li {
+main ul li, .sectional ul li {
   list-style: none;
   position: relative;
   padding-left: 1.75rem;
   text-indent: -2rem;
 }
 
-main ul {
+main ul, .sectional ul {
   list-style: none;
   padding: 0;
 }
 
-main ul li {
+main ul li, .sectional ul li {
   list-style: none;
   position: relative;
 }
 
-main ul li:before {
+main ul li:before, .sectional ul li:before {
   content: "";
   font-size: 2em;
   height: .5rem;
@@ -1513,20 +1494,23 @@ main ul li:before {
 }
 
 main ol a,
-main ul a {
-  display: inline-block;
+main ul a, .sectional ol a,
+.sectional ul a {
   vertical-align: top;
 }
 
 main ol ol,
 main ol ul,
 main ul ol,
-main ul ul {
+main ul ul, .sectional ol ol,
+.sectional ol ul,
+.sectional ul ol,
+.sectional ul ul {
   margin-bottom: .5em;
   padding-left: 0;
 }
 
-main ol {
+main ol, .sectional ol {
   overflow: visible;
   margin: 0;
   margin-left: 2rem;
@@ -1535,13 +1519,13 @@ main ol {
   counter-reset: li-counter;
 }
 
-main ol li {
+main ol li, .sectional ol li {
   position: relative;
   overflow: visible;
   list-style-type: none;
 }
 
-main ol li::before {
+main ol li::before, .sectional ol li::before {
   position: absolute;
   top: 0;
   left: -2rem;
@@ -1555,33 +1539,33 @@ main ol li::before {
   font-weight: bold;
 }
 
-main ol ol, main ol ul, main ul ol, main ul ul {
+main ol ol, main ol ul, main ul ol, main ul ul, .sectional ol ol, .sectional ol ul, .sectional ul ol, .sectional ul ul {
   margin-left: 1rem;
 }
 
-main ol ul li, main ul ul li {
+main ol ul li, main ul ul li, .sectional ol ul li, .sectional ul ul li {
   list-style: disc;
 }
 
-main ol ol li, main ul ol li {
+main ol ol li, main ul ol li, .sectional ol ol li, .sectional ul ol li {
   list-style-type: lower-alpha;
 }
 
-main ol ol ul li, main ol ul ul li, main ul ol ul li, main ul ul ul li {
+main ol ol ul li, main ol ul ul li, main ul ol ul li, main ul ul ul li, .sectional ol ol ul li, .sectional ol ul ul li, .sectional ul ol ul li, .sectional ul ul ul li {
   list-style: circle;
 }
 
-main ol ol ol li, main ol ul ol li, main ul ol ol li, main ul ul ol li {
+main ol ol ol li, main ol ul ol li, main ul ol ol li, main ul ul ol li, .sectional ol ol ol li, .sectional ol ul ol li, .sectional ul ol ol li, .sectional ul ul ol li {
   list-style-type: lower-roman;
 }
 
-main ol ul li, main ol ol li, main ul ul li, main ul ol li {
+main ol ul li, main ol ol li, main ul ul li, main ul ol li, .sectional ol ul li, .sectional ol ol li, .sectional ul ul li, .sectional ul ol li {
   margin-left: 0;
   text-indent: 0;
   padding-left: 0;
 }
 
-main ol ol li:before, main ol ul li:before, main ul ol li:before, main ul ul li:before {
+main ol ol li:before, main ol ul li:before, main ul ol li:before, main ul ul li:before, .sectional ol ol li:before, .sectional ol ul li:before, .sectional ul ol li:before, .sectional ul ul li:before {
   content: none;
   left: auto;
   top: auto;
@@ -1648,6 +1632,11 @@ main ul.features.large-list li:before {
 
 .large-list {
   font-size: 1.5rem;
+  color: #000;
+}
+
+.large-list li, .large-list li p {
+  color: inherit;
 }
 
 main ol.large-list li:before {
@@ -1839,6 +1828,7 @@ header h1 {
 .sidebar-container .card-program-heading h2 {
   color: #000;
   font-size: 1rem;
+  font-weight: 600;
 }
 
 .sidebar-container .card-program-heading h2 a {
@@ -2319,6 +2309,10 @@ header h1 {
 
 a {
   color: #0074b3;
+}
+
+p {
+  color: #444;
 }
 
 .padded {

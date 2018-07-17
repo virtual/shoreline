@@ -13,7 +13,7 @@
     <h4>Ordered List</h4>
     <ol>
       <li>Outcomes &amp; Careers</li>
-      <li>Outcomes &amp; Careers and Outcomes &amp; Careers</li>
+      <li>Outcomes &amp; <a href="#">Careers and Outcomes</a> &amp; Careers</li>
       <li>Outcomes &amp; Careers</li>
       <li>Outcomes &amp; Careers</li>
       <li>Outcomes &amp; Careers</li>
@@ -26,10 +26,14 @@
       <li>Outcomes &amp; Careers
         <li>Outcomes &amp; Careers</li>
         <li>Outcomes &amp; Careers</li>
-        <li>Rapidiously visualize cutting-edge functionalities via maintainable technologies.</li>
+        <li>Rapidiously visualize cutting-edge <a href="#">Careers and Outcomes</a> via maintainable technologies.</li>
         <li>Outcomes &amp; Careers and Outcomes &amp; Careers</li>
     </ul>
   </div>
+</div>
+
+<div class="alert alert-danger" role="alert">
+  <h2>Build out Def Lists</h2>
 </div>
 
 <h2>5 most popular transfer destinations</h2>
@@ -37,7 +41,7 @@
   <li>University of Washington</li>
   <li>Seattle University</li>
   <li>Washington State University</li>
-  <li>University of California (UC Berkley, UCLA, UCSB, etc.)</li>
+  <li><a href="#">University of California (UC Berkley, UCLA, UCSB, etc.)</a></li>
   <li>Indiana University</li>
 </ol>
 

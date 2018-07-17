@@ -1,25 +1,4 @@
-
-
-/* sectionals */
-
-/* 
-footer{ margin-top:-40px;}
- 
-.col.content.span_4_of_4 {
-	padding-left: 0;
-} 
-@media (min-width: 992px) {
-	.col.content.span_4_of_4 {
-		max-width: 992px;
-		margin: 0 auto;
-	}
-}
-*/  
-.sectional:last-of-type {
-	padding-bottom: 50px;
-}
-.sectional {
-	background-color: #eee;
+.sectional { 
   overflow: auto;
   position: relative;
 }

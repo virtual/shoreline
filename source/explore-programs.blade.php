@@ -73,10 +73,19 @@
 <section class="sectional sectional-padded theme-04">
   <div class="container-fluid">
      <h2 tabindex="-1" id="reqs">Eligiblity &amp; Requirements</h2>
-     <div class="row">
-        <div class=""></div>
-        <div class=""></div>
-     </div>
+     <ul>
+     <li>Earned grades of at least 2.0 in college level required non-nursing courses</li>
+     <li>Placement test scores taken no more than one year prior to the first day of the application period with the following minimum test scores: Math placement above intermediate algebra (MATH 099); English Reading and Writing placement into ENGL& 101</li>
+     <li>BIOL 211 (required if taking biology courses at Shoreline)</li>
+     <li>CHEM 121* (General Chemistry) - 5 credits, completed within 10 years of application to the program</li>
+     <li>ENGL 101* (English Composition) - 5 credits</li>
+     <li>BIOL 241* (Anatomy & Physiology I) - 5 credits, completed within 5 years of application to the program</li>
+     <li>BIOL 242* (Anatomy & Physiology II) - 5 credits, completed within 5 years of application to the program</li>
+     <li>BIOL 260 (Microbiology) – 5 credits, completed within 5 years of application to the program</li>
+     <li>NUTR 101 (Human Nutrition) – 5 credits, must be completed prior to entering the Nursing Program</li>
+     <li>PSYC 200 (Lifespan Development) – 5 credits</li>
+     <li>MATH 146* (Statistics) – 5 credits</li>
+    </ul>
   </div>
 </section>
 <section class="sectional sectional-padded">
@@ -118,5 +127,7 @@
  </div>
 
  <a class="btn btn-important btn-block" href="/apply-and-aid/apply.aspx">Apply Now</a>
+ <a class="btn btn-secondary btn-block" href="/apply-and-aid/apply.aspx">Ask a Question</a>
+ <a class="btn btn-secondary btn-block" href="/apply-and-aid/apply.aspx">Visit Campus</a>
 
 @endsection
