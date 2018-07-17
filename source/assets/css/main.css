@@ -1451,6 +1451,29 @@ a.btn {
   }
 }
 
+.btn-toggle {
+  font-weight: normal;
+  text-align: left;
+  color: #0074b3;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  width: 100%;
+}
+
+.btn-toggle:after {
+  content: "expand";
+  float: right;
+  padding-right: 2rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  background: none;
+  background-size: .5rem;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-image: url(../../resources/img/icons/expand-toggle.svg);
+}
+
 ul, dl, ol {
   color: #222;
 }
