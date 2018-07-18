@@ -1,4 +1,4 @@
-<section class="padded">
+<section class="">
   <dl class="list-inline">
     <dt class="icon-bg-completion">Completion Award </dt>
     <dd> Transfer</dd>

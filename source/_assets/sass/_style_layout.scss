@@ -1,40 +1,45 @@
  
 
  
-.layout-has-nav {  
-  .sidebar-container { width: 100%;}
-  .content-container { width:100%;}
+.layout-has-nav {   
+  .sidebar-container, .content-container  { width: 100%; padding-top: 1rem; padding-bottom: 1rem; }
 }
+
 .layout-master {
   position: relative;
 }
-@media (min-width: $screen-sm) and (max-width: $screen-xl - 1) {
-  .sidebar-container { padding-right: 20px;}
+// @media (min-width: $screen-sm) and (max-width: $screen-xl - 1) {
+//   .sidebar-container { padding-right: 20px;}
+// }
+
+@media (max-width: $screen-md - 1) {
+  #maincontent {
+    .layout-has-nav {  
+      display: flex;
+      flex-direction: column-reverse;
+      .sidebar-container {   flex: 1; }
+      .content-container {   flex: 1; }
+    }
+  }
 }
 
 @media (min-width: $screen-md) {
   .subnav .toggle { display:none;}
 
   .layout-has-nav { 
-    .sidebar-container { width: 33.33%;
-    
- 
-      position: relative;
-    }
+    .sidebar-container { width: 33.33%; position: relative; }
+    .content-container { width:66.66%; padding-right: 40px;}
     .sidebar-container.overview {
-      top: -150px; // TODO: This will probably be controlled by JS
+     // top: -150px; // TODO: This will probably be controlled by JS
       // background: #c8dcbbd4; // debugging
-
-    
     }
-    .content-container { width:66.66%;}
   }
   
   .layout-has-nav { 
     display: flex;
     flex-direction: row;  
     min-height: 1px;
-    max-width: 1170px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     .sidebar-container {

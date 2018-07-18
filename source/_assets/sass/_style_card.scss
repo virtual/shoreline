@@ -5,7 +5,7 @@
   border: 1px solid rgba(0,0,0,0.05);
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.05);
   border-radius: 5px;
-
+  margin-bottom: 1rem;
   .card-title { font-size: 1.1875rem; }
   cursor: pointer;
   h2, h3, h4, h5 { color: $link-blue; font-weight: 400; }
@@ -23,8 +23,7 @@
   &>a:focus {
     box-shadow: 0 0 0 0.2rem rgba(0, 104, 94, 0.5);
   }
-  
-  & + .card { margin-top: 1rem;}
+   
 }
 .card {
   border-top: 5px solid $secondary;

@@ -51,42 +51,50 @@
       @yield('content-header')
     </div>
   </div>
+    @if (trim($__env->yieldContent('lead')))
+      <div class="py-3 container-fluid">
+      @yield('lead')
+      </div>
+    @endif
+
   @endif
 
+  <div class="container-fluid"> 
 <div id="maincontent" class="flex-layout-body">
   @if (trim($__env->yieldContent('nav')))
   <div class="layout-has-nav">
     @endif
 
-
-
+  
 
     <main class="content-container" id="interior">
-      <div class="padded content-section ">
-        <div class="container-fluid">
+      <div class="content-section ">
+        
           @yield('content')
         </div>
-      </div>
+      
     </main>
 
     @if (trim($__env->yieldContent('nav')))
-    <div class="sidebar-container overview">
+    <div id="sidebar-nav" class="sidebar-container overview">
 
-      <nav class="subnav navbar navbar-expand-md navbar-light">
+      <nav>
         <!--<h2>
           <span role="button" data-toggle="collapse" data-target="#submenu" aria-controls="submenu" aria-expanded="false" aria-label="Toggle navigation"
             aria-hidden="true" class="fas fa-bars toggle">
             <span class="sr-only">Expand Submenu</span>
           </span> yield('menuheader')</h2>-->
         <a class="sr-only show-on-focus" href="#interior">Skip Navigation</a>
-        <div class="collapse navbar-collapse" id="submenu">
+       
           @yield('nav')
-        </div>
       </nav>
     </div>
-    @endif @if (trim($__env->yieldContent('nav')))
+    @endif 
+    @if (trim($__env->yieldContent('nav')))
   </div>
   @endif
+  
+</div>
   </div>
 </div>
 

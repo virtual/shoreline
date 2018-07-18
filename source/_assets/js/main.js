@@ -104,7 +104,8 @@ jQuery(document).ready(function() {
 
 
 // subnav 
-  var submenu = document.getElementById('submenu');
+/*
+var submenu = document.getElementById('submenu');
 
   $("#submenu ul").find(":has(div)").parent().addClass("nolink");
   // , window.prettyPrint && prettyPrint(), $(document).on("click", ".yamm .dropdown-menu", function(a) {
@@ -117,6 +118,22 @@ jQuery(document).ready(function() {
    $("#submenu li").has("ul").each(function() {
        $(this).addClass("drop"), $("#submenu ul>li:has(ul)>a").css("display", "block"), $(this).show("fast")
    });
-  
- 
+  */
+ setOverviewOffset(calcOverviewOffset());
 });
+
+
+function calcOverviewOffset() {
+  //var sidebarOffset = $('#sidebar-nav').offset().top; // doesn't matter
+  var contentHeaderOffset = $('.content-header').offset().top;
+  return contentHeaderOffset + 50;
+}
+
+function setOverviewOffset(offset) {
+  document.getElementById('sidebar-nav').setAttribute('style', "top: -" + offset + "px");
+  return true;
+}
+
+function mew() {
+  console.log('mew');
+}

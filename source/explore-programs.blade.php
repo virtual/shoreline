@@ -25,10 +25,12 @@
 
 @endsection
 
-@section('content')
+@section ('lead') 
 <h2 class="sr-only" id="overview" tabindex="-1">Overview</h2>
 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.</p>
+@endsection
 
+@section('content')
 @include('_partials.overview')
 @endsection
 
