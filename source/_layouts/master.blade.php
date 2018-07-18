@@ -53,7 +53,11 @@
   </div>
     @if (trim($__env->yieldContent('lead')))
       <div class="py-3 container-fluid">
+        <div class="row">
+          <div class="col-sm-9">
       @yield('lead')
+    </div>
+    </div>
       </div>
     @endif
 

@@ -177,7 +177,7 @@ jQuery(document).ready(function () {
          $(this).addClass("drop"), $("#submenu ul>li:has(ul)>a").css("display", "block"), $(this).show("fast")
      });
     */
-  setOverviewOffset(calcOverviewOffset());
+  //  setOverviewOffset(calcOverviewOffset());
 });
 
 function calcOverviewOffset() {

@@ -32,6 +32,12 @@
     .sidebar-container.overview {
      // top: -150px; // TODO: This will probably be controlled by JS
       // background: #c8dcbbd4; // debugging
+      position: static;
+    }
+    #sidebar-nav nav {
+      position: absolute;
+      top: 50px;
+      padding: 0;
     }
   }
   
