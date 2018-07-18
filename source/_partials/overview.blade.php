@@ -5,7 +5,7 @@
     <dt class="icon-bg-calendar">Length</dt>
     <dd> 90</dd>
     <dt class="icon-bg-clock-o">Enrollment Period </dt>
-    <dd> Fall, Spring</dd>
+    <dd> Fall, Spring, but what happens when I have a giant long piece of text? Fall, Spring, but what happens when I have a giant long piece of text? </dd>
     <dt class="icon-bg-book">Application Deadline </dt>
     <dd> N/A</dd>
     <dt class="icon-bg-map-marker">Location </dt>

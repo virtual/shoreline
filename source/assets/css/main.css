@@ -868,16 +868,19 @@ dl.list-inline [class*="icon-bg-"].icon-bg-trophy-board:before {
     display: block;
   }
   dl.list-inline dd, dl.list-inline dt {
-    width: 66.67%;
-    display: inline-block;
+    width: 60%;
     padding: 1.5rem 0;
+    display: block;
+    float: right;
   }
   dl.list-inline [class*="icon-bg-"] + dd {
     padding-left: initial;
   }
   dl.list-inline dt {
     float: left;
-    width: 33.33%;
+    width: 40%;
+    padding-right: .5rem;
+    clear: both;
   }
   dl.list-inline dd {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -885,6 +888,32 @@ dl.list-inline [class*="icon-bg-"].icon-bg-trophy-board:before {
   dl.list-inline dd:first-of-type {
     border-top: 0;
   }
+}
+
+@media (min-width: 992px) {
+  dl.list-inline dd {
+    width: 66.67%;
+  }
+  dl.list-inline dt {
+    width: 33.33%;
+  }
+}
+
+.dl-inline {
+  display: inline-block;
+  padding-right: 0;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.dl-inline + .dl-inline {
+  margin-left: 50px;
+}
+
+.dl-small-header dt {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: normal;
 }
 
 .breadcrumb {
@@ -1698,23 +1727,6 @@ main ul.features.large-list li:before {
 
 main ol.large-list li:before {
   color: #00685e;
-}
-
-.dl-inline {
-  display: inline-block;
-  padding-right: 0;
-  margin-top: 1rem;
-  margin-bottom: 0;
-}
-
-.dl-inline + .dl-inline {
-  margin-left: 50px;
-}
-
-.dl-small-header dt {
-  font-size: 1rem;
-  line-height: 1.5;
-  font-weight: normal;
 }
 
 header h1 {

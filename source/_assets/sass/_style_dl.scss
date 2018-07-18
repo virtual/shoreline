@@ -3,7 +3,7 @@ dl.list-inline {
   width: 100%; 
   dt, dd { margin-bottom:0;}
   dd {padding: 0 0 1.5rem; }
-  dt { border-top: 1px solid $dl-border; padding: 1.5rem 0 0 0; }
+  dt { border-top: 1px solid $dl-border; padding: 1.5rem 0 0 0;  }
   dt:first-of-type { border-top:0;}
   dt { clear:both;}
 
@@ -41,14 +41,36 @@ dl.list-inline {
     margin:0; padding:0;
     display:block;
 
-    dd, dt { width:66.67%; display:inline-block; padding: 1.5rem 0; }
+    dd, dt { width:60%; 
+      //display:inline-block; 
+      padding: 1.5rem 0; 
+      display:block; 
+      float:right;
+    }
     [class*="icon-bg-"] + dd { padding-left: initial; }
     dt { 
       float:left;
-      width: 33.33%;
+      width: 40%;
+      padding-right: .5rem;
+      clear:both;
     }
     dd {
       border-top: 1px solid $dl-border; }
     dd:first-of-type { border-top:0;}
   }
+
+ 
 }
+@media (min-width: $screen-lg) {
+  dl.list-inline {
+    dd { width:66.67%; }
+    dt { width: 33.33%; }
+  }
+}
+
+.dl-inline { display: inline-block; padding-right:0; margin-top: 1rem; margin-bottom:0; }
+.dl-inline + .dl-inline { margin-left: 50px;}
+.dl-small-header { 
+  dt { font-size: 1rem; line-height: 1.5; font-weight: normal; }
+}
+

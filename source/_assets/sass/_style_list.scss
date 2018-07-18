@@ -185,8 +185,3 @@ main ul.features {
 main ol.large-list li:before {
   color: $primary;
 }
-.dl-inline { display: inline-block; padding-right:0; margin-top: 1rem; margin-bottom:0; }
-.dl-inline + .dl-inline { margin-left: 50px;}
-.dl-small-header { 
-  dt { font-size: 1rem; line-height: 1.5; font-weight: normal; }
-}
