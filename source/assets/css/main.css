@@ -1891,6 +1891,10 @@ header h1 {
   width: 100%;
 }
 
+.sidebar-container .card ul {
+  margin-bottom: 0;
+}
+
 .sidebar-container .card li {
   margin-bottom: .5rem;
 }

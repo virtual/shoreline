@@ -81,7 +81,7 @@
      </div>
     </div>
 </section>
-<section class="sectional sectional-padded theme-04">
+<section class="sectional sectional-padded">
   <div class="container-fluid">
      <h2 tabindex="-1" id="reqs">Eligiblity &amp; Requirements</h2>
      <ul>
@@ -116,7 +116,7 @@
      </p>
   </div>
 </section>
-<section class="sectional sectional-padded theme-04">
+<section class="sectional sectional-padded">
   <div class="container-fluid">
      <h2 tabindex="-1" id="related">Related Programs</h2>
      <ul>
@@ -134,6 +134,7 @@
        <li><a class="scrollable" href="#outcomes">Outcomes &amp; Careers</a></li>
        <li><a class="scrollable" href="#reqs">Eligibility &amp; Requirements</a></li>
        <li><a class="scrollable" href="#apply">How to Apply</a></li>
+       <li><a class="scrollable" href="#related">Related Programs</a></li>
     </ul>
  </div>
 
