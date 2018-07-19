@@ -143,24 +143,7 @@ ultricies nec, pellentesque eu, pretium quis, sem.</p>
     Cum sociis natoque penatibus et magnis dis parturient 
     montes, nascetur ridiculus mus. Donec quam felis, 
     ultricies nec, pellentesque eu, pretium quis, sem.</p>
-    <form action="#" method="post">
-      <fieldset>
-        <label for="name">Name:</label>
-        <input type="text" id="name" placeholder="Enter your 
-    full name" />
-    
-        <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="Enter 
-    your email address" />
-    
-        <label for="message">Message:</label>
-        <textarea id="message" placeholder="What's on your 
-    mind?"></textarea>
-    
-        <input type="submit" value="Send message" />
-    
-      </fieldset>
-    </form>
+
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing 
     elit. Aenean commodo ligula eget dolor. Aenean massa. 
     Cum sociis natoque penatibus et magnis dis parturient 

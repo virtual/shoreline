@@ -8,6 +8,7 @@
 .layout-master {
   position: relative;
 }
+
 // @media (min-width: $screen-sm) and (max-width: $screen-xl - 1) {
 //   .sidebar-container { padding-right: 20px;}
 // }
@@ -25,7 +26,9 @@
 
 @media (min-width: $screen-md) {
   .subnav .toggle { display:none;}
-
+  .content-header {
+    .breadcrumb, .header-info { padding-right: 33.33%; } // to wrap around sidenav
+  }
   .layout-has-nav { 
     .sidebar-container { width: 33.33%; position: relative; }
     .content-container { width:66.66%; padding-right: 40px;}
@@ -60,6 +63,9 @@
   }
 }  
 @media (min-width: $screen-lg) {
+  .content-header {
+    .breadcrumb, .header-info { padding-right: 25%; } // to wrap around sidenav
+  }
   .layout-has-nav { 
     .sidebar-container { width: 25%;}
     .content-container { width:75%;}

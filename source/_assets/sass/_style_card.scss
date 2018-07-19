@@ -39,3 +39,20 @@
     .card-title { font-size: 1.5rem; }
   }
 }
+
+// .card icons
+
+.card  {
+  .far, .fa, .fas {
+  font-size: 2rem;
+  padding-bottom: .5rem;
+  }
+}
+@media (min-width: $screen-md) {
+  .card  {
+    .far, .fa, .fas {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    }
+  }
+}

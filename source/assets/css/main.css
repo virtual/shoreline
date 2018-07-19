@@ -34,6 +34,9 @@
   .subnav .toggle {
     display: none;
   }
+  .content-header .breadcrumb, .content-header .header-info {
+    padding-right: 33.33%;
+  }
   .layout-has-nav .sidebar-container {
     width: 33.33%;
     position: relative;
@@ -80,6 +83,9 @@
 }
 
 @media (min-width: 992px) {
+  .content-header .breadcrumb, .content-header .header-info {
+    padding-right: 25%;
+  }
   .layout-has-nav .sidebar-container {
     width: 25%;
   }
@@ -412,6 +418,18 @@ h6, .h6 {
   }
 }
 
+.card .far, .card .fa, .card .fas {
+  font-size: 2rem;
+  padding-bottom: .5rem;
+}
+
+@media (min-width: 768px) {
+  .card .far, .card .fa, .card .fas {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
+}
+
 .primary {
   color: #00685e;
 }
@@ -469,7 +487,23 @@ h6, .h6 {
 }
 
 .more-arrow:after {
-  content: " \2192";
+  content: "";
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  background-image: url(../../resources/img/icons/arrow@3x.png);
+  background-position: center;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  height: 1rem;
+  width: 1rem;
+  background-size: contain;
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+  border-bottom: 0;
+  transform: rotate(0);
+  padding-left: 1rem;
+  margin-left: .5rem;
 }
 
 .clear {
