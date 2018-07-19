@@ -8,3 +8,11 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap'; 
  
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle {
+  color: $shoreline-green;
+  background-color: transparent;
+  border-color: $shoreline-green;
+}
+.btn-secondary:focus, .btn-secondary.focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-secondary.dropdown-toggle:focus {
+box-shadow: 0 0 0 0.2rem rgba(0, 104, 94, 0.5);
+}
