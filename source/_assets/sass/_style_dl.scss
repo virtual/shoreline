@@ -33,6 +33,7 @@ dl.list-inline {
     &.icon-bg-trophy-board:before{background-position:0 -232px;}
   }
 }
+dl:after { content: ''; clear:both; display:block;}
 
 
 @media (min-width: $screen-md) {
