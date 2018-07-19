@@ -48,3 +48,34 @@ p, ul, dl, ol {
   &.small, &.medium, &.large { color: darken($text-lightgray, 10)}
   }
 }
+.contact-us-box {
+  border: solid 2px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem; 
+  h2 { color:#000; font-size: 1.1875rem; line-height: 1.26; }
+  h3 { font-size: 1rem; line-height: 1.5; margin-top:2rem; margin-bottom:0; }
+  dl, dd, dt, p, ul, ol, li { font-size: inherit;}
+  dt { font-weight: 400; }
+  p, dd { color: $text-midgray}
+  // default to full width
+  
+
+}
+
+@media (min-width: $screen-md) {
+  .contact-us-box {
+    &> h2 { width: 100%; clear:both; text-align: center; }
+    address { display:flex; flex-direction: row; margin-bottom: 0; 
+      .content-block { flex: 1; padding-right: .5rem;}
+      h3 { margin-top:0;}
+    }
+  
+  }
+}
+
+.address-sidebar > .contact-us-box {
+  address { flex-direction: column}
+  .content-block { width: 100%; }
+}

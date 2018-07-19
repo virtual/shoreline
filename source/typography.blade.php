@@ -166,6 +166,12 @@ ultricies nec, pellentesque eu, pretium quis, sem.</p>
     Cum sociis natoque penatibus et magnis dis parturient 
     montes, nascetur ridiculus mus. Donec quam felis, 
     ultricies nec, pellentesque eu, pretium quis, sem.</p>
+
+
+    @include('_partials.address')
+
+    <div class="row">
+      <div class="col-md-8">
     <h3 class="primary">Summer 2018 online payment plan enrollment opens May 11, 2018</h3>
     <p>Payment plan must be in place by your tuition due date.</p>
     <table class="data">
@@ -199,6 +205,11 @@ ultricies nec, pellentesque eu, pretium quis, sem.</p>
     Cum sociis natoque penatibus et magnis dis parturient 
     montes, nascetur ridiculus mus. Donec quam felis, 
     ultricies nec, pellentesque eu, pretium quis, sem.</p>
+  </div>
+  <div class="col-md-4 address-sidebar">
+      @include('_partials.address')
+  </div>
+  </div>
   
 @endsection
 
