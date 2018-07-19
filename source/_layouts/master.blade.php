@@ -41,82 +41,119 @@
 </head>
 
 <body>
-    @include('_partials.topbar')
-    @include('_partials.header')
+    @include('_partials.topbar') @include('_partials.header')
+    
+    @if (trim($__env->yieldContent('content-interior')))
+    <div class="layout-master page-interior">
+      <div class="container-fluid">
+        <div id="maincontent" class="flex-layout-body">
+          @if (trim($__env->yieldContent('nav')))
+          <div class="layout-has-nav">
+            @endif
 
-  <div class="layout-master">
- @if (trim($__env->yieldContent('content-header')))
-  <div class="bg-primary content-header">
-    <div class="container-fluid">
-      @yield('content-header')
-    </div>
-  </div>
-    @if (trim($__env->yieldContent('lead')))
-      <div class="py-3 container-fluid">
-        <div class="row">
-          <div class="col-md-8 col-lg-9">
-      @yield('lead')
-    </div>
-    </div>
-      </div>
-    @endif
 
-  @endif
-
-  <div class="container-fluid"> 
-<div id="maincontent" class="flex-layout-body">
-  @if (trim($__env->yieldContent('nav')))
-  <div class="layout-has-nav">
-    @endif
-
+            @if (trim($__env->yieldContent('nav')))
+            <div id="sidebar-nav" class="sidebar-container overview">
   
+              <nav>
+                <!--<h2>
+            <span role="button" data-toggle="collapse" data-target="#submenu" aria-controls="submenu" aria-expanded="false" aria-label="Toggle navigation"
+              aria-hidden="true" class="fas fa-bars toggle">
+              <span class="sr-only">Expand Submenu</span>
+            </span> yield('menuheader')</h2>-->
+                <a class="sr-only show-on-focus" href="#interior">Skip Navigation</a>
+  
+                @yield('nav')
+              </nav>
+            </div>
+            @endif 
 
-    <main class="content-container" id="interior">
-      <div class="content-section ">
-        
-          @yield('content')
+            <main class="content-container" id="interior">
+              <div class="content-section ">
+                @yield('content-interior')
+              </div>
+            </main>
+            @if (trim($__env->yieldContent('nav')))
+          </div>
+              @endif
         </div>
-      
-    </main>
+      </div>
+    </div>
+      @endif 
 
-    @if (trim($__env->yieldContent('nav')))
-    <div id="sidebar-nav" class="sidebar-container overview">
 
-      <nav>
-        <!--<h2>
+ @if (trim($__env->yieldContent('content')))
+  <div class="layout-master">
+    @if (trim($__env->yieldContent('content-header')))
+    <div class="bg-primary content-header">
+      <div class="container-fluid">
+        @yield('content-header')
+      </div>
+    </div>
+    @if (trim($__env->yieldContent('lead')))
+    <div class="py-3 container-fluid">
+      <div class="row">
+        <div class="col-md-8 col-lg-9">
+          @yield('lead')
+        </div>
+      </div>
+    </div>
+    @endif @endif
+
+    <div class="container-fluid">
+      <div id="maincontent" class="flex-layout-body">
+        @if (trim($__env->yieldContent('nav')))
+        <div class="layout-has-nav">
+          @endif
+
+
+
+          <main class="content-container" id="interior">
+            <div class="content-section ">
+
+              @yield('content')
+            </div>
+
+          </main>
+
+          @if (trim($__env->yieldContent('nav')))
+          <div id="sidebar-nav" class="sidebar-container overview">
+
+            <nav>
+              <!--<h2>
           <span role="button" data-toggle="collapse" data-target="#submenu" aria-controls="submenu" aria-expanded="false" aria-label="Toggle navigation"
             aria-hidden="true" class="fas fa-bars toggle">
             <span class="sr-only">Expand Submenu</span>
           </span> yield('menuheader')</h2>-->
-        <a class="sr-only show-on-focus" href="#interior">Skip Navigation</a>
-       
-          @yield('nav')
-      </nav>
+              <a class="sr-only show-on-focus" href="#interior">Skip Navigation</a>
+
+              @yield('nav')
+            </nav>
+          </div>
+          @endif @if (trim($__env->yieldContent('nav')))
+        </div>
+        @endif
+
+      </div>
     </div>
-    @endif 
-    @if (trim($__env->yieldContent('nav')))
+
   </div>
-  @endif
-  
-</div>
+  @endif @if (trim($__env->yieldContent('sectionals'))) @yield('sectionals') @endif
+
+
+  <!-- FOOTER -->
+  <div id="footer">
+    @include('_partials/footer')
   </div>
-</div>
-
-@if (trim($__env->yieldContent('sectionals')))
-    @yield('sectionals')
-@endif
-
-
-<!-- FOOTER -->
-<div id="footer">
-  @include('_partials/footer')
-</div>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-<script src="{{ $page->baseUrl }}/assets/js/main.js"></script>
-<script src="{{ $page->baseUrl }}/assets/js/slick.min.js"></script>
-<script src="{{ $page->baseUrl }}/assets/js/slick-app.js?v=3"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script src="{{ $page->baseUrl }}/assets/js/main.js"></script>
+  <script src="{{ $page->baseUrl }}/assets/js/slick.min.js"></script>
+  <script src="{{ $page->baseUrl }}/assets/js/slick-app.js?v=3"></script>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 @extends('_layouts.master')
 
-@section('content')
+@section('content-interior')
  <h1>Timeline</h1>
   <div class="timeline">
     <div class="line text-muted"></div>

@@ -3,9 +3,7 @@
 
 
 
-@section('content')
-
-
+@section('content-interior')
 
 <div class="breadcrumb" aria-label="breadcrumb">
   <ol>
@@ -157,32 +155,7 @@ ultricies nec, pellentesque eu, pretium quis, sem.</p>
       <div class="col-md-8">
     <h3 class="primary">Summer 2018 online payment plan enrollment opens May 11, 2018</h3>
     <p>Payment plan must be in place by your tuition due date.</p>
-    <table class="data">
-      <tr>
-        <th>Entry Header 1</th>
-        <th>Entry Header 2</th>
-        <th>Entry Header 3</th>
-        <th>Entry Header 4</th>
-      </tr>
-      <tr>
-        <td>Entry First Line 1</td>
-        <td>Entry First Line 2</td>
-        <td>Entry First Line 3</td>
-        <td>Entry First Line 4</td>
-      </tr>
-      <tr>
-        <td>Entry Line 1</td>
-        <td>Entry Line 2</td>
-        <td>Entry Line 3</td>
-        <td>Entry Line 4</td>
-      </tr>
-      <tr>
-        <td>Entry Last Line 1</td>
-        <td>Entry Last Line 2</td>
-        <td>Entry Last Line 3</td>
-        <td>Entry Last Line 4</td>
-      </tr>
-    </table>
+    @include('_partials.table')
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing 
     elit. Aenean commodo ligula eget dolor. Aenean massa. 
     Cum sociis natoque penatibus et magnis dis parturient 

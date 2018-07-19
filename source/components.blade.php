@@ -2,11 +2,23 @@
 
 
 
-@section('content')
+@section('content-interior')
+<div class="breadcrumb" aria-label="breadcrumb">
+    <ol>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Enrollment Services</a></li>
+      <li><a href="#">Cashier</a></li>
+      <li>
+        <a class="active" aria-current="page" href="#">Tuition Payment Plan</a>
+      </li>
+    </ol>
+  </div>
 
-<!-- @include('_partials.lists') -->
+<h1>Tuition Payment Plan</h1>
+<p>An important step in attending college is having a solid plan for covering the cost of attendance. If you don't have money to pay your tuition all at once, review the following information on setting up a payment plan through Nelnet.</p>
+<p>Start budgeting for your education today. Your payments will be lower the sooner you start. </p>
 
-@include('_partials.overview')
+@include('_partials.nav-tab')
 
 @include('_partials.buttons')
 
