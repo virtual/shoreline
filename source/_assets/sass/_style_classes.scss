@@ -76,6 +76,7 @@ p, ul, dl, ol {
 }
 
 .address-sidebar > .contact-us-box {
+  &> h2 { text-align: left; }
   address { flex-direction: column}
   .content-block { width: 100%; }
 }

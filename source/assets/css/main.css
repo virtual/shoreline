@@ -676,6 +676,10 @@ p.gray.small, p.gray.medium, p.gray.large, ul.gray.small, ul.gray.medium, ul.gra
   }
 }
 
+.address-sidebar > .contact-us-box > h2 {
+  text-align: left;
+}
+
 .address-sidebar > .contact-us-box address {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
