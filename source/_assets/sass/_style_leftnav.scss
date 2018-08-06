@@ -1,0 +1,64 @@
+ .left-nav{ 
+  margin-bottom: 25px; 
+  padding-right: 0px; 
+  ul, li {
+    @extend %list-unstyled
+  }
+	ul.nav{
+    padding:0;
+    padding-bottom: 0.875rem;
+    background: #FFFFFF;
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.05);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    border-top: 6px solid $secondary;
+	
+		& > li{
+      display:block; 
+      width: 100%; 
+      padding: 0px 23px;
+			> div{
+				position: relative;
+			}
+			ul{
+				padding-left: 0px;
+			}
+			& > a {
+				padding: 14px 1px;
+        display: block;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);; 
+				position: relative;
+				z-index: 1;
+				-moz-transition: background-color 0.2s;
+				-webkit-transition: background-color 0.2s;
+				transition: background-color 0.2s;
+				&:hover{
+					text-decoration: underline;
+					color: $primary;
+				}
+      }
+      &:last-child > a {
+        border-bottom: 0;
+      }
+    }
+    ul#subnav_child {
+      padding-bottom: 14px;
+    }
+  }
+  ul.nav > li.current{
+    position: relative;
+    background-color: $primary;
+    display: block; 
+    a {
+      color:#fff;
+      border-bottom: 0;      
+    }
+    li a { // sublinks
+      font-size: 0.8125rem;
+      padding: 12px 0;
+      display:block;
+    }
+  }
+  li.current > a {font-weight: 700;}
+}

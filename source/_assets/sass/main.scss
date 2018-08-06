@@ -1,4 +1,4 @@
-$value: 2035433;
+.debug { display: none;}
 // Variables
 @import "variables";
 
@@ -24,6 +24,7 @@ $value: 2035433;
 @import "_style_header.scss";
 @import "_style_sidebar.scss"; 
 @import "_style_menu.scss"; 
+@import "_style_leftnav.scss"; 
 @import "_style_quicklinks.scss"; 
 @import "_style_footer.scss"; 
 @import "_style_shame.scss";

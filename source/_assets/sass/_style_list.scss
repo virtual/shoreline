@@ -186,7 +186,7 @@ main ol.large-list li:before {
   color: $primary;
 }
 
-ul.list-unstyled, ol.list-unstyled {
+ul.list-unstyled, ol.list-unstyled, %list-unstyled {
   list-style-type:none;
   li { 
     padding-left: 0; margin:0;

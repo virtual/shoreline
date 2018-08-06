@@ -45,18 +45,18 @@
     @include('_partials.header')
     
     @if (trim($__env->yieldContent('content-interior')))
+
+    <span class="debug">!!!! content-interior</span>
     <div class="layout-master page-interior">
       <div class="container-fluid">
         <div id="maincontent" class="flex-layout-body">
-          @if (trim($__env->yieldContent('overview-nav')))
-          <div class="layout-has-sidenav">
+          @if (trim($__env->yieldContent('left-nav')))
+          <div class="layout-has-left-nav">
             @endif
 
 
-            @if (trim($__env->yieldContent('overview-nav')))
-            <div id="sidebar-nav" class="sidebar-container overview">
-  
-              <nav>
+            @if (trim($__env->yieldContent('left-nav'))) 
+              <nav class="left-nav">
                 <!--<h2>
             <span role="button" data-toggle="collapse" data-target="#submenu" aria-controls="submenu" aria-expanded="false" aria-label="Toggle navigation"
               aria-hidden="true" class="fas fa-bars toggle">
@@ -64,9 +64,8 @@
             </span> yield('menuheader')</h2>-->
                 <a class="sr-only show-on-focus" href="#interior">Skip Navigation</a>
   
-                @yield('overview-nav')
-              </nav>
-            </div>
+                @yield('left-nav')
+              </nav> 
             @endif 
 
             <main class="content-container" id="interior">
@@ -74,7 +73,7 @@
                 @yield('content-interior')
               </div>
             </main>
-            @if (trim($__env->yieldContent('overview-nav')))
+            @if (trim($__env->yieldContent('left-nav')))
           </div>
               @endif
         </div>
@@ -84,6 +83,8 @@
 
 
  @if (trim($__env->yieldContent('content')))
+ <span class="debug">!!!! content</span>
+
   <div class="layout-master">
     @if (trim($__env->yieldContent('content-header')))
     <div class="bg-primary content-header">
