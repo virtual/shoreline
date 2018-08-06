@@ -79,6 +79,39 @@ $(function () {
   };
   contentfeatureslider.slick(contentfeatureOptions);
 
+  carouselslider = $('.slick-slider.carousel-slider');
+  carouselsliderOptions = {
+    arrows: true,
+    dots: true,
+    cssEase: 'linear', 
+    infinite: true,
+    prevArrow: "<button type='button' aria-label='Previous' class='slick-prev pull-left'><span class='button-left' aria-hidden='true'></span></button>",
+        nextArrow: "<button type='button' aria-label='Next' class='slick-next pull-right'><span class='button-right' aria-hidden='true'></span></button>",
+        mew:  $('<div class="carousel-feature-caption">'+$('.carousel-feature-text')[0].innerHTML+'</div>').insertAfter(".slick-slider")
+  };
+  carouselslider.slick(carouselsliderOptions);
+  // $(carouselslider.each(function (idx, item) {
+  //   var carouselId = "carousel" + idx;
+  //   this.id = carouselId;
+  //   $(this).slick({
+  //     carouselsliderOptions
+  //   }); 
+  //   $(this).on('afterChange', function(event, slick, currentSlide, nextSlide){
+  //     populateCaption(slick, currentSlide);
+  //   });
+  // }));
+  
+
+  function populateCaption(slick, currentSlide) {
+    var activeSlide = ($(slick.$slides.get(currentSlide)).attr('id'));
+    var activeText = ($("#"+activeSlide)).find('.carousel-feature-text')[0].innerHTML;
+    // console.log(activeText)
+    $('.carousel-feature-caption').html(activeText);
+  }
+  carouselslider.on('afterChange', function(event, slick, currentSlide, nextSlide){
+    populateCaption(slick, currentSlide);
+  });
+
   $('.slick-slider.flex-items').slick({
     infinite: true,
     slidesToShow: 4,
