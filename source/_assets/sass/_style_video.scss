@@ -1,0 +1,23 @@
+.video-container { clear:both; 
+  .video-lightbox { display:flex;
+    align-items: center;
+    justify-content: center;}
+  .video-lightbox {
+    img, .btn { flex: 1;}
+    .btn {
+      position: absolute;
+      z-index: 1;
+      border:0;
+    }
+    img {
+      text-align: left;  
+      background:linear-gradient($primary, $primary) no-repeat 10px 10px;
+      background-color: transparent;
+      padding: 0 10px 10px 0;
+      margin-bottom: 0.70625rem; 
+    }
+  }
+
+  h3 { color: $primary; }
+  .btn { color: $link-blue; background-color:#fff; }
+}
