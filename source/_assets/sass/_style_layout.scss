@@ -1,7 +1,7 @@
  
 
  
-.layout-has-nav {   
+.layout-has-sidenav {   
   .sidebar-container, .content-container  { width: 100%; padding-top: 1rem; padding-bottom: 1rem; }
 }
 
@@ -15,7 +15,7 @@
 
 @media (max-width: $screen-md - 1) {
   #maincontent {
-    .layout-has-nav {  
+    .layout-has-sidenav {  
       display: flex;
       flex-direction: column-reverse;
       .sidebar-container {   flex: 1; }
@@ -29,7 +29,7 @@
   .content-header {
     .breadcrumb, .header-info { padding-right: 33.33%; } // to wrap around sidenav
   }
-  .layout-has-nav { 
+  .layout-has-sidenav { 
     .sidebar-container { width: 33.33%; position: relative; }
     .content-container { width:66.66%; padding-right: 40px;}
     .sidebar-container.overview {
@@ -44,7 +44,7 @@
     }
   }
   
-  .layout-has-nav { 
+  .layout-has-sidenav { 
     display: flex;
     flex-direction: row;  
     min-height: 1px;
@@ -66,7 +66,7 @@
   .content-header {
     .breadcrumb, .header-info { padding-right: 25%; } // to wrap around sidenav
   }
-  .layout-has-nav { 
+  .layout-has-sidenav { 
     .sidebar-container { width: 25%;}
     .content-container { width:75%;}
   }

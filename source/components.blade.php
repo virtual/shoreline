@@ -72,7 +72,9 @@
 
 @endsection
 
-
+@section('left-nav')
+@include('_partials.left-nav')
+@endsection
 
 
 @section('feature')

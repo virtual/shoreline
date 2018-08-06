@@ -39,7 +39,7 @@
 @section('sectionals')
 <section class="sectional sectional-padded">
   <div class="container-fluid">
-      <div class="layout-has-nav">
+      <div class="layout-has-sidenav">
     <div class="content-container"> 
      <h2 tabindex="-1" id="outcomes" class="primary">Outcomes &amp; Careers</h2>
      
@@ -128,7 +128,7 @@
 </section>
 @endsection
 
-@section('nav')
+@section('overview-nav')
 <div class="card card-program-heading">
     <h2>On this page</h2>
     <ul class="list-unstyled">

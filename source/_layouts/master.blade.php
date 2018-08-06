@@ -41,18 +41,19 @@
 </head>
 
 <body>
-    @include('_partials.topbar') @include('_partials.header')
+    @include('_partials.topbar') 
+    @include('_partials.header')
     
     @if (trim($__env->yieldContent('content-interior')))
     <div class="layout-master page-interior">
       <div class="container-fluid">
         <div id="maincontent" class="flex-layout-body">
-          @if (trim($__env->yieldContent('nav')))
-          <div class="layout-has-nav">
+          @if (trim($__env->yieldContent('overview-nav')))
+          <div class="layout-has-sidenav">
             @endif
 
 
-            @if (trim($__env->yieldContent('nav')))
+            @if (trim($__env->yieldContent('overview-nav')))
             <div id="sidebar-nav" class="sidebar-container overview">
   
               <nav>
@@ -63,7 +64,7 @@
             </span> yield('menuheader')</h2>-->
                 <a class="sr-only show-on-focus" href="#interior">Skip Navigation</a>
   
-                @yield('nav')
+                @yield('overview-nav')
               </nav>
             </div>
             @endif 
@@ -73,7 +74,7 @@
                 @yield('content-interior')
               </div>
             </main>
-            @if (trim($__env->yieldContent('nav')))
+            @if (trim($__env->yieldContent('overview-nav')))
           </div>
               @endif
         </div>
@@ -98,12 +99,13 @@
         </div>
       </div>
     </div>
-    @endif @endif
+    @endif 
+    @endif
 
     <div class="container-fluid">
       <div id="maincontent" class="flex-layout-body">
-        @if (trim($__env->yieldContent('nav')))
-        <div class="layout-has-nav">
+        @if (trim($__env->yieldContent('overview-nav')))
+        <div class="layout-has-sidenav">
           @endif
 
 
@@ -116,7 +118,7 @@
 
           </main>
 
-          @if (trim($__env->yieldContent('nav')))
+          @if (trim($__env->yieldContent('overview-nav')))
           <div id="sidebar-nav" class="sidebar-container overview">
 
             <nav>
@@ -127,10 +129,11 @@
           </span> yield('menuheader')</h2>-->
               <a class="sr-only show-on-focus" href="#interior">Skip Navigation</a>
 
-              @yield('nav')
+              @yield('overview-nav')
             </nav>
           </div>
-          @endif @if (trim($__env->yieldContent('nav')))
+          @endif 
+          @if (trim($__env->yieldContent('overview-nav')))
         </div>
         @endif
 
