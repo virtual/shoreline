@@ -1,5 +1,6 @@
 .sectional { 
   overflow: auto;
+  overflow-x: hidden; // for those mean carousel scrollbars
   position: relative;
 }
 .sectional-background>* {

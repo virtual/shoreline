@@ -18,8 +18,33 @@ $(function () {
     cssEase: 'linear', 
     variableWidth: true,
     infinite: true,
+
+    autoplay: true,
+    arrows: true,
+          slick: true, 
+    slidesToShow: 1,
+    speed: 500,
+    variableWidth: true,
+    autoplaySpeed: 8000,
+
     prevArrow: "<button type='button' aria-label='Previous' class='slick-prev pull-left'><span class='button-left' aria-hidden='true'></span></button>",
-    nextArrow: "<button type='button' aria-label='Next' class='slick-next pull-right'><span class='button-right' aria-hidden='true'></span></button>"
+    nextArrow: "<button type='button' aria-label='Next' class='slick-next pull-right'><span class='button-right' aria-hidden='true'></span></button>",
+ 
+    responsive: [{
+            breakpoint:480,
+            settings: { 
+                variableWidth: false,
+                slidesToShow: 1
+            },
+            breakpoint:992,
+            settings: {
+ 
+                variableWidth: false,
+                slidesToShow: 1
+            }
+        }]
+
+
   }; 
   
   $(carouselslider.each(function (idx, item) {
@@ -29,12 +54,14 @@ $(function () {
       carouselsliderOptions
     );
     // Create container for description
-    $('<div class="carousel-feature-caption">'+$(this).find('.slick-current .carousel-feature-text')[0].innerHTML+'</div>').insertAfter($(this));
+    $('<div class="carousel-feature-caption" style="max-width: '+$(this).find('.slick-current').width()+ 'px">'+$(this).find('.slick-current .carousel-feature-text')[0].innerHTML+'</div>').insertAfter($(this));
+    // $(this).next('.carousel-feature-caption').attr('style','width: 500px')
     // When slide changed, show updated desc in container
       $(this).on('afterChange', function(event, slick, currentSlide, nextSlide){
         var activeSlide = ($(slick.$slides.get(currentSlide)).attr('id'));
         var activeText = ($("#"+activeSlide)).find('.carousel-feature-text')[0].innerHTML;
         $(this).next('.carousel-feature-caption').html(activeText); // sibling of active slider
+        $(this).next('.carousel-feature-caption').attr('style','max-width: '+$(this).find('.slick-current').width()+'px')
     });
   }));
    

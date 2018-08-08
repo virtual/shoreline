@@ -288,9 +288,7 @@ main .slick-slider ul li:before { content: none; }
 .carousel-slider .slick-dots {  
   text-align: left;
 }
-.carousel-slider .slick-active.slick-slide + .slick-slide {
-  padding-left: 1rem;
-}
+
 .carousel-slider .slick-dots li button:before  {
   display: none;
   }
@@ -304,3 +302,9 @@ main .slick-slider ul li:before { content: none; }
 }
 .carousel-slider .carousel-feature-text { display:none;}
 .carousel-slider.slick-dotted.slick-slider { margin-bottom: 12px;}
+@media (min-width: 992px) {
+  .carousel-slider .slick-active.slick-slide + .slick-slide {
+    padding-left: 1rem;
+    opacity: .5;
+  }
+}
