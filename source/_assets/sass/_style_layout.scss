@@ -26,7 +26,7 @@
 
 @media (min-width: $screen-md) {
   .subnav .toggle { display:none;}
-  .content-header {
+  .content-header.program-option {
     .breadcrumb, .header-info { padding-right: 33.33%; } // to wrap around sidenav
   }
   .layout-has-sidenav { 
@@ -63,9 +63,15 @@
   }
 }  
 @media (min-width: $screen-lg) {
-  .content-header {
+  .content-header.program-option {
     .breadcrumb, .header-info { padding-right: 25%; } // to wrap around sidenav
   }
+  
+  .content-header.program .header-info {
+    display:flex; 
+    .header-content, .header-image { width: 50%; flex: 1; }
+  }
+
   .layout-has-sidenav { 
     .sidebar-container { width: 25%;}
     .content-container { width:75%;}

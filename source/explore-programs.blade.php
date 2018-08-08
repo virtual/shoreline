@@ -17,11 +17,11 @@
 
   <dl class="dl-inline dl-small-header">
     <dt>Department</dt>
-    <dd><a href="#">VCT</a></dd>
+    <dd><a href="/">VCT</a></dd>
   </dl>
   <dl class="dl-inline dl-small-header">
     <dt>Program</dt>
-    <dd><a href="#">Visual Arts</a></dd>
+    <dd><a href="/program">Visual Arts</a></dd>
   </dl>
 </div>
 

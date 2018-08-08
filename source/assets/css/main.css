@@ -38,7 +38,7 @@
   .subnav .toggle {
     display: none;
   }
-  .content-header .breadcrumb, .content-header .header-info {
+  .content-header.program-option .breadcrumb, .content-header.program-option .header-info {
     padding-right: 33.33%;
   }
   .layout-has-sidenav .sidebar-container {
@@ -87,8 +87,19 @@
 }
 
 @media (min-width: 992px) {
-  .content-header .breadcrumb, .content-header .header-info {
+  .content-header.program-option .breadcrumb, .content-header.program-option .header-info {
     padding-right: 25%;
+  }
+  .content-header.program .header-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .content-header.program .header-info .header-content, .content-header.program .header-info .header-image {
+    width: 50%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
   .layout-has-sidenav .sidebar-container {
     width: 25%;
@@ -712,6 +723,17 @@ h6, .h6 {
 .content-header {
   padding-top: 50px;
   padding-bottom: 38px;
+}
+
+.content-header.program:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.content-header.program .header-image img {
+  width: 100%;
+  max-width: auto;
 }
 
 .gray {

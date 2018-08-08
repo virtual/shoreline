@@ -67,7 +67,8 @@
   padding-top: 50px;
   padding-bottom: 38px;
 }
-
+.content-header.program:after { content: ''; display: table; clear:both;}
+.content-header.program .header-image img { width: 100%; max-width: auto;}
 .gray {
   color: $text-lightgray;
   p, ul, dl, ol { color: $text-lightgray;

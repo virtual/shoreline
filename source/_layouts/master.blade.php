@@ -87,11 +87,19 @@
 
   <div class="layout-master">
     @if (trim($__env->yieldContent('content-header')))
-    <div class="bg-primary content-header">
+      @if (trim($__env->yieldContent('program')))
+    <div class="content-header program">
       <div class="container-fluid">
         @yield('content-header')
       </div>
     </div>
+      @else
+      <div class="bg-primary content-header program-option">
+        <div class="container-fluid">
+          @yield('content-header')
+        </div>
+      </div>
+    @endif 
     @if (trim($__env->yieldContent('lead')))
     <div class="py-3 container-fluid">
       <div class="row">

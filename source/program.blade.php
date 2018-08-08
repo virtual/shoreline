@@ -6,30 +6,33 @@
     <li><a href="#">Home</a></li>
     <li><a href="#">Explore Programs</a></li>
     <li><a href="#">Transfer Programs</a></li>
-    <li><a href="#">Direct Transfer</a></li>
-    <li><a class="active" aria-current="page" href="#">Video Game Design</a></li>
+    <li><a class="active" aria-current="page" href="#">Visual Arts</a></li>
   </ol>
 
 </div>
 
 <div class="header-info">
-  <h1>Video Game Design</h1>
-
-  <dl class="dl-inline dl-small-header">
-    <dt>Department</dt>
-    <dd><a href="#">VCT</a></dd>
-  </dl>
-  <dl class="dl-inline dl-small-header">
-    <dt>Program</dt>
-    <dd><a href="#">Visual Arts</a></dd>
-  </dl>
+  <div class="header-content">
+    <h1>Visual Arts</h1>
+    <p class="xxl">The future is visual</p>
+    <a href="#" class="btn btn-important">Apply</a>
+    <a href="#" class="btn btn-secondary">Ask a Question</a>
+  </div>
+  <figure class="header-image"><img alt="" src="/resources/img/videos/Video-Snippet.jpg"><figcaption>
+      <p><strong>Above: </strong>Students working with paper using cutting mat
+      </p>
+   </figcaption>
+  </figure>
+  
 </div>
 
 @endsection
 
 @section ('lead') 
 <h2 class="sr-only" id="overview" tabindex="-1">Overview</h2>
-<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.</p>
+<p class="lead">
+    The Visual Communications Technology program trains students to use their visual media skills in graphic design, video production, video game design and web design. Students learn in a cross disciplinary environment and have the opportunity to join campus clubs to put their skills to use.
+</p>
 @endsection
 
 @section('content')
@@ -134,4 +137,6 @@
 </section>
 @endsection
 
- 
+@section('program')  
+true
+@endsection 
