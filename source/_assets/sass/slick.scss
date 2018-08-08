@@ -288,6 +288,9 @@ main .slick-slider ul li:before { content: none; }
 .carousel-slider .slick-dots {  
   text-align: left;
 }
+.carousel-slider .slick-active.slick-slide + .slick-slide {
+  padding-left: 1rem;
+}
 .carousel-slider .slick-dots li button:before  {
   display: none;
   }

@@ -84,6 +84,7 @@ $(function () {
     arrows: true,
     dots: true,
     cssEase: 'linear', 
+    variableWidth: true,
     infinite: true,
     prevArrow: "<button type='button' aria-label='Previous' class='slick-prev pull-left'><span class='button-left' aria-hidden='true'></span></button>",
         nextArrow: "<button type='button' aria-label='Next' class='slick-next pull-right'><span class='button-right' aria-hidden='true'></span></button>",
