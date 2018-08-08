@@ -83,12 +83,12 @@ $(function () {
   carouselsliderOptions = {
     arrows: true,
     dots: true,
-    cssEase: 'linear', 
+    cssEase: 'linear',
     variableWidth: true,
     infinite: true,
     prevArrow: "<button type='button' aria-label='Previous' class='slick-prev pull-left'><span class='button-left' aria-hidden='true'></span></button>",
-        nextArrow: "<button type='button' aria-label='Next' class='slick-next pull-right'><span class='button-right' aria-hidden='true'></span></button>",
-        mew:  $('<div class="carousel-feature-caption">'+$('.carousel-feature-text')[0].innerHTML+'</div>').insertAfter(".slick-slider")
+    nextArrow: "<button type='button' aria-label='Next' class='slick-next pull-right'><span class='button-right' aria-hidden='true'></span></button>",
+    mew: $('<div class="carousel-feature-caption">' + $('.carousel-feature-text')[0].innerHTML + '</div>').insertAfter(".slick-slider")
   };
   carouselslider.slick(carouselsliderOptions);
   // $(carouselslider.each(function (idx, item) {
@@ -101,15 +101,15 @@ $(function () {
   //     populateCaption(slick, currentSlide);
   //   });
   // }));
-  
+
 
   function populateCaption(slick, currentSlide) {
-    var activeSlide = ($(slick.$slides.get(currentSlide)).attr('id'));
-    var activeText = ($("#"+activeSlide)).find('.carousel-feature-text')[0].innerHTML;
+    var activeSlide = $(slick.$slides.get(currentSlide)).attr('id');
+    var activeText = $("#" + activeSlide).find('.carousel-feature-text')[0].innerHTML;
     // console.log(activeText)
     $('.carousel-feature-caption').html(activeText);
   }
-  carouselslider.on('afterChange', function(event, slick, currentSlide, nextSlide){
+  carouselslider.on('afterChange', function (event, slick, currentSlide, nextSlide) {
     populateCaption(slick, currentSlide);
   });
 
