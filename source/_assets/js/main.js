@@ -120,7 +120,31 @@ var submenu = document.getElementById('submenu');
    });
   */
 //  setOverviewOffset(calcOverviewOffset());
-});
+
+
+
+/* from Shoreline */
+	// table-stacked js
+	$('.table-r1').each( function(e) {
+		var headerNames = [];
+    var rowTitles = [];
+		$(this).find('thead th').each( function(e, item) {
+			headerNames.push(item.innerText); // context causes errors, removed
+    });
+		$(this).find('tbody th').each( function(e, item) {			
+			rowTitles.push(item.innerText); // context causes errors, removed
+    });
+		$(this).find('tbody tr').each( function(e) {
+			$(this).children('th').text(rowTitles[e]); 
+			$(this).children('td').each( function(e) {
+				$(this).attr('data-title', headerNames[e+1]) 
+			});
+		}); 
+	});
+	
+
+
+}); // END FUNCTION READY
 
 
 function calcOverviewOffset() {
@@ -137,3 +161,5 @@ function setOverviewOffset(offset) {
 function mew() {
   console.log('mew');
 }
+
+
