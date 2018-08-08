@@ -23,6 +23,5 @@
 
       </div>
     </dd>
-  </dl>
-  @include('_partials.table-stacked')
+  </dl> 
 </section>
