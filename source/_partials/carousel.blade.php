@@ -1,7 +1,7 @@
 <div>
  
     <div class="carousel-feature-img">
-      <img src="{{ $img }}" alt="{{ $alt }}" />
+      <img src="{{ $page->baseUrl }}{{ $img }}" alt="{{ $alt }}" />
     </div>
      
   <div class="carousel-feature-text">

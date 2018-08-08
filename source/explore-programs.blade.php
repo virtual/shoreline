@@ -21,7 +21,7 @@
   </dl>
   <dl class="dl-inline dl-small-header">
     <dt>Program</dt>
-    <dd><a href="/program">Visual Arts</a></dd>
+    <dd><a href="{{ $page->baseUrl }}/program">Visual Arts</a></dd>
   </dl>
 </div>
 
