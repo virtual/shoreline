@@ -54,14 +54,16 @@ $(function () {
       carouselsliderOptions
     );
     // Create container for description
-    $('<div class="carousel-feature-caption" style="max-width: '+$(this).find('.slick-current').width()+ 'px">'+$(this).find('.slick-current .carousel-feature-text')[0].innerHTML+'</div>').insertAfter($(this));
+    var slideW = ($(this).find('.slick-current').width()) > 0 ? $(this).find('.slick-current').width() + 'px' : '100%';
+    $('<div class="carousel-feature-caption" style="max-width: '+slideW+ '">'+$(this).find('.slick-current .carousel-feature-text')[0].innerHTML+'</div>').insertAfter($(this));
     // $(this).next('.carousel-feature-caption').attr('style','width: 500px')
     // When slide changed, show updated desc in container
       $(this).on('afterChange', function(event, slick, currentSlide, nextSlide){
         var activeSlide = ($(slick.$slides.get(currentSlide)).attr('id'));
         var activeText = ($("#"+activeSlide)).find('.carousel-feature-text')[0].innerHTML;
         $(this).next('.carousel-feature-caption').html(activeText); // sibling of active slider
-        $(this).next('.carousel-feature-caption').attr('style','max-width: '+$(this).find('.slick-current').width()+'px')
+        var slideW = ($(this).find('.slick-current').width()) > 0 ? $(this).find('.slick-current').width() + 'px' : '100%';
+        $(this).next('.carousel-feature-caption').attr('style','max-width: '+ slideW)
     });
   }));
    
