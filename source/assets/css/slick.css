@@ -282,3 +282,23 @@ main .slick-slider ul li:before {
     opacity: .5;
   }
 }
+
+@media (max-width: 767px) {
+  .carousel-slider .slick-arrow {
+    position: absolute;
+    right: 10px;
+    left: auto;
+    top: auto;
+    bottom: 15px;
+    width: 50px;
+  }
+  .carousel-slider .slick-prev.slick-arrow {
+    margin-right: 50px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .carousel-slider .slick-next.slick-arrow {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+}

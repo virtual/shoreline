@@ -18,8 +18,8 @@
     <a href="#" class="btn btn-important">Apply</a>
     <a href="#" class="btn btn-secondary">Ask a Question</a>
   </div>
-  <figure class="header-image"><img alt="" src="/resources/img/videos/Video-Snippet.jpg"><figcaption>
-      <p><strong>Above: </strong>Students working with paper using cutting mat
+  <figure class="header-image"><img alt="" src="{{ $page->baseUrl }}/resources/img/stock/rectangle-3.jpg"><figcaption>
+      <p><strong>Above: </strong>User Option: Show as Caption OR show as Alt?
       </p>
    </figcaption>
   </figure>
@@ -71,7 +71,7 @@
       ])   
         @include('_partials.carousel', [ 
         'desc' => "Car1: 2Bob Hutchinson was part of the pioneer generation of animators in Seattle who, confronted with limited resources, established a vital presence by creating their own centers of animation and film where experimentation was the norm.",
-        'alt' => 'Car1: Photo Title2', 
+        'alt' => 'Car1: Photo Title3', 
         'img' => '/resources/img/carousel/rectangle-copy-7.png',          
         'link' => 'https://www.youtube.com/watch?v=YkLwzgPoQcA'
         ])  
@@ -117,7 +117,7 @@
               ])   
                 @include('_partials.carousel', [ 
                 'desc' => "Car2: 2Bob Hutchinson was part of the pioneer generation of animators in Seattle who, confronted with limited resources, established a vital presence by creating their own centers of animation and film where experimentation was the norm.",
-                'alt' => 'Car2: Photo Title2', 
+                'alt' => 'Car2: Photo Title3', 
                 'img' => '/resources/img/carousel/rectangle-copy-7.png',          
                 'link' => 'https://www.youtube.com/watch?v=YkLwzgPoQcA'
                 ])  
