@@ -212,15 +212,19 @@
     position: absolute;
     top: 0;
     right: 0;
-    padding: 1rem 1.125rem !important;
+    padding: 1.25rem 1.125rem !important;
     font-size: 1.25rem; // padding: .5rem 1rem !important;
-    border-left: 1px solid rgba(0, 0, 0, 0.1); 
+    // border-left: 1px solid rgba(0, 0, 0, 0.1); 
+    border-left: 1px solid #e6e6e6;
   }
   .megamenu>div>div {
     width: 100%;
   }
   #navbarCollapse>ul>li>a,
   #navbarCollapse>div>ul>li>a {
-    position: relative;
+    position: relative; 
+  }
+  #navbarCollapse>ul>li>a { 
+    overflow:hidden;
   }
 }

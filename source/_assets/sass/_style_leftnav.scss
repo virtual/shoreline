@@ -1,17 +1,19 @@
  .left-nav{ 
-  margin-bottom: 25px; 
+  margin-bottom: 0; 
   padding-right: 0px; 
+  margin-left:-20px;
+  margin-right: -20px;
   ul, li {
     @extend %list-unstyled
   }
 	ul.nav{
     padding:0;
-    padding-bottom: 0.875rem;
+    padding-bottom: 2rem;
     background: #FFFFFF;
-    border: 1px solid rgba(0,0,0,0.05);
-    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.05);
-    border-radius: 5px;
-    margin-bottom: 1rem;
+    border:0;
+    box-shadow:0;
+    border-radius: 0;
+    margin-bottom: 0;
     border-top: 6px solid $secondary;
 	
 		& > li{
@@ -61,4 +63,18 @@
     }
   }
   li.current > a {font-weight: 700;}
+}
+@media (min-width: $screen-sm) {
+  .left-nav { margin-left: auto; margin-right: auto;
+    margin-bottom: 25px; 
+  	ul.nav{
+      padding-bottom: 0.875rem;
+      border: 1px solid rgba(0,0,0,0.05);
+      box-shadow: 0 1px 3px 0 rgba(0,0,0,0.05);
+      border-radius: 5px;
+      margin-bottom: 1rem;
+      border-top: 6px solid $secondary;
+    }
+  
+  }
 }

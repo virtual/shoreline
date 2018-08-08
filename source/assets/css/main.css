@@ -970,13 +970,13 @@ p.gray.small, p.gray.medium, p.gray.large, ul.gray.small, ul.gray.medium, ul.gra
 
 @media (min-width: 992px) {
   .quote-feature .quote-feature-img.vertical {
-    padding: 0 1.75rem;
+    padding: 0 1.25rem;
   }
 }
 
 @media (min-width: 1200px) {
   .quote-feature .quote-feature-img.vertical {
-    padding: 0 3.75rem;
+    padding: 0 1.75rem;
   }
 }
 
@@ -2060,7 +2060,7 @@ header#header h1 {
 }
 
 header#header {
-  padding-bottom: 1.5rem;
+  padding-bottom: 0;
 }
 
 .navbar-brand {
@@ -2114,6 +2114,9 @@ header#header {
 }
 
 @media (min-width: 992px) {
+  header#header {
+    padding-bottom: 1.5rem;
+  }
   .searchbox input.form-control {
     display: none;
   }
@@ -2500,9 +2503,9 @@ header#header {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 1rem 1.125rem !important;
+    padding: 1.25rem 1.125rem !important;
     font-size: 1.25rem;
-    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid #e6e6e6;
   }
   .megamenu > div > div {
     width: 100%;
@@ -2511,22 +2514,27 @@ header#header {
   #navbarCollapse > div > ul > li > a {
     position: relative;
   }
+  #navbarCollapse > ul > li > a {
+    overflow: hidden;
+  }
 }
 
 .left-nav {
-  margin-bottom: 25px;
+  margin-bottom: 0;
   padding-right: 0px;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 .left-nav ul.nav {
   padding: 0;
-  padding-bottom: 0.875rem;
+  padding-bottom: 2rem;
   background: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
-          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
-  border-radius: 5px;
-  margin-bottom: 1rem;
+  border: 0;
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
+  border-radius: 0;
+  margin-bottom: 0;
   border-top: 6px solid #ffb500;
 }
 
@@ -2586,6 +2594,23 @@ header#header {
 
 .left-nav li.current > a {
   font-weight: 700;
+}
+
+@media (min-width: 480px) {
+  .left-nav {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+  }
+  .left-nav ul.nav {
+    padding-bottom: 0.875rem;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    border-top: 6px solid #ffb500;
+  }
 }
 
 .quicklinks:first-of-type {
