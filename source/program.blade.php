@@ -106,26 +106,26 @@
         <div class="slick-slider carousel-slider">
       
             @include('_partials.carousel', [ 
-              'desc' => "Bob Hutchinson was part of the pioneer generation of animators in Seattle who, confronted with limited resources, established a vital presence by creating their own centers of animation and film where experimentation was the norm.",
-              'alt' => 'Photo Title', 
+              'desc' => "Car2: Bob Hutchinson was part of the pioneer generation of animators in Seattle who, confronted with limited resources, established a vital presence by creating their own centers of animation and film where experimentation was the norm.",
+              'alt' => 'Car2: Photo Title', 
               'img' => '/resources/img/carousel/rectangle-copy-7.png',          
               'link' => 'https://www.youtube.com/watch?v=YkLwzgPoQcA'
               ])  
               @include('_partials.carousel', [ 
-              'desc' => "2Bob Hutchinson was part of the pioneer generation of animators in Seattle who, confronted with limited resources, established a vital presence by creating their own centers of animation and film where experimentation was the norm.",
-              'alt' => 'Photo Title2', 
+              'desc' => "Car2: 2Bob Hutchinson was part of the pioneer generation of animators in Seattle who, confronted with limited resources, established a vital presence by creating their own centers of animation and film where experimentation was the norm.",
+              'alt' => 'Car2: Photo Title2', 
               'img' => '/resources/img/carousel/rectangle-copy-7.png',          
               'link' => 'https://www.youtube.com/watch?v=YkLwzgPoQcA'
               ])  
               @include('_partials.carousel', [ 
-                'desc' => "Bob Hutchinson was part of the pioneer generation of animators in Seattle who, confronted with limited resources, established a vital presence by creating their own centers of animation and film where experimentation was the norm.",
-                'alt' => 'Photo Title', 
+                'desc' => "Car2: Bob Hutchinson was part of the pioneer generation of animators in Seattle who, confronted with limited resources, established a vital presence by creating their own centers of animation and film where experimentation was the norm.",
+                'alt' => 'Car2: Photo Title', 
                 'img' => '/resources/img/carousel/rectangle-copy-7.png',          
                 'link' => 'https://www.youtube.com/watch?v=YkLwzgPoQcA'
                 ])  
                 @include('_partials.carousel', [ 
-                'desc' => "2Bob Hutchinson was part of the pioneer generation of animators in Seattle who, confronted with limited resources, established a vital presence by creating their own centers of animation and film where experimentation was the norm.",
-                'alt' => 'Photo Title2', 
+                'desc' => "Car2: 2Bob Hutchinson was part of the pioneer generation of animators in Seattle who, confronted with limited resources, established a vital presence by creating their own centers of animation and film where experimentation was the norm.",
+                'alt' => 'Car2: Photo Title2', 
                 'img' => '/resources/img/carousel/rectangle-copy-7.png',          
                 'link' => 'https://www.youtube.com/watch?v=YkLwzgPoQcA'
                 ])  

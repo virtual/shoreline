@@ -19,31 +19,61 @@ $(function () {
     variableWidth: true,
     infinite: true,
     prevArrow: "<button type='button' aria-label='Previous' class='slick-prev pull-left'><span class='button-left' aria-hidden='true'></span></button>",
-        nextArrow: "<button type='button' aria-label='Next' class='slick-next pull-right'><span class='button-right' aria-hidden='true'></span></button>",
-        mew:  $('<div class="carousel-feature-caption">'+$('.carousel-feature-text')[0].innerHTML+'</div>').insertAfter(".slick-slider")
+    nextArrow: "<button type='button' aria-label='Next' class='slick-next pull-right'><span class='button-right' aria-hidden='true'></span></button>"
+    // populateCaption:  $('<div class="carousel-feature-caption">'+$('.carousel-feature-text')[0].innerHTML+'</div>').insertAfter($(this))
+
   };
-  carouselslider.slick(carouselsliderOptions);
-  // $(carouselslider.each(function (idx, item) {
-  //   var carouselId = "carousel" + idx;
-  //   this.id = carouselId;
-  //   $(this).slick({
-  //     carouselsliderOptions
-  //   }); 
-  //   $(this).on('afterChange', function(event, slick, currentSlide, nextSlide){
-  //     populateCaption(slick, currentSlide);
-  //   });
-  // }));
+  // carouselslider.slick(carouselsliderOptions);
+  
+  $(carouselslider.each(function (idx, item) {
+    var carouselId = "carousel" + idx;
+    this.id = carouselId;
+    $(this).slick(
+      carouselsliderOptions
+    );
+    $('<div class="carousel-feature-caption">'+$(this).find('.carousel-feature-text')[0].innerHTML+'</div>').insertAfter($(this));
+
+        $(this).on('afterChange', function(event, slick, currentSlide, nextSlide){
+        console.log(this.id)
+        var activeSlide = ($(slick.$slides.get(currentSlide)).attr('id'));
+        var activeText = ($("#"+activeSlide)).find('.carousel-feature-text')[0].innerHTML;
+        console.log(activeText)
+        $(this).next('.carousel-feature-caption').html(activeText);
+
+        // populateCaption(this.id, slick, currentSlide);
+    });
+  }));
+  
   
 
-  function populateCaption(slick, currentSlide) {
-    var activeSlide = ($(slick.$slides.get(currentSlide)).attr('id'));
-    var activeText = ($("#"+activeSlide)).find('.carousel-feature-text')[0].innerHTML;
-    // console.log(activeText)
-    $('.carousel-feature-caption').html(activeText);
-  }
-  carouselslider.on('afterChange', function(event, slick, currentSlide, nextSlide){
-    populateCaption(slick, currentSlide);
-  });
+  // function populateCaption(slick, currentSlide) {
+  //   var activeSlide = ($(slick.$slides.get(currentSlide)).attr('id'));
+  //   var activeText = ($("#"+activeSlide)).find('.carousel-feature-text')[0].innerHTML;
+  //   // console.log(activeText)
+  //   $('.carousel-feature-caption').html(activeText);
+  // }
+  // carouselslider.on('afterChange', function(event, slick, currentSlide, nextSlide){
+  //   populateCaption(slick, currentSlide);
+  // });
+/*
+  $(carouselslider.each(function (idx, item) {
+    var carouselId = "carousel" + idx;
+    this.id = carouselId;
+    $(this).slick({
+      carouselsliderOptions
+    }); 
+    // $(this).on('afterChange', function(event, slick, currentSlide, nextSlide){
+    //     console.log(this.id)
+    //     var activeSlide = ($(slick.$slides.get(currentSlide)).attr('id'));
+    //     var activeText = ($("#"+this.id + " " + activeSlide)).find('.carousel-feature-text');
+    //     //[0].innerHTML;
+    //     console.log(activeText)
+    //     $('.carousel-feature-caption').html(activeText);
+
+    //     // populateCaption(this.id, slick, currentSlide);
+    // });
+  }));
+*/
 
   $('.slick-slider.flex-items').slick({
     infinite: true,
