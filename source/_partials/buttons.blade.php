@@ -1,8 +1,17 @@
-<a class="btn btn-primary" href="#" role="button">Link</a>
-<button class="btn btn-primary" type="submit">Button</button>
-<input class="btn btn-primary" type="button" value="Input">
-<input class="btn btn-primary" type="submit" value="Submit">
-<input class="btn btn-primary" type="reset" value="Reset">
+<p class="small">Primary, Secondary and Important buttons are 55px high, not including border; Tert is 50px; Green box is 59px to account for 2px border on Secondary</p>
+<div class="btn-debugger">
+<a class="btn btn-primary" href="#" role="button">Pri</a>
+<a class="btn btn-secondary" href="#" role="button">Sec</a>
+<a class="btn btn-tertiary" href="#" role="button">Tert</a>
+<a class="btn btn-important" href="#" role="button">Impt</a>
+</div>
+<hr/>
+<a class="btn btn-primary" href="#" role="button">Pri</a>
+<a class="btn btn-secondary" href="#" role="button">Sec</a>
+<a class="btn btn-tertiary" href="#" role="button">Tert</a>
+<a class="btn btn-important" href="#" role="button">Impt</a>
+
+<hr/>
 
 <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
 <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
@@ -23,7 +32,7 @@
       <div class="col-12">
 
         <button type="button" class="btn btn-primary btn-block">Primary CTA</button>
-        <button type="button" class="btn btn-secondary btn-block">Super long wrapping awesome button</button>
+        <button type="button" class="btn btn-secondary btn-block">Label</button>
         <button type="button" class="btn btn-tertiary btn-block">Tertiary Button</button>
       </div>
     </div>
