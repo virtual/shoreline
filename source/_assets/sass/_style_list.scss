@@ -1,3 +1,4 @@
+// Line 189: %list-unstyled
 ul, dl, ol { color: #222; } 
 main, .sectional {
   ol, ul {
@@ -194,6 +195,11 @@ ul.list-unstyled, ol.list-unstyled, %list-unstyled {
   }
   li:before {
     display:none;
+    position: initial;
+    top: auto;
+    left: auto;
+    z-index:initial;
+    overflow: auto;
   }
 }
 .nav-tabs { border-bottom:0; }

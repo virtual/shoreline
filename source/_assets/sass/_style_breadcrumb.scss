@@ -13,11 +13,14 @@
     width: 100%;
     display: block;
     margin-bottom: 0;
+    margin-left:0;
+    @extend %list-unstyled;
   }
   ol+ol {
     margin-top: .5rem;
   }
   li {
+    @extend %list-unstyled;
     line-height: inherit;
     font-size: inherit;
     display: inline;
@@ -62,18 +65,17 @@
 .breadcrumb ol li {
   margin: auto;
 }
+// Carat styling 
 .breadcrumb ol {
-  margin-left:0;
-  li:before { content: none; padding:0; position: relative; left:auto;top:auto; font-weight: normal;}
   li+li:before {
     // content: '>';
     content: '\f054';
     font-family: $font-awesome;
     display: inline-block;
     text-align: center;
-    padding: 0 .45rem 0 .35rem;
+    padding: 4px .45rem 0 .35rem;
     font-weight: 900;
-    font-size: .625rem;
+    font-size: .7rem;
     opacity: .7;
     bottom: .1rem;
   }
