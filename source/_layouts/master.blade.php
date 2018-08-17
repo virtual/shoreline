@@ -81,11 +81,11 @@
     </div>
       @endif 
 
-
- @if (trim($__env->yieldContent('content')))
+<!-- or program page -->
+ @if (trim($__env->yieldContent('content'))) 
  <span class="debug">!!!! content</span>
 
-  <div class="layout-master">
+  <div class="layout-master program">
     @if (trim($__env->yieldContent('content-header')))
       @if (trim($__env->yieldContent('program')))
     <div class="content-header program">
