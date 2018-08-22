@@ -207,30 +207,31 @@ ul.list-unstyled, ol.list-unstyled, %list-unstyled {
   display: flex;
   align-items: stretch;
   justify-content: left;
-}
-
-.nav-tabs li {
-  flex: 1;
-  text-align: center
-}
-@media (min-width: $screen-sm) {
-  .nav-tabs { 
-    // display: inline;  
-    li { 
-      flex: initial;
-    }
+  li {
+    flex: 1;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    border-bottom:0; border-radius: 0;     
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
   }
 } 
-.nav-tabs li .nav-link { border: 0; 
-  align-self: center; 
-  flex: 1;}
-.nav-tabs li { border: 1px solid rgba(0, 0, 0, 0.1); border-bottom:0; border-radius: 0;     display: flex;
-  align-items: stretch;
-  justify-content: space-around;}
 .nav-tabs li + li  { border-left:0;}
+.nav-tabs li .nav-link { 
+  border: 0; 
+  align-self: center; 
+  flex: 1;
+} 
 .nav-tabs .nav-link.active {
-  color: $shoreline-green; font-weight: 600;  
+  color: $shoreline-green; 
+  font-weight: 600;  
   border-bottom: 1px solid #fff; 
   margin-bottom: -1px;
 }
+@media (min-width: $screen-sm) {
+  .nav-tabs li { 
+    flex: initial; 
+  }
+} 
 .tab-content { padding: 1rem 0;}
