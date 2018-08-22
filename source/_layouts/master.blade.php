@@ -88,66 +88,106 @@
   <div class="layout-master program">
     @if (trim($__env->yieldContent('content-header')))
       @if (trim($__env->yieldContent('program')))
+      <!-- PROGRAM PARENT -->
+      <span class="debug">!!!! PROGRAM</span>
     <div class="content-header program">
       <div class="container-fluid">
         @yield('content-header')
       </div>
     </div>
+    @if (trim($__env->yieldContent('lead')))
+    <div class="py-3 lead-content container-fluid">
+      <div class="layout-has-sidenav">
+          <span class="debug">!!!! Layout has sidenav</span>
+
+        <div class="content-container">
+          @yield('lead')
+          @yield('content')
+        </div>
+         
+      <div class="sidebar-container">
+          <span class="debug">!!!! PROGRAM PARENT ONLY</span> 
+                @yield('main-sidebar-content')
+                 
+            
+          </div> 
+      </div>
+    </div>
+    @endif 
       @else
+      <!-- PROGRAM OPTION -->
       <div class="bg-primary content-header program-option">
+        
+      <span class="debug">!!!! PROGRAM OPTION</span>
         <div class="container-fluid">
           @yield('content-header')
         </div>
       </div>
-    @endif 
-    @if (trim($__env->yieldContent('lead')))
-    <div class="py-3 container-fluid">
-      <div class="row">
-        <div class="col-md-8 col-lg-9">
-          @yield('lead')
+
+      @if (trim($__env->yieldContent('lead')))
+      <div class="py-3 lead-content container-fluid">
+        <div class="layout-has-sidenav">
+            <span class="debug">!!!! Layout has sidenav</span>
+  
+          <div class="content-container">
+            @yield('lead')
+          </div>
+  
         </div>
       </div>
-    </div>
+
+
+      <!-- program option main content -->
+      <div class="container-fluid">
+          <div id="maincontent" class="flex-layout-body">
+            <div class="debug">Main content</div>
+            @if (trim($__env->yieldContent('overview-nav')))
+            <div class="layout-has-sidenav">
+              @endif
+    
+    
+    
+              <main class="content-container" id="interior">
+                <div class="content-section ">
+    
+                  @yield('content')
+                </div>
+    
+              </main>
+    
+              @if (trim($__env->yieldContent('overview-nav')))
+              <div id="sidebar-nav" class="sidebar-container overview">
+    
+                <nav>
+                  <!--<h2>
+              <span role="button" data-toggle="collapse" data-target="#submenu" aria-controls="submenu" aria-expanded="false" aria-label="Toggle navigation"
+                aria-hidden="true" class="fas fa-bars toggle">
+                <span class="sr-only">Expand Submenu</span>
+              </span> yield('menuheader')</h2>-->
+                  <a class="sr-only show-on-focus" href="#interior">Skip Navigation</a>
+    
+                  @yield('overview-nav')
+                </nav>
+              </div>
+              @endif 
+              @if (trim($__env->yieldContent('overview-nav')))
+            </div>
+            @endif
+    
+          </div>
+        </div>
+      <!-- end pomc-->
+
+
+
+      @endif  
+      
     @endif 
+    
+    
     @endif
 
-    <div class="container-fluid">
-      <div id="maincontent" class="flex-layout-body">
-        @if (trim($__env->yieldContent('overview-nav')))
-        <div class="layout-has-sidenav">
-          @endif
-
-
-
-          <main class="content-container" id="interior">
-            <div class="content-section ">
-
-              @yield('content')
-            </div>
-
-          </main>
-
-          @if (trim($__env->yieldContent('overview-nav')))
-          <div id="sidebar-nav" class="sidebar-container overview">
-
-            <nav>
-              <!--<h2>
-          <span role="button" data-toggle="collapse" data-target="#submenu" aria-controls="submenu" aria-expanded="false" aria-label="Toggle navigation"
-            aria-hidden="true" class="fas fa-bars toggle">
-            <span class="sr-only">Expand Submenu</span>
-          </span> yield('menuheader')</h2>-->
-              <a class="sr-only show-on-focus" href="#interior">Skip Navigation</a>
-
-              @yield('overview-nav')
-            </nav>
-          </div>
-          @endif 
-          @if (trim($__env->yieldContent('overview-nav')))
-        </div>
-        @endif
-
-      </div>
-    </div>
+    
 
   </div>
   @endif @if (trim($__env->yieldContent('sectionals'))) @yield('sectionals') @endif

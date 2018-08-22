@@ -30,18 +30,21 @@
 
 @section ('lead') 
 <h2 class="sr-only" id="overview" tabindex="-1">Overview</h2>
-<p class="lead">
+<p class="xl">
     The Visual Communications Technology program trains students to use their visual media skills in graphic design, video production, video game design and web design. Students learn in a cross disciplinary environment and have the opportunity to join campus clubs to put their skills to use.
 </p>
 @endsection
 
 @section('content')
- x
+@include('_partials.lists')
 @endsection
 
 @section('sectionals')
+
 <section class="sectional sectional-padded">
   <div class="container-fluid">
+      <hr/>
+      <h2>Sectional: Move this to another page later</h2>
       <div class="layout-has-sidenav">
           <div class="content-container"> 
 
@@ -79,6 +82,7 @@
      
     </div>
   <div class="sidebar-container">
+
      @include('_partials.card', [
      'heading' => 'Course Descriptions',
      'icon-alt' => '',
@@ -125,6 +129,38 @@
       </div>
 </section>
 @endsection
+
+
+@section('main-sidebar-content')  
+  <div class="card card-program-heading">
+    <h2>Related Program Links</h2>
+    <ul class="list-unstyled">
+        <li><a class="scrollable" href="#info">Information Meetings</a></li>
+        <li><a class="scrollable" href="#brochure">Program Brochure</a></li>
+        <li><a class="scrollable" href="#guide">Planning Guide</a></li>
+        <li><a class="scrollable" href="#apply">Online Application</a></li>
+        <li><a class="scrollable" href="#prerequisite">Prerequisite Checklist</a></li>
+        <li><a class="scrollable" href="#transcript">Transcript Evaluation</a></li>
+    </ul> 
+  </div>
+ @include('_partials.card', [
+     'heading' => 'Request Info',
+     'icon-alt' => '',
+     'icon' => '',   
+     'desc' => 'Get in touch with an enrollment coach to learn more about our programs, registering, financial aid, and more',
+     'link' => 'http://www.shoreline.edu/communications-marketing/identity-guidelines/default.aspx'
+     ])
+
+     
+     @include('_partials.card', [
+     'heading' => 'Apply Today',
+     'icon-alt' => '',
+     'icon' => '',   
+     'desc' => 'Your first step is to get a student ID – it\'s fast, easy, and free',
+     'link' => 'http://www.shoreline.edu/communications-marketing/identity-guidelines/default.aspx'
+     ])
+
+@endsection 
 
 @section('program')  
 true

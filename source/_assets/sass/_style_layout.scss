@@ -4,6 +4,7 @@
 .layout-has-sidenav {   
   .sidebar-container, .content-container  { width: 100%; padding-top: 1rem; padding-bottom: 1rem; }
 }
+// .container-fluid { position: relative;}
 
 .layout-master {
   position: relative;
@@ -12,6 +13,10 @@
 // @media (min-width: $screen-sm) and (max-width: $screen-xl - 1) {
 //   .sidebar-container { padding-right: 20px;}
 // }
+.content-header.program{ padding-bottom: 1rem; }
+.content-header.program .header-info .header-content {
+  margin-bottom: 2rem;
+}
 
 @media (max-width: $screen-md - 1) {
   #maincontent {
@@ -53,11 +58,11 @@
     margin: 0 auto;
     .sidebar-container {
       // background: #eee;
-      flex: 1 0 auto; 
+      flex: 0 1 auto; 
       flex-direction: column;
     }
     .content-container { 
-      flex: 1 0 auto;  
+      flex: 0 1 auto;  
       //background:#ccc;
     }
   }
