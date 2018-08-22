@@ -31,11 +31,6 @@
 @import "_style_footer.scss"; 
 @import "_style_shame.scss";
  
-.text-light, .text-white {
-  a { color: #fff;   }
-}
-
-a { color: $link-blue}
 
 p {
   color: $text-dark;

@@ -36,7 +36,28 @@
 @endsection
 
 @section('content')
-@include('_partials.lists')
+
+<h2>Features &amp; Highlights </h2>
+<ul class="large-list features list-def">
+    <li><p>Access to state of the art studio equipment and amazing very amazing things that happen way more than other schools that you should really know about such as terry taylor and all the bestest stuff ever.</p></li>
+    <li><p>Access to state of the art studio equipment</p></li>
+    <li><p>Faculty with industry experience and more and more and more stuff that i don't know about.</p></li>
+  </ul>
+  @include('_partials.quote', [ 
+          'desc' => "As corny as it sounds, it has been amazing to be here and have the opportunities that I've had…",
+          'alt' => 'Pavielle Montes',
+          'attribution' => 'Pavielle Montes',
+          'attribution2' => 'Associate of Arts and High School Diploma',
+          'img' => '/resources/img/testimonials/shoreline-williams72.jpg',          
+          'link' => 'https://www.youtube.com/watch?v=YkLwzgPoQcA'
+          ]) 
+
+  <h2>Program Options</h2>      
+  <hr/>
+  <h3>Graphic Design</h3>
+  <p class="large"><span class="medium text-muted">Completion Award</span><br/>Associate of Science</p>
+  <p><a href="#" class="more-arrow">More about AAAS in Graphic Design</a></p>
+
 @endsection
 
 @section('sectionals')

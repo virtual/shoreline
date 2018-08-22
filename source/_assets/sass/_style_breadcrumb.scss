@@ -96,3 +96,7 @@
 .content-header .breadcrumb {
   margin-bottom: 1.5rem;
 }
+
+main, .sectional, .content-container {
+  .breadcrumb ol { margin-left: 0;}
+}

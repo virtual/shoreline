@@ -1,6 +1,6 @@
 // Line 189: %list-unstyled
 ul, dl, ol { color: #222; } 
-main, .sectional {
+main, .sectional, .content-container {
   ol, ul {
     li { margin-bottom: .75rem; margin-top: .75rem; }
   }
@@ -116,6 +116,10 @@ main, .sectional {
       position: relative;
       color:#000;
     }
+
+    
+
+
   }
   // ul li {
   //   margin-bottom: .75em;
@@ -129,23 +133,23 @@ main, .sectional {
   // }
 }
 
-main ul.list-group li {
+ul.list-group li {
   text-indent: initial; 
   padding-left: 1.25rem;
     &:before { content: none;}
 }
-main ul.list-inline li {
+ul.list-inline li {
   text-indent: initial;
   padding:0;
   &:before { content: none;}
 }
-main ul, main ol {
+ul, ol {
   &.list-def p {
     font-size: 1.1875rem;
     strong { font-size: 1.5rem; }
   }
 }
-main ul.features {
+ul.features {
   li:before {
     content: "";
     font-size: 1em;
@@ -215,6 +219,7 @@ ul.list-unstyled, ol.list-unstyled, %list-unstyled {
     display: flex;
     align-items: stretch;
     justify-content: space-around;
+    // background:#fafafa;
   }
 } 
 .nav-tabs li + li  { border-left:0;}

@@ -1,3 +1,10 @@
+.text-light, .text-white {
+  a { color: #fff;   }
+}
+
+a { color: $link-blue}
+a:hover { color: darken($link-blue, 5)}
+
 @include headings(1,6) { font-weight: 600; }
 h1, .h1, h2, .h2 { color: $primary; }
 h1, .h1 {

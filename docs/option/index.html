@@ -283,7 +283,10 @@
  <span class="debug">!!!! content</span>
 
   <div class="layout-master program">
-                <div class="bg-primary content-header program-option">
+                <!-- PROGRAM OPTION -->
+      <div class="bg-primary content-header program-option">
+        
+      <span class="debug">!!!! PROGRAM OPTION</span>
         <div class="container-fluid">
           <div class="breadcrumb" aria-label="breadcrumb">
   <ol>
@@ -311,28 +314,33 @@
 
         </div>
       </div>
-     
-        <div class="py-3 container-fluid">
-      <div class="row">
-        <div class="col-md-8 col-lg-9">
-           
+
+            <div class="py-3 lead-content container-fluid">
+        <div class="layout-has-sidenav">
+            <span class="debug">!!!! Layout has sidenav</span>
+  
+          <div class="content-container">
+             
 <h2 class="sr-only" id="overview" tabindex="-1">Overview</h2>
 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.</p>
+          </div>
+  
         </div>
       </div>
-    </div>
-     
+
+
+      <!-- program option main content -->
+      <div class="container-fluid">
+          <div id="maincontent" class="flex-layout-body">
+            <div class="debug">Main content</div>
+                        <div class="layout-has-sidenav">
+                  
     
-    <div class="container-fluid">
-      <div id="maincontent" class="flex-layout-body">
-                <div class="layout-has-sidenav">
-          
-
-
-          <main class="content-container" id="interior">
-            <div class="content-section ">
-
-              <section class="">
+    
+              <main class="content-container" id="interior">
+                <div class="content-section ">
+    
+                  <section class="">
   <dl class="list-inline">
     <dt class="icon-bg-completion">Completion Award </dt>
     <dd> Transfer</dd>
@@ -386,21 +394,21 @@
       </div>
     </dd>
   </dl> 
-</section>            </div>
-
-          </main>
-
-                    <div id="sidebar-nav" class="sidebar-container overview">
-
-            <nav>
-              <!--<h2>
-          <span role="button" data-toggle="collapse" data-target="#submenu" aria-controls="submenu" aria-expanded="false" aria-label="Toggle navigation"
-            aria-hidden="true" class="fas fa-bars toggle">
-            <span class="sr-only">Expand Submenu</span>
-          </span> yield('menuheader')</h2>-->
-              <a class="sr-only show-on-focus" href="#interior">Skip Navigation</a>
-
-              <div class="card card-program-heading">
+</section>                </div>
+    
+              </main>
+    
+                            <div id="sidebar-nav" class="sidebar-container overview">
+    
+                <nav>
+                  <!--<h2>
+              <span role="button" data-toggle="collapse" data-target="#submenu" aria-controls="submenu" aria-expanded="false" aria-label="Toggle navigation"
+                aria-hidden="true" class="fas fa-bars toggle">
+                <span class="sr-only">Expand Submenu</span>
+              </span> yield('menuheader')</h2>-->
+                  <a class="sr-only show-on-focus" href="#interior">Skip Navigation</a>
+    
+                  <div class="card card-program-heading">
     <h2>On this page</h2>
     <ul class="list-unstyled">
        <li><a class="scrollable" href="#overview">Overview</a></li>
@@ -415,13 +423,24 @@
  <a class="btn btn-secondary btn-block" href="/apply-and-aid/apply.aspx">Ask a Question</a>
  <a class="btn btn-secondary btn-block" href="/apply-and-aid/apply.aspx">Visit Campus</a>
 
-            </nav>
+                </nav>
+              </div>
+               
+                          </div>
+                
           </div>
-           
-                  </div>
+        </div>
+      <!-- end pomc-->
+
+
+
         
-      </div>
-    </div>
+      
+     
+    
+    
+    
+    
 
   </div>
     <section class="sectional sectional-padded">
