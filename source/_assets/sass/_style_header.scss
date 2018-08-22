@@ -44,7 +44,11 @@ header#header {
 .navbar {
   padding: 0;
 }
-
+.search-container input {
+  border: solid 2px transparent;
+  line-height: 1.15;
+  border-radius: 1.5625rem;
+}
 .navmenu .navbar-brand {
   padding: 8px 0;
   img {
@@ -77,20 +81,45 @@ header#header {
     justify-content: flex-end;
   }
   .search-container {
-    max-width: 128px;
+    max-width: 158px;
     padding: 0 .5rem
   }
   .header-actions {
     flex-wrap: nowrap;
     justify-content: flex-end;
+    .search-container {
+      top: -.25rem;
+      position: relative;
+      .btn { margin-top:0; margin-bottom:0;}
+    }
+    
+    .search-container {
+      .input-group > .form-control:not(:first-child) {
+        border-top-right-radius: 1.5625rem;
+        border-bottom-right-radius: 1.5625rem;
+      }
+      .input-group > .input-group-prepend > .input-group-text {
+        border-top-left-radius: 1.5625rem;
+        border-bottom-left-radius: 1.5625rem;
+        border-color: rgba(0, 0, 0, 0.2);
+        
+      }
+      #EnterSearch {        
+        border-color: rgba(0, 0, 0, 0.2) !important;
+        padding-left:0;
+        font-size: 1rem;
+      }
+    }
   }
   .navbar-container {
+    width: 100%; 
     ul {
       display: flex;
       margin: 0;
       justify-content: flex-end;
       flex-wrap: wrap;
     }
+   
   }
   .searchbox input.form-control {
     position: absolute;
