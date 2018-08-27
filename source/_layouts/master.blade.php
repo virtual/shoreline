@@ -52,7 +52,7 @@
       <div class="container-fluid">
           <div class="breadcrumb" aria-label="breadcrumb">
             @yield('breadcrumb')
-          </div>
+          </div> 
           @yield('content-header')
       </div>
     </div>

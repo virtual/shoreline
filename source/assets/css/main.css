@@ -1197,7 +1197,8 @@ table {
 }
 
 .content-header.bg-primary {
-  margin-top: 1rem;
+  margin-top: 0rem;
+  border-top: 1rem solid #01685e;
 }
 
 .page-interior .content-header.bg-primary {
@@ -1280,26 +1281,13 @@ table {
   .header-image-clip {
     position: absolute;
     top: 0;
-    /* clip: rect(10px, 190px, 190px, 10px); */
     clip: rect(0px, 1000px, 500px, 20px);
     right: 0;
     left: 50%;
     right: 0;
     top: 24px;
-    /* width: 130%; */
-    /* display: flex; */
-    /* align-items: end; */
-    /* justify-content: space-around; */
-    /* text-align: center; */
-    /* margin: 0 auto; */
-    /* display: flex; */
-    /* align-items: end; */
-    /* justify-content: space-around; */
-    /* text-align: center; */
-    /* margin: 0 auto; */
   }
   .header-image img {
-    /* position: absolute; */
     top: 24px;
     right: 0;
     right: 0;
@@ -1309,9 +1297,6 @@ table {
     height: 400px;
     width: auto;
     -o-object-position: center;
-    /* flex: 1; */
-    /* object-position: center; */
-    /* align-self: center; */
     text-align: center;
   }
   .center-cropped img {
@@ -1332,8 +1317,17 @@ table {
   .center-cropped {
     height: 450px;
   }
-  .breadcrumb {
+  .content-header.page-interior .breadcrumb {
     width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-image, .header-image img {
+    height: 450px;
+  }
+  .center-cropped {
+    height: 500px;
   }
 }
 
@@ -1847,6 +1841,11 @@ h6, .h6 {
   color: #ffffff;
 }
 
+.bg-primary a.btn {
+  background-image: none;
+  text-shadow: none;
+}
+
 .bg-primary a:hover {
   text-shadow: 0.03em 0 #00685e, -0.03em 0 #00685e, 0 0.03em #00685e, 0 -0.03em #00685e, 0.06em 0 #00685e, -0.06em 0 #00685e, 0.09em 0 #00685e, -0.09em 0 #00685e, 0.12em 0 #00685e, -0.12em 0 #00685e, 0.15em 0 #00685e, -0.15em 0 #00685e;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#b1d1ce), to(#b1d1ce));
@@ -1881,6 +1880,11 @@ h6, .h6 {
 
 .bg-primary a:hover:visited {
   color: #b1d1ce;
+}
+
+.bg-primary a.btn:hover {
+  background-image: none;
+  text-shadow: none;
 }
 
 .bg-primary h1 {
