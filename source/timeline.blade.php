@@ -2,18 +2,19 @@
 
 @section('content-interior')
  <h1>Timeline</h1>
+ <p>8/27 — Pushed back two weeks</p>
   <div class="timeline">
     <div class="line text-muted"></div>
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
         @include('_partials.timelinelist', [
-        'heading' => 'Build components & templates (June 5–Aug 30)',
+        'heading' => 'Build components & templates (June 5–Sept 13)',
         'desc' => "Build components into code; working demo available on Github. Testing is done iteratively.",
         'id' => '1', 
         'img' => ''
         ])
 
         @include('_partials.timelinelist', [
-        'heading' => 'Accessibility review (Aug 13–Aug 27)',
+        'heading' => 'Accessibility review (Aug 20–Sept 3)',
         'desc' => "Shoreline's Accessibility team reviews and suggest changes for implementation",
         'id' => '2', 
         'img' => ''
@@ -21,19 +22,12 @@
 
         
         @include('_partials.timelinelist', [
-        'heading' => 'Finalize program options in multiedit (Aug 27)',
+        'heading' => 'Finalize program options in multiedit (Sept 3)',
         'desc' => "Finalize PCF for OU's migration of Excel to PCF",
         'id' => '2a', 
         'img' => ''
         ])
         
-        @include('_partials.timelinelist', [
-        'heading' => 'Code review (Aug 31–Sept 13)',
-        'desc' => "Shoreline's team goes through demos and approves functionality. All HTML design files review and analyzed and verified to be functioning as expected, plus W3C and Accessibility Compliant. Functional Specification meeting(s) via webex take place to go through all elements in each page type to define the development plan. Report any issues, bugs, questions, or requests back to Jeanine.
-        ",
-        'id' => '3', 
-        'img' => ''
-        ])
         
         @include('_partials.timelinelist', [
         'heading' => 'Acalog goes live  (Sept 1–30)',
@@ -42,18 +36,18 @@
         'id' => '4', 
         'img' => ''
         ])
-              
+            
 
         @include('_partials.timelinelist', [
-        'heading' => 'Code updates (Sept 14–21)',
-        'desc' => "Dev fixes.
+        'heading' => 'Code review (Sept 13–27)',
+        'desc' => "Shoreline's team goes through demos and approves functionality. All HTML design files review and analyzed and verified to be functioning as expected, plus W3C and Accessibility Compliant. Functional Specification meeting(s) via webex take place to go through all elements in each page type to define the development plan. Report any issues, bugs, questions, or requests back to Jeanine.
         ",
-        'id' => '4', 
+        'id' => '3', 
         'img' => ''
         ])
-                
+          
         @include('_partials.timelinelist', [
-        'heading' => 'Deadline for Program Option info (Sept 24)',
+        'heading' => 'Deadline for Program Option info and department pages (Sept 24)',
         'desc' => "Program option info due and submitted to OU for verification and to prep for migration.
         ",
         'id' => '7', 
@@ -61,7 +55,16 @@
         ])
 
         @include('_partials.timelinelist', [
-        'heading' => 'Implement code on test server (Sept 24–28)',
+        'heading' => 'Code updates (Sept 28–Oct 5)',
+        'desc' => "Dev fixes.
+        ",
+        'id' => '4', 
+        'img' => ''
+        ])
+                
+
+        @include('_partials.timelinelist', [
+        'heading' => 'Implement code on test server (Oct 8-12)',
         'desc' => "Update page design and template files. Update snippets to function similarly on new framework.
         ",
         'id' => '5', 
@@ -69,7 +72,7 @@
         ])
 
         @include('_partials.timelinelist', [
-        'heading' => 'Review and test existing content into updated templates (Oct 1–5)',
+        'heading' => 'Review and test existing content into updated templates (Oct 15–19)',
         'desc' => "Shoreline team tests creating new pages using existing snippets; check and report any inconsistencies.
         ",
         'id' => '6', 
@@ -77,7 +80,7 @@
         ])
 
         @include('_partials.timelinelist', [
-        'heading' => 'Code updates (Oct 8–9)',
+        'heading' => 'Code updates (Oct 22–26)',
         'desc' => "Dev fixes.
         ",
         'id' => '7a', 
@@ -87,7 +90,7 @@
 
         
         @include('_partials.timelinelist', [
-        'heading' => 'Implementation process for new theme on www; republish website (Oct 10)',
+        'heading' => 'Implementation process for new theme on www; republish website (Oct 29)',
         'desc' => "Verify working as expected.
         ",
         'id' => '8', 
@@ -95,7 +98,7 @@
         ])
 
         @include('_partials.timelinelist', [
-        'heading' => 'OU Migration for Program options (Oct 15-19)',
+        'heading' => 'OU Migration for Program options and department pages (Nov 5-9)',
         'desc' => "OU creates program options. Need to discuss when the file structure is built out--as well as program parent information.
         ",
         'id' => '9', 
