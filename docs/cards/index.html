@@ -287,9 +287,42 @@
     <div class="container-fluid">
       <div id="maincontent" class="flex-layout-body">
 
-                       <div class="x">
-                <!-- no sidebar, no left nav-->
-                  
+                <span class="debug">!!!! Layout has leftnav</span>
+                  <div class="layout-has-left-nav">
+                              <nav class="left-nav">
+                  <!--<h2>
+            <span role="button" data-toggle="collapse" data-target="#submenu" aria-controls="submenu" aria-expanded="false" aria-label="Toggle navigation"
+              aria-hidden="true" class="fas fa-bars toggle">
+              <span class="sr-only">Expand Submenu</span>
+            </span> yield('menuheader')</h2>-->
+                  <a class="sr-only show-on-focus" href="#interior">Skip Navigation</a>
+                  <nav role="navigation" aria-label="Section Navigation">
+  <h2 class="sr-only">Directory Navigation</h2>
+  <div class="list-wrapper">
+    <ul class="nav nav-stacked" id="subnav_parent">
+        <li><a href="/about-shoreline/">About Shoreline</a></li>
+        <li><a title="Accreditation" href="/about-shoreline/accreditation.aspx">Accreditation</a></li>
+        <li><a title="Awards" href="/about-shoreline/awards.aspx">Awards</a></li>
+        <li><a title="Board of Trustees" href="/about-shoreline/board/default.aspx">Board of Trustees</a></li>
+        <li><a title="College Catalog" href="/about-shoreline/college-catalog.aspx">College Catalog</a></li>
+        <li><a title="Contact Us" href="/about-shoreline/contact-us.aspx">Contact Us</a></li>
+        <li><a title="Directions to Campus" href="/map/directions-to-campus.aspx">Directions to Campus</a></li>
+        <li><a title="General Introduction" href="/about-shoreline/introduction.aspx">General Introduction</a></li>
+        <li class="current"><a title="50th Anniversary" href="/about-shoreline/50th-anniversary/default.aspx">50th Anniversary</a>
+          <ul id="subnav_child">
+          <li class="current"><a href="/about-shoreline/50th-anniversary/default.aspx">Home</a></li>
+          <li><a href="/about-shoreline/50th-anniversary/50th-anniversary-story.aspx">50th Anniversary History</a></li>
+          <li><a href="/about-shoreline/50th-anniversary/party.aspx">Party Like it's 1965! Celebration 2015</a></li>
+          </ul>
+        </li>
+        <li><a title="Hours of Operation" href="/about-shoreline/hours-of-operation.aspx">Hours of Operation</a></li>
+        <li><a href="/about-shoreline/strategic-plan.aspx">Mission &amp; Vision</a></li>
+        <li><a title="Non-discrimination Statement" href="/about-shoreline/non-discrimination.aspx">Non-discrimination Statement</a></li>
+        <li><a title="Shoreline at a Glance" href="/about-shoreline/facts.aspx">Shoreline at a Glance</a></li>
+    </ul>
+  </div>
+</nav>                </nav>
+                
                 <main class="content-container" id="interior">
                   <div class="content-section ">
 
@@ -297,232 +330,99 @@
 
                      <!-- if breadcrumb not in a content-header -->
                     <div class="breadcrumb" aria-label="breadcrumb">
-                                              </div>
+                        <ol>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Explore Programs</a></li>
+    <li><a href="#">Transfer Programs</a></li>
+    <li><a class="active" aria-current="page" href="#">Visual Arts</a></li>
+  </ol>
+                      </div>
                     
-                     <h1>Timeline</h1>
- <p>8/27 — Pushed back two weeks</p>
-  <div class="timeline">
-    <div class="line text-muted"></div>
-    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-        <div class="panel panel-default">
-  <div class="panel-heading" role="tab" id="heading1">
-    <div class="icon">
-      <span class="glyphicon glyphicon-one-fine-dot" aria-hidden="true"></span>
-      <span class="sr-only">Expand/Collapse</span>
-    </div>
-    <h4 class="panel-title">
-      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">Build components &amp; templates (June 5–Sept 13)</a>
-    </h4>
-  </div>
-  <div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading1">
-    <div class="panel-body">
-      
-      <p>Build components into code; working demo available on Github. Testing is done iteratively.</p>
-    </div>
-  </div>
-</div>
-        <div class="panel panel-default">
-  <div class="panel-heading" role="tab" id="heading2">
-    <div class="icon">
-      <span class="glyphicon glyphicon-one-fine-dot" aria-hidden="true"></span>
-      <span class="sr-only">Expand/Collapse</span>
-    </div>
-    <h4 class="panel-title">
-      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">Accessibility review (Aug 20–Sept 3)</a>
-    </h4>
-  </div>
-  <div id="collapse2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2">
-    <div class="panel-body">
-      
-      <p>Shoreline&#039;s Accessibility team reviews and suggest changes for implementation</p>
-    </div>
-  </div>
-</div>
-        
-        <div class="panel panel-default">
-  <div class="panel-heading" role="tab" id="heading2a">
-    <div class="icon">
-      <span class="glyphicon glyphicon-one-fine-dot" aria-hidden="true"></span>
-      <span class="sr-only">Expand/Collapse</span>
-    </div>
-    <h4 class="panel-title">
-      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2a" aria-expanded="true" aria-controls="collapse2a">Finalize program options in multiedit (Sept 3)</a>
-    </h4>
-  </div>
-  <div id="collapse2a" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2a">
-    <div class="panel-body">
-      
-      <p>Finalize PCF for OU&#039;s migration of Excel to PCF</p>
-    </div>
-  </div>
-</div>        
-        
-        <div class="panel panel-default">
-  <div class="panel-heading" role="tab" id="heading4">
-    <div class="icon">
-      <span class="glyphicon glyphicon-one-fine-dot" aria-hidden="true"></span>
-      <span class="sr-only">Expand/Collapse</span>
-    </div>
-    <h4 class="panel-title">
-      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="true" aria-controls="collapse4">Acalog goes live  (Sept 1–30)</a>
-    </h4>
-  </div>
-  <div id="collapse4" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading4">
-    <div class="panel-body">
-      
-      <p>
-        </p>
-    </div>
-  </div>
-</div>            
+                    
+<h1>Cards</h1>
+<p class="lead">Cards are like large buttons or links with an optional icon and supporting text.</p>
+<p>An important step in attending college is having a solid plan for covering the cost of attendance. If you don't have money to pay your tuition all at once, review the following information on setting up a payment plan through Nelnet.</p>
+<p><a class="card-link more-arrow" href="#">Get started</a></p>
+<p>Start budgeting for your education today. Your payments will be lower the sooner you start. </p>
 
-        <div class="panel panel-default">
-  <div class="panel-heading" role="tab" id="heading3">
-    <div class="icon">
-      <span class="glyphicon glyphicon-one-fine-dot" aria-hidden="true"></span>
-      <span class="sr-only">Expand/Collapse</span>
-    </div>
-    <h4 class="panel-title">
-      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3">Code review (Sept 13–27)</a>
-    </h4>
+ <h2>Links in cols</h2>
+<div class="row">
+  <div class="col-12 col-sm-6">
+    <ul class="card-links">
+      <li><a href="#" class="more-arrow">University Transfer</a> Gain specialized knowledge and skills for a career in a particular field.</li>
+      <li><a href="#" class="more-arrow">College/University Transfer</a> For students who intend to continue their studies at a college or university.</li>
+      <li><a href="#" class="more-arrow">Professional & Technical</a> Gain specialized knowledge and skills for a career in a particular field.</li>
+    </ul>
   </div>
-  <div id="collapse3" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading3">
-    <div class="panel-body">
-      
-      <p>Shoreline&#039;s team goes through demos and approves functionality. All HTML design files review and analyzed and verified to be functioning as expected, plus W3C and Accessibility Compliant. Functional Specification meeting(s) via webex take place to go through all elements in each page type to define the development plan. Report any issues, bugs, questions, or requests back to Jeanine.
-        </p>
-    </div>
-  </div>
-</div>          
-        <div class="panel panel-default">
-  <div class="panel-heading" role="tab" id="heading7">
-    <div class="icon">
-      <span class="glyphicon glyphicon-one-fine-dot" aria-hidden="true"></span>
-      <span class="sr-only">Expand/Collapse</span>
-    </div>
-    <h4 class="panel-title">
-      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="true" aria-controls="collapse7">Deadline for Program Option info and department pages (Sept 24)</a>
-    </h4>
-  </div>
-  <div id="collapse7" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading7">
-    <div class="panel-body">
-      
-      <p>Program option info due and submitted to OU for verification and to prep for migration.
-        </p>
-    </div>
-  </div>
-</div>
-        <div class="panel panel-default">
-  <div class="panel-heading" role="tab" id="heading4">
-    <div class="icon">
-      <span class="glyphicon glyphicon-one-fine-dot" aria-hidden="true"></span>
-      <span class="sr-only">Expand/Collapse</span>
-    </div>
-    <h4 class="panel-title">
-      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="true" aria-controls="collapse4">Code updates (Sept 28–Oct 5)</a>
-    </h4>
-  </div>
-  <div id="collapse4" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading4">
-    <div class="panel-body">
-      
-      <p>Dev fixes.
-        </p>
-    </div>
-  </div>
-</div>                
-
-        <div class="panel panel-default">
-  <div class="panel-heading" role="tab" id="heading5">
-    <div class="icon">
-      <span class="glyphicon glyphicon-one-fine-dot" aria-hidden="true"></span>
-      <span class="sr-only">Expand/Collapse</span>
-    </div>
-    <h4 class="panel-title">
-      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="true" aria-controls="collapse5">Implement code on test server (Oct 8-12)</a>
-    </h4>
-  </div>
-  <div id="collapse5" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading5">
-    <div class="panel-body">
-      
-      <p>Update page design and template files. Update snippets to function similarly on new framework.
-        </p>
-    </div>
-  </div>
-</div>
-        <div class="panel panel-default">
-  <div class="panel-heading" role="tab" id="heading6">
-    <div class="icon">
-      <span class="glyphicon glyphicon-one-fine-dot" aria-hidden="true"></span>
-      <span class="sr-only">Expand/Collapse</span>
-    </div>
-    <h4 class="panel-title">
-      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="true" aria-controls="collapse6">Review and test existing content into updated templates (Oct 15–19)</a>
-    </h4>
-  </div>
-  <div id="collapse6" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading6">
-    <div class="panel-body">
-      
-      <p>Shoreline team tests creating new pages using existing snippets; check and report any inconsistencies.
-        </p>
-    </div>
-  </div>
-</div>
-        <div class="panel panel-default">
-  <div class="panel-heading" role="tab" id="heading7a">
-    <div class="icon">
-      <span class="glyphicon glyphicon-one-fine-dot" aria-hidden="true"></span>
-      <span class="sr-only">Expand/Collapse</span>
-    </div>
-    <h4 class="panel-title">
-      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse7a" aria-expanded="true" aria-controls="collapse7a">Code updates (Oct 22–26)</a>
-    </h4>
-  </div>
-  <div id="collapse7a" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading7a">
-    <div class="panel-body">
-      
-      <p>Dev fixes.
-        </p>
-    </div>
-  </div>
+  <div class="col-12 col-sm-6"> 
+    <ul class="card-links">
+      <li><a href="#" class="more-arrow">University Transfer</a> </li>
+      <li><a href="#" class="more-arrow">College/University Transfer</a> </li>
+      <li><a href="#" class="more-arrow">Professional & Technical</a> </li>
+    </ul></div> 
 </div>
 
-        
-        <div class="panel panel-default">
-  <div class="panel-heading" role="tab" id="heading8">
-    <div class="icon">
-      <span class="glyphicon glyphicon-one-fine-dot" aria-hidden="true"></span>
-      <span class="sr-only">Expand/Collapse</span>
-    </div>
-    <h4 class="panel-title">
-      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="true" aria-controls="collapse8">Implementation process for new theme on www; republish website (Oct 29)</a>
-    </h4>
-  </div>
-  <div id="collapse8" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading8">
-    <div class="panel-body">
-      
-      <p>Verify working as expected.
-        </p>
-    </div>
-  </div>
+<div class="row">
+  <div class="col-12 col-sm-6">   
+      <div class="card">      <div class="card-body">
+        <h3 class="card-title">
+                <a class="more-arrow" href="http://www.shoreline.edu/communications-marketing/identity-guidelines/default.aspx">Apply Today</a>
+            </h3>
+    <p class="card-text">Your first step is to get a student ID – it&#039;s fast, easy, and free</p>
+      </div>
+</div> </div>
+  <div class="col-12 col-sm-6">   
+    <div class="card">      <div class="card-body">
+    <span class="far fa-map" aria-hidden="true"></span>    <h3 class="card-title">
+                <a class="more-arrow" href="#">Get help with enrollment</a>
+            </h3>
+    <p class="card-text">These call for a font-awesome 5 icon class; eg. &quot;far fa-map&quot;</p>
+      </div>
+</div>    </div>
 </div>
-        <div class="panel panel-default">
-  <div class="panel-heading" role="tab" id="heading9">
-    <div class="icon">
-      <span class="glyphicon glyphicon-one-fine-dot" aria-hidden="true"></span>
-      <span class="sr-only">Expand/Collapse</span>
-    </div>
-    <h4 class="panel-title">
-      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse9" aria-expanded="true" aria-controls="collapse9">OU Migration for Program options and department pages (Nov 5-9)</a>
-    </h4>
+<div class="row">
+    <div class="col-12 col-sm-6">  
+        <div class="card">      <div class="card-body">
+    <span class="far fa-map" aria-hidden="true"></span>    <h3 class="card-title">
+                <a class="more-arrow" href="#">Get help with enrollment</a>
+            </h3>
+    <p class="card-text">Our enrollment services team is here to help with financial aid, how to apply, and all the things that make Shoreline a great place to study and pursue any of our more than 100 degrees and certificates!</p>
+      </div>
+</div>   </div>
+    <div class="col-12 col-sm-6">  
+       
+        <div class="card">      <div class="card-body">
+        <h3 class="card-title">
+                <a class="more-arrow" href="http://www.shoreline.edu/communications-marketing/identity-guidelines/default.aspx">Apply Today</a>
+            </h3>
+    <p class="card-text">Your first step is to get a student ID – it&#039;s fast, easy, and free</p>
+    <p><a class="btn btn-primary" href="http://www.shoreline.edu/communications-marketing/identity-guidelines/default.aspx">Request Info</a></p>  </div>
+</div>       </div>
   </div>
-  <div id="collapse9" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading9">
-    <div class="panel-body">
-      
-      <p>OU creates program options. Need to discuss when the file structure is built out--as well as program parent information.
-        </p>
-    </div>
-  </div>
-</div>  </div>
+<div class="row">
+<div class="col-12 col-sm-8"><div class="card image-card">   <div class="card-image-container" style="background-image: url('../resources/img/stock/image.jpg');"><a href="#"><img class="card-img-top" src="../resources/img/stock/image.jpg" alt="Card image cap" /></a></div>  <div class="card-body">
+        <h3 class="card-title">
+                  Course Descriptions
+            </h3>
+    <p class="card-text">Browse the course descriptions to explore classes available in this subject</p>
+    <p><a class="btn btn-primary" href="#">Request Info</a></p>  </div>
+</div></div>
+<div class="col-12 col-sm-4"><div class="card image-card">   <div class="card-image-container" style="background-image: url('../resources/img/stock/image.jpg');"><a href="#"><img class="card-img-top" src="../resources/img/stock/image.jpg" alt="Card image cap" /></a></div>  <div class="card-body">
+        <h3 class="card-title">
+                  Course Descriptions
+            </h3>
+    <p class="card-text">Browse the course descriptions to explore classes available in this subject</p>
+    <p><a class="btn btn-primary" href="#">Request Info</a></p>  </div>
+</div></div>
+</div>
+
+<div class="card image-card">   <div class="card-image-container" style="background-image: url('../resources/img/stock/image.jpg');"><a href="#"><img class="card-img-top" src="../resources/img/stock/image.jpg" alt="Card image cap" /></a></div>  <div class="card-body">
+        <h3 class="card-title">
+                  Course Descriptions
+            </h3>
+    <p class="card-text">Browse the course descriptions to explore classes available in this subject</p>
+    <p><a class="btn btn-primary" href="#">Request Info</a></p>  </div>
+</div>
 
                   </div>
                 </main>
