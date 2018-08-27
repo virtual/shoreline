@@ -1,8 +1,15 @@
-<div class="card"> 
-  @if(!empty($icon))<span class="{{ $icon }}" aria-hidden="true"></span>@endif
+@if(!empty($img)) <div class="card image-card"> @else <div class="card">  @endif
+  @if(!empty($img))<div class="card-image-container" style="background-image: url('{{ $img }}');"><a href="{{ $link }}"><img class="card-img-top" src="{{ $img }}" alt="Card image cap" /></a></div>@endif
   <div class="card-body">
-    <h3 class="card-title"><a class="more-arrow" href="{{ $link }}">{{ $heading }}</a></h3>
+    @if(!empty($icon))<span class="{{ $icon }}" aria-hidden="true"></span>@endif
+    <h3 class="card-title">
+        @if(!empty($img))
+          {{ $heading }}
+        @else
+        <a class="more-arrow" href="{{ $link }}">{{ $heading }}</a>
+        @endif
+    </h3>
     <p class="card-text">{{ $desc }}</p>
+    @if(!empty($buttontext))<p><a class="btn btn-primary" href="{{ $link }}">{{ $buttontext }}</a></p>@endif
   </div>
-  @if(!empty($buttontext))<a class="mt-3 btn btn-primary btn-block" href="{{ $link }}">{{ $buttontext }}</a>@endif
 </div>

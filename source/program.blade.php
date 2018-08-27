@@ -60,15 +60,17 @@
 
 @section('main-sidebar-content')  
   <div class="card card-program-heading">
-    <h2>Related Program Links</h2>
-    <ul class="list-unstyled">
+    <div class="card-body">
+      <h2>Related Program Links</h2>
+      <ul class="list-unstyled">
         <li><a class="scrollable" href="#info">Information Meetings</a></li>
         <li><a class="scrollable" href="#brochure">Program Brochure</a></li>
         <li><a class="scrollable" href="#guide">Planning Guide</a></li>
         <li><a class="scrollable" href="#apply">Online Application</a></li>
         <li><a class="scrollable" href="#prerequisite">Prerequisite Checklist</a></li>
         <li><a class="scrollable" href="#transcript">Transcript Evaluation</a></li>
-    </ul> 
+      </ul> 
+    </div>
   </div>
  @include('_partials.card', [
      'heading' => 'Request Info',

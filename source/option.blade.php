@@ -130,14 +130,16 @@
 
 @section('overview-nav')
 <div class="card card-program-heading">
+  <div class="card-body">
     <h2>On this page</h2>
     <ul class="list-unstyled">
-       <li><a class="scrollable" href="#overview">Overview</a></li>
-       <li><a class="scrollable" href="#outcomes">Outcomes &amp; Careers</a></li>
-       <li><a class="scrollable" href="#reqs">Eligibility &amp; Requirements</a></li>
-       <li><a class="scrollable" href="#apply">How to Apply</a></li>
-       <li><a class="scrollable" href="#related">Related Programs</a></li>
+        <li><a class="scrollable" href="#overview">Overview</a></li>
+        <li><a class="scrollable" href="#outcomes">Outcomes &amp; Careers</a></li>
+        <li><a class="scrollable" href="#reqs">Eligibility &amp; Requirements</a></li>
+        <li><a class="scrollable" href="#apply">How to Apply</a></li>
+        <li><a class="scrollable" href="#related">Related Programs</a></li>
     </ul>
+  </div>
  </div>
 
  <a class="btn btn-important btn-block" href="/apply-and-aid/apply.aspx">Apply Now</a>
