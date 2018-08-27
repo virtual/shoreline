@@ -41,7 +41,7 @@
 </head>
 
 <body>
-    <nav class="topnav nav nav-underline navbar-dark text-white">
+  <nav class="topnav nav nav-underline navbar-dark text-white">
     <div class="container-fluid d-flex justify-content-between align-items-center w-100">
       <ul class="">
         <li>
@@ -55,8 +55,7 @@
         <li class="float-right"><a class="nav-link" href="https://virtual.github.io/shoreline/timeline/index.html">Timeline</a></li>
       </ul> 
     </div>
-  </nav> 
-    <header id="header">
+  </nav> <header id="header">
   <div id="skiptocontent">
     <a href="#maincontent" title="Skip Main Navigation">Skip Main Navigation</a>
   </div>
@@ -275,21 +274,30 @@
     </div>
     
   </div>
-</header>    
+</header>
+  <!-- PROGRAM OPTION TEMPLATE -->
+    <!-- INTERIOR TEMPLATE -- Not program option template -->
+  <span class="debug">!!!! interior template</span>
+  <div class="layout-master page-interior">
+
+    <!-- CONTENT HEADER ON -->
     
-    <span class="debug">!!!! content-interior</span>
-    <div class="layout-master page-interior">
-      <div class="container-fluid">
-        <div id="maincontent" class="flex-layout-body">
-          
+    <span class="debug">!!!! lead</span>
+    <div class="container-fluid">
+      <div id="maincontent" class="flex-layout-body">
 
-             
+                       <div class="x">
+                <!-- no sidebar, no left nav-->
+                  
+                <main class="content-container" id="interior">
+                  <div class="content-section ">
 
-            <main class="content-container" id="interior">
-              <div class="content-section ">
-                
-<div class="breadcrumb" aria-label="breadcrumb">
-  <ol>
+                     
+
+                     <!-- if breadcrumb not in a content-header -->
+                    <div class="breadcrumb" aria-label="breadcrumb">
+                         
+<ol>
     <li>
       <a href="http://www.example.com/books">Home</a> 
     </li>
@@ -297,49 +305,18 @@
       <a href="http://www.example.com/sciencefiction">Science Fiction</a>
     </li>
     <li>
-      <a class="active" aria-current="page" href="http://www.example.com/books/sciencefiction/awardwinners">Award Winners</a>
+      <a href="http://www.example.com/books">Books</a> 
     </li>
-  </ol>
-</div>
-<div class="breadcrumb" aria-label="breadcrumb">
-    <ol class="condensed">
-        <li>
-          <a href="http://www.example.com/books">Home</a> 
-        </li>
-        <li>
-          <a href="http://www.example.com/sciencefiction">Science Fiction</a>
-        </li>
-        <li>
-          <a href="http://www.example.com/books">Books</a> 
-        </li>
-        <li>
-          <a href="http://www.example.com/sciencefiction">Science Fiction</a>
-        </li>
-      <li>
-        <a class="active" aria-current="page" href="http://www.example.com/books/sciencefiction/awardwinners">Award Winners</a>
-      </li>
-    </ol>
-  </div>
-  <div class="breadcrumb" aria-label="breadcrumb">
-      <ol>
-          <li>
-            <a href="http://www.example.com/books">Home</a> 
-          </li>
-          <li>
-            <a href="http://www.example.com/sciencefiction">Science Fiction</a>
-          </li>
-          <li>
-            <a href="http://www.example.com/books">Books</a> 
-          </li>
-          <li>
-            <a href="http://www.example.com/sciencefiction">Science Fiction</a>
-          </li>
-        <li>
-          <a class="active" aria-current="page" href="http://www.example.com/books/sciencefiction/awardwinners">Award Winners</a>
-        </li>
-      </ol>
-    </div>
-
+    <li>
+      <a href="http://www.example.com/sciencefiction">Science Fiction</a>
+    </li>
+  <li>
+    <a class="active" aria-current="page" href="http://www.example.com/books/sciencefiction/awardwinners">Award Winners</a>
+  </li>
+</ol> 
+                      </div>
+                    
+                     
 <h1>Default Header Colors</h1>
     <p>Lorem  n commodo ligula eget dolor. Aenean massa 
     <strong>strong</strong>. Cum sociis natoque penatibus 
@@ -593,19 +570,26 @@ ultricies nec, pellentesque eu, pretium quis, sem.</p>
 </div>  </div>
   </div>
   
+                  </div>
+                </main>
+                
               </div>
-            </main>
-                    </div>
+              <!-- end layout has class-->
+
+            </div>
+          </div> 
+
+        </div>
       </div>
     </div>
-       
+        <!-- end INTERIOR TEMPLATE -->
 
-<!-- or program page -->
-  
+    <!-- all pages can have sectionals after main content -->
+    
 
-  <!-- FOOTER -->
-  <div id="footer">
-    <footer>
+    <!-- FOOTER -->
+    <div id="footer">
+      <footer>
   <div class="large-footer container-fluid">
     <div class="inner">
       <div class="row">
@@ -672,16 +656,16 @@ ultricies nec, pellentesque eu, pretium quis, sem.</p>
   </div>
   <a href="/" class="back-to-top">Back to
     <br> top</a>
-</footer>  </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-    crossorigin="anonymous"></script>
-  <script src="https://virtual.github.io/shoreline/assets/js/main.js"></script>
-  <script src="https://virtual.github.io/shoreline/assets/js/slick.min.js"></script>
-  <script src="https://virtual.github.io/shoreline/assets/js/slick-app.js?v=3"></script>
+</footer>    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"></script>
+    <script src="https://virtual.github.io/shoreline/assets/js/main.js"></script>
+    <script src="https://virtual.github.io/shoreline/assets/js/slick.min.js"></script>
+    <script src="https://virtual.github.io/shoreline/assets/js/slick-app.js?v=3"></script>
 </body>
 
 </html>
