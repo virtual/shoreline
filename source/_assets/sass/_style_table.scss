@@ -14,15 +14,18 @@ table {
 .responsive-table {
   width: 100%;
   margin-bottom: 1.5em;
+  th, td {
+    border-bottom: 0;
+  }
 }
 @media (min-width: 48em) {
   .responsive-table {
-    font-size: .9em;
+    font-size: .9rem;
   }
 }
 @media (min-width: 62em) {
   .responsive-table {
-    font-size: 1em;
+    font-size: 1rem;
   }
 }
 .responsive-table thead {
@@ -174,7 +177,7 @@ table {
   content: attr(data-title);
   float: left;
   font-size: .8em;
-  color: rgba(94, 93, 82, 0.75);
+  color: #585858;
 }
 @media (min-width: 30em) {
   .responsive-table tbody td[data-title]:before {

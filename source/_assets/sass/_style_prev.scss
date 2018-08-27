@@ -1,0 +1,1019 @@
+
+/**
+ * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+ abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+b,
+strong {
+  font-weight: 600; }
+
+blockquote {
+	margin: 0 40px 1em 40px;
+	font-size: 1.25em;
+	/* 20px / 16px */
+	line-height: 1.25;
+	/* 25px / 20px */
+}
+
+@media (min-width: 43.75em) {
+  blockquote {
+    font-size: 1.5em;
+    /* 24px / 16px = */
+    line-height: 1.45833333;
+    /* 35px / 24px */
+  }
+}
+
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ * Known issue: no IE 6/7 normalization.
+ */
+hr { 
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 6/7/8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address margins set differently in IE 6/7.
+ */
+/**
+ * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif; 
+  font-size: 1em; }
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/**
+ * Address CSS quotes not supported in IE 6/7.
+ */
+q {
+  quotes: none; }
+
+/**
+ * Address `quotes` property not supported in Safari 4.
+ */
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+  
+/**
+ * Address paddings set differently in IE 6/7.
+ */
+/**
+ * Correct list images handled incorrectly in IE 7.
+ */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */ }
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+figure {
+  margin: 0; }
+
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+form {
+  margin: 0; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */ }
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0; }
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+-webkit-appearance: checkbox;
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */ }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.skip-link {
+  visibility: hidden;
+  position: absolute;
+  top: -100000px;
+  left: -100000px; }
+
+
+
+/* twitter module */@at-root
+.twitter-module h3 {
+  padding-left: 50px;
+  background: url("/_resources/img/graphics/icon-twitter-large.png");
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position: left center;
+}
+
+@media screen and (max-width: 1025px) {
+  .twitter-module h3 {
+    background-size: 32px;
+  }
+}
+
+.twitter-module .twitter-feed ul {
+  padding-left: 0;
+}
+
+.twitter-module .twitter-feed ul li {
+  width: 32.26%;
+  margin-left: 1.6%;
+  margin-bottom: 20px;
+  float: left;
+  padding-left: 0;
+}
+
+.twitter-module .twitter-feed ul li:first-child {
+  margin-left: 0;
+}
+
+.twitter-module .twitter-feed ul li:nth-child(3n+1) {
+  margin-left: 0;
+}
+
+.twitter-module .twitter-feed ul li .col-inner {
+  padding-right: 20px;
+}
+
+.twitter-module .twitter-feed ul li:before {
+  content: none;
+}
+
+@media screen and (max-width: 800px) {
+  .twitter-module .twitter-feed ul li {
+    width: 100%;
+    float: none;
+    border-right: 0;
+    margin-left: 0;
+  }
+  .twitter-module .twitter-feed ul li .col-inner {
+    padding-right: 0;
+  }
+}
+
+.twitter-module .twitter-feed ul .date {
+  color: #006c68;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+/* colorbox */
+
+#colorbox {
+  border-top: 50px solid white;
+  border-right: 10px solid white;
+  border-bottom: 10px solid white;
+  border-left: 10px solid white;
+  margin-left: -10px;
+  z-index: 200000; }
+
+#colorbox, #cboxOverlay, #cboxWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  outline: none;
+  background: white;
+  -webkit-transform: translate3d(0, 0, 0); }
+
+#cboxWrapper {
+  max-width: none;
+  outline: none; }
+
+#cboxOverlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: gray;
+  background: rgba(0, 0, 0, 0.6); }
+
+#cboxMiddleLeft, #cboxBottomLeft {
+  clear: left; }
+
+#cboxContent {
+  position: relative;
+  outline: none; }
+
+#cboxLoadedContent {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  outline: none; }
+
+#cboxTitle {
+  margin: 0; }
+
+#cboxLoadingOverlay, #cboxLoadingGraphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow {
+  cursor: pointer; }
+
+.cboxPhoto {
+  float: left;
+  margin: auto;
+  border: 0;
+  display: block;
+  max-width: none;
+  -ms-interpolation-mode: bicubic;
+  outline: none; }
+
+.cboxIframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+  padding: 0;
+  margin: 0; }
+
+#colorbox, #cboxContent, #cboxLoadedContent {
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; }
+
+#cboxClose {
+  background-image: url("/_resources/img/graphics/icon-close.png");
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+  text-indent: -9999px;
+  border: 0;
+  outline: 0;
+  position: absolute;
+  top: -40px;
+  right: 0;
+  display: block;
+  width: 30px;
+  height: 30px; }
+
+#cboxWrapper #cboxNext {
+  position: absolute;
+  top: -25px;
+  left: 50px;
+  appearance: none;
+  text-indent: -9999px;
+  border: 0;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  outline: 0;
+  background: none; }
+  #cboxWrapper #cboxNext:after {
+    content: "";
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/_resources/img/graphics/arrow-double-right-teal.png);
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    margin-bottom: -22.5px; }
+
+#cboxWrapper #cboxPrevious {
+  position: absolute;
+  top: -25px;
+  left: 0;
+  text-indent: -9999px;
+  appearance: none;
+  border: 0;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  outline: 0;
+  background: none; }
+  #cboxWrapper #cboxPrevious:after {
+    content: "";
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/_resources/img/graphics/arrow-double-left-teal.png);
+    position: absolute;
+    right: 5px;
+    bottom: 50%;
+    margin-bottom: -22.5px; }
+
+#cboxCurrent {
+  display: none !important; }
+
+#cboxTitle {
+  color: white;
+  font-size: 22px;
+  margin-top: 5px; }
+
+#cboxLoadingGraphic {
+  background: url(/_resources/img/icons/ajax-loader.gif) no-repeat center center; }
+
+/* table */
+.table-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+
+.table-wrapper.has-overflow .table-more {
+  display: block;
+}
+
+@media screen and (max-width: 1100px) {
+  .table-wrapper {
+    margin-right: -25px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .table-wrapper {
+    margin-right: -15px;
+  }
+}
+
+@media screen and (max-width: 3000px) {
+  .table-wrapper .table-wrapper-inner {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+  }
+}
+
+.table-wrapper .table-more {
+  cursor: pointer;
+  background-image: url(/_resources/img/graphics/arrow-right-white.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 7px;
+  width: 35px;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  bottom: 0;
+  right: 0;
+  height: 75px;
+  background-color: black;
+  margin-top: -37.5px;
+  display: none;
+}
+
+// table {
+//   width: 100%;
+//   font-size: 18px;
+//   text-align: left;
+//   font-size: 16px;
+//   white-space: nowrap;
+// }
+
+// @media screen and (max-width: 750px) {
+//   table {
+//     font-size: 16px;
+//   }
+// }
+
+// table thead,
+// table th {
+//   background: #006c68;
+//   color: white;
+//   font-weight: 600;
+// }
+
+// table th,
+// table td {
+//   padding: 6px 20px;
+// }
+
+// table th {
+//   border-bottom: 1px solid #006c68;
+// }
+
+// table td {
+//   border-bottom: 1px solid #dfdfdf;
+//   padding: 6px 20px;
+// }
+
+/* ==========================================================================
+   GENERAL FORM STYLES
+   ========================================================================== */
+.general-form {
+  margin: 0 -20px;
+}
+
+.general-form .col {
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 750px) {
+  .general-form .col {
+    margin: 0;
+    width: 100%;
+  }
+  .general-form .col .form-field {
+    margin-bottom: 20px;
+    min-width: 125px;
+  }
+}
+
+.general-form .form-field.required label:after {
+  content: "*";
+  color: #006c68;
+  padding-left: 4px;
+}
+
+.general-form .form-field.required input,
+.general-form .form-field.required textarea,
+.general-form .form-field.required select {
+  border: 1px solid #70aeae;
+}
+
+.general-form .form-field {
+  margin-bottom: 30px;
+}
+
+.general-form .section {
+  margin-bottom: 10px;
+}
+
+.general-form label {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 750px) {
+  .general-form label {
+    font-size: 17px;
+  }
+}
+
+.general-form .required-indicator {
+  float: right;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.general-form .required-indicator em {
+  margin-right: 4px;
+  font-size: 16px;
+  color: #006c68;
+}
+
+.general-form input[type="text"],
+.general-form input[type="password"],
+.general-form input[type="select"],
+.general-form input[type="search"] {
+  border: 1px solid #70aeae;
+  font-family: 'Open Sans', Arial, sans-serif;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 16px;
+  outline: none;
+  padding: 12px;
+  width: 100%;
+  color: #373737;
+  max-width: 320px;
+  -moz-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.general-form input[type="text"]:focus,
+.general-form input[type="search"]:focus {
+  -webkit-box-shadow: 0px 0px 10px 1px #ddd;
+  box-shadow: 0px 0px 10px 1px #ddd;
+}
+
+.general-form select {
+  border: 1px solid #70aeae;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 16px;
+  outline: none;
+  padding: 12px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  max-width: 320px;
+  width: 100%;
+  max-height: 48px;
+  background-color: white;
+  background-image: url(/_resources/img/graphics/arrow-down-teal.png);
+  background-position: 95% center;
+  background-repeat: no-repeat;
+  background-size: 15px;
+}
+
+@media screen and (max-width: 750px) {
+  .general-form select {
+    display: inline-block;
+    width: auto;
+    min-width: 125px;
+    background-position: 90% center;
+  }
+}
+
+.general-form input[type="submit"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 17px;
+  width: 100%;
+  text-transform: uppercase;
+  border: 0;
+  width: auto;
+  background: transparent;
+  color: white;
+  position: relative;
+  background: #006c68;
+  color: white;
+  font-weight: 700;
+  margin-top: 20px;
+  padding: 8px 22px;
+  border: 2px solid #006c68;
+}
+
+@media screen and (max-width: 1100px) {
+  .general-form input[type="submit"] {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .general-form input[type="submit"] {
+    float: none;
+    text-align: center;
+    padding-right: 20px !important;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+
+.general-form input[type="submit"]:hover {
+  background-color: white;
+  color: #006c68;
+}
+
+@media screen and (max-width: 750px) {
+  .general-form input[type="submit"] {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.general-form textarea {
+  border: 1px solid #70aeae;
+  width: 100%;
+  min-height: 220px;
+  padding: 12px;
+  resize: none;
+  outline: none;
+  font-size: 16px;
+  -moz-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.general-form textarea:focus {
+  -webkit-box-shadow: 0px 0px 10px 1px #ddd;
+  box-shadow: 0px 0px 10px 1px #ddd;
+}
+
+@media screen and (max-width: 750px) {
+  .general-form textarea {
+    margin-bottom: 10px;
+  }
+}
+
+.general-form .required-info {
+  font-size: 16px;
+}
+
+.general-form .required-info a {
+  color: #006c68;
+}
+
+@media screen and (max-width: 750px) {
+  .general-form .required-info {
+    margin-bottom: 20px !important;
+  }
+}
+
+.general-form .form-radio {
+  padding-left: 40px;
+  position: relative;
+  margin: 20px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.general-form .form-radio input {
+  position: absolute;
+  left: -9999px;
+}
+
+.general-form .form-radio input+.option-text {
+  position: relative;
+}
+
+.general-form .form-radio input+.option-text:before {
+  content: "";
+  background-image: url(/_resources/img/graphics/radio-off.png);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+  background-color: transparent;
+  position: absolute;
+  left: -40px;
+  height: 20px;
+  width: 20px;
+  top: 0;
+  display: block;
+}
+
+.general-form .form-radio input:checked+.option-text:before {
+  background-image: url(/_resources/img/graphics/radio-on.png);
+}
+
+.general-form .form-checkbox {
+  padding-left: 40px;
+  position: relative;
+  margin: 20px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.general-form .form-checkbox input {
+  position: absolute;
+  left: -9999px;
+}
+
+.general-form .form-checkbox input:checked+.option-text:before {
+  background-image: url(/_resources/img/graphics/checkbox-on.png);
+}
+
+.general-form .form-checkbox input+.option-text {
+  position: relative;
+}
+
+.general-form .form-checkbox input+.option-text:before {
+  content: "";
+  background-image: url(/_resources/img/graphics/checkbox-off.png);
+  background-repeat: no-repeat;
+  background-size: 18.5px;
+  background-position: center;
+  background-color: transparent;
+  position: absolute;
+  left: -40px;
+  height: 20px;
+  width: 20px;
+  display: block;
+  top: 0;
+}
+/* current-student icons */
+.current-student-icons {
+  overflow: hidden;
+  padding-left: 0;
+  margin-bottom: 5px;
+}
+
+.current-student-icons li {
+  float: left;
+  display: inline-block;
+  width: 18%;
+  min-width: 100px;
+  text-align: center;
+}
+
+.current-student-icons li:before {
+  content: none;
+}
+
+.current-student-icons li a {
+  overflow: hidden;
+  display: block;
+  border: 2px solid white;
+  font-weight: 600;
+}
+
+.current-student-icons li a:hover {
+  border: 2px solid #b13e3a;
+  text-decoration: none;
+}
+
+.current-student-icons li img {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  max-width: 59px;
+}
+
+
+/* utility */
+.hide {
+  position: absolute;
+  top: -9999px;
+  left: -9999px; }
+
+/* ie fixes */ 
+
+.lt-ie9 .video-lightbox:before {
+  background-image: url(/_resources/img/graphics/1x/button-play-red.png); }
+
+.lt-ie9 .section.three-col .col:first-child .col-inner {
+  background-image: url("/_resources/img/graphics/1x/icon-events-teal.png"); }
+
+.lt-ie9 .section.three-col .col + .col .col-inner {
+  background-image: url("/_resources/img/graphics/1x/icon-events-green.png"); }
+
+.lt-ie9 .section.three-col .col + .col + .col .col-inner {
+  background-image: url("/_resources/img/graphics/1x/icon-events-red.png"); }
+
+.lt-ie9 .cta:after, .lt-ie9 a.cta:after {
+  background-image: url(/_resources/img/graphics/1x/arrow-double-right-white.png); }
+
+.lt-ie9 .general-form .form-radio input + .option-text:before {
+  background-image: url(/_resources/img/graphics/1x/radio-off.png); }
+
+.lt-ie9 .general-form .form-radio input:checked + .option-text:before {
+  background-image: url(/_resources/img/graphics/1x/radio-on.png); }
+
+.lt-ie9 .general-form .form-checkbox input + .option-text:before {
+  background-image: url(/_resources/img/graphics/1x/checkbox-off.png); }
+
+.lt-ie9 .general-form .form-checkbox input:checked + .option-text:before {
+  background-image: url(/_resources/img/graphics/1x/checkbox-on.png); }
+
+.lt-ie9 .general-form select {
+  background-image: url(/_resources/img/graphics/1x/arrow-down-teal.png); }
+
+.lt-ie9 .twitter-module h3 {
+  background: url("/_resources/img/graphics/1x/icon-twitter-large.png") no-repeat; }  
+
+  /* GMS 5/17/16 - Some of iFactory's form styles cause trouble. Use styles below to reset to classic form styles */
+.ClassicRadio {
+	margin:0;
+	border:0;
+	padding:0;
+	display:inline-block;
+	vertical-align:middle;
+	white-space:normal;
+	background:none;
+	line-height:1;
+	
+	/* Browsers have different default form fonts */
+	font-size:13px;
+	font-family:Arial;
+	
+	-webkit-box-sizing:border-box;
+	-webkit-appearance:radio;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	
+	width:13px;
+	height:13px;		
+}
+
+
+/* help text */
+.ou-help { display:none;}
