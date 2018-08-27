@@ -69,14 +69,14 @@
         'icon-alt' => '',
         'icon' => '',   
         'desc' => 'Browse the course descriptions to explore classes available in this subject',
-        'link' => 'https://www.youtube.com/watch?v=YkLwzgPoQcA'
+        'link' => '#'
         ])
         @include('_partials.card', [
         'heading' => 'Sample Schedule',
         'desc' => 'Get a glimpse at what your quarterly schedule might look like in this program option',
         'icon-alt' => 'map',
         'icon' => 'far fa-map',      
-        'link' => 'http://jigsaw.tighten.co/docs/blade-templates-and-partials/'          
+        'link' => '#'          
         ])
 
      </div>

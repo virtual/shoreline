@@ -49,7 +49,7 @@
           'attribution' => 'Pavielle Montes',
           'attribution2' => 'Associate of Arts and High School Diploma',
           'img' => '/resources/img/testimonials/shoreline-williams72.jpg',          
-          'link' => 'https://www.youtube.com/watch?v=YkLwzgPoQcA'
+          'link' => '#'
           ]) 
 
   <h2>Program Options</h2>      
@@ -85,19 +85,19 @@
       'desc' => "Car1: Bob Hutchinson was part of the pioneer generation of animators in Seattle who, confronted with limited resources, established a vital presence by creating their own centers of animation and film where experimentation was the norm.",
       'alt' => 'Car1: Photo Title', 
       'img' => '/resources/img/carousel/rectangle-copy-7.png',          
-      'link' => 'https://www.youtube.com/watch?v=YkLwzgPoQcA'
+      'link' => '#'
       ])  
       @include('_partials.carousel', [ 
       'desc' => "Car1: 2Bob Hutchinson was part of the pioneer generation of animators in Seattle who, confronted with limited resources, established a vital presence by creating their own centers of animation and film where experimentation was the norm.",
       'alt' => 'Car1: Photo Title2', 
       'img' => '/resources/img/carousel/alexis-brown-85793-unsplash.jpg',          
-      'link' => 'https://www.youtube.com/watch?v=YkLwzgPoQcA'
+      'link' => '#'
       ])   
         @include('_partials.carousel', [ 
         'desc' => "Car1: 2Bob Hutchinson was part of the pioneer generation of animators in Seattle who, confronted with limited resources, established a vital presence by creating their own centers of animation and film where experimentation was the norm.",
         'alt' => 'Car1: Photo Title3', 
         'img' => '/resources/img/carousel/rectangle-copy-7.png',          
-        'link' => 'https://www.youtube.com/watch?v=YkLwzgPoQcA'
+        'link' => '#'
         ])  
       </div>
      
@@ -109,14 +109,16 @@
      'icon-alt' => '',
      'icon' => '',   
      'desc' => 'Browse the course descriptions to explore classes available in this subject',
-     'link' => 'https://www.youtube.com/watch?v=YkLwzgPoQcA'
+     'link' => '#',
+     'buttontext' => 'Request Info'
      ])
      @include('_partials.card', [
      'heading' => 'Sample Schedule',
      'desc' => 'Get a glimpse at what your quarterly schedule might look like in this program option',
      'icon-alt' => 'map',
      'icon' => 'far fa-map',      
-     'link' => 'http://jigsaw.tighten.co/docs/blade-templates-and-partials/'          
+     'link' => '#',
+     'buttontext' => ''          
      ])
 
   </div>
@@ -132,19 +134,19 @@
               'desc' => "Car2: Bob Hutchinson was part of the pioneer generation of animators in Seattle who, confronted with limited resources, established a vital presence by creating their own centers of animation and film where experimentation was the norm.",
               'alt' => 'Car2: Photo Title', 
               'img' => '/resources/img/carousel/rectangle-copy-7.png',          
-              'link' => 'https://www.youtube.com/watch?v=YkLwzgPoQcA'
+              'link' => '#'
               ])  
               @include('_partials.carousel', [ 
               'desc' => "Car2: 2Bob Hutchinson was part of the pioneer generation of animators in Seattle who, confronted with limited resources, established a vital presence by creating their own centers of animation and film where experimentation was the norm.",
               'alt' => 'Car2: Photo Title2', 
               'img' => '/resources/img/carousel/alexis-brown-85793-unsplash.jpg',          
-              'link' => 'https://www.youtube.com/watch?v=YkLwzgPoQcA'
+              'link' => '#'
               ])   
                 @include('_partials.carousel', [ 
                 'desc' => "Car2: 2Bob Hutchinson was part of the pioneer generation of animators in Seattle who, confronted with limited resources, established a vital presence by creating their own centers of animation and film where experimentation was the norm.",
                 'alt' => 'Car2: Photo Title3', 
                 'img' => '/resources/img/carousel/rectangle-copy-7.png',          
-                'link' => 'https://www.youtube.com/watch?v=YkLwzgPoQcA'
+                'link' => '#'
                 ])  
             </div>
       </div>
@@ -169,7 +171,7 @@
      'icon-alt' => '',
      'icon' => '',   
      'desc' => 'Get in touch with an enrollment coach to learn more about our programs, registering, financial aid, and more',
-     'link' => 'http://www.shoreline.edu/communications-marketing/identity-guidelines/default.aspx'
+     'link' => 'http://www.shoreline.edu/communications-marketing/identity-guidelines/default.aspx' 
      ])
 
      
@@ -178,7 +180,7 @@
      'icon-alt' => '',
      'icon' => '',   
      'desc' => 'Your first step is to get a student ID – it\'s fast, easy, and free',
-     'link' => 'http://www.shoreline.edu/communications-marketing/identity-guidelines/default.aspx'
+     'link' => 'http://www.shoreline.edu/communications-marketing/identity-guidelines/default.aspx' 
      ])
 
 @endsection 

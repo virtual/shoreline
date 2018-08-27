@@ -40,7 +40,7 @@
   margin-left: .5rem;
   transition: margin-left .15s ease-in-out;
 } 
-.card:hover .more-arrow:after, .more-arrow:hover:after {
+.more-arrow:hover:after {
   margin-left: .62rem;   
 }
 .clear { clear:both; }

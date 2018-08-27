@@ -7,22 +7,22 @@
   border-radius: 5px;
   margin-bottom: 1rem;
   .card-title { font-size: 1.1875rem; }
-  cursor: pointer;
+  // cursor: pointer;
   h2, h3, h4, h5 { color: $link-blue; font-weight: 400; }
-  &:hover {
-    h2, h3, h4, h5 { text-decoration: underline;} 
-  }
-  &>a {
-    position: absolute;
-    top: 0; left: 0;
-    height: 100%; width: 100%;
-    cursor:pointer;
-    opacity: 1;
-    text-indent: -9999px; // move text label off screen allowing for focus border
-  } 
-  &>a:focus {
-    box-shadow: 0 0 0 0.2rem rgba(0, 104, 94, 0.5);
-  }
+  // &:hover {
+  //   h2, h3, h4, h5 { text-decoration: underline;} 
+  // }
+  // &>a {
+  //   position: absolute;
+  //   top: 0; left: 0;
+  //   height: 100%; width: 100%;
+  //   cursor:pointer;
+  //   opacity: 1;
+  //   text-indent: -9999px; // move text label off screen allowing for focus border
+  // } 
+  // &>a:focus {
+  //   box-shadow: 0 0 0 0.2rem rgba(0, 104, 94, 0.5);
+  // }
    
 }
 .card {

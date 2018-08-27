@@ -34,7 +34,7 @@
           'icon-alt' => 'quote',
           'icon' => 'far fa-map',          
           'theme' => 'secondary',
-          'link' => 'https://www.youtube.com/watch?v=YkLwzgPoQcA'
+          'link' => '#'
           ])
           @include('_partials.card', [
           'heading' => 'Visit Campus',
@@ -42,7 +42,7 @@
           'icon-alt' => 'quote',
           'icon' => 'fas fa-quote-left',     
           'theme' => 'secondary',
-          'link' => 'http://jigsaw.tighten.co/docs/blade-templates-and-partials/'          
+          'link' => '#'          
           ])
  
  </section>
@@ -56,7 +56,7 @@
           'attribution' => 'Pavielle Montes',
           'attribution2' => 'Associate of Arts and High School Diploma',
           'img' => '/resources/img/testimonials/shoreline-williams72.jpg',          
-          'link' => 'https://www.youtube.com/watch?v=YkLwzgPoQcA'
+          'link' => '#'
           ]) 
           @include('_partials.quote', [ 
           'desc' => "I have come to believe that the whole world is an enigma, a harmless enigma that is made terrible by our own mad attempt to interpret it as though it had an underlying truth.",
@@ -64,7 +64,7 @@
           'attribution' => 'Pavielle Montes',
           'attribution2' => 'Associate of Arts and High School Diploma',
           'img' => '/resources/img/testimonials/shoreline-williams72h.jpg',          
-          'link' => 'https://www.youtube.com/watch?v=YkLwzgPoQcA'
+          'link' => '#'
           ]) 
         </div>
     </div>
