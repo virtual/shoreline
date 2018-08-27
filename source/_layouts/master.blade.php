@@ -99,7 +99,7 @@
     <!-- CONTENT HEADER ON -->
     @if (trim($__env->yieldContent('content-header')))
     <span class="debug">!!!! content-header</span>
-    <div class="content-header">
+    @if (trim($__env->yieldContent('content-header-inverse'))) <div class="content-header bg-primary"> @else  <div class="content-header "> @endif
       <div class="container-fluid">
         @yield('content-header')
       </div>

@@ -186,3 +186,6 @@
 
 @endsection 
  
+@section('content-header-inverse3') 
+  true
+@endsection 

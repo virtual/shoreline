@@ -68,7 +68,7 @@
   }
 }
 .content-header {
-  padding-top: 50px;
+  padding-top: 24px; // distance from stripe to img
   padding-bottom: 38px;
 }
 .content-header.program:after { content: ''; display: table; clear:both;}

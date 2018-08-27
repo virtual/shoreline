@@ -1196,6 +1196,10 @@ table {
   border-top: 0;
 }
 
+.content-header.bg-primary {
+  margin-top: 1rem;
+}
+
 .page-interior .content-header.bg-primary {
   margin-top: -1rem;
 }
@@ -1827,7 +1831,7 @@ h6, .h6 {
 }
 
 .content-header {
-  padding-top: 50px;
+  padding-top: 24px;
   padding-bottom: 38px;
 }
 
@@ -2567,6 +2571,7 @@ dl:after {
 
 .content-header .breadcrumb {
   margin-bottom: 1.5rem;
+  margin-top: .5rem;
 }
 
 main .breadcrumb ol, .sectional .breadcrumb ol, .content-container .breadcrumb ol {
