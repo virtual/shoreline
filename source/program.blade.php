@@ -35,7 +35,7 @@
 </p>
 @endsection
 
-@section('content')
+@section('content-interior')
 
 <h2>Features &amp; Highlights </h2>
 <ul class="large-list features list-def">
@@ -184,7 +184,4 @@
      ])
 
 @endsection 
-
-@section('program')  
-true
-@endsection 
+ 

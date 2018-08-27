@@ -13,8 +13,8 @@
 // @media (min-width: $screen-sm) and (max-width: $screen-xl - 1) {
 //   .sidebar-container { padding-right: 20px;}
 // }
-.content-header.program{ padding-bottom: 1rem; }
-.content-header.program .header-info .header-content {
+.content-header{ padding-bottom: 1rem; }
+.content-header .header-info .header-content {
   margin-bottom: 2rem;
 }
 
@@ -72,7 +72,7 @@
     .breadcrumb, .header-info { padding-right: 25%; } // to wrap around sidenav
   }
   
-  .content-header.program .header-info {
+  .content-header .header-info {
     display:flex; 
     .header-content, .header-image { width: 50%; flex: 1; }
   }
@@ -83,8 +83,8 @@
   }
 }
    
-.page-interior, .program .content-header  {border-top: 1rem solid #ebf7eb; padding-top: 1.75rem;}
-.program .content-header.program-option { border-top:0; margin-top: 1rem; }
+.page-interior, .content-interior .content-header  {border-top: 1rem solid #ebf7eb; padding-top: 1.75rem;}
+.content-header.program-option { border-top:0; margin-top: 1rem; }
 
  // .layout-has-left-nav
 

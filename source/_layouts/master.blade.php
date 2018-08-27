@@ -48,6 +48,39 @@
 
     <span class="debug">!!!! content-interior</span>
     <div class="layout-master page-interior">
+
+
+<!-- PROGRAM PARENT -->
+        <span class="debug">!!!! content-header</span>
+        <div class="content-header">
+          <div class="container-fluid">
+            @yield('content-header')
+          </div>
+        </div>
+
+        @if (trim($__env->yieldContent('lead')))
+        <span class="debug">!!!! lead</span>
+        <div class="py-3 lead-content container-fluid">
+          <div class="layout-has-sidenav">
+              <span class="debug">!!!! Layout has sidenav</span>
+    
+            <div class="content-container">
+              @yield('lead')
+              @yield('content-interior')
+            </div>
+             
+          <div class="sidebar-container">
+              <span class="debug">!!!! PROGRAM PARENT ONLY</span> 
+                    @yield('main-sidebar-content')
+                     
+                
+              </div> 
+          </div>
+        </div>
+        @endif 
+
+
+
       <div class="container-fluid">
         <div id="maincontent" class="flex-layout-body">
           @if (trim($__env->yieldContent('left-nav')))
@@ -81,40 +114,13 @@
     </div>
       @endif 
 
-<!-- or program page -->
+<!-- or program OPTION -->
  @if (trim($__env->yieldContent('content'))) 
  <span class="debug">!!!! content</span>
 
   <div class="layout-master program">
     @if (trim($__env->yieldContent('content-header')))
-      @if (trim($__env->yieldContent('program')))
-      <!-- PROGRAM PARENT -->
-      <span class="debug">!!!! PROGRAM</span>
-    <div class="content-header program">
-      <div class="container-fluid">
-        @yield('content-header')
-      </div>
-    </div>
-    @if (trim($__env->yieldContent('lead')))
-    <div class="py-3 lead-content container-fluid">
-      <div class="layout-has-sidenav">
-          <span class="debug">!!!! Layout has sidenav</span>
-
-        <div class="content-container">
-          @yield('lead')
-          @yield('content')
-        </div>
-         
-      <div class="sidebar-container">
-          <span class="debug">!!!! PROGRAM PARENT ONLY</span> 
-                @yield('main-sidebar-content')
-                 
-            
-          </div> 
-      </div>
-    </div>
-    @endif 
-      @else
+       
       <!-- PROGRAM OPTION -->
       <div class="bg-primary content-header program-option">
         
@@ -179,8 +185,7 @@
       <!-- end pomc-->
 
 
-
-      @endif  
+ 
       
     @endif 
     
