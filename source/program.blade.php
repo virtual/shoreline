@@ -1,18 +1,19 @@
 @extends('_layouts.master')
 
 @section('content-header')
-<div class="breadcrumb" aria-label="breadcrumb">
-  <ol>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Explore Programs</a></li>
-    <li><a href="#">Transfer Programs</a></li>
-    <li><a class="active" aria-current="page" href="#">Visual Arts</a></li>
-  </ol>
 
-</div>
 
 <div class="header-info">
   <div class="header-content">
+      <div class="breadcrumb" aria-label="breadcrumb">
+          <ol>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Explore Programs</a></li>
+            <li><a href="#">Transfer Programs</a></li>
+            <li><a class="active" aria-current="page" href="#">Visual Arts</a></li>
+          </ol>
+        
+        </div>
     <h1>Visual Arts</h1>
     <p class="xxl">The future is visual</p>
     <a href="#" class="btn btn-important">Apply</a>
@@ -35,7 +36,7 @@
 </p>
 @endsection
 
-@section('content-interior')
+@section('content')
 
 <h2>Features &amp; Highlights </h2>
 <ul class="large-list features list-def">
@@ -66,7 +67,7 @@
   <div class="container-fluid">
       <hr/>
       <h2>Sectional: Move this to another page later</h2>
-      <div class="layout-has-sidenav">
+      <div class="layout-has-sidebar">
           <div class="content-container"> 
 
     <div class="video-container">

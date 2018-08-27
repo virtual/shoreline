@@ -39,7 +39,7 @@
 @section('sectionals')
 <section class="sectional sectional-padded">
   <div class="container-fluid">
-      <div class="layout-has-sidenav">
+      <div class="layout-has-sidebar">
     <div class="content-container"> 
      <h2 tabindex="-1" id="outcomes" class="primary">Outcomes &amp; Careers</h2>
      
@@ -145,3 +145,8 @@
  <a class="btn btn-secondary btn-block" href="/apply-and-aid/apply.aspx">Visit Campus</a>
 
 @endsection
+
+@section('layout-option')  
+true
+@endsection
+ 

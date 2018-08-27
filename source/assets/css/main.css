@@ -8,6 +8,10 @@
   z-index: 30;
 }
 
+.debug {
+  display: none;
+}
+
 /**
  * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
  */
@@ -1052,7 +1056,7 @@ table {
   display: none;
 }
 
-.layout-has-sidenav .sidebar-container, .layout-has-sidenav .content-container {
+.layout-has-sidebar .sidebar-container, .layout-has-sidebar .content-container {
   width: 100%;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1071,7 +1075,7 @@ table {
 }
 
 @media (max-width: 767px) {
-  #maincontent .layout-has-sidenav {
+  #maincontent .layout-has-sidebar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1080,12 +1084,12 @@ table {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  #maincontent .layout-has-sidenav .sidebar-container {
+  #maincontent .layout-has-sidebar .sidebar-container {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
   }
-  #maincontent .layout-has-sidenav .content-container {
+  #maincontent .layout-has-sidebar .content-container {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -1096,26 +1100,26 @@ table {
   .subnav .toggle {
     display: none;
   }
-  .content-header.program-option .breadcrumb, .content-header.program-option .header-info {
+  .program-option .content-header .breadcrumb, .program-option .content-header .header-info {
     padding-right: 33.33%;
   }
-  .layout-has-sidenav .sidebar-container {
+  .layout-has-sidebar .sidebar-container {
     width: 33.33%;
     position: relative;
   }
-  .layout-has-sidenav .content-container {
+  .layout-has-sidebar .content-container {
     width: 66.66%;
     padding-right: 40px;
   }
-  .layout-has-sidenav .sidebar-container.overview {
+  .layout-has-sidebar .sidebar-container.overview {
     position: static;
   }
-  .layout-has-sidenav #sidebar-nav nav {
+  .layout-has-sidebar #sidebar-nav nav {
     position: absolute;
     top: 50px;
     padding: 0;
   }
-  .layout-has-sidenav {
+  .layout-has-sidebar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1128,7 +1132,7 @@ table {
     width: 100%;
     margin: 0 auto;
   }
-  .layout-has-sidenav .sidebar-container {
+  .layout-has-sidebar .sidebar-container {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
@@ -1137,7 +1141,7 @@ table {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .layout-has-sidenav .content-container {
+  .layout-has-sidebar .content-container {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
@@ -1145,7 +1149,7 @@ table {
 }
 
 @media (min-width: 992px) {
-  .content-header.program-option .breadcrumb, .content-header.program-option .header-info {
+  .program-option .content-header .breadcrumb, .program-option .content-header .header-info {
     padding-right: 25%;
   }
   .content-header .header-info {
@@ -1159,22 +1163,41 @@ table {
         -ms-flex: 1;
             flex: 1;
   }
-  .layout-has-sidenav .sidebar-container {
+  .program-option .content-header .header-info {
+    display: block;
+  }
+  .program-option .content-header .header-info .header-content, .program-option .content-header .header-info .header-image {
+    width: auto;
+    -webkit-box-flex: initial;
+        -ms-flex: initial;
+            flex: initial;
+  }
+  .layout-has-sidebar .sidebar-container {
     width: 25%;
   }
-  .layout-has-sidenav .content-container {
+  .layout-has-sidebar .content-container {
     width: 75%;
+  }
+  .layout-has-left-nav.layout-has-sidebar .content-container {
+    width: 50%;
   }
 }
 
-.page-interior, .content-interior .content-header {
+.page-interior {
   border-top: 1rem solid #ebf7eb;
-  padding-top: 1.75rem;
+  padding-top: 0rem;
 }
 
-.content-header.program-option {
+.page-interior > .container-fluid {
+  padding-top: 2rem;
+}
+
+.program-option .content-header {
   border-top: 0;
-  margin-top: 1rem;
+}
+
+.page-interior .content-header.bg-primary {
+  margin-top: -1rem;
 }
 
 @media (max-width: 767px) {

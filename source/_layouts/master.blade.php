@@ -41,176 +41,145 @@
 </head>
 
 <body>
-    @include('_partials.topbar') 
-    @include('_partials.header')
-    
-    @if (trim($__env->yieldContent('content-interior')))
+  @include('_partials.topbar') @include('_partials.header')
 
-    <span class="debug">!!!! content-interior</span>
-    <div class="layout-master page-interior">
-
-
-<!-- PROGRAM PARENT -->
-        <span class="debug">!!!! content-header</span>
-        <div class="content-header">
-          <div class="container-fluid">
-            @yield('content-header')
-          </div>
-        </div>
-
-        @if (trim($__env->yieldContent('lead')))
-        <span class="debug">!!!! lead</span>
-        <div class="py-3 lead-content container-fluid">
-          <div class="layout-has-sidenav">
-              <span class="debug">!!!! Layout has sidenav</span>
-    
-            <div class="content-container">
-              @yield('lead')
-              @yield('content-interior')
-            </div>
-             
-          <div class="sidebar-container">
-              <span class="debug">!!!! PROGRAM PARENT ONLY</span> 
-                    @yield('main-sidebar-content')
-                     
-                
-              </div> 
-          </div>
-        </div>
-        @endif 
-
-
-
+  <!-- PROGRAM OPTION TEMPLATE -->
+  @if (trim($__env->yieldContent('layout-option')))
+  <span class="debug">!!!! content</span>
+  <div class="layout-master program-option">
+    <div class="bg-primary content-header">
+      <span class="debug">!!!! PROGRAM OPTION</span>
       <div class="container-fluid">
-        <div id="maincontent" class="flex-layout-body">
-          @if (trim($__env->yieldContent('left-nav')))
-          <div class="layout-has-left-nav">
-            @endif
-
-
-            @if (trim($__env->yieldContent('left-nav'))) 
-              <nav class="left-nav">
-                <!--<h2>
-            <span role="button" data-toggle="collapse" data-target="#submenu" aria-controls="submenu" aria-expanded="false" aria-label="Toggle navigation"
-              aria-hidden="true" class="fas fa-bars toggle">
-              <span class="sr-only">Expand Submenu</span>
-            </span> yield('menuheader')</h2>-->
-                <a class="sr-only show-on-focus" href="#interior">Skip Navigation</a>
-  
-                @yield('left-nav')
-              </nav> 
-            @endif 
-
-            <main class="content-container" id="interior">
-              <div class="content-section ">
-                @yield('content-interior')
-              </div>
-            </main>
-            @if (trim($__env->yieldContent('left-nav')))
-          </div>
-              @endif
+        @yield('content-header')
+      </div>
+    </div>
+    <div class="py-3 lead-content container-fluid">
+      <div class="layout-has-sidebar">
+        <span class="debug">!!!! Layout has sidenav</span>
+        <div class="content-container">
+          @yield('lead')
         </div>
       </div>
     </div>
-      @endif 
 
-<!-- or program OPTION -->
- @if (trim($__env->yieldContent('content'))) 
- <span class="debug">!!!! content</span>
+    <!-- main content -->
+    <div class="container-fluid">
+      <div id="maincontent" class="flex-layout-body">
+        <div class="debug">Main content</div>
+        <div class="layout-has-sidebar">
+          <main class="content-container" id="interior">
+            <div class="content-section ">
+              @yield('content')
+            </div>
+          </main>
 
-  <div class="layout-master program">
-    @if (trim($__env->yieldContent('content-header')))
-       
-      <!-- PROGRAM OPTION -->
-      <div class="bg-primary content-header program-option">
-        
-      <span class="debug">!!!! PROGRAM OPTION</span>
-        <div class="container-fluid">
-          @yield('content-header')
-        </div>
-      </div>
-
-      @if (trim($__env->yieldContent('lead')))
-      <div class="py-3 lead-content container-fluid">
-        <div class="layout-has-sidenav">
-            <span class="debug">!!!! Layout has sidenav</span>
-  
-          <div class="content-container">
-            @yield('lead')
-          </div>
-  
-        </div>
-      </div>
-
-
-      <!-- program option main content -->
-      <div class="container-fluid">
-          <div id="maincontent" class="flex-layout-body">
-            <div class="debug">Main content</div>
-            @if (trim($__env->yieldContent('overview-nav')))
-            <div class="layout-has-sidenav">
-              @endif
-    
-    
-    
-              <main class="content-container" id="interior">
-                <div class="content-section ">
-    
-                  @yield('content')
-                </div>
-    
-              </main>
-    
-              @if (trim($__env->yieldContent('overview-nav')))
-              <div id="sidebar-nav" class="sidebar-container overview">
-    
-                <nav>
-                  <!--<h2>
+          <div id="sidebar-nav" class="sidebar-container overview">
+            <nav>
+              <!--<h2>
               <span role="button" data-toggle="collapse" data-target="#submenu" aria-controls="submenu" aria-expanded="false" aria-label="Toggle navigation"
                 aria-hidden="true" class="fas fa-bars toggle">
                 <span class="sr-only">Expand Submenu</span>
               </span> yield('menuheader')</h2>-->
-                  <a class="sr-only show-on-focus" href="#interior">Skip Navigation</a>
-    
-                  @yield('overview-nav')
-                </nav>
-              </div>
-              @endif 
-              @if (trim($__env->yieldContent('overview-nav')))
-            </div>
-            @endif
-    
+              <a class="sr-only show-on-focus" href="#interior">Skip Navigation</a>
+              @yield('overview-nav')
+            </nav>
           </div>
         </div>
-      <!-- end pomc-->
+      </div>
+    </div>
+    <!-- END main content -->
+  </div>
+  <!-- end PROGRAM OPTION TEMPLATE -->
 
+  @else
+  <!-- INTERIOR TEMPLATE -- Not program option template -->
+  <span class="debug">!!!! interior template</span>
+  <div class="layout-master page-interior">
 
- 
-      
-    @endif 
-    
-    
+    <!-- CONTENT HEADER ON -->
+    @if (trim($__env->yieldContent('content-header')))
+    <span class="debug">!!!! content-header</span>
+    <div class="content-header">
+      <div class="container-fluid">
+        @yield('content-header')
+      </div>
+    </div>
     @endif
 
-    
+    <span class="debug">!!!! lead</span>
+    <div class="container-fluid">
+      <div id="maincontent" class="flex-layout-body">
 
-  </div>
-  @endif @if (trim($__env->yieldContent('sectionals'))) @yield('sectionals') @endif
+        @if (trim($__env->yieldContent('left-nav')))
+        <span class="debug">!!!! Layout has leftnav</span>
+        @if (trim($__env->yieldContent('main-sidebar-content')))
+        <span class="debug">!!!! Layout has sidebar</span>
+        <div class="layout-has-left-nav layout-has-sidebar">
+          @else
+          <div class="layout-has-left-nav">
+            @endif @else @if (trim($__env->yieldContent('main-sidebar-content')))
+            <div class="layout-has-sidebar">
+              @else
+              <div class="x">
+                <!-- no sidebar, no left nav-->
+                @endif @endif @if (trim($__env->yieldContent('left-nav')))
+                <nav class="left-nav">
+                  <!--<h2>
+            <span role="button" data-toggle="collapse" data-target="#submenu" aria-controls="submenu" aria-expanded="false" aria-label="Toggle navigation"
+              aria-hidden="true" class="fas fa-bars toggle">
+              <span class="sr-only">Expand Submenu</span>
+            </span> yield('menuheader')</h2>-->
+                  <a class="sr-only show-on-focus" href="#interior">Skip Navigation</a>
+                  @yield('left-nav')
+                </nav>
+                @endif
+
+                <main class="content-container" id="interior">
+                  <div class="content-section ">
+
+                    @if (trim($__env->yieldContent('lead'))) 
+                      @yield('lead') 
+                    @endif 
+
+                    @yield('content')
+                  </div>
+                </main>
+                @if (trim($__env->yieldContent('main-sidebar-content')))
+                <div class="sidebar-container">
+                  <span class="debug">!!!! SIDEBAR ON</span>
+                  @yield('main-sidebar-content')
+                </div>                
+                @endif
+
+              </div>
+              <!-- end layout has class-->
+
+            </div>
+          </div> 
+
+        </div>
+      </div>
+    </div>
+    @endif
+    <!-- end INTERIOR TEMPLATE -->
+
+    <!-- all pages can have sectionals after main content -->
+    @if (trim($__env->yieldContent('sectionals'))) @yield('sectionals') @endif
 
 
-  <!-- FOOTER -->
-  <div id="footer">
-    @include('_partials/footer')
-  </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-    crossorigin="anonymous"></script>
-  <script src="{{ $page->baseUrl }}/assets/js/main.js"></script>
-  <script src="{{ $page->baseUrl }}/assets/js/slick.min.js"></script>
-  <script src="{{ $page->baseUrl }}/assets/js/slick-app.js?v=3"></script>
+    <!-- FOOTER -->
+    <div id="footer">
+      @include('_partials/footer')
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"></script>
+    <script src="{{ $page->baseUrl }}/assets/js/main.js"></script>
+    <script src="{{ $page->baseUrl }}/assets/js/slick.min.js"></script>
+    <script src="{{ $page->baseUrl }}/assets/js/slick-app.js?v=3"></script>
 </body>
 
 </html>

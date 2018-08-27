@@ -1,7 +1,7 @@
  
 
  
-.layout-has-sidenav {   
+.layout-has-sidebar {   
   .sidebar-container, .content-container  { width: 100%; padding-top: 1rem; padding-bottom: 1rem; }
 }
 // .container-fluid { position: relative;}
@@ -20,7 +20,7 @@
 
 @media (max-width: $screen-md - 1) {
   #maincontent {
-    .layout-has-sidenav {  
+    .layout-has-sidebar {  
       display: flex;
       flex-direction: column-reverse;
       .sidebar-container {   flex: 1; }
@@ -31,10 +31,10 @@
 
 @media (min-width: $screen-md) {
   .subnav .toggle { display:none;}
-  .content-header.program-option {
+  .program-option .content-header {
     .breadcrumb, .header-info { padding-right: 33.33%; } // to wrap around sidenav
   }
-  .layout-has-sidenav { 
+  .layout-has-sidebar { 
     .sidebar-container { width: 33.33%; position: relative; }
     .content-container { width:66.66%; padding-right: 40px;}
     .sidebar-container.overview {
@@ -49,7 +49,7 @@
     }
   }
   
-  .layout-has-sidenav { 
+  .layout-has-sidebar { 
     display: flex;
     flex-direction: row;  
     min-height: 1px;
@@ -68,7 +68,7 @@
   }
 }  
 @media (min-width: $screen-lg) {
-  .content-header.program-option {
+  .program-option .content-header {
     .breadcrumb, .header-info { padding-right: 25%; } // to wrap around sidenav
   }
   
@@ -76,16 +76,26 @@
     display:flex; 
     .header-content, .header-image { width: 50%; flex: 1; }
   }
+  .program-option .content-header .header-info{
+    display: block;
+    .header-content, .header-image { width: auto; flex: initial;}
+  } 
 
-  .layout-has-sidenav { 
+  .layout-has-sidebar { 
     .sidebar-container { width: 25%;}
     .content-container { width:75%;}
   }
+  .layout-has-left-nav.layout-has-sidebar .content-container {
+      width:50%;
+  }
 }
    
-.page-interior, .content-interior .content-header  {border-top: 1rem solid #ebf7eb; padding-top: 1.75rem;}
-.content-header.program-option { border-top:0; margin-top: 1rem; }
-
+.page-interior {border-top: 1rem solid #ebf7eb; padding-top: 0rem;}
+.page-interior>.container-fluid { padding-top: 2rem; }
+.program-option .content-header { border-top:0; 
+  // margin-top: 1rem; 
+}
+.page-interior .content-header.bg-primary { margin-top: -1rem;}
  // .layout-has-left-nav
 
  @media (max-width: $screen-md - 1) {

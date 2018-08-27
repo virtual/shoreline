@@ -1,6 +1,6 @@
 @extends('_layouts.master')
 
-@section('content-interior')
+@section('content')
  <h1>Timeline</h1>
  <p>8/27 — Pushed back two weeks</p>
   <div class="timeline">

@@ -2,7 +2,7 @@
 
 
 
-@section('content-interior')
+@section('content')
 <div class="breadcrumb" aria-label="breadcrumb">
     <ol>
       <li><a href="#">Home</a></li>
@@ -77,9 +77,39 @@
 @endsection
 
 
-@section('feature')
-my feature!9
-@endsection
+
+
+@section('main-sidebar-content-backup')  
+  <div class="card card-program-heading">
+    <h2>Related Program Links</h2>
+    <ul class="list-unstyled">
+        <li><a class="scrollable" href="#info">Information Meetings</a></li>
+        <li><a class="scrollable" href="#brochure">Program Brochure</a></li>
+        <li><a class="scrollable" href="#guide">Planning Guide</a></li>
+        <li><a class="scrollable" href="#apply">Online Application</a></li>
+        <li><a class="scrollable" href="#prerequisite">Prerequisite Checklist</a></li>
+        <li><a class="scrollable" href="#transcript">Transcript Evaluation</a></li>
+    </ul> 
+  </div>
+ @include('_partials.card', [
+     'heading' => 'Request Info',
+     'icon-alt' => '',
+     'icon' => '',   
+     'desc' => 'Get in touch with an enrollment coach to learn more about our programs, registering, financial aid, and more',
+     'link' => 'http://www.shoreline.edu/communications-marketing/identity-guidelines/default.aspx' 
+     ])
+
+     
+     @include('_partials.card', [
+     'heading' => 'Apply Today',
+     'icon-alt' => '',
+     'icon' => '',   
+     'desc' => 'Your first step is to get a student ID – it\'s fast, easy, and free',
+     'link' => 'http://www.shoreline.edu/communications-marketing/identity-guidelines/default.aspx' 
+     ])
+
+@endsection 
+
 
 @section('homepage')  
 true

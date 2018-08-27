@@ -3,7 +3,7 @@
 
 
 
-@section('content-interior')
+@section('content')
 
 <div class="breadcrumb" aria-label="breadcrumb">
   <ol>

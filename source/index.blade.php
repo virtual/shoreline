@@ -1,6 +1,6 @@
 @extends('_layouts.master')
 
-@section('content-interior')
+@section('content')
 
 @include('_partials.form') 
   
@@ -9,7 +9,7 @@
 
  
 
-@section('homepage')  
+@section('layout-homepage')  
 true
 @endsection
  
