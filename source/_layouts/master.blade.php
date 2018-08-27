@@ -50,7 +50,10 @@
     <div class="bg-primary content-header">
       <span class="debug">!!!! PROGRAM OPTION</span>
       <div class="container-fluid">
-        @yield('content-header')
+          <div class="breadcrumb" aria-label="breadcrumb">
+            @yield('breadcrumb')
+          </div>
+          @yield('content-header')
       </div>
     </div>
     <div class="py-3 lead-content container-fluid">
@@ -101,7 +104,19 @@
     <span class="debug">!!!! content-header</span>
     @if (trim($__env->yieldContent('content-header-inverse'))) <div class="content-header bg-primary"> @else  <div class="content-header "> @endif
       <div class="container-fluid">
-        @yield('content-header')
+          <div class="header-info">
+              <div class="header-content">
+                  <div class="breadcrumb" aria-label="breadcrumb">
+                    @yield('breadcrumb')
+                  </div>
+                    
+                @yield('content-header')
+              </div>
+              <div class="header-image">
+                @yield('content-header-img')
+              </div>
+              
+            </div>
       </div>
     </div>
     @endif
@@ -140,6 +155,12 @@
                     @if (trim($__env->yieldContent('lead'))) 
                       @yield('lead') 
                     @endif 
+
+                    @if (!trim($__env->yieldContent('content-header'))) <!-- if breadcrumb not in a content-header -->
+                    <div class="breadcrumb" aria-label="breadcrumb">
+                        @yield('breadcrumb')
+                      </div>
+                    @endif
 
                     @yield('content')
                   </div>

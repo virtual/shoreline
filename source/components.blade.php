@@ -1,18 +1,16 @@
 @extends('_layouts.master')
 
+@section('breadcrumb')
+<ol>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Explore Programs</a></li>
+    <li><a href="#">Transfer Programs</a></li>
+    <li><a class="active" aria-current="page" href="#">Visual Arts</a></li>
+  </ol>
+@endsection
 
 
 @section('content')
-<div class="breadcrumb" aria-label="breadcrumb">
-    <ol>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Enrollment Services</a></li>
-      <li><a href="#">Cashier</a></li>
-      <li>
-        <a class="active" aria-current="page" href="#">Tuition Payment Plan</a>
-      </li>
-    </ol>
-  </div>
 
 <h1>Tuition Payment Plan</h1>
 <p>An important step in attending college is having a solid plan for covering the cost of attendance. If you don't have money to pay your tuition all at once, review the following information on setting up a payment plan through Nelnet.</p>
@@ -115,3 +113,97 @@
 true
 @endsection
 
+
+
+@section('sectionals')
+
+<section class="sectional sectional-padded">
+  <div class="container-fluid">
+      <hr/>
+      <h2>Sectional</h2>
+      <div class="layout-has-sidebar">
+          <div class="content-container"> 
+
+    <div class="video-container">
+      @include('_partials.video', [
+      'heading' => 'Video Title',
+      'desc' => 'Video description Earum omnis reiciendis aut quasi id ea exercitationem dolorum. Asperiores aut dicta odit.',
+      'youtubeID' => 'dPr287p0cdw',
+      'img' => '/resources/img/videos/Video-Snippet.jpg'
+      ]) 
+  </div>
+ 
+  <div class="slick-slider carousel-slider">
+      
+            
+      @include('_partials.carousel', [ 
+      'desc' => "Car1: Bob Hutchinson was part of the pioneer generation of animators in Seattle who, confronted with limited resources, established a vital presence by creating their own centers of animation and film where experimentation was the norm.",
+      'alt' => 'Car1: Photo Title', 
+      'img' => '/resources/img/carousel/rectangle-copy-7.png',          
+      'link' => '#'
+      ])  
+      @include('_partials.carousel', [ 
+      'desc' => "Car1: 2Bob Hutchinson was part of the pioneer generation of animators in Seattle who, confronted with limited resources, established a vital presence by creating their own centers of animation and film where experimentation was the norm.",
+      'alt' => 'Car1: Photo Title2', 
+      'img' => '/resources/img/carousel/alexis-brown-85793-unsplash.jpg',          
+      'link' => '#'
+      ])   
+        @include('_partials.carousel', [ 
+        'desc' => "Car1: 2Bob Hutchinson was part of the pioneer generation of animators in Seattle who, confronted with limited resources, established a vital presence by creating their own centers of animation and film where experimentation was the norm.",
+        'alt' => 'Car1: Photo Title3', 
+        'img' => '/resources/img/carousel/rectangle-copy-7.png',          
+        'link' => '#'
+        ])  
+      </div>
+     
+    </div>
+  <div class="sidebar-container">
+
+     @include('_partials.card', [
+     'heading' => 'Course Descriptions',
+     'icon-alt' => '',
+     'icon' => '',   
+     'desc' => 'Browse the course descriptions to explore classes available in this subject',
+     'link' => '#',
+     'buttontext' => 'Request Info'
+     ])
+     @include('_partials.card', [
+     'heading' => 'Sample Schedule',
+     'desc' => 'Get a glimpse at what your quarterly schedule might look like in this program option',
+     'icon-alt' => 'map',
+     'icon' => 'far fa-map',      
+     'link' => '#',
+     'buttontext' => ''          
+     ])
+
+  </div>
+  </div>
+</div>
+</section>
+
+<section class="sectional sectional-padded">
+    <div class="container-fluid">
+        <div class="slick-slider carousel-slider">
+          <!-- should be same height and width; otherwise causes issues on mobile design -->
+            @include('_partials.carousel', [ 
+              'desc' => "Car2: Bob Hutchinson was part of the pioneer generation of animators in Seattle who, confronted with limited resources, established a vital presence by creating their own centers of animation and film where experimentation was the norm.",
+              'alt' => 'Car2: Photo Title', 
+              'img' => '/resources/img/carousel/rectangle-copy-7.png',          
+              'link' => '#'
+              ])  
+              @include('_partials.carousel', [ 
+              'desc' => "Car2: 2Bob Hutchinson was part of the pioneer generation of animators in Seattle who, confronted with limited resources, established a vital presence by creating their own centers of animation and film where experimentation was the norm.",
+              'alt' => 'Car2: Photo Title2', 
+              'img' => '/resources/img/carousel/alexis-brown-85793-unsplash.jpg',          
+              'link' => '#'
+              ])   
+                @include('_partials.carousel', [ 
+                'desc' => "Car2: 2Bob Hutchinson was part of the pioneer generation of animators in Seattle who, confronted with limited resources, established a vital presence by creating their own centers of animation and film where experimentation was the norm.",
+                'alt' => 'Car2: Photo Title3', 
+                'img' => '/resources/img/carousel/rectangle-copy-7.png',          
+                'link' => '#'
+                ])  
+            </div>
+      </div>
+</section>
+@endsection

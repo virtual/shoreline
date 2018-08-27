@@ -1,8 +1,7 @@
 @extends('_layouts.master')
 
-@section('content-header')
-<div class="breadcrumb" aria-label="breadcrumb">
-  <ol>
+@section('breadcrumb')
+<ol>
     <li><a href="#">Home</a></li>
     <li><a href="#">Explore Programs</a></li>
     <li><a href="#">Transfer Programs</a></li>
@@ -10,8 +9,9 @@
     <li><a class="active" aria-current="page" href="#">Video Game Design</a></li>
   </ol>
 
-</div>
+@endsection
 
+@section('content-header')
 <div class="header-info">
   <h1>Video Game Design</h1>
 

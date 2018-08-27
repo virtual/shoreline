@@ -1,32 +1,24 @@
 @extends('_layouts.master')
 
+@section('breadcrumb')
+<ol>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Explore Programs</a></li>
+    <li><a href="#">Transfer Programs</a></li>
+    <li><a class="active" aria-current="page" href="#">Visual Arts</a></li>
+  </ol>
+@endsection
+
+@section('content-header-img')
+<img alt="" src="{{ $page->baseUrl }}/resources/img/stock/rectangle-3.jpg"> 
+@endsection
+
 @section('content-header')
-
-
-<div class="header-info">
-  <div class="header-content">
-      <div class="breadcrumb" aria-label="breadcrumb">
-          <ol>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Explore Programs</a></li>
-            <li><a href="#">Transfer Programs</a></li>
-            <li><a class="active" aria-current="page" href="#">Visual Arts</a></li>
-          </ol>
-        
-        </div>
+ 
     <h1>Visual Arts</h1>
     <p class="xxl">The future is visual</p>
     <a href="#" class="btn btn-important">Apply</a>
     <a href="#" class="btn btn-secondary">Ask a Question</a>
-  </div>
-  <figure class="header-image"><img alt="" src="{{ $page->baseUrl }}/resources/img/stock/rectangle-3.jpg"><figcaption>
-      <p><strong>Above: </strong>User Option: Show as Caption OR show as Alt?
-      </p>
-   </figcaption>
-  </figure>
-  
-</div>
-
 @endsection
 
 @section ('lead') 
@@ -60,100 +52,6 @@
   <p><a href="#" class="more-arrow">More about AAAS in Graphic Design</a></p>
 
 @endsection
-
-@section('sectionals')
-
-<section class="sectional sectional-padded">
-  <div class="container-fluid">
-      <hr/>
-      <h2>Sectional: Move this to another page later</h2>
-      <div class="layout-has-sidebar">
-          <div class="content-container"> 
-
-    <div class="video-container">
-      @include('_partials.video', [
-      'heading' => 'Video Title',
-      'desc' => 'Video description Earum omnis reiciendis aut quasi id ea exercitationem dolorum. Asperiores aut dicta odit.',
-      'youtubeID' => 'dPr287p0cdw',
-      'img' => '/resources/img/videos/Video-Snippet.jpg'
-      ]) 
-  </div>
- 
-  <div class="slick-slider carousel-slider">
-      
-            
-      @include('_partials.carousel', [ 
-      'desc' => "Car1: Bob Hutchinson was part of the pioneer generation of animators in Seattle who, confronted with limited resources, established a vital presence by creating their own centers of animation and film where experimentation was the norm.",
-      'alt' => 'Car1: Photo Title', 
-      'img' => '/resources/img/carousel/rectangle-copy-7.png',          
-      'link' => '#'
-      ])  
-      @include('_partials.carousel', [ 
-      'desc' => "Car1: 2Bob Hutchinson was part of the pioneer generation of animators in Seattle who, confronted with limited resources, established a vital presence by creating their own centers of animation and film where experimentation was the norm.",
-      'alt' => 'Car1: Photo Title2', 
-      'img' => '/resources/img/carousel/alexis-brown-85793-unsplash.jpg',          
-      'link' => '#'
-      ])   
-        @include('_partials.carousel', [ 
-        'desc' => "Car1: 2Bob Hutchinson was part of the pioneer generation of animators in Seattle who, confronted with limited resources, established a vital presence by creating their own centers of animation and film where experimentation was the norm.",
-        'alt' => 'Car1: Photo Title3', 
-        'img' => '/resources/img/carousel/rectangle-copy-7.png',          
-        'link' => '#'
-        ])  
-      </div>
-     
-    </div>
-  <div class="sidebar-container">
-
-     @include('_partials.card', [
-     'heading' => 'Course Descriptions',
-     'icon-alt' => '',
-     'icon' => '',   
-     'desc' => 'Browse the course descriptions to explore classes available in this subject',
-     'link' => '#',
-     'buttontext' => 'Request Info'
-     ])
-     @include('_partials.card', [
-     'heading' => 'Sample Schedule',
-     'desc' => 'Get a glimpse at what your quarterly schedule might look like in this program option',
-     'icon-alt' => 'map',
-     'icon' => 'far fa-map',      
-     'link' => '#',
-     'buttontext' => ''          
-     ])
-
-  </div>
-  </div>
-</div>
-</section>
-
-<section class="sectional sectional-padded">
-    <div class="container-fluid">
-        <div class="slick-slider carousel-slider">
-          <!-- should be same height and width; otherwise causes issues on mobile design -->
-            @include('_partials.carousel', [ 
-              'desc' => "Car2: Bob Hutchinson was part of the pioneer generation of animators in Seattle who, confronted with limited resources, established a vital presence by creating their own centers of animation and film where experimentation was the norm.",
-              'alt' => 'Car2: Photo Title', 
-              'img' => '/resources/img/carousel/rectangle-copy-7.png',          
-              'link' => '#'
-              ])  
-              @include('_partials.carousel', [ 
-              'desc' => "Car2: 2Bob Hutchinson was part of the pioneer generation of animators in Seattle who, confronted with limited resources, established a vital presence by creating their own centers of animation and film where experimentation was the norm.",
-              'alt' => 'Car2: Photo Title2', 
-              'img' => '/resources/img/carousel/alexis-brown-85793-unsplash.jpg',          
-              'link' => '#'
-              ])   
-                @include('_partials.carousel', [ 
-                'desc' => "Car2: 2Bob Hutchinson was part of the pioneer generation of animators in Seattle who, confronted with limited resources, established a vital presence by creating their own centers of animation and film where experimentation was the norm.",
-                'alt' => 'Car2: Photo Title3', 
-                'img' => '/resources/img/carousel/rectangle-copy-7.png',          
-                'link' => '#'
-                ])  
-            </div>
-      </div>
-</section>
-@endsection
-
 
 @section('main-sidebar-content')  
   <div class="card card-program-heading">

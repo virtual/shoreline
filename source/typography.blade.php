@@ -1,12 +1,8 @@
 @extends('_layouts.master')
 
 
-
-
-@section('content')
-
-<div class="breadcrumb" aria-label="breadcrumb">
-  <ol>
+@section('breadcrumb') 
+<ol>
     <li>
       <a href="http://www.example.com/books">Home</a> 
     </li>
@@ -14,49 +10,19 @@
       <a href="http://www.example.com/sciencefiction">Science Fiction</a>
     </li>
     <li>
-      <a class="active" aria-current="page" href="http://www.example.com/books/sciencefiction/awardwinners">Award Winners</a>
+      <a href="http://www.example.com/books">Books</a> 
     </li>
-  </ol>
-</div>
-<div class="breadcrumb" aria-label="breadcrumb">
-    <ol class="condensed">
-        <li>
-          <a href="http://www.example.com/books">Home</a> 
-        </li>
-        <li>
-          <a href="http://www.example.com/sciencefiction">Science Fiction</a>
-        </li>
-        <li>
-          <a href="http://www.example.com/books">Books</a> 
-        </li>
-        <li>
-          <a href="http://www.example.com/sciencefiction">Science Fiction</a>
-        </li>
-      <li>
-        <a class="active" aria-current="page" href="http://www.example.com/books/sciencefiction/awardwinners">Award Winners</a>
-      </li>
-    </ol>
-  </div>
-  <div class="breadcrumb" aria-label="breadcrumb">
-      <ol>
-          <li>
-            <a href="http://www.example.com/books">Home</a> 
-          </li>
-          <li>
-            <a href="http://www.example.com/sciencefiction">Science Fiction</a>
-          </li>
-          <li>
-            <a href="http://www.example.com/books">Books</a> 
-          </li>
-          <li>
-            <a href="http://www.example.com/sciencefiction">Science Fiction</a>
-          </li>
-        <li>
-          <a class="active" aria-current="page" href="http://www.example.com/books/sciencefiction/awardwinners">Award Winners</a>
-        </li>
-      </ol>
-    </div>
+    <li>
+      <a href="http://www.example.com/sciencefiction">Science Fiction</a>
+    </li>
+  <li>
+    <a class="active" aria-current="page" href="http://www.example.com/books/sciencefiction/awardwinners">Award Winners</a>
+  </li>
+</ol> 
+@endsection
 
+@section('content')
+ 
 <h1>Default Header Colors</h1>
     <p>Lorem  n commodo ligula eget dolor. Aenean massa 
     <strong>strong</strong>. Cum sociis natoque penatibus 
