@@ -10,7 +10,12 @@
 @endsection
 
 @section('content-header-img')
-<img alt="" src="{{ $page->baseUrl }}/resources/img/stock/rectangle-3.jpg"> 
+<div class="center-cropped" 
+     style="background-image: url('{{ $page->baseUrl }}/resources/img/stock/image.jpg');">
+     <img src="{{ $page->baseUrl }}/resources/img/stock/image.jpg"/>
+</div>
+
+
 @endsection
 
 @section('content-header')

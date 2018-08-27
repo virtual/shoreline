@@ -104,16 +104,20 @@
     <span class="debug">!!!! content-header</span>
     @if (trim($__env->yieldContent('content-header-inverse'))) <div class="content-header bg-primary"> @else  <div class="content-header "> @endif
       <div class="container-fluid">
+          <div class="breadcrumb" aria-label="breadcrumb">
+              @yield('breadcrumb')
+            </div>
           <div class="header-info">
               <div class="header-content">
-                  <div class="breadcrumb" aria-label="breadcrumb">
-                    @yield('breadcrumb')
-                  </div>
+                  
                     
                 @yield('content-header')
               </div>
               <div class="header-image">
-                @yield('content-header-img')
+                <div class="header-image-clip">
+                  @yield('content-header-img')
+                  
+                </div>
               </div>
               
             </div>
