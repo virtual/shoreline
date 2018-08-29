@@ -36,7 +36,7 @@
   font-size: 1.5rem; display:block; padding:1.375rem 0 1.375rem 0;
   
 }
-main, .content-container, .sectional {
+main, .content-container, .sectional, * {
   .card-links {
     @extend %list-unstyled;
     margin-top: .5rem;
@@ -91,7 +91,7 @@ main, .content-container, .sectional {
     }
 }
 @media (min-width: $screen-md) {
-  main, .content-container, .sectional {
+  main, .content-container, .sectional, * {
     .card-links a { font-size: 1.5rem;  } 
   } 
   .card {

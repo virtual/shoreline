@@ -1,0 +1,17 @@
+.featureicon {
+  text-align: center; 
+  p { margin:0; padding:0; line-height: 1.5;}
+  a { 
+  color: $primary;
+  
+  font-size: 4.5rem;
+  font-weight: 900;
+  }
+  a.btn { color: $link-blue; font-weight: 400; font-size: 1.1875rem;  }
+  .icon {
+    margin: 0 auto;
+    display:block;
+    text-align: center;
+    img { height: 80px; width: auto;}
+  }
+}
