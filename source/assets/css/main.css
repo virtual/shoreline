@@ -3235,6 +3235,10 @@ a.btn {
   opacity: 0.9;
 }
 
+.bg-primary .btn-primary:hover:visited, .bg-primary .btn-primary:visited, .alert .btn-primary:hover:visited, .alert .btn-primary:visited {
+  color: #00685e;
+}
+
 .bg-primary .btn-secondary,
 .bg-primary .btn-tertiary, .alert .btn-secondary,
 .alert .btn-tertiary {
@@ -4470,6 +4474,114 @@ header#header {
 .featureicon .icon img {
   height: 80px;
   width: auto;
+}
+
+.homepage-banner {
+  background: #000;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+}
+
+.homepage-banner .heading {
+  font-size: 3.4375rem;
+  line-height: 1.16;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  font-weight: 900;
+}
+
+.homepage-banner p {
+  font-size: 1.5rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.homepage-banner .hero {
+  min-height: 670px;
+  margin-top: 0;
+}
+
+.homepage-banner .hero.bg-primary {
+  background-color: transparent !important;
+}
+
+@media screen and (max-width: 900px) {
+  .homepage-banner .hero .hero-image-wrapper {
+    position: relative;
+    height: auto;
+    padding-bottom: 50%;
+  }
+}
+
+.homepage-banner .hero .hero-image-wrapper {
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center bottom;
+  background: -webkit-gradient(linear, left bottom, left top, from(#000), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(to top, #000, rgba(0, 0, 0, 0));
+  opacity: .5;
+}
+
+.homepage-banner .hero-caption {
+  position: absolute;
+  bottom: 0;
+  padding: 2.5rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  display: block;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.homepage-banner .hero-caption .heading, .homepage-banner .hero-caption .desc {
+  max-width: 600px;
+}
+
+.homepage-expand {
+  display: none;
+}
+
+.homepage-expand > .container-fluid {
+  position: relative;
+  padding: 2rem 0;
+}
+
+.homepage-expand > .container-fluid .row {
+  z-index: 4;
+  position: relative;
+}
+
+.homepage-expand > .arrow-marker {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.homepage-expand > .arrow-marker::before {
+  content: "";
+  position: absolute;
+  left: 6rem;
+  width: 2rem;
+  height: 2rem;
+  top: -1rem;
+  background-color: #fff;
+  /* border-top-right-radius: 2rem; */
+  border-color: transparent;
+  /* border-top-left-radius: 2rem; */
+  z-index: 2;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.homepage-expand.show {
+  display: block;
 }
 
 p {

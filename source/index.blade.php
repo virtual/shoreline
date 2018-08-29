@@ -1,8 +1,62 @@
 @extends('_layouts.home')
 
-@section('content')
+@section('hero1')
+<section class="hero left bg-primary">
+    <div class="hero-image-wrapper"></div><style type="text/css">
+ .homepage-banner.hero-1{
+   background-image: url(../../resources/img/homepage/top/large2.jpg);
+ }
+ 
+ @media screen and (max-width: 900px) { 						
+  .homepage-banner.hero-1 {
+   background-image: url(../../resources/img/homepage/top/medium.jpg);
+   }
+ } 
+ 
+ @media screen and (max-width: 500px) {  
+  .homepage-banner.hero-1 {
+   background-image: url(../../resources/img/homepage/top/small.jpg);
+   }
+ } 						
+</style>
+<div class="hero-caption">
+       <h2 class="heading">What type of student are you?</h2>
+       <p class="desc">Shoreline has programs for all stages of life</p>
+       <div class="expand-wrapper"><a href="/" class="expand-button btn btn-primary">Expand</a></div>
+    </div>
+ </section>
+@endsection
 
-big image
+
+@section('hero2')
+<section class="hero left bg-primary">
+    <div class="hero-image-wrapper"></div><style type="text/css">
+ .homepage-banner.hero-2{
+   background-image: url(../../resources/img/homepage/bottom/large.jpg);
+ }
+ 
+ @media screen and (max-width: 900px) { 						
+  .homepage-banner.hero-2 {
+   background-image: url(../../resources/img/homepage/bottom/medium.jpg);
+   }
+ } 
+ 
+ @media screen and (max-width: 500px) {  
+  .homepage-banner.hero-2 {
+   background-image: url(../../resources/img/homepage/bottom/small.jpg);
+   }
+ } 						
+</style>
+<div class="hero-caption">
+       <h2 class="heading">Build a career and community</h2>
+       <p class="desc">Forming partnerships for a healthy human, economic, and natural environment</p>
+       <div class="expand-wrapper"><a href="/" class="expand-button btn btn-primary">Expand</a></div>
+    </div>
+ </section>
+@endsection
+
+@section('content')
+ 
 
 <div class="row">
 

@@ -72,6 +72,7 @@ a.btn { text-decoration: none; }
   $btn-primary: #fff;
   $btn-secondary: $primary;
   $btn-tertiary: $primary;
+  
   .btn-primary {
     background-color: #fff;
     color: $primary;
@@ -82,6 +83,8 @@ a.btn { text-decoration: none; }
       opacity: 0.9;
     }
   }
+  .btn-primary:hover:visited, .btn-primary:visited { color:$primary}
+  
   .btn-secondary,
   .btn-tertiary {
     background-color: $primary;

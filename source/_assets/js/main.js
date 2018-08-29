@@ -35,6 +35,28 @@ jQuery(document).ready(function() {
      
   });
 
+
+
+  $('body').on('click','.expand-button',function(e){
+    e.preventDefault();
+    e.stopPropagation();
+
+    
+    var _d=$((e.target).closest('.homepage-banner')).siblings('.homepage-expand');
+    console.log(_d);
+
+    if ((_d).hasClass('show')) {
+      console.log('remove')
+      $(_d).removeClass('show')
+    } else {
+      console.log('add')
+      
+      $(_d).removeClass('show')
+      _d.addClass('show');
+    }
+     
+  });
+
   // // Smooth scroll to anchor
   // $("a.scrollable").click(function (event) {
   //   event.preventDefault();

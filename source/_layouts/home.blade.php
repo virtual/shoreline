@@ -43,27 +43,43 @@
 <body>
   @include('_partials.topbar') @include('_partials.header')
 
-   
-  Homepage only
+    
+ <div class="homepage-banner-container">
+  <div class="homepage-banner hero-1 ">
+  @yield('hero1')
 
-  @if (trim($__env->yieldContent('content'))) 
-  
+</div>
+<div class="homepage-expand hero-1">
+  <div class="arrow-marker"></div>
 <div class="container-fluid">
+
     @yield('content') 
     </div>
-  @endif
+  </div>
+</div>
+
+ 
   <div class="py-5 bg-light">
 <div class="container-fluid">
   @yield('icons1') 
 </div>
 </div>
  
-@if (trim($__env->yieldContent('content'))) 
+<div class="homepage-banner-container">
+
+<div class="homepage-banner hero-2 ">
+    @yield('hero2')
   
-<div class="container-fluid">
-    @yield('content') 
+  </div>
+<div class="homepage-expand hero-2">
+    <div class="arrow-marker"></div>
+  <div class="container-fluid">
+  
+      @yield('content') 
+      </div>
     </div>
-  @endif
+    </div>
+  
 
 
 
