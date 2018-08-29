@@ -34,12 +34,35 @@
       <li><a href="#" class="more-arrow">Professional & Technical</a> </li>
     </ul></div> 
 </div>
+<h2>Fall 2018</h2>
+<p> Fall 2018 quarter starts on Wednesday, September 26, 2018. Check individual section footnotes for starting and ending dates of Late Starting / Fast Track Classes.</p>
+    <div class="row">
+        <div class="col-12 col-md-6">
+      <ul class="card-links card-links-compact">
+          <li><a href="#">University Transfer</a></li>
+          <li><a href="#">College/University Transfer</a></li>
+          <li><a href="#">Professional & Technical</a></li>
+          <li><a href="#">University Transfer</a></li>
+          <li><a href="#">College/University Transfer</a></li>
+          <li><a href="#">Professional & Technical</a></li>
+          <li><a href="#">University Transfer</a></li>
+          <li><a href="#">College/University Transfer</a></li>
+          <li><a href="#">Professional & Technical</a></li>
+          <li><a href="#">University Transfer</a></li>
+          <li><a href="#">College/University Transfer</a></li>
+          <li><a href="#">Professional & Technical</a></li>
+          <li><a href="#">University Transfer</a></li>
+          <li><a href="#">College/University Transfer</a></li>
+          <li><a href="#">Professional & Technical</a></li>
+      </ul>
+    </div> 
+  </div>
 
 <div class="row">
   <div class="col-12 col-sm-6">   
       @include('_partials.card', [
       'heading' => 'Apply Today',
-      'icon-alt' => '',
+      'iconalt' => '',
       'icon' => '',   
       'desc' => 'Your first step is to get a student ID – it\'s fast, easy, and free',
       'link' => 'http://www.shoreline.edu/communications-marketing/identity-guidelines/default.aspx' 
@@ -49,7 +72,7 @@
     @include('_partials.card', [
       'heading' => 'Get help with enrollment',
       'desc' => 'These call for a font-awesome 5 icon class; eg. "far fa-map"',
-      'icon-alt' => 'quote',
+      'iconalt' => 'quote',
       'icon' => 'far fa-map',          
       'theme' => 'secondary',
       'link' => '#'
@@ -61,7 +84,7 @@
         @include('_partials.card', [
         'heading' => 'Get help with enrollment',
         'desc' => 'Our enrollment services team is here to help with financial aid, how to apply, and all the things that make Shoreline a great place to study and pursue any of our more than 100 degrees and certificates!',
-        'icon-alt' => 'quote',
+        'iconalt' => 'quote',
         'icon' => 'far fa-map',          
         'theme' => 'secondary',
         'link' => '#'
@@ -71,7 +94,7 @@
        
         @include('_partials.card', [
         'heading' => 'Apply Today',
-        'icon-alt' => '',
+        'iconalt' => '',
         'icon' => '',   
         'desc' => 'Your first step is to get a student ID – it\'s fast, easy, and free',
         'link' => 'http://www.shoreline.edu/communications-marketing/identity-guidelines/default.aspx',
@@ -82,7 +105,7 @@
 <div class="row">
 <div class="col-12 col-sm-8">@include('_partials.card', [
     'heading' => 'Course Descriptions',
-    'icon-alt' => '',
+    'iconalt' => '',
     'icon' => '',   
     'desc' => 'Browse the course descriptions to explore classes available in this subject',
     'link' => '#',
@@ -91,7 +114,7 @@
     ])</div>
 <div class="col-12 col-sm-4">@include('_partials.card', [
     'heading' => 'Course Descriptions',
-    'icon-alt' => '',
+    'iconalt' => '',
     'icon' => '',   
     'desc' => 'Browse the course descriptions to explore classes available in this subject',
     'link' => '#',
@@ -102,7 +125,7 @@
 
 @include('_partials.card', [
 'heading' => 'Course Descriptions',
-'icon-alt' => '',
+'iconalt' => '',
 'icon' => '',   
 'desc' => 'Browse the course descriptions to explore classes available in this subject',
 'link' => '#',

@@ -66,7 +66,7 @@
      <div class="sidebar-container">
         @include('_partials.card', [
         'heading' => 'Course Descriptions',
-        'icon-alt' => '',
+        'iconalt' => '',
         'icon' => '',   
         'desc' => 'Browse the course descriptions to explore classes available in this subject',
         'link' => '#'
@@ -74,7 +74,7 @@
         @include('_partials.card', [
         'heading' => 'Sample Schedule',
         'desc' => 'Get a glimpse at what your quarterly schedule might look like in this program option',
-        'icon-alt' => 'map',
+        'iconalt' => 'map',
         'icon' => 'far fa-map',      
         'link' => '#'          
         ])

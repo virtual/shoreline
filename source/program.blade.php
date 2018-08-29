@@ -74,7 +74,7 @@
   </div>
  @include('_partials.card', [
      'heading' => 'Request Info',
-     'icon-alt' => '',
+     'iconalt' => '',
      'icon' => '',   
      'desc' => 'Get in touch with an enrollment coach to learn more about our programs, registering, financial aid, and more',
      'link' => 'http://www.shoreline.edu/communications-marketing/identity-guidelines/default.aspx' 
@@ -83,7 +83,7 @@
      
      @include('_partials.card', [
      'heading' => 'Apply Today',
-     'icon-alt' => '',
+     'iconalt' => '',
      'icon' => '',   
      'desc' => 'Your first step is to get a student ID – it\'s fast, easy, and free',
      'link' => 'http://www.shoreline.edu/communications-marketing/identity-guidelines/default.aspx' 

@@ -3,7 +3,7 @@
   <div class="card-body">
     @if(!empty($icon))<span class="{{ $icon }}" aria-hidden="true"></span>@endif
     <h3 class="card-title">
-        @if(!empty($img))
+        @if((!empty($img)) || (!empty($buttontext)))
           {{ $heading }}
         @else
         <a class="more-arrow" href="{{ $link }}">{{ $heading }}</a>

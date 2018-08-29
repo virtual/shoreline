@@ -15,7 +15,12 @@
 </div> -->
 
 <div class="featureicon">
-  <p><a href="{{ $link }}">@if(!empty($icon))<div class="icon"><img src="{{ $icon }}" alt="{{ $icon-alt }}" /></div>@endif{{ $heading }}</a></p>
+  <p><a href="{{ $link }}">
+    @if(!empty($icon))
+      @if(!empty($iconalt)) <div class="icon"><img src="{{ $icon }}" alt="{{ $iconalt }}" /></div> @else
+      <div class="icon"><img src="{{ $icon }}" alt=" " /></div> @endif
+        @endif
+      {{ $heading }}</a></p>
   <p class="card-text">{{ $desc }}</p>
   @if(!empty($buttontext))<p><a class="btn btn-tert" href="{{ $link }}">{{ $buttontext }}</a></p>@endif
 </div>

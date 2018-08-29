@@ -29,7 +29,7 @@
         @include('_partials.card', [
           'heading' => 'Get help with enrollment',
           'desc' => 'Our enrollment services team is here to help with financial aid, how to apply, and all the things that make Shoreline a great place to study and pursue any of our more than 100 degrees and certificates!',
-          'icon-alt' => 'quote',
+          'iconalt' => 'quote',
           'icon' => 'far fa-map',          
           'theme' => 'secondary',
           'link' => '#'
@@ -37,7 +37,7 @@
           @include('_partials.card', [
           'heading' => 'Visit Campus',
           'desc' => 'Outdoor areas are generally open to the public to walk through and experience the inviting environment, or with a reservation, a college staff member will take you and your friends and family for a guided tour of campus.',
-          'icon-alt' => 'quote',
+          'iconalt' => 'quote',
           'icon' => 'fas fa-quote-left',     
           'theme' => 'secondary',
           'link' => '#'          
@@ -91,7 +91,7 @@
   </div>
  @include('_partials.card', [
      'heading' => 'Request Info',
-     'icon-alt' => '',
+     'iconalt' => '',
      'icon' => '',   
      'desc' => 'Get in touch with an enrollment coach to learn more about our programs, registering, financial aid, and more',
      'link' => 'http://www.shoreline.edu/communications-marketing/identity-guidelines/default.aspx' 
@@ -100,7 +100,7 @@
      
      @include('_partials.card', [
      'heading' => 'Apply Today',
-     'icon-alt' => '',
+     'iconalt' => '',
      'icon' => '',   
      'desc' => 'Your first step is to get a student ID – it\'s fast, easy, and free',
      'link' => 'http://www.shoreline.edu/communications-marketing/identity-guidelines/default.aspx' 
@@ -161,7 +161,7 @@ true
 
      @include('_partials.card', [
      'heading' => 'Course Descriptions',
-     'icon-alt' => '',
+     'iconalt' => '',
      'icon' => '',   
      'desc' => 'Browse the course descriptions to explore classes available in this subject',
      'link' => '#',
@@ -170,7 +170,7 @@ true
      @include('_partials.card', [
      'heading' => 'Sample Schedule',
      'desc' => 'Get a glimpse at what your quarterly schedule might look like in this program option',
-     'icon-alt' => 'map',
+     'iconalt' => 'map',
      'icon' => 'far fa-map',      
      'link' => '#',
      'buttontext' => ''          

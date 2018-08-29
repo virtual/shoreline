@@ -95,7 +95,7 @@
         @include('_partials.featureicon', [
         'heading' => '100%',
         'desc' => 'Transfer and professional/technical areas of study',
-        'icon-alt' => 'book',     
+        'iconalt' => 'book',     
         'icon' => '../../resources/img/icons/homepage/book.png',          
         'buttontext' => 'See all Programs',
         'link' => '#'
@@ -106,7 +106,7 @@
         @include('_partials.featureicon', [
         'heading' => '900+',
         'desc' => 'International students from around the world',
-        'icon-alt' => 'globe',          
+        'iconalt' => 'globe',          
         'icon' => '../../resources/img/icons/homepage/globe.png',          
         'buttontext' => 'Join Us',
         'link' => '#'
@@ -117,7 +117,7 @@
         @include('_partials.featureicon', [
         'heading' => '140+',
         'desc' => 'Scholarships awarded annually',
-        'icon-alt' => 'quote',
+        'iconalt' => 'quote',
         'icon' => '../../resources/img/icons/homepage/badge.png',          
         'buttontext' => 'Find Scholarships',
         'link' => '#'
@@ -136,7 +136,7 @@
     <div class="col-12 col-sm-6">
         @include('_partials.card', [
         'heading' => 'Get help with enrollment',
-        'icon-alt' => 'comment',
+        'iconalt' => 'comment',
         'icon' => 'far fa-comment',   
         'desc' => 'Our enrollment services team is here to help with financial aid, how to apply, and all the things that make Shoreline a great place to study and pursue any of our more than 100 degrees and certificates!',
         'link' => '#'
@@ -146,7 +146,7 @@
   <div class="col-12 col-sm-6">
       @include('_partials.card', [
       'heading' => 'Visit Campus',
-      'icon-alt' => '',
+      'iconalt' => '',
       'icon' => 'far fa-map',   
       'desc' => 'Outdoor areas are generally open to the public to walk through and experience the inviting environment, or with a reservation, a college staff member will take you and your friends and family for a guided tour of campus.',
       'link' => '#'
