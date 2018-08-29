@@ -108,8 +108,8 @@ a.btn { text-decoration: none; }
   .btn {
     min-width: 150px; 
     font-size: 1.1875rem; 
-    padding-top: 0.90625rem;
-    padding-bottom: 0.90625rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem; // .9062 for 55px high
     // line-height: 1.15;
   }
   // .btn-secondary {
@@ -144,6 +144,6 @@ a.btn { text-decoration: none; }
 }
 
 .btn-debugger {
-  background:#BADA55; height: 59px;  display:inline-block;
+  background:#BADA55; height: 50px;  display:inline-block;
   // .btn { margin-top:0;}
 }
