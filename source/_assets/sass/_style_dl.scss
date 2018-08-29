@@ -75,3 +75,9 @@ dl:after { content: ''; clear:both; display:block;}
   dt { font-size: 1rem; line-height: 1.5; font-weight: normal; }
 }
 
+.muted-dl {
+  margin-bottom: 0; 
+  dt {    color: $text-midgray;font-size: 1rem;
+    line-height: 1.5; font-weight: 400; }
+    dl { margin-bottom: 0;}
+}

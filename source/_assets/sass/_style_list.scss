@@ -143,6 +143,13 @@ ul.list-inline li {
   padding:0;
   &:before { content: none;}
 }
+ul.list-inline.inline-list-padded li {
+  display: inline-block; 
+  margin-right: 30px;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  &:after { content: " "; display: table; clear:both;}
+}
 ul, ol {
   &.list-def p {
     font-size: 1.1875rem;
