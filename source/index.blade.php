@@ -4,18 +4,18 @@
 <section class="hero left bg-primary">
     <div class="hero-image-wrapper"></div><style type="text/css">
  .homepage-banner.hero-1{
-   background-image: url(../resources/img/homepage/top/large2.jpg);
+   background-image: url(./resources/img/homepage/top/large2.jpg);
  }
  
  @media screen and (max-width: 900px) { 						
   .homepage-banner.hero-1 {
-   background-image: url(../resources/img/homepage/top/medium.jpg);
+   background-image: url(./resources/img/homepage/top/medium.jpg);
    }
  } 
  
  @media screen and (max-width: 500px) {  
   .homepage-banner.hero-1 {
-   background-image: url(../resources/img/homepage/top/small.jpg);
+   background-image: url(./resources/img/homepage/top/small.jpg);
    }
  } 						
 </style>
@@ -32,18 +32,18 @@
 <section class="hero left bg-primary">
     <div class="hero-image-wrapper"></div><style type="text/css">
  .homepage-banner.hero-2{
-   background-image: url(../resources/img/homepage/bottom/large.jpg);
+   background-image: url(./resources/img/homepage/bottom/large.jpg);
  }
  
  @media screen and (max-width: 900px) { 						
   .homepage-banner.hero-2 {
-   background-image: url(../resources/img/homepage/bottom/medium.jpg);
+   background-image: url(./resources/img/homepage/bottom/medium.jpg);
    }
  } 
  
  @media screen and (max-width: 500px) {  
   .homepage-banner.hero-2 {
-   background-image: url(../resources/img/homepage/bottom/small.jpg);
+   background-image: url(./resources/img/homepage/bottom/small.jpg);
    }
  } 						
 </style>
@@ -96,7 +96,7 @@
         'heading' => '100%',
         'desc' => 'Transfer and professional/technical areas of study',
         'iconalt' => 'book',     
-        'icon' => '../resources/img/icons/homepage/book.png',          
+        'icon' => './resources/img/icons/homepage/book.png',          
         'buttontext' => 'See all Programs',
         'link' => '#'
         ])
@@ -107,7 +107,7 @@
         'heading' => '900+',
         'desc' => 'International students from around the world',
         'iconalt' => 'globe',          
-        'icon' => '../resources/img/icons/homepage/globe.png',          
+        'icon' => './resources/img/icons/homepage/globe.png',          
         'buttontext' => 'Join Us',
         'link' => '#'
         ])
@@ -118,7 +118,7 @@
         'heading' => '140+',
         'desc' => 'Scholarships awarded annually',
         'iconalt' => 'quote',
-        'icon' => '../resources/img/icons/homepage/badge.png',          
+        'icon' => './resources/img/icons/homepage/badge.png',          
         'buttontext' => 'Find Scholarships',
         'link' => '#'
         ])
