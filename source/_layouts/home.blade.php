@@ -83,11 +83,8 @@
 
 
 
-<div class="py-5 bg-light">
-<div class="container-fluid">
-  @yield('hugbox') 
-</div>
-</div>
+  <!-- all pages can have sectionals after main content -->
+  @if (trim($__env->yieldContent('sectionals'))) @yield('sectionals') @endif
 
 
 

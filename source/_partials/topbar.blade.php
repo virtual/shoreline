@@ -8,6 +8,8 @@
         <li><a class="nav-link" href="{{ $page->baseUrl }}/cards/index.html">Cards</a></li>
         <li><a class="nav-link" href="{{ $page->baseUrl }}/typography/index.html">Typography</a></li>
         <li><a class="nav-link" href="{{ $page->baseUrl }}/lists/index.html">Lists</a></li>
+        <li><a class="nav-link" href="{{ $page->baseUrl }}/success/index.html">Success</a></li>
+        <li><a class="nav-link" href="{{ $page->baseUrl }}/current/index.html">Current Student</a></li>
         <li><a class="nav-link" href="{{ $page->baseUrl }}/program/index.html">Prog</a></li>
         <li><a class="nav-link" href="{{ $page->baseUrl }}/option/index.html">Option</a></li>
         <li class="float-right"><a class="nav-link" href="{{ $page->baseUrl }}/timeline/index.html">Timeline</a></li>

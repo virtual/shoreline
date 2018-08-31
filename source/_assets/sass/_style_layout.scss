@@ -18,6 +18,20 @@
   margin-bottom: 2rem;
 }
 
+.page-interior {
+  .header-image {
+    margin-bottom: -5.375rem; 
+  }
+
+  .content-header {
+      margin-bottom: 2.5rem;
+  }
+}
+#maincontent {
+  
+  margin-bottom: 3rem;
+}
+
 @media (max-width: $screen-md - 1) {
   #maincontent {
     .layout-has-sidebar {  
@@ -101,6 +115,7 @@
 .page-interior .content-header.bg-primary {
   margin-top: -1rem;
 }
+
  // .layout-has-left-nav
 
  @media (max-width: $screen-md - 1) {

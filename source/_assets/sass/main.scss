@@ -5,34 +5,7 @@
 
 @import "_custom_functions.scss"; 
  
-// Customizations
-@import "_style_prev.scss"; 
-@import "_style_layout.scss"; 
-@import "_style_typography.scss"; 
-@import "_style_print.scss";
-@import "_style_card.scss";
-@import "_style_classes.scss";
-@import "_style_topnav.scss";
-@import "_style_quote.scss"; 
-@import "_style_form.scss"; 
-@import "_style_table.scss"; 
-@import "_style_dl.scss"; 
-@import "_style_breadcrumb.scss"; 
-@import "_style_alert.scss"; 
-@import "_style_sectionals.scss"; 
-@import "_style_timeline.scss"; 
-@import "_style_buttons.scss"; 
-@import "_style_list.scss"; 
-@import "_style_video.scss"; 
-@import "_style_header.scss";
-@import "_style_sidebar.scss"; 
-@import "_style_menu.scss"; 
-@import "_style_leftnav.scss"; 
-@import "_style_quicklinks.scss"; 
-@import "_style_footer.scss"; 
-@import "_style_icons.scss"; 
-@import "_style_homepage.scss"; 
-@import "_style_shame.scss";
+
  
 
 p {
@@ -162,3 +135,33 @@ kbd.ouc {
     line-height: 1.68;
     }
 }
+
+
+// Customizations
+@import "_style_prev.scss"; 
+@import "_style_layout.scss"; 
+@import "_style_typography.scss"; 
+@import "_style_print.scss";
+@import "_style_card.scss";
+@import "_style_classes.scss";
+@import "_style_topnav.scss";
+@import "_style_quote.scss"; 
+@import "_style_form.scss"; 
+@import "_style_table.scss"; 
+@import "_style_dl.scss"; 
+@import "_style_breadcrumb.scss"; 
+@import "_style_alert.scss"; 
+@import "_style_sectionals.scss"; 
+@import "_style_timeline.scss"; 
+@import "_style_buttons.scss"; 
+@import "_style_list.scss"; 
+@import "_style_video.scss"; 
+@import "_style_header.scss";
+@import "_style_sidebar.scss"; 
+@import "_style_menu.scss"; 
+@import "_style_leftnav.scss"; 
+@import "_style_quicklinks.scss"; 
+@import "_style_footer.scss"; 
+@import "_style_icons.scss"; 
+@import "_style_homepage.scss"; 
+@import "_style_shame.scss";

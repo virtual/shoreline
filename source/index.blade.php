@@ -4,10 +4,11 @@
 <section class="hero left bg-primary">
     <div class="hero-image-wrapper"></div><style type="text/css">
  .homepage-banner.hero-1{
-   background-image: url(./resources/img/homepage/top/large2.jpg);
+   /* background-image: url(./resources/img/homepage/top/large2.jpg); */
+   background-image: url(./resources/img/stock/shoreline.williams185.jpg);
  }
  
- @media screen and (max-width: 900px) { 						
+ /* @media screen and (max-width: 900px) { 						
   .homepage-banner.hero-1 {
    background-image: url(./resources/img/homepage/top/medium.jpg);
    }
@@ -17,7 +18,7 @@
   .homepage-banner.hero-1 {
    background-image: url(./resources/img/homepage/top/small.jpg);
    }
- } 						
+ } 						 */
 </style>
 <div class="hero-caption">
        <h2 class="heading">What type of student are you?</h2>
@@ -32,10 +33,10 @@
 <section class="hero left bg-primary">
     <div class="hero-image-wrapper"></div><style type="text/css">
  .homepage-banner.hero-2{
-   background-image: url(./resources/img/homepage/bottom/large.jpg);
+   background-image: url(./resources/img/stock/shoreline.williams292.jpg);
  }
  
- @media screen and (max-width: 900px) { 						
+ /* @media screen and (max-width: 900px) { 						
   .homepage-banner.hero-2 {
    background-image: url(./resources/img/homepage/bottom/medium.jpg);
    }
@@ -45,7 +46,7 @@
   .homepage-banner.hero-2 {
    background-image: url(./resources/img/homepage/bottom/small.jpg);
    }
- } 						
+ } 						 */
 </style>
 <div class="hero-caption">
        <h2 class="heading">Build a career and community</h2>
@@ -129,29 +130,8 @@
 
  
 
-@section('hugbox')  
-<h2>Not sure where to start?</h2>
-<p class="lead">We can help point you in the right direction</p>
-<div class="row">
-    <div class="col-12 col-sm-6">
-        @include('_partials.card', [
-        'heading' => 'Get help with enrollment',
-        'iconalt' => 'comment',
-        'icon' => 'far fa-comment',   
-        'desc' => 'Our enrollment services team is here to help with financial aid, how to apply, and all the things that make Shoreline a great place to study and pursue any of our more than 100 degrees and certificates!',
-        'link' => '#'
-        ]) 
-    </div>
-    
-  <div class="col-12 col-sm-6">
-      @include('_partials.card', [
-      'heading' => 'Visit Campus',
-      'iconalt' => '',
-      'icon' => 'far fa-map',   
-      'desc' => 'Outdoor areas are generally open to the public to walk through and experience the inviting environment, or with a reservation, a college staff member will take you and your friends and family for a guided tour of campus.',
-      'link' => '#'
-      ]) 
-  </div>
-</div>
-@endsection
+  @section('sectionals')
  
+      @include('_partials/hugbox')  
+  @endsection 
+  
