@@ -75,7 +75,7 @@ main, .sectional, .content-container {
     // color: initial;
     list-style-type: none; 
   }
-  ol li::before {
+  ol li:before {
     position: absolute;
     top: 0;
     left: -2rem;
@@ -87,6 +87,9 @@ main, .sectional, .content-container {
     counter-increment: li-counter;
     text-align: right;
     font-weight: bold;
+    height: auto; 
+    width: auto;
+    font-size: 1em;
   }
   ol, ul {
     ol, ul { margin-left: 1rem; }
@@ -151,7 +154,7 @@ ul.list-inline.inline-list-padded li {
   &:after { content: " "; display: table; clear:both;}
 }
 ul, ol {
-  &.list-def p {
+  &.list-expanded p {
     font-size: 1.1875rem;
     strong { font-size: 1.5rem; }
   }
@@ -247,3 +250,68 @@ ul.list-unstyled, ol.list-unstyled, %list-unstyled {
   }
 } 
 .tab-content { padding: 1rem 0;}
+
+.list-bulleted {
+   margin-bottom: .75rem; margin-top: .75rem; 
+ 
+   dt:before {
+    content: "";
+    font-size: 2em;
+    height: .5rem;
+    width: .5rem;
+    background: #000;
+    border-radius: 50%;
+    float: left;
+    top: .75rem;
+    margin-right: 0;
+    position: relative;
+    left: -1.5rem;
+    margin-right: 1.5rem;
+    padding: 0;
+  }
+
+   dd, dt {
+    list-style: none;
+    position: relative;
+    padding-left: 1.75rem;
+  }
+  dt {
+    
+    text-indent: -2rem;
+  }
+  dd { margin-bottom: 1em; }
+} 
+.list-bulleted.list-ordered {
+  overflow: visible;
+  margin: 0;
+  margin-left: 2rem;
+  padding: 0;
+  list-style-type: none;
+  counter-reset: li-counter;
+  
+
+  dt, dd {
+    position: relative;
+    overflow: visible;
+    // color: initial;
+    list-style-type: none; 
+    text-indent: 0;
+    padding-left: .5rem;
+  }
+  dt:before {
+    position: absolute;
+    top: 0;
+    left: -1.5rem;
+    z-index: -99;
+    overflow: hidden;
+    background-color: #fff;
+    color: #000;
+    content: counter(li-counter);
+    counter-increment: li-counter;
+    text-align: right;
+    font-weight: bold;
+    height: auto; 
+    width: auto;
+    font-size: 1em;
+  }
+} 

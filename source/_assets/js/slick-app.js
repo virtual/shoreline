@@ -1,5 +1,7 @@
 $(function () {
-  
+
+  var buttonPrev = "<button type='button' aria-label='Previous' class='slick-prev pull-left'><span class='button-left' aria-hidden='true'></span></button>";
+  var buttonNext = "<button type='button' aria-label='Next' class='slick-next pull-right'><span class='button-right' aria-hidden='true'></span></button>";
 
   contentfeatureslider = $('.slick-slider.content-feature');
   contentfeatureOptions = {
@@ -27,8 +29,8 @@ $(function () {
     variableWidth: true,
     autoplaySpeed: 8000,
 
-    prevArrow: "<button type='button' aria-label='Previous' class='slick-prev pull-left'><span class='button-left' aria-hidden='true'></span></button>",
-    nextArrow: "<button type='button' aria-label='Next' class='slick-next pull-right'><span class='button-right' aria-hidden='true'></span></button>",
+    prevArrow: buttonPrev,
+    nextArrow: buttonNext,
  
     responsive: [{
             breakpoint:480,
@@ -76,8 +78,8 @@ $(function () {
     autoplay: false,
     dots: true, 
     arrows: true,
-    prevArrow: "<button type='button' aria-label='Previous' class='slick-prev pull-left'><span class='fas fa-chevron-left' aria-hidden='true'></span></button>",
-    nextArrow: "<button type='button' aria-label='Next' class='slick-next pull-right'><span class='fas fa-chevron-right' aria-hidden='true'></span></button>",
+    prevArrow: buttonPrev,
+    nextArrow: buttonNext,
 
     responsive: [{
       breakpoint: 992,
@@ -106,17 +108,31 @@ $(function () {
     }]
   });
 
+  
+//   $('.slick-slider.slick-slider-no-arrows').each(function () {
+//     var $this = $(this);
+//     $this.slick({
+//         arrows: false,
+//         infinite: true,
+//         dots: true,
+//         prevArrow: buttonPrev,
+//         nextArrow: buttonNext
+//       });
+// });
+
+
   // Default settings for slick-silder class only (no other class)
   $('.slick-slider').each(function () {
       var $this = $(this);
-      if ($this.attr("class").split(' ').length === 1) {
-        $this.addClass('simple-slickslider');
+      // IF { has 'simple-slickslider' with additional classes } 
+      // OR { it ONLY has class 'slick-slider' with NO other classes } 
+      if (($this.hasClass('simple-slickslider')) || ($this.attr("class").split(' ').length === 1)) {
         $this.slick({
           arrows: true,
           infinite: true,
           dots: true,
-          prevArrow:"<button type='button' aria-label='Previous' class='slick-prev pull-left'><span class='button-left' aria-hidden='true'></span></button>",
-          nextArrow:"<button type='button' aria-label='Next' class='slick-next pull-right'><span class='button-right' aria-hidden='true'></span></button>"
+          prevArrow: buttonPrev,
+          nextArrow: buttonNext
         });
       }
   });

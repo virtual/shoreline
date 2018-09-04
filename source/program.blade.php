@@ -35,20 +35,39 @@
 
 @section('content')
 
-<h2>Features &amp; Highlights </h2>
+<h2 class="mt-5">Features &amp; Highlights </h2>
 <ul class="large-list features list-def">
     <li><p>Access to state of the art studio equipment and amazing very amazing things that happen way more than other schools that you should really know about such as terry taylor and all the bestest stuff ever.</p></li>
     <li><p>Access to state of the art studio equipment</p></li>
     <li><p>Faculty with industry experience and more and more and more stuff that i don't know about.</p></li>
   </ul>
-  @include('_partials.quote', [ 
-          'desc' => "As corny as it sounds, it has been amazing to be here and have the opportunities that I've had…",
-          'alt' => 'Pavielle Montes',
-          'attribution' => 'Pavielle Montes',
-          'attribution2' => 'Associate of Arts and High School Diploma',
-          'img' => '/resources/img/testimonials/shoreline-williams72.jpg',          
-          'link' => '#'
-          ]) 
+
+
+<div class="my-5 py-5">
+    <kbd class="small">.slick-slider.simple-slickslider.slick-slider-no-arrows</kbd>
+  <div class="slick-slider simple-slickslider slick-slider-no-arrows">
+    <div>
+      @include('_partials.quote', [ 
+      'desc' => "As corny as it sounds, it has been amazing to be here and have the opportunities that I've had…",
+      'alt' => 'Pavielle Montes',
+      'attribution' => 'Pavielle Montes',
+      'attribution2' => 'Associate of Arts and High School Diploma',
+      'img' => '/resources/img/testimonials/shoreline-williams72.jpg',          
+      'link' => '#'
+      ]) 
+    </div>
+    <div>
+      @include('_partials.quote', [ 
+      'desc' => "Lorems to the ipsums to the lopsems…",
+      'alt' => 'Milla Vanilla',
+      'attribution' => 'Milla Vanilla',
+      'attribution2' => 'Transfer Program in Visual Arts',
+      'img' => '/resources/img/testimonials/shoreline-williams72h.jpg',          
+      'link' => '#'
+      ]) 
+    </div>
+  </div>
+</div>
 
   <h2>Program Options</h2>      
   <hr/>

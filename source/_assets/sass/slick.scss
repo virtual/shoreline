@@ -154,9 +154,9 @@ main .slick-slider ul li:before { content: none; }
 //   .slick-next { right: -1rem;} 
 // }
 
-// .slick-slider>div>.caption,.slick-slider>div{display:none;opacity:0}
-// .slick-slider>div:first-child{display:block;}
-// .slick-slider.slick-initialized>div, .slick-slider.content-feature>div:first-child{display:block;opacity:1; }
+.slick-slider>div>.caption,.slick-slider>div{display:none;opacity:0}
+.slick-slider>div:first-child{display:block;}
+.slick-slider.slick-initialized>div, .slick-slider.content-feature>div:first-child{display:block;opacity:1; }
  
 // Correct for quote slide
 .slick-slider .slick-dots li {
@@ -253,6 +253,18 @@ main .slick-slider ul li:before { content: none; }
 
 // Joe's custom arrows, demo on quotes
 .slick-slider {
+  position: relative;
+  background-position: 50% 50%;
+  background-image: url("../../resources/img/icons/ajax-loader2.gif");
+  background-repeat: no-repeat;
+
+  &.slick-initialized {
+    background: none;
+  }
+
+  &.slick-slider-no-arrows {
+    .slick-arrow { display:none !important;}
+  }
   .slick-arrow { 
     z-index: 3;
       width: 3.4375rem;
