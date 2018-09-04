@@ -19,8 +19,6 @@
 
   <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/bootstrap.css">
   <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/main.css?v=2">
-  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/slick.css">
-  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/slick-theme.css">
 
   <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
   <noscript>
@@ -99,8 +97,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
       crossorigin="anonymous"></script>
     <script src="{{ $page->baseUrl }}/assets/js/main.js"></script>
-    <script src="{{ $page->baseUrl }}/assets/js/slick.min.js"></script>
-    <script src="{{ $page->baseUrl }}/assets/js/slick-app.js?v=3"></script>
 </body>
 
 </html>

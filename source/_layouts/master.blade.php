@@ -204,7 +204,7 @@
       crossorigin="anonymous"></script>
     <script src="{{ $page->baseUrl }}/assets/js/main.js"></script>
     <script src="{{ $page->baseUrl }}/assets/js/slick.min.js"></script>
-    <script src="{{ $page->baseUrl }}/assets/js/slick-app.js?v=3"></script>
+    <script src="{{ $page->baseUrl }}/assets/js/slick-app.js?v=4"></script>
 </body>
 
 </html>
