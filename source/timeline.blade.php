@@ -55,14 +55,30 @@
         ])
 
         @include('_partials.timelinelist', [
+        'heading' => 'Backup test site in OU Campus (Sept 28)',
+        'desc' => "Jeanine to backup and download test site in order to reference all staging files prior to update on Oct 1-5.
+        ",
+        'id' => '4', 
+        'img' => ''
+        ])
+
+        @include('_partials.timelinelist', [
         'heading' => 'Code updates (Sept 28–Oct 5)',
         'desc' => "Dev fixes.
         ",
         'id' => '4', 
         'img' => ''
         ])
-                
-
+              
+        
+        @include('_partials.timelinelist', [
+        'heading' => 'Duplicate www site to test site in OU Campus (Oct 1–5)',
+        'desc' => "Gavin to remove test site (if possible) and duplicate www to new test site.
+        ",
+        'id' => '4', 
+        'img' => ''
+        ])
+     
         @include('_partials.timelinelist', [
         'heading' => 'Implement code on test server (Oct 8-12)',
         'desc' => "Update page design and template files. Update snippets to function similarly on new framework.

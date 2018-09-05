@@ -1,11 +1,3 @@
-<p class="small">Primary, Secondary and Important buttons are <del>55px</del> 50px high; Tert is <del>50px</del> 45; Green box is 50px</p>
-<div class="btn-debugger">
-<a class="btn btn-primary" href="#" role="button">Pri</a>
-<a class="btn btn-secondary" href="#" role="button">Sec</a>
-<a class="btn btn-tertiary" href="#" role="button">Tert</a>
-<a class="btn btn-important" href="#" role="button">Impt</a>
-</div>
-<hr/>
 <a class="btn btn-primary" href="#" role="button">Pri</a>
 <a class="btn btn-secondary" href="#" role="button">Sec</a>
 <a class="btn btn-tertiary" href="#" role="button">Tert</a>
