@@ -95,12 +95,12 @@ header#header {
     
     .search-container {
       .input-group > .form-control:not(:first-child) {
-        border-top-right-radius: 1.5625rem;
-        border-bottom-right-radius: 1.5625rem;
+        border-top-right-radius: 999px;
+        border-bottom-right-radius: 999px;
       }
       .input-group > .input-group-prepend > .input-group-text {
-        border-top-left-radius: 1.5625rem;
-        border-bottom-left-radius: 1.5625rem;
+        border-top-left-radius: 999px;
+        border-bottom-left-radius: 999px;
         border-color: rgba(0, 0, 0, 0.2);
         
       }
@@ -108,6 +108,7 @@ header#header {
         border-color: rgba(0, 0, 0, 0.2) !important;
         padding-left:0;
         font-size: 1rem;
+        height: auto;
       }
     }
   }

@@ -28,7 +28,7 @@
 ### Windows:
 
 - Add site path to C:\Windows\System32\drivers\etc\hosts
-- `npm install --no-bin-links` from Windows bash  
+- `npm install --no-bin-links` from Windows bash (or `npm update --no-bin-links` for updates)
 - `sudo npm rebuild node-sass --no-bin-links` from Vagrant bash  
 - `browser-sync start -p "shoreline.test" -f "build_local, assets"` from Windows bash (http://localhost:3000/)
 - Add to vagrant file: `config.vm.network :forwarded_port, guest: 3000, host: 3000, auto_correct: true` (reload prov)

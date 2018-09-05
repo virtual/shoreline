@@ -4049,18 +4049,19 @@ header#header {
     margin-bottom: 0;
   }
   .header-actions .search-container .input-group > .form-control:not(:first-child) {
-    border-top-right-radius: 1.5625rem;
-    border-bottom-right-radius: 1.5625rem;
+    border-top-right-radius: 999px;
+    border-bottom-right-radius: 999px;
   }
   .header-actions .search-container .input-group > .input-group-prepend > .input-group-text {
-    border-top-left-radius: 1.5625rem;
-    border-bottom-left-radius: 1.5625rem;
+    border-top-left-radius: 999px;
+    border-bottom-left-radius: 999px;
     border-color: rgba(0, 0, 0, 0.2);
   }
   .header-actions .search-container #EnterSearch {
     border-color: rgba(0, 0, 0, 0.2) !important;
     padding-left: 0;
     font-size: 1rem;
+    height: auto;
   }
   .navbar-container {
     width: 100%;
