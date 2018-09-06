@@ -39,13 +39,14 @@ $light:         $minty-green !default;
 $dark:          $text-dark !default;
 $success:       $shoreline-bright-green !default; 
 
+
+// FORM overrides 
+
 $input-focus-border-color:              lighten($link-blue, 5) !default;
 $custom-control-indicator-size:         1.2rem !default;
 $custom-control-indicator-checked-bg:   $link-blue !default;
 $custom-control-indicator-active-bg:    $input-focus-border-color !default;
 $custom-control-indicator-bg:           #fff !default;
-
-
 
 // Grid breakpoints
 //

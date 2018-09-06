@@ -1,6 +1,7 @@
 @extends('_layouts.master')
 
 @section('content')
+<h1>Inputs, Fields, & Forms</h1>
   @include('_partials.form')
 @endsection
  
