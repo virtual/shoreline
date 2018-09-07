@@ -58,7 +58,7 @@
         'heading' => 'Backup test site in OU Campus (Sept 28)',
         'desc' => "Jeanine to backup and download test site in order to reference all staging files prior to update on Oct 1-5.
         ",
-        'id' => '4', 
+        'id' => '7c', 
         'img' => ''
         ])
 
@@ -66,7 +66,7 @@
         'heading' => 'Code updates (Sept 28–Oct 5)',
         'desc' => "Dev fixes.
         ",
-        'id' => '4', 
+        'id' => '7d', 
         'img' => ''
         ])
               
@@ -75,7 +75,7 @@
         'heading' => 'Duplicate www site to test site in OU Campus (Oct 1–5)',
         'desc' => "Gavin to remove test site (if possible) and duplicate www to new test site.
         ",
-        'id' => '4', 
+        'id' => '7e', 
         'img' => ''
         ])
      

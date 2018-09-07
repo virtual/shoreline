@@ -5,7 +5,7 @@ input {
 input[type=checkbox],
 input[type=radio],
 .custom-control-label,
-label {
+label, select {
   cursor: pointer;
   position: relative;
 }
@@ -57,13 +57,22 @@ label.custom-control-label {
   background-size: 42% 40%;
 }
 
+.custom-control { padding-left: 2rem; }
 .custom-form {
-
-  input, select, 
-  .input-group-prepend {
+  label + small {
+    color: $text-midgray; font-size: 1rem;
+  }
+  .form-control, select {
+      height: auto;
+      padding: 1rem;
+  }
+  input, select, textarea {
     border-radius: 0;
     border-width: 2px;
+    border: 2px solid #ced4da;
   }
+
+  textarea { width: 100%; padding: 1rem; margin: 1rem 0; }
 
   .input-group-prepend .input-group-text {
     box-shadow: inset 0 0 1px 1px #ced4da;
@@ -73,4 +82,18 @@ label.custom-control-label {
   .input-group-prepend .input-group-text {
     border-right: 0;
   }
+
+  label { position: relative;  color: $text-midgray; font-size: 1rem;}
+
+  input[type=checkbox] + label,
+input[type=radio] + label { color:#222; font-size: 19px; }
+
+
+input, input[type=checkbox]:checked + label,
+input[type=radio]:checked + label,
+label + input[type=checkbox]:checked,
+label + input[type=radio]:checked { font-weight: bold; color:#000;} 
+input::placeholder  { font-weight: normal; color: $text-midgray}
 }
+
+
