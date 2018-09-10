@@ -97,7 +97,7 @@
   padding-top: 1rem;
   label {
     display: block;
-    width: 80%;
+    width: 70%;
     margin-bottom: 0;
   }
 } 
@@ -109,6 +109,16 @@
   display: inline-block; 
   transition: transform .1s ease-in-out;
 } 
+@media (min-width: 280px) {
+  .searchform-mobile label {
+      width: 80%;
+    }
+}
+@media (min-width: $screen-sm) {
+  .searchform-mobile label {
+      width: 90%;
+    }
+}
 
 @media (min-width: $screen-lg) {
   .megamenu .dropdown .dropdown-menu {

@@ -44,10 +44,34 @@ header#header {
 .navbar {
   padding: 0;
 }
-.search-container input {
+.search-container {
+  label {
+    flex: 1;
+    margin-bottom: 0;
+  }
+  input {
   border: solid 2px transparent;
   line-height: 1.15;
   border-radius: 1.5625rem;
+  }  
+}
+.main-search{
+  &.input-group > label .form-control {
+    border-top-right-radius: 999px;
+    border-bottom-right-radius: 999px;
+  }
+  &.input-group > .input-group-prepend > .input-group-text {
+    border-top-left-radius: 999px;
+    border-bottom-left-radius: 999px;
+    border-color: rgba(0, 0, 0, 0.2);
+    
+  }
+  .entersearch {        
+    border-color: rgba(0, 0, 0, 0.2) !important;
+    padding-left:0;
+    font-size: 1rem;
+    height: auto;
+  }
 }
 .navmenu .navbar-brand {
   padding: 8px 0;
@@ -93,24 +117,7 @@ header#header {
       .btn { margin-top:0; margin-bottom:0;}
     }
     
-    .search-container {
-      .input-group > .form-control:not(:first-child) {
-        border-top-right-radius: 999px;
-        border-bottom-right-radius: 999px;
-      }
-      .input-group > .input-group-prepend > .input-group-text {
-        border-top-left-radius: 999px;
-        border-bottom-left-radius: 999px;
-        border-color: rgba(0, 0, 0, 0.2);
-        
-      }
-      #EnterSearch {        
-        border-color: rgba(0, 0, 0, 0.2) !important;
-        padding-left:0;
-        font-size: 1rem;
-        height: auto;
-      }
-    }
+
   }
   .navbar-container {
     width: 100%; 
@@ -165,10 +172,7 @@ header#header {
       width: 100%;
       display: flex;
     }
-    label {
-      flex: 1;
-      margin-bottom: 0;
-    }
+  
     button.searchicon.btn.btn-primary {
       background: rgba(0, 0, 0, 0.2);
       border: 1px solid rgba(255, 255, 255, 0.2);
