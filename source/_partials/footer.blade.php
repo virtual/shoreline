@@ -63,6 +63,6 @@
       </div>
     </div>
   </div>
-  <a href="/" class="back-to-top">Back to
+  <a href="#header" class="scrollable back-to-top">Back to
     <br> top</a>
 </footer>

@@ -36,7 +36,7 @@
 }
 
 #footer footer .back-to-top {
-  font-size: 16px;
+  font-size: .9rem;
   text-transform: uppercase;
   display: block;
   text-align: center;
@@ -54,7 +54,7 @@
     text-decoration: none;
   }
   &:hover:before {
-    background-color: #b13e3a;
+    background-color: darken($primary,10);
   }
   &:after {
     content: "";
@@ -81,6 +81,7 @@
     left: 0;
     z-index: -1;
     background-color: #006c68;
+    transition: background-color .2s ease-in-out;
     margin-top: -36px;
     margin-left: -11px;
   }
