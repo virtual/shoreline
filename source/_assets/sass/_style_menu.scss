@@ -145,7 +145,7 @@
         padding: 10px 8px
       }
       a:hover {
-        background: darken($light, 5);
+        background: $light;
       }
       li {
         border-bottom: 1px solid #dfdfdf;

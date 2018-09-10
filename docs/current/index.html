@@ -308,13 +308,26 @@
              
             <!-- if breadcrumb not in a content-header -->
             <div class="breadcrumb" aria-label="breadcrumb">
-                <ol>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Explore Programs</a></li>
-    <li><a href="#">Transfer Programs</a></li>
-    <li><a class="active" aria-current="page" href="#">Visual Arts</a></li>
-  </ol>
-              </div>
+                <ol vocab="http://schema.org/" typeof="BreadcrumbList">
+  <li property="itemListElement" typeof="ListItem">
+    <a property="item" typeof="WebPage"
+        href="https://shoreline.edu">
+      <span property="name">Home</span></a>
+    <meta property="position" content="1">
+  </li> 
+  <li property="itemListElement" typeof="ListItem">
+    <a property="item" typeof="WebPage"
+        href="https://www.shoreline.edu/areas-of-study/programs.aspx">
+      <span property="name">Explore Programs</span></a>
+    <meta property="position" content="2">
+  </li> 
+  <li property="itemListElement" typeof="ListItem">
+    <a property="item" typeof="WebPage" class="active" aria-current="page"
+        href="https://www.shoreline.edu/visual-arts/design-digital-media-vct.aspx">
+      <span property="name">Page Title</span></a>
+    <meta property="position" content="3">
+  </li>
+</ol>              </div>
             
             <h1>Current Students</h1>
 
@@ -362,7 +375,7 @@
 <p>&nbsp;</p>
 
 <div class="row">
-  <div class="col-12 col-sm-6">
+  <div class="col-md-6">
     <div class="card-link">
         <h4><button class="btn-toggle btn collapsed" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false"
         aria-controls="collapse1">
@@ -419,7 +432,7 @@
     </div>
   </div>
 
-  <div class="col-12 col-sm-6">
+  <div class="col-md-6">
     <div class="card-link">
         <h4><button class="btn-toggle btn collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false"
         aria-controls="collapse5">
