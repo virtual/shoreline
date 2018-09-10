@@ -257,3 +257,16 @@ main, .content-container, .sectional, * {
     filter: hue-rotate(220deg); // change from red to blue
   }
 }
+
+/* row of links with image headers */
+.stack-img-links img { margin-top: .5rem; margin-bottom: .5rem;} 
+@media (max-width: $screen-md - 1) {
+  .stack-img-links {
+    .more-arrow:after { display:none; }
+    .row > div:first-child { padding-right: 0;}
+    p { margin:0;}
+  }
+}
+@media (min-width: $screen-md) {
+  .md-flex-5.stack-img-links > div { width: 18%; }
+}

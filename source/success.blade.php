@@ -64,30 +64,40 @@
 </div>
 <p>&nbsp;</p>
 <h2>What are you interested in?</h2>
-<div class="d-sm-flex">
-  <div class="p-2 flex-fill">
-    <a class="mb-1" href="#"><img class="rounded" src="{{ $page->baseUrl }}/resources/img/stock/alexis-brown-82988-unsplash.jpg" /></a>
-    <p><a href="#" class="more-arrow">Science, Technology, Math & Engineering</a></p>
+<div class="mt-4 d-md-flex md-flex-5 stack-img-links justify-content-between">
+  <div class="stack-img-link">
+    <div class="row flex align-items-center">
+      <div class="col-4 col-sm-3 col-md-12"><a class="mb-1" href="#"><img class="rounded" alt="a student picks up a lab vial and studies it" src="{{ $page->baseUrl }}/resources/img/stock/stack-img/stem.jpg" /></a></div>
+      <div class="col-8 col-sm-9 col-md-12"><p><a href="#" class="more-arrow">Science, Technology, Math & Engineering</a></p></div>
+  </div>
   </div>
   
-  <div class="p-2 flex-fill">
-      <a class="mb-1" href="#"><img class="rounded" src="{{ $page->baseUrl }}/resources/img/stock/alexis-brown-85793-unsplash.jpg" /></a>
-      <p><a href="#" class="more-arrow">Business</a></p>
+  <div class="stack-img-link">
+    <div class="row flex align-items-center">
+      <div class="col-4 col-sm-3 col-md-12"><a class="mb-1" href="#"><img class="rounded" alt="two students work on a project using a computer" src="{{ $page->baseUrl }}/resources/img/stock/stack-img/business.jpg" /></a></div>
+      <div class="col-8 col-sm-9 col-md-12"><p><a href="#" class="more-arrow">Business</a></p></div>
+    </div>
     </div>
     
-  <div class="p-2 flex-fill">
-      <a class="mb-1" href="#"><img class="rounded" src="{{ $page->baseUrl }}/resources/img/stock/stefan-stefancik-257625-unsplash.jpg" /></a>
-      <p><a href="#" class="more-arrow">Health & Wellness</a></p>
+  <div class="stack-img-link">
+    <div class="row flex align-items-center">
+      <div class="col-4 col-sm-3 col-md-12"><a class="mb-1" href="#"><img class="rounded" alt="a student and professor wearing labcoats work in a lab" src="{{ $page->baseUrl }}/resources/img/stock/stack-img/health-wellness.jpg" /></a></div>
+      <div class="col-8 col-sm-9 col-md-12"><p><a href="#" class="more-arrow">Health & Wellness</a></p></div>
+    </div>
     </div>
     
-  <div class="p-2 flex-fill">
-      <a class="mb-1" href="#"><img class="rounded" src="{{ $page->baseUrl }}/resources/img/stock/alexis-brown-82988-unsplash.jpg" /></a>
-      <p><a href="#" class="more-arrow">Art & Communication</a></p>
+  <div class="stack-img-link">
+    <div class="row flex align-items-center">
+      <div class="col-4 col-sm-3 col-md-12"><a class="mb-1" href="#"><img class="rounded" alt="students work on a gridded mat" src="{{ $page->baseUrl }}/resources/img/stock/stack-img/art-comm.jpg" /></a></div>
+      <div class="col-8 col-sm-9 col-md-12"><p><a href="#" class="more-arrow">Art & Communication</a></p></div>
+    </div>
     </div>
     
-  <div class="p-2 flex-fill">
-      <a class="mb-1" href="#"><img class="rounded" src="{{ $page->baseUrl }}/resources/img/stock/alexis-brown-85793-unsplash.jpg" /></a>
-      <p><a href="#" class="more-arrow">Social Sciences & Education</a></p>
+  <div class="stack-img-link">
+    <div class="row flex align-items-center">
+      <div class="col-4 col-sm-3 col-md-12"><a class="mb-1" href="#"><img class="rounded" alt="a group of women talk while sitting at a table" src="{{ $page->baseUrl }}/resources/img/stock/stack-img/social-sciences.jpg" /></a></div>
+      <div class="col-8 col-sm-9 col-md-12"><p><a href="#" class="more-arrow">Social Sciences & Education</a></p></div>
+    </div>
     </div>
 </div>
 <p>&nbsp;</p>

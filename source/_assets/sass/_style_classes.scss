@@ -125,3 +125,8 @@ p, ul, dl, ol {
   address { flex-direction: column}
   .content-block { width: 100%; }
 }
+
+img.rounded { border-radius: 10px !important; }
+@media (min-width: $screen-md) {
+  .md-flex-5 > div { width: 20%; }
+}

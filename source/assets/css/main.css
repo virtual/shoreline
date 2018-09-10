@@ -2090,6 +2090,30 @@ main .card-links.card-links-compact a, .content-container .card-links.card-links
           filter: hue-rotate(220deg);
 }
 
+/* row of links with image headers */
+.stack-img-links img {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+@media (max-width: 767px) {
+  .stack-img-links .more-arrow:after {
+    display: none;
+  }
+  .stack-img-links .row > div:first-child {
+    padding-right: 0;
+  }
+  .stack-img-links p {
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .md-flex-5.stack-img-links > div {
+    width: 18%;
+  }
+}
+
 .primary {
   color: #00685e;
 }
@@ -2429,6 +2453,16 @@ p.gray.small, p.gray.medium, p.gray.large, ul.gray.small, ul.gray.medium, ul.gra
 
 .address-sidebar > .contact-us-box .content-block {
   width: 100%;
+}
+
+img.rounded {
+  border-radius: 10px !important;
+}
+
+@media (min-width: 768px) {
+  .md-flex-5 > div {
+    width: 20%;
+  }
 }
 
 .topnav {
