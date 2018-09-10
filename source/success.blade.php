@@ -20,15 +20,18 @@
 
 @section('content-header')
  
-    <h1>Success Starts Here</h1>
-    <p class="lead">Whether you’re setting the foundation for a career, starting a degree that will take you to a university and beyond, or building new skills, Shoreline can help.</p>
-    <div class="row">
-      <div class="col-12 col-sm-6">Top 5 Graduation Rate</div>
-      <div class="col-12 col-sm-6">Top 5 Graduation Rate</div>
-    </div>
-        <div class="row">
-      <div class="col-12 col-sm-6">Top 5 Graduation Rate</div>
-    </div>
+<h1>Success Starts Here</h1>
+<p class="lead">Whether you’re setting the foundation for a career, starting a degree that will take you to a
+  university and beyond, or building new skills, Shoreline can help.</p>
+<div class="row">
+  <div class="col-12 col-sm-6">
+    <p class="medium"><span class="fa-container fa-2x fas fa-graduation-cap" aria-hidden="true"></span> Top 5 Graduation Rate</p>
+    <p class="medium"><span class="fa-container fa-2x fas fa-book-open" aria-hidden="true"></span> Over 200 Program Options</p>
+  </div>
+  <div class="col-12 col-sm-6">
+    <p class="medium"><span class="fa-container fa-2x fas fa-certificate" aria-hidden="true"></span> Over 20 Certificates</p>
+  </div>
+</div>
 @endsection
 
 

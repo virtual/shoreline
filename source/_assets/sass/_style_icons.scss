@@ -26,3 +26,11 @@
     }
   }
 }
+
+.fa-container { min-width: 2rem; text-align: center; margin: 0 .2rem; }
+.fa-container.fa-2x { min-width: 3rem; }
+
+.header-content .fa-container.fa-2x:before {
+  position: relative;
+  top: .5rem;
+}

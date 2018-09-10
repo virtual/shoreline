@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/slick.css">
   <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/slick-theme.css">
 
-  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
   <noscript>
     <style>
       .navbar-collapse,
