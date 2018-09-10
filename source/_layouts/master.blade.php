@@ -17,12 +17,11 @@
   <meta property="og:locale" content="en_us" />
   <link rel="image_src" href="{{ $page->baseUrl }}/images/thumbnail.jpg" />
 
-  <link href="{{ $page->baseUrl }}/assets/css/bootstrap.css">
-  <link href="{{ $page->baseUrl }}/assets/css/main.css?v=2">
-  <link href="{{ $page->baseUrl }}/assets/css/slick.css">
-  <link href="{{ $page->baseUrl }}/assets/css/slick-theme.css">
-
-  <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/bootstrap.css">
+  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/main.css?v=2">
+  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/slick.css">
+  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/slick-theme.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
   <noscript>
     <style>
       .navbar-collapse,
@@ -95,14 +94,15 @@
   <!-- end PROGRAM OPTION TEMPLATE -->
 
   @else
-  <!-- INTERIOR TEMPLATE -- Not program option template -->
+  <!-- INTERIOR TEMPLATE - Not program option template -->
   <span class="debug">!!!! interior template</span>
   <div class="layout-master page-interior">
 
     <!-- CONTENT HEADER ON -->
     @if (trim($__env->yieldContent('content-header')))
     <span class="debug">!!!! content-header</span>
-    @if (trim($__env->yieldContent('content-header-inverse'))) <div class="content-header bg-primary"> @else  <div class="content-header "> @endif
+    @if (trim($__env->yieldContent('content-header-inverse'))) 
+    <div class="content-header bg-primary"> @else  <div class="content-header "> @endif
       <div class="container-fluid">
           <div class="breadcrumb" aria-label="breadcrumb">
               @yield('breadcrumb')
@@ -180,7 +180,6 @@
               <!-- end layout has class-->
 
             </div>
-          </div> 
 
         </div>
       </div>
