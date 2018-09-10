@@ -1,10 +1,11 @@
 .featureicon {
   text-align: center; 
+  margin-bottom: 2rem; 
   p { margin:0; padding:0; line-height: 1.5;}
-  a { 
+  h3 { 
   color: $primary;
   
-  font-size: 4.5rem;
+  font-size: 3rem;
   font-weight: 900;
   }
   a.btn { color: $link-blue; font-weight: 400; font-size: 1.1875rem;  }
@@ -13,5 +14,15 @@
     display:block;
     text-align: center;
     img { height: 80px; width: auto;}
+  }
+}
+
+@media (min-width: $screen-md) {
+  .featureicon { 
+    margin-bottom:0;
+    h3 { 
+    font-size: 4.5rem;
+    font-weight: 900;
+    }
   }
 }

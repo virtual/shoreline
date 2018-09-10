@@ -22,12 +22,14 @@ $shoreline-green: #00685e !default;
 $text-dark: #444 !default;
 $link-blue: #0074b3; 
 $shoreline-yellow: #ffb500; 
-$minty-green: #f5f7f7;
+// $minty-green: #f5f7f7;
+$minty-green: #F2FAF9;
 $text-black: #000000;
 $text-midgray: #757575;
 $text-lightgray: rgba(34, 34, 34, 0.6);
 $white: #ffffff;
-$pale-gray: #f2faf9;
+// $pale-gray: #f2faf9;
+$pale-gray: $minty-green;
 $shoreline-orange: #d43c00;
 $shoreline-bright-green: #00c278;
 

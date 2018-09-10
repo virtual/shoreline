@@ -206,6 +206,7 @@ ul.list-unstyled, ol.list-unstyled, %list-unstyled {
   li { 
     padding-left: 0; margin:0;
     text-indent: 0;
+    position: relative;
   }
   li:before {
     display:none;

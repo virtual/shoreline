@@ -7,13 +7,16 @@ $btn-tertiary: transparent;
   min-width: 100px;
   cursor: pointer;
   font-weight: 700;
-  font-size: 0.8125rem; 
+  // font-size: 0.8125rem; 
+  font-size: 1.1875rem; 
   border: 0;
   line-height: 1.37;
   // line-height: 1.30; // changed from zeplin to make rounder
   // border-radius: 1.5625rem; 
   border-radius: 999px; 
   padding: 0.375rem 2rem;
+  padding: 0.75rem 2rem;
+  // padding-top: 0.75rem;
   // padding-bottom: 0.375rem;
   // margin: .5rem 0;
 }
@@ -107,7 +110,7 @@ a.btn { text-decoration: none; }
 @media (min-width: $screen-sm) {
   .btn {
     min-width: 150px; 
-    font-size: 1.1875rem; 
+    // font-size: 1.1875rem; 
     padding-top: 0.75rem;
     padding-bottom: 0.75rem; // .9062 for 55px high
     // line-height: 1.15;
