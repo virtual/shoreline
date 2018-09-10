@@ -19,7 +19,6 @@
         'id' => '2', 
         'img' => ''
         ])
-
         
         @include('_partials.timelinelist', [
         'heading' => 'Finalize program options in multiedit (Sept 3)',
@@ -27,7 +26,6 @@
         'id' => '2a', 
         'img' => ''
         ])
-        
         
         @include('_partials.timelinelist', [
         'heading' => 'Acalog goes live  (Sept 1–30)',
@@ -37,7 +35,6 @@
         'img' => ''
         ])
             
-
         @include('_partials.timelinelist', [
         'heading' => 'Code review (Sept 13–27)',
         'desc' => "Shoreline's team goes through demos and approves functionality. All HTML design files review and analyzed and verified to be functioning as expected, plus W3C and Accessibility Compliant. Functional Specification meeting(s) via webex take place to go through all elements in each page type to define the development plan. Report any issues, bugs, questions, or requests back to Jeanine.
@@ -70,7 +67,6 @@
         'img' => ''
         ])
               
-        
         @include('_partials.timelinelist', [
         'heading' => 'Duplicate www site to test site in OU Campus (Oct 1–5)',
         'desc' => "Gavin to remove test site (if possible) and duplicate www to new test site.
@@ -103,8 +99,6 @@
         'img' => ''
         ])
 
-
-        
         @include('_partials.timelinelist', [
         'heading' => 'Implementation process for new theme on www; republish website (Oct 29)',
         'desc' => "Verify working as expected.
@@ -120,8 +114,8 @@
         'id' => '9', 
         'img' => ''
         ])
+    </div>
   </div>
-
 @endsection
 
 
