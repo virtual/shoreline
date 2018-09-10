@@ -61,7 +61,7 @@
 
 <div class="row">
 
-  <div class="col-12 col-sm-6 col-md-4">
+  <div class="col-12 col-md-6 col-lg-4">
       <ul class="card-links">
           <li><a href="#" class="more-arrow">College/University Transfer</a></li>
           <li><a href="#" class="more-arrow">Professional & Technical</a></li>
@@ -69,7 +69,7 @@
           <li><a href="#" class="more-arrow">Transitional (ESL, HS21, I-Best GED…)</a></li>
         </ul>
   </div>
-  <div class="col-12 col-sm-6 col-md-4">
+  <div class="col-12 col-md-6 col-lg-4">
       <ul class="card-links">
           <li><a href="#" class="more-arrow">Continuing Education</a></li>
           <li><a href="#" class="more-arrow">Learn Online</a></li>
@@ -77,7 +77,7 @@
           <li><a href="#" class="more-arrow">Browse All Programs</a></li>
         </ul>
   </div>
-  <div class="col-12 col-sm-12 col-md-4">
+  <div class="col-12 col-lg-4">
     <a class="btn btn-important btn-block" href="/apply-and-aid/apply.aspx">Apply Now</a>
     <a class="btn btn-secondary btn-block" href="/apply-and-aid/apply.aspx">Ask a Question</a>
     <a class="btn btn-secondary btn-block" href="/apply-and-aid/apply.aspx">Visit Campus</a>

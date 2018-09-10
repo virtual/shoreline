@@ -103,7 +103,7 @@
        </div>
   </div>
 <div class="row">
-<div class="col-12 col-sm-8">@include('_partials.card', [
+<div class="col-12 col-sm-6 col-md-6 col-lg-8">@include('_partials.card', [
     'heading' => 'Course Descriptions',
     'iconalt' => '',
     'icon' => '',   
@@ -112,7 +112,7 @@
     'buttontext' => 'Request Info',
     'img' => '../resources/img/stock/image.jpg'
     ])</div>
-<div class="col-12 col-sm-4">@include('_partials.card', [
+<div class="col-12 col-sm-6 col-md-6 col-lg-4">@include('_partials.card', [
     'heading' => 'Course Descriptions',
     'iconalt' => '',
     'icon' => '',   
