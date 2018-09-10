@@ -17,12 +17,12 @@
   <meta property="og:locale" content="en_us" />
   <link rel="image_src" href="{{ $page->baseUrl }}/images/thumbnail.jpg" />
 
-  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/bootstrap.css">
-  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/main.css?v=2">
-  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/slick.css">
-  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/slick-theme.css">
+  <link href="{{ $page->baseUrl }}/assets/css/bootstrap.css">
+  <link href="{{ $page->baseUrl }}/assets/css/main.css?v=2">
+  <link href="{{ $page->baseUrl }}/assets/css/slick.css">
+  <link href="{{ $page->baseUrl }}/assets/css/slick-theme.css">
 
-  <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
   <noscript>
     <style>
       .navbar-collapse,

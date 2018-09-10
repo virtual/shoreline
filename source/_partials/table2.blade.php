@@ -8,10 +8,6 @@
       <th>Entry Header 4</th>
     </tr>
     </thead>
-    <tfoot> <tr>
-        <td>Sum</td>
-        <td>$180</td>
-      </tr></tfoot>
     <tbody>
     <tr>
       <td>Entry First Line 1</td>
@@ -31,5 +27,9 @@
       <td>Entry Last Line 3</td>
       <td>Entry Last Line 4</td>
     </tr>
-  </tbody>
+  </tbody>  
+  <tfoot> <tr>
+      <td>Sum</td>
+      <td colspan="3">$180</td>
+    </tr></tfoot>
   </table>

@@ -25,24 +25,24 @@
 
 
 <section class="sectional section1 sectional-padded ">
-    <div class="container-fluid">
-        @include('_partials.card', [
-          'heading' => 'Get help with enrollment',
-          'desc' => 'Our enrollment services team is here to help with financial aid, how to apply, and all the things that make Shoreline a great place to study and pursue any of our more than 100 degrees and certificates!',
-          'iconalt' => 'quote',
-          'icon' => 'far fa-map',          
-          'theme' => 'secondary',
-          'link' => '#'
-          ])
-          @include('_partials.card', [
-          'heading' => 'Visit Campus',
-          'desc' => 'Outdoor areas are generally open to the public to walk through and experience the inviting environment, or with a reservation, a college staff member will take you and your friends and family for a guided tour of campus.',
-          'iconalt' => 'quote',
-          'icon' => 'fas fa-quote-left',     
-          'theme' => 'secondary',
-          'link' => '#'          
-          ])
- 
+  <div class="container-fluid">
+    @include('_partials.card', [
+      'heading' => 'Get help with enrollment',
+      'desc' => 'Our enrollment services team is here to help with financial aid, how to apply, and all the things that make Shoreline a great place to study and pursue any of our more than 100 degrees and certificates!',
+      'iconalt' => 'quote',
+      'icon' => 'far fa-map',          
+      'theme' => 'secondary',
+      'link' => '#'
+      ])
+      @include('_partials.card', [
+      'heading' => 'Visit Campus',
+      'desc' => 'Outdoor areas are generally open to the public to walk through and experience the inviting environment, or with a reservation, a college staff member will take you and your friends and family for a guided tour of campus.',
+      'iconalt' => 'quote',
+      'icon' => 'fas fa-quote-left',     
+      'theme' => 'secondary',
+      'link' => '#'          
+      ])
+  </div>
  </section>
 
  <section>

@@ -19,9 +19,8 @@
             </address>
           </div>
           <p class="copyright">
-            <a id="directedit">
-              <a id="de" href="http://a.cms.omniupdate.com/10?skin=oucampus&amp;account=shoreline&amp;site=www&amp;action=de&amp;path=/default.pcf">©</a>
-            </a> 2018 Shoreline Community College
+            <a id="de" href="http://a.cms.omniupdate.com/10?skin=oucampus&amp;account=shoreline&amp;site=www&amp;action=de&amp;path=/default.pcf" >&copy;</a>
+             2018 Shoreline Community College
             <br>
             <a href="/currentstudents/privacyandnondiscrimination.aspx">Privacy &amp; Non-Discrimination</a>
             ·
@@ -64,5 +63,5 @@
     </div>
   </div>
   <a href="#header" class="scrollable back-to-top">Back to
-    <br> top</a>
+    <br/> top</a>
 </footer>
