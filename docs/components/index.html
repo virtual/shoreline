@@ -58,7 +58,8 @@
         <li class="float-right"><a class="nav-link" href="https://virtual.github.io/shoreline/timeline/index.html">Timeline</a></li>
       </ul> 
     </div>
-  </nav> <header id="header">
+  </nav> 
+  <header id="header">
   <div id="skiptocontent">
     <a href="#maincontent" title="Skip Main Navigation">Skip Main Navigation</a>
   </div>
@@ -291,16 +292,18 @@
     <div class="container-fluid">
       <div id="maincontent" class="flex-layout-body">
 
+        <!-- determining opening classes  -->
                 <span class="debug">!!!! Layout has leftnav</span>
-                  <div class="layout-has-left-nav">
-                              <nav class="left-nav">
-                  <!--<h2>
-            <span role="button" data-toggle="collapse" data-target="#submenu" aria-controls="submenu" aria-expanded="false" aria-label="Toggle navigation"
-              aria-hidden="true" class="fas fa-bars toggle">
-              <span class="sr-only">Expand Submenu</span>
-            </span> yield('menuheader')</h2>-->
-                  <a class="sr-only show-on-focus" href="#interior">Skip Navigation</a>
-                  <nav role="navigation" aria-label="Section Navigation">
+            
+                    <div class="layout-has-left-nav">
+           <!-- end check main sidebar-->
+            
+         <!-- END determining opening classes -->
+                
+        <!-- if left nav -->
+                <nav class="left-nav">
+          <a class="sr-only show-on-focus" href="#interior">Skip Navigation</a>
+          <nav role="navigation" aria-label="Section Navigation">
   <h2 class="sr-only">Directory Navigation</h2>
   <div class="list-wrapper">
     <ul class="nav nav-stacked" id="subnav_parent">
@@ -325,24 +328,26 @@
         <li><a title="Shoreline at a Glance" href="/about-shoreline/facts.aspx">Shoreline at a Glance</a></li>
     </ul>
   </div>
-</nav>                </nav>
-                
-                <main class="content-container" id="interior">
-                  <div class="content-section ">
+</nav>        </nav>
+                <!-- end if left nav -->
 
-                     
+        <main class="content-container" id="interior">
+          <div class="content-section ">
 
-                     <!-- if breadcrumb not in a content-header -->
-                    <div class="breadcrumb" aria-label="breadcrumb">
-                        <ol>
+             
+
+             
+            <!-- if breadcrumb not in a content-header -->
+            <div class="breadcrumb" aria-label="breadcrumb">
+                <ol>
     <li><a href="#">Home</a></li>
     <li><a href="#">Explore Programs</a></li>
     <li><a href="#">Transfer Programs</a></li>
     <li><a class="active" aria-current="page" href="#">Visual Arts</a></li>
   </ol>
-                      </div>
-                    
-                    
+              </div>
+            
+            
 <h1>Tuition Payment Plan</h1>
 <p>An important step in attending college is having a solid plan for covering the cost of attendance. If you don't have money to pay your tuition all at once, review the following information on setting up a payment plan through Nelnet.</p>
 <p>Start budgeting for your education today. Your payments will be lower the sooner you start. </p>
@@ -590,17 +595,17 @@
     </div>
  </section>
 
-                  </div>
-                </main>
-                
-              </div>
-              <!-- end layout has class-->
+          </div>
+        </main>
 
-            </div>
+        <!-- sidebar on -->
+                <!-- end sidebar on -->
 
-        </div>
-      </div>
-    </div>
+          </div> <!-- closing div for determining opening classes -->
+          <!-- end layout has class-->
+        </div> <!-- END #maincontent -->
+      </div><!-- END .container-fluid -->
+    </div><!-- END .layout-master page-interior -->
         <!-- end INTERIOR TEMPLATE -->
 
     <!-- all pages can have sectionals after main content -->

@@ -58,7 +58,8 @@
         <li class="float-right"><a class="nav-link" href="https://virtual.github.io/shoreline/timeline/index.html">Timeline</a></li>
       </ul> 
     </div>
-  </nav> <header id="header">
+  </nav> 
+  <header id="header">
   <div id="skiptocontent">
     <a href="#maincontent" title="Skip Main Navigation">Skip Main Navigation</a>
   </div>
@@ -288,17 +289,26 @@
     <div class="container-fluid">
       <div id="maincontent" class="flex-layout-body">
 
-                       <div class="x">
-                <!-- no sidebar, no left nav-->
-                  
-                <main class="content-container" id="interior">
-                  <div class="content-section ">
+        <!-- determining opening classes  -->
+         <!-- OFF left -->
 
-                     
+                        <div class="x"><!-- no sidebar, no left nav-->
+             
+                
+         <!-- END determining opening classes -->
+                
+        <!-- if left nav -->
+                <!-- end if left nav -->
 
-                     <!-- if breadcrumb not in a content-header -->
-                    <div class="breadcrumb" aria-label="breadcrumb">
-                         
+        <main class="content-container" id="interior">
+          <div class="content-section ">
+
+             
+
+             
+            <!-- if breadcrumb not in a content-header -->
+            <div class="breadcrumb" aria-label="breadcrumb">
+                 
 <ol>
     <li>
       <a href="http://www.example.com/books">Home</a> 
@@ -316,9 +326,9 @@
     <a class="active" aria-current="page" href="http://www.example.com/books/sciencefiction/awardwinners">Award Winners</a>
   </li>
 </ol> 
-                      </div>
-                    
-                     
+              </div>
+            
+             
 <h1>Default Header Colors</h1>
     <p>Lorem  n commodo ligula eget dolor. Aenean massa 
     <strong>strong</strong>. Cum sociis natoque penatibus 
@@ -572,17 +582,17 @@ ultricies nec, pellentesque eu, pretium quis, sem.</p>
 </div>  </div>
   </div>
   
-                  </div>
-                </main>
-                
-              </div>
-              <!-- end layout has class-->
+          </div>
+        </main>
 
-            </div>
+        <!-- sidebar on -->
+                <!-- end sidebar on -->
 
-        </div>
-      </div>
-    </div>
+          </div> <!-- closing div for determining opening classes -->
+          <!-- end layout has class-->
+        </div> <!-- END #maincontent -->
+      </div><!-- END .container-fluid -->
+    </div><!-- END .layout-master page-interior -->
         <!-- end INTERIOR TEMPLATE -->
 
     <!-- all pages can have sectionals after main content -->

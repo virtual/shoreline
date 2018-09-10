@@ -40,7 +40,8 @@
 </head>
 
 <body>
-  @include('_partials.topbar') @include('_partials.header')
+  @include('_partials.topbar') 
+  @include('_partials.header')
 
   <!-- PROGRAM OPTION TEMPLATE -->
   @if (trim($__env->yieldContent('layout-option')))
@@ -129,61 +130,68 @@
     <div class="container-fluid">
       <div id="maincontent" class="flex-layout-body">
 
+        <!-- determining opening classes  -->
         @if (trim($__env->yieldContent('left-nav')))
         <span class="debug">!!!! Layout has leftnav</span>
-        @if (trim($__env->yieldContent('main-sidebar-content')))
-        <span class="debug">!!!! Layout has sidebar</span>
-        <div class="layout-has-left-nav layout-has-sidebar">
+            
+          @if (trim($__env->yieldContent('main-sidebar-content')))
+          <span class="debug">!!!! Layout has sidebar</span>
+          <div class="layout-has-left-nav layout-has-sidebar">
           @else
           <div class="layout-has-left-nav">
-            @endif @else @if (trim($__env->yieldContent('main-sidebar-content')))
+          @endif <!-- end check main sidebar-->
+            
+        @else <!-- OFF left -->
+
+            @if (trim($__env->yieldContent('main-sidebar-content'))) <!-- check sidebar -->
             <div class="layout-has-sidebar">
-              @else
-              <div class="x">
-                <!-- no sidebar, no left nav-->
-                @endif @endif @if (trim($__env->yieldContent('left-nav')))
-                <nav class="left-nav">
-                  <!--<h2>
-            <span role="button" data-toggle="collapse" data-target="#submenu" aria-controls="submenu" aria-expanded="false" aria-label="Toggle navigation"
-              aria-hidden="true" class="fas fa-bars toggle">
-              <span class="sr-only">Expand Submenu</span>
-            </span> yield('menuheader')</h2>-->
-                  <a class="sr-only show-on-focus" href="#interior">Skip Navigation</a>
-                  @yield('left-nav')
-                </nav>
-                @endif
+            @else
+            <div class="x"><!-- no sidebar, no left nav-->
+            @endif 
+                
+        @endif <!-- END determining opening classes -->
+                
+        <!-- if left nav -->
+        @if (trim($__env->yieldContent('left-nav')))
+        <nav class="left-nav">
+          <a class="sr-only show-on-focus" href="#interior">Skip Navigation</a>
+          @yield('left-nav')
+        </nav>
+        @endif
+        <!-- end if left nav -->
 
-                <main class="content-container" id="interior">
-                  <div class="content-section ">
+        <main class="content-container" id="interior">
+          <div class="content-section ">
 
-                    @if (trim($__env->yieldContent('lead'))) 
-                      @yield('lead') 
-                    @endif 
+            @if (trim($__env->yieldContent('lead'))) 
+              @yield('lead') 
+            @endif 
 
-                    @if (!trim($__env->yieldContent('content-header'))) <!-- if breadcrumb not in a content-header -->
-                    <div class="breadcrumb" aria-label="breadcrumb">
-                        @yield('breadcrumb')
-                      </div>
-                    @endif
-
-                    @yield('content')
-                  </div>
-                </main>
-                @if (trim($__env->yieldContent('main-sidebar-content')))
-                <div class="sidebar-container">
-                  <span class="debug">!!!! SIDEBAR ON</span>
-                  @yield('main-sidebar-content')
-                </div>                
-                @endif
-
+            @if (!trim($__env->yieldContent('content-header'))) 
+            <!-- if breadcrumb not in a content-header -->
+            <div class="breadcrumb" aria-label="breadcrumb">
+                @yield('breadcrumb')
               </div>
-              <!-- end layout has class-->
+            @endif
 
-            </div>
+            @yield('content')
+          </div>
+        </main>
 
-        </div>
-      </div>
-    </div>
+        <!-- sidebar on -->
+        @if (trim($__env->yieldContent('main-sidebar-content')))
+        <div class="sidebar-container">
+          <span class="debug">!!!! SIDEBAR ON</span>
+          @yield('main-sidebar-content')
+        </div>                
+        @endif
+        <!-- end sidebar on -->
+
+          </div> <!-- closing div for determining opening classes -->
+          <!-- end layout has class-->
+        </div> <!-- END #maincontent -->
+      </div><!-- END .container-fluid -->
+    </div><!-- END .layout-master page-interior -->
     @endif
     <!-- end INTERIOR TEMPLATE -->
 
