@@ -1,14 +1,7 @@
 @extends('_layouts.master')
 
 @section('breadcrumb')
-<ol>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Explore Programs</a></li>
-    <li><a href="#">Transfer Programs</a></li>
-    <li><a href="#">Direct Transfer</a></li>
-    <li><a class="active" aria-current="page" href="#">Video Game Design</a></li>
-  </ol>
-
+@include('_partials.breadcrumbs')
 @endsection
 
 @section('content-header')

@@ -1,12 +1,7 @@
 @extends('_layouts.master')
 
 @section('breadcrumb')
-<ol>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Explore Programs</a></li>
-    <li><a href="#">Transfer Programs</a></li>
-    <li><a class="active" aria-current="page" href="#">Visual Arts</a></li>
-  </ol>
+@include('_partials.breadcrumbs')
 @endsection
 
  
@@ -59,7 +54,7 @@
 <p>&nbsp;</p>
 
 <div class="row">
-  <div class="col-12 col-sm-6">
+  <div class="col-md-6">
     <div class="card-link">
         <h4><button class="btn-toggle btn collapsed" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false"
         aria-controls="collapse1">
@@ -116,7 +111,7 @@
     </div>
   </div>
 
-  <div class="col-12 col-sm-6">
+  <div class="col-md-6">
     <div class="card-link">
         <h4><button class="btn-toggle btn collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false"
         aria-controls="collapse5">
