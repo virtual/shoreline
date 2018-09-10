@@ -112,7 +112,7 @@ p, ul, dl, ol {
 @media (min-width: $screen-md) {
   .contact-us-box {
     &> h2 { width: 100%; clear:both; text-align: center; }
-    address { display:flex; flex-direction: row; margin-bottom: 0; 
+    .content-blocks { display:flex; flex-direction: row; margin-bottom: 0; 
       .content-block { flex: 1; padding-right: .5rem;}
       h3 { margin-top:0;}
     }
@@ -122,7 +122,7 @@ p, ul, dl, ol {
 
 .address-sidebar > .contact-us-box {
   &> h2 { text-align: left; }
-  address { flex-direction: column}
+  .content-blocks { flex-direction: column}
   .content-block { width: 100%; }
 }
 
