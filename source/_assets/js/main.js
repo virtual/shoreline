@@ -184,4 +184,58 @@ function mew() {
   console.log('mew');
 }
 
+require('jquery-colorbox');
+// jquery-colorbox/jquery.colorbox-min.js
 
+// Start the namespace
+var shoreline = {
+  colorBox: function(){
+    $('.video-lightbox').colorbox({
+      iframe:true, 
+      width: "80%",
+      height: "60%",
+      maxWidth: "1000", 
+      maxHeight: "750",
+      transition: 'none',
+      onOpen: function(){ 
+        $("body").addClass('menu-open');
+      },
+      onClosed: function(){ 
+        $("body").removeClass('menu-open');
+      }
+    });
+
+    if(Modernizr.mq('(min-width: 700px)')){
+      $('.lightbox').colorbox({
+        maxWidth: "100%", 
+        maxHeight: "100%",
+        transition: 'none',
+        rel: 'lightbox',
+        onOpen: function(){ 
+          $("body").addClass('menu-open');
+        },
+        onClosed: function(){ 
+          $("body").removeClass('menu-open');
+        }
+      });
+  }
+
+  if(Modernizr.mq('(max-width: 700px)')){
+      $('.lightbox').colorbox({
+        maxWidth: "90%", 
+        maxHeight: "100%",
+        transition: 'none',
+        rel: 'lightbox',
+        onOpen: function(){ 
+          $("body").addClass('menu-open');
+        },
+        onClosed: function(){ 
+          $("body").removeClass('menu-open');
+        }
+      });
+  }
+
+  }
+};
+
+shoreline.colorBox();
