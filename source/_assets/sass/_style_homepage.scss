@@ -1,49 +1,49 @@
-.homepage-banner { background:#000;   background-size: cover;
-  background-position: center;
+.homepage-banner { 
+  background:$primary;   
+  background-size: contain;
+  background-position: top;
   background-repeat: no-repeat;
   overflow: hidden; 
   position: relative; 
 
-  .heading { font-size: 3.4375rem; line-height: 1.16; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); font-weight: 900;}
-  p { font-size: 1.5rem; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
+  .heading {
+    font-size: 2.4375rem;
+    line-height: 1.16;
+    font-weight: 900;
+  }
+  p { font-size: 1.5rem;  }
 }
 .homepage-banner .hero {
-  min-height: 670px;
+  min-height: auto;
   margin-top: 0;
-
+  padding-top: 50%;
 }
 .homepage-banner .hero.bg-primary {
   background-color:transparent !important;
- 
+}
+.homepage-banner .hero-caption {
+  padding: 1.5rem 1.5rem 2.5rem 1.5rem;
 }
 @media screen and (max-width: 900px) {
   .homepage-banner .hero .hero-image-wrapper {
     position: relative;
     height: auto;
     padding-bottom: 50%;
-}
+  }
 }
 .homepage-banner .hero .hero-image-wrapper {
-    background-size: cover;
-    position: absolute;
-    z-index:1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-position: center bottom;
-    background: linear-gradient(
-      to top,
-      #000,
-      rgba(#000, 0)
-    );
-    opacity:.5;
-
+  background-size: cover;
+  position: absolute;
+  z-index:1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center bottom;
 }
 .homepage-banner .hero-caption {
-  position: absolute;
+  position: relative;
   bottom: 0;
-  padding: 2.5rem;
   margin: 0 auto;
   max-width: 1200px;
   display: block;
@@ -55,7 +55,6 @@
   }
 }
 
-
 .homepage-expand {
   display:none; 
   &>.container-fluid { 
@@ -66,25 +65,64 @@
       z-index: 4;
       position: relative;
     }
-}
-&>.arrow-marker { 
-  position: relative;
-  max-width: 1200px;  
-  margin: 0 auto;
-}
+  }
+  &>.arrow-marker { 
+    position: relative;
+    max-width: 1200px;  
+    margin: 0 auto;
+  }
   &>.arrow-marker::before {
     content: "";
     position: absolute;
-    left: 6rem;
+    left: 4.5rem;
     width: 2rem;
     height: 2rem;
-    top: -1rem;
+    top: -.5rem;
     background-color: #fff;
-    /* border-top-right-radius: 2rem; */
     border-color: transparent;
-    /* border-top-left-radius: 2rem; */
     z-index: 2;
     transform: rotate(45deg);
   } 
 }
 .homepage-expand.show { display: block;}
+
+@media (min-width: $screen-sm) {
+  .homepage-expand>.arrow-marker::before {
+    left: 6rem;
+    top: -1rem;
+  }
+  .homepage-banner {
+    background: #000;
+    background-size: cover;
+    background-position: center;
+ 
+    p, .heading {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    .hero {
+      padding-bottom: 0;
+      padding-top:0;
+      min-height: 400px;
+    }
+    .hero .hero-image-wrapper {
+      background: linear-gradient(
+        to top,
+        #000,
+        rgba(#000, 0)
+      );
+      opacity:.5;
+    }
+    .hero-caption {
+      position: absolute;
+      padding: 2.5rem;
+    }
+  }
+}
+@media (min-width: $screen-lg) { 
+.homepage-banner .hero {
+    min-height: 670px;
+  }
+  .homepage-banner .heading {
+    font-size: 3.4375rem;  
+  }
+}

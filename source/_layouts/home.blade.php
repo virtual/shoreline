@@ -40,44 +40,59 @@
 
 <body>
   @include('_partials.topbar') @include('_partials.header')
-
-    
- <div class="homepage-banner-container">
-  <div class="homepage-banner hero-1 ">
-  @yield('hero1')
-
-</div>
-<div class="homepage-expand hero-1">
-  <div class="arrow-marker"></div>
-<div class="container-fluid">
-
-    @yield('content') 
-    </div>
-  </div>
-</div>
-
- 
-  <div class="py-5 bg-light">
-<div class="container-fluid">
-  @yield('icons1') 
-</div>
-</div>
- 
 <div class="homepage-banner-container">
+  <div class="homepage-banner hero-1 ">
+    @yield('hero1')
 
-<div class="homepage-banner hero-2 ">
-    @yield('hero2')
-  
   </div>
-<div class="homepage-expand hero-2">
+  <div class="homepage-expand hero-1">
     <div class="arrow-marker"></div>
+    <div class="container-fluid">
+
+      @yield('content')
+    </div>
+  </div>
+</div>
+
+
+<div class="py-5 bg-light">
   <div class="container-fluid">
-  
-      @yield('content') 
-      </div>
+    @yield('icons1')
+  </div>
+</div>
+
+<div class="homepage-banner-container">
+  <div class="homepage-banner hero-2 ">
+    @yield('hero2')
+  </div>
+
+  <div class="homepage-expand hero-2">
+    <div class="arrow-marker"></div>
+    <div class="container-fluid">
+      @yield('content')
     </div>
+  </div>
+</div>
+
+<div class="py-5 bg-light">
+  <div class="container-fluid">
+    @yield('icons2')
+  </div>
+</div>
+
+<div class="homepage-banner-container">
+  <div class="homepage-banner hero-3 ">
+    @yield('hero3')
+  </div>
+
+  <div class="homepage-expand hero-3">
+    <div class="arrow-marker"></div>
+    <div class="container-fluid">
+      @yield('content')
     </div>
-  
+  </div>
+</div>
+
 
 
 

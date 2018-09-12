@@ -2,23 +2,23 @@
 
 @section('hero1')
 <section class="hero left bg-primary">
-    <div class="hero-image-wrapper"></div><style type="text/css">
+    <div class="hero-image-wrapper"></div>
+    <style type="text/css">
  .homepage-banner.hero-1{
-   /* background-image: url(./resources/img/homepage/top/large2.jpg); */
-   background-image: url(./resources/img/stock/shoreline.williams185.jpg);
+   background-image: url(./resources/img/homepage/a1/large.jpg);
  }
  
- /* @media screen and (max-width: 900px) { 						
+ @media screen and (max-width: 900px) { 						
   .homepage-banner.hero-1 {
-   background-image: url(./resources/img/homepage/top/medium.jpg);
+   background-image: url(./resources/img/homepage/a1/medium.jpg);
    }
  } 
  
- @media screen and (max-width: 500px) {  
+ @media screen and (max-width: 479px) {  
   .homepage-banner.hero-1 {
-   background-image: url(./resources/img/homepage/top/small.jpg);
+   background-image: url(./resources/img/homepage/a1/small.jpg);
    }
- } 						 */
+ } 						 
 </style>
 <div class="hero-caption">
        <h2 class="heading">What type of student are you?</h2>
@@ -31,23 +31,53 @@
 
 @section('hero2')
 <section class="hero left bg-primary">
-    <div class="hero-image-wrapper"></div><style type="text/css">
- .homepage-banner.hero-2{
-   background-image: url(./resources/img/stock/shoreline.williams292.jpg);
- }
- 
- /* @media screen and (max-width: 900px) { 						
-  .homepage-banner.hero-2 {
-   background-image: url(./resources/img/homepage/bottom/medium.jpg);
-   }
- } 
- 
- @media screen and (max-width: 500px) {  
-  .homepage-banner.hero-2 {
-   background-image: url(./resources/img/homepage/bottom/small.jpg);
-   }
- } 						 */
-</style>
+    <div class="hero-image-wrapper"></div>
+    <style type="text/css">
+      .homepage-banner.hero-2{
+        background-image: url(./resources/img/homepage/a2/large.jpg);
+      }
+      
+      @media screen and (max-width: 900px) { 						
+       .homepage-banner.hero-2 {
+        background-image: url(./resources/img/homepage/a2/medium.jpg);
+        }
+      } 
+      
+      @media screen and (max-width: 479px) {  
+       .homepage-banner.hero-2 {
+        background-image: url(./resources/img/homepage/a2/small.jpg);
+        }
+      } 						 
+     </style>
+<div class="hero-caption">
+       <h2 class="heading">Fully invest in 
+        your future</h2>
+       <p class="desc">We help you inside and outside the classroom</p>
+       <div class="expand-wrapper"><a href="/" class="expand-button btn btn-primary">Expand</a></div>
+    </div>
+ </section>
+@endsection
+
+@section('hero3')
+<section class="hero left bg-primary">
+    <div class="hero-image-wrapper"></div>
+    <style type="text/css">
+      .homepage-banner.hero-3{
+        background-image: url(./resources/img/homepage/a3/large.jpg);
+      }
+      
+      @media screen and (max-width: 900px) { 						
+       .homepage-banner.hero-3 {
+        background-image: url(./resources/img/homepage/a3/medium.jpg);
+        }
+      } 
+      
+      @media screen and (max-width: 479px) {  
+       .homepage-banner.hero-3 {
+        background-image: url(./resources/img/homepage/a3/small.jpg);
+        }
+      } 						 
+     </style>
 <div class="hero-caption">
        <h2 class="heading">Build a career and community</h2>
        <p class="desc">Forming partnerships for a healthy human, economic, and natural environment</p>
@@ -55,6 +85,7 @@
     </div>
  </section>
 @endsection
+
 
 @section('content')
  
@@ -118,7 +149,7 @@
         @include('_partials.featureicon', [
         'heading' => '140+',
         'desc' => 'Scholarships awarded annually',
-        'iconalt' => 'quote',
+        'iconalt' => 'badge',
         'icon' => './resources/img/icons/homepage/badge.png',          
         'buttontext' => 'Find Scholarships',
         'link' => '#'
@@ -128,6 +159,45 @@
 </div>
 @endsection
 
+
+@section ('icons2') 
+
+<div class="row">
+    <div class="col-12 col-sm-4">
+        @include('_partials.featureicon', [
+        'heading' => '14.4m',
+        'desc' => 'Average amount of financial air awarded annually',
+        'iconalt' => 'dollar',     
+        'icon' => './resources/img/icons/homepage/dollar.png',          
+        'buttontext' => 'Apply for Financial Aid',
+        'link' => '#'
+        ])
+  
+    </div>
+    <div class="col-12 col-sm-4">
+        @include('_partials.featureicon', [
+        'heading' => '178+',
+        'desc' => 'Universities to which our students have transferred',
+        'iconalt' => 'arrows',          
+        'icon' => './resources/img/icons/homepage/arrows.png',          
+        'buttontext' => 'See Transfer Destinations',
+        'link' => '#'
+        ])
+  
+    </div>
+    <div class="col-12 col-sm-4">
+        @include('_partials.featureicon', [
+        'heading' => '60+',
+        'desc' => 'Shows & events in the campus theater each year',
+        'iconalt' => 'mask',
+        'icon' => './resources/img/icons/homepage/mask.png',          
+        'buttontext' => 'More about the Theater',
+        'link' => '#'
+        ])
+  
+    </div>
+</div>
+@endsection
  
 
   @section('sectionals')
