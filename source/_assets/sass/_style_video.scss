@@ -1,4 +1,5 @@
 .video-container { clear:both; 
+  margin-top: 1rem; margin-bottom: 1rem;
   .video-lightbox { display:flex;
     align-items: center;
     justify-content: center;}
@@ -15,9 +16,28 @@
       background-color: transparent;
       padding: 0 10px 10px 0;
       margin-bottom: 0.70625rem; 
+      width: 100%;
     }
   }
+  .card-title { margin-bottom: 0;color: $primary;}
 
-  h3 { color: $primary; }
   .btn { color: $link-blue; background-color:#fff; }
+}
+.video-box-content { padding:1rem 0;}
+.video-box-image, .video-box-content { width: 100%; }
+@media (min-width: 640px) {
+  .video-box { display: flex; align-items: center; } 
+  .video-box-content {  padding: 0 1rem 1rem 1rem; } 
+  .video-box-image, .video-box-content { flex: 1;}
+}
+@media (min-width: $screen-md) {
+  .video-box-image { flex: 1 1 41.6%; }
+  .video-box-content { flex: 1 1 58.4%; }
+}
+@media (min-width: 640px) and (max-width:$screen-lg - 1px) {  
+.layout-has-sidebar {
+  .video-box { display:block;}
+  .video-box-image, .video-box-content { flex: none; width: 100%;}
+  .video-box-content { padding:1rem 0;}
+  }
 }
