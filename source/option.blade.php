@@ -7,17 +7,19 @@
 @section('content-header')
 <div class="header-info">
   <h1>Video Game Design</h1>
-
-  <dl class="dl-inline dl-small-header">
-    <dt>Department</dt>
-    <dd><a href="/">VCT</a></dd>
-  </dl>
-  <dl class="dl-inline dl-small-header">
-    <dt>Program</dt>
-    <dd><a href="{{ $page->baseUrl }}/program">Visual Arts</a></dd>
-  </dl>
 </div>
 
+@endsection
+
+@section('content-header-unused') 
+<dl class="dl-inline dl-small-header">
+  <dt>Department</dt>
+  <dd><a href="/">VCT</a></dd>
+</dl>
+<dl class="dl-inline dl-small-header">
+  <dt>Program</dt>
+  <dd><a href="{{ $page->baseUrl }}/program">Visual Arts</a></dd>
+</dl>
 @endsection
 
 @section ('lead') 
@@ -78,6 +80,7 @@
 </section>
 <section class="sectional sectional-padded">
   <div class="container-fluid">
+      <div class="content-container"> 
      <h2 tabindex="-1" id="opportunities">Careers &amp; Opportunities</h2>
      <ul>
      <li>Earned grades of at least 2.0 in college level required non-nursing courses</li>
@@ -93,9 +96,12 @@
      <li>MATH 146* (Statistics) – 5 credits</li>
     </ul>
   </div>
+  </div>
 </section>
 <section class="sectional sectional-padded">
   <div class="container-fluid">
+      <div class="layout-has-sidebar">
+          <div class="content-container"> 
      <h2 tabindex="-1" id="start">Get Started</h2>
      <p>Uniquely optimize resource sucking outsourcing through user friendly methods of empowerment.
         Credibly maintain premium methods of empowerment for enterprise-wide channels. Proactively
@@ -109,16 +115,57 @@
         seize process-centric action items via best-of-breed initiatives. Assertively exploit
         business.
      </p>
-  </div>
-</section>
-<section class="sectional sectional-padded">
-  <div class="container-fluid">
-     <h2 tabindex="-1" id="related">Related Programs</h2>
+     <p><a class="btn btn-important" href="/apply-and-aid/apply.aspx">Apply Now</a></p>
+
+     <h3 class="mt-5" tabindex="-1" id="related">Related Programs</h3>
      <ul>
         <li><a href="https://test.shoreline.edu//programs/visual-communication-technology/web-design.aspx">Web Design AAAS</a></li>
+        <li><a href="https://test.shoreline.edu//programs/visual-communication-technology/web-design.aspx">Graphic Design AAAS
+
+        </a></li>
+        <li><a href="https://test.shoreline.edu//programs/visual-communication-technology/web-design.aspx">UX Design Certificate</a></li>
+        <li><a href="https://test.shoreline.edu//programs/visual-communication-technology/web-design.aspx">Studio Arts  AFA</a></li>
      </ul>
+
+     <h3 class="mt-5" tabindex="-1" id="explore">Explore the Visual Arts Department</h3>
+     <div class="card">
+      <div class="card-body"> 
+        <div class="row">
+          <div class="col-sm-6">
+            <ul class="card-links card-links-compact">
+              <li><a href="#">Programs</a></li>
+              <li><a href="#">Courses</a></li>
+              <li><a href="#">Faculty & Staff</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <ul class="card-links card-links-compact">
+              <li><a href="#">Student Clubs</a></li>
+              <li><a href="#">Planning Guides</a></li>
+              <li><a href="#">Student Work</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+     </div>
+     </div>
+     <div class="sidebar-container">
+        @include('_partials.card', [
+        'heading' => 'Prepare for college',
+        'iconalt' => '',
+        'icon' => '',   
+        'desc' => 'Need to prepare for college? Earn a GED, get your Highschool Dimploma, improve your Math & English',
+        'link' => '#'
+        ]) 
+
+     </div>
+     </div>
   </div>
 </section>
+ 
+
+
+
 @endsection
 
 @section('overview-nav')

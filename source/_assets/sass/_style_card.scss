@@ -71,6 +71,13 @@ main, .content-container, .sectional, * {
   { &> .card-links li:first-child { border-top:0; }
 
   }
+  @media (min-width: $screen-sm)  {
+  .card-body {
+    .card-links { margin-top:0 !important; margin-bottom:0 !important; }
+    .card-links li:first-child { border-top:0 !important; }
+    .card-links li:last-child { border-bottom:0 !important; }
+  }
+}
 
 @media (min-width: $screen-sm)  {
   [class*="col-sm-"] {

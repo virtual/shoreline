@@ -43,16 +43,19 @@ jQuery(document).ready(function() {
 
     
     var _d=$((e.target).closest('.homepage-banner')).siblings('.homepage-expand');
-    console.log(_d);
 
     if ((_d).hasClass('show')) {
-      console.log('remove')
+      // Close the element, change it to hidden
+      $(this).parents('.homepage-banner-container').removeClass("expanded");
+      $(this).text('Expand')
+      $(this).attr('aria-expanded', 'false');
       $(_d).removeClass('show')
     } else {
-      console.log('add')
+      $(this).parents('.homepage-banner-container').addClass("expanded");
+      $(this).text('Close');
+      $(this).attr('aria-expanded', 'true');
+      $(_d).addClass('show')
       
-      $(_d).removeClass('show')
-      _d.addClass('show');
     }
      
   });

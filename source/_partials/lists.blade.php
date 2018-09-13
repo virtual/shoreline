@@ -1,4 +1,4 @@
-<div class="row entry">
+<div class="row">
   <div class="col-sm-4">
     <h4>Features Checklist <kbd class="small">ul.features</kbd></h4>
     <ul class="features">
@@ -31,7 +31,28 @@
     </ul>
   </div>
 </div>
-
+<div class="row">
+  <div class="col-sm-6">
+    <h4>Negative Checklist <kbd class="small">ul.icon-x</kbd></h4>
+    <ul class="icon-x">
+      <li><strong>Don't</strong> forget to feed the cat</li>
+      <li>Outcomes &amp; Careers</li>
+      <li>Outcomes &amp; Careers</li>
+      <li>Outcomes &amp; Careers</li>
+      <li>Outcomes &amp; Careers</li>
+    </ul>
+  </div>
+  <div class="col-sm-6">
+    <h4>Checkbox Checklist (not interactive) <kbd class="small">ul.icon-box</kbd></h4>
+    <ul class="icon-box">
+      <li>Outcomes &amp; Careers Outcomes &amp; Careers Outcomes &amp; Careers</li>
+      <li>Outcomes &amp; Careers</li>
+      <li>Outcomes &amp; Careers</li>
+      <li>Outcomes &amp; Careers</li>
+      <li>Outcomes &amp; Careers</li>
+    </ul>
+  </div>
+</div>
 <h2>Definition List Default  <kbd class="small">dl</kbd></h2>
 <dl>
     <dt>University of Washington</dt>

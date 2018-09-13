@@ -19,6 +19,14 @@
         <div class="table-wrapper-inner">
 
           @include('_partials.table-stacked')
+
+          @include('_partials.card', [
+          'heading' => 'Ways to pay for college',
+          'iconalt' => '',
+          'icon' => '',   
+          'desc' => 'Learn how you can fund your education including financial aid, scholarships, workforce and more.',
+          'link' => '#'
+          ]) 
         </div>
 
       </div>

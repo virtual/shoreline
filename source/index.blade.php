@@ -23,7 +23,7 @@
 <div class="hero-caption">
        <h2 class="heading">What type of student are you?</h2>
        <p class="desc">Shoreline has programs for all stages of life</p>
-       <div class="expand-wrapper"><a href="/" class="expand-button btn btn-primary">Expand</a></div>
+       <div class="expand-wrapper"><button aria-expanded="false" class="expand-button btn btn-primary">Expand</button></div>
     </div>
  </section>
 @endsection
@@ -53,7 +53,7 @@
        <h2 class="heading">Fully invest in 
         your future</h2>
        <p class="desc">We help you inside and outside the classroom</p>
-       <div class="expand-wrapper"><a href="/" class="expand-button btn btn-primary">Expand</a></div>
+       <div class="expand-wrapper"><button aria-expanded="false" class="expand-button btn btn-primary">Expand</button></div>
     </div>
  </section>
 @endsection
@@ -81,7 +81,7 @@
 <div class="hero-caption">
        <h2 class="heading">Build a career and community</h2>
        <p class="desc">Forming partnerships for a healthy human, economic, and natural environment</p>
-       <div class="expand-wrapper"><a href="/" class="expand-button btn btn-primary">Expand</a></div>
+       <div class="expand-wrapper"><button aria-expanded="false" class="expand-button btn btn-primary">Expand</button></div>
     </div>
  </section>
 @endsection

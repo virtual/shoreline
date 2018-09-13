@@ -159,15 +159,16 @@ ul, ol {
     strong { font-size: 1.5rem; }
   }
 }
-ul.features {
+
+ul.features, ul.icon-check, ul.icon-x, ul.icon-box {
   li:before {
     content: "";
     font-size: 1em;
-    left: -1;
+    left: -1.5rem;
     margin-right: 1rem;
     float:left;
     padding-top:0;
-    top: .5rem;
+    top: .25rem;
     background:none;
     background-size: 1rem;
     background-repeat: no-repeat; 
@@ -191,6 +192,12 @@ ul.features {
       left: -2rem;
     }
   }
+}
+ul.icon-x li:before {
+    background-image:url('../../resources/img/icons/times.svg');
+}
+ul.icon-box li:before {
+  background-image:url('../../resources/img/icons/square-o.svg');
 }
 .large-list {
   font-size: 1.5rem;
@@ -250,6 +257,13 @@ ul.list-unstyled, ol.list-unstyled, %list-unstyled {
     flex: initial; 
   }
 } 
+@media (min-width: $screen-md) {
+  ul.features, ul.icon-check, ul.icon-x, ul.icon-box {
+    li:before {
+    top: .5rem;
+    }
+  }
+}
 .tab-content { padding: 1rem 0;}
 
 .list-bulleted {
