@@ -1,3 +1,6 @@
+.homepage-banner .expand-button { 
+  width: 8rem;
+}
 .homepage-banner { 
   background:$primary;   
   background-size: contain;
@@ -56,7 +59,10 @@
 }
 
 .homepage-expand {
-  display:none; 
+  max-height:0;
+  overflow: hidden;
+  transition: max-height .3s ease-in-out;
+
   &>.container-fluid { 
     position: relative;
     padding-top: 2rem;
@@ -84,7 +90,7 @@
     transform: rotate(45deg);
   } 
 }
-.homepage-expand.show { display: block;}
+.homepage-expand.show { max-height: 1000px; overflow: initial }
 
 @media (min-width: $screen-sm) {
   .homepage-expand>.arrow-marker::before {

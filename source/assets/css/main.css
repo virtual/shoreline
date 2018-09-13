@@ -5147,6 +5147,10 @@ header#header {
   line-height: 1.5;
 }
 
+.featureicon p a.btn:hover {
+  text-decoration: underline;
+}
+
 .featureicon h3 {
   color: #00685e;
   font-size: 3rem;
@@ -5193,6 +5197,10 @@ header#header {
 .header-content .fa-container.fa-2x:before {
   position: relative;
   top: .5rem;
+}
+
+.homepage-banner .expand-button {
+  width: 8rem;
 }
 
 .homepage-banner {
@@ -5263,7 +5271,10 @@ header#header {
 }
 
 .homepage-expand {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height .3s ease-in-out;
+  transition: max-height .3s ease-in-out;
 }
 
 .homepage-expand > .container-fluid {
@@ -5298,7 +5309,8 @@ header#header {
 }
 
 .homepage-expand.show {
-  display: block;
+  max-height: 1000px;
+  overflow: initial;
 }
 
 @media (min-width: 480px) {
