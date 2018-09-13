@@ -1,7 +1,7 @@
 <form class="siteSearch" role="search" method="GET" action="/search/SearchRedir.aspx">
   <div class="input-group main-search" role="search">
     <span class="input-group-prepend">
-      <button class="input-group-text bg-transparent" name="SubmitSearch" type="submit">
+      <button tabindex="-1" class="input-group-text bg-transparent" name="SubmitSearch" type="submit">
         <span class="fa fa-search primary"></span>
         <span class="sr-only">Search</span>
       </button>

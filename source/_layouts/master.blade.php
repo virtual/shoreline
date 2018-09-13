@@ -46,7 +46,7 @@
   <!-- PROGRAM OPTION TEMPLATE -->
   @if (trim($__env->yieldContent('layout-option')))
   <span class="debug">!!!! content</span>
-  <div class="layout-master program-option">
+  <div class="layout-master program-option" id="maincontent">
     <div class="bg-primary content-header">
       <span class="debug">!!!! PROGRAM OPTION</span>
       <div class="container-fluid">
@@ -67,10 +67,10 @@
 
     <!-- main content -->
     <div class="container-fluid">
-      <div id="maincontent" class="flex-layout-body">
+      <div class="flex-layout-body">
         <div class="debug">Main content</div>
         <div class="layout-has-sidebar">
-          <main class="content-container" id="interior">
+          <main class="content-container">
             <div class="content-section ">
               @yield('content')
             </div>
@@ -83,7 +83,7 @@
                 aria-hidden="true" class="fas fa-bars toggle">
                 <span class="sr-only">Expand Submenu</span>
               </span> yield('menuheader')</h2>-->
-              <a class="sr-only show-on-focus" href="#interior">Skip Navigation</a>
+              <a class="sr-only show-on-focus" href="#sectionals">Skip Navigation</a>
               @yield('overview-nav')
             </nav>
           </div>
@@ -97,7 +97,7 @@
   @else
   <!-- INTERIOR TEMPLATE - Not program option template -->
   <span class="debug">!!!! interior template</span>
-  <div class="layout-master page-interior">
+  <div class="layout-master page-interior" id="maincontent">
 
     <!-- CONTENT HEADER ON -->
     @if (trim($__env->yieldContent('content-header')))
@@ -160,7 +160,7 @@
         @endif
         <!-- end if left nav -->
 
-        <main class="content-container" id="interior">
+        <main class="content-container">
           <div class="content-section ">
 
             @if (trim($__env->yieldContent('lead'))) 
@@ -170,17 +170,19 @@
             @if (!trim($__env->yieldContent('content-header'))) 
             <!-- if breadcrumb not in a content-header -->
             <div class="breadcrumb" aria-label="breadcrumb">
-                @yield('breadcrumb')
-              </div>
+              @yield('breadcrumb')
+            </div>
             @endif
 
-            @yield('content')
+            <div id="interior">
+              @yield('content')
+            </div>
           </div>
         </main>
 
         <!-- sidebar on -->
         @if (trim($__env->yieldContent('main-sidebar-content')))
-        <div class="sidebar-container">
+        <div id="sidebar" class="sidebar-container">
           <span class="debug">!!!! SIDEBAR ON</span>
           @yield('main-sidebar-content')
         </div>                
@@ -196,8 +198,11 @@
     <!-- end INTERIOR TEMPLATE -->
 
     <!-- all pages can have sectionals after main content -->
-    @if (trim($__env->yieldContent('sectionals'))) @yield('sectionals') @endif
-
+    
+    @if (trim($__env->yieldContent('sectionals')))
+      <div id="sectionals"> @yield('sectionals') 
+    </div>
+    @endif
 
     <!-- FOOTER -->
     <div id="footer">

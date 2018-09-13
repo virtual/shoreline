@@ -72,6 +72,15 @@ header#header {
     font-size: 1rem;
     height: auto;
   }
+ transition:border-color .02s ease;
+  &:focus-within {
+    
+    .input-group-prepend> .input-group-text, .entersearch {
+      // border: 1px solid #0f0;
+      box-shadow: none;
+      border-color: $primary !important;
+    }
+  }
 }
 .navmenu .navbar-brand {
   padding: 8px 0;

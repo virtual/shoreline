@@ -40,6 +40,7 @@
 
 <body>
   @include('_partials.topbar') @include('_partials.header')
+  <main id="maincontent">
 <div class="homepage-banner-container">
   <div class="homepage-banner hero-1 ">
     @yield('hero1')
@@ -92,7 +93,7 @@
     </div>
   </div>
 </div>
-
+</main>
 
 
 

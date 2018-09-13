@@ -34,7 +34,7 @@
   <div class="container-fluid">
       <div class="layout-has-sidebar">
     <div class="content-container"> 
-     <h2 tabindex="-1" id="outcomes" class="primary">Outcomes &amp; Careers</h2>
+     <h2 tabindex="-1" id="learn" class="primary">What You'll Learn</h2>
      
      <h3>What you'll learn</h3>
      <ul>
@@ -78,7 +78,7 @@
 </section>
 <section class="sectional sectional-padded">
   <div class="container-fluid">
-     <h2 tabindex="-1" id="reqs">Eligiblity &amp; Requirements</h2>
+     <h2 tabindex="-1" id="opportunities">Careers &amp; Opportunities</h2>
      <ul>
      <li>Earned grades of at least 2.0 in college level required non-nursing courses</li>
      <li>Placement test scores taken no more than one year prior to the first day of the application period with the following minimum test scores: Math placement above intermediate algebra (MATH 099); English Reading and Writing placement into ENGL& 101</li>
@@ -96,7 +96,7 @@
 </section>
 <section class="sectional sectional-padded">
   <div class="container-fluid">
-     <h2 tabindex="-1" id="apply">How to Apply</h2>
+     <h2 tabindex="-1" id="start">Get Started</h2>
      <p>Uniquely optimize resource sucking outsourcing through user friendly methods of empowerment.
         Credibly maintain premium methods of empowerment for enterprise-wide channels. Proactively
         seize cutting-edge methodologies through reliable core competencies. Continually pursue
@@ -127,10 +127,9 @@
     <h2>On this page</h2>
     <ul class="list-unstyled">
         <li><a class="scrollable" href="#overview">Overview</a></li>
-        <li><a class="scrollable" href="#outcomes">Outcomes &amp; Careers</a></li>
-        <li><a class="scrollable" href="#reqs">Eligibility &amp; Requirements</a></li>
-        <li><a class="scrollable" href="#apply">How to Apply</a></li>
-        <li><a class="scrollable" href="#related">Related Programs</a></li>
+        <li><a class="scrollable" href="#learn">What You'll Learn</a></li>
+        <li><a class="scrollable" href="#opportunities">Careers &amp; Opportunities</a></li>
+        <li><a class="scrollable" href="#start">Get Started</a></li>
     </ul>
   </div>
  </div>
