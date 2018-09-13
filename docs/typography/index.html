@@ -93,7 +93,7 @@
           <form class="siteSearch" role="search" method="GET" action="/search/SearchRedir.aspx">
   <div class="input-group main-search" role="search">
     <span class="input-group-prepend">
-      <button class="input-group-text bg-transparent" name="SubmitSearch" type="submit">
+      <button tabindex="-1" class="input-group-text bg-transparent" name="SubmitSearch" type="submit">
         <span class="fa fa-search primary"></span>
         <span class="sr-only">Search</span>
       </button>
@@ -138,7 +138,7 @@
           <form class="siteSearch" role="search" method="GET" action="/search/SearchRedir.aspx">
   <div class="input-group main-search" role="search">
     <span class="input-group-prepend">
-      <button class="input-group-text bg-transparent" name="SubmitSearch" type="submit">
+      <button tabindex="-1" class="input-group-text bg-transparent" name="SubmitSearch" type="submit">
         <span class="fa fa-search primary"></span>
         <span class="sr-only">Search</span>
       </button>
@@ -281,7 +281,7 @@
   <!-- PROGRAM OPTION TEMPLATE -->
     <!-- INTERIOR TEMPLATE - Not program option template -->
   <span class="debug">!!!! interior template</span>
-  <div class="layout-master page-interior">
+  <div class="layout-master page-interior" id="maincontent">
 
     <!-- CONTENT HEADER ON -->
     
@@ -300,7 +300,7 @@
         <!-- if left nav -->
                 <!-- end if left nav -->
 
-        <main class="content-container" id="interior">
+        <main class="content-container">
           <div class="content-section ">
 
              
@@ -308,7 +308,7 @@
              
             <!-- if breadcrumb not in a content-header -->
             <div class="breadcrumb" aria-label="breadcrumb">
-                 
+               
 <ol>
     <li>
       <a href="http://www.example.com/books">Home</a> 
@@ -326,9 +326,10 @@
     <a class="active" aria-current="page" href="http://www.example.com/books/sciencefiction/awardwinners">Award Winners</a>
   </li>
 </ol> 
-              </div>
+            </div>
             
-             
+            <div id="interior">
+               
 <h1>Default Header Colors</h1>
     <p>Lorem  n commodo ligula eget dolor. Aenean massa 
     <strong>strong</strong>. Cum sociis natoque penatibus 
@@ -582,6 +583,7 @@ ultricies nec, pellentesque eu, pretium quis, sem.</p>
 </div>  </div>
   </div>
   
+            </div>
           </div>
         </main>
 
@@ -597,7 +599,7 @@ ultricies nec, pellentesque eu, pretium quis, sem.</p>
 
     <!-- all pages can have sectionals after main content -->
     
-
+    
     <!-- FOOTER -->
     <div id="footer">
       <footer>
