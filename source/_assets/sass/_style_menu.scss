@@ -13,6 +13,7 @@
   }
 }
 
+.nav .d-flex > * { min-height:0; overflow:hidden;   }  
 .navbar-toggler {
   text-align: left;
   padding-top: 15px;
