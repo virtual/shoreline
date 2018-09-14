@@ -2094,13 +2094,15 @@ main .card-links.card-links-compact a, .content-container .card-links.card-links
   max-width: initial;
   color: #0074b3;
   margin-bottom: 1rem;
-  -webkit-filter: hue-rotate(210deg);
-          filter: hue-rotate(210deg);
+  -webkit-transition: -webkit-filter .3s ease-in-out;
+  transition: -webkit-filter .3s ease-in-out;
+  transition: filter .3s ease-in-out;
+  transition: filter .3s ease-in-out, -webkit-filter .3s ease-in-out;
 }
 
 .card-icon:hover .icon img {
-  -webkit-filter: hue-rotate(220deg);
-          filter: hue-rotate(220deg);
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
 }
 
 /* row of links with image headers */

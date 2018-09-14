@@ -258,10 +258,10 @@ main, .content-container, .sectional, * {
     max-width: initial;
     color: $link-blue;
     margin-bottom: 1rem;
-    filter: hue-rotate(210deg); // change from red to blue
+    transition: filter .3s ease-in-out;
   }
   &:hover .icon img {
-    filter: hue-rotate(220deg); // change from red to blue
+    filter: brightness(80%);
   }
 }
 
