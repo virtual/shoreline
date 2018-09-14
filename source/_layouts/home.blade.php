@@ -56,7 +56,7 @@
 </div>
 
 
-<div class="py-5 bg-light">
+<div class="featureicon-container py-5 bg-light">
   <div class="container-fluid">
     @yield('icons1')
   </div>
@@ -75,7 +75,7 @@
   </div>
 </div>
 
-<div class="py-5 bg-light">
+<div class="featureicon-container py-5 bg-light">
   <div class="container-fluid">
     @yield('icons2')
   </div>

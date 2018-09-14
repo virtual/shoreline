@@ -57,11 +57,18 @@
     max-width: 600px;
   }
 }
-
+.homepage-expand.show {
+  &>.arrow-marker::before { 
+    display: block; 
+  } 
+}
 .homepage-expand {
-  max-height:0;
-  overflow: hidden;
-  transition: max-height .3s ease-in-out;
+  transform: scaleY(0); 
+  max-height: 0;
+  overflow: none;
+  transition: max-height 500ms ease-in-out;
+  position: relative;
+  z-index: 1;
 
   &>.container-fluid { 
     position: relative;
@@ -79,6 +86,7 @@
   }
   &>.arrow-marker::before {
     content: "";
+    display: none; 
     position: absolute;
     left: 4.5rem;
     width: 2rem;
@@ -90,8 +98,12 @@
     transform: rotate(45deg);
   } 
 }
-.homepage-expand.show { max-height: 1000px; overflow: initial }
-
+.homepage-expand.show { 
+  max-height: 999px;
+   overflow: initial; 
+  transform: scaleY(1); 
+  transition: max-height 500ms ease-in-out;
+}
 @media (min-width: $screen-sm) {
   .homepage-expand>.arrow-marker::before {
     left: 6rem;
