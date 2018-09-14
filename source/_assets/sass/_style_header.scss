@@ -56,6 +56,8 @@ header#header {
   }  
 }
 .main-search{
+  width: 100%; 
+  min-width: 100px;
   &.input-group > label .form-control {
     border-top-right-radius: 999px;
     border-bottom-right-radius: 999px;
@@ -70,7 +72,7 @@ header#header {
     border-color: rgba(0, 0, 0, 0.2) !important;
     padding-left:0;
     font-size: 1rem;
-    height: auto;
+    height: auto; 
   }
  transition:border-color .02s ease;
   &:focus-within {

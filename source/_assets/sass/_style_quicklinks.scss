@@ -3,9 +3,10 @@
 }
 
 .quicklinks {
-  font-size: .8125rem;
+  font-size: .875rem;
   position: relative;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  a { padding: 2px 16px; }
   a.btn-important {
     color: #fff;
     min-width: 97px;
@@ -32,11 +33,14 @@
 
 .quicklinks.list-2 {
   padding: 1.1875rem 0;
+  a { padding-right: 10px; padding-left: 10px;}
 }
 
 @media (min-width: $screen-lg) {
   .quicklinks.list-1 {
     float:none;
+    a { border-right: 1px solid #ccc; }
+    li:last-child a { border-right:0;}
   }
   .quicklinks,
   .quicklinks.list-2 {
@@ -49,10 +53,9 @@
     .has-button {
       top: -.25rem;
       position: relative;
+      margin-left: 10px;
       .btn { margin-top:0; margin-bottom:0;}
     }
-    
-   
   }
   .quicklinks:first-of-type {
     border-top: 0;

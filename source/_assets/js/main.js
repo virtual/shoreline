@@ -40,24 +40,18 @@ jQuery(document).ready(function() {
   $('body').on('click','.expand-button',function(e){
     e.preventDefault();
     e.stopPropagation();
-
     
-    var _d=$((e.target).closest('.homepage-banner')).siblings('.homepage-expand');
-
+    var _d=$(this).closest('.homepage-banner').siblings('.homepage-expand');
     if ((_d).hasClass('show')) {
       // Close the element, change it to hidden
       $(this).parents('.homepage-banner-container').removeClass("expanded");
-      $(this).text('Expand')
-      $(this).attr('aria-expanded', 'false');
+      $(this).attr('aria-expanded', 'false').text('Expand');
       $(_d).removeClass('show')
     } else {
       $(this).parents('.homepage-banner-container').addClass("expanded");
-      $(this).text('Close');
-      $(this).attr('aria-expanded', 'true');
+      $(this).attr('aria-expanded', 'true').text('Close');
       $(_d).addClass('show')
-      
     }
-     
   });
 
   // // Smooth scroll to anchor
