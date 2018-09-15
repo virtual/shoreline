@@ -10,13 +10,13 @@
         <!-- H1 on homepage only -->
         <h1>
           <a class="navbar-brand" href="/">
-            <img src="{{ $page->baseUrl }}/resources/img/logos/shoreline-color.png" alt="Shoreline Community College" />
+            <img src="{{ $page->baseUrl }}/resources/img/logos/logo-full.png" alt="Shoreline Community College" />
             <span class="sr-only">Shoreline Community College</span>
           </a>
         </h1>
         @else
         <a class="navbar-brand" href="/">
-          <img src="{{ $page->baseUrl }}/resources/img/logos/shoreline-color.png" alt="Shoreline Community College" />
+          <img src="{{ $page->baseUrl }}/resources/img/logos/logo-full.png" alt="Shoreline Community College" />
           <span class="sr-only">Shoreline Community College</span>
         </a>
         @endif
