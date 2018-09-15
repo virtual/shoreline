@@ -2523,21 +2523,34 @@ img.rounded {
   top: 0px;
 }
 
+#mobile-menu-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 #mobile-menu-button .menubaricon {
-  width: 1rem;
-  height: 1rem;
+  width: 1.3rem;
+  height: 1.3rem;
 }
 
 #mobile-menu-button .menubartext {
   display: inline-block;
   position: relative;
   top: -.1rem;
-  font-size: 13px;
+  font-size: 14px;
+  padding-left: .5rem;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.85;
   letter-spacing: normal;
+}
+
+#mobile-menu-button .menubaricon, #mobile-menu-button .menubartext {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 #mobile-menu-button .menubaricon rect {
@@ -2552,6 +2565,7 @@ img.rounded {
 
 #mobile-search-button {
   text-align: right;
+  font-size: 1.3rem;
 }
 
 .quote-feature {
@@ -4317,7 +4331,7 @@ header#header {
   line-height: 1.2rem;
   padding: 25px 10px 25px 0;
   font-family: Georgia;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -4331,7 +4345,7 @@ header#header {
   clear: both;
   display: block;
   font-family: "Libre Franklin", Tahoma, Verdana, Segoe, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, "Geneva", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 9px;
+  font-size: .375em;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -4578,9 +4592,11 @@ header#header {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 20%;
           flex: 1 1 20%;
+  position: relative;
 }
 
 .flex-button .navbar-toggler {
+  height: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
 }

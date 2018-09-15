@@ -25,18 +25,21 @@
 }
 
 #mobile-menu-button {
-  .menubaricon { width: 1rem; height: 1rem; } 
+  display:flex;
+  .menubaricon { width: 1.3rem; height: 1.3rem; } 
   .menubartext {
     display: inline-block;
     position: relative;
     top: -.1rem;
-    font-size: 13px;
+    font-size: 14px;
+    padding-left: .5rem;
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.85;
     letter-spacing: normal; 
   }
+  .menubaricon, .menubartext { flex: 1;}
   .menubaricon rect {fill:#12685E;transition: all .15s ease-out;}
   &:hover, &:focus, &:active {
     .menubar3 { width: 80px;}
@@ -44,4 +47,5 @@
 }
 #mobile-search-button {
   text-align:right;
+  font-size: 1.3rem;
 }

@@ -16,8 +16,9 @@
 .flex-button {
   text-align: left;
   flex: 1 1 20%;  
-  // display: flex;
+  position: relative;
   .navbar-toggler {  
+    height: 100%; // center it vertically
     padding-top: 15px;
     padding-bottom: 15px;
   }
