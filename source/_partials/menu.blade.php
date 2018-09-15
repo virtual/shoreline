@@ -3,20 +3,23 @@
   <h2 class="sr-only">Navigation</h2>
   <div class="container-fluid">
     <div class="d-flex d-block d-lg-none justify-content-between">
-      
+      <div  class="flex-button">
       <button id="mobile-menu-button" class="navbar-toggler primary" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
         aria-expanded="false" aria-label="Toggle navigation">
         @include ('_svg.menu') 
       <span class="menubartext">Menu</span>
       </button>
+    </div>
       <a class="navbar-brand" href="/">
         Shoreline <small>Community College</small>
       </a>
-      <button class="navbar-toggler primary" type="button" data-toggle="collapse" data-target="#searchCollapse" aria-controls="searchCollapse"
+      <div class="flex-button flex-button-right">
+      <button id="mobile-search-button" class="navbar-toggler primary" type="button" data-toggle="collapse" data-target="#searchCollapse" aria-controls="searchCollapse"
         aria-expanded="false" aria-label="Toggle search">
         <span aria-hidden="true" class="fas fa-search"></span>
         <span class="sr-only">Search</span>
       </button>
+      </div>
     </div>
     <div class="collapse navbar-collapse" id="searchCollapse">
       <div class="container">

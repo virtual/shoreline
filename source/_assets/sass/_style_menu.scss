@@ -13,13 +13,22 @@
   }
 }
 
-.nav .d-flex > * { min-height:0; overflow:hidden;   }  
-.navbar-toggler {
+.flex-button {
   text-align: left;
-  padding-top: 15px;
-  padding-bottom: 15px
+  flex: 1 1 20%;  
+  // display: flex;
+  .navbar-toggler {  
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }
-
+.flex-button-right {
+  text-align: right;
+}
+.megamenu .navbar-brand {
+  flex: 1 auto;
+  margin-right:0; 
+}
 .megamenu {
   position: relative;
   z-index: 10;
