@@ -114,6 +114,7 @@ true
 
 <section class="sectional sectional-padded">
   <div class="container-fluid">
+    @include('_partials.table')
       <hr/>
       <h2>Sectional</h2>
       <div class="layout-has-sidebar">
