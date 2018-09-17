@@ -8,14 +8,42 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   a { padding: 2px 16px; }
   a.btn-important {
-    color: #fff;
-    min-width: 97px;
-    padding: .5rem;
+    color: #fff; 
+    padding-top: .5rem;
+    padding-bottom: .5rem;
     font-size: inherit;
     text-align: center;
   }
-}
 
+}
+ 
+@media (max-width: $screen-md - 1px) {
+  .quicklinks {
+    &.list-1, &.list-2 {
+      display:flex;
+      padding-top: 0.5625rem;
+      padding-bottom: 0.5625rem;
+      justify-content: space-between;
+      align-items: center;
+      li a {
+        font-size: .8125rem;
+      }  
+      a.btn-important {
+        min-width: auto;
+       }
+    }    
+  }
+}
+@media (min-width: $screen-sm) {
+  .quicklinks.list-1, .quicklinks.list-2 {
+    li a {
+      font-size: .875rem;
+    }
+    a.btn-important {
+     min-width: 97px;
+    }
+  } 
+}
 .megamenu .quicklinks li {
   display: inline-block;
   width: auto;
@@ -31,12 +59,20 @@
   }
 }
 
-.quicklinks.list-2 {
-  padding: 1.1875rem 0;
-  a { padding-right: 10px; padding-left: 10px;}
+@media (min-width: $screen-md) {
+  .quicklinks.list-2 {
+    padding: 1.1875rem 0;
+    a { padding-right: 10px; padding-left: 10px;}
+  }
+  
+  .quicklinks {
+    &.list-1, &.list-2 {
+      display: inherit;
+      li { flex: none;}
+    }
+  }
 }
-
-@media (min-width: $screen-lg) {
+@media (min-width: $screen-lg) { 
   .quicklinks.list-1 {
     float:none;
     a { border-right: 1px solid #ccc; }
