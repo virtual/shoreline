@@ -43,6 +43,11 @@
   margin-left:0; border-top:0; margin-top:0;
 }
 
+@media (max-width: $screen-md - 1px) {
+  [class*="col-md-"] > .card-link:first-child { border-top:0; margin-top:0;}
+}
+
+
 main, .content-container, .sectional, * {
   .card-links {
     @extend %list-unstyled;

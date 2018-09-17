@@ -69,13 +69,20 @@ header#header {
     border-top-left-radius: 999px;
     border-bottom-left-radius: 999px;
     border-color: rgba(0, 0, 0, 0.2);
-    
+    border-width: 2px;
+    border-right: 0;
+    margin-right: 1px;
   }
   .entersearch {        
     border-color: rgba(0, 0, 0, 0.2) !important;
     padding-left:0;
     font-size: 1rem;
+    padding-top: .40625rem;
+    padding-bottom: .40625rem;
     height: auto; 
+  }
+  .entersearch.border {
+    border-width: 2px !important;
   }
  transition:border-color .02s ease;
   &:focus-within {
