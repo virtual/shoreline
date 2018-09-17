@@ -128,7 +128,7 @@
 
     <span class="debug">!!!! lead</span>
     <div class="container-fluid">
-      <div id="maincontent" class="flex-layout-body">
+      <div class="flex-layout-body">
 
         <!-- determining opening classes  -->
         @if (trim($__env->yieldContent('left-nav')))
@@ -191,7 +191,7 @@
 
           </div> <!-- closing div for determining opening classes -->
           <!-- end layout has class-->
-        </div> <!-- END #maincontent -->
+        </div> <!-- END .flex-layout-body -->
       </div><!-- END .container-fluid -->
     </div><!-- END .layout-master page-interior -->
     @endif
