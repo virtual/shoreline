@@ -32,7 +32,7 @@
 
 @section('content')
 
-<h2>What is your goal?</h2>
+<h2>What is your goal? <kbd class="small">ul.card-links</kbd></h2>
 <div class="row">
   <div class="col-12 col-md-4">
       <ul class="card-links">
@@ -55,8 +55,45 @@
         <li><a href="#" class="more-arrow">Professional & Technical</a> Gain specialized knowledge and skills for a career in a particular field.</li>
       </ul>
     </div> 
+</div>
+
+<h2>What is your goal? <kbd class="small">p.card-link</kbd></h2>
+<div class="row">
+  <div class="col-12 col-md-4">
+    <p class="card-link"><a href="#" class="more-arrow">University Transfer</a> Gain specialized knowledge and skills for a career in a particular field.</p><p class="card-link"><a href="#" class="more-arrow">University Transfer</a> Gain specialized knowledge and skills for a career in a particular field.</p><p class="card-link"><a href="#" class="more-arrow">University Transfer</a> Gain specialized knowledge and skills for a career in a particular field.</p>
+    </div> 
+    <div class="col-12 col-md-4">
+      <p class="card-link"><a href="#" class="more-arrow">Professional & Technical</a> Multiple children = no 100% height</p>
+      <p class="card-link"><a href="#" class="more-arrow">Professional & Technical</a> Gain specialized knowledge and skills for a career in a particular field.</p>
+      <p class="card-link"><a href="#" class="more-arrow">Professional & Technical</a> Adjusts based on content</p>
+    </div> 
+    <div class="col-12 col-md-4">
+     
+      <p class="card-link"><a href="#" class="more-arrow">Complete Highschool</a> Since this is the only child within the column, it is given 100% height.</p>
+  
+    </div> 
+</div>
+
+<h3>More information <kbd class="small">p.card-link</kbd></h3>
+<div class="row">
+  <div class="col-12 col-md-4">
+      
+        <p class="card-link"><a href="#" class="more-arrow">University Transfer</a> Gain specialized knowledge and skills for a career in a particular field.</p>
+      
+    </div> 
+    <div class="col-12 col-md-4">
+      
+        <p class="card-link"><a href="#" class="more-arrow">Professional & Technical</a> Gain specialized knowledge and skills for a career in a particular field.</p>
+      
+    </div> 
+    <div class="col-12 col-md-4">
+      
+        <p class="card-link"><a href="#" class="more-arrow">Complete Highschool</a> Earn a high school diploma.</p>
+      
+    </div> 
     
 </div>
+
 <p>&nbsp;</p>
 <h2>What are you interested in?</h2>
 <div class="mt-4 d-md-flex md-flex-5 stack-img-links justify-content-between">

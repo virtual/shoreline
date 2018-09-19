@@ -111,7 +111,7 @@ p, ul, dl, ol {
 
 @media (min-width: $screen-md) {
   .contact-us-box {
-    &> h2 { width: 100%; clear:both; text-align: center; }
+    &> h2 { width: 100%; clear:both; text-align: center; margin-top:0; }
     .content-blocks { display:flex; flex-direction: row; margin-bottom: 0; 
       .content-block { flex: 1; padding-right: .5rem;}
       h3 { margin-top:0;}

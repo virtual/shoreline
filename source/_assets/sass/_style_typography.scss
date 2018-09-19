@@ -23,6 +23,9 @@ h5, .h5 {
 h6, .h6 {  
   line-height: 1.85;
 }
+h2, h3, h4, h5, h6 {
+  margin-top:.75em;
+}
 @media (min-width: $screen-md) {
   // DESKTOP Heading sizes
   h1, .h1 {

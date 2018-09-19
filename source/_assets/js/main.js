@@ -12,8 +12,11 @@ jQuery(document).ready(function() {
   });
 
  
-
-
+  // Adds margins for 100% height cards in flexbox
+  $("[class*='col-sm-']:has('.card')").addClass('card-margin');
+  $("[class*='col-md-']:has('.card')").addClass('card-margin');
+  $("[class*='col-sm-']:has('p.card-link')").addClass('card-link-margin');
+  $("[class*='col-md-']:has('p.card-link')").addClass('card-link-margin');
 
   $('body').on('click','.dropdown-toggle',function(e){
     e.preventDefault();
