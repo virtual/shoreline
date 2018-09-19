@@ -1,12 +1,33 @@
 @extends('_layouts.master')
 
 @section('breadcrumb')
-@include('_partials.breadcrumbs')
+<ol vocab="http://schema.org/" typeof="BreadcrumbList">
+  <li property="itemListElement" typeof="ListItem">
+    <a property="item" typeof="WebPage" href="{{ $page->baseUrl }}/">
+      <span property="name">Home</span></a>
+    <meta property="position" content="1">
+  </li> 
+  <li property="itemListElement" typeof="ListItem">
+    <a property="item" typeof="WebPage" href="https://www.shoreline.edu/areas-of-study/programs.aspx">
+      <span property="name">Explore Programs</span></a>
+    <meta property="position" content="2">
+  </li> 
+  <li property="itemListElement" typeof="ListItem">
+    <a property="item" typeof="WebPage" aria-current="page" href="{{ $page->baseUrl }}/program">
+      <span property="name">Visual Communications Technology</span></a>
+    <meta property="position" content="3">
+  </li> 
+  <li property="itemListElement" typeof="ListItem">
+    <a property="item" typeof="WebPage" class="active" aria-current="page" href="#">
+      <span property="name">Video Game Design AAAS</span></a>
+    <meta property="position" content="4">
+  </li>
+</ol>
 @endsection
 
 @section('content-header')
 <div class="header-info">
-  <h1>Video Game Design</h1>
+  <h1>Video Game Design AAAS</h1>
 </div>
 
 @endsection
@@ -14,11 +35,11 @@
 @section('content-header-unused') 
 <dl class="dl-inline dl-small-header">
   <dt>Department</dt>
-  <dd><a href="/">VCT</a></dd>
+  <dd><a href="/">Visual Arts</a></dd>
 </dl>
 <dl class="dl-inline dl-small-header">
   <dt>Program</dt>
-  <dd><a href="{{ $page->baseUrl }}/program">Visual Arts</a></dd>
+  <dd><a href="{{ $page->baseUrl }}/program">Visual Communications Technology</a></dd>
 </dl>
 @endsection
 
@@ -58,10 +79,10 @@
      </div>
      <div class="sidebar-container">
         @include('_partials.card', [
-        'heading' => 'Course Descriptions',
+        'heading' => 'Planning Guide',
         'iconalt' => '',
         'icon' => '',   
-        'desc' => 'Browse the course descriptions to explore classes available in this subject',
+        'desc' => 'Browse the planning guide to explore classes available in this subject',
         'link' => '#'
         ])
         @include('_partials.card', [

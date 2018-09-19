@@ -4,8 +4,7 @@
 <ol>
     <li><a href="#">Home</a></li>
     <li><a href="#">Explore Programs</a></li>
-    <li><a href="#">Transfer Programs</a></li>
-    <li><a class="active" aria-current="page" href="#">Visual Arts</a></li>
+    <li><a class="active" aria-current="page" href="#">Visual Communications Technology</a></li>
   </ol>
 @endsection
 
@@ -20,7 +19,7 @@
 
 @section('content-header')
  
-    <h1>Visual Arts</h1>
+    <h1>Visual Communications Technology</h1>
     <p class="xxl">The future is visual</p>
     <a href="#" class="btn btn-important">Apply</a>
     <a href="#" class="btn btn-secondary">Ask a Question</a>
@@ -61,7 +60,7 @@
       'desc' => "Lorems to the ipsums to the lopsems…",
       'alt' => 'Milla Vanilla',
       'attribution' => 'Milla Vanilla',
-      'attribution2' => 'Transfer Program in Visual Arts',
+      'attribution2' => 'Transfer Program in Visual Communications Technology',
       'img' => '/resources/img/testimonials/shoreline-williams72h.jpg',          
       'link' => '#'
       ]) 
@@ -71,13 +70,13 @@
 
   <h2>Program Options</h2>      
   <hr/>
-  <h3>Graphic Design</h3>
+  <h3>Video Game Design</h3>
   <ul class="list-inline inline-list-padded muted-dl">
       <li><dl><dt>Completion Award</dt><dd>Associate of Science</dd></dl></li>
       <li><dl><dt>Length</dt><dd>90 Credits (6 quarter or 10 quarter)</dd></dl></li>
       <li><dl><dt>Location</dt><dd>On Campus or 100% Online</dd></dl></li>
   </ul>
-  <p><a href="#" class="more-arrow">More about AAAS in Graphic Design</a></p>
+  <p><a href="{{ $page->baseUrl }}/option" class="more-arrow">More about AAAS in Video Game Design</a></p>
   <hr/>
   <h3>Game Art and Design</h3>
   <ul class="list-inline inline-list-padded muted-dl">

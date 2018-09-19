@@ -9,7 +9,9 @@
   .card-title { font-size: 1.1875rem; }
   // cursor: pointer;
   // h2, h3, h4, h5 { color: $link-blue; font-weight: 400; }
-  h2, h3, h4, h5 { font-weight: 400; color:#444; }
+  h2, h3, h4, h5 { font-weight: 400; color:#444; 
+    &:first-child {margin-top:0;}
+  }
   // &:hover {
   //   h2, h3, h4, h5 { text-decoration: underline;} 
   // }
