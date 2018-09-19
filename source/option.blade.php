@@ -55,8 +55,6 @@
         
      </ul>
 
-     <h3>Career Opportunities</h3>
-     <p class="text-muted">* These are potential careers. Shoreline Community College does not guarantee graduates will obtain a specific job/career.</p>
      </div>
      <div class="sidebar-container">
         @include('_partials.card', [
@@ -82,19 +80,11 @@
   <div class="container-fluid">
       <div class="content-container"> 
      <h2 tabindex="-1" id="opportunities">Careers &amp; Opportunities</h2>
-     <ul>
-     <li>Earned grades of at least 2.0 in college level required non-nursing courses</li>
-     <li>Placement test scores taken no more than one year prior to the first day of the application period with the following minimum test scores: Math placement above intermediate algebra (MATH 099); English Reading and Writing placement into ENGL& 101</li>
-     <li>BIOL 211 (required if taking biology courses at Shoreline)</li>
-     <li>CHEM 121* (General Chemistry) - 5 credits, completed within 10 years of application to the program</li>
-     <li>ENGL 101* (English Composition) - 5 credits</li>
-     <li>BIOL 241* (Anatomy & Physiology I) - 5 credits, completed within 5 years of application to the program</li>
-     <li>BIOL 242* (Anatomy & Physiology II) - 5 credits, completed within 5 years of application to the program</li>
-     <li>BIOL 260 (Microbiology) – 5 credits, completed within 5 years of application to the program</li>
-     <li>NUTR 101 (Human Nutrition) – 5 credits, must be completed prior to entering the Nursing Program</li>
-     <li>PSYC 200 (Lifespan Development) – 5 credits</li>
-     <li>MATH 146* (Statistics) – 5 credits</li>
-    </ul>
+     <p>There are expanding opportunities within this field for creating visual images for multimedia product development including game artistry and animation. Graduates are hired as game level designers, game artists, modelers, animators, riggers, lighting artists, texture artists, character artists, storyboard artists, promotional artists and assistant project managers in design and production.</p>
+
+
+
+     <p><strong>Potential employers include:</strong> Game studios, video studios, advertising agencies, publication houses, visual support departments, news and sales agencies, public relations firms and multimedia firms. For more, please visit career information and resources at <a href="http://www.shoreline.edu/counseling-center/career-counseling.aspx" target="_blank">http://www.shoreline.edu/counseling-center/career-counseling.aspx</a>.</p>
   </div>
   </div>
 </section>
