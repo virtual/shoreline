@@ -6,7 +6,12 @@
     background:linear-gradient($primary, $primary) no-repeat 10px 10px;
     background-color: transparent;
     padding: 0 10px 10px 0;
+    margin: 0 auto;
     margin-bottom: 0.70625rem; 
+    max-height: 200px;
+    max-width: 200px;
+    height: auto; 
+    width: auto;
   } 
 
   blockquote {
@@ -32,6 +37,7 @@
   .quote-feature {
     display:flex; 
     align-items: center;
+    img { max-width: 100%; max-height: none;}
     blockquote:before {
       width: 52.4px; 
       height: 41.1px;

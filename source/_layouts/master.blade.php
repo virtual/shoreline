@@ -56,14 +56,14 @@
           @yield('content-header')
       </div>
     </div>
-    <div class="py-3 lead-content container-fluid">
+    <!-- <div class="py-3 lead-content container-fluid">
       <div class="layout-has-sidebar">
         <span class="debug">!!!! Layout has sidenav</span>
         <div class="content-container">
           @yield('lead')
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- main content -->
     <div class="container-fluid">
@@ -74,6 +74,7 @@
             <div class="content-section ">
               @yield('content')
             </div>
+
           </main>
 
           <div id="sidebar-nav" class="sidebar-container overview">

@@ -43,23 +43,38 @@
 </dl>
 @endsection
 
-@section ('lead') 
+@section('content')
+               
 <h2 class="sr-only" id="overview" tabindex="-1">Overview</h2>
 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.</p>
-@endsection
-
-@section('content')
-@include('_partials.overview')
-@endsection
+@endsection 
 
 @section('sectionals')
+<section class="sectional pb-3">
+  <div class="container-fluid">
+      <div class="layout-has-sidebar">
+    <div class="content-container"> 
+
+      @include('_partials.overview')
+
+     </div>
+     <div class="sidebar-container">
+<p>
+ <a class="btn btn-important btn-block" href="/apply-and-aid/apply.aspx">Apply Now</a>
+ <a class="btn btn-secondary btn-block" href="/apply-and-aid/apply.aspx">Ask a Question</a>
+ <a class="btn btn-secondary btn-block" href="/apply-and-aid/apply.aspx">Visit Campus</a>
+ </p>
+     </div>
+     </div>
+    </div>
+</section>
+
 <section class="sectional sectional-padded">
   <div class="container-fluid">
       <div class="layout-has-sidebar">
     <div class="content-container"> 
      <h2 tabindex="-1" id="learn" class="primary">What You'll Learn</h2>
-     
-     <h3>What you'll learn</h3>
+      
      <ul>
         
         <li>Effectively use concept development procedures in visual communication problem solving.</li>
@@ -191,11 +206,6 @@
     </ul>
   </div>
  </div>
-
- <a class="btn btn-important btn-block" href="/apply-and-aid/apply.aspx">Apply Now</a>
- <a class="btn btn-secondary btn-block" href="/apply-and-aid/apply.aspx">Ask a Question</a>
- <a class="btn btn-secondary btn-block" href="/apply-and-aid/apply.aspx">Visit Campus</a>
-
 @endsection
 
 @section('layout-option')  

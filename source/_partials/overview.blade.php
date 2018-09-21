@@ -13,7 +13,7 @@
     <dt class="icon-bg-credit-card">Tuition &amp; Fees </dt>
     <dd>
       <button class="btn-toggle verbose btn collapsed" type="button" data-toggle="collapse" data-target="#tuitionfees" aria-expanded="false" aria-controls="tuitionfees">
-        Toggle to expand
+        See
         <span class="sr-only">tuition and fees</span> details </button>
       <div class="collapse" id="tuitionfees">
         <div class="table-wrapper-inner">
