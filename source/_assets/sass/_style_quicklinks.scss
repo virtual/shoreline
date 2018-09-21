@@ -17,6 +17,10 @@
 
 }
  
+.megamenu .quicklinks.list-1 li a {
+  color: $link-blue;
+}
+
 @media (max-width: $screen-md - 1px) {
   .quicklinks {
     &.list-1, &.list-2 {
@@ -71,6 +75,23 @@
       li { flex: none;}
     }
   }
+}
+@media (max-width: $screen-sm - 1px) {
+.megamenu .quicklinks.list-2 { 
+  flex-wrap: wrap;
+}
+.megamenu .quicklinks li.has-button:before {
+  content: " ";
+  clear: both;
+  width: 100%;
+  min-width: 300px;
+  display: block;
+}
+.megamenu .quicklinks li.has-button { width: 100%; display:block; 
+  min-width: 300px; padding-right: 15px; padding-left:15px; padding-top:8px; padding-bottom: 8px; }
+}
+@media (min-width: $screen-sm) { 
+  .megamenu .quicklinks li.has-button  { padding-right: 15px;}
 }
 @media (min-width: $screen-lg) { 
   .quicklinks.list-1 {

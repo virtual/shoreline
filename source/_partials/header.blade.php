@@ -11,13 +11,11 @@
         <h1>
           <a class="navbar-brand" href="/">
             <img src="{{ $page->baseUrl }}/resources/img/logos/logo-full.png" alt="Shoreline Community College" />
-            <span class="sr-only">Shoreline Community College</span>
           </a>
         </h1>
         @else
         <a class="navbar-brand" href="/">
           <img src="{{ $page->baseUrl }}/resources/img/logos/logo-full.png" alt="Shoreline Community College" />
-          <span class="sr-only">Shoreline Community College</span>
         </a>
         @endif
 

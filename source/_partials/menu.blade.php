@@ -11,7 +11,7 @@
       </button>
     </div>
       <a class="navbar-brand" href="/">
-        Shoreline <small>Community College</small>
+        <img src="{{ $page->baseUrl }}/resources/img/logos/logo-full-mobile.png" alt="Shoreline Community College" />
       </a>
       <div class="flex-button flex-button-right">
       <button id="mobile-search-button" class="navbar-toggler primary" type="button" data-toggle="collapse" data-target="#searchCollapse" aria-controls="searchCollapse"
