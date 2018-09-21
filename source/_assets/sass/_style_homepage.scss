@@ -13,6 +13,7 @@
     font-size: 2.4375rem;
     line-height: 1.16;
     font-weight: 900;
+    margin-top:0;
   }
   p { font-size: 1.5rem;  }
 }
@@ -132,17 +133,35 @@
       );
       opacity:.5;
     }
-    .hero-caption {
+    .hero-caption { 
       position: absolute;
       padding: 2.5rem;
     }
   }
 }
 @media (min-width: $screen-lg) { 
-.homepage-banner .hero {
-    min-height: 670px;
+  .homepage-banner .hero {
+      min-height: 670px; 
   }
   .homepage-banner .heading {
     font-size: 3.4375rem;  
   }
+}
+
+// Vertically center text on homepage banner
+@media (min-width: $screen-sm) { 
+  .homepage-banner .hero { 
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .homepage-banner .hero-caption { 
+    top: auto;  flex:1; bottom: auto; height: auto;  
+    margin: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+    height: 100px; // ie 11
+    } 
 }
