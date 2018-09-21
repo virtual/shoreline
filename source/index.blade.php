@@ -53,7 +53,7 @@
        <h2 class="heading">Fully invest in 
         your future</h2>
        <p class="desc">We help you inside and outside the classroom</p>
-       <div class="expand-wrapper"><button aria-expanded="false" class="expand-button btn btn-primary">Expand</button></div>
+       <div class="expand-wrapper"><button aria-expanded="false" class="scrollable expand-button btn btn-primary">Expand</button></div>
     </div>
  </section>
 @endsection

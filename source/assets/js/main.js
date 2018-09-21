@@ -1224,11 +1224,17 @@ jQuery(document).ready(function () {
       // Close the element, change it to hidden
       $(this).parents('.homepage-banner-container').removeClass("expanded");
       $(this).attr('aria-expanded', 'false').text('Expand');
+
       $(_d).removeClass('show');
     } else {
       $(this).parents('.homepage-banner-container').addClass("expanded");
       $(this).attr('aria-expanded', 'true').text('Close');
       $(_d).addClass('show');
+
+      // Scroll to open area when expanded
+      $("html, body").animate({
+        scrollTop: $(_d).offset().top - 40
+      }, 100);
     }
   });
 
