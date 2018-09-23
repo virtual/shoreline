@@ -1,9 +1,9 @@
-<article> 
-  <header>
-      @if(!empty($img)) <a href="{{ $link }}"><img src="{{$img}}" alt="{{$alt}}"></a>  @endif
-      @if(!empty($datetime))<p class="articledate"><time datetime="{{$datetime}}">XSL Pretty format: {{$datetime}}</time></p>@endif
-      <h2><a href="{{ $link }}">{{ $heading }}</a></h2>
-    </header>
-    <p>{{ $desc }} </p>
+<article class="news-article"> 
+  @if(!empty($img)) <div class="image-container"><a href="{{ $link }}"><img src="{{$img}}" alt="{{$alt}}"></a></div>  @endif
+  <div class="article-info-container">
+      @if(!empty($datetime))<p class="datetime"><time datetime="{{$datetime}}"><?php echo date("F j, Y", strtotime($datetime)) ?> </time></p>@endif
+      <h3><a href="{{ $link }}">{{ $heading }}</a></h3>
+      <p class="description">{{ $desc }} </p>
+    </div>
 </article>
  
