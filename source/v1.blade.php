@@ -4,6 +4,9 @@
 <ol>
     <li><a href="#">Home</a></li>
     <li><a href="#">Explore Programs</a></li>
+    <li><a href="#">Explore Programs</a></li>
+    <li><a href="#">Explore Programs</a></li>
+    <li><a href="#">Explore Programs</a></li>
     <li><a class="active" aria-current="page" href="#">Visual Communications Technology</a></li>
   </ol>
 @endsection
@@ -17,13 +20,19 @@
 
 @endsection
 
+
+@section('left-nav')
+@include('_partials.left-nav')
+@endsection
+
+
 @section('content-header')
  
-    <h1>Visual Communications Technology</h1>
+    <h1>Varient 1</h1>
     <p class="xxl">The future is visual</p>
     <kbd class="ouc">Edit</kbd>
-    <a href="#" class="btn btn-important">Apply</a>
-    <a href="#" class="btn btn-secondary">Ask a Question</a>
+    <a href="#" class="btn btn-important">Important</a>
+    <a href="#" class="btn btn-secondary">Secondary</a>
 @endsection
 
 @section ('lead') 
@@ -109,7 +118,7 @@
 <kbd class="ouc">Edit</kbd>
   <div class="card">
     <div class="card-body">
-        <h3 class="h5"><strong>Manually Entered Card Snippet</strong></h3>
+      <h3 class="h5"><strong>Related Program Links</strong></h3>
       <ul class="list-unstyled">
         <li><a class="scrollable" href="#info">Information Meetings</a></li>
         <li><a class="scrollable" href="#brochure">Program Brochure</a></li>
@@ -118,7 +127,6 @@
         <li><a class="scrollable" href="#prerequisite">Prerequisite Checklist</a></li>
         <li><a class="scrollable" href="#transcript">Transcript Evaluation</a></li>
       </ul> 
-      <p>It's great, right?</p>
     </div>
   </div>
  @include('_partials.card', [
@@ -140,6 +148,30 @@
 
 @endsection 
  
-@section('content-header-inverse3') 
+@section('content-header-inverse') 
   true
 @endsection 
+
+@section('sectionals')
+<section class="sectional sectional-padded">
+  <div class="container-fluid">
+    <hr />
+    <h2>Sectional</h2>
+    <div class="layout-has-sidebar">
+      <div class="content-container">
+
+        <div class="video-container">
+          @include('_partials.video', [
+          'heading' => 'Video Title',
+          'desc' => 'Video description Earum omnis reiciendis aut quasi id ea exercitationem dolorum. Asperiores aut
+          dicta odit.',
+          'youtubeID' => 'dPr287p0cdw',
+          'img' => '/resources/img/videos/Video-Snippet.jpg'
+          ])
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  @endsection

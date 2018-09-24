@@ -75,7 +75,7 @@
 
 @section('main-sidebar-content-backup')  
   <div class="card card-program-heading">
-    <h2>Related Program Links</h2>
+    <h2 class="h4">Related Program Links</h2>
     <ul class="list-unstyled">
         <li><a class="scrollable" href="#info">Information Meetings</a></li>
         <li><a class="scrollable" href="#brochure">Program Brochure</a></li>

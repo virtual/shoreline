@@ -102,6 +102,10 @@ a.btn { text-decoration: none; }
     &:focus {
       box-shadow:0 0 0 0.2rem rgba(255, 255, 255, 0.5);
     }
+    &:not(:disabled):not(.disabled):active {
+      color: #ffffff;
+      background-color: rgba(218, 210, 210, 0.15);
+    }
   }
   .btn-secondary {
     

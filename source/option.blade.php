@@ -59,6 +59,7 @@
 
      </div>
      <div class="sidebar-container">
+       <kbd class="ouc">Edit</kbd>
 <p>
  <a class="btn btn-important btn-block" href="/apply-and-aid/apply.aspx">Apply Now</a>
  <a class="btn btn-secondary btn-block" href="/apply-and-aid/apply.aspx">Ask a Question</a>
@@ -90,6 +91,7 @@
         </li>
         
      </ul>
+     <kbd class="ouc">Edit</kbd>
 
      </div>
      <div class="sidebar-container">
@@ -100,6 +102,7 @@
         'desc' => 'Browse the planning guide to explore classes available in this subject',
         'link' => '#'
         ])
+        <kbd class="ouc">Edit</kbd>
         @include('_partials.card', [
         'heading' => 'Sample Schedule',
         'desc' => 'Get a glimpse at what your quarterly schedule might look like in this program option',
@@ -114,6 +117,7 @@
 </section>
 <section class="sectional sectional-padded">
   <div class="container-fluid">
+      <div class="layout-has-sidebar">
       <div class="content-container"> 
      <h2 tabindex="-1" id="opportunities">Careers &amp; Opportunities</h2>
      <p>There are expanding opportunities within this field for creating visual images for multimedia product development including game artistry and animation. Graduates are hired as game level designers, game artists, modelers, animators, riggers, lighting artists, texture artists, character artists, storyboard artists, promotional artists and assistant project managers in design and production.</p>
@@ -121,6 +125,12 @@
 
 
      <p><strong>Potential employers include:</strong> Game studios, video studios, advertising agencies, publication houses, visual support departments, news and sales agencies, public relations firms and multimedia firms. For more, please visit career information and resources at <a href="http://www.shoreline.edu/counseling-center/career-counseling.aspx" target="_blank">http://www.shoreline.edu/counseling-center/career-counseling.aspx</a>.</p>
+     <kbd class="ouc">Edit</kbd>
+
+  </div>
+  <div class="sidebar-container">
+      <kbd class="ouc">Edit</kbd>
+</div>
   </div>
   </div>
 </section>
@@ -129,6 +139,8 @@
       <div class="layout-has-sidebar">
           <div class="content-container"> 
      <h2 tabindex="-1" id="start">Get Started</h2>
+     <kbd class="ouc">Edit</kbd>
+
      <p>Uniquely optimize resource sucking outsourcing through user friendly methods of empowerment.
         Credibly maintain premium methods of empowerment for enterprise-wide channels. Proactively
         seize cutting-edge methodologies through reliable core competencies. Continually pursue
@@ -143,7 +155,7 @@
      </p>
      <p><a class="btn btn-important" href="/apply-and-aid/apply.aspx">Apply Now</a></p>
 
-     <h3 class="mt-5" tabindex="-1" id="related">Related Programs</h3>
+     <h3 class="mt-5" tabindex="-1" id="related">Related Program Options</h3>
      <ul>
         <li><a href="https://test.shoreline.edu//programs/visual-communication-technology/web-design.aspx">Web Design AAAS</a></li>
         <li><a href="https://test.shoreline.edu//programs/visual-communication-technology/web-design.aspx">Graphic Design AAAS
@@ -176,6 +188,8 @@
      </div>
      </div>
      <div class="sidebar-container">
+      <kbd class="ouc">Edit</kbd>
+
         @include('_partials.card', [
         'heading' => 'Prepare for college',
         'iconalt' => '',
