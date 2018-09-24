@@ -348,3 +348,24 @@ main, .content-container, .sectional, * {
 @media (min-width: $screen-md) {
   .md-flex-5.stack-img-links > div { width: 18%; }
 }
+
+.accordion {
+  margin-bottom: 1rem; 
+
+  .card-header { background: $primary; color: #fff;  text-align:left; padding:0; margin:0;
+    .btn { color: inherit; padding: inherit; font-weight: 600; border:0; text-align:left;border-radius: 0; display:block; width: 100%; padding: 1.5rem 1rem 1.25rem 1rem;}
+    .btn:before { content: "v"; color:$primary; background: #fff; 
+      border-radius: 999px; display:inline-block; 
+      height: 30px; width: 30px;     
+      top: -.25rem;
+      margin-right: .5rem;
+      text-align: center;
+      position: relative;}
+    h1, h2, h3, h4, h5, h6 { color:#fff;
+      margin:0; padding:0;
+      a { color:inherit;}
+    }
+  }
+  .card-body { padding: 1.5rem 1rem; }
+  .card {border-top:0; border-bottom:0; border-radius:0; margin:0;}
+}
