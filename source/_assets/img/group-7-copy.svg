@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>04ADF208-3701-47EC-BDEE-3178149F40D8</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon-/-UI-/-Accordion---Collapse">
+            <g id="Group-7-Copy">
+                <rect id="Rectangle-3" fill="#FFFFFF" x="0" y="0" width="30" height="30" rx="15"></rect>
+                <g id="Group" transform="translate(12.000000, 9.500000)" stroke="#0074B3" stroke-linecap="round" stroke-width="2">
+                    <polyline id="Line" points="0 0 3 3 6 0"></polyline>
+                    <polyline id="Line" transform="translate(3.000000, 9.500000) scale(1, -1) translate(-3.000000, -9.500000) " points="0 8 3 11 6 8"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

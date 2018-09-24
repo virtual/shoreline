@@ -30,6 +30,7 @@
 }
 
 .card-margin {  margin-bottom: 0; margin-top:1rem; } 
+.card-margin > .accordion { margin-top: -1rem;}
 .card-link {
   margin-bottom: 1rem; // used for single .card-link
   position: relative;
@@ -56,6 +57,7 @@ a.card-link { font-size: 1.5rem; }
 @media (min-width: $screen-sm) {
   [class*="col-sm"] {
     &.card-margin {  margin-bottom: 2rem; margin-top:0; }
+    &.card-margin > .accordion { margin-top: 0;}
     &.card-link-margin { margin-bottom: 1rem; margin-top:0;
     }
   }
@@ -63,6 +65,7 @@ a.card-link { font-size: 1.5rem; }
 @media (min-width: $screen-md) {
   [class*="col-md"] {
     &.card-margin {  margin-bottom: 2rem; margin-top:0; }
+    &.card-margin > .accordion { margin-top: 0;}
     &.card-link-margin { margin-bottom: 1rem; margin-top:0; 
     }
   }
@@ -128,9 +131,9 @@ main, .content-container, .sectional, * {
   }
   .card-links.card-links-compact {
     li {
-      padding-bottom: 0.375rem;
+      padding-bottom: 0.875rem;
     }
-    a { padding: .375rem 0 0 0; font-size: 1.1875rem; }
+    a { padding: .875rem 0 0 0; font-size: 1.1875rem; }
   }
 }
 
@@ -351,20 +354,60 @@ main, .content-container, .sectional, * {
 
 .accordion {
   margin-bottom: 1rem; 
-
-  .card-header { background: $primary; color: #fff;  text-align:left; padding:0; margin:0;
+  .card { border:0; box-shadow: none; border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;}
+  .card-body { font-size: 1.1875rem; line-height: 1.68;}
+  .card-header { 
+    background: transparent; color: #fff;  text-align:left; padding:0; margin:0;
     .btn { color: inherit; padding: inherit; font-weight: 600; border:0; text-align:left;border-radius: 0; display:block; width: 100%; padding: 1.5rem 1rem 1.25rem 1rem;}
-    .btn:before { content: "v"; color:$primary; background: #fff; 
-      border-radius: 999px; display:inline-block; 
+    .btn-toggle:before {  
+      color:$primary; 
+      background-color: #fff; 
+      border-radius: 999px; 
+      // display:inline-block; 
       height: 30px; width: 30px;     
       top: -.25rem;
       margin-right: .5rem;
       text-align: center;
-      position: relative;}
-    h1, h2, h3, h4, h5, h6 { color:#fff;
+      position: relative;
+      float:left;
+      border: 2px solid #fff;
+      transition: all .1s ease-in-out;
+      content: " "; 
+      // background: none;
+      background-size: 30px;
+      background-repeat: no-repeat;
+      background-position: 50% 50%; 
+      background-image: url(../../resources/img/icons/toggle-closed-blue-transparent.svg);
+      height: 30px;
+      width: 30px; 
+    }
+    .btn-toggle:hover:before {
+    background-color: $link-blue; 
+      background-image: url(../../resources/img/icons/toggle-open.svg);
+    }    
+      .btn-toggle[aria-expanded=true]:before {
+        background-color: #fff; 
+        background-image: url(../../resources/img/icons/toggle-open-blue-transparent.svg);
+      } 
+      .btn-toggle[aria-expanded=true]:hover:before {
+        // background-color: #fff; 
+    background-color: $link-blue; 
+
+        background-image: url(../../resources/img/icons/toggle-closed-transparent.svg);
+      } 
+      .btn-toggle:after {
+        display: none;
+      }
+      
+      
+
+    h1, h2, h3, h4, h5, h6 { color:#000;
       margin:0; padding:0;
       a { color:inherit;}
     }
+  }
+  .card-header.active {background: $primary; color: #fff; 
+    h1, h2, h3, h4, h5, h6 { color:#fff;   }
   }
   .card-body { padding: 1.5rem 1rem; }
   .card {border-top:0; border-bottom:0; border-radius:0; margin:0;}

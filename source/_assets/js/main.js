@@ -13,6 +13,7 @@ jQuery(document).ready(function() {
 
  
   // Adds margins for 100% height cards in flexbox
+  // TODO: Fix this for only direct descendants 
   $("[class*='col-sm-']:has('.card')").addClass('card-margin');
   $("[class*='col-md-']:has('.card')").addClass('card-margin');
   $("[class*='col-sm-']:has('p.card-link')").addClass('card-link-margin');
@@ -73,7 +74,14 @@ jQuery(document).ready(function() {
   //   }, 500);
   // });
 
-  
+  // Accordion, highlight active header
+    $('.collapse').on('shown.bs.collapse', function () {
+        $(this).prev().addClass('active');
+    });
+
+    $('.collapse').on('hidden.bs.collapse', function () {
+        $(this).prev().removeClass('active');
+    });
 
   $(".header-actions .searchicon").click(function (event) {
     if (!($(this).hasClass('active'))) {
