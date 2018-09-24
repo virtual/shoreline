@@ -10,7 +10,7 @@
 @section('content')
 <h1>Current Students</h1>
 
-<div class="card-icons d-md-flex d-inline-flex flex-wrap align-items-start justify-content-start justify-content-md-between">
+<div class="card-icons d-md-flex d-inline-flex flex-wrap align-items-start justify-content-between justify-content-sm-start justify-content-md-between">
   <div class="flex">
     <div class="card-icon">
       <a href="https://www.shoreline.edu/currentstudents/email/">Email</a>
@@ -55,7 +55,7 @@
 
 <div class="row">
   <div class="col-md-6">
-      <div class="mb-0 accordion" id="accordionExample">
+      <div class="mb-0 accordion" id="accordionlist1">
           <div class="card">
             <div class="card-header" id="heading1">
               <h3>
@@ -143,7 +143,7 @@
   </div>
 
   <div class="col-md-6">
-      <div class="mb-0 accordion" id="accordionExample">
+      <div class="mb-0 accordion" id="accordionlist2">
           <div class="card">
             <div class="card-header" id="heading10">
               <h3>

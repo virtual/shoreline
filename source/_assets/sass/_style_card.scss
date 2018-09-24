@@ -298,7 +298,8 @@ main, .content-container, .sectional, * {
   h2, h3, h4, h5 { color: $text-dark; }
 }
 .card-icons > div {
-  min-width: 100%;
+  min-width: 48%;
+  max-width: 48%;
 }
 @media (min-width: 480px) {
   .card-icons > div {
