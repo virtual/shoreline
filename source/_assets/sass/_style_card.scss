@@ -6,6 +6,9 @@
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.05);
   border-radius: 5px;
   margin-bottom: 1rem;
+  p, dl, ol { font-size: 1rem; line-height: 1.5;
+    a { font-size: 1rem;}
+  }
   .card-title { font-size: 1.1875rem; }
   // cursor: pointer;
   // h2, h3, h4, h5 { color: $link-blue; font-weight: 400; }
@@ -39,7 +42,9 @@
   border-top: 1px solid rgba(0, 0, 0, 0.1);  
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
    display:block; padding:1.375rem 0 1.375rem 0;
-  a { display:block; font-size:1.1875rem; position: relative; }
+  a { display:block; 
+    font-size:1.1875rem; 
+    position: relative; }
   h4, h3 { margin:0;
   .btn { color:#000; font-weight:600;}
   }

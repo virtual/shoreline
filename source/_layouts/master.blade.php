@@ -99,29 +99,37 @@
   <!-- INTERIOR TEMPLATE - Not program option template -->
   <span class="debug">!!!! interior template</span>
   <div class="layout-master page-interior" id="maincontent">
-
+@if (trim($__env->yieldContent('content-header-img'))) <div class="content-has-header-img">@else  <div class="x"> @endif
     <!-- CONTENT HEADER ON -->
     @if (trim($__env->yieldContent('content-header')))
     <span class="debug">!!!! content-header</span>
     @if (trim($__env->yieldContent('content-header-inverse'))) 
+    
     <div class="content-header bg-primary"> @else  <div class="content-header "> @endif
+
+
+
       <div class="container-fluid">
           <div class="breadcrumb" aria-label="breadcrumb">
               @yield('breadcrumb')
             </div>
-          <div class="header-info">
+            
+            <div class="header-info">
               <div class="header-content">
                   
                     
                 @yield('content-header')
               </div>
+
+              @if (trim($__env->yieldContent('content-header-img')))  
               <div class="header-image">
                 <div class="header-image-clip">
                   @yield('content-header-img')
-                  
                 </div>
               </div>
+              @endif
               
+            </div>
             </div>
       </div>
     </div>
@@ -168,6 +176,7 @@
               @yield('lead') 
             @endif 
 
+
             @if (!trim($__env->yieldContent('content-header'))) 
             <!-- if breadcrumb not in a content-header -->
             <div class="breadcrumb" aria-label="breadcrumb">
@@ -194,6 +203,7 @@
           <!-- end layout has class-->
         </div> <!-- END .flex-layout-body -->
       </div><!-- END .container-fluid -->
+      </div><!-- end has feature content image -->
     </div><!-- END .layout-master page-interior -->
     @endif
     <!-- end INTERIOR TEMPLATE -->
