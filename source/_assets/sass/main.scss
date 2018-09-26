@@ -98,7 +98,7 @@ kbd.ouc {
   font-family: Helvetica;
   font-size: .8rem;
   padding: .5rem;
-  position: absolute;
+  // position: absolute;
   z-index: 100;
 }
 
@@ -108,7 +108,7 @@ kbd.ouc {
   transition: all ease-out .3s;
   padding: .5rem;
   color:$primary;
-  border: 3px solid rgba(141, 10, 10, 0.67);
+  border: 3px solid rgba(6, 134, 74, 0.7);
   background:#fff; 
   position: absolute;
   top: -5px;

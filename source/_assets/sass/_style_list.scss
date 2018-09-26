@@ -138,11 +138,13 @@ main, .sectional, .content-container {
 
 ul.list-group li {
   text-indent: initial; 
+  text-indent: 0; // ie
   padding-left: 1.25rem;
     &:before { content: none;}
 }
 ul.list-inline li {
   text-indent: initial;
+  text-indent: 0; // ie
   padding:0;
   &:before { content: none;}
 }
@@ -312,6 +314,7 @@ ul.list-unstyled, ol.list-unstyled, %list-unstyled {
     list-style-type: none; 
     text-indent: 0;
     padding-left: .5rem;
+    font-size: inherit;
   }
   dt:before {
     position: absolute;
@@ -327,6 +330,6 @@ ul.list-unstyled, ol.list-unstyled, %list-unstyled {
     font-weight: bold;
     height: auto; 
     width: auto;
-    font-size: 1em;
+    font-size: inherit;
   }
 } 
