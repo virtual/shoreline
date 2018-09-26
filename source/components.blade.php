@@ -105,10 +105,6 @@
 @endsection 
 
 
-@section('homepage')  
-true
-@endsection
-
 
 
 @section('sectionals')

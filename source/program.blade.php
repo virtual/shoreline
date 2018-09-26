@@ -105,6 +105,10 @@
   <p><a href="#" class="more-arrow">More about AAAS in Game Art and Design</a></p>
 @endsection
 
+@section('left-nav')
+@include('_partials.left-nav')
+@endsection
+
 @section('main-sidebar-content')  
 <kbd class="ouc">Edit</kbd>
   <div class="card">
@@ -117,8 +121,7 @@
         <li><a class="scrollable" href="#apply">Online Application</a></li>
         <li><a class="scrollable" href="#prerequisite">Prerequisite Checklist</a></li>
         <li><a class="scrollable" href="#transcript">Transcript Evaluation</a></li>
-      </ul> 
-      <p>It's great, right?</p>
+      </ul>  
     </div>
   </div>
  @include('_partials.card', [

@@ -4,8 +4,6 @@
 <ol>
     <li><a href="#">Home</a></li>
     <li><a href="#">Explore Programs</a></li>
-    <li><a href="#">Explore Programs</a></li>
-    <li><a href="#">Explore Programs</a></li>
     <li><a class="active" aria-current="page" href="#">Visual Communications Technology</a></li>
   </ol>
 @endsection

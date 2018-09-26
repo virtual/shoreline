@@ -45,10 +45,8 @@
 
   <!-- PROGRAM OPTION TEMPLATE -->
   @if (trim($__env->yieldContent('layout-option')))
-  <span class="debug">!!!! content</span>
   <div class="layout-master program-option" id="maincontent">
     <div class="bg-primary content-header">
-      <span class="debug">!!!! PROGRAM OPTION</span>
       <div class="container-fluid">
           <div class="breadcrumb" aria-label="breadcrumb">
             @yield('breadcrumb')
@@ -56,34 +54,19 @@
           @yield('content-header')
       </div>
     </div>
-    <!-- <div class="py-3 lead-content container-fluid">
-      <div class="layout-has-sidebar">
-        <span class="debug">!!!! Layout has sidenav</span>
-        <div class="content-container">
-          @yield('lead')
-        </div>
-      </div>
-    </div> -->
-
+ 
     <!-- main content -->
     <div class="container-fluid">
       <div class="flex-layout-body">
-        <div class="debug">Main content</div>
         <div class="layout-has-sidebar">
           <main class="content-container">
             <div class="content-section ">
               @yield('content')
             </div>
-
-          </main>
+         </main>
 
           <div id="sidebar-nav" class="sidebar-container overview">
             <nav>
-              <!--<h2>
-              <span role="button" data-toggle="collapse" data-target="#submenu" aria-controls="submenu" aria-expanded="false" aria-label="Toggle navigation"
-                aria-hidden="true" class="fas fa-bars toggle">
-                <span class="sr-only">Expand Submenu</span>
-              </span> yield('menuheader')</h2>-->
               <a class="sr-only show-on-focus" href="#sectionals">Skip Navigation</a>
               @yield('overview-nav')
             </nav>
@@ -97,67 +80,56 @@
 
   @else
   <!-- INTERIOR TEMPLATE - Not program option template -->
-  <span class="debug">!!!! interior template</span>
   <div class="layout-master page-interior" id="maincontent">
-@if (trim($__env->yieldContent('content-header-img'))) <div class="content-has-header-img">@else  <div class="x"> @endif
+    @if (trim($__env->yieldContent('content-header-img'))) <div class="content-has-header-img">@else  <div class="content-no-header-img"> @endif
     <!-- CONTENT HEADER ON -->
-    @if (trim($__env->yieldContent('content-header')))
-    <span class="debug">!!!! content-header</span>
+    @if (trim($__env->yieldContent('content-header'))) <!-- has content header -->
     @if (trim($__env->yieldContent('content-header-inverse'))) 
-    
     <div class="content-header bg-primary"> @else  <div class="content-header "> @endif
-
-
-
-      <div class="container-fluid">
-          <div class="breadcrumb" aria-label="breadcrumb">
-              @yield('breadcrumb')
+     <div class="container-fluid">
+        <div class="breadcrumb" aria-label="breadcrumb">
+            @yield('breadcrumb')
+          </div>
+          
+          <div class="header-info">
+            <div class="header-content">
+              @yield('content-header')
             </div>
+
+            @if (trim($__env->yieldContent('content-header-img')))  
+            <div class="header-image">
+              <div class="header-image-clip">
+                @yield('content-header-img')
+              </div>
+            </div>
+            @endif
             
-            <div class="header-info">
-              <div class="header-content">
-                  
-                    
-                @yield('content-header')
-              </div>
+          </div>
 
-              @if (trim($__env->yieldContent('content-header-img')))  
-              <div class="header-image">
-                <div class="header-image-clip">
-                  @yield('content-header-img')
-                </div>
-              </div>
-              @endif
-              
-            </div>
-            </div>
+        </div>
       </div>
     </div>
     @endif
 
-    <span class="debug">!!!! lead</span>
     <div class="container-fluid">
       <div class="flex-layout-body">
 
         <!-- determining opening classes  -->
         @if (trim($__env->yieldContent('left-nav')))
-        <span class="debug">!!!! Layout has leftnav</span>
-            
+        <!-- has content leftnav -->
           @if (trim($__env->yieldContent('main-sidebar-content')))
-          <span class="debug">!!!! Layout has sidebar</span>
+           <!-- has content sidebar --> 
           <div class="layout-has-left-nav layout-has-sidebar">
           @else
           <div class="layout-has-left-nav">
           @endif <!-- end check main sidebar-->
             
         @else <!-- OFF left -->
-
             @if (trim($__env->yieldContent('main-sidebar-content'))) <!-- check sidebar -->
             <div class="layout-has-sidebar">
             @else
-            <div class="x"><!-- no sidebar, no left nav-->
+            <div class="layout-no-sidebar"><!-- no sidebar, no left nav-->
             @endif 
-                
         @endif <!-- END determining opening classes -->
                 
         <!-- if left nav -->
@@ -176,7 +148,6 @@
               @yield('lead') 
             @endif 
 
-
             @if (!trim($__env->yieldContent('content-header'))) 
             <!-- if breadcrumb not in a content-header -->
             <div class="breadcrumb" aria-label="breadcrumb">
@@ -193,7 +164,6 @@
         <!-- sidebar on -->
         @if (trim($__env->yieldContent('main-sidebar-content')))
         <div id="sidebar" class="sidebar-container">
-          <span class="debug">!!!! SIDEBAR ON</span>
           @yield('main-sidebar-content')
         </div>                
         @endif

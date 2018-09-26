@@ -205,3 +205,7 @@
       @include('_partials/hugbox')  
   @endsection 
   
+  
+@section('homepage')  
+true
+@endsection
