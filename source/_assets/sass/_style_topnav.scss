@@ -27,6 +27,7 @@
 #mobile-menu-button {
   display:flex;
   border-radius: 0;
+  flex-direction: row;
   .menubaricon { width: 1.3rem; height: 1.3rem; } 
   .menubartext {
     display: inline-block;
@@ -40,7 +41,7 @@
     line-height: 1.85;
     letter-spacing: normal; 
   }
-  .menubaricon, .menubartext { flex: 1;}
+  .menubaricon, .menubartext { flex-grow:1;}
   .menubaricon rect {fill:#12685E;transition: all .15s ease-out;}
   &:hover, &:focus, &:active {
     .menubar3 { width: 80px;}
@@ -74,5 +75,5 @@
   transform-origin: 30px 20px;
 }
 #mobile-menu-button[aria-expanded=true]  .menubaricon rect.menubar3 {
-  display:none;
+  transform: translateX(-100px); // push out of svg box
 }

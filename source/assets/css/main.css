@@ -2842,6 +2842,10 @@ img.rounded {
   display: -ms-flexbox;
   display: flex;
   border-radius: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 #mobile-menu-button .menubaricon {
@@ -2864,8 +2868,8 @@ img.rounded {
 
 #mobile-menu-button .menubaricon, #mobile-menu-button .menubartext {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 #mobile-menu-button .menubaricon rect {
@@ -2910,7 +2914,8 @@ img.rounded {
 }
 
 #mobile-menu-button[aria-expanded=true] .menubaricon rect.menubar3 {
-  display: none;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
 }
 
 .quote-feature {
@@ -5079,8 +5084,12 @@ header#header {
 .flex-button {
   text-align: left;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 20%;
-          flex: 1 1 20%;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
   position: relative;
 }
 
@@ -5096,8 +5105,8 @@ header#header {
 
 .megamenu .navbar-brand {
   -webkit-box-flex: 1;
-      -ms-flex: 1 auto;
-          flex: 1 auto;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   margin-right: 0;
 }
 
@@ -5370,6 +5379,9 @@ header#header {
   #searchCollapse.show + #navbarCollapse.show {
     height: calc(100vh - 135px);
     max-height: calc(100vh - 135px);
+  }
+  body {
+    padding-top: 61px;
   }
 }
 

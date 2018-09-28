@@ -15,7 +15,9 @@
 
 .flex-button {
   text-align: left;
-  flex: 1 1 20%;  
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 20%;
   position: relative;
   .navbar-toggler {  
     height: 100%; // center it vertically
@@ -27,7 +29,7 @@
   text-align: right;
 }
 .megamenu .navbar-brand {
-  flex: 1 auto;
+  flex-grow: 1;
   margin-right:0; 
 }
 .megamenu {
@@ -268,4 +270,5 @@
     height: calc(100vh - 135px);
     max-height: calc(100vh - 135px);
   }
+  body { padding-top: 61px;}
 }
