@@ -31,8 +31,12 @@
   margin-right:0; 
 }
 .megamenu {
-  position: relative;
-  z-index: 10;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  background:#fff;
   color: $primary;
   font-size: 1.1rem;
   ul,
@@ -94,7 +98,9 @@
     }
   }
 }
-
+#searchCollapse {
+  border-top: 1px solid #dfdfdf;
+}
 #searchCollapse .container {
   padding-left: 15px;
 }
@@ -142,6 +148,7 @@
   }
   .megamenu {
     font-size: 1rem;
+    position: relative;
     li { width: auto;}   
     .dropdown-menu {
       background: #f9f9f9;
@@ -247,5 +254,18 @@
   }
   #navbarCollapse>ul>li>a { 
     overflow:hidden;
+  }
+  // menu about 61, search about 74
+  #navbarCollapse { // allow for scrolling with fixed navbar
+    height: 70%;
+    max-height: 70%;
+    height: calc(100vh - 61px);
+    max-height: calc(100vh - 61px);
+    overflow-y: scroll;
+    -webkit-overflow-scrolling:touch; 
+  }
+  #searchCollapse.show + #navbarCollapse.show {
+    height: calc(100vh - 135px);
+    max-height: calc(100vh - 135px);
   }
 }

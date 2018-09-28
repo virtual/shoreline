@@ -1,5 +1,5 @@
 <!-- TODO: review if this should have class .row -->
-<nav class="row nav nav-underline megamenu navbar-expand-lg navmenu">
+<nav class="nav nav-underline megamenu navbar-expand-lg navmenu">
   <h2 class="sr-only">Navigation</h2>
   <div class="container-fluid">
     <div class="d-flex d-block d-lg-none justify-content-between">

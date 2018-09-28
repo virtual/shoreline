@@ -26,6 +26,7 @@
 
 #mobile-menu-button {
   display:flex;
+  border-radius: 0;
   .menubaricon { width: 1.3rem; height: 1.3rem; } 
   .menubartext {
     display: inline-block;
@@ -48,4 +49,30 @@
 #mobile-search-button {
   text-align:right;
   font-size: 1.3rem;
+  border-radius: 0;
+} 
+/* close */
+#mobile-menu-button[aria-expanded=true], #mobile-search-button[aria-expanded=true] {
+  background: #01685e;
+
+  color: #fff;
+}
+
+#mobile-menu-button[aria-expanded=true]  .menubaricon rect {
+  fill: #fff;
+}
+
+#mobile-menu-button[aria-expanded=true]  .menubaricon rect.menubar1 {
+  
+  transform-origin: 20px 20px;
+  transform: translateY(10px) rotate(45deg);
+  fill: #ffff;
+
+}
+#mobile-menu-button[aria-expanded=true]  .menubaricon rect.menubar2 {
+   transform: translateY(10px) rotate(-45deg); 
+  transform-origin: 30px 20px;
+}
+#mobile-menu-button[aria-expanded=true]  .menubaricon rect.menubar3 {
+  display:none;
 }
