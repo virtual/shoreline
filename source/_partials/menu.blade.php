@@ -11,7 +11,7 @@
       </button>
     </div>
       <a class="navbar-brand" href="/">
-        <img src="{{ $page->baseUrl }}/resources/img/logos/logo-full-mobile.png" srcset="{{ $page->baseUrl }}/resources/img/logos/logo-full-mobile2x.png 2x, {{ $page->baseUrl }}/resources/img/logos/logo-full-mobile3x.png 3x" alt="Shoreline Community College" />
+        <img src="{{ $page->baseUrl }}/resources/img/logos/logo-full-mobile.png" srcset="{{ $page->baseUrl }}/resources/img/logos/logo-full-mobile2x.png 2x, {{ $page->baseUrl }}/resources/img/logos/logo-full-mobile3x.png 3x, {{ $page->baseUrl }}/resources/img/logos/logo-full-mobile4x.png 4x" alt="Shoreline Community College" />
       </a>
       <div class="flex-button flex-button-right">
       <button id="mobile-search-button" class="navbar-toggler primary" type="button" data-toggle="collapse" data-target="#searchCollapse" aria-controls="searchCollapse"
