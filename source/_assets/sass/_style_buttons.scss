@@ -162,10 +162,10 @@ dl .btn-toggle { font-size: 1rem; }
   background-size: 30px;
   background-repeat: no-repeat;
   background-position: 50% 50%; 
-  background-image: url(../../resources/img/icons/toggle-closed.svg);
+  background-image: url(../../resources/img/icons/toggle-closed-blue0.svg);
   height: 30px;
   width: 30px; 
-}
+} 
 
 .btn-toggle[aria-expanded=true]:after {
   
@@ -175,7 +175,7 @@ dl .btn-toggle { font-size: 1rem; }
 .btn-toggle.verbose:after {
   content: "collapse";
   width: auto;  
-  
+  padding-top: 3px;
   padding-right: 2rem;
   background-position: right;
 }

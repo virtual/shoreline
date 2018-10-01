@@ -389,7 +389,7 @@ main, .content-container, .sectional, * {
     }
     .btn-toggle:hover:before {
     background-color: $link-blue; 
-      background-image: url(../../resources/img/icons/toggle-open.svg);
+      background-image: url(../../resources/img/icons/toggle-open-transparent.svg);
     }    
       .btn-toggle[aria-expanded=true]:before {
         background-color: #fff; 

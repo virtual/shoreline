@@ -2411,7 +2411,7 @@ main .card-links.card-links-compact a, .content-container .card-links.card-links
 
 .accordion .card-header .btn-toggle:hover:before {
   background-color: #0074b3;
-  background-image: url(../../resources/img/icons/toggle-open.svg);
+  background-image: url(../../resources/img/icons/toggle-open-transparent.svg);
 }
 
 .accordion .card-header .btn-toggle[aria-expanded=true]:before {
@@ -4305,7 +4305,7 @@ dl .btn-toggle {
   background-size: 30px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-image: url(../../resources/img/icons/toggle-closed.svg);
+  background-image: url(../../resources/img/icons/toggle-closed-blue0.svg);
   height: 30px;
   width: 30px;
 }
@@ -4317,6 +4317,7 @@ dl .btn-toggle {
 .btn-toggle.verbose:after {
   content: "collapse";
   width: auto;
+  padding-top: 3px;
   padding-right: 2rem;
   background-position: right;
 }
