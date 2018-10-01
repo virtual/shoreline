@@ -3030,7 +3030,7 @@ label, select {
 }
 
 .custom-control-label:before {
-  border: 2px solid #ced4da;
+  border: 2px solid rgba(73, 76, 78, 0.25);
   top: 0.15rem;
   left: -1.6rem;
   width: 1.3rem;
@@ -3097,7 +3097,7 @@ label.custom-control-label {
 .custom-form input, .custom-form select, .custom-form textarea {
   border-radius: 0;
   border-width: 2px;
-  border: 2px solid #ced4da;
+  border: 2px solid rgba(73, 76, 78, 0.25);
 }
 
 .custom-form textarea {
@@ -3107,8 +3107,8 @@ label.custom-control-label {
 }
 
 .custom-form .input-group-prepend .input-group-text {
-  -webkit-box-shadow: inset 0 0 1px 1px #ced4da;
-          box-shadow: inset 0 0 1px 1px #ced4da;
+  -webkit-box-shadow: inset 0 0 1px 1px rgba(73, 76, 78, 0.25);
+          box-shadow: inset 0 0 1px 1px rgba(73, 76, 78, 0.25);
   border-radius: 0;
 }
 
@@ -3154,6 +3154,22 @@ label.custom-control-label {
 .custom-form input::placeholder {
   font-weight: normal;
   color: #757575;
+}
+
+form fieldset {
+  padding: .5rem 1rem;
+  margin-bottom: 1rem;
+  clear: both;
+  border: 1px solid rgba(73, 76, 78, 0.25);
+}
+
+form legend {
+  color: #00685e;
+  clear: both;
+  font-size: 1.1875rem;
+  padding: .5rem;
+  font-weight: 600;
+  width: auto;
 }
 
 table {

@@ -2,6 +2,8 @@ input {
   border-radius: 0;
 }
 
+
+
 input[type=checkbox],
 input[type=radio],
 .custom-control-label,
@@ -13,7 +15,7 @@ label, select {
 .custom-control-label:before {
   // box-shadow:  inset 0 0 1px 1px rgba(0, 0, 0, .3);
   // border: 2px solid rgba(0, 0, 0, .2)
-  border: 2px solid #ced4da;
+  border: 2px solid rgba(73, 76, 78, 0.25);
   top: 0.15rem;
   left: -1.6rem;
   width: 1.3rem;
@@ -69,13 +71,13 @@ label.custom-control-label {
   input, select, textarea {
     border-radius: 0;
     border-width: 2px;
-    border: 2px solid #ced4da;
+    border: 2px solid rgba(73, 76, 78, 0.25);
   }
 
   textarea { width: 100%; padding: 1rem; margin: 1rem 0; }
 
   .input-group-prepend .input-group-text {
-    box-shadow: inset 0 0 1px 1px #ced4da;
+    box-shadow: inset 0 0 1px 1px rgba(73, 76, 78, 0.25);
     border-radius: 0;
   }
 
@@ -97,3 +99,17 @@ input::placeholder  { font-weight: normal; color: $text-midgray}
 }
 
 
+
+form fieldset {
+  padding: .5rem 1rem;
+  margin-bottom: 1rem;
+  clear:both;
+  border: 1px solid rgba(73, 76, 78, 0.25)
+
+}
+form legend {
+  color: $primary;
+  clear:both;
+  font-size: 1.1875rem; padding: .5rem; font-weight: 600;   
+  width: auto;
+}
