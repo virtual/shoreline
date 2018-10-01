@@ -4,22 +4,21 @@
 .dark { color: #000; 
   @include headings(1,6) { color: #000; }
 }
+
 .icon-watch:before { 
-  content: "Watch Video";
-  transform: rotate(0);
+  content: " ";
   background-image: url(../../resources/img/icons/play-icon.svg);
   background-position: left;
   margin: 0 auto;
   background-repeat: no-repeat;
-  height: 1rem;
-  width: 1rem; 
+  height: 30px;
+  width: 30px; 
   background-size: contain;
   border-right: 0;
   border-left: 0;
   border-top: 0;
-  border-bottom: 0; 
-  transform: rotate(0);
-  padding-left: 2rem; 
+  border-bottom: 0;  
+  display:inline-block;
 } 
 .more-arrow:after { 
   content: "";

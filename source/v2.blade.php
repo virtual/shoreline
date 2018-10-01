@@ -42,14 +42,24 @@
 
 @section('content')
 <kbd class="ouc">Edit</kbd>
+<h2>Watch video</h2>
+
+<div class="video-container">
+  @include('_partials.video', [
+  'heading' => 'Video Title',
+  'desc' => 'Video description Earum omnis reiciendis aut quasi id ea exercitationem dolorum. Asperiores aut
+  dicta odit.',
+  'youtubeID' => 'dPr287p0cdw',
+  'img' => '/resources/img/videos/Video-Snippet.jpg'
+  ])
+</div>
+
 <h2 class="mt-5">Features &amp; Highlights </h2>
 <ul class="icon-box">
     <li><p>Access to state of the art studio equipment and amazing very amazing things that happen way more than other schools that you should really know about such as terry taylor and all the bestest stuff ever.</p></li>
     <li><p>Access to state of the art studio equipment</p></li>
     <li><p>Faculty with industry experience and more and more and more stuff that i don't know about.</p></li>
   </ul>
-
- 
 
   <h2>Program Options</h2>       
   <div class="row">

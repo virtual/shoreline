@@ -2,13 +2,15 @@
   margin-top: 1rem; margin-bottom: 1rem;
   .video-lightbox { display:flex;
     align-items: center;
-    justify-content: center;}
-  .video-lightbox {
-    img, .btn { flex: 1;}
+    justify-content: center;
+    background:#bada55;
+    position: relative;
+    height: 300px;
+    img, .btn {  flex-shrink: 1;    }
     .btn {
+       
       position: absolute;
-      z-index: 1;
-      border:0;
+      z-index:4;
     }
     img {
       text-align: left;  
@@ -17,6 +19,17 @@
       padding: 0 10px 10px 0;
       margin-bottom: 0.70625rem; 
       width: 100%;
+      z-index:3;
+    }
+    .icon-watch {
+      padding-left: 58px;
+    }
+    .icon-watch:before { border: 0; 
+      // height: 1rem; width: 1rem; 
+      padding-left:0; margin-right: 1rem;
+      position: absolute;
+      top: 20%;
+      left: 20px;
     }
   }
   .card-title { margin-bottom: 0;color: $primary;}
