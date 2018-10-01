@@ -1,47 +1,75 @@
+
+.flex-layout header,
+.flex-layout #footer {
+  flex: none; 
+}
  
+.flex-layout-body {
+  // display: flex;
+  // flex: 1 0 auto; 
+  flex-grow: 1;
+  flex-direction: column;  
+  min-height: 1px;
+}
+.flex-layout-content { 
+  flex: 1 0 auto; 
+  flex-direction: column;   
+}  
 
  
 .layout-has-sidebar {   
   .sidebar-container, .content-container  { width: 100%;  }
+}
+
+.layout-has-sidebar { 
+  display: flex;
+  flex-direction: row;  
+  min-height: 1px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  .sidebar-container {
+    // background: #eee;
+    flex: 0 1 auto; 
+    flex-direction: column;
+  }
+  .content-container { 
+    flex: 0 1 auto;  
+    //background:#ccc;
+  }
+}
+
+.layout-master, #sectionals {
+  flex-grow: 1; 
+  min-height: 1px; // for IE 11
 }
 // .container-fluid { position: relative;}
 
 .layout-master {
   position: relative;
 }
-
-// @media (min-width: $screen-sm) and (max-width: $screen-xl - 1) {
-//   .sidebar-container { padding-right: 20px;}
-// }
+ 
 .content-header{ padding-bottom: 1rem; }
 .content-has-header-img .content-header .header-info .header-content {
   margin-bottom: 2rem;
 }
-
-.page-interior {
-
-
-  // .content-has-header-img .content-header {
-  //     margin-bottom: 2.5rem;
-  // }
-}
+ 
 #maincontent {
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   &.program-option {
     margin-bottom: 0;
   }
 }
-
+#maincontent + #footer   { margin-top: 1.5rem;}
+#maincontent + #sectionals { margin-top: -1.5rem; } 
 .program-option p.lead { margin-top: 1rem;}
 
 @media (max-width: $screen-md - 1) {
   
   .layout-master { 
-    // height: 100vh;
     &.program-option .layout-has-sidebar {
-      // flex-direction: column-reverse; 
-      min-height: auto;
       order: 3;
+      
       .sidebar-container{  
         order: 2;
       }
@@ -55,7 +83,9 @@
       // min-height: 100%;
       min-height: 100vh;
       .sidebar-container, .content-container {
-        display: flex;
+        min-height: 1px; // IE 11
+        // display: flex;
+        // flex-grow:1; // IE 11?
         flex-direction: column;
         justify-content: center;
         // min-height: 100%;
@@ -76,8 +106,8 @@
     .breadcrumb, .header-info { padding-right: 33.33%; } // to wrap around sidenav
   }
   .layout-has-sidebar { 
-    .sidebar-container { width: 33.33%; position: relative; }
-    .content-container { width:66.66%; padding-right: 40px;}
+    .sidebar-container { width: 33.33%; position: relative;  }
+    .content-container { width:66.66%; padding-right: 40px; }
     .sidebar-container.overview {
      // top: -150px; // TODO: This will probably be controlled by JS
       // background: #c8dcbbd4; // debugging
@@ -93,23 +123,6 @@
   .page-interior {
     .header-image {
       margin-bottom: -90px; // breadcrumb affects this distance
-    }
-  }
-  .layout-has-sidebar { 
-    display: flex;
-    flex-direction: row;  
-    min-height: 1px;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    .sidebar-container {
-      // background: #eee;
-      flex: 0 1 auto; 
-      flex-direction: column;
-    }
-    .content-container { 
-      flex: 0 1 auto;  
-      //background:#ccc;
     }
   }
 }  
@@ -304,9 +317,6 @@
 // Holy grail layout
 body {
   display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
-.layout-master {
-  flex-grow: 1;
+  min-height: 100vh;
+  flex-direction: column;
 }

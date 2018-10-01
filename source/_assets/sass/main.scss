@@ -64,21 +64,6 @@ p, ul, dl, ol {
     line-height: 1.5; 
 } 
 
-.flex-layout header,
-.flex-layout #footer {
-  flex: none; 
-}
- 
-.flex-layout-body {
-  // display: flex;
-  flex: 1 0 auto; 
-  flex-direction: column;  
-  min-height: 1px;
-}
-.flex-layout-content { 
-  flex: 1 0 auto; 
-  flex-direction: column;   
-} 
 .contact-section {
   flex: none;
 } 
