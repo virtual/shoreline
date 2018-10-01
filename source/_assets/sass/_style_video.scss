@@ -5,10 +5,11 @@
     justify-content: center;
     background:#bada55;
     position: relative;
-    height: 300px;
-    img, .btn {  flex-shrink: 1;    }
+
+    img, .btn {  flex-shrink: 1; flex-grow:1;   }
     .btn {
-       
+      bottom: auto;
+      right:auto;
       position: absolute;
       z-index:4;
     }
@@ -20,6 +21,9 @@
       margin-bottom: 0.70625rem; 
       width: 100%;
       z-index:3;
+      position: relative;
+      bottom: 0; top:0;
+      left:0; right:0;
     }
     .icon-watch {
       padding-left: 58px;

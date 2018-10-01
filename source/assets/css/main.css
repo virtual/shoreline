@@ -4730,15 +4730,19 @@ ul.list-unstyled li:before, ol.list-unstyled li:before, main .card-links li:befo
           justify-content: center;
   background: #bada55;
   position: relative;
-  height: 300px;
 }
 
 .video-container .video-lightbox img, .video-container .video-lightbox .btn {
   -ms-flex-negative: 1;
       flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .video-container .video-lightbox .btn {
+  bottom: auto;
+  right: auto;
   position: absolute;
   z-index: 4;
 }
@@ -4752,6 +4756,11 @@ ul.list-unstyled li:before, ol.list-unstyled li:before, main .card-links li:befo
   margin-bottom: 0.70625rem;
   width: 100%;
   z-index: 3;
+  position: relative;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .video-container .video-lightbox .icon-watch {
