@@ -16,25 +16,20 @@
   flex-direction: column;   
 }  
 
- 
-.layout-has-sidebar {   
-  .sidebar-container, .content-container  { width: 100%;  }
-}
-
 .layout-has-sidebar { 
-  display: flex;
-  flex-direction: row;  
-  min-height: 1px;
-  max-width: 1200px;
+  display: flex; 
+  min-height: 1px; 
   width: 100%;
   margin: 0 auto;
+  flex-direction: column;
   .sidebar-container {
     // background: #eee;
     flex: 0 1 auto; 
-    flex-direction: column;
+    width: 100%; 
   }
   .content-container { 
     flex: 0 1 auto;  
+    width: 100%; 
     //background:#ccc;
   }
 }
@@ -69,7 +64,7 @@
   .layout-master { 
     &.program-option .layout-has-sidebar {
       order: 3;
-      
+      min-height: 1px; // Fix gap caused by IE fixes
       .sidebar-container{  
         order: 2;
       }
@@ -204,10 +199,13 @@
     
     .sidebar-container { width: 100%;}
   }
+ 
   
 }
 @media (min-width: $screen-md) {
- 
+  .layout-has-sidebar {
+    flex-direction: row;  
+  }
   .layout-has-left-nav { 
     
     display: flex;
@@ -232,6 +230,10 @@
   .layout-has-left-nav { 
     .left-nav { width: 25%;}
     .content-container { width:75%;}
+  }
+  .layout-has-sidebar { 
+    flex-direction: row;   
+    max-width: 1200px;
   }
 }
 
