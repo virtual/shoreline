@@ -1,3 +1,4 @@
+<h1>Lists</h1>
 <div class="row">
   <div class="col-sm-4">
     <h4>Features Checklist <kbd class="small">ul.features</kbd></h4>

@@ -11,6 +11,7 @@
 <p>An important step in attending college is having a solid plan for covering the cost of attendance. If you don't have money to pay your tuition all at once, review the following information on setting up a payment plan through Nelnet.</p>
 <p>Start budgeting for your education today. Your payments will be lower the sooner you start. </p>
 
+<h2>Steps for Planning your Payments</h2>
 @include('_partials.accordion')
 @include('_partials.nav-tab')
 
