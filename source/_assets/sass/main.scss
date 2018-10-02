@@ -124,7 +124,6 @@ kbd.ouc {
 @import "_style_prev.scss"; 
 @import "_style_layout.scss"; 
 @import "_style_typography.scss"; 
-@import "_style_print.scss";
 @import "_style_card.scss";
 @import "_style_classes.scss";
 @import "_style_topnav.scss";
@@ -150,3 +149,5 @@ kbd.ouc {
 @import "_style_homepage.scss"; 
 @import "_style_snippets.scss";
 @import "_style_shame.scss";
+
+@import "_style_print.scss";

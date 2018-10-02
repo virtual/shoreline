@@ -1,12 +1,16 @@
 @media print {
   * {
-      background: none !important;
-      text-align: left !important;
+    text-align: left !important;
   }
+  
   html {
       margin: 0 !important;
       padding: 0 !important;
   }
+  .container-fluid, .layout-has-left-nav { max-width: 100%;}
+  .layout-has-left-nav .content-container, .layout-has-left-nav .left-nav.accordion,
+  .layout-has-left-nav.layout-has-sidebar .content-container { width: 100%;}
+  .center-cropped img { opacity: 1; max-width: 300px;  padding: 15px 15px; }
   body {
       background: #fff !important;
       font-size: 9pt !important;
@@ -27,22 +31,24 @@
       border-bottom: 1px solid #000 !important;
       font-size: 15px;
   } 
-  
-  footer, nav {
+  .header-logo.d-none { display:block !important; }
+  #footer, nav, #skiptocontent, .header-actions, kbd.ouc, kbd.small {
       display: none !important;
   }
-  header > .inner {
-      padding: 5px 0;
+  #header .navbar-brand { padding:0;}
+  #header .navbar-brand img { max-width: 120px; height: auto;}
+  #header > .container-fluid {
+      // padding: 5px 15px;
   }
   .padded, .main-content {
       padding: 0;
       margin: 0;
   } 
   /* print */
-  header {
+  header#header {
       border-bottom: 0;
       position: relative;
-      padding-bottom: 6px;
+      padding-bottom: 6px !important;
       margin-bottom: 0;
   } 
   blockquote {
@@ -54,8 +60,11 @@
   p,
   td,
   th,
-  li {
-      font-size: 14px;
+  li,
+  .breadcrumb ol a,
+  .accordion .card .card-body {
+      font-size: 16px;
+      line-height: 1.6;
   } 
   main ul > li {
       margin-bottom: 5px;
@@ -77,33 +86,30 @@
       font-style: normal;
       font-variant: normal;
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      margin-top: 1.5em;
   }
+ 
+
   h1 {
       font-size: 24px;
       font-weight: 500;
-      line-height: 26.4px;
   }
   h2,
-  h3 {
+  h3, .xl {
       font-size: 16px;
       font-weight: 500;
-      line-height: 17.4px;
   }
-  h2 {
+  h2, .xxl {
       font-size: 18px;
-      line-height: 19.4px;
   }
-  h4 {
+  h4, .large {
       font-size: 15px;
-      line-height: 16.4px;
   }
-  h5 {
+  h5, .medium {
       font-size: 14px;
-      line-height: 15.4px;
   }
-  h6 {
+  h6, .small {
       font-size: 13px;
-      line-height: 14.4px;
   }
   p {
     color:#000;
@@ -121,24 +127,29 @@
       font-weight: 400;
       line-height: 18.5714px;
   }
-  ul li {
-      list-style-type: initial !important;
-  }
-  main ul > li:before {
-      background: none;
-      left: auto;
-      top: auto;
-      position: relative;
-      content: none;
-  } 
+  // ul li {
+  //     list-style-type: initial !important;
+  // }
+  // main ul > li:before {
+  //     background: none;
+  //     left: auto;
+  //     top: auto;
+  //     position: relative;
+  //     content: none;
+  // } 
   main img {
       max-height: none !important;
       padding: 8px 10px;
   } 
   /* toggles */
-  .accordion {
-      border-top: 1px solid #ccc;
+  .accordion .card-header {
+    h2, h3, h4, h5 { 
+      .btn { font-size: 16px; background-color: #eee !important; }
+    }
   }
+  button, .btn { text-align:center !important; border: 1px solid #000; font-size: 14px; text-decoration: none; color:#000; }
+  .accordion .btn-toggle:before { display:none; }
+
   .btn-link { color:#000;}
   .collapse {
     display: block;
@@ -147,15 +158,27 @@
   .layout-has-nav main {
     width: 100% !important;
   } 
-
+  .collapse:not(.show) { display:block;}
   .interior-feature {
     height: auto;
     background: none; 
 } 
+.page-interior { border-top:0; margin-bottom: 0; }
 .interior-feature .interior-header {
     bottom: auto;
     position: relative;
 }
 .interior-feature .interior-header h1 { margin:0;} 
+
+// .content-header, #sectionals { padding-left: 10px; }
+.content-header, .content-header.bg-primary { 
+  color: #000; border-top:0; margin-top:0;
+}
+.bg-primary {
+  color: #000;
+  background-color: transparent !important; 
+  ol, .btn, .btn-primary, .btn-secondary, .btn-tertiary, .btn-important { color:#000;}
+}
+
 }
 /* end print */
