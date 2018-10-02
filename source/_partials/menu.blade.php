@@ -24,7 +24,7 @@
     <div class="collapse navbar-collapse" id="searchCollapse">
       <div class="container">
         <div class="searchform-mobile">
-          @include ('_partials.searchform')
+          @include ('_partials.searchform2')
         </div>
       </div>
     </div>

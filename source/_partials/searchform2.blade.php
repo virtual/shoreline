@@ -6,8 +6,8 @@
         <span class="sr-only">Search</span>
       </button>
     </span>
-    <label for="search1"><span class="sr-only">Enter search terms</span>
-    <input id="search1" type="search" name="EnterSearch" class="entersearch form-control border-left-0 border" placeholder="Search"
+    <label for="search2"><span class="sr-only">Enter search terms</span>
+    <input id="search2" type="search" name="EnterSearch" class="entersearch form-control border-left-0 border" placeholder="Search"
       value=""></label>
   </div>
 </form>
