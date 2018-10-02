@@ -2931,6 +2931,47 @@ img.rounded {
           transform: translateX(-100px);
 }
 
+blockquote {
+  font-size: 1.5rem;
+  margin-left: 0;
+  color: #444;
+  position: relative;
+  margin-left: 2rem;
+}
+
+blockquote p {
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+
+blockquote p + p {
+  margin-top: .5rem;
+}
+
+blockquote cite, blockquote small {
+  font-size: .9rem;
+  font-style: normal;
+  margin-top: .5rem;
+  display: block;
+}
+
+blockquote cite strong, blockquote small strong {
+  color: #000;
+}
+
+blockquote:before {
+  content: "";
+  background-image: url("../../resources/img/icons/copy-6@3x.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  height: 20.6px;
+  width: 26.2px;
+  display: block;
+  position: absolute;
+  left: -2.25rem;
+  background-size: contain;
+}
+
 .quote-feature {
   line-height: 1.25;
 }
@@ -2950,21 +2991,13 @@ img.rounded {
 }
 
 .quote-feature blockquote {
-  font-size: 1.5rem;
   margin-left: 0;
-  color: #444;
-  position: relative;
 }
 
 .quote-feature blockquote:before {
-  content: "";
-  background-image: url("../../resources/img/icons/copy-6@3x.png");
-  background-position: top left;
-  background-repeat: no-repeat;
-  height: 20.6px;
-  width: 26.2px;
-  display: block;
-  background-size: contain;
+  position: relative;
+  left: auto;
+  top: auto;
 }
 
 .quote-feature figcaption {
@@ -6114,4 +6147,29 @@ header#header {
     min-height: 100%;
     height: 100px;
   }
+}
+
+.module {
+  margin-bottom: 1.75rem;
+}
+
+.reverse-mobile {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+@media (min-width: 768px) {
+  .reverse-mobile {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.RightCallOutGreenBorder {
+  padding-left: 20px;
+  border-left: 1px solid #00685e;
 }

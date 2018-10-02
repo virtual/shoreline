@@ -1,4 +1,4 @@
-<div class="accordion" id="accordionExample">
+<div class="accordion" id="uniqueID">
     <div class="card">
       <div class="card-header" id="headingOne">
         <h3>
@@ -8,7 +8,7 @@
         </h3>
       </div>
   
-      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
         <div class="card-body">
             @include('_partials.table-stacked')
         </div>

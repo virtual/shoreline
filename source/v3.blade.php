@@ -40,8 +40,8 @@
    <!-- Three Column List -->
 </p>
 
-<div class="section">
-   <div class="col span_1_of_3">
+<div class="row">
+   <div class="col-md-4">
       <ul>
          <li><a href="#two-column">50/50 Two Column Text Snippet</a></li>
          <li><a href="#two-column-reverse">50/50 Two Column Text Snippet (Reverse Layout on Mobile)</a></li>
@@ -56,7 +56,7 @@
          <li><a title="Multiple Events Snippet" href="#multi-event">Multiple Events Snippet</a></li>
       </ul>
    </div>
-   <div class="col span_1_of_3">
+   <div class="col-md-4">
       <ul>
          <li><a title="News Feed Snippet" href="#news-feed">News Feed Snippet</a></li>
          <li><a href="#newstwo">OmniUpdate Support</a></li>
@@ -66,10 +66,10 @@
          <li><a title="Two Columns with Quote on Right Side" href="#two-column-quote">Two Columns with Quote on Right Side</a></li>
          <li><a href="#OneColumnQuote">One Column Quote</a></li>
          <li><a title="Rectangular Announcement with Button" href="#announcement">Rectangular Announcement with Button</a></li>
-         <li><a title="Square&nbsp;News/Announcement" href="#square-announce">Square&nbsp;News/Announcement</a></li>
+         <li><a title="Square&nbsp;News/Announcement" href="#square-announce">Square News/Announcement</a></li>
       </ul>
    </div>
-   <div class="col span_1_of_3">
+   <div class="col-md-4">
       <ul>
          <li><a title="Table Snippet" href="#gen_table">Table (Simple)</a></li>
          <li><a href="#table-pinned">Table (Pinned)</a></li>
@@ -93,8 +93,8 @@
 
 <h4 style="text-align: center;"><span style="text-decoration: underline;"><a id="two-column"></a>50/50 Two Column Snippet</span></h4>
 
-<div class="section two-col module">
-   <div class="col span_1_of_2">
+<div class="row two-col module">
+   <div class="col-md-6">
       <div class="col-inner">
          
          <p>Insert Column One Content.</p>
@@ -104,7 +104,7 @@
          
       </div>
    </div>
-   <div class="col span_1_of_2">
+   <div class="col-md-6">
       <div class="col-inner">
          
          <p>Insert Column Two Content.<br><br>This is the second (or right-side) column of a two-column snippet where content can
@@ -121,8 +121,8 @@
 <h4 style="text-align: center;"><span style="text-decoration: underline;"><a id="two-column-reverse"></a>50/50 Two Column Snippet (Reverse Layout on Mobile)</span><br>
    <!-- generic two column snippet more complex below --></h4>
 
-<div class="section two-col module reverse-mobile">
-   <div class="col span_1_of_2">
+<div class="row two-col module reverse-mobile">
+   <div class="col-md-6">
       <div class="col-inner">
          
          <p>This is the first (or left-side) column of a two-column snippet where content can
@@ -134,7 +134,7 @@
          
       </div>
    </div>
-   <div class="col span_1_of_2">
+   <div class="col-md-6">
       <div class="col-inner">
          
          <p>This is the second (or right-side) column of a two-column snippet where content can
@@ -158,8 +158,8 @@
 
 <div class="three-items module">
    <div class="module-inner">
-      <div class="section three-col">
-         <div class="col span_1_of_3" style="height: 220px;">
+      <div class="row three-col">
+         <div class="col-md-4">
             
             <p>Insert Column One Content.</p>
             
@@ -167,7 +167,7 @@
                   be placed.<br><br>In the page's responsive design, this column will <span>scale</span><span> down and be placed above the second (or middle) column.</span><br></span></p>
             
          </div>
-         <div class="col span_1_of_3" style="height: 220px;">
+         <div class="col-md-4">
             
             <p>Insert Column Two Content.</p>
             
@@ -176,7 +176,7 @@
                   (or left-hand) column<br></span></p>
             
          </div>
-         <div class="col span_1_of_3" style="height: 220px;">
+         <div class="col-md-4">
             
             <p>Insert Column Three Content.</p>
             
@@ -199,29 +199,29 @@
 
 <h4 style="text-align: center;"><span style="text-decoration: underline;"><a id="three-column-list"></a>Three Column List Snippet</span></h4>
 
-<div class="section">
-   <div class="col span_1_of_3">
+<div class="row">
+   <div class="col-md-4">
       <ul>
          <li>Replace content when a bulleted list is needed.</li>
-         <li><span>This is the first (or left-side) column of a three-column snippet where content can
-               be placed.</span></li>
+         <li>This is the first (or left-side) column of a three-column snippet where content can
+               be placed.</li>
          <li>To add a bullet, simply hit the "Return" key.</li>
       </ul>
    </div>
-   <div class="col span_1_of_3">
+   <div class="col-md-4">
       <ul>
-         <li><span>This is the second (or middle) column of a three-column snippet.</span></li>
-         <li><span>In the page's responsive design, this column will scale down and be placed under the
-               first (or left-hand) column</span></li>
-         <li><span>To add a bullet, simply hit the "Return" key.</span></li>
+         <li>This is the second (or middle) column of a three-column snippet.</li>
+         <li>In the page's responsive design, this column will scale down and be placed under the
+               first (or left-hand) column</li>
+         <li>To add a bullet, simply hit the "Return" key.</li>
       </ul>
    </div>
-   <div class="col span_1_of_3">
+   <div class="col-md-4">
       <ul>
-         <li><span>This is the third (or right-side) column of a three-column snippet.</span></li>
-         <li><span>In the page's responsive design, this column will scale down and be placed under the
-               middle column.</span></li>
-         <li><span>To add a bullet, simply hit the "Return" key.</span></li>
+         <li>This is the third (or right-side) column of a three-column snippet.</li>
+         <li>In the page's responsive design, this column will scale down and be placed under the
+               middle column.</li>
+         <li>To add a bullet, simply hit the "Return" key.</li>
       </ul>
    </div>
 </div>
@@ -232,84 +232,7 @@
    <!-- accordion content --></h4>
 
 <div class="module-inner module">
-   <div class="accordion-group">
-      <div class="accordion">
-         <h3 class="accordion-handle">Accordion One</h3>
-         <div class="accordion-content">
-            <div class="accordion-inner">
-               
-               <p>Aenean vel pharetra diam. Morbi vitae dolor in elit viverra fermentum vel in diam.
-                  Nulla interdum magna vel sapien vehicula dignissim. Pellentesque dignissim pulvinar.
-                  Quisque quis justo quis velit sodales tempor.
-               </p>
-               
-            </div>
-         </div>
-      </div>
-      <div class="accordion">
-         <h3 class="accordion-handle">
-            Accordion Two 
-            
-         </h3>
-         <div class="accordion-content">
-            <div class="accordion-inner">
-               
-               <p>Aenean vel pharetra diam. Morbi vitae vel in diam. Maecenas in vestibulum sapien.
-                  Nulla sapien vehicula dignissim. Pellentesque dignissim pulvinar. Maecenas sollicitudin
-                  massa a consequat tincidunt.
-               </p>
-               
-            </div>
-         </div>
-      </div>
-      <div class="accordion">
-         <h3 class="accordion-handle">
-            Accordion Three 
-            
-         </h3>
-         <div class="accordion-content">
-            <div class="accordion-inner">
-               
-               <p>Aenean vel pharetra diam. Morbi vitae dolor in elit viverra fermentum vel in diam.
-                  Nulla interdum magna vel sapien vehicula dignissim. Nam blandit felis sed luctus molestie.
-                  Maecenas sollicitudin massa a consequat tincidunt.
-               </p>
-               
-            </div>
-         </div>
-      </div>
-      <div class="accordion">
-         <h3 class="accordion-handle">
-            Accordion Four 
-            
-         </h3>
-         <div class="accordion-content">
-            <div class="accordion-inner">
-               
-               <p>Aenean vel pharetra diam. Morbi vitae dolor in elit viverra fermentum vel in diam.
-                  Maecenas in vestibulum sapien. Nulla interdum magna vel sapien vehicula dignissim.
-                  Pellentesque vestibulum ac est dignissim pulvinar. Sed orci sapien, fermentum dictum
-                  consequat posuere, tincidunt vel dolor. Quisque quis justo quis velit sodales tempor.
-                  Nam blandit felis sed luctus molestie. Maecenas sollicitudin massa a consequat tincidunt.
-               </p>
-               
-            </div>
-         </div>
-      </div>
-      <div class="accordion">
-         <h3 class="accordion-handle">Accordion Five</h3>
-         <div class="accordion-content">
-            <div class="accordion-inner">
-               
-               <p>Aenean vel pharetra diam. Morbi vitae dolor in elit viverra fermentum vel in diam.
-                  Pellentesque vestibulum ac est dignissim pulvinar. Quisque quis velit sodales tempor.
-                  Maecenas sollicitudin massa a consequat tincidunt.
-               </p>
-               
-            </div>
-         </div>
-      </div>
-   </div>
+   @include('_partials/accordion')   
 </div>
 
 <p>&nbsp;Use this snippet to provide additional content to pages without creating exceedingly
@@ -334,9 +257,9 @@
 
 <h4 style="clear: left; text-align: center;"><span style="text-decoration: underline;"><a id="button"></a>Button Snippet (left and right justified)<br></span></h4>
 
-<p><a class="cta float-left" href="/default.aspx">Click me</a></p>
+<p><a class="btn btn-primary" href="/default.aspx">Click me</a></p>
 
-<p><a class="cta primary" href="/default.aspx">Click me</a></p>
+<p><a class="btn btn-primary float-md-right" href="/default.aspx">Click me</a></p>
 
 <p style="clear: left;">&nbsp;</p>
 
@@ -351,58 +274,18 @@
 <p>
    <!-- Generic Table -->
 </p>
-
-<div class="contact-block-wrapper module">
-   <div class="section">
-      <div class="col span_2_of_3">
-         
-         <p>Add your content here to match the height of the contact info to the right.</p>
-         
-         <!-- accordion content -->
-      </div>
-      <div class="col span_1_of_3">
-         <!--Generic Three Cell Contact Block -->
-         
-         <div class="contact-block">
-            <div class="contact-group contact-group-1">
-               
-               <h6>Contact Us</h6>
-               
-               <address><strong>Advising Services</strong><br>FOSS&nbsp;(5000) Bld., Room 5229
-               </address>
-            </div>
-            <div class="contact-group contact-group-2">
-               
-               <div class="contactSubgroup">
-                  
-                  <div><strong>Email</strong><br><a href="/">advising@shoreline.edu</a></div>
-                  
-                  <div><strong>Phone</strong><br><a href="tel:2065464659">206-546-4559</a></div>
-                  
-                  <div><strong>Fax</strong><br><a href="tel:2065335101">206-533-5101</a></div>
-                  
-               </div>
-               
-            </div>
-            <div class="contact-group contact-group-3">
-               
-               <h6>Hours</h6>
-               
-               <div class="contactSubgroup">
-                  
-                  <div><strong>Monday - Thursday</strong><br>8 a.m. - 5 p.m.
-                  </div>
-                  
-                  <div><strong>Friday</strong><br>8 a.m. - 4:30 p.m.
-                  </div>
-                  
-               </div>
-               
-            </div>
-         </div>
-         
-      </div>
-   </div>
+<div class="row">
+  <div class="col-md-8">
+    <p>Example usage. Place the contact snippet within a 2-col or 3-col snippet as needed. </p>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
+      elit. Aenean commodo ligula eget dolor. Aenean massa.
+      Del sociis natoque penatibus et magnis dis parturient
+      montes, nascetur ridiculus mus. Donec quam felis,
+      ultricies nec, pellentesque eu, pretium quis, sem.</p>
+  </div>
+  <div class="col-md-4 address-sidebar">
+    @include('_partials.address')
+  </div>
 </div>
 
 <hr>
@@ -414,43 +297,7 @@
    <!-- Generic Table -->
 </p>
 
-<div class="contact-block">
-   <div class="contact-group contact-group-1">
-      
-      <h6>Contact Us</h6>
-      
-      <address><strong>Advising Services</strong><br>FOSS&nbsp;(5000) Bld., Room 5229
-      </address>
-   </div>
-   <div class="contact-group contact-group-2">
-      
-      <div class="contactSubgroup">
-         
-         <div><strong>Email</strong><br><a href="/">advising@shoreline.edu</a></div>
-         
-         <div><strong>Phone</strong><br><a href="tel:2065464659">206-546-4559</a></div>
-         
-         <div><strong>Fax</strong><br><a href="tel:2065335101">206-533-5101</a></div>
-         
-      </div>
-      
-   </div>
-   <div class="contact-group contact-group-3">
-      
-      <h6>Hours</h6>
-      
-      <div class="contactSubgroup">
-         
-         <div><strong>Monday - Thursday</strong><br>8 a.m. - 5 p.m.
-         </div>
-         
-         <div><strong>Friday</strong><br>8 a.m. - 4:30 p.m.
-         </div>
-         
-      </div>
-      
-   </div>
-</div>
+@include('_partials.address')
 
 <p>
    <!--Generic Three Cell Contact Block -->
@@ -476,7 +323,7 @@
 
 <div class="three-items module">
    <div class="module-inner">
-      <div class="section three-col events"><div class="col span_1_of_3" style="height: 132px;">	<div class="col-inner">    	<h6><a href="http://www.shoreline.edu/calendars/default.aspx?trumbaEmbed=view%3devent%26eventid%3d127656783#">First Day of Instruction</a></h6>  	<span class="date">All Day Event</span>       <p class="detail-text">12:00 AM to 11:59 PM</p>       <p class="detail-text">Campus - Wide</p>	</div></div><div class="col span_1_of_3" style="height: 132px;">	<div class="col-inner">    	<h6><a href="http://www.shoreline.edu/calendars/default.aspx?trumbaEmbed=view%3devent%26eventid%3d129478585#">Bloodworks NW Blood Drive</a></h6>  	<span class="date">Sep 26, 2018</span>       <p class="detail-text"> 10am&nbsp;–&nbsp;2pm <br></p>       <p class="detail-text">PUB - Quiet Dining Room </p>	</div></div><div class="col span_1_of_3" style="height: 132px;">	<div class="col-inner">    	<h6><a href="http://www.shoreline.edu/calendars/default.aspx?trumbaEmbed=view%3devent%26eventid%3d128611890#">Women's Soccer vs. Peninsula</a></h6>  	<span class="date">Sep 26, 2018</span>       <p class="detail-text"> 2pm <br></p>       <p class="detail-text">Shoreline, WA </p>	</div></div>
+      <div class="section three-col events"><div class="col-md-4" style="height: 132px;">	<div class="col-inner">    	<h6><a href="http://www.shoreline.edu/calendars/default.aspx?trumbaEmbed=view%3devent%26eventid%3d127656783#">First Day of Instruction</a></h6>  	<span class="date">All Day Event</span>       <p class="detail-text">12:00 AM to 11:59 PM</p>       <p class="detail-text">Campus - Wide</p>	</div></div><div class="col-md-4" style="height: 132px;">	<div class="col-inner">    	<h6><a href="http://www.shoreline.edu/calendars/default.aspx?trumbaEmbed=view%3devent%26eventid%3d129478585#">Bloodworks NW Blood Drive</a></h6>  	<span class="date">Sep 26, 2018</span>       <p class="detail-text"> 10am&nbsp;–&nbsp;2pm <br></p>       <p class="detail-text">PUB - Quiet Dining Room </p>	</div></div><div class="col-md-4" style="height: 132px;">	<div class="col-inner">    	<h6><a href="http://www.shoreline.edu/calendars/default.aspx?trumbaEmbed=view%3devent%26eventid%3d128611890#">Women's Soccer vs. Peninsula</a></h6>  	<span class="date">Sep 26, 2018</span>       <p class="detail-text"> 2pm <br></p>       <p class="detail-text">Shoreline, WA </p>	</div></div>
       </div>
    </div>
    <p><a class="cta" href="/calendar">View all events page</a></p>
@@ -490,7 +337,40 @@
 
 <h4 style="text-align: center;"><span style="text-decoration: underline;"><a id="news-feed"></a>News Feed Snippet</span></h4>
 
-<div class="section module"><div class="col span_1_of_3"><div class="news-single-wide"><div class="image" style="background-image: url(&quot;http://www.shoreline.edu/_zz-customer-files/sean/News/images/sunfest.jpg&quot;);"></div><div class="news-details" style=""><span class="detail-text">Friday, June 10</span><h6><a href="http://www.shoreline.edu/_zz-customer-files/sean/News/sunfest.aspx">Sunfest!</a></h6></div></div></div><div class="col span_1_of_3"><div class="news-single-wide"><div class="image" style="background-image: url(&quot;http://www.shoreline.edu/_zz-customer-files/sean/News/images/nursing-grads.jpg&quot;);"></div><div class="news-details" style=""><span class="detail-text">Friday, June 10</span><h6><a href="http://www.shoreline.edu/_zz-customer-files/sean/News/nursing-grads.aspx">Nursing program graduation &amp; Honor Society</a></h6></div></div></div><div class="col span_1_of_3"><div class="news-single-wide"><div class="image" style="background-image: url(&quot;http://www.shoreline.edu/_zz-customer-files/sean/News/images/on-the-green-2.jpg&quot;);"></div><div class="news-details" style=""><span class="detail-text">Thursday, February 25</span><h6><a href="http://www.shoreline.edu/_zz-customer-files/sean/News/fbi.aspx">Apple Hacks FBI Director's Phone</a></h6></div></div><a class="cta" href="/_zz-customer-files/sean/News/">View all news</a></div>
+<div class="module">
+  <div class="news-no-description">
+      <div class="row">
+        <div class="col-sm-4">@include('_partials.article', [
+          'heading' => 'Seven back-to-school tips for college students',
+          'desc' => 'Duis nec consequat dui. Praesent gravida diam at ex pharetra porta. Vivamus at nisi massa. Nam
+          porta…',
+          'alt' => 'students at a table',
+          'img' => '/resources/img/news/studying-in-library_news-crop.jpg',
+          'link' => 'https://news.shoreline.edu/2018/09/13/seven-back-to-school-tips-for-college-students/',
+          'datetime' => '2018-09-13 11:31'
+          ])</div>
+        <div class="col-sm-4">@include('_partials.article', [
+          'heading' => 'Seven back-to-school tips for college students',
+          'desc' => 'Duis nec consequat dui. Praesent gravida diam at ex pharetra porta. Vivamus at nisi massa. Nam
+          porta…',
+          'alt' => 'students at a table',
+          'img' => '/resources/img/news/studying-in-library_news-crop.jpg',
+          'link' => 'https://news.shoreline.edu/2018/09/13/seven-back-to-school-tips-for-college-students/',
+          'datetime' => '2018-09-13 11:31'
+          ])</div>
+        <div class="col-sm-4">@include('_partials.article', [
+          'heading' => 'Seven back-to-school tips for college students. Vivamus at nisi massa.',
+          'desc' => 'Duis nec consequat dui. Praesent gravida diam at ex pharetra porta. Vivamus at nisi massa. Nam
+          porta…',
+          'alt' => 'students at a table',
+          'img' => '/resources/img/news/studying-in-library_news-crop.jpg',
+          'link' => 'https://news.shoreline.edu/2018/09/13/seven-back-to-school-tips-for-college-students/',
+          'datetime' => '2018-09-13 11:31'
+          ])</div>
+    
+      </div>
+    </div>
+    <p class="text-center xl pt-3"><a href="#" class="more-arrow">View all News</a></p>
 </div>
 
 <hr>
@@ -509,8 +389,8 @@
    <!-- Two Column with 1/3 to 2/3 Width Ratio -->
 </h4>
 
-<div class="section">
-   <div class="col span_1_of_3">
+<div class="row">
+   <div class="col-md-4">
       
       <p>
          <!-- generic news item -->
@@ -523,7 +403,7 @@
       </div>
       
    </div>
-   <div class="col span_2_of_3">
+   <div class="col-md-8">
       
       <div class="news-double-wide">
          <div class="image" style="background-image: url(&quot;/_resources/img/graphics/photo-310x230-2.jpg&quot;); height: 231px;"></div>
@@ -549,20 +429,14 @@
    <!-- Two Column with 2/3 to 1/3 Width Ratio -->
 </p>
 
-<div class="section">
-   <div class="col span_2_of_3">
-      
-      <p>Place your content here</p>
-      
+<div class="row">
+   <div class="col-md-8">
+      <p>Place your content here</p>     
    </div>
-   <div class="col span_1_of_3">
-      
+   <div class="col-md-4">
       <div class="RightCallOutGreenBorder">
-         
-         <p>Place your content here</p>
-         
-      </div>
-      
+         <p>Place your content here</p>         
+      </div>      
    </div>
 </div>
 
@@ -572,23 +446,20 @@
 
 <h4 style="text-align: center;">&nbsp;<a id="two-column-wide-right"></a><span style="text-decoration: underline;">Two Column Snippet with 1/3 to 2/3 Width Ratio</span>
    <!-- Two Column with 1/3 to 2/3 Width Ratio --></h4>
-
-<div class="section">
-   <div class="col span_1_of_3">
-      
-      <p>Insert Column One Content. This column is 1/3 the width of the page.</p>
-      
-      <p>This is the first (or left-side) column of a two-column snippet where content can
-         be placed.<br><br><span>In the page's responsive design, this column will </span><span>scale</span><span> down and be placed above the second(or right-hand) column.</span></p>
-      
-   </div>
-   <div class="col span_2_of_3">
-      
-      <p><span>Insert Column Two Content. This column is 2/3 the width of the page.</span><br><br><span>This is the second (or right-side) column of a two-column snippet where content can
-            be placed.</span><br><br><span>In the page's responsive design, this column will scale down and be placed under the
-            first (or left-hand) column.</span></p>
-      
-   </div>
+<div class="row">
+  <div class="col-md-4">
+    <p>Insert Column One Content. This column is 1/3 the width of the page.</p>
+    <p>This is the first (or left-side) column of a two-column snippet where content can
+      be placed.<br><br>In the page's responsive design, this column will scale down
+        and be placed above the second(or right-hand) column.</p>
+  </div>
+  <div class="col-md-8">
+    <p>Insert Column Two Content. This column is 2/3 the width of the page.<br><br>This is the
+        second (or right-side) column of a two-column snippet where content can
+        be placed.<br><br>In the page's responsive design, this column will scale down and be placed under
+        the
+        first (or left-hand) column.</p>
+  </div>
 </div>
 
 <hr>
@@ -599,22 +470,20 @@
    <!-- Two Column with 2/3 to 1/3 Width Ratio -->
 </p>
 
-<div class="section">
-   <div class="col span_2_of_3">
-      
-      <p>Insert Column One Content. This column is 2/3 the width of the page.</p>
-      
-      <p>This is the first (or left-side) column of a two-column snippet where content can
-         be placed.<br><br><span>In the page's responsive design, this column will </span><span>scale</span><span> down and be placed above the second(or right-hand) column.</span></p>
-      
-   </div>
-   <div class="col span_1_of_3">
-      
-      <p><span>Insert Column Two Content. This column is 1/3 the width of the page.</span><br><br><span>This is the second (or right-side) column of a two-column snippet where content can
-            be placed.</span><br><br><span>In the page's responsive design, this column will scale down and be placed under the
-            first (or left-hand) column.</span></p>
-      
-   </div>
+<div class="row">
+  <div class="col-md-8">
+    <p>Insert Column One Content. This column is 2/3 the width of the page.</p>
+    <p>This is the first (or left-side) column of a two-column snippet where content can
+      be placed.<br><br>In the page's responsive design, this column will scale down
+        and be placed above the second(or right-hand) column.</p>
+  </div>
+  <div class="col-md-4">
+    <p>Insert Column Two Content. This column is 1/3 the width of the page.<br><br>This is the
+        second (or right-side) column of a two-column snippet where content can
+        be placed.<br><br>In the page's responsive design, this column will scale down and be placed under
+        the
+        first (or left-hand) column.</p>
+  </div>
 </div>
 
 <hr>
@@ -625,21 +494,22 @@
 
 <h4 style="text-align: center;"><span style="text-decoration: underline;"><a id="two-column-quote"></a>Two Columns with Quote on Right Side</span></h4>
 
-<div class="section two-col module">
-   <div class="col span_1_of_2">
+<div class="row two-col module">
+   <div class="col-md-6">
       <div class="col-inner">
          
          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
          
       </div>
    </div>
-   <div class="col span_1_of_2">
+   <div class="col-md-6">
       <div class="col-inner">
          
-         <blockquote>
-            <p class="quote">Begin by typing a quote. Once the quote is done.</p>
-            <p class="quote-attribution">—Quote Author</p>
-         </blockquote>
+          <blockquote>
+              <p>Begin by typing a quote. Once the quote is done, you can rejoice.</p>
+              <cite class="quote-attribution"><strong>Quote Author Name</strong>
+                <br/>Job Title</cite>
+           </blockquote>
          
       </div>
    </div>
@@ -651,9 +521,8 @@
 </h4>
 
 <blockquote>
-   <p class="quote"></p>
-   <p class="quote">Begin by typing a quote. Once the quote is done, you can rejoice.</p>
-   <p class="quote-attribution">—Quote Author</p>
+   <p>Begin by typing a quote. Once the quote is done, you can rejoice.</p>
+   <cite class="quote-attribution">Quote Author</cite>
 </blockquote>
 
 <hr>
@@ -1106,11 +975,11 @@
 
 <div class="built-in-captions module">
    <div class="section">
-      <div class="col span_2_of_3">
+      <div class="col-md-8">
          <figure class="built-in-caption"><img src="/_resources/img/graphics/photo-644x335-1.jpg" alt="woman"><figcaption><a href="/">Built-in Caption example</a></figcaption>
          </figure>
       </div>
-      <div class="col span_1_of_3">
+      <div class="col-md-4">
          <figure class="built-in-caption"><img src="/_resources/img/graphics/photo-313x335-1.jpg" alt="woman playing soccer"><figcaption><a href="/">Built-in Caption example</a></figcaption>
          </figure>
       </div>

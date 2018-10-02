@@ -1,0 +1,15 @@
+.module { margin-bottom: 1.75rem; }
+
+.reverse-mobile {
+  flex-direction: column-reverse;
+}
+@media (min-width: $screen-md) {
+  .reverse-mobile {
+    flex-direction: row;
+  }
+} 
+
+.RightCallOutGreenBorder {
+  padding-left: 20px;
+  border-left: 1px solid $primary;
+}

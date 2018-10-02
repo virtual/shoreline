@@ -112,35 +112,38 @@
     <div class="container-fluid">
 
 <div class="news-no-description">
-    <div class="row">
-      <div class="col-sm-4">@include('_partials.article', [
-        'heading' => 'Seven back-to-school tips for college students',
-        'desc' => 'Duis nec consequat dui. Praesent gravida diam at ex pharetra porta. Vivamus at nisi massa. Nam porta…',
-        'alt' => 'students at a table',
-        'img' => '/resources/img/news/studying-in-library_news-crop.jpg',           
-        'link' => 'https://news.shoreline.edu/2018/09/13/seven-back-to-school-tips-for-college-students/',
-        'datetime' => '2018-09-13 11:31'
-        ])</div>
-        <div class="col-sm-4">@include('_partials.article', [
-          'heading' => 'Seven back-to-school tips for college students',
-          'desc' => 'Duis nec consequat dui. Praesent gravida diam at ex pharetra porta. Vivamus at nisi massa. Nam porta…',
-          'alt' => 'students at a table',
-          'img' => '/resources/img/news/studying-in-library_news-crop.jpg',           
-          'link' => 'https://news.shoreline.edu/2018/09/13/seven-back-to-school-tips-for-college-students/',
-          'datetime' => '2018-09-13 11:31'
-          ])</div>
-          <div class="col-sm-4">@include('_partials.article', [
-            'heading' => 'Seven back-to-school tips for college students. Vivamus at nisi massa.',
-            'desc' => 'Duis nec consequat dui. Praesent gravida diam at ex pharetra porta. Vivamus at nisi massa. Nam porta…',
-            'alt' => 'students at a table',
-            'img' => '/resources/img/news/studying-in-library_news-crop.jpg',           
-            'link' => 'https://news.shoreline.edu/2018/09/13/seven-back-to-school-tips-for-college-students/',
-            'datetime' => '2018-09-13 11:31'
-            ])</div>
-            
-    </div>
-    </div>
-    <p class="text-center xl pt-3"><a href="#" class="more-arrow">View all News</a></p>
+  <div class="row">
+    <div class="col-sm-4">@include('_partials.article', [
+      'heading' => 'Seven back-to-school tips for college students',
+      'desc' => 'Duis nec consequat dui. Praesent gravida diam at ex pharetra porta. Vivamus at nisi massa. Nam
+      porta…',
+      'alt' => 'students at a table',
+      'img' => '/resources/img/news/studying-in-library_news-crop.jpg',
+      'link' => 'https://news.shoreline.edu/2018/09/13/seven-back-to-school-tips-for-college-students/',
+      'datetime' => '2018-09-13 11:31'
+      ])</div>
+    <div class="col-sm-4">@include('_partials.article', [
+      'heading' => 'Seven back-to-school tips for college students',
+      'desc' => 'Duis nec consequat dui. Praesent gravida diam at ex pharetra porta. Vivamus at nisi massa. Nam
+      porta…',
+      'alt' => 'students at a table',
+      'img' => '/resources/img/news/studying-in-library_news-crop.jpg',
+      'link' => 'https://news.shoreline.edu/2018/09/13/seven-back-to-school-tips-for-college-students/',
+      'datetime' => '2018-09-13 11:31'
+      ])</div>
+    <div class="col-sm-4">@include('_partials.article', [
+      'heading' => 'Seven back-to-school tips for college students. Vivamus at nisi massa.',
+      'desc' => 'Duis nec consequat dui. Praesent gravida diam at ex pharetra porta. Vivamus at nisi massa. Nam
+      porta…',
+      'alt' => 'students at a table',
+      'img' => '/resources/img/news/studying-in-library_news-crop.jpg',
+      'link' => 'https://news.shoreline.edu/2018/09/13/seven-back-to-school-tips-for-college-students/',
+      'datetime' => '2018-09-13 11:31'
+      ])</div>
+
+  </div>
+</div>
+<p class="text-center xl pt-3"><a href="#" class="more-arrow">View all News</a></p>
             <hr/>
     <div class="news-row">
     @include('_partials.article', [

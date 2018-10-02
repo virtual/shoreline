@@ -25,7 +25,7 @@
  
 <h1>Default Header Colors</h1>
     <p>Lorem  n commodo ligula eget dolor. Aenean massa 
-    <strong>strong</strong>. Cum sociis natoque penatibus 
+    <strong>strong</strong>. Del sociis natoque penatibus 
     et magnis dis  ede justo, fringilla vel, aliquet nec, 
     vulputate eget, arcu. In enim justo, rhoncus ut, 
     imperdiet a, venenatis vitae, justo. Nullam dictum 
@@ -100,17 +100,17 @@ ultricies nec, pellentesque eu, pretium quis, sem.</p>
     <ul>
       <li>Lorem ipsum dolor sit amet consectetuer.</li>
       <li>Aenean commodo ligula eget dolor.</li>
-      <li>Aenean massa cum sociis natoque penatibus.</li>
+      <li>Aenean massa Del sociis natoque penatibus.</li>
     </ul>
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing 
     elit. Aenean commodo ligula eget dolor. Aenean massa. 
-    Cum sociis natoque penatibus et magnis dis parturient 
+    Del sociis natoque penatibus et magnis dis parturient 
     montes, nascetur ridiculus mus. Donec quam felis, 
     ultricies nec, pellentesque eu, pretium quis, sem.</p>
 
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing 
     elit. Aenean commodo ligula eget dolor. Aenean massa. 
-    Cum sociis natoque penatibus et magnis dis parturient 
+    Del sociis natoque penatibus et magnis dis parturient 
     montes, nascetur ridiculus mus. Donec quam felis, 
     ultricies nec, pellentesque eu, pretium quis, sem.</p>
 
@@ -124,7 +124,7 @@ ultricies nec, pellentesque eu, pretium quis, sem.</p>
     @include('_partials.table')
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing 
     elit. Aenean commodo ligula eget dolor. Aenean massa. 
-    Cum sociis natoque penatibus et magnis dis parturient 
+    Del sociis natoque penatibus et magnis dis parturient 
     montes, nascetur ridiculus mus. Donec quam felis, 
     ultricies nec, pellentesque eu, pretium quis, sem.</p>
   </div>
