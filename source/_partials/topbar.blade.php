@@ -17,6 +17,7 @@
         <li><a class="nav-link" href="{{ $page->baseUrl }}/v1/index.html">v1</a></li>
         <li><a class="nav-link" href="{{ $page->baseUrl }}/v2/index.html">v2</a></li>
         <li><a class="nav-link" href="{{ $page->baseUrl }}/v3/index.html">v3</a></li>
+        <li><a class="nav-link" href="{{ $page->baseUrl }}/v4/index.html">v4</a></li>
         <li class="float-right"><a class="nav-link" href="{{ $page->baseUrl }}/timeline/index.html">Timeline</a></li>
       </ul> 
     </div>
