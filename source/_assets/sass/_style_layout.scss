@@ -211,7 +211,7 @@
     display: flex;
     flex-direction: row;  
     min-height: 1px;
-    max-width: 1200px;
+    max-width: $screen-xl;
     width: 100%;
     margin: 0 auto; 
    
@@ -233,7 +233,7 @@
   }
   .layout-has-sidebar { 
     flex-direction: row;   
-    max-width: 1200px;
+    max-width: $screen-xl;
   }
 }
 
