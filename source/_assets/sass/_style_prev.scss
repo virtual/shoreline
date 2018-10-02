@@ -557,17 +557,17 @@ table {
   display: block;
 }
 
-@media screen and (max-width: 1100px) {
-  .table-wrapper {
-    margin-right: -25px;
-  }
-}
+// @media screen and (max-width: 1100px) {
+//   .table-wrapper {
+//     margin-right: -25px;
+//   }
+// }
 
-@media screen and (max-width: 750px) {
-  .table-wrapper {
-    margin-right: -15px;
-  }
-}
+// @media screen and (max-width: 750px) {
+//   .table-wrapper {
+//     margin-right: -15px;
+//   }
+// }
 
 @media screen and (max-width: 3000px) {
   .table-wrapper .table-wrapper-inner {
@@ -1017,3 +1017,31 @@ table {
 
 /* help text */
 .ou-help { display:none;}
+
+
+/* responsive video classes (Foundation) */
+.flex-video {
+  position: relative;
+  padding-top: 1.5625rem;
+  padding-bottom: 67.5%;
+  height: 0;
+  margin-bottom: 1rem;
+  overflow: hidden
+}
+.flex-video.widescreen {
+  padding-bottom: 56.34%
+}
+.flex-video.vimeo {
+  padding-top: 0
+}
+.flex-video embed,
+.flex-video iframe,
+.flex-video object,
+.flex-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%
+}
+/* end responsive video classes (Foundation) */
