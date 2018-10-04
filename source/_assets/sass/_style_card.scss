@@ -360,10 +360,23 @@ main, .content-container, .sectional, * {
 
 .accordion {
   margin-bottom: 1rem; 
-  .card { border:0; box-shadow: none; border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;}
-  .card-body { font-size: 1.1875rem; line-height: 1.68;}
+  .card { border:0; box-shadow: none; 
+    margin:0;
+    margin-bottom: .5rem; 
+    border: 2px solid rgba(0, 0, 0, 0.1) !important;
+  //border-top:0; border-bottom:0;
+   border-radius:0; 
+  }
+  .card-body { font-size: 1.1875rem; line-height: 1.68; padding: 1.5rem 1rem;}
   .card-header { 
-    background: transparent; color: #fff;  text-align:left; padding:0; margin:0;
+    border-bottom: 0;
+    background-color: transparent; color: #fff;  text-align:left; padding:0; margin:0;
+
+     
+      transition: background-color .1s cubic-bezier(0.45, 0.05, 0.55, 0.95), color .1s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+   
+    &:hover { background-color:rgba(0, 0, 0, 0.05);}
+
     .btn { color: inherit; padding: inherit; font-weight: 600; border:0; text-align:left;border-radius: 0; display:block; width: 100%; padding: 1.5rem 1rem 1.25rem 1rem;}
     .btn-toggle:before {  
       color:$primary; 
@@ -387,6 +400,7 @@ main, .content-container, .sectional, * {
       height: 30px;
       width: 30px; 
     }
+    
     .btn-toggle:hover:before {
     background-color: $link-blue; 
       background-image: url(../../resources/img/icons/toggle-open-transparent.svg);
@@ -412,9 +426,7 @@ main, .content-container, .sectional, * {
       a { color:inherit;}
     }
   }
-  .card-header.active {background: $primary; color: #fff; 
+  .card-header.active {background-color: $primary; color: #fff; 
     h1, h2, h3, h4, h5, h6 { color:#fff;   }
-  }
-  .card-body { padding: 1.5rem 1rem; }
-  .card {border-top:0; border-bottom:0; border-radius:0; margin:0;}
+  } 
 }

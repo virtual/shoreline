@@ -2210,20 +2210,31 @@ main .card-links.card-links-compact a, .content-container .card-links.card-links
   border: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+  margin: 0;
+  margin-bottom: .5rem;
+  border: 2px solid rgba(0, 0, 0, 0.1) !important;
+  border-radius: 0;
 }
 
 .accordion .card-body {
   font-size: 1.1875rem;
   line-height: 1.68;
+  padding: 1.5rem 1rem;
 }
 
 .accordion .card-header {
-  background: transparent;
+  border-bottom: 0;
+  background-color: transparent;
   color: #fff;
   text-align: left;
   padding: 0;
   margin: 0;
+  -webkit-transition: background-color 0.1s cubic-bezier(0.45, 0.05, 0.55, 0.95), color 0.1s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  transition: background-color 0.1s cubic-bezier(0.45, 0.05, 0.55, 0.95), color 0.1s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+.accordion .card-header:hover {
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .accordion .card-header .btn {
@@ -2291,23 +2302,12 @@ main .card-links.card-links-compact a, .content-container .card-links.card-links
 }
 
 .accordion .card-header.active {
-  background: #00685e;
+  background-color: #00685e;
   color: #fff;
 }
 
 .accordion .card-header.active h1, .accordion .card-header.active h2, .accordion .card-header.active h3, .accordion .card-header.active h4, .accordion .card-header.active h5, .accordion .card-header.active h6 {
   color: #fff;
-}
-
-.accordion .card-body {
-  padding: 1.5rem 1rem;
-}
-
-.accordion .card {
-  border-top: 0;
-  border-bottom: 0;
-  border-radius: 0;
-  margin: 0;
 }
 
 .primary {
