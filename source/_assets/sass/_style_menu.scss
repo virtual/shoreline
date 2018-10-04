@@ -222,8 +222,13 @@
     display: block;
   } 
 }
+@media (min-width: $screen-xl - 80px) {
+  .dropdown-toggle.dropdown-toggle-split { 
+    right: auto;
+  }
+}
 
-@media (max-width: $screen-lg - 1) {
+@media (max-width: $screen-lg - 1px) {
   .dropdown .dropdown-menu {
     float: none !important;
     position: relative !important;
