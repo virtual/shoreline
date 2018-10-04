@@ -108,7 +108,7 @@ jQuery(document).ready(function() {
     var goToId = $(this).attr("href");
     if ($(goToId).length) { // If an anchor exists with this href
       $("html, body").animate({
-        scrollTop: $($(this).attr("href")).offset().top - 40
+        scrollTop: $($(this).attr("href")).offset().top - shoreline.scrollableOffset
       }, 500);
       $(goToId).focus(); 
     }  
@@ -211,6 +211,7 @@ require('jquery-colorbox');
 
 // Start the namespace
 var shoreline = {
+  scrollableOffset: 101,
   colorBox: function(){
     $('.video-lightbox').colorbox({
       iframe:true, 
@@ -227,10 +228,15 @@ var shoreline = {
       }
     });
 
+  },
+  changeScrollableOffset: function(px) {
+    this.scrollableOffset = px;
   }
 };
 
 shoreline.colorBox();
+
+
 
 // Detect breakpoint ResponsiveBootstrapToolkit
 var ResponsiveBootstrapToolkit = require('responsive-toolkit');
@@ -246,14 +252,21 @@ var ResponsiveBootstrapToolkit = require('responsive-toolkit');
 
   viewport.use('custom', visibilityDivs);
 
-  var doSomething = function() {
+  var showBreakpoint = function() {
       console.log('Current breakpoint: ', viewport.current());
   }
 
   // on resize
   $(window).resize(
       viewport.changed(function() {
-          doSomething();
+        // showBreakpoint();
+
+        if( viewport.is('>=md') ) {
+          shoreline.changeScrollableOffset(40);
+        } else {
+          shoreline.changeScrollableOffset(101);
+        }
+
       })
   ).resize();
 
