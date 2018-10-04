@@ -205,6 +205,8 @@ function mew() {
 }
 
 require('jquery-colorbox');
+
+
 // jquery-colorbox/jquery.colorbox-min.js
 
 // Start the namespace
@@ -229,3 +231,30 @@ var shoreline = {
 };
 
 shoreline.colorBox();
+
+// Detect breakpoint ResponsiveBootstrapToolkit
+var ResponsiveBootstrapToolkit = require('responsive-toolkit');
+(function($, viewport){
+
+  var visibilityDivs = {
+      'xs': $('<div class="d-xs-block d-sm-none d-md-none d-lg-none d-xl-none"></div>'),
+      'sm': $('<div class="d-none d-sm-block d-md-none d-lg-none d-xl-none"></div>'),
+      'md': $('<div class="d-none d-md-block d-sm-none d-lg-none d-xl-none"></div>'),
+      'lg': $('<div class="d-none d-lg-block d-sm-none d-md-none d-xl-none"></div>'),
+      'xl': $('<div class="d-none d-xl-block d-sm-none d-md-none d-lg-none"></div>'),
+  };
+
+  viewport.use('custom', visibilityDivs);
+
+  var doSomething = function() {
+      console.log('Current breakpoint: ', viewport.current());
+  }
+
+  // on resize
+  $(window).resize(
+      viewport.changed(function() {
+          doSomething();
+      })
+  ).resize();
+
+})(jQuery, ResponsiveBootstrapToolkit);
