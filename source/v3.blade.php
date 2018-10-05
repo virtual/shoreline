@@ -244,11 +244,11 @@
 <h4 style="text-align: center;">&nbsp;<a id="image-overlay"></a><span style="text-decoration: underline;">Image with Overlay Snippet</span><br>
    <!--Image with an Overlay --></h4>
 
-<div class="large-image-with-overlay module"><img src="/_resources/img/graphics/photo-977x431-1.jpg" alt="woman"><div class="image-overlay">
+<div class="large-image-with-overlay module"><img src="{{ $page->baseUrl }}/resources/img/stock/old/photo-977x431-1.jpg" alt="woman"><div class="image-overlay">
       
       <p class="heading"><span class="small-text">What type of student</span><span class="big-text">are you?</span></p>
       
-      <p><a class="cta primary" href="#">Button Over Image</a></p>
+      <p><a class="btn btn-secondary" href="#">Button Over Image</a></p>
       
    </div>
 </div>
