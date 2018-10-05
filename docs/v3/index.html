@@ -1314,79 +1314,37 @@
 <p>
    <!-- tabs -->
 </p>
+ 
+<ul class="list-unstyled nav nav-tabs">
+  <li>
+    <a class="nav-link active" id="tab1" data-toggle="tab" href="#tab1-content" aria-controls="tab1-content" aria-selected="true">Tab1</a>
+  </li>
+  <li>
+    <a class="nav-link" id="tab2" data-toggle="tab" href="#tab2-content" aria-controls="tab2-content" aria-selected="false">Tab2</a>
+  </li>
+  <li>
+    <a class="nav-link" id="tab3" data-toggle="tab" href="#tab3-content" aria-controls="tab3-content" aria-selected="false">Tab3</a>
+  </li>
 
-<div class="tabs module">
-   <ul class="tabs-nav">
-      <li class="tabs-nav-1"><a class="current" href="#tabs-1">Tab One</a></li>
-      <li class="tabs-nav-2"><a href="#tabs-2">Tab Two</a></li>
-      <li class="tabs-nav-3"><a href="#tabs-3">Tab Three</a></li>
-      <li class="tabs-nav-4"><a href="#tabs-4">Tab Four</a></li>
-      <li class="tabs-nav-5"><a href="#tabs-5">Tab Five</a></li>
-   </ul>
-   <div class="list-wrap">
-      <ul id="tabs-1">
-         <li>
-            
-            <p>Tab 1 -- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum nisi
-               arcu, vitae tempus nisl mattis ut.
-            </p>
-            
-            <p>Tab 1 -- Quisque sollicitudin ex quis sapien imperdiet, a ultricies elit laoreet.
-               Duis nec consequat dui lorem.
-            </p>
-            
-         </li>
-      </ul>
-      <ul id="tabs-2" class="hide" style="position: relative; top: 0px; left: 0px; display: none;">
-         <li>
-            
-            <p>Tab 2 -- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum nisi
-               arcu, vitae tempus nisl mattis ut.
-            </p>
-            
-            <p>Tab 2 -- Quisque sollicitudin ex quis sapien imperdiet, a ultricies elit laoreet.
-               Duis nec consequat dui lorem.
-            </p>
-            
-         </li>
-      </ul>
-      <ul id="tabs-3" class="hide" style="position: relative; top: 0px; left: 0px; display: none;">
-         <li>
-            
-            <p>Tab 3 -- Lorem ipsum dolor sit amet, elit. Donec dictum nisi arcu, vitae tempus nisl
-               mattis ut. Tab 3 -- Quisque sollicitudin ex quis sapien imperdiet, a ultricies elit
-               laoreet. Duis nec consequat dui lorem.
-            </p>
-            
-         </li>
-      </ul>
-      <ul id="tabs-4" class="hide" style="position: relative; top: 0px; left: 0px; display: none;">
-         <li>
-            
-            <p>Tab 4 -- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum nisi
-               arcu, vitae tempus nisl mattis ut.
-            </p>
-            
-            <p>Tab 4 -- Quisque sollicitudin ex quis sapien imperdiet, a ultricies elit laoreet.
-               Duis nec consequat dui lorem.
-            </p>
-            
-         </li>
-      </ul>
-      <ul id="tabs-5" class="hide" style="position: relative; top: 0px; left: 0px; display: none;">
-         <li>
-            
-            <p>Tab 5 -- Lorem ipsum dolor sit amet, consectetur. Donec dictum nisi arcu, vitae tempus
-               nisl mattis ut. Tab 5 -- Quisque sollicitudin ex quis sapien imperdiet, a ultricies
-               elit laoreet. Duis nec consequat dui lorem.
-            </p>
-            
-         </li>
-      </ul>
-   </div>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane fade show active" id="tab1-content" aria-labelledby="tab1">
+    <p>Tab 1 -- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum nisi arcu, vitae tempus nisl mattis ut.</p>
+    <p>Tab 1 -- Quisque sollicitudin ex quis sapien imperdiet, a ultricies elit laoreet. Duis nec consequat dui lorem.</p>
+  </div>
+
+  <div class="tab-pane fade" id="tab2-content" aria-labelledby="tab2">
+      <p>Tab 2 -- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum nisi arcu, vitae tempus nisl mattis ut.</p>
+      <p>Tab 2 -- Quisque sollicitudin ex quis sapien imperdiet, a ultricies elit laoreet. Duis nec consequat dui lorem.</p>
+  </div>
+
+
+  <div class="tab-pane fade" id="tab3-content" aria-labelledby="tab3">
+      <p>Tab 3 -- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum nisi arcu, vitae tempus nisl mattis ut.</p>
+      <p>Tab 3 -- Quisque sollicitudin ex quis sapien imperdiet, a ultricies elit laoreet. Duis nec consequat dui lorem.</p>
+  </div>
+
 </div>
-<div class="mobile-accordions"></div>
-
 <hr>
 
 <p>
@@ -1408,14 +1366,23 @@
 
 <h4 style="text-align: center;"><span style="text-decoration: underline;">Image With Caption</span></h4>
 
-<div class="two-col-blocks image-right module">
-   <div class="image" style="background-image: url(&quot;/_resources/img/graphics/photo-488x322-1.jpg&quot;); height: 187px;"></div>
-   <div class="image-caption" style="height: 187px;">
-      <h3>Title H3</h3>“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
-      <p class="attribution"><strong>Kerry Fields ‘16, </strong>Soccer
-      </p>
-   </div>
-</div>
+<div class="module">
+    <div>
+  <figure class="quote-feature ">
+    <div class="quote-feature-img">
+      <img src="https://virtual.github.io/shoreline/resources/img/testimonials/shoreline-williams72h.jpg" alt="Milla Vanilla" />
+    </div>
+    <div class="quote-feature-text">
+      <blockquote>
+        Lorems to the ipsums to the lopsems…
+      </blockquote>
+      <figcaption>
+           <strong>Milla Vanilla</strong>            <br/>         Transfer Program in Visual Communications Technology
+      </figcaption>
+    </div>
+  </figure> 
+</div> 
+  </div>
 
 <hr>
 
@@ -1442,22 +1409,20 @@
 <h4 style="text-align: center;">&nbsp;<a id="video"></a><span style="text-decoration: underline;">Two Column Video Overlay Image with Caption Snippet</span>
    <!--Left Image with Video and Caption --></h4>
 
-<div class="two-col-blocks image-left video module">
-   <div class="image" style="background-image: url(&quot;http://placehold.it/488x322.jpg&quot;); height: 213px;"><a href="https://www.youtube.com/embed/Yh89hVoHboA?rel=0&amp;autoplay=1" class="video-lightbox cboxElement"></a></div>
-   <div class="image-caption" style="height: 213px;">
-      <h3>
-         Title H3 
-         
-      </h3>
-      <p>
-         
-         </p><p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
-         
-      <p></p>
-      <p class="attribution"><strong>Kerry Fields ‘16, </strong>Soccer
-      </p>
-   </div>
-</div>
+   <div class="video-container">
+      <div class="video-box">
+  <div class="video-box-image">
+    <a class="video-lightbox" href="https://www.youtube.com/embed/dPr287p0cdw?rel=0&amp;autoplay=1">
+      <span class="btn btn-secondary icon-watch"> Watch Video</span>
+      <img src="https://virtual.github.io/shoreline/resources/img/videos/Video-Snippet.jpg" alt="Watch Video Title" />
+    </a>
+  </div>
+  <div class="video-box-content">
+    <h3 class="card-title">Video Title</h3>
+    <p class="card-text">Video description Earum omnis reiciendis aut quasi id ea exercitationem dolorum. Asperiores aut
+      dicta odit.</p>
+  </div>
+</div>    </div>
 
 <hr>
 
@@ -1471,21 +1436,21 @@
    <!-- Video and Caption Below -->
 </p>
 
-<div class="video-full-width two-col-blocks image-left video module">
-   <div class="image" style="background-image: url('http://placehold.it/488x322.jpg');"><a href="https://www.youtube.com/embed/Yh89hVoHboA?rel=0&amp;autoplay=1" class="video-lightbox cboxElement"></a></div>
-   <div class="image-caption" style="">
-      <h3>
-         Title 
-         
-      </h3>
-      <p>
-         
-         </p><p>“Lorem”</p>
-         
-      <p></p>
-      <p class="attribution"><strong>Name, </strong>Title
-      </p>
-   </div>
+<div class="video-full-width">
+  <div class="video-container">
+      <div class="video-box">
+  <div class="video-box-image">
+    <a class="video-lightbox" href="https://www.youtube.com/embed/dPr287p0cdw?rel=0&amp;autoplay=1">
+      <span class="btn btn-secondary icon-watch"> Watch Video</span>
+      <img src="https://virtual.github.io/shoreline/resources/img/videos/Video-Snippet.jpg" alt="Watch Video Title" />
+    </a>
+  </div>
+  <div class="video-box-content">
+    <h3 class="card-title">Video Title</h3>
+    <p class="card-text">Video description Earum omnis reiciendis aut quasi id ea exercitationem dolorum. Asperiores aut
+      dicta odit.</p>
+  </div>
+</div>    </div>
 </div>
 
 <hr>
@@ -1596,12 +1561,9 @@
   <a href="#header" class="scrollable back-to-top">Back to
     <br/> top</a>
 </footer>    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-      crossorigin="anonymous"></script>
+    <script src="https://virtual.github.io/shoreline/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="https://virtual.github.io/shoreline/assets/js/popper.min.js"></script>
+    <script src="https://virtual.github.io/shoreline/assets/js/bootstrap.min.js"></script>
     <script src="https://virtual.github.io/shoreline/assets/js/main.js"></script>
     <script src="https://virtual.github.io/shoreline/assets/js/slick.min.js"></script>
     <script src="https://virtual.github.io/shoreline/assets/js/slick-app.js?v=4"></script>
