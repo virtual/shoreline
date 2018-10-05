@@ -6171,7 +6171,8 @@ header#header {
 }
 
 .module {
-  margin-bottom: 1.75rem;
+  margin-bottom: 1rem;
+  margin-top: .75rem;
 }
 
 .reverse-mobile {
@@ -6193,6 +6194,50 @@ header#header {
 .RightCallOutGreenBorder {
   padding-left: 20px;
   border-left: 1px solid #00685e;
+}
+
+.event {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.event h2, .event h3, .event h4, .event h5, .event h6 {
+  font-weight: 400;
+  margin-top: .25rem;
+  line-height: 1.26;
+}
+
+.event .event-date {
+  margin-right: 20px;
+}
+
+.event .event-date .event-date-container {
+  background: #00685e;
+  color: #fff;
+  padding: .5rem .75rem;
+  text-align: center;
+}
+
+.event .event-date .month, .event .event-date .day {
+  color: inherit;
+  display: block;
+  width: 100%;
+}
+
+.event .event-date .day {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-top: 0;
+  line-height: 1;
+}
+
+.event .event-content {
+  font-size: 1rem;
+}
+
+.event .event-content p {
+  font-size: inherit;
 }
 
 @media print {

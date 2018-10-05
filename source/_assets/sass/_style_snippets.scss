@@ -1,4 +1,4 @@
-.module { margin-bottom: 1.75rem; }
+.module { margin-bottom: 1rem; margin-top:.75rem; }
 
 .reverse-mobile {
   flex-direction: column-reverse;
@@ -12,4 +12,23 @@
 .RightCallOutGreenBorder {
   padding-left: 20px;
   border-left: 1px solid $primary;
+}
+
+
+.event {
+  display:flex;
+
+  h2, h3, h4, h5, h6 { font-weight: 400; margin-top:.25rem; line-height: 1.26; }
+
+  .event-date {
+    margin-right: 20px;
+    .event-date-container {background: $primary;
+      color:#fff;
+      padding: .5rem .75rem; text-align:center;}
+    .month, .day { color: inherit; display:block; width:100%; }
+    .day { font-size: 2rem; font-weight: 600; padding-top:0; line-height: 1; }
+  }
+  .event-content { font-size: 1rem;
+    p { font-size: inherit;}
+  }
 }
