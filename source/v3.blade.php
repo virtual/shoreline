@@ -737,7 +737,7 @@
    <!-- tabs -->
 </p>
  
-@include('_partials.nav-tab')
+@include('_partials.nav-tab-generic')
 
 <hr>
 
