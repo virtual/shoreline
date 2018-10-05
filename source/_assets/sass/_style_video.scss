@@ -38,17 +38,37 @@
   .card-title { margin-bottom: 0;color: $primary;}
 
   .btn { color: $link-blue; background-color:#fff; }
+  .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active {
+    background-color: rgba(255,255,255,.8)
+  }
 }
 .video-box-content { padding:1rem 0;}
 .video-box-image, .video-box-content { width: 100%; }
 @media (min-width: 640px) {
   .video-box { display: flex; align-items: center; } 
   .video-box-content {  padding: 0 1rem 1rem 1rem; } 
-  .video-box-image, .video-box-content { flex: 1;}
+  .video-box-image, .video-box-content { flex-grow: 1;}
+  .video-full-width { 
+    // display: block; 
+    .video-box { display:block;}
+    .video-box-image, .video-box-content { flex-grow:0; }  
+  }
 }
 @media (min-width: $screen-md) {
   .video-box-image { flex: 1 1 41.6%; }
   .video-box-content { flex: 1 1 58.4%; }
+  
+  .video-full-width {   
+    .video-box-image, .video-box-content { flex: none;}  
+  }
+}
+@media (min-width: $screen-lg) {
+  .video-full-width {  
+    width: 80%; margin: 0 auto;
+  }
+  .layout-has-sidebar .video-full-width {  
+    width: 100%; 
+  }
 }
 @media (min-width: 640px) and (max-width:$screen-lg - 1px) {  
 .layout-has-sidebar {
@@ -57,3 +77,4 @@
   .video-box-content { padding:1rem 0;}
   }
 }
+

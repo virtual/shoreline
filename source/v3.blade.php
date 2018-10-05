@@ -736,78 +736,8 @@
 <p>
    <!-- tabs -->
 </p>
-
-<div class="tabs module">
-   <ul class="tabs-nav">
-      <li class="tabs-nav-1"><a class="current" href="#tabs-1">Tab One</a></li>
-      <li class="tabs-nav-2"><a href="#tabs-2">Tab Two</a></li>
-      <li class="tabs-nav-3"><a href="#tabs-3">Tab Three</a></li>
-      <li class="tabs-nav-4"><a href="#tabs-4">Tab Four</a></li>
-      <li class="tabs-nav-5"><a href="#tabs-5">Tab Five</a></li>
-   </ul>
-   <div class="list-wrap">
-      <ul id="tabs-1">
-         <li>
-            
-            <p>Tab 1 -- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum nisi
-               arcu, vitae tempus nisl mattis ut.
-            </p>
-            
-            <p>Tab 1 -- Quisque sollicitudin ex quis sapien imperdiet, a ultricies elit laoreet.
-               Duis nec consequat dui lorem.
-            </p>
-            
-         </li>
-      </ul>
-      <ul id="tabs-2" class="hide" style="position: relative; top: 0px; left: 0px; display: none;">
-         <li>
-            
-            <p>Tab 2 -- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum nisi
-               arcu, vitae tempus nisl mattis ut.
-            </p>
-            
-            <p>Tab 2 -- Quisque sollicitudin ex quis sapien imperdiet, a ultricies elit laoreet.
-               Duis nec consequat dui lorem.
-            </p>
-            
-         </li>
-      </ul>
-      <ul id="tabs-3" class="hide" style="position: relative; top: 0px; left: 0px; display: none;">
-         <li>
-            
-            <p>Tab 3 -- Lorem ipsum dolor sit amet, elit. Donec dictum nisi arcu, vitae tempus nisl
-               mattis ut. Tab 3 -- Quisque sollicitudin ex quis sapien imperdiet, a ultricies elit
-               laoreet. Duis nec consequat dui lorem.
-            </p>
-            
-         </li>
-      </ul>
-      <ul id="tabs-4" class="hide" style="position: relative; top: 0px; left: 0px; display: none;">
-         <li>
-            
-            <p>Tab 4 -- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum nisi
-               arcu, vitae tempus nisl mattis ut.
-            </p>
-            
-            <p>Tab 4 -- Quisque sollicitudin ex quis sapien imperdiet, a ultricies elit laoreet.
-               Duis nec consequat dui lorem.
-            </p>
-            
-         </li>
-      </ul>
-      <ul id="tabs-5" class="hide" style="position: relative; top: 0px; left: 0px; display: none;">
-         <li>
-            
-            <p>Tab 5 -- Lorem ipsum dolor sit amet, consectetur. Donec dictum nisi arcu, vitae tempus
-               nisl mattis ut. Tab 5 -- Quisque sollicitudin ex quis sapien imperdiet, a ultricies
-               elit laoreet. Duis nec consequat dui lorem.
-            </p>
-            
-         </li>
-      </ul>
-   </div>
-</div>
-<div class="mobile-accordions"></div>
+ 
+@include('_partials.nav-tab')
 
 <hr>
 
@@ -830,14 +760,16 @@
 
 <h4 style="text-align: center;"><span style="text-decoration: underline;">Image With Caption</span></h4>
 
-<div class="two-col-blocks image-right module">
-   <div class="image" style="background-image: url(&quot;/_resources/img/graphics/photo-488x322-1.jpg&quot;); height: 187px;"></div>
-   <div class="image-caption" style="height: 187px;">
-      <h3>Title H3</h3>“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
-      <p class="attribution"><strong>Kerry Fields ‘16, </strong>Soccer
-      </p>
-   </div>
-</div>
+<div class="module">
+    @include('_partials.quote', [ 
+    'desc' => "Lorems to the ipsums to the lopsems…",
+    'alt' => 'Milla Vanilla',
+    'attribution' => 'Milla Vanilla',
+    'attribution2' => 'Transfer Program in Visual Communications Technology',
+    'img' => '/resources/img/testimonials/shoreline-williams72h.jpg',          
+    'link' => '#'
+    ]) 
+  </div>
 
 <hr>
 
@@ -864,22 +796,15 @@
 <h4 style="text-align: center;">&nbsp;<a id="video"></a><span style="text-decoration: underline;">Two Column Video Overlay Image with Caption Snippet</span>
    <!--Left Image with Video and Caption --></h4>
 
-<div class="two-col-blocks image-left video module">
-   <div class="image" style="background-image: url(&quot;http://placehold.it/488x322.jpg&quot;); height: 213px;"><a href="https://www.youtube.com/embed/Yh89hVoHboA?rel=0&amp;autoplay=1" class="video-lightbox cboxElement"></a></div>
-   <div class="image-caption" style="height: 213px;">
-      <h3>
-         Title H3 
-         
-      </h3>
-      <p>
-         
-         </p><p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
-         
-      <p></p>
-      <p class="attribution"><strong>Kerry Fields ‘16, </strong>Soccer
-      </p>
-   </div>
-</div>
+   <div class="video-container">
+      @include('_partials.video', [
+      'heading' => 'Video Title',
+      'desc' => 'Video description Earum omnis reiciendis aut quasi id ea exercitationem dolorum. Asperiores aut
+      dicta odit.',
+      'youtubeID' => 'dPr287p0cdw',
+      'img' => '/resources/img/videos/Video-Snippet.jpg'
+      ])
+    </div>
 
 <hr>
 
@@ -893,21 +818,16 @@
    <!-- Video and Caption Below -->
 </p>
 
-<div class="video-full-width two-col-blocks image-left video module">
-   <div class="image" style="background-image: url('http://placehold.it/488x322.jpg');"><a href="https://www.youtube.com/embed/Yh89hVoHboA?rel=0&amp;autoplay=1" class="video-lightbox cboxElement"></a></div>
-   <div class="image-caption" style="">
-      <h3>
-         Title 
-         
-      </h3>
-      <p>
-         
-         </p><p>“Lorem”</p>
-         
-      <p></p>
-      <p class="attribution"><strong>Name, </strong>Title
-      </p>
-   </div>
+<div class="video-full-width">
+  <div class="video-container">
+      @include('_partials.video', [
+      'heading' => 'Video Title',
+      'desc' => 'Video description Earum omnis reiciendis aut quasi id ea exercitationem dolorum. Asperiores aut
+      dicta odit.',
+      'youtubeID' => 'dPr287p0cdw',
+      'img' => '/resources/img/videos/Video-Snippet.jpg'
+      ])
+    </div>
 </div>
 
 <hr>

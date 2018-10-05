@@ -331,7 +331,7 @@ table {
 /* twitter module */@at-root
 .twitter-module h3 {
   padding-left: 50px;
-  background: url("/_resources/img/graphics/icon-twitter-large.png");
+  background: url("../../resources/img/graphics/icon-twitter-large.png");
   background-repeat: no-repeat;
   background-size: 40px;
   background-position: left center;
@@ -468,7 +468,7 @@ table {
   -webkit-box-sizing: content-box; }
 
 #cboxClose {
-  background-image: url("/_resources/img/graphics/icon-close.png");
+  background-image: url("../../resources/img/graphics/icon-close.png");
   background-size: 24px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -503,7 +503,7 @@ table {
     background-size: 55%;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(/_resources/img/graphics/arrow-double-right-teal.png);
+    background-image: url("../../resources/img/graphics/arrow-double-right-teal.png");
     position: absolute;
     right: 0;
     bottom: 50%;
@@ -529,7 +529,7 @@ table {
     background-size: 55%;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(/_resources/img/graphics/arrow-double-left-teal.png);
+    background-image: url('../../resources/img/graphics/arrow-double-left-teal.png');
     position: absolute;
     right: 5px;
     bottom: 50%;
@@ -544,7 +544,7 @@ table {
   margin-top: 5px; }
 
 #cboxLoadingGraphic {
-  background: url(/_resources/img/icons/ajax-loader.gif) no-repeat center center; }
+  background: url('../../resources/img/icons/ajax-loader.gif') no-repeat center center; }
 
 /* table */
 .table-wrapper {
@@ -579,7 +579,7 @@ table {
 
 .table-wrapper .table-more {
   cursor: pointer;
-  background-image: url(/_resources/img/graphics/arrow-right-white.png);
+  background-image: url('../../resources/img/graphics/arrow-right-white.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 7px;
@@ -736,7 +736,7 @@ table {
   width: 100%;
   max-height: 48px;
   background-color: white;
-  background-image: url(/_resources/img/graphics/arrow-down-teal.png);
+  background-image: url('../../resources/img/graphics/arrow-down-teal.png');
   background-position: 95% center;
   background-repeat: no-repeat;
   background-size: 15px;
@@ -858,7 +858,7 @@ table {
 
 .general-form .form-radio input+.option-text:before {
   content: "";
-  background-image: url(/_resources/img/graphics/radio-off.png);
+  background-image: url('../../resources/img/graphics/radio-off.png');
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: center;
@@ -872,7 +872,7 @@ table {
 }
 
 .general-form .form-radio input:checked+.option-text:before {
-  background-image: url(/_resources/img/graphics/radio-on.png);
+  background-image: url('../../resources/img/graphics/radio-on.png');
 }
 
 .general-form .form-checkbox {
@@ -889,7 +889,7 @@ table {
 }
 
 .general-form .form-checkbox input:checked+.option-text:before {
-  background-image: url(/_resources/img/graphics/checkbox-on.png);
+  background-image: url('../../resources/img/graphics/checkbox-on.png');
 }
 
 .general-form .form-checkbox input+.option-text {
@@ -898,7 +898,7 @@ table {
 
 .general-form .form-checkbox input+.option-text:before {
   content: "";
-  background-image: url(/_resources/img/graphics/checkbox-off.png);
+  background-image: url('../../resources/img/graphics/checkbox-off.png');
   background-repeat: no-repeat;
   background-size: 18.5px;
   background-position: center;
@@ -958,37 +958,37 @@ table {
 /* ie fixes */ 
 
 .lt-ie9 .video-lightbox:before {
-  background-image: url(/_resources/img/graphics/1x/button-play-red.png); }
+  background-image: url("../../resources/img/graphics/1x/button-play-red.png"); }
 
 .lt-ie9 .section.three-col .col:first-child .col-inner {
-  background-image: url("/_resources/img/graphics/1x/icon-events-teal.png"); }
+  background-image: url("../../resources/img/graphics/1x/icon-events-teal.png"); }
 
 .lt-ie9 .section.three-col .col + .col .col-inner {
-  background-image: url("/_resources/img/graphics/1x/icon-events-green.png"); }
+  background-image: url("../../resources/img/graphics/1x/icon-events-green.png"); }
 
 .lt-ie9 .section.three-col .col + .col + .col .col-inner {
-  background-image: url("/_resources/img/graphics/1x/icon-events-red.png"); }
+  background-image: url("../../resources/img/graphics/1x/icon-events-red.png"); }
 
 .lt-ie9 .cta:after, .lt-ie9 a.cta:after {
-  background-image: url(/_resources/img/graphics/1x/arrow-double-right-white.png); }
+  background-image: url("../../resources/img/graphics/1x/arrow-double-right-white.png"); }
 
 .lt-ie9 .general-form .form-radio input + .option-text:before {
-  background-image: url(/_resources/img/graphics/1x/radio-off.png); }
+  background-image: url("../../resources/img/graphics/1x/radio-off.png"); }
 
 .lt-ie9 .general-form .form-radio input:checked + .option-text:before {
-  background-image: url(/_resources/img/graphics/1x/radio-on.png); }
+  background-image: url("../../resources/img/graphics/1x/radio-on.png"); }
 
 .lt-ie9 .general-form .form-checkbox input + .option-text:before {
-  background-image: url(/_resources/img/graphics/1x/checkbox-off.png); }
+  background-image: url("../../resources/img/graphics/1x/checkbox-off.png"); }
 
 .lt-ie9 .general-form .form-checkbox input:checked + .option-text:before {
-  background-image: url(/_resources/img/graphics/1x/checkbox-on.png); }
+  background-image: url("../../resources/img/graphics/1x/checkbox-on.png"); }
 
 .lt-ie9 .general-form select {
-  background-image: url(/_resources/img/graphics/1x/arrow-down-teal.png); }
+  background-image: url("../../resources/img/graphics/1x/arrow-down-teal.png"); }
 
 .lt-ie9 .twitter-module h3 {
-  background: url("/_resources/img/graphics/1x/icon-twitter-large.png") no-repeat; }  
+  background: url("../../resources/img/graphics/1x/icon-twitter-large.png") no-repeat; }  
 
   /* GMS 5/17/16 - Some of iFactory's form styles cause trouble. Use styles below to reset to classic form styles */
 .ClassicRadio {
