@@ -454,28 +454,35 @@
 <div class="row">
    <div class="col-md-4">
       
-      <p>
-         <!-- generic news item -->
-      </p>
-      
-      <div class="news-single-wide">
-         <div class="image" style="background-image: url(&quot;/resources/img/graphics/photo-310x230-2.jpg&quot;);"></div>
-         <div class="news-details" style=""><span class="detail-text">Monday January 1</span><h6><a href="/">Aenean Euismond Bibendum</a></h6>
-         </div>
-      </div>
+      <div class="news-no-description news-single-wide">
+          <div class="news-row">
+            @include('_partials.article', [
+            'heading' => 'Seven back-to-school tips for college students',
+            'desc' => 'Duis nec consequat dui. Praesent gravida diam at ex pharetra porta. Vivamus at nisi massa. Nam porta…',
+            'alt' => 'students at a table',
+            'img' => '/resources/img/news/studying-in-library_news-crop.jpg',           
+            'link' => 'https://news.shoreline.edu/2018/09/13/seven-back-to-school-tips-for-college-students/',
+            'datetime' => '2018-09-13 11:31'
+            ])
+          </div>
+        </div>
       
    </div>
    <div class="col-md-8">
       
-      <div class="news-double-wide">
-         <div class="image" style="background-image: url(&quot;/resources/img/graphics/photo-310x230-2.jpg&quot;); height: 231px;"></div>
-         <div class="news-details" style="height: 231px;"><span class="detail-text">Monday, January 1</span><h6><a href="/">Aenean Euismond Bibendum</a></h6>
-            <p class="detail-text">Duis nec consequat dui. Praesent gravida diam at ex pharetra porta. Vivamus at nisi
-               massa. Nam porta urna a dui
-            </p>
-         </div>
-      </div><a href="/" class="cta">View all news</a>
+      <div class="news-row">
+          @include('_partials.article', [
+          'heading' => 'Seven back-to-school tips for college students',
+          'desc' => 'Duis nec consequat dui. Praesent gravida diam at ex pharetra porta. Vivamus at nisi massa. Nam porta…',
+          'alt' => 'students at a table',
+          'img' => '/resources/img/news/studying-in-library_news-crop.jpg',           
+          'link' => 'https://news.shoreline.edu/2018/09/13/seven-back-to-school-tips-for-college-students/',
+          'datetime' => '2018-09-13 11:31'
+          ])
+        </div>
       
+
+<p class="text-center xl pt-3"><a href="#" class="more-arrow">View all News</a></p>
    </div>
 </div>
 
@@ -595,14 +602,19 @@
 
 <h4 style="text-align: center;"><span style="text-decoration: underline;"><a id="announcement"></a>Rectangular News/Announcement with Button</span></h4>
 
-<div class="news-double-wide">
-   <div class="image" style="background-image: url(&quot;/resources/img/graphics/photo-310x230-2.jpg&quot;); height: 290px;"></div>
-   <div class="news-details" style="height: 290px;"><span class="detail-text">Monday, January 1</span><h6><a href="/">Aenean Euismond Bibendum</a></h6>
-      <p class="detail-text">Duis nec consequat dui. Praesent gravida diam at ex pharetra porta. Vivamus at nisi
-         massa. Nam porta urna a dui
-      </p>
-   </div>
-</div><a href="/" class="cta">View all news</a>
+<div class="news-row">
+    @include('_partials.article', [
+    'heading' => 'Seven back-to-school tips for college students',
+    'desc' => 'Duis nec consequat dui. Praesent gravida diam at ex pharetra porta. Vivamus at nisi massa. Nam porta…',
+    'alt' => 'students at a table',
+    'img' => '/resources/img/news/studying-in-library_news-crop.jpg',           
+    'link' => 'https://news.shoreline.edu/2018/09/13/seven-back-to-school-tips-for-college-students/',
+    'datetime' => '2018-09-13 11:31'
+    ])
+      </div>
+
+
+<p class="text-center xl pt-3"><a href="#" class="more-arrow">View all News</a></p>
 
 <hr>
 
@@ -613,9 +625,16 @@
 </p>
 
 <div class="news-single-wide">
-   <div class="image" style="background-image: url(&quot;/resources/img/graphics/photo-310x230-2.jpg&quot;);"></div>
-   <div class="news-details" style=""><span class="detail-text">Monday January 1</span><h6><a href="/">Aenean Euismond Bibendum</a></h6>
-   </div>
+  <div class="news-row">
+    @include('_partials.article', [
+    'heading' => 'Seven back-to-school tips for college students',
+    'desc' => 'Duis nec consequat dui. Praesent gravida diam at ex pharetra porta. Vivamus at nisi massa. Nam porta…',
+    'alt' => 'students at a table',
+    'img' => '/resources/img/news/studying-in-library_news-crop.jpg',           
+    'link' => 'https://news.shoreline.edu/2018/09/13/seven-back-to-school-tips-for-college-students/',
+    'datetime' => '2018-09-13 11:31'
+    ])
+  </div>
 </div>
 
 <hr>

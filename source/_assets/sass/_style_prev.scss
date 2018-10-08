@@ -1145,3 +1145,15 @@ text-transform: uppercase;
   }
 }
 // end .built-in-caption 
+
+// news-single-wide 
+.news-single-wide .news-row .news-article {
+  flex-direction: column;
+  div { padding-left:0;}
+  .image-container, .image-container + .article-info-container {
+    width: 100%;
+    img { width: 100%; }
+  }
+  .datetime { padding-top: 11px;}
+}
+// end news-single-wide
