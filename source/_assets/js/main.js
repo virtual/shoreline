@@ -231,10 +231,81 @@ var shoreline = {
   },
   changeScrollableOffset: function(px) {
     this.scrollableOffset = px;
-  }
+  }, // end mobileScrolltoTab
+    twitterFeed: function () {
+      // $('.twitter-feed').twittie({
+      //   dateFormat: '%b %d',
+      //   template: '<div class="date">{{date}}</div> {{tweet}} ',
+      //   count: 6
+      // });
+
+      // setTimeout(function () {
+      //   $('.twitter-feed > ul > li').matchHeight();
+      // }, 2000);
+
+    }, // twitterFeed
+    scrollAccordion: function() {
+    // For reference only; minified version in main.js
+    var topScrollHeader = ($('header').height()) // height of header when first loaded
+    var innerSectionHeight = 0
+    var prevMoveTopOffset = 0
+    var prevAccContent = 0
+    var animateSpeed = 200
+    var panel // active accordion panel
+    var togglerHeight = 0
+
+    function move(clickPos) {
+      var newPt = clickPos - togglerHeight - 40
+      if (clickPos > (topScrollHeader + innerSectionHeight)) { 
+        newPt = newPt - innerSectionHeight
+      }
+      if ((prevMoveTopOffset) > clickPos - prevAccContent) {
+        // prevMoveTopOffset = newPt;
+        $('html,body').animate({
+          scrollTop: newPt
+        }, animateSpeed);
+        prevMoveTopOffset = newPt
+      } else {
+        newPt = newPt - prevAccContent
+        $('html,body').animate({
+          scrollTop: newPt
+        }, animateSpeed)
+        prevMoveTopOffset = newPt
+      }
+    }
+
+    $(document)
+      .ready(function () {
+        $('.accordion .btn-toggle')
+          .on('mousedown', function (e) {
+            // if (panel) {
+            //   prevAccContent = panel.nextElementSibling.offsetHeight
+            // } else {
+              prevAccContent = 0
+            // }
+            panel = e.target
+          })
+          .on('mouseup', function (e) {
+            if ($(e.target).hasClass('active')) {
+              togglerHeight = 0
+              panel = undefined
+              prevMoveTopOffset = 0
+            } else {
+
+              togglerHeight = $(e.target).height()
+              var thisHeight = $(e.target).offset().top
+              move(thisHeight)
+            }
+          });
+      });
+    }
 };
 
 shoreline.colorBox();
+shoreline.twitterFeed();
+shoreline.scrollAccordion();
+
+
 
 
 
