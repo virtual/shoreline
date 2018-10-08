@@ -1107,3 +1107,41 @@ text-transform: uppercase;
 }
  
 // large-image-with-overlay
+
+// .built-in-caption 
+.built-in-captions .row > div { 
+  margin-bottom: 30px;
+}
+.built-in-caption {
+  position: relative;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    vertical-align: top;
+  }
+  figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    background: black;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  figcaption a {
+    color: white;
+    font-weight: 400;
+    display: block;
+    padding: 7px 15px;
+  }
+}
+@media (min-width: $screen-sm) {
+  .built-in-captions .row > div:last-child > .built-in-caption { 
+    margin-left: -15px;
+  }
+  .built-in-captions .row > div { 
+    margin-bottom: 0;
+  }
+}
+// end .built-in-caption 

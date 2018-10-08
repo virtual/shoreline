@@ -459,7 +459,7 @@
       </p>
       
       <div class="news-single-wide">
-         <div class="image" style="background-image: url(&quot;/_resources/img/graphics/photo-310x230-2.jpg&quot;);"></div>
+         <div class="image" style="background-image: url(&quot;/resources/img/graphics/photo-310x230-2.jpg&quot;);"></div>
          <div class="news-details" style=""><span class="detail-text">Monday January 1</span><h6><a href="/">Aenean Euismond Bibendum</a></h6>
          </div>
       </div>
@@ -468,7 +468,7 @@
    <div class="col-md-8">
       
       <div class="news-double-wide">
-         <div class="image" style="background-image: url(&quot;/_resources/img/graphics/photo-310x230-2.jpg&quot;); height: 231px;"></div>
+         <div class="image" style="background-image: url(&quot;/resources/img/graphics/photo-310x230-2.jpg&quot;); height: 231px;"></div>
          <div class="news-details" style="height: 231px;"><span class="detail-text">Monday, January 1</span><h6><a href="/">Aenean Euismond Bibendum</a></h6>
             <p class="detail-text">Duis nec consequat dui. Praesent gravida diam at ex pharetra porta. Vivamus at nisi
                massa. Nam porta urna a dui
@@ -596,7 +596,7 @@
 <h4 style="text-align: center;"><span style="text-decoration: underline;"><a id="announcement"></a>Rectangular News/Announcement with Button</span></h4>
 
 <div class="news-double-wide">
-   <div class="image" style="background-image: url(&quot;/_resources/img/graphics/photo-310x230-2.jpg&quot;); height: 290px;"></div>
+   <div class="image" style="background-image: url(&quot;/resources/img/graphics/photo-310x230-2.jpg&quot;); height: 290px;"></div>
    <div class="news-details" style="height: 290px;"><span class="detail-text">Monday, January 1</span><h6><a href="/">Aenean Euismond Bibendum</a></h6>
       <p class="detail-text">Duis nec consequat dui. Praesent gravida diam at ex pharetra porta. Vivamus at nisi
          massa. Nam porta urna a dui
@@ -613,7 +613,7 @@
 </p>
 
 <div class="news-single-wide">
-   <div class="image" style="background-image: url(&quot;/_resources/img/graphics/photo-310x230-2.jpg&quot;);"></div>
+   <div class="image" style="background-image: url(&quot;/resources/img/graphics/photo-310x230-2.jpg&quot;);"></div>
    <div class="news-details" style=""><span class="detail-text">Monday January 1</span><h6><a href="/">Aenean Euismond Bibendum</a></h6>
    </div>
 </div>
@@ -748,7 +748,7 @@
 <h4 style="text-align: center;"><span style="text-decoration: underline;"><a id="twitter"></a>Twitter Feed Snippet</span></h4>
 
 <div class="twitter-module module">
-   <div class="twitter-feed"><span>Loading...</span></div><a href="/_resources/snippets/" class="cta">Follow</a></div>
+   <div class="twitter-feed"><span>Loading...</span></div><a href="/resources/snippets/" class="cta">Follow</a></div>
 
 <p>&nbsp;Simply insert the proper Handle before the "@" symbol.</p>
 
@@ -776,13 +776,13 @@
 <h4 style="text-align: center;"><span style="text-decoration: underline;"><a id="two-images"></a>Two Images With Captions</span></h4>
 
 <div class="built-in-captions module">
-   <div class="section">
-      <div class="col-md-8">
-         <figure class="built-in-caption"><img src="/_resources/img/graphics/photo-644x335-1.jpg" alt="woman"><figcaption><a href="/">Built-in Caption example</a></figcaption>
+   <div class="row">
+      <div class="col-sm-8">
+         <figure class="built-in-caption"><img src="/resources/img/stock/built-in-caption/photo-644x335-1.jpg" alt="woman"><figcaption><a href="/">Built-in Caption example</a></figcaption>
          </figure>
       </div>
-      <div class="col-md-4">
-         <figure class="built-in-caption"><img src="/_resources/img/graphics/photo-313x335-1.jpg" alt="woman playing soccer"><figcaption><a href="/">Built-in Caption example</a></figcaption>
+      <div class="col-sm-4">
+         <figure class="built-in-caption"><img src="/resources/img/stock/built-in-caption/photo-313x335-1.jpg" alt="woman playing soccer"><figcaption><a href="/">Built-in Caption example</a></figcaption>
          </figure>
       </div>
    </div>

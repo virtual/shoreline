@@ -26,9 +26,19 @@
     
     position: absolute;
     left: -2.25rem;
+    top: .5rem;
     background-size: contain;
   }
-
+  @media (min-width: $screen-md) {
+    blockquote {
+      padding-left: 1rem;
+    }
+    blockquote:before {
+      height: 31px;
+      width: 40px; 
+      left: -2.25rem; 
+    }
+  }
 .quote-feature {
   line-height: 1.25; 
   img { 
@@ -43,7 +53,8 @@
     height: auto; 
     width: auto;
   } 
-  blockquote {  margin-left: 0; }
+  blockquote {  margin-left: 0; 
+    padding-left: 0; }
   blockquote:before  { 
     position: relative;
     left: auto;
