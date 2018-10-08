@@ -328,68 +328,6 @@ table {
 
 
 
-/* twitter module */@at-root
-.twitter-module h3 {
-  padding-left: 50px;
-  background: url("../../resources/img/graphics/icon-twitter-large.png");
-  background-repeat: no-repeat;
-  background-size: 40px;
-  background-position: left center;
-}
-
-@media screen and (max-width: 1025px) {
-  .twitter-module h3 {
-    background-size: 32px;
-  }
-}
-
-.twitter-module .twitter-feed ul {
-  padding-left: 0;
-}
-
-.twitter-module .twitter-feed ul li {
-  width: 32.26%;
-  margin-left: 1.6%;
-  margin-bottom: 20px;
-  float: left;
-  padding-left: 0;
-}
-
-.twitter-module .twitter-feed ul li:first-child {
-  margin-left: 0;
-}
-
-.twitter-module .twitter-feed ul li:nth-child(3n+1) {
-  margin-left: 0;
-}
-
-.twitter-module .twitter-feed ul li .col-inner {
-  padding-right: 20px;
-}
-
-.twitter-module .twitter-feed ul li:before {
-  content: none;
-}
-
-@media screen and (max-width: 800px) {
-  .twitter-module .twitter-feed ul li {
-    width: 100%;
-    float: none;
-    border-right: 0;
-    margin-left: 0;
-  }
-  .twitter-module .twitter-feed ul li .col-inner {
-    padding-right: 0;
-  }
-}
-
-.twitter-module .twitter-feed ul .date {
-  color: #006c68;
-  font-size: 14px;
-  margin-bottom: 10px;
-  font-weight: 700;
-}
-
 /* colorbox */
 
 #colorbox {

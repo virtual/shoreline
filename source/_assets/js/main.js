@@ -205,6 +205,7 @@ function mew() {
 }
 
 require('jquery-colorbox');
+var twitterFetcher = require('twitter-fetcher');
 
 
 // jquery-colorbox/jquery.colorbox-min.js
@@ -242,6 +243,19 @@ var shoreline = {
       // setTimeout(function () {
       //   $('.twitter-feed > ul > li').matchHeight();
       // }, 2000);
+
+      var twitterConfig = {
+        "profile": {"screenName": 'shorelinecc'},
+        "domId": 'twitter-feed',
+        "maxTweets": 3,
+        "enableLinks": true,
+        "showImages": false,
+        "showInteraction": false,
+        "showUser": false
+      };
+      var twitterHtml = twitterFetcher.fetch(twitterConfig); 
+      // console.log(twitterHtml)
+      // $('.twitter-feed').html = twitterHtml;
 
     }, // twitterFeed
     scrollAccordion: function() {
@@ -304,9 +318,6 @@ var shoreline = {
 shoreline.colorBox();
 shoreline.twitterFeed();
 shoreline.scrollAccordion();
-
-
-
 
 
 // Detect breakpoint ResponsiveBootstrapToolkit

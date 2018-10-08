@@ -1,0 +1,36 @@
+
+
+/* twitter module */
+
+.twitter-module h3 {
+  padding-left: 50px;
+  background: url("../../resources/img/graphics/icon-twitter-large.png");
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position: left center;
+}
+ 
+.twitter-feed ul {
+  padding-left: 0;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style:none;
+  li { list-style:none; border: 2px solid rgba(0, 0, 0, 0.1); padding: 1rem; text-indent: 0; flex-grow: 1; flex-shrink: 1; width: 100%; word-wrap: break-word;  }
+  a { display:inline;}
+  li:before { display: none !important; }
+  .timePosted { margin-bottom: 0; font-size: .9rem; 
+    a { color: $text-midgray;}
+  }
+}
+
+ 
+ 
+
+@media (min-width: $screen-md) {
+  .twitter-feed ul  {  flex-direction: row; 
+    li {width:33%; margin-bottom: 1.5rem; margin-right: 15px; }
+    li:last-child { margin-right:0;}
+  }
+}
+ 
