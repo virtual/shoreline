@@ -14,6 +14,8 @@
     img { width: auto; max-height: 50px;  }
   } 
   .links { 
+    .footer-social a { color: $primary;  transition: color .2s ease-in-out; }
+    .footer-social a:hover { color: darken($primary,5);    }
     a { color: $link-blue; }
     ul {
       list-style: none; 
@@ -24,8 +26,15 @@
       padding-bottom: .5rem;
     }
     li + li {padding-top: .5rem;}
+    .list-inline li { 
+      margin-right: 1rem;
+      + li {
+      padding-top:0;
+      }
+    }
   }
 }
+
 @media (min-width: $screen-md) {
   #footer footer { text-align: left; 
     .footer-logo {
@@ -33,6 +42,7 @@
     }
   .footer-column-1 { display:block;}
   }
+  .footer-buttons .btn:first-child { margin-top:0;}
 }
 
 #footer footer .back-to-top {
