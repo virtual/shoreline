@@ -1463,33 +1463,9 @@ body {
     display: none;
   }
   .program-option .content-header .breadcrumb, .program-option .content-header .header-info {
-    padding-right: 33.33%;
+    padding-right: 30%;
+    padding-right: calc(25% + 20px);
   }
-  .layout-has-sidebar {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .layout-has-sidebar .sidebar-container {
-    width: 33.33%;
-    position: relative;
-  }
-  .layout-has-sidebar .content-container {
-    width: 66.66%;
-  }
-  .layout-has-sidebar .sidebar-container.overview {
-    position: static;
-  }
-}
-
-@media (min-width: 992px) {
-  .content-has-header-img .content-header .breadcrumb {
-    width: 50%;
-  }
-}
-
-@media (min-width: 1025px) {
   .program-option .content-header .header-info {
     display: block;
   }
@@ -1508,9 +1484,13 @@ body {
   }
   .layout-has-sidebar .sidebar-container {
     width: 25%;
+    position: relative;
   }
   .layout-has-sidebar .content-container {
     width: 75%;
+  }
+  .layout-has-sidebar .sidebar-container.overview {
+    position: static;
   }
   .layout-has-left-nav {
     display: -webkit-box;
@@ -1573,6 +1553,9 @@ body {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+  }
+  .content-has-header-img .content-header .breadcrumb {
+    width: 50%;
   }
   .header-info {
     -webkit-box-pack: center;
@@ -1680,11 +1663,6 @@ body {
   .content-no-header-img .flex-layout-body .sidebar-container {
     padding-top: 4.5rem;
   }
-  .layout-has-sidebar #sidebar-nav nav {
-    position: absolute;
-    top: 50px;
-    padding: 0;
-  }
   .page-interior .header-image {
     margin-bottom: -90px;
   }
@@ -1708,8 +1686,19 @@ body {
   .page-interior .content-header {
     margin-top: -1rem;
   }
-  .program-option .content-header .breadcrumb, .program-option .content-header .header-info {
-    padding-right: 25%;
+}
+
+@media (min-width: 1025px) {
+  .layout-has-sidebar #sidebar-nav nav {
+    position: absolute;
+    top: 50px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .layout-has-sidebar #sidebar-nav nav {
+    width: 320px;
   }
 }
 

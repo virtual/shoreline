@@ -39,8 +39,7 @@ body {
   .left-nav, .content-container, .sidebar-container {
     padding-top: 2rem; padding-bottom: 1rem;
   }
-}
-// Mobile
+} 
 .layout-master {     
   position: relative;
   &.program-option .layout-has-sidebar {
@@ -69,8 +68,7 @@ body {
   &.program-option .layout-has-sidebar {
     min-height: 1px; 
   }
-}
-// #maincontent {
+} 
   .layout-has-left-nav {  
     display: flex;
     flex-direction: column;
@@ -79,32 +77,13 @@ body {
       order: 2;
     }
     .content-container {   flex-grow: 1;flex-shrink: 1; flex-direction: column; order: 1;}
-  }
-// }
+  } 
 
 @media (min-width: $onecol) {
   .subnav .toggle { display:none;}
   .program-option .content-header {
-    .breadcrumb, .header-info { padding-right: 33.33%; } // to wrap around sidenav
+    .breadcrumb, .header-info { padding-right: 30%; padding-right: calc(25% + 20px); } // to wrap around sidenav
   }
-  .layout-has-sidebar { 
-    flex-direction: row;
-    .sidebar-container { width: 33.33%; position: relative;  }
-    .content-container { width:66.66%; }
-    .sidebar-container.overview {
-      position: static;
-    }
-    
-  }  
-}  
-@media (min-width: $screen-lg) {
-  .content-has-header-img .content-header {
-    .breadcrumb { width:50%; }
-  }
-}
-@media (min-width: $onecol) {
-  
-  
   .program-option .content-header .header-info{
     display: block;
     .header-content, .header-image { width: auto; flex: initial;}
@@ -113,8 +92,11 @@ body {
   .layout-has-sidebar { 
     flex-direction: row;   
     max-width: $screen-xl;
-    .sidebar-container { width: 25%;}
+    .sidebar-container { width: 25%; position: relative;}
     .content-container { width:75%;}
+    .sidebar-container.overview {
+      position: static;
+    }
   }
   .layout-has-left-nav { 
     display: flex;
@@ -132,22 +114,7 @@ body {
       width:50%;
   }
 } 
-
-// .page-interior .content-has-header-img .content-header
-
- // .layout-has-left-nav
  
-// @media (min-width: $screen-md) and (max-width: $onecol) { 
-//   .layout-has-left-nav { 
-//     // flex-wrap: wrap; // wrap sidebar under
-//     .sidebar-container { width: 100%;}
-//   }  
-// }
-
- 
-
-
-
 /* FEATURE CONTENT HEADER IMAGES */
 @media (max-width: $screen-md - 1px) {
   .content-has-header-img {
@@ -162,7 +129,10 @@ body {
   .content-has-header-img .content-header .header-info {
     display:flex; 
     .header-content, .header-image { width: 50%; flex: 1; }
-  }
+  } 
+  .content-has-header-img .content-header {
+    .breadcrumb { width:50%; }
+  } 
   
   .header-info {
     justify-content: center;
@@ -247,23 +217,31 @@ body {
   .layout-has-sidebar .content-container { padding-right: 40px; }  
   .content-has-header-img { margin-bottom: 2.5rem; }
   .content-no-header-img .flex-layout-body .sidebar-container { padding-top: 4.5rem; }  
-  .layout-has-sidebar #sidebar-nav nav {
-      position: absolute;
-      top: 50px;
-      padding: 0;
-  }
+  
   .page-interior .header-image {
       margin-bottom: -90px; // breadcrumb affects this distance
   }
   
 }
 @media (min-width: $screen-lg){
+
   .page-interior {border-top: 1rem solid $minty-green; padding-top: 0rem;}
   .program-option .content-header { border-top:0;  }
   .content-header {   margin-top: 0rem;   border-top: 1rem solid $minty-green; }
   .content-header.bg-primary {  border-top: 1rem solid #01685e;}
   .page-interior .content-header {   margin-top: -1rem;   }
-  .program-option .content-header {
-    .breadcrumb, .header-info { padding-right: 25%; } // to wrap around sidenav
+
+}
+
+@media (min-width: $onecol) {
+  .layout-has-sidebar #sidebar-nav nav {
+    position: absolute;
+    top: 50px;
+    padding: 0;
+  }
+}
+@media (min-width: $screen-xl) {
+  .layout-has-sidebar #sidebar-nav nav {
+    width: 320px; // can't be dynamic due to static positioning
   }
 }
