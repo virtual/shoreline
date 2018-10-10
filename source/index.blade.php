@@ -92,21 +92,25 @@
 
 <div class="row">
 
-  <div class="col-12 col-md-6 col-lg-4">
-      <ul class="card-links">
+  <div class="col-12 col-md-12 col-lg-8">
+    <div class="row">
+      <div class="col-md-6">
+        <ul class="card-links">
           <li><a href="#" class="more-arrow">College/University Transfer</a></li>
           <li><a href="#" class="more-arrow">Professional & Technical</a></li>
           <li><a href="#" class="more-arrow">International Students</a></li>
           <li><a href="#" class="more-arrow">Transitional (ESL, HS21, I-Best GED…)</a></li>
         </ul>
-  </div>
-  <div class="col-12 col-md-6 col-lg-4">
-      <ul class="card-links">
+      </div>
+      <div class="col-md-6">
+        <ul class="card-links">
           <li><a href="#" class="more-arrow">Continuing Education</a></li>
           <li><a href="#" class="more-arrow">Learn Online</a></li>
           <li><a href="#" class="more-arrow">Veteran</a></li>
           <li><a href="#" class="more-arrow">Browse All Programs</a></li>
         </ul>
+      </div>
+    </div>
   </div>
   <div class="col-12 col-lg-4">
     <a class="btn btn-important btn-block" href="/apply-and-aid/apply.aspx">Apply Now</a>
@@ -125,7 +129,7 @@
 <div class="row">
     <div class="col-12 col-sm-4">
         @include('_partials.featureicon', [
-        'heading' => '100%',
+        'heading' => '100+',
         'desc' => 'Transfer and professional/technical areas of study',
         'iconalt' => 'book',     
         'icon' => './resources/img/icons/homepage/book.png',          

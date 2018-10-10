@@ -5,7 +5,9 @@
   p a.btn:hover { text-decoration: underline;}
   h3 { 
   color: $primary;
-  
+  margin: 0;
+  margin-top: 1rem;
+  line-height: 1.2;
   font-size: 3rem;
   font-weight: 900;
   }
