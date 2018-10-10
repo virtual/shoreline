@@ -90,3 +90,10 @@
   <a href="#header" class="scrollable back-to-top">Back to
     <br/> top</a>
 </footer>
+
+<script>
+    // For ref only; inactive on dev; Navigation Variables
+    var ou_path = "/currentstudents/default.aspx";
+    var ou_child = "/currentstudents/";
+    var ou_index = "default.aspx";
+  </script>

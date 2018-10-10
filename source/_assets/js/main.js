@@ -329,7 +329,9 @@ var shoreline = {
 };
 
 shoreline.colorBox();
-shoreline.twitterFeed();
+if ( $( "#twitter-feed" ).length ) {
+  shoreline.twitterFeed();
+}
 shoreline.scrollAccordion();
 shoreline.loadNavChild();
 
