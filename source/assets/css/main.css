@@ -1421,7 +1421,6 @@ body {
   }
   .layout-has-sidebar .content-container {
     width: 66.66%;
-    padding-right: 40px;
   }
   .layout-has-sidebar .sidebar-container.overview {
     position: static;
@@ -1545,9 +1544,6 @@ body {
   .layout-has-left-nav .content-container {
     width: 66.66%;
     padding-left: 10px;
-  }
-  .content-no-header-img .flex-layout-body .sidebar-container {
-    padding-top: 4.5rem;
   }
 }
 
@@ -1677,8 +1673,14 @@ body {
 }
 
 @media (min-width: 768px) {
+  .layout-has-sidebar .content-container {
+    padding-right: 40px;
+  }
   .content-has-header-img {
     margin-bottom: 2.5rem;
+  }
+  .content-no-header-img .flex-layout-body .sidebar-container {
+    padding-top: 4.5rem;
   }
   .layout-has-sidebar #sidebar-nav nav {
     position: absolute;
@@ -5373,6 +5375,8 @@ header#header {
   .megamenu {
     font-size: 1rem;
     position: relative;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .megamenu li {
     width: auto;
