@@ -1,12 +1,16 @@
+// Holy grail layout
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
 
 .flex-layout header,
 .flex-layout #footer {
   flex: none; 
-}
- 
+} 
 .flex-layout-body {
-  // display: flex;
-  // flex: 1 0 auto; 
   flex-grow: 1;
   flex-direction: column;  
   min-height: 1px;
@@ -15,51 +19,37 @@
   flex: 1 0 auto; 
   flex-direction: column;   
 }  
-
 .layout-has-sidebar { 
   display: flex; 
   min-height: 1px; 
   width: 100%;
   margin: 0 auto;
   flex-direction: column;
-  .sidebar-container {
-    // background: #eee;
+  .sidebar-container, .content-container {
     flex: 0 1 auto; 
     width: 100%; 
-  }
-  .content-container { 
-    flex: 0 1 auto;  
-    width: 100%; 
-    //background:#ccc;
-  }
+  } 
 }
-
 .layout-master, #sectionals {
   flex-grow: 1; 
   min-height: 1px; // for IE 11
-}
-// .container-fluid { position: relative;}
-
+} 
 .layout-master {
   position: relative;
 }
- 
-.content-header{ padding-bottom: 1rem; }
-.content-has-header-img .content-header .header-info .header-content {
-  margin-bottom: 2rem;
-}
- 
-#maincontent {
-  margin-bottom: 1.5rem;
-  &.program-option {
-    margin-bottom: 0;
+
+.flex-layout-body {
+  .left-nav, .content-container, .sidebar-container {
+    // background-color: rgba(255, 0, 0, 0.2);
+    padding-top: 2rem; padding-bottom: 1rem;
   }
 }
-#maincontent + #footer   { margin-top: 1.5rem;}
-#maincontent + #sectionals { margin-top: -1.5rem; } 
-.program-option p.lead { margin-top: 1rem;}
 
-@media (max-width: $screen-md - 1) {
+
+
+
+
+@media (max-width: $screen-md - 1px) {
   
   .layout-master { 
     &.program-option .layout-has-sidebar {
@@ -93,9 +83,7 @@
   // .page-interior .content-has-header-img .content-header {
   //       margin-bottom: 4rem;
   // }
-  .content-has-header-img {
-    margin-bottom: 2.5rem;
-}
+ 
   .subnav .toggle { display:none;}
   .program-option .content-header {
     .breadcrumb, .header-info { padding-right: 33.33%; } // to wrap around sidenav
@@ -108,18 +96,10 @@
       // background: #c8dcbbd4; // debugging
       position: static;
     }
-    #sidebar-nav nav {
-      position: absolute;
-      top: 50px;
-      padding: 0;
-    }
+    
   }
   
-  .page-interior {
-    .header-image {
-      margin-bottom: -90px; // breadcrumb affects this distance
-    }
-  }
+  
 }  
 @media (min-width: $screen-lg) {
   .content-has-header-img .content-header {
@@ -130,9 +110,7 @@
   // }
 }
 @media (min-width: $screen-lg) {
-  .program-option .content-header {
-    .breadcrumb, .header-info { padding-right: 25%; } // to wrap around sidenav
-  }
+
  
   .content-has-header-img .content-header .header-info {
     display:flex; 
@@ -153,27 +131,12 @@
   }
 }
    
-.page-interior {border-top: 1rem solid $minty-green; padding-top: 0rem;}
-// .page-interior>.container-fluid { padding-top: 2rem; }
-.program-option .content-header { border-top:0; 
-  // margin-top: 1rem; 
-}
-.content-header {
-  margin-top: 0rem;
-  border-top: 1rem solid $minty-green;;
-}
-.content-header.bg-primary { 
-  border-top: 1rem solid #01685e;}
-// .page-interior .content-header.bg-primary { margin-top: -1rem;}
-.page-interior .content-header {
-  margin-top: -1rem;
-  // margin-bottom: 1rem;
-}
+
 // .page-interior .content-has-header-img .content-header
 
  // .layout-has-left-nav
 
- @media (max-width: $screen-md - 1) {
+ @media (max-width: $screen-md - 1px) {
   #maincontent {
     .layout-has-left-nav {  
       display: flex;
@@ -184,13 +147,6 @@
       }
       .content-container {   flex-grow: 1;flex-shrink: 1; flex-direction: column; order: 1;}
     }
-  }
-  .content-has-header-img {
-    .content-header {
-      padding-bottom: 0;
-      margin-bottom: 3rem;
-    }
-    .header-image {bottom: -1.5rem;position: relative;}
   }
 }
 @media (min-width: $screen-md) and (max-width: $screen-lg - 1px) { 
@@ -239,6 +195,15 @@
 
 
 /* crazy header images :) */
+@media (max-width: $screen-md - 1px) {
+  .content-has-header-img {
+    .content-header {
+      padding-bottom: 0;
+      margin-bottom: 3rem;
+    }
+    .header-image {bottom: -1.5rem;position: relative;}
+  }
+}
 @media (min-width: $screen-lg) {
    
   .header-info {
@@ -309,16 +274,58 @@
   }
 }
 
-.flex-layout-body {
-  .left-nav, .content-container, .sidebar-container {
-    // background-color: rgba(255, 0, 0, 0.2);
-    padding-top: 2rem; padding-bottom: 1rem;
+
+
+// PADDING AND MARGIN
+.content-header{ padding-bottom: 1rem; }
+.content-has-header-img .content-header .header-info .header-content {
+  margin-bottom: 2rem;
+} 
+#maincontent {
+  margin-bottom: 1.5rem;
+  &.program-option {
+    margin-bottom: 0;
   }
 }
+#maincontent + #footer   { margin-top: 1.5rem;}
+#maincontent + #sectionals { margin-top: -1.5rem; } 
+.program-option p.lead { margin-top: 1rem;}
 
-// Holy grail layout
-body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+@media (min-width: $screen-md) {
+  .content-has-header-img {
+    margin-bottom: 2.5rem;
+  }
+  .layout-has-sidebar { 
+    #sidebar-nav nav {
+      position: absolute;
+      top: 50px;
+      padding: 0;
+    }
+  }
+  .page-interior {
+    .header-image {
+      margin-bottom: -90px; // breadcrumb affects this distance
+    }
+  }
+}
+@media (min-width: $screen-lg){
+  .page-interior {border-top: 1rem solid $minty-green; padding-top: 0rem;}
+  // .page-interior>.container-fluid { padding-top: 2rem; }
+  .program-option .content-header { border-top:0; 
+  // margin-top: 1rem; 
+  }
+  .content-header {
+  margin-top: 0rem;
+  border-top: 1rem solid $minty-green;;
+  }
+  .content-header.bg-primary { 
+  border-top: 1rem solid #01685e;}
+  // .page-interior .content-header.bg-primary { margin-top: -1rem;}
+  .page-interior .content-header {
+  margin-top: -1rem;
+  // margin-bottom: 1rem;
+  }
+  .program-option .content-header {
+    .breadcrumb, .header-info { padding-right: 25%; } // to wrap around sidenav
+  }
 }
