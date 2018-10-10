@@ -1,3 +1,5 @@
+$onecol: 1025px;
+
 // Holy grail layout
 body {
   display: flex;
@@ -32,48 +34,61 @@ body {
 .layout-master, #sectionals {
   flex-grow: 1; 
   min-height: 1px; // for IE 11
-} 
-.layout-master {
-  position: relative;
-}
-
+}  
 .flex-layout-body {
   .left-nav, .content-container, .sidebar-container {
     padding-top: 2rem; padding-bottom: 1rem;
   }
 }
-
-@media (max-width: $screen-md - 1px) {  
-  .layout-master { 
-    &.program-option .layout-has-sidebar {
-      order: 3;
-      min-height: 1px; // Fix gap caused by IE fixes
-      .sidebar-container{  
-        order: 2;
-      }
-      .content-container {
-        order: 1;
-      }
+// Mobile
+.layout-master {     
+  position: relative;
+  &.program-option .layout-has-sidebar {
+    order: 3;
+    .sidebar-container{  
+      order: 2;
     }
-    .layout-has-sidebar {  
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      .sidebar-container, .content-container {
-        min-height: 1px; // IE 11
-        flex-direction: column;
-        justify-content: center;
-      }
+    .content-container {
+      order: 1;
     }
   }
 }
+  .layout-has-sidebar {  
+    display: flex;
+    flex-direction: column; 
+    .sidebar-container, .content-container {
+      min-height: 1px; // IE 11
+      flex-direction: column;
+      justify-content: center;
+    }
+  } 
+#maincontent {
+  .layout-has-sidebar {   
+    min-height: 100vh;
+  }
+  &.program-option .layout-has-sidebar {
+    min-height: 1px; 
+  }
+}
+// #maincontent {
+  .layout-has-left-nav {  
+    display: flex;
+    flex-direction: column;
+    .left-nav {   flex-grow: 1; flex-shrink: 1; order:3;  }
+    .sidebar-container{  
+      order: 2;
+    }
+    .content-container {   flex-grow: 1;flex-shrink: 1; flex-direction: column; order: 1;}
+  }
+// }
 
-@media (min-width: $screen-md) {
+@media (min-width: $onecol) {
   .subnav .toggle { display:none;}
   .program-option .content-header {
     .breadcrumb, .header-info { padding-right: 33.33%; } // to wrap around sidenav
   }
   .layout-has-sidebar { 
+    flex-direction: row;
     .sidebar-container { width: 33.33%; position: relative;  }
     .content-container { width:66.66%; }
     .sidebar-container.overview {
@@ -87,11 +102,8 @@ body {
     .breadcrumb { width:50%; }
   }
 }
-@media (min-width: $screen-lg) {
-  .content-has-header-img .content-header .header-info {
-    display:flex; 
-    .header-content, .header-image { width: 50%; flex: 1; }
-  }
+@media (min-width: $onecol) {
+  
   
   .program-option .content-header .header-info{
     display: block;
@@ -99,39 +111,10 @@ body {
   } 
 
   .layout-has-sidebar { 
+    flex-direction: row;   
+    max-width: $screen-xl;
     .sidebar-container { width: 25%;}
     .content-container { width:75%;}
-  }
-  .layout-has-left-nav.layout-has-sidebar .content-container {
-      width:50%;
-  }
-} 
-
-// .page-interior .content-has-header-img .content-header
-
- // .layout-has-left-nav
- @media (max-width: $screen-md - 1px) {
-  #maincontent {
-    .layout-has-left-nav {  
-      display: flex;
-      flex-direction: column;
-      .left-nav {   flex-grow: 1; flex-shrink: 1; order:3;  }
-      .sidebar-container{  
-        order: 2;
-      }
-      .content-container {   flex-grow: 1;flex-shrink: 1; flex-direction: column; order: 1;}
-    }
-  }
-}
-@media (min-width: $screen-md) and (max-width: $screen-lg - 1px) { 
-  .layout-has-left-nav { 
-    flex-wrap: wrap; // wrap sidebar under
-    .sidebar-container { width: 100%;}
-  }  
-}
-@media (min-width: $screen-md) {
-  .layout-has-sidebar {
-    flex-direction: row;  
   }
   .layout-has-left-nav { 
     display: flex;
@@ -140,24 +123,32 @@ body {
     max-width: $screen-xl;
     width: 100%;
     margin: 0 auto; 
-    .left-nav { width: 33.33%; position: relative; padding-right: 30px; }
-    .content-container { width:66.66%; padding-left: 10px;}
-  }  
-}  
-
-
-@media (min-width: $screen-lg) {
-  .layout-has-left-nav { 
-    .left-nav { width: 25%;}
-    .content-container { width:75%;}
+ 
+    .left-nav { order: 1; width: 25%; position: relative; padding-right: 30px; }
+    .content-container { order: 2; width:75%; padding-left: 10px;}
+    .sidebar-container{ order: 3; }
+  } 
+  .layout-has-left-nav.layout-has-sidebar .content-container {
+      width:50%;
   }
-  .layout-has-sidebar { 
-    flex-direction: row;   
-    max-width: $screen-xl;
-  }
-}
+} 
 
-/* crazy header images :) */
+// .page-interior .content-has-header-img .content-header
+
+ // .layout-has-left-nav
+ 
+// @media (min-width: $screen-md) and (max-width: $onecol) { 
+//   .layout-has-left-nav { 
+//     // flex-wrap: wrap; // wrap sidebar under
+//     .sidebar-container { width: 100%;}
+//   }  
+// }
+
+ 
+
+
+
+/* FEATURE CONTENT HEADER IMAGES */
 @media (max-width: $screen-md - 1px) {
   .content-has-header-img {
     .content-header {
@@ -168,7 +159,11 @@ body {
   }
 }
 @media (min-width: $screen-lg) {
-   
+  .content-has-header-img .content-header .header-info {
+    display:flex; 
+    .header-content, .header-image { width: 50%; flex: 1; }
+  }
+  
   .header-info {
     justify-content: center;
     align-items: center;
