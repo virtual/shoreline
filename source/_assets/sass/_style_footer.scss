@@ -10,9 +10,10 @@
   p, a, dl, ul, ol { font-size: inherit;}
   .footer-logo {
     margin-bottom: 3rem;
-    display: block;
-    img { width: auto; max-height: 50px;  }
+    display: block;    
+    img { width: auto; max-height: 120px;  }
   } 
+  .navbar-brand img { max-width: initial; }
   .links { 
     .footer-social a { color: $primary;  transition: color .2s ease-in-out; }
     .footer-social a:hover { color: darken($primary,5);    }
@@ -39,6 +40,8 @@
   #footer footer { text-align: left; 
     .footer-logo {
       margin-bottom: 1rem;
+      
+    img { width: auto; max-height: 80px;  }
     }
   .footer-column-1 { display:block;}
   }

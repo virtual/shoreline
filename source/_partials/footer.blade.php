@@ -3,9 +3,9 @@
     <div class="inner">
       <div class="row">
         <div class="col-12 col-md-4">
-            <a href="/" class="footer-logo">
-              <img src="{{ $page->baseUrl }}/resources/img/logos/shoreline-color.png" alt="Shoreline Community College" />
-            </a>
+          <div class="footer-logo">
+              @include ('_partials.logo')
+          </div>
         </div>
         
         </div>

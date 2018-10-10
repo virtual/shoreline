@@ -9,14 +9,10 @@
         @if (trim($__env->yieldContent('homepage')))
         <!-- H1 on homepage only -->
         <h1>
-          <a class="navbar-brand" href="/">
-            <img height="96" width="160" src="{{ $page->baseUrl }}/resources/img/logos/logo-full.png" alt="Shoreline Community College" />
-          </a>
+            @include ('_partials.logo')
         </h1>
         @else
-        <a class="navbar-brand" href="/">
-          <img height="96" width="160" src="{{ $page->baseUrl }}/resources/img/logos/logo-full.png" alt="Shoreline Community College" />
-        </a>
+          @include ('_partials.logo')
         @endif
 
       </div>

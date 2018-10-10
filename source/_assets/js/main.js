@@ -312,12 +312,26 @@ var shoreline = {
             }
           });
       });
+    },
+    loadNavChild: function() {
+      $("ul#subnav_parent > li").each(function(index){
+        if ($(this).children('a').attr("href").toLowerCase().indexOf(ou_child.toLowerCase()) >= 0){
+          var link = $(this).children('a').first().attr("href");
+          //console.log("Match = " + link);
+          $(this).append($("ul#subnav_child")).addClass('current');
+          $("ul#subnav_child").show();
+          
+          var leftColHeight = $(".left-nav").height(); 
+            $(".content").css("minHeight", leftColHeight + 40);
+        }	
+      });
     }
 };
 
 shoreline.colorBox();
 shoreline.twitterFeed();
 shoreline.scrollAccordion();
+shoreline.loadNavChild();
 
 
 // Detect breakpoint ResponsiveBootstrapToolkit
