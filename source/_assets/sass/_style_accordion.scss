@@ -1,0 +1,65 @@
+
+.accordion {
+  margin-bottom: 1rem; 
+  .accordion-card { border:0; box-shadow: none; 
+    margin:0;
+    margin-bottom: .5rem; 
+    border: 2px solid rgba(0, 0, 0, 0.1) !important;
+    border-radius:0; 
+  }
+  .accordion-body { font-size: 1.1875rem; line-height: 1.68; padding: 1.5rem 1rem;}
+  .accordion-header { 
+    border-bottom: 0;
+    background-color: transparent; color: #fff;  text-align:left; padding:0; margin:0;
+    transition: background-color .1s cubic-bezier(0.45, 0.05, 0.55, 0.95), color .1s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    &:hover { background-color:rgba(0, 0, 0, 0.05);}
+    .btn { color: inherit; padding: inherit; font-weight: 600; border:0; text-align:left;border-radius: 0; display:block; width: 100%; padding: 1.5rem 1rem 1.25rem 1rem;}
+    .btn-toggle:before {  
+      color:$primary; 
+      background-color: #fff; 
+      border-radius: 999px; 
+      height: 30px; width: 30px;     
+      top: -.25rem;
+      margin-right: .5rem;
+      text-align: center;
+      position: relative;
+      float:left;
+      border: 2px solid #fff;
+      transition: all .1s ease-in-out;
+      content: " "; 
+      background-size: 30px;
+      background-repeat: no-repeat;
+      background-position: 50% 50%; 
+      background-image: url(../../resources/img/icons/toggle-closed-blue-transparent.svg);
+      height: 30px;
+      width: 30px; 
+    }
+    
+    .btn-toggle:hover:before {
+      background-color: $link-blue;
+      background-image: url(../../resources/img/icons/toggle-open-transparent.svg);
+    }
+
+    .btn-toggle[aria-expanded=true]:before {
+      background-color: #fff;
+      background-image: url(../../resources/img/icons/toggle-open-blue-transparent.svg);
+    }
+
+    .btn-toggle[aria-expanded=true]:hover:before {
+      background-color: $link-blue;
+      background-image: url(../../resources/img/icons/toggle-closed-transparent.svg);
+    }
+
+    .btn-toggle:after {
+      display: none;
+    }
+
+    h1, h2, h3, h4, h5, h6 { color:#000;
+      margin:0; padding:0;
+      a { color:inherit;}
+    }
+  }
+  .accordion-header.active {background-color: $primary; color: #fff; 
+    h1, h2, h3, h4, h5, h6 { color:#fff;   }
+  } 
+}

@@ -34,6 +34,7 @@
 }
 .megamenu {
   position: fixed;
+  background-color:#fff;
   top: 0;
   right: 0;
   left: 0;
@@ -151,6 +152,7 @@
     font-size: 1rem;
     position: relative;
     box-shadow: none;
+    background-color: transparent;
     li { width: auto;}   
     .dropdown-menu {
       background: #f9f9f9;

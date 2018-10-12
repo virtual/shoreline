@@ -1837,7 +1837,7 @@ shoreline.colorBox();
 if ($("#twitter-feed").length) {
   shoreline.twitterFeed();
 }
-shoreline.scrollAccordion();
+// shoreline.scrollAccordion();
 shoreline.loadNavChild();
 shoreline.navTabs();
 

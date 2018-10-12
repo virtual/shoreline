@@ -2274,7 +2274,7 @@ main .card-links.card-links-compact a, .content-container .card-links.card-links
   margin-bottom: 1rem;
 }
 
-.accordion .card {
+.accordion .accordion-card {
   border: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -2284,13 +2284,13 @@ main .card-links.card-links-compact a, .content-container .card-links.card-links
   border-radius: 0;
 }
 
-.accordion .card-body {
+.accordion .accordion-body {
   font-size: 1.1875rem;
   line-height: 1.68;
   padding: 1.5rem 1rem;
 }
 
-.accordion .card-header {
+.accordion .accordion-header {
   border-bottom: 0;
   background-color: transparent;
   color: #fff;
@@ -2301,11 +2301,11 @@ main .card-links.card-links-compact a, .content-container .card-links.card-links
   transition: background-color 0.1s cubic-bezier(0.45, 0.05, 0.55, 0.95), color 0.1s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 
-.accordion .card-header:hover {
+.accordion .accordion-header:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-.accordion .card-header .btn {
+.accordion .accordion-header .btn {
   color: inherit;
   padding: inherit;
   font-weight: 600;
@@ -2317,7 +2317,7 @@ main .card-links.card-links-compact a, .content-container .card-links.card-links
   padding: 1.5rem 1rem 1.25rem 1rem;
 }
 
-.accordion .card-header .btn-toggle:before {
+.accordion .accordion-header .btn-toggle:before {
   color: #00685e;
   background-color: #fff;
   border-radius: 999px;
@@ -2340,41 +2340,41 @@ main .card-links.card-links-compact a, .content-container .card-links.card-links
   width: 30px;
 }
 
-.accordion .card-header .btn-toggle:hover:before {
+.accordion .accordion-header .btn-toggle:hover:before {
   background-color: #0074b3;
   background-image: url(../../resources/img/icons/toggle-open-transparent.svg);
 }
 
-.accordion .card-header .btn-toggle[aria-expanded=true]:before {
+.accordion .accordion-header .btn-toggle[aria-expanded=true]:before {
   background-color: #fff;
   background-image: url(../../resources/img/icons/toggle-open-blue-transparent.svg);
 }
 
-.accordion .card-header .btn-toggle[aria-expanded=true]:hover:before {
+.accordion .accordion-header .btn-toggle[aria-expanded=true]:hover:before {
   background-color: #0074b3;
   background-image: url(../../resources/img/icons/toggle-closed-transparent.svg);
 }
 
-.accordion .card-header .btn-toggle:after {
+.accordion .accordion-header .btn-toggle:after {
   display: none;
 }
 
-.accordion .card-header h1, .accordion .card-header h2, .accordion .card-header h3, .accordion .card-header h4, .accordion .card-header h5, .accordion .card-header h6 {
+.accordion .accordion-header h1, .accordion .accordion-header h2, .accordion .accordion-header h3, .accordion .accordion-header h4, .accordion .accordion-header h5, .accordion .accordion-header h6 {
   color: #000;
   margin: 0;
   padding: 0;
 }
 
-.accordion .card-header h1 a, .accordion .card-header h2 a, .accordion .card-header h3 a, .accordion .card-header h4 a, .accordion .card-header h5 a, .accordion .card-header h6 a {
+.accordion .accordion-header h1 a, .accordion .accordion-header h2 a, .accordion .accordion-header h3 a, .accordion .accordion-header h4 a, .accordion .accordion-header h5 a, .accordion .accordion-header h6 a {
   color: inherit;
 }
 
-.accordion .card-header.active {
+.accordion .accordion-header.active {
   background-color: #00685e;
   color: #fff;
 }
 
-.accordion .card-header.active h1, .accordion .card-header.active h2, .accordion .card-header.active h3, .accordion .card-header.active h4, .accordion .card-header.active h5, .accordion .card-header.active h6 {
+.accordion .accordion-header.active h1, .accordion .accordion-header.active h2, .accordion .accordion-header.active h3, .accordion .accordion-header.active h4, .accordion .accordion-header.active h5, .accordion .accordion-header.active h6 {
   color: #fff;
 }
 
@@ -3958,7 +3958,7 @@ main .breadcrumb ol, .sectional .breadcrumb ol, .content-container .breadcrumb o
 }
 
 .sectional.theme-01 {
-  background-color: #006c68;
+  background-color: #00685e;
 }
 
 .sectional.theme-02 {
@@ -5225,6 +5225,7 @@ header#header {
 
 .megamenu {
   position: fixed;
+  background-color: #fff;
   top: 0;
   right: 0;
   left: 0;
@@ -5364,6 +5365,7 @@ header#header {
     position: relative;
     -webkit-box-shadow: none;
             box-shadow: none;
+    background-color: transparent;
   }
   .megamenu li {
     width: auto;
