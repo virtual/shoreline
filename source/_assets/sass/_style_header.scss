@@ -43,6 +43,7 @@ header#header {
   &.input-group > label .form-control {
     border-top-right-radius: 999px;
     border-bottom-right-radius: 999px;
+    background-color: transparent;
   }
   &.input-group > .input-group-prepend > .input-group-text {
     border-top-left-radius: 999px;

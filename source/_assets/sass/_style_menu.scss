@@ -38,14 +38,12 @@
   right: 0;
   left: 0;
   z-index: 1030;
-  background:#fff;
   color: $primary;
   font-size: 1.1rem;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
   ul,
   div {
-    margin-bottom: 0;
-    background: inherit;
+    margin-bottom: 0; 
     padding-left: 0;
   }
   li {

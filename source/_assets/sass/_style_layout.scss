@@ -217,14 +217,12 @@ body {
   .layout-has-sidebar .content-container { padding-right: 40px; }  
   .content-has-header-img { margin-bottom: 2.5rem; }
   .content-no-header-img .flex-layout-body .sidebar-container { padding-top: 4.5rem; }  
-  
   .page-interior .header-image {
       margin-bottom: -90px; // breadcrumb affects this distance
   }
   
 }
 @media (min-width: $screen-lg){
-
   .page-interior {border-top: 1rem solid $minty-green; padding-top: 0rem;}
   .program-option .content-header { border-top:0;  }
   .content-header {   margin-top: 0rem;   border-top: 1rem solid $minty-green; }

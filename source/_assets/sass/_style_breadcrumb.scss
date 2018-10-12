@@ -70,6 +70,7 @@
   li+li:before {
     // content: '>';
     content: '\f054';
+    background-color: transparent;
     font-family: $font-awesome;
     display: inline-block;
     text-align: center;

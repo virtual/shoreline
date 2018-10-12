@@ -1,0 +1,67 @@
+/* hero image banner */
+.interior-hero {
+	position: relative;
+	margin-top: -7px;
+	background-size: cover;
+	background-position: center;
+	min-height: 500px; }
+@media screen and (max-width: 900px) {
+	.interior-hero {
+		min-height: 0;
+		background-image: none; } }
+.interior-hero .hero-image-wrapper {
+	background-size: cover;
+	background-repeat: no-repeat; }
+@media screen and (max-width: 900px) {
+	.interior-hero .hero-image-wrapper {
+		padding-bottom: 33%; } }
+.interior-hero img {
+	width: 100%;
+	vertical-align: top; }
+.interior-hero .hero-caption {
+	position: absolute;
+	top: 60px;
+	left: 0;
+	width: 55%;
+	background: black;
+	background: rgba(0, 0, 0, 0.3);
+	color: white;
+	text-align: right;
+	text-shadow: 1px 1px 11px #333;
+	padding: 30px 40px 30px 50px;
+}
+@media screen and (max-width: 900px) {
+	.interior-hero .hero-caption {
+		position: relative;
+		top: auto;
+		padding: 20px 25px;
+		background: black;
+		width: 100%;
+		text-align: left; } }
+.interior-hero h1 {
+	color: white;
+	margin-bottom: 0.20em; }
+.interior-hero p {
+	margin-bottom: 0;
+	font-size: 2.1vw; color:#fff; }
+.interior-hero p:last-child {
+	margin-bottom: 0; }
+@media screen and (max-width: 900px) {
+	.interior-hero p {
+		font-size: 14px; } }
+/* end hero image banner */
+
+
+.image-gallery img {
+  width: 100%;
+  vertical-align: top;
+  margin-bottom: 20px;
+}
+@media (min-width: 480px) {
+.image-gallery .row > div:first-child {
+  padding-right: 10px;
+}
+.image-gallery .row > div:last-child {
+  padding-left: 10px;
+}
+}

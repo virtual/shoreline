@@ -229,6 +229,21 @@ var shoreline = {
       }
     });
 
+      $('.lightbox').colorbox({
+        maxWidth: "95%", 
+        maxHeight: "100%",
+        transition: 'none',
+        rel: 'lightbox',
+        onOpen: function(){ 
+          $("body").addClass('menu-open');
+        },
+        onClosed: function(){ 
+          $("body").removeClass('menu-open');
+        }
+      });
+  
+
+     
   },
   changeScrollableOffset: function(px) {
     this.scrollableOffset = px;
