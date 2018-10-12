@@ -1672,7 +1672,7 @@ body {
     border-top: 1rem solid #F2FAF9;
     padding-top: 0rem;
   }
-  .program-option .content-header {
+  .interior-hero + .page-interior, .program-option .content-header {
     border-top: 0;
   }
   .content-header {
@@ -6407,8 +6407,6 @@ header#header {
 
 .popup-gallery ul.thumbnails {
   margin-left: 0;
-  margin: 0;
-  padding: 0;
 }
 
 .popup-gallery ul.thumbnails li {
