@@ -341,6 +341,16 @@ var shoreline = {
       }	
     });
   },
+  highlightActiveNav: function() {
+    // Current Page Link Highlighting
+	  $(".left-nav nav ul.nav a,.button-row a").each(function(index){
+      var currentPage = ou_path.toLowerCase().replace(ou_index, '');
+      var link = $(this).attr("href").toLowerCase().replace(ou_index, '');
+      if (link == currentPage){
+        $(this).parent('li').addClass("current");
+      }
+    });
+  },
   navTabs: function () {
     $(document).ready(function () {
       $('.nav-link')
@@ -359,6 +369,7 @@ if ( $( "#twitter-feed" ).length ) {
 }
 // shoreline.scrollAccordion();
 shoreline.loadNavChild();
+shoreline.highlightActiveNav();
 shoreline.navTabs();
 
 
