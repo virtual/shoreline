@@ -114,7 +114,7 @@ p, ul, dl, ol {
   .contact-us-box {
     &> h2 { width: 100%; clear:both; text-align: center; margin-top:0; }
     .content-blocks { display:flex; flex-direction: row; margin-bottom: 0; 
-      .content-block { flex-grow:1; padding-right: .5rem;}
+      .content-block { flex-grow:1; padding-right: .5rem; flex-basis: 33%;}
       h3 { margin-top:0;}
     }
   
@@ -124,7 +124,7 @@ p, ul, dl, ol {
 .address-sidebar > .contact-us-box, .col-md-4 > .contact-us-box, .sidebar-container .contact-us-box {
   &> h2 { text-align: left; }
   .content-blocks { flex-direction: column}
-  .content-block { width: 100%; }
+  .content-block { width: 100%; flex-basis: 100%; }
 }
 
 img.rounded { border-radius: 10px !important; }
