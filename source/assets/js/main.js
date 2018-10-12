@@ -1821,6 +1821,15 @@ var shoreline = {
         $(".content").css("minHeight", leftColHeight + 40);
       }
     });
+  },
+  navTabs: function navTabs() {
+    $(document).ready(function () {
+      $('.nav-link').on('click', function (e) {
+        // chg all siblings to false
+        $(e.target).parent('li').siblings().find('a').attr('aria-selected', false);
+        $(e.target).attr('aria-selected', true);
+      });
+    });
   }
 };
 
@@ -1830,6 +1839,7 @@ if ($("#twitter-feed").length) {
 }
 shoreline.scrollAccordion();
 shoreline.loadNavChild();
+shoreline.navTabs();
 
 // Detect breakpoint ResponsiveBootstrapToolkit
 var ResponsiveBootstrapToolkit = __webpack_require__("./node_modules/responsive-toolkit/src/bootstrap-toolkit.js");

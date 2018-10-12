@@ -14,6 +14,7 @@
 <h2>Steps for Planning your Payments</h2>
 @include('_partials.accordion')
 @include('_partials.nav-tab')
+@include('_partials.nav-tab')
 
 @include('_partials.buttons')
 

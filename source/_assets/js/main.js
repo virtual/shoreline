@@ -248,99 +248,109 @@ var shoreline = {
   changeScrollableOffset: function(px) {
     this.scrollableOffset = px;
   }, // end mobileScrolltoTab
-    twitterFeed: function () {
-      // $('.twitter-feed').twittie({
-      //   dateFormat: '%b %d',
-      //   template: '<div class="date">{{date}}</div> {{tweet}} ',
-      //   count: 6
-      // });
+  twitterFeed: function () {
+    // $('.twitter-feed').twittie({
+    //   dateFormat: '%b %d',
+    //   template: '<div class="date">{{date}}</div> {{tweet}} ',
+    //   count: 6
+    // });
 
-      // setTimeout(function () {
-      //   $('.twitter-feed > ul > li').matchHeight();
-      // }, 2000);
+    // setTimeout(function () {
+    //   $('.twitter-feed > ul > li').matchHeight();
+    // }, 2000);
 
-      var twitterConfig = {
-        "profile": {"screenName": 'shorelinecc'},
-        "domId": 'twitter-feed',
-        "maxTweets": 3,
-        "enableLinks": true,
-        "showImages": false,
-        "showInteraction": false,
-        "showUser": false
-      };
-      var twitterHtml = twitterFetcher.fetch(twitterConfig); 
-      // console.log(twitterHtml)
-      // $('.twitter-feed').html = twitterHtml;
+    var twitterConfig = {
+      "profile": {"screenName": 'shorelinecc'},
+      "domId": 'twitter-feed',
+      "maxTweets": 3,
+      "enableLinks": true,
+      "showImages": false,
+      "showInteraction": false,
+      "showUser": false
+    };
+    var twitterHtml = twitterFetcher.fetch(twitterConfig); 
+    // console.log(twitterHtml)
+    // $('.twitter-feed').html = twitterHtml;
 
-    }, // twitterFeed
-    scrollAccordion: function() {
-    // For reference only; minified version in main.js
-    var topScrollHeader = ($('header').height()) // height of header when first loaded
-    var innerSectionHeight = 0
-    var prevMoveTopOffset = 0
-    var prevAccContent = 0
-    var animateSpeed = 200
-    var panel // active accordion panel
-    var togglerHeight = 0
+  }, // twitterFeed
+  scrollAccordion: function() {
+  // For reference only; minified version in main.js
+  var topScrollHeader = ($('header').height()) // height of header when first loaded
+  var innerSectionHeight = 0
+  var prevMoveTopOffset = 0
+  var prevAccContent = 0
+  var animateSpeed = 200
+  var panel // active accordion panel
+  var togglerHeight = 0
 
-    function move(clickPos) {
-      var newPt = clickPos - togglerHeight - 40
-      if (clickPos > (topScrollHeader + innerSectionHeight)) { 
-        newPt = newPt - innerSectionHeight
-      }
-      if ((prevMoveTopOffset) > clickPos - prevAccContent) {
-        // prevMoveTopOffset = newPt;
-        $('html,body').animate({
-          scrollTop: newPt
-        }, animateSpeed);
-        prevMoveTopOffset = newPt
-      } else {
-        newPt = newPt - prevAccContent
-        $('html,body').animate({
-          scrollTop: newPt
-        }, animateSpeed)
-        prevMoveTopOffset = newPt
-      }
+  function move(clickPos) {
+    var newPt = clickPos - togglerHeight - 40
+    if (clickPos > (topScrollHeader + innerSectionHeight)) { 
+      newPt = newPt - innerSectionHeight
     }
-
-    $(document)
-      .ready(function () {
-        $('.accordion .btn-toggle')
-          .on('mousedown', function (e) {
-            // if (panel) {
-            //   prevAccContent = panel.nextElementSibling.offsetHeight
-            // } else {
-              prevAccContent = 0
-            // }
-            panel = e.target
-          })
-          .on('mouseup', function (e) {
-            if ($(e.target).hasClass('active')) {
-              togglerHeight = 0
-              panel = undefined
-              prevMoveTopOffset = 0
-            } else {
-
-              togglerHeight = $(e.target).height()
-              var thisHeight = $(e.target).offset().top
-              move(thisHeight)
-            }
-          });
-      });
-    },
-    loadNavChild: function() {
-      $("ul#subnav_parent > li").each(function(index){
-        if ($(this).children('a').attr("href").toLowerCase().indexOf(ou_child.toLowerCase()) >= 0){
-          var link = $(this).children('a').first().attr("href");
-          //console.log("Match = " + link);
-          $(this).append($("ul#subnav_child")).addClass('current');
-          $("ul#subnav_child").show();
-          
-          var leftColHeight = $(".left-nav").height(); 
-            $(".content").css("minHeight", leftColHeight + 40);
-        }	
-      });
+    if ((prevMoveTopOffset) > clickPos - prevAccContent) {
+      // prevMoveTopOffset = newPt;
+      $('html,body').animate({
+        scrollTop: newPt
+      }, animateSpeed);
+      prevMoveTopOffset = newPt
+    } else {
+      newPt = newPt - prevAccContent
+      $('html,body').animate({
+        scrollTop: newPt
+      }, animateSpeed)
+      prevMoveTopOffset = newPt
     }
+  }
+
+  $(document)
+    .ready(function () {
+      $('.accordion .btn-toggle')
+        .on('mousedown', function (e) {
+          // if (panel) {
+          //   prevAccContent = panel.nextElementSibling.offsetHeight
+          // } else {
+            prevAccContent = 0
+          // }
+          panel = e.target
+        })
+        .on('mouseup', function (e) {
+          if ($(e.target).hasClass('active')) {
+            togglerHeight = 0
+            panel = undefined
+            prevMoveTopOffset = 0
+          } else {
+
+            togglerHeight = $(e.target).height()
+            var thisHeight = $(e.target).offset().top
+            move(thisHeight)
+          }
+        });
+    });
+  },
+  loadNavChild: function() {
+    $("ul#subnav_parent > li").each(function(index){
+      if ($(this).children('a').attr("href").toLowerCase().indexOf(ou_child.toLowerCase()) >= 0){
+        var link = $(this).children('a').first().attr("href");
+        //console.log("Match = " + link);
+        $(this).append($("ul#subnav_child")).addClass('current');
+        $("ul#subnav_child").show();
+        
+        var leftColHeight = $(".left-nav").height(); 
+          $(".content").css("minHeight", leftColHeight + 40);
+      }	
+    });
+  },
+  navTabs: function () {
+    $(document).ready(function () {
+      $('.nav-link')
+        .on('click', function (e) {
+          // chg all siblings to false
+          $(e.target).parent('li').siblings().find('a').attr('aria-selected', false);
+          $(e.target).attr('aria-selected', true);
+        });
+    });
+  }
 };
 
 shoreline.colorBox();
@@ -349,6 +359,7 @@ if ( $( "#twitter-feed" ).length ) {
 }
 shoreline.scrollAccordion();
 shoreline.loadNavChild();
+shoreline.navTabs();
 
 
 // Detect breakpoint ResponsiveBootstrapToolkit
