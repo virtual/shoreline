@@ -121,7 +121,7 @@ p, ul, dl, ol {
   }
 }
 
-.address-sidebar > .contact-us-box {
+.address-sidebar > .contact-us-box, .col-md-4 > .contact-us-box, .sidebar-container .contact-us-box {
   &> h2 { text-align: left; }
   .content-blocks { flex-direction: column}
   .content-block { width: 100%; }
@@ -131,3 +131,24 @@ img.rounded { border-radius: 10px !important; }
 @media (min-width: $screen-md) {
   .md-flex-5 > div { width: 20%; }
 }
+
+
+/* custom link styles */
+.fa-link-pdf:after {
+  content: "\f1c1"; 
+}
+.fa-link-external:after {
+  content: "\f35d";
+  font-weight: 600;
+}
+.fa-link-external:after, .fa-link-pdf:after {
+  font-family: 'Font Awesome\ 5 Free';
+  font-size: .8em;
+  padding: 0 .4em 0 .3em;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: initial;
+  white-space: nowrap;
+}
+/* end custom link styles */

@@ -2707,18 +2707,18 @@ p.gray.small, p.gray.medium, p.gray.large, ul.gray.small, ul.gray.medium, ul.gra
   }
 }
 
-.address-sidebar > .contact-us-box > h2 {
+.address-sidebar > .contact-us-box > h2, .col-md-4 > .contact-us-box > h2, .sidebar-container .contact-us-box > h2 {
   text-align: left;
 }
 
-.address-sidebar > .contact-us-box .content-blocks {
+.address-sidebar > .contact-us-box .content-blocks, .col-md-4 > .contact-us-box .content-blocks, .sidebar-container .contact-us-box .content-blocks {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.address-sidebar > .contact-us-box .content-block {
+.address-sidebar > .contact-us-box .content-block, .col-md-4 > .contact-us-box .content-block, .sidebar-container .contact-us-box .content-block {
   width: 100%;
 }
 
@@ -2732,6 +2732,28 @@ img.rounded {
   }
 }
 
+/* custom link styles */
+.fa-link-pdf:after {
+  content: "\F1C1";
+}
+
+.fa-link-external:after {
+  content: "\F35D";
+  font-weight: 600;
+}
+
+.fa-link-external:after, .fa-link-pdf:after {
+  font-family: 'Font Awesome 5 Free';
+  font-size: .8em;
+  padding: 0 .4em 0 .3em;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: initial;
+  white-space: nowrap;
+}
+
+/* end custom link styles */
 .topnav {
   background-color: #0c2321;
 }
