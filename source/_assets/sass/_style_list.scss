@@ -266,7 +266,10 @@ ul.list-unstyled, ol.list-unstyled, %list-unstyled {
     }
   }
 }
-.tab-content { padding: 1rem 0;}
+.tab-content { 
+  font-size: 1.1875rem; line-height: 1.68; padding: 1.5rem 0;
+  color:$text-dark;
+}
 
 .list-bulleted {
    margin-bottom: .75rem; margin-top: .75rem; 
