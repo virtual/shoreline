@@ -68,3 +68,11 @@
   padding-left: 10px;
 }
 }
+
+.popup-gallery {
+  ul.thumbnails {
+    @extend %list-unstyled;
+    margin-left:0;
+    li { padding: 5px 10px 5px 0; }
+  }
+} 

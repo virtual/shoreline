@@ -4630,18 +4630,18 @@ main ol.large-list li:before {
   color: #00685e;
 }
 
-ul.list-unstyled, ol.list-unstyled, main .card-links, .content-container .card-links, .sectional .card-links, * .card-links, .breadcrumb ol, .breadcrumb li, .left-nav ul, .left-nav li {
+ul.list-unstyled, ol.list-unstyled, main .card-links, .content-container .card-links, .sectional .card-links, * .card-links, .breadcrumb ol, .breadcrumb li, .left-nav ul, .left-nav li, .popup-gallery ul.thumbnails {
   list-style-type: none;
 }
 
-ul.list-unstyled li, ol.list-unstyled li, main .card-links li, .content-container .card-links li, .sectional .card-links li, * .card-links li, .breadcrumb ol li, .breadcrumb li li, .left-nav ul li, .left-nav li li {
+ul.list-unstyled li, ol.list-unstyled li, main .card-links li, .content-container .card-links li, .sectional .card-links li, * .card-links li, .breadcrumb ol li, .breadcrumb li li, .left-nav ul li, .left-nav li li, .popup-gallery ul.thumbnails li {
   padding-left: 0;
   margin: 0;
   text-indent: 0;
   position: relative;
 }
 
-ul.list-unstyled li:before, ol.list-unstyled li:before, main .card-links li:before, .content-container .card-links li:before, .sectional .card-links li:before, * .card-links li:before, .breadcrumb ol li:before, .breadcrumb li li:before, .left-nav ul li:before, .left-nav li li:before {
+ul.list-unstyled li:before, ol.list-unstyled li:before, main .card-links li:before, .content-container .card-links li:before, .sectional .card-links li:before, * .card-links li:before, .breadcrumb ol li:before, .breadcrumb li li:before, .left-nav ul li:before, .left-nav li li:before, .popup-gallery ul.thumbnails li:before {
   display: none;
   position: initial;
   top: auto;
@@ -6403,6 +6403,16 @@ header#header {
   .image-gallery .row > div:last-child {
     padding-left: 10px;
   }
+}
+
+.popup-gallery ul.thumbnails {
+  margin-left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.popup-gallery ul.thumbnails li {
+  padding: 5px 10px 5px 0;
 }
 
 /* twitter module */
