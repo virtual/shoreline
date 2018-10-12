@@ -1856,10 +1856,6 @@ h2, h3, h4, h5, h6 {
   font-size: 1rem;
 }
 
-.card .card-title {
-  font-size: 1.1875rem;
-}
-
 .card h2, .card h3, .card h4, .card h5 {
   font-weight: 400;
   color: #444;
@@ -1867,6 +1863,10 @@ h2, h3, h4, h5, h6 {
 
 .card h2:first-child, .card h3:first-child, .card h4:first-child, .card h5:first-child {
   margin-top: 0;
+}
+
+.card-title {
+  font-size: 1.1875rem;
 }
 
 .card-margin {
@@ -2118,7 +2118,7 @@ main .card-links.card-links-compact a, .content-container .card-links.card-links
 }
 
 @media (min-width: 768px) {
-  .card .card-title {
+  .card-title {
     font-size: 1.5rem;
   }
   .card-body {
@@ -2136,13 +2136,13 @@ main .card-links.card-links-compact a, .content-container .card-links.card-links
   }
 }
 
-.card .far, .card .fa, .card .fas {
+.card .far, .card .fa, .card .fas, .card .fab, .card .fal {
   font-size: 2rem;
   padding-bottom: .5rem;
 }
 
 @media (min-width: 768px) {
-  .card .far, .card .fa, .card .fas {
+  .card .far, .card .fa, .card .fas, .card .fab, .card .fal {
     font-size: 3rem;
     padding-bottom: 1rem;
   }
