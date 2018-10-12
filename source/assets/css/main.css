@@ -2019,6 +2019,7 @@ main .card-links.card-links-compact li, .content-container .card-links.card-link
 main .card-links.card-links-compact a, .content-container .card-links.card-links-compact a, .sectional .card-links.card-links-compact a, * .card-links.card-links-compact a {
   padding: .875rem 0 0 0;
   font-size: 1.1875rem;
+  line-height: 1.68;
 }
 
 .col-12 > .card-links li:first-child, [class*="col-sm-"] > .card-links li:first-child {
@@ -6332,6 +6333,9 @@ header#header {
 }
 
 @media screen and (max-width: 900px) {
+  .interior-hero {
+    background: none;
+  }
   .interior-hero .hero-caption {
     position: relative;
     top: auto;

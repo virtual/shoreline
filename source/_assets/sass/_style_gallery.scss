@@ -31,6 +31,9 @@
 	padding: 30px 40px 30px 50px;
 }
 @media screen and (max-width: 900px) {
+  .interior-hero{
+    background: none;
+    } 	
 	.interior-hero .hero-caption {
 		position: relative;
 		top: auto;
