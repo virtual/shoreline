@@ -3,6 +3,7 @@
 @section('content')
  <h1>Timeline</h1>
  <p>8/27 — Pushed back two weeks</p>
+ <p>10/17 — Changed go-live date to 11/5</p>
   <div class="timeline">
     <div class="line text-muted"></div>
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -100,7 +101,7 @@
         ])
 
         @include('_partials.timelinelist', [
-        'heading' => 'Implementation process for new theme on www; republish website (Oct 29)',
+        'heading' => 'Implementation process for new theme on www; republish website (early Nov 5)',
         'desc' => "Verify working as expected.
         ",
         'id' => '8', 
@@ -108,7 +109,7 @@
         ])
 
         @include('_partials.timelinelist', [
-        'heading' => 'OU Migration for Program options and department pages (Nov 5-9)',
+        'heading' => 'OU Migration for Program options and department pages (Nov 6-9)',
         'desc' => "OU creates program options. Need to discuss when the file structure is built out--as well as program parent information.
         ",
         'id' => '9', 
