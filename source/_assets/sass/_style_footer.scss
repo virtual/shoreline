@@ -5,8 +5,9 @@
   font-size: 1rem; 
   color: $text-dark;
   text-align:center;
-  .footer-column-1 { display:none;}
   .footer-column-1 a { color: inherit; }
+  .col-12 { order:2;}
+  
   p, a, dl, ul, ol { font-size: inherit;}
   .footer-logo {
     margin-bottom: 3rem;
@@ -99,7 +100,9 @@
     margin-left: -11px;
   }
 }
-
+@media (min-width: $screen-lg) {
+  #footer footer .footer-column-1.col-12 { order: 1;}
+}
 @media screen and (max-width: 1025px) {
   #footer footer .back-to-top {
     position: relative;
