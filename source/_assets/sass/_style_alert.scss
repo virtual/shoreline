@@ -37,3 +37,36 @@ $alert-warning: $shoreline-orange;
   padding: 3.5rem 6.5rem
   }
 }
+
+header .alert, header .alert.alert-padded { border-radius: 0; border:0; padding-left:20px; padding-right:20px;}
+header .alert .dismiss-alert {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.44);
+  cursor: pointer;
+  display: inline-block;
+}
+
+header .alert-green .container-fluid {
+  background-image: url('../../resources/img/graphics/icon-alert.png');
+  background-repeat: no-repeat;
+  background-size: 50px auto;
+  background-position: 40px center;
+  padding-left: 120px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+header .alert.alert-primary .dismiss-alert {
+  color:#fff;
+}
+header .alert .dismiss-alert:hover {
+  background:  rgba(0, 0, 0, .7);
+}
+header .alert {position:relative;  margin-bottom: 0; }
+/* shows with JS */
+header .alert { display:none;}
+@media (min-width: $screen-lg) {
+  header .alert { margin-bottom: -1.5rem;  margin-top: 1.5rem; }
+}

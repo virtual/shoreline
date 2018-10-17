@@ -34,4 +34,5 @@
     </div>
     
   </div>
+  @include('_partials.alert')
 </header>
