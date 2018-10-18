@@ -12,6 +12,11 @@
 <p>An important step in attending college is having a solid plan for covering the cost of attendance. If you don't have money to pay your tuition all at once, review the following information on setting up a payment plan through Nelnet.</p>
 <p class="card-link"><a class="more-arrow" href="#">Get started</a></p>
 <p>Start budgeting for your education today. Your payments will be lower the sooner you start. </p>
+<ul class="card-links more-arrow">
+    <li><a href="#">More Arrow on UL</a> Gain specialized knowledge and skills for a career in a particular field.</li>
+    <li><a href="#">College/University Transfer</a> For students who intend to continue their studies at a college or university.</li>
+    <li><a href="#">Professional & Technical</a> Gain specialized knowledge and skills for a career in a particular field.</li>
+  </ul>
 <div class="row">
   <div class="col-12 col-sm-6">
       <p class="card-link"><a class="more-arrow" href="#">Get started</a> Got some other text here</p>

@@ -1648,6 +1648,10 @@ body {
   margin-top: -1.5rem;
 }
 
+.homepage #maincontent + #sectionals {
+  margin-top: 0;
+}
+
 .program-option p.lead {
   margin-top: 1rem;
 }
@@ -2450,7 +2454,7 @@ main .card-links.card-links-compact a, .content-container .card-links.card-links
   display: inline-block;
 }
 
-.more-arrow:after {
+a.more-arrow:after, ul.more-arrow > li a:after {
   content: "";
   -webkit-transform: rotate(0);
           transform: rotate(0);
@@ -2468,12 +2472,14 @@ main .card-links.card-links-compact a, .content-container .card-links.card-links
   transform: rotate(0);
   padding-left: 1rem;
   margin-left: .5rem;
-  -webkit-transition: margin-left .15s ease-in-out;
-  transition: margin-left .15s ease-in-out;
+  -webkit-transition: margin-left .15s ease-in-out, margin-right .15s ease-in-out;
+  transition: margin-left .15s ease-in-out, margin-right .15s ease-in-out;
+  margin-right: .62rem;
 }
 
-.more-arrow:hover:after {
+a.more-arrow:hover:after, ul.more-arrow > li a:hover:after {
   margin-left: .62rem;
+  margin-right: .5rem;
 }
 
 .clear {

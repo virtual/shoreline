@@ -204,6 +204,7 @@ body {
 }
 #maincontent + #footer   { margin-top: 1.5rem;}
 #maincontent + #sectionals { margin-top: -1.5rem; } 
+.homepage #maincontent+#sectionals { margin-top:0;}
 .program-option p.lead { margin-top: 1rem;}
 
 @media (min-width: $screen-md) {
