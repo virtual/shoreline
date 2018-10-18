@@ -87,3 +87,22 @@ $h3-font-size:                $font-size-base * 1.5 !default;
 $h4-font-size:                $font-size-base * 1.1875 !default;
 $h5-font-size:                $font-size-base !default;
 $h6-font-size:                $font-size-base * 0.8125 !default;  
+
+
+
+// Buttons
+$input-btn-padding-y:         .75rem !default;
+$input-btn-padding-x:         2rem !default;
+$input-btn-line-height:       1.37 !default;
+
+$input-btn-padding-y-sm:      .375rem !default;
+$input-btn-padding-x-sm:      .75rem !default;
+$input-btn-line-height-sm:    $input-btn-line-height;
+
+$input-btn-padding-y-lg:      1rem !default;
+$input-btn-padding-x-lg:      3rem !default;
+$input-btn-line-height-lg:    $input-btn-line-height;
+ 
+$btn-border-radius:           999px !default;
+$btn-border-radius-lg:        $btn-border-radius;
+$btn-border-radius-sm:        $btn-border-radius;

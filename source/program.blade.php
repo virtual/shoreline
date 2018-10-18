@@ -24,6 +24,10 @@
     <kbd class="ouc">Edit</kbd>
     <a href="#" class="btn btn-important">Apply</a>
     <a href="#" class="btn btn-secondary">Ask a Question</a>
+    <br/>
+    
+    <a href="#" class="btn btn-sm btn-important">Apply</a>
+    <a href="#" class="btn btn-sm btn-secondary">Ask a Question</a>
 @endsection
 
 @section ('lead') 

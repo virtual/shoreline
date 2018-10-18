@@ -52,11 +52,13 @@ header#header {
     border-width: 2px;
     border-right: 0;
     margin-right: 1px;
+    padding: .375rem .75rem;
   }
   .entersearch {        
     border-color: rgba(0, 0, 0, 0.2) !important;
     padding-left:0;
     font-size: 1rem;
+    padding-right:.5rem;
     padding-top: .40625rem;
     padding-bottom: .40625rem;
     height: auto; 
