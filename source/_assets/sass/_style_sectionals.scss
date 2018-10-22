@@ -42,7 +42,7 @@
 	padding-top: 30px;
 	padding-bottom: 30px;
 } 
-.sectional.theme-01 {
+.sectional.theme-01, .sectional.bg-primary  {
 	background-color: $primary;
 }
 .sectional.theme-02 {
@@ -51,7 +51,7 @@
 .sectional.theme-03 {
 	background-color: #000;
 }
-.sectional.theme-04 {
+.sectional.theme-04, .sectional.bg-light {
 	background-color: $light;
 }
 // .sectional-inverted * {

@@ -8,7 +8,7 @@
   </ol>
 @endsection
 
-@section('content-header-img')
+@section('content-header-img2')
 <div class="center-cropped" 
      style="background-image: url('{{ $page->baseUrl }}/resources/img/stock/image.jpg');">
      <img alt="" src="{{ $page->baseUrl }}/resources/img/stock/image.jpg"/>

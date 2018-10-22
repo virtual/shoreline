@@ -87,11 +87,13 @@
     @if (trim($__env->yieldContent('content-header-inverse'))) 
     <div class="content-header bg-primary"> @else  <div class="content-header "> @endif
      <div class="container-fluid">
+
         <div class="breadcrumb" aria-label="breadcrumb">
-            @yield('breadcrumb')
-          </div>
+          @yield('breadcrumb')
+        </div>
           
           <div class="header-info">
+            
             <div class="header-content">
               @yield('content-header')
             </div>
@@ -104,12 +106,11 @@
             </div>
             @endif
             
-          </div>
+          </div><!-- end header info -->
 
-        </div>
-      </div>
-    </div>
-    @endif
+        </div><!-- end container-fluid -->
+      </div><!-- end content-header -->
+    @endif <!-- end content-header IF -->
 
     <div class="container-fluid">
       <div class="flex-layout-body">
@@ -169,11 +170,11 @@
         @endif
         <!-- end sidebar on -->
 
-          </div> <!-- closing div for determining opening classes -->
-          <!-- end layout has class-->
-        </div> <!-- END .flex-layout-body -->
-      </div><!-- END .container-fluid -->
-      </div><!-- end has feature content image -->
+            </div> <!-- closing div for determining opening classes -->
+            <!-- end layout has class-->
+          </div> <!-- END .flex-layout-body -->
+        </div><!-- END .container-fluid -->
+      </div><!-- end content-has-header-img / content-no-header-img -->
     </div><!-- END .layout-master page-interior -->
     @endif
     <!-- end INTERIOR TEMPLATE -->
