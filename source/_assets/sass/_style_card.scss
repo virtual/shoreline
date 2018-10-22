@@ -11,6 +11,11 @@
   h2, h3, h4, h5 { font-weight: 400; color:#444; 
     &:first-child {margin-top:0;}
   }
+  .fa, .far, .fas, .fab {
+    &+h2, &+h3, &+h4, &+h5 {
+      margin-top:0;
+    }
+  }
 }
 .card-title { font-size: 1.1875rem; }
 .card-margin {  margin-bottom: 0; margin-top:1rem; } 
