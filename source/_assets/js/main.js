@@ -102,6 +102,9 @@ jQuery(document).ready(function() {
       }
   });
 
+  //--- Gavin Smith 8-16-17 Merge data into page if any requests on page
+  LoadShorelineData();
+  
   // Smooth scroll to anchor
   $("a.scrollable").click(function (event) {
     event.preventDefault();
@@ -360,6 +363,42 @@ var shoreline = {
           $(e.target).attr('aria-selected', true);
         });
     });
+  },
+  unWrapDuplicateULs: function() {
+    // remove duplicate <ul> in sidenav
+    $('.list-wrapper ul > ul').children().unwrap();
+
+
+  },
+  tableHTML: function() {
+
+    // table js
+    var switched=false;
+    var updateTables=function(){
+      if(($(window).width()<9999)&&!switched){
+        switched=true;$("table.responsive").each(function(i,element){splitTable($(element));});return true;}
+      else if(switched&&($(window).width()>9999)){switched=false;$("table.responsive").each(function(i,element){unsplitTable($(element));});}};$(window).on('load', updateTables);$(window).bind("resize",updateTables);function splitTable(original)
+    {original.wrap("<div class='table-wrapper' />");var copy=original.clone();copy.find("td:not(:first-child), th:not(:first-child)").css("display","none");copy.removeClass("responsive");original.closest(".table-wrapper").append(copy);copy.wrap("<div class='pinned' />");original.wrap("<div class='scrollable' />");}
+    function unsplitTable(original){original.closest(".table-wrapper").find(".pinned").remove();original.unwrap();original.unwrap();}
+
+    // table-stacked js
+    $('.table-r1').each( function(e) {
+      var headerNames = [];
+      var rowTitles = [];
+      $(this).find('thead th').each( function(e, item) {
+        headerNames.push(item.innerText); // context causes errors, removed
+      });
+      $(this).find('tbody th').each( function(e, item) {			
+        rowTitles.push(item.innerText); // context causes errors, removed
+      });
+      $(this).find('tbody tr').each( function(e) {
+        $(this).children('th').text(rowTitles[e]); 
+        $(this).children('td').each( function(e) {
+          $(this).attr('data-title', headerNames[e+1]) 
+        });
+      }); 
+    });
+
   }
 };
 
@@ -371,6 +410,8 @@ if ( $( "#twitter-feed" ).length ) {
 shoreline.loadNavChild();
 shoreline.highlightActiveNav();
 shoreline.navTabs();
+shoreline.unWrapDuplicateULs();
+shoreline.tableHTML();
 
 
 // Detect breakpoint ResponsiveBootstrapToolkit
