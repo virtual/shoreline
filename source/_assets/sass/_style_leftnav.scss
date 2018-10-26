@@ -44,6 +44,15 @@
         border-bottom: 0;
       }
     }
+    & > li.menu-heading {
+      padding: 14px 23px;
+      font-weight:bold;
+    }
+    & > li > ul {
+      font-weight: normal;
+      a {  padding: 12px 0 12px 16px; display:block;
+         border-bottom: 1px solid rgba(0, 0, 0, 0.1) }
+    }
     ul#subnav_child {
       padding-bottom: 14px;
     }

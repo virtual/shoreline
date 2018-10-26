@@ -45,7 +45,7 @@ a.btn { text-decoration: none; }
   box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.10);
   // border-radius: 1.6875rem; // 25px + 2px padding for secondary
   margin-top: 0;
-  line-height: 1.37;
+  // line-height: 1.37;
   &:hover, &:focus, &:active {
     background-color: inherit;
     // border: solid 2px $primary;
@@ -59,7 +59,7 @@ a.btn { text-decoration: none; }
   background-color: $btn-tertiary;
   color: $primary;
   border: transparent; 
-  line-height: 1.15;
+  // line-height: 1.15;
   &:hover {
     background-color: $pale-gray;
   }

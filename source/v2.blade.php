@@ -19,7 +19,42 @@
 
 
 @section('left-nav')
-@include('_partials.left-nav')
+<nav role="navigation" aria-label="Section Navigation">
+    <h2 class="sr-only">Directory Navigation</h2>
+    <div class="list-wrapper">
+<ul class="nav nav-stacked">
+    <li class="menu-heading">Future Students
+<ul>
+<li><a href="/international/admission/default.aspx">Apply for Admission</a></li>
+<li><a href="/international/university-transfer/default.aspx">University Transfer</a></li>
+<li><a href="/international/university-transfer/high-school-completion.aspx">High School Completion</a></li>
+<li><a href="/international/admission/toefl-ielts.aspx">English Proficiency</a></li>
+<li><a href="/international/esl/default.aspx">English Language Programs</a></li>
+<li><a href="/international/admission/cost.aspx">Costs of Attendance</a></li>
+<li><a href="/international/admission/once-accepted.aspx">Once Accepted</a></li>
+<li><a title="International Student Ambassadors" href="/international/isa.aspx">International Student Ambassadors</a></li>
+</ul>
+</li>
+<li>Current Students
+<ul>
+<li><a href="/international/advising/default.aspx">Advising</a></li>
+<li><a href="/international/immigration/default.aspx">F-1 Immigration</a></li>
+<li><a href="/international/ipm/default.aspx">International Peer Mentors</a></li>
+</ul>
+</li>
+<li><a href="/international/study-abroad/">Study Abroad</a></li>
+<li><a href="/international/educational-partnerships/default.aspx">Partners</a></li>
+<li class="current"><a title="50th Anniversary" href="/about-shoreline/50th-anniversary/default.aspx">50th Anniversary</a>
+  <ul id="subnav_child">
+  <li class="current"><a href="/about-shoreline/50th-anniversary/default.aspx">Home</a></li>
+  <li><a href="/about-shoreline/50th-anniversary/50th-anniversary-story.aspx">50th Anniversary History</a></li>
+  <li><a href="/about-shoreline/50th-anniversary/party.aspx">Party Like it's 1965! Celebration 2015</a></li>
+  </ul>
+</li>
+<li><a href="/international/about-us/default.aspx">About Us</a></li>
+ </ul>
+ </div>
+ </nav>
 @endsection
 
 
