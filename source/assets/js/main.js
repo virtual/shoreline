@@ -1893,6 +1893,12 @@ var shoreline = {
       var itemPos = Math.ceil($('.option-explore-nav .card-body ul li').length / 2);
       $($('.option-explore-nav .card-body ul li')[itemPos]).addClass('list-top');
     }
+  },
+  addBreadcrumbPosition: function addBreadcrumbPosition() {
+    // used for google structure data
+    $('.breadcrumb li').each(function (index) {
+      $(this).append('<meta itemprop="position" content="' + (index + 1) + '" />');
+    });
   }
 };
 
@@ -1907,6 +1913,7 @@ shoreline.navTabs();
 shoreline.unWrapDuplicateULs();
 shoreline.tableHTML();
 shoreline.twoColNav();
+shoreline.addBreadcrumbPosition();
 
 // Detect breakpoint ResponsiveBootstrapToolkit
 var ResponsiveBootstrapToolkit = __webpack_require__("./node_modules/responsive-toolkit/src/bootstrap-toolkit.js");

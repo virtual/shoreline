@@ -400,12 +400,18 @@ var shoreline = {
     });
 
   },
-  twoColNav() {
+  twoColNav: function() {
     if ( $( ".option-explore-nav" ).length ) {
     // Adds class to first item in second column 
       var itemPos = Math.ceil($('.option-explore-nav .card-body ul li').length /2);
       $($('.option-explore-nav .card-body ul li')[itemPos]).addClass('list-top');
     }
+  },
+  addBreadcrumbPosition: function() {
+    // used for google structure data
+    $('.breadcrumb li').each(function (index) {
+      $(this).append('<meta itemprop="position" content="' + (index+1) + '" />');
+    });
   }
 };
 
@@ -420,7 +426,7 @@ shoreline.navTabs();
 shoreline.unWrapDuplicateULs();
 shoreline.tableHTML();
 shoreline.twoColNav();
-
+shoreline.addBreadcrumbPosition();
 
 // Detect breakpoint ResponsiveBootstrapToolkit
 var ResponsiveBootstrapToolkit = require('responsive-toolkit');

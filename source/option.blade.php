@@ -5,22 +5,18 @@
   <li property="itemListElement" typeof="ListItem">
     <a property="item" typeof="WebPage" href="{{ $page->baseUrl }}/">
       <span property="name">Home</span></a>
-    <meta property="position" content="1">
   </li> 
   <li property="itemListElement" typeof="ListItem">
     <a property="item" typeof="WebPage" href="https://www.shoreline.edu/areas-of-study/programs.aspx">
       <span property="name">Explore Programs</span></a>
-    <meta property="position" content="2">
   </li> 
   <li property="itemListElement" typeof="ListItem">
     <a property="item" typeof="WebPage" aria-current="page" href="{{ $page->baseUrl }}/program">
       <span property="name">Visual Communications Technology</span></a>
-    <meta property="position" content="3">
   </li> 
   <li property="itemListElement" typeof="ListItem">
     <a property="item" typeof="WebPage" class="active" aria-current="page" href="#">
       <span property="name">Video Game Design AAAS</span></a>
-    <meta property="position" content="4">
   </li>
 </ol>
 @endsection
