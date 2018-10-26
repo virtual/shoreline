@@ -410,7 +410,7 @@ var shoreline = {
   addBreadcrumbPosition: function() {
     // used for google structure data
     $('.breadcrumb li').each(function (index) {
-      $(this).append('<meta itemprop="position" content="' + (index+1) + '" />');
+      $(this).append('<meta property="position" content="' + (index+1) + '" />');
     });
   }
 };
