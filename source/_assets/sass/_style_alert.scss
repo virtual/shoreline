@@ -10,6 +10,9 @@ $alert-warning: $shoreline-orange;
   * { color: inherit; }
 
   a { text-decoration: underline; }
+  &.bg-primary, &.alert-green {
+    text-decoration: none;
+  }
   a:hover { color: inherit; }
 }
 .alert-primary, .alert-announcement {

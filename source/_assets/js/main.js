@@ -399,6 +399,13 @@ var shoreline = {
       }); 
     });
 
+  },
+  twoColNav() {
+    if ( $( ".option-explore-nav" ).length ) {
+    // Adds class to first item in second column 
+      var itemPos = Math.ceil($('.option-explore-nav .card-body ul li').length /2);
+      $($('.option-explore-nav .card-body ul li')[itemPos]).addClass('list-top');
+    }
   }
 };
 
@@ -412,6 +419,7 @@ shoreline.highlightActiveNav();
 shoreline.navTabs();
 shoreline.unWrapDuplicateULs();
 shoreline.tableHTML();
+shoreline.twoColNav();
 
 
 // Detect breakpoint ResponsiveBootstrapToolkit
