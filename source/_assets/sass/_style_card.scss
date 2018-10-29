@@ -147,7 +147,7 @@ main, .content-container, .sectional, * {
     &> .card-links li:first-child { border-top:1px solid rgba(0, 0, 0, 0.1); }
     }
 }
-.card {
+.card.callout {
   border-top: 5px solid $secondary;
 }
 .card-image-container {border-top-left-radius: 5px; border-top-right-radius: 5px;}

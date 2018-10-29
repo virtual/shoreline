@@ -73,7 +73,8 @@
       'iconalt' => '',
       'icon' => '',   
       'desc' => 'Your first step is to get a student ID – it\'s fast, easy, and free',
-      'link' => 'http://www.shoreline.edu/communications-marketing/identity-guidelines/default.aspx' 
+      'link' => 'http://www.shoreline.edu/communications-marketing/identity-guidelines/default.aspx',
+      'callout' => ''
       ])
  </div>
   <div class="col-12 col-sm-6">   
@@ -83,7 +84,8 @@
       'iconalt' => 'quote',
       'icon' => 'far fa-map',          
       'theme' => 'secondary',
-      'link' => '#'
+      'link' => '#',
+      'callout' => 'true'
       ])
     </div>
 </div>
