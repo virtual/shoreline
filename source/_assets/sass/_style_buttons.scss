@@ -180,3 +180,8 @@ dl .btn-toggle { font-size: 1rem; }
     content: "expand";
   }
 }
+@media (min-width: $screen-md) {
+  .btn-toggle.verbose:before {
+    margin-top:0;
+  }
+}
