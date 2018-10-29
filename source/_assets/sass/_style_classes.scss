@@ -165,3 +165,16 @@ pre code {
   border: 1px solid #ddd;
   font-size: 14px;
 }
+
+.border-between {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  &:last-child { border-bottom:0; }
+}
+.border-around {
+  padding-top: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(0,0,0,.1);
+  &:last-child { border-bottom:1px solid rgba(0,0,0,.1); }
+}

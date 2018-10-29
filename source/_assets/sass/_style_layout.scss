@@ -62,9 +62,8 @@ body {
     }
   } 
 #maincontent {
-  .layout-has-sidebar {   
-    min-height: 100vh;
-  }
+  // TODO: Need to test this more, causing too much extra space
+  // .layout-has-sidebar {  min-height: 100vh;  }
   &.program-option .layout-has-sidebar {
     min-height: 1px; 
   }
