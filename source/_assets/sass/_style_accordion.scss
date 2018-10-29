@@ -25,30 +25,31 @@
       position: relative;
       float:left;
       border: 2px solid #fff;
-      transition: all .1s ease-in-out;
+      transition: background-color .1s ease-in-out;
       content: " "; 
       background-size: 30px;
       background-repeat: no-repeat;
-      background-position: 50% 50%; 
-      background-image: url(../../resources/img/icons/toggle/closed-blue-transparent.svg);
-      height: 30px;
-      width: 30px; 
-      box-sizing: content-box; // so border isn't offset weird
+      background-image: url(../../resources/img/icons/toggle/icons.svg); // closed-blue-transparent
+      background-position:0 0;
+      box-sizing: content-box; // so border isn't offset weird 
     }
     
     .btn-toggle:hover:before {
       background-color: $link-blue;
-      background-image: url(../../resources/img/icons/toggle/open-transparent.svg);
+      background-image: url(../../resources/img/icons/toggle/icons.svg); // open-transparent
+      background-position:0 -120px;
     }
 
     .btn-toggle[aria-expanded=true]:before {
       background-color: #fff;
-      background-image: url(../../resources/img/icons/toggle/open-blue-transparent.svg);
+      background-image: url(../../resources/img/icons/toggle/icons.svg); // open-blue-transparent
+      background-position:0 -90px;
     }
 
     .btn-toggle[aria-expanded=true]:hover:before {
       background-color: $link-blue;
-      background-image: url(../../resources/img/icons/toggle/closed-transparent.svg);
+      background-image: url(../../resources/img/icons/toggle/icons.svg); // closed-transparent
+      background-position:0 -30px;
     }
 
     .btn-toggle:after {

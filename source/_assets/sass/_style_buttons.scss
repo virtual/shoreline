@@ -148,31 +148,35 @@ dl .btn-toggle { font-size: 1rem; }
 }
 
 
-.btn-toggle:after {
+.btn-toggle:before {
   content: " ";
   float:right;
   font-size: 1rem;
   line-height: 1.5;
   background: none;
   background-size: 30px;
-  background-repeat: no-repeat;
-  background-position: 50% 50%; 
-  background-image: url(../../resources/img/icons/toggle/closed-blue-transparent.svg);
+  background-repeat: no-repeat;  
+  transition: background-color .1s ease-in-out;
+  background-image: url(../../resources/img/icons/toggle/icons.svg); // closed-blue-transparent
+  background-position:0 0;
   height: 30px;
-  width: 30px; 
+  width: 30px;  
+  margin-top: -3px;
 } 
 
-.btn-toggle[aria-expanded=true]:after {  
-  background-image: url(../../resources/img/icons/toggle/open-blue-bordered.svg);
+.btn-toggle[aria-expanded=true]:before {  
+  background-image: url(../../resources/img/icons/toggle/icons.svg); // open-blue-bordered
+  background-position:0 -60px;
 }
 
-.btn-toggle.verbose:after {
-  content: "collapse";
-  width: auto;  
-  padding-top: 3px;
-  padding-right: 2rem;
-  background-position: right;
-}
-.btn-toggle.verbose.collapsed:after {
-  content: "expand";
+@media (min-width: 320px) {
+  .btn-toggle.verbose:after {
+    content: "collapse";
+    width: auto;  
+    padding-right: .5rem; 
+    float:right;
+  }
+  .btn-toggle.verbose.collapsed:after {
+    content: "expand";
+  }
 }
