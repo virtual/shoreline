@@ -157,14 +157,13 @@ dl .btn-toggle { font-size: 1rem; }
   background-size: 30px;
   background-repeat: no-repeat;
   background-position: 50% 50%; 
-  background-image: url(../../resources/img/icons/toggle-closed-blue0.svg);
+  background-image: url(../../resources/img/icons/toggle/closed-blue-transparent.svg);
   height: 30px;
   width: 30px; 
 } 
 
-.btn-toggle[aria-expanded=true]:after {
-  
-  background-image: url(../../resources/img/icons/toggle-open.svg);
+.btn-toggle[aria-expanded=true]:after {  
+  background-image: url(../../resources/img/icons/toggle/open-blue-bordered.svg);
 }
 
 .btn-toggle.verbose:after {
