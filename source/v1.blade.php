@@ -113,7 +113,7 @@
 
 @section('main-sidebar-content')  
 <kbd class="ouc">Edit</kbd>
-  <div class="card">
+  <div class="card callout">
     <div class="card-body">
       <h3 class="h5"><strong>Related Program Links</strong></h3>
       <ul class="list-unstyled">
@@ -131,7 +131,8 @@
      'iconalt' => '',
      'icon' => '',   
      'desc' => 'Get in touch with an enrollment coach to learn more about our programs, registering, financial aid, and more',
-     'link' => 'http://www.shoreline.edu/communications-marketing/identity-guidelines/default.aspx' 
+     'link' => 'http://www.shoreline.edu/communications-marketing/identity-guidelines/default.aspx',
+     'callout' => 'true'
      ])
 
      
@@ -140,7 +141,8 @@
      'iconalt' => '',
      'icon' => '',   
      'desc' => 'Your first step is to get a student ID – it\'s fast, easy, and free',
-     'link' => 'http://www.shoreline.edu/communications-marketing/identity-guidelines/default.aspx' 
+     'link' => 'http://www.shoreline.edu/communications-marketing/identity-guidelines/default.aspx',
+     'callout' => 'true'
      ])
 
 @endsection 

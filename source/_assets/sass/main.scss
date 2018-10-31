@@ -10,32 +10,33 @@ p {
   color: $text-dark;
 }
 html {scroll-behavior: smooth;}
- 
-// main > .container { margin-top: 1rem; padding: 2rem 0;}
-// main h1 {  text-align:center; font-size: 2rem; padding-bottom: .5rem; text-transform: uppercase}
 .padded { padding: 3rem 0 2.5rem 0;} 
 img { 
   max-width: 100%; 
-  // width: auto; 
   height: auto;  
 }
 h2 { font-weight: 600; }
 h2.smaller { font-size: 1.5rem;}
-
-
 section { min-height:1px;}
 
 .container-fluid { max-width: $screen-xl; }  
-
+@media (min-width: $screen-lg) {
+  .container-fluid { padding-left: 40px; padding-right: 40px; }  
+}
 @media (min-width: $screen-xl + 80px) {
   .container-fluid { padding-left: 0; padding-right: 0;   }
 }
 
- 
-html {
-  font-size: 1rem;
+body {
+  background-color:#fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; // prevent horizontal scroll on carousel arrows
 }
- 
+html {
+  font-size: 1rem; 
+  height: 100%;
+}
 
 /**
  * 1. Avoid the IE 10-11 `min-height` bug.
@@ -44,25 +45,13 @@ html {
  *    minimum size. See http://bit.ly/1Mn35US for details.
  * 3. Use `%` instead of `vh` since `vh` is buggy in older mobile Safari.
  */
- html {
-  height: 100%;
-} 
- 
- .flex-layout {
+.flex-layout {
   display: flex;
   height: 100%;  
   flex-direction: column;
   min-height: 1px;
-  
 }
 
-
-body {
-  background-color:#fff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden; // prevent horizontal scroll on carousel arrows
-}
 p, ul, dl, ol {
   font-size: 1rem;
     line-height: 1.5; 
@@ -117,10 +106,13 @@ kbd.ouc {
 }
 
 @media (min-width: $screen-md) {
-  p, ul, dl, ol {
+  p, ul, dl, ol, div {
     font-size: 1.1875rem;
     line-height: 1.68;
     }
+  footer, header {
+    div { font-size: 1rem; line-height: 1.5; }
+  }  
 }
 
  
