@@ -89,7 +89,7 @@ a.more-arrow:hover:after, ul.more-arrow > li a:hover:after {
   }
   
 }
-p, ul, dl, ol {
+p, ul, dl, ol, div {
   &.gray {color: $text-lightgray;
   &.small, &.medium, &.large { color: darken($text-lightgray, 10)}
   }
@@ -103,13 +103,11 @@ p, ul, dl, ol {
   word-wrap: break-word; // for long links
   h2 { color:#000; font-size: 1.1875rem; line-height: 1.26; }
   h3 { font-size: 1rem; line-height: 1.5; margin-top:2rem; margin-bottom:0; }
-  dl, dd, dt, p, ul, ol, li { font-size: inherit;}
+  dl, dd, dt, p, ul, ol, li, div { font-size: inherit;}
   dt { font-weight: 400; }
   p, dd { color: $text-midgray}
   strong { color:#000; }
   // default to full width
-  
-
 }
 
 @media (min-width: $screen-md) {
