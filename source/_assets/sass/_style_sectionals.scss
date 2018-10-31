@@ -63,7 +63,17 @@
 	height: auto;
 }
 /* sectional snippet overrides */
-
+.sectional-inverted {
+  .card {
+  color: $text-dark; // for cards on dark bg
+  }
+  .card-title, .card-text {
+    a, a:visited, a:focus, a:active, a:hover {
+    text-shadow: none;
+    color: $link-blue;
+    }
+  }
+}
 .sectional-inverted h3.accordion-handle {
 	background: rgba(255, 255, 255, 0.21);
 	margin-bottom: 0;
