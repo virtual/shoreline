@@ -14,6 +14,13 @@
 - `rm -rf docs`
 - `npm run prod`
 - `npm run docs`
+
+### Autoprefixed CSS
+
+- Uncomment lines 21-26 in webpack.mix.js (postCss)
+- `npm run prod`
+- Get CSS from assets/css/main-support.css
+- Comment lines 21-26 in webpack.mix.js (postCss)
  
 ## New Dev Environments
 

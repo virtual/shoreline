@@ -75,12 +75,13 @@
       left: -4.25rem;
     } 
     .quote-feature-text {
-      flex: 0 0 75%;
+      flex-grow: 1;
       padding-left: 6rem;
     }
     .quote-feature-img {
       flex: 0 0 25%;
     } 
+    .quote-feature-img + .quote-feature-text { flex: 0 0 75%; }
   }
 }
 @media (min-width: $screen-lg) {

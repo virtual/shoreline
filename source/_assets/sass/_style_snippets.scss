@@ -1,5 +1,7 @@
 .module { margin-bottom: 1rem; margin-top:.75rem; }
-
+.image-with-caption { margin-bottom: 1.5rem; margin-top: 1.5rem; 
+  h3 { margin-top: 0;}
+}
 .reverse-mobile {
   flex-direction: column-reverse;
 }

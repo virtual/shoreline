@@ -29,8 +29,8 @@
       content: " "; 
       background-size: 30px;
       background-repeat: no-repeat;
-      background-image: url(../../resources/img/icons/toggle/icons.svg); // closed-blue-transparent
-      background-position:0 0;
+      background-image: url(../../resources/img/icons/toggle/icons.svg); // open-blue-transparent
+      background-position:0 -90px;
       box-sizing: content-box; // so border isn't offset weird 
     }
     
@@ -42,8 +42,8 @@
 
     .btn-toggle[aria-expanded=true]:before {
       background-color: #fff;
-      background-image: url(../../resources/img/icons/toggle/icons.svg); // open-blue-transparent
-      background-position:0 -90px;
+      background-image: url(../../resources/img/icons/toggle/icons.svg); // closed-blue-transparent
+      background-position:0 0;
     }
 
     .btn-toggle[aria-expanded=true]:hover:before {
