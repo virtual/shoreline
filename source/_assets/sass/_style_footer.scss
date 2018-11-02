@@ -5,13 +5,14 @@
   font-size: 1rem; 
   color: $text-dark;
   text-align:center;
+  .navbar-brand { padding-top: 0;}
   .footer-column-1 a { color: inherit; }
   .col-12 { order:2;}
   
   p, a, dl, ul, ol { font-size: inherit;}
   .footer-logo {
     margin-bottom: 3rem;
-    display: block;    
+    // display: block;    
     img { width: auto; max-height: 120px;  }
   } 
   .navbar-brand img { max-width: initial; }
@@ -124,4 +125,10 @@
       margin-left: -7.5px;
     }
   } 
+}
+.footer-mobile-logo { display:block;}
+.footer-desktop-logo { display:none;}
+@media (min-width: $screen-lg) {
+  .footer-mobile-logo { display:none; }
+  .footer-desktop-logo { display:block;}
 }

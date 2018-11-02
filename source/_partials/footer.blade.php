@@ -1,17 +1,12 @@
 <footer>
   <div class="large-footer container-fluid">
     <div class="inner">
-      <div class="row">
-        <div class="col-12 col-md-4">
-          <div class="footer-logo">
-              @include ('_partials.logo')
-          </div>
-        </div>
-        
-        </div>
         <div class="row">
      
         <div class="col-12 col-md-6 col-lg-4">
+            <div class="footer-logo footer-mobile-logo">
+                @include ('_partials.logo')
+            </div>
           <div class="links">
             <ul>
               <li>
@@ -65,6 +60,9 @@
         </div>
 
         <div class="col-12 col-lg-4 footer-column-1">
+            <div class="footer-logo footer-desktop-logo">
+                @include ('_partials.logo')
+            </div>
             <div class="logo-address">
               <address>16101 Greenwood Avenue North
                 <br>Shoreline,&nbsp;WA 98133-5696
