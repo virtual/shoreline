@@ -1,7 +1,5 @@
 jQuery(document).ready(function() {
   
-
-
   // Check testimonial picture if vertical for spacing
   $('.quote-feature-img').each(function () {
     var $this = $(this);
@@ -39,8 +37,6 @@ jQuery(document).ready(function() {
      
   });
 
-
-
   $('body').on('click','.expand-button',function(e){
     e.preventDefault();
     e.stopPropagation();
@@ -49,15 +45,15 @@ jQuery(document).ready(function() {
     if ((_d).hasClass('show')) {
       // Close the element, change it to hidden
       $(this).parents('.homepage-banner-container').removeClass("expanded");
-      $(this).attr('aria-expanded', 'false').text('Expand');
+      $(this).attr('aria-expanded', 'false').text('Expand');      
+      $(_d).removeClass('show')      
+      $(_d).find('.hero-expandcontent').attr('aria-hidden', 'true');
 
-     
-
-      $(_d).removeClass('show')
     } else {
       $(this).parents('.homepage-banner-container').addClass("expanded");
       $(this).attr('aria-expanded', 'true').text('Close');
-      $(_d).addClass('show')
+      $(_d).addClass('show');
+      $(_d).find('.hero-expandcontent').attr('aria-hidden', 'false');
       
       // Scroll to open area when expanded
       $("html, body").animate({
@@ -65,14 +61,6 @@ jQuery(document).ready(function() {
       }, 100);
     }
   });
-
-  // // Smooth scroll to anchor
-  // $("a.scrollable").click(function (event) {
-  //   event.preventDefault();
-  //   $("html, body").animate({
-  //     scrollTop: $($(this).attr("href")).offset().top - 40
-  //   }, 500);
-  // });
 
   // Accordion, highlight active header
     $('.collapse').on('shown.bs.collapse', function () {
@@ -127,45 +115,12 @@ jQuery(document).ready(function() {
         (e.target).parentNode.classList.remove('show');
       }
     } 
-    // else if ((e.target).parentNode.classList.contains(('drop'))) {
-    //   if (e.keyCode == 39 || e.keyCode == 40) {      
-    //     (e.target).parentNode.classList.remove('drop');
-    //     (e.target).parentNode.classList.add('opendrop');
-    //   } 
-    // }  
-    
-    // else if ((e.target).parentNode.classList.contains(('opendrop'))) {
-    //   if (e.keyCode == 37 || e.keyCode == 38) {      
-    //     (e.target).parentNode.classList.remove('opendrop');
-    //     (e.target).parentNode.classList.add('drop');
-    //   } 
-    // }  
   };
 
   // When tabbing close the menu back up when tabbed out
   $(".dropdown>a").focus(function() {
     $('.dropdown.show').removeClass('show');
   });
-
-
-// subnav 
-/*
-var submenu = document.getElementById('submenu');
-
-  $("#submenu ul").find(":has(div)").parent().addClass("nolink");
-  // , window.prettyPrint && prettyPrint(), $(document).on("click", ".yamm .dropdown-menu", function(a) {
-  //     a.stopPropagation()
-  // }), 
-  $("#submenu ul>li:has(ul)").click(function(a) {
-       $newul = $(this).find("ul:first"), "none" == $newul.css("display") ? ($newul = $(this).find("ul:first"), $newul.parent().removeClass("drop"), $newul.parent().addClass("opendrop"), $newul.show("fast"), $newul.parent().removeClass("togopen")) : ($newul = $(this).find("ul:first"), $newul.parent().removeClass("opendrop"), $newul.parent().addClass("drop"), $newul.hide("fast"), $newul.parent().removeClass("togopen")), a.stopPropagation()
-   });
-   
-   $("#submenu li").has("ul").each(function() {
-       $(this).addClass("drop"), $("#submenu ul>li:has(ul)>a").css("display", "block"), $(this).show("fast")
-   });
-  */
-//  setOverviewOffset(calcOverviewOffset());
-
 
 
 /* from Shoreline */
@@ -186,9 +141,6 @@ var submenu = document.getElementById('submenu');
 			});
 		}); 
 	});
-	
-
-
 }); // END FUNCTION READY
 
 
@@ -201,10 +153,6 @@ function calcOverviewOffset() {
 function setOverviewOffset(offset) {
   document.getElementById('sidebar-nav').setAttribute('style', "top: -" + offset + "px");
   return true;
-}
-
-function mew() {
-  console.log('mew');
 }
 
 require('jquery-colorbox');
