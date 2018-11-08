@@ -123,8 +123,8 @@ p, ul, dl, ol, div {
 
 .address-sidebar > .contact-us-box, .col-md-4 > .contact-us-box, .sidebar-container .contact-us-box {
   &> h2 { text-align: left; }
-  .content-blocks { flex-direction: column}
-  .content-block { width: 100%; flex-basis: 100%; }
+  .content-blocks { flex-direction: column; }
+  .content-block { width: 100%; flex-basis: auto; } /* flex basis auto for ie 11 */
 }
 
 img.rounded { border-radius: 10px !important; }
