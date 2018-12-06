@@ -209,8 +209,7 @@ body {
 @media (min-width: $screen-md) {
   .layout-has-sidebar .content-container { padding-right: 40px; }  
   .content-has-header-img .content-header { margin-bottom: 2.5rem; }
-  .content-no-header-img .flex-layout-body .sidebar-container { padding-top: 146px; } 
-  .content-no-header-img .content-header + .container-fluid .flex-layout-body .sidebar-container {
+  .content-no-header-img .content-header + .container-fluid .flex-layout-body .sidebar-container   {
     padding-top: 2rem;
   } 
   .page-interior .header-image {
@@ -226,6 +225,7 @@ body {
 }
 
 @media (min-width: $onecol) {
+  .content-no-header-img .flex-layout-body .sidebar-container { padding-top: 146px; } 
   .layout-has-sidebar #sidebar-nav nav {
     position: absolute;
     top: 50px;

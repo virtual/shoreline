@@ -1667,9 +1667,6 @@ body {
   .content-has-header-img .content-header {
     margin-bottom: 2.5rem;
   }
-  .content-no-header-img .flex-layout-body .sidebar-container {
-    padding-top: 146px;
-  }
   .content-no-header-img .content-header + .container-fluid .flex-layout-body .sidebar-container {
     padding-top: 2rem;
   }
@@ -1699,6 +1696,9 @@ body {
 }
 
 @media (min-width: 1025px) {
+  .content-no-header-img .flex-layout-body .sidebar-container {
+    padding-top: 146px;
+  }
   .layout-has-sidebar #sidebar-nav nav {
     position: absolute;
     top: 50px;
