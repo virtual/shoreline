@@ -39,7 +39,7 @@ header#header {
 }
 .main-search{
   width: 100%; 
-  min-width: 180px; // IE 11 
+  min-width: 165px; // IE 11 
   &.input-group > label .form-control {
     border-top-right-radius: 999px;
     border-bottom-right-radius: 999px;
@@ -82,6 +82,7 @@ header#header {
     width: 75px;
   }
 } 
+
 @media (min-width: $screen-lg) {
   header#header {
     padding-bottom: 1.5rem;
@@ -108,7 +109,7 @@ header#header {
     justify-content: flex-end;
   }
   .search-container {
-    max-width: 237px;
+    max-width: 165px;
     padding: 0 .5rem
   }
   .header-actions {
@@ -136,7 +137,7 @@ header#header {
     position: absolute;
     top: -1px;
     right: 0;
-    width: 200px;
+    width: 170px;
   }
   .searchbox .input-group-append {
     margin-left: -1px;
@@ -148,6 +149,12 @@ header#header {
   }
   .searchicon .fa-search {
     display: none;
+  }
+}
+
+@media (min-width: 1025px) {
+  .search-container {
+    max-width: 237px;
   }
 }
 

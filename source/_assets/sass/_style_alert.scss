@@ -41,17 +41,24 @@ $alert-warning: $shoreline-orange;
   }
 }
 
-header .alert, header .alert.alert-padded { border-radius: 0; border:0; padding-left:20px; padding-right:20px;}
+header .alert, header .alert.alert-padded { 
+  border-radius: 0; border:0; padding-left:20px; padding-right:20px;}
 header .alert .dismiss-alert {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 1rem;
+  top: 1rem;
   padding: 10px;
   background: rgba(0, 0, 0, 0.44);
   cursor: pointer;
   display: inline-block;
+  .fas.fa-times {
+    margin-right: 2px;
+  }
 }
-
+header .alert.bg-primary a {
+  text-shadow: none;
+  background-image: none;
+}
 header .alert-green .container-fluid {
   background-image: url('../../resources/img/graphics/icon-alert.png');
   background-repeat: no-repeat;
