@@ -1,3 +1,30 @@
+<a class="btn btn-primary btn-circle" href="#" role="button"><span class="btn-content"><span class="fas fa-address-book"></span></span></a>
+<a class="btn btn-secondary btn-circle" href="#" role="button"><span class="btn-content">A</span></a>
+<a class="btn btn-primary btn-circle" href="#" role="button"><span class="btn-content"><span class="fas fa-sort-up"></span></span></a>
+<a class="btn btn-important btn-circle" href="#" role="button"><span class="btn-content">101+</span></a>
+<a class="btn btn-primary btn-circle" href="#" role="button"><span class="btn-content">10</span></a>
+<a class="btn btn-secondary btn-circle" href="#" role="button"><span class="btn-content">22</span></a>
+<a class="btn btn-primary btn-circle" href="#" role="button"><span class="btn-content"><span class="fas fa-sort-up"></span><span class="fas fa-sort-up"></span></span></a>
+<a class="btn btn-important btn-circle" href="#" role="button"><span class="btn-content">:)</span></a>
+<hr/>
+<a class="btn btn-primary btn-circle btn-lg" href="#" role="button"><span class="btn-content"><span class="fas fa-address-book"></span></span></a>
+<a class="btn btn-secondary btn-circle btn-lg" href="#" role="button"><span class="btn-content">A</span></a>
+<a class="btn btn-primary btn-circle btn-lg" href="#" role="button"><span class="btn-content"><span class="fas fa-sort-up"></span></span></a>
+<a class="btn btn-important btn-circle btn-lg" href="#" role="button"><span class="btn-content">101+</span></a>
+<a class="btn btn-primary btn-circle btn-lg" href="#" role="button"><span class="btn-content">10</span></a>
+<a class="btn btn-secondary btn-circle btn-lg" href="#" role="button"><span class="btn-content">22</span></a>
+<a class="btn btn-primary btn-circle btn-lg" href="#" role="button"><span class="btn-content"><span class="fas fa-sort-up"></span><span class="fas fa-sort-up"></span></span></a>
+<a class="btn btn-important btn-circle btn-lg" href="#" role="button"><span class="btn-content">:)</span></a>
+
+
+ <hr/>
+ <a class="btn btn-primary btn-circle btn-sm" href="#" role="button"><span class="btn-content"><span class="fas fa-address-book"></span></span></a>
+<a class="btn btn-secondary btn-circle btn-sm" href="#" role="button"><span class="btn-content">A</span></a>
+<a class="btn btn-tertiary btn-circle btn-sm" href="#" role="button"><span class="btn-content"><span class="fas fa-sort-up"></span></span></a>
+<a class="btn btn-important btn-circle btn-sm" href="#" role="button"><span class="btn-content">101+</span></a>
+<hr/>
+<a class="btn btn-primary btn-circle btn-lg" style="font-size: 90px; padding: 30px;" href="#" role="button"><span class="btn-content"><span class="fas fa-address-book"></span></span></a>
+<hr/>
 <a class="btn btn-primary" href="#" role="button">Pri</a>
 <a class="btn btn-secondary" href="#" role="button">Sec</a>
 <a class="btn btn-tertiary" href="#" role="button">Tert</a>

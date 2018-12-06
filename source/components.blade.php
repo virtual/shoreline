@@ -12,11 +12,11 @@
 <p>Start budgeting for your education today. Your payments will be lower the sooner you start. </p>
 
 <h2>Steps for Planning your Payments</h2>
+@include('_partials.buttons')
 @include('_partials.accordion')
 @include('_partials.nav-tab')
 @include('_partials.nav-tab')
 
-@include('_partials.buttons')
 
 @include('_partials.alerts')
 
