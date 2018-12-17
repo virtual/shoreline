@@ -1,4 +1,5 @@
 
+  
 
 <div class="fancy-list">
 
@@ -24,8 +25,30 @@
           nisi? </p>
       </div>
     </div>
-    
+
 </div>
+
+<hr/>
+
+<!-- center align -->
+<div class="row">
+    <div class="col-6 align-self-center">
+      <h3>Get Started</h3>
+      <p>This is a selective admissions program. Applicants need to meet the eligibility requirements and apply to the
+        program as well as the college. </p>
+    </div>
+    <div class="col-6 align-self-center">
+      <ul class="features">
+        <li>Application Process</li>
+        <li>Apply to college</li>
+        <li>Apply to program: Complete the application form (PDF)</li>
+        <li>Include all items on this checklist as indicated in your application packet</li>
+        <li>Submit a completed Phlebotomy Program Application</li>
+      </ul>
+    </div>
+  </div>
+  <!-- / center align -->
+
 
 <hr/>
 <a class="btn btn-primary" href="#" role="button">Pri</a>
