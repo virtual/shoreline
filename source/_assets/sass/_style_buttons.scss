@@ -185,15 +185,3 @@ dl .btn-toggle { font-size: 1rem; }
     margin-top:0;
   }
 }
-
-.btn-circle { 
-  padding: 1rem;
-  min-width: auto;
-  .btn-content {
-    width: 1em; height: 1em;    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 1;
-  }
-}

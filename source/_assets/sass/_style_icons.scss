@@ -37,3 +37,25 @@
   position: relative;
   top: .5rem;
 }
+
+.icon-circle { 
+  padding: 1rem;
+  min-width: auto;
+  border-radius: 999px;
+  background-color: $primary;
+  color: #fff; 
+  text-decoration: none;
+  white-space: normal;
+  font-weight: 700; 
+  display: inline-block;
+  text-align: center;
+  font-size: 1.1875rem;  
+  
+  .icon-content {
+    width: 1em; height: 1em;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+  }
+}

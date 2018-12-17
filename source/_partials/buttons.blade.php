@@ -1,29 +1,32 @@
-<a class="btn btn-primary btn-circle" href="#" role="button"><span class="btn-content"><span class="fas fa-address-book"></span></span></a>
-<a class="btn btn-secondary btn-circle" href="#" role="button"><span class="btn-content">A</span></a>
-<a class="btn btn-primary btn-circle" href="#" role="button"><span class="btn-content"><span class="fas fa-sort-up"></span></span></a>
-<a class="btn btn-important btn-circle" href="#" role="button"><span class="btn-content">101+</span></a>
-<a class="btn btn-primary btn-circle" href="#" role="button"><span class="btn-content">10</span></a>
-<a class="btn btn-secondary btn-circle" href="#" role="button"><span class="btn-content">22</span></a>
-<a class="btn btn-primary btn-circle" href="#" role="button"><span class="btn-content"><span class="fas fa-sort-up"></span><span class="fas fa-sort-up"></span></span></a>
-<a class="btn btn-important btn-circle" href="#" role="button"><span class="btn-content">:)</span></a>
-<hr/>
-<a class="btn btn-primary btn-circle btn-lg" href="#" role="button"><span class="btn-content"><span class="fas fa-address-book"></span></span></a>
-<a class="btn btn-secondary btn-circle btn-lg" href="#" role="button"><span class="btn-content">A</span></a>
-<a class="btn btn-primary btn-circle btn-lg" href="#" role="button"><span class="btn-content"><span class="fas fa-sort-up"></span></span></a>
-<a class="btn btn-important btn-circle btn-lg" href="#" role="button"><span class="btn-content">101+</span></a>
-<a class="btn btn-primary btn-circle btn-lg" href="#" role="button"><span class="btn-content">10</span></a>
-<a class="btn btn-secondary btn-circle btn-lg" href="#" role="button"><span class="btn-content">22</span></a>
-<a class="btn btn-primary btn-circle btn-lg" href="#" role="button"><span class="btn-content"><span class="fas fa-sort-up"></span><span class="fas fa-sort-up"></span></span></a>
-<a class="btn btn-important btn-circle btn-lg" href="#" role="button"><span class="btn-content">:)</span></a>
 
 
- <hr/>
- <a class="btn btn-primary btn-circle btn-sm" href="#" role="button"><span class="btn-content"><span class="fas fa-address-book"></span></span></a>
-<a class="btn btn-secondary btn-circle btn-sm" href="#" role="button"><span class="btn-content">A</span></a>
-<a class="btn btn-tertiary btn-circle btn-sm" href="#" role="button"><span class="btn-content"><span class="fas fa-sort-up"></span></span></a>
-<a class="btn btn-important btn-circle btn-sm" href="#" role="button"><span class="btn-content">101+</span></a>
-<hr/>
-<a class="btn btn-primary btn-circle btn-lg" style="font-size: 90px; padding: 30px;" href="#" role="button"><span class="btn-content"><span class="fas fa-address-book"></span></span></a>
+<div class="fancy-list">
+
+  <div class="fancy-list-item">
+    <div class="fancy-list-icon">
+      <div class="icon-circle"><span class="icon-content"><span class="fas fa-address-book"></span></span></div>
+    </div>
+    <div class="fancy-list-content">
+      <h2>Apply</h2>
+      <p> <strong>Apply for Admission</strong> to the college online and receive your Student Identification Number (SID)</p>
+        <!-- sub -->
+    </div>
+  </div>
+
+  <div class="fancy-list-item">
+      <div class="fancy-list-icon">
+        <div class="icon-circle"><span class="icon-content">1</span></div>
+      </div>
+      <div class="fancy-list-content">
+        <h2>Advising and Placement</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis reprehenderit quibusdam totam nisi
+          maxime corporis quam minus nihil enim odio, corrupti iste. Ea minus perferendis veniam aliquam voluptate enim
+          nisi? </p>
+      </div>
+    </div>
+    
+</div>
+
 <hr/>
 <a class="btn btn-primary" href="#" role="button">Pri</a>
 <a class="btn btn-secondary" href="#" role="button">Sec</a>

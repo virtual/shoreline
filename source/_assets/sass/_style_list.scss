@@ -337,3 +337,28 @@ ul.list-unstyled, ol.list-unstyled, %list-unstyled {
     font-size: inherit;
   }
 } 
+
+.fancy-list { margin: .5rem 0; }
+.fancy-list-item {
+  display: flex; 
+  flex-direction: row; 
+  max-width: 100%; 
+  .fancy-list-content {
+    flex-grow: 1; 
+    flex-shrink: 1;
+    // background: rgba(219, 215, 161, 0.233);
+    width: 100%; 
+  }
+  .fancy-list-icon {
+    flex-grow: 0; 
+    flex-shrink: 0;
+    padding: .5rem 1rem .5rem .5rem;
+    margin-top: .5rem;
+    // background: rgba(161, 215, 161, 0.233);
+  }
+
+  .fancy-list-item {
+    .fancy-list-icon .icon-circle { font-size: 1rem; padding: .875rem;  }
+  }
+}
+.fancy-list-item + .fancy-list-item { margin-top: 1rem; }
