@@ -36,6 +36,9 @@
     </style>
   </noscript>
 
+  @if (trim($__env->yieldContent('headcode')))
+  @yield('headcode')
+  @endif
   <!-- Analytics -->
 </head>
 
