@@ -36,6 +36,78 @@
     </style>
   </noscript>
 
+    <style>
+  .fbo-extra { display:none;}
+  @media (max-width: 767px) {
+    .filtered-box h3 { font-size: 1rem !important; }
+  .fbo-extra { display:block;}
+  .filtered-box .accordion .accordion-card {
+  border:0 !important;
+  display:inline-block;
+  }
+  .filtered-box .accordion .accordion-header,
+  .filtered-box .accordion .accordion-header.active {
+  background-color: transparent;
+  color: #000;
+  display: inline;
+  }
+
+  .filtered-box .accordion .accordion-header.active h3 {
+  color:#0074b3;
+  }
+  .filtered-box .accordion .accordion-header .btn-toggle:before {
+  display:none;
+  }
+
+  .filtered-box .collapse {
+  box-shadow:0 0 3px #a0a8b1;
+  width: auto;
+  }
+  .filtered-box-options { text-align: center;
+  border-top: 1px solid #ccc; margin-top: 1rem;
+  padding-top: 2rem;}
+  .filtered-box-options ul {
+  display:none;
+  }
+  /* arrow */
+
+  .filtered-box .accordion .accordion-header.active {
+  display: block;
+  }
+  .filtered-box .accordion .accordion-header, .filtered-box .accordion .accordion-header h3 {
+  display:inline-block;
+  position: relative;
+  z-index: 0;
+  }
+  .filtered-box .accordion .accordion-body {
+  z-index: 0;
+  position: relative;
+  background: #fff;
+  }
+  .filtered-box .accordion .accordion-header h3::before {
+  display: none;
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 1rem;
+  height: 1rem;
+  bottom: 0;
+  background-color: #fff;
+  border-color: transparent;
+  z-index: 2;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-bottom: -.5rem;
+  margin-left: -.5rem;
+  box-shadow:0 0 3px #a0a8b1;
+  z-index:0;
+  }
+  .filtered-box .accordion .accordion-header.active h3::before {
+  display:block;
+  }
+  /* end arrow */
+  }
+</style>
     <!-- Analytics -->
 </head>
 
@@ -306,41 +378,12 @@
       <div class="flex-layout-body">
 
         <!-- determining opening classes  -->
-                <!-- has content leftnav -->
-                    <div class="layout-has-left-nav">
-           <!-- end check main sidebar-->
-            
+         <!-- OFF left -->
+                        <div class="layout-no-sidebar"><!-- no sidebar, no left nav-->
+             
          <!-- END determining opening classes -->
                 
         <!-- if left nav -->
-                <nav class="left-nav">
-          <a class="sr-only show-on-focus" href="#interior">Skip Navigation</a>
-          <nav role="navigation" aria-label="Section Navigation">
-  <h2 class="sr-only">Directory Navigation</h2>
-  <div class="list-wrapper">
-    <ul class="nav nav-stacked" id="subnav_parent">
-        <li><a href="/about-shoreline/">About Shoreline</a></li>
-        <li><a title="Accreditation" href="/about-shoreline/accreditation.aspx">Accreditation</a></li>
-        <li><a title="Awards" href="/about-shoreline/awards.aspx">Awards</a></li>
-        <li><a title="Board of Trustees" href="/about-shoreline/board/default.aspx">Board of Trustees</a></li>
-        <li><a title="College Catalog" href="/about-shoreline/college-catalog.aspx">College Catalog</a></li>
-        <li><a title="Contact Us" href="/about-shoreline/contact-us.aspx">Contact Us</a></li>
-        <li><a title="Directions to Campus" href="/map/directions-to-campus.aspx">Directions to Campus</a></li>
-        <li><a title="General Introduction" href="/about-shoreline/introduction.aspx">General Introduction</a></li>
-        <li class="current"><a title="50th Anniversary" href="/about-shoreline/50th-anniversary/default.aspx">50th Anniversary</a>
-          <ul id="subnav_child">
-          <li class="current"><a href="/about-shoreline/50th-anniversary/default.aspx">Home</a></li>
-          <li><a href="/about-shoreline/50th-anniversary/50th-anniversary-story.aspx">50th Anniversary History</a></li>
-          <li><a href="/about-shoreline/50th-anniversary/party.aspx">Party Like it's 1965! Celebration 2015</a></li>
-          </ul>
-        </li>
-        <li><a title="Hours of Operation" href="/about-shoreline/hours-of-operation.aspx">Hours of Operation</a></li>
-        <li><a href="/about-shoreline/strategic-plan.aspx">Mission &amp; Vision</a></li>
-        <li><a title="Non-discrimination Statement" href="/about-shoreline/non-discrimination.aspx">Non-discrimination Statement</a></li>
-        <li><a title="Shoreline at a Glance" href="/about-shoreline/facts.aspx">Shoreline at a Glance</a></li>
-    </ul>
-  </div>
-</nav>        </nav>
                 <!-- end if left nav -->
 
         <main class="content-container">
@@ -351,150 +394,101 @@
              
             <!-- if breadcrumb not in a content-header -->
             <div class="breadcrumb" aria-label="breadcrumb">
-              <ol vocab="http://schema.org/" typeof="BreadcrumbList">
-  <li property="itemListElement" typeof="ListItem">
-    <a property="item" typeof="WebPage"
-        href="https://shoreline.edu">
-      <span property="name">Home</span></a>
-    <meta property="position" content="1">
-  </li> 
-  <li property="itemListElement" typeof="ListItem">
-    <a property="item" typeof="WebPage"
-        href="https://www.shoreline.edu/areas-of-study/programs.aspx">
-      <span property="name">Explore Programs</span></a>
-    <meta property="position" content="2">
-  </li> 
-  <li property="itemListElement" typeof="ListItem">
-    <a property="item" typeof="WebPage" class="active" aria-current="page"
-        href="https://www.shoreline.edu/visual-arts/design-digital-media-vct.aspx">
-      <span property="name">Page Title</span></a>
-    <meta property="position" content="3">
-  </li>
-</ol>            </div>
+              <ol>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Explore Programs</a></li>
+    <li><a class="active" aria-current="page" href="#">Visual Communications Technology</a></li>
+  </ol>
+            </div>
             
             <div id="interior">
-              
-<h1>Cards</h1>
-<p class="lead">Cards are like large buttons or links with an optional icon and supporting text.</p>
-<p>An important step in attending college is having a solid plan for covering the cost of attendance. If you don't have money to pay your tuition all at once, review the following information on setting up a payment plan through Nelnet.</p>
-<p class="card-link"><a class="more-arrow" href="#">Get started</a></p>
-<p>Start budgeting for your education today. Your payments will be lower the sooner you start. </p>
-<ul class="card-links more-arrow">
-    <li><a href="#">More Arrow on UL</a> Gain specialized knowledge and skills for a career in a particular field.</li>
-    <li><a href="#">College/University Transfer</a> For students who intend to continue their studies at a college or university.</li>
-    <li><a href="#">Professional & Technical</a> Gain specialized knowledge and skills for a career in a particular field.</li>
-  </ul>
-<div class="row">
-  <div class="col-12 col-sm-6">
-      <p class="card-link"><a class="more-arrow" href="#">Get started</a> Got some other text here</p>
-  </div>
-  <div class="col-12 col-sm-6">
-      <p class="card-link"><a class="more-arrow" href="#">Learn more</a> our payments will be lower the sooner you start. our payments will be lower the sooner you start.</p>
-  </div>
-</div>
-<p>Start budgeting for your education today. Your payments will be lower the sooner you start. </p>
- <h2>Links in cols</h2>
-<div class="row">
-  <div class="col-12 col-sm-6">
-    <ul class="card-links">
-      <li><a href="#" class="more-arrow">University Transfer</a> Gain specialized knowledge and skills for a career in a particular field.</li>
-      <li><a href="#" class="more-arrow">College/University Transfer</a> For students who intend to continue their studies at a college or university.</li>
-      <li><a href="#" class="more-arrow">Professional & Technical</a> Gain specialized knowledge and skills for a career in a particular field.</li>
-    </ul>
-  </div>
-  <div class="col-12 col-sm-6"> 
-    <ul class="card-links">
-      <li><a href="#" class="more-arrow">University Transfer</a> </li>
-      <li><a href="#" class="more-arrow">College/University Transfer</a> </li>
-      <li><a href="#" class="more-arrow">Professional & Technical</a> </li>
-    </ul></div> 
-</div>
-<h2>Fall 2018</h2>
-<p> Fall 2018 quarter starts on Wednesday, September 26, 2018. Check individual section footnotes for starting and ending dates of Late Starting / Fast Track Classes.</p>
-    <div class="row">
-        <div class="col-12 col-md-6">
-      <ul class="card-links card-links-compact">
-          <li><a href="#">University Transfer</a></li>
-          <li><a href="#">College/University Transfer</a></li>
-          <li><a href="#">Professional & Technical</a></li>
-          <li><a href="#">University Transfer</a></li>
-          <li><a href="#">College/University Transfer</a></li>
-          <li><a href="#">Professional & Technical</a></li>
-          <li><a href="#">University Transfer</a></li>
-          <li><a href="#">College/University Transfer</a></li>
-          <li><a href="#">Professional & Technical</a></li>
-          <li><a href="#">University Transfer</a></li>
-          <li><a href="#">College/University Transfer</a></li>
-          <li><a href="#">Professional & Technical</a></li>
-          <li><a href="#">University Transfer</a></li>
-          <li><a href="#">College/University Transfer</a></li>
-          <li><a href="#">Professional & Technical</a></li>
-      </ul>
-    </div> 
-  </div>
+                    <h1>Not much here</h1>
+      <p>Empty template, looks nice on newer (not IE 11) browsers</p>
 
-<div class="row">
-  <div class="col-12 col-sm-6">   
-      <div class="card">      <div class="card-body">
-        <h3 class="card-title">
-                <a class="more-arrow" href="http://www.shoreline.edu/communications-marketing/identity-guidelines/default.aspx">Apply Today</a>
-            </h3>
-    <p class="card-text">Your first step is to get a student ID – it's fast, easy, and free</p>
+<div class="filtered-box">
+    <div class="sort-by">
+        <p>Sort by: <span class="sort-by-selected">Program Option</span></p>
       </div>
-</div> </div>
-  <div class="col-12 col-sm-6">   
-    <div class="card callout">     <div class="card-body">
-    <span class="far fa-map" aria-hidden="true"></span>    <h3 class="card-title">
-                <a class="more-arrow" href="#">Get help with enrollment</a>
-            </h3>
-    <p class="card-text">These call for a font-awesome 5 icon class; eg. "far fa-map"</p>
-      </div>
-</div>    </div>
-</div>
-<div class="row">
-    <div class="col-12 col-sm-6">  
-        <div class="card">      <div class="card-body">
-    <span class="far fa-map" aria-hidden="true"></span>    <h3 class="card-title">
-                <a class="more-arrow" href="#">Get help with enrollment</a>
-            </h3>
-    <p class="card-text">Our enrollment services team is here to help with financial aid, how to apply, and all the things that make Shoreline a great place to study and pursue any of our more than 100 degrees and certificates!</p>
-      </div>
-</div>   </div>
-    <div class="col-12 col-sm-6">  
-       
-        <div class="card">      <div class="card-body">
-        <h3 class="card-title">
-                  Apply Today
-            </h3>
-    <p class="card-text">Your first step is to get a student ID – it's fast, easy, and free</p>
-    <p><a class="btn btn-primary" href="http://www.shoreline.edu/communications-marketing/identity-guidelines/default.aspx">Request Info</a></p>  </div>
-</div>       </div>
-  </div>
-<div class="row">
-<div class="col-12 col-sm-6 col-md-6 col-lg-8"><div class="card image-card">   <div class="card-image-container" style="background-image: url('../resources/img/stock/image.jpg');"><a href="#"><img class="card-img-top" src="../resources/img/stock/image.jpg" alt="Card image cap" /></a></div>  <div class="card-body">
-        <h3 class="card-title">
-                  Course Descriptions
-            </h3>
-    <p class="card-text">Browse the course descriptions to explore classes available in this subject</p>
-    <p><a class="btn btn-primary" href="#">Request Info</a></p>  </div>
-</div></div>
-<div class="col-12 col-sm-6 col-md-6 col-lg-4"><div class="card image-card">   <div class="card-image-container" style="background-image: url('../resources/img/stock/image.jpg');"><a href="#"><img class="card-img-top" src="../resources/img/stock/image.jpg" alt="Card image cap" /></a></div>  <div class="card-body">
-        <h3 class="card-title">
-                  Course Descriptions
-            </h3>
-    <p class="card-text">Browse the course descriptions to explore classes available in this subject</p>
-    <p><a class="btn btn-primary" href="#">Request Info</a></p>  </div>
-</div></div>
-</div>
-
-<div class="card image-card">   <div class="card-image-container" style="background-image: url('../resources/img/stock/image.jpg');"><a href="#"><img class="card-img-top" src="../resources/img/stock/image.jpg" alt="Card image cap" /></a></div>  <div class="card-body">
-        <h3 class="card-title">
-                  Course Descriptions
-            </h3>
-    <p class="card-text">Browse the course descriptions to explore classes available in this subject</p>
-    <p><a class="btn btn-primary" href="#">Request Info</a></p>  </div>
-</div>
-
+    
+      <div class="accordion" id="accordion-d17e1">
+        <div class="accordion-card">
+           <div class="accordion-header" id="heading-d18e1">
+              <h3><button class="btn btn-toggle" type="button" data-toggle="collapse" data-target="#collapse-d18e1" aria-expanded="false" aria-controls="collapse-d18e1">Search Filters</button></h3>
+           </div>
+           <div id="collapse-d18e1" class="collapse" aria-labelledby="heading-d18e1" data-parent="#accordion-d17e1" style="">
+              <div class="accordion-body">
+                 
+                 <p>
+                    <!-- Three Column Content -->
+                 </p>
+                 
+                 <div class="three-items module">
+                    <div class="module-inner">
+                       <div class="row three-col">
+                          <div class="col-md-4">
+                             
+                             <p class="dark"><strong>Areas of Study</strong></p>
+                             
+                             <div class="custom-control custom-checkbox"><input id="aos-art" class="custom-control-input" name="aos" type="checkbox" value="aos-art"> <label class="custom-control-label" for="aos-art">Arts &amp; Communication</label></div>
+                             
+                             <div class="custom-control custom-checkbox"><input id="aos-biz" class="custom-control-input" name="aos" type="checkbox" value="aos-biz"> <label class="custom-control-label" for="aos-biz">Business</label></div>
+                             
+                             <div class="custom-control custom-checkbox"><input id="aos-hm" class="custom-control-input" name="aos" type="checkbox" value="aos-hm"> <label class="custom-control-label" for="aos-hm"> Health &amp; Medical</label></div>
+                             
+                             <div class="custom-control custom-checkbox"><input id="aos-stem" class="custom-control-input" name="aos" type="checkbox" value="aos-stem"> <label class="custom-control-label" for="aos-stem">Science, Technology, Engineering &amp; Math</label></div>
+                             
+                             <div class="custom-control custom-checkbox"><input id="aos-sse" class="custom-control-input" name="aos" type="checkbox" value="aos-sse"> <label class="custom-control-label" for="aos-sse">Social Sciences &amp; Education</label></div>
+                             
+                          </div>
+                          <div class="col-md-4">
+                             
+                             <p class="dark"><strong>Program Type</strong></p>
+                             
+                             <div class="custom-control custom-checkbox"><input id="program-type-pt2" class="custom-control-input" name="program-type" type="checkbox" value="program-type-pt2"> <label class="custom-control-label" for="program-type-pt2">Professional / Technical 2-Year</label></div>
+                             
+                             <div class="custom-control custom-checkbox"><input id="program-type-transfer" class="custom-control-input" name="program-type" type="checkbox" value="program-type-transfer"> <label class="custom-control-label" for="program-type-transfer">College / University Transfer</label></div>
+                             
+                             <div class="custom-control custom-checkbox"><input id="program-type-cert" class="custom-control-input" name="program-type" type="checkbox" value="program-type-cert"> <label class="custom-control-label" for="program-type-cert">Professional / Technical Certificate</label></div>
+                             
+                             <p class="pt-3 dark"><strong>Learning Format</strong></p>
+                             
+                             <div class="custom-control custom-checkbox"><input id="online-ol-only" class="custom-control-input" name="online-ol" type="checkbox" value="online-ol-only"> <label class="custom-control-label" for="online-ol-only">100% Online</label></div>
+                             
+                             <div class="custom-control custom-checkbox"><input id="on-campus" class="custom-control-input" name="online-ol" type="checkbox" value="on-campus"> <label class="custom-control-label" for="on-campus">On-campus</label></div>
+                             
+                          </div>
+                          <div class="col-md-4">
+                             <div class="filtered-box-options">
+                             <p class="dark"><strong>Looking for something else?</strong></p>
+                             
+                             <ul class="list-unstyled">
+                                
+                                <li><a href="#">Pre-health planning</a></li>
+                                
+                                <li><a href="#">College preparation</a></li>
+                                
+                                <li><a href="#">Highschool completion</a></li>
+                                
+                                <li><a href="#">Honors College</a></li>
+                                
+                                <li><a href="#">English &amp; Math skills</a></li>
+                                
+                                <li><a href="#">ESL</a></li>
+                                
+                             </ul>
+                             <p class="fbo-extra"><a href="#">See other program options</a></p>
+                             </div>
+                             
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 
+              </div>
+           </div>
+        </div>
+     </div>
+     </div>
             </div>
           </div>
         </main>

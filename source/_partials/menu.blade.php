@@ -39,6 +39,7 @@
 
           <div class="dropdown-menu">
             <ul>
+                <li class="d-lg-none"><a href="/about-shoreline/default.aspx">About Shoreline</a></li>
                 <li><a href="/about-shoreline/facts.aspx">Shoreline at a Glance</a></li>
                 <li><a href="/about-shoreline/community-standard-statement.aspx">Community Standard</a></li>
                 <li><a href="/about-shoreline/president.aspx">Shoreline's Leadership</a></li>
@@ -51,7 +52,6 @@
           </div>
         </li>
 
-
         <li class="dropdown">
             <a href="/areas-of-study/degrees-certificates.aspx">Areas of Study
             <span role="link" class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -61,6 +61,7 @@
 
           <div class="dropdown-menu">
             <ul>
+              <li class="d-lg-none"><a href="/areas-of-study/degrees-certificates.aspx">Areas of Study</a></li>
                 <li><a href="/areas-of-study/what-we-offer.aspx">What We Offer</a></li>
                 <li><a href="/areas-of-study/programs.aspx">Browse all Programs</a></li>
                 <li><a href="/areas-of-study/programs-transfer.aspx">University Transfer</a></li>
@@ -82,9 +83,8 @@
           </a>
 
           <div class="dropdown-menu">
-
-
             <ul>
+              <li class="d-lg-none"><a href="/apply-and-aid/default.aspx">Apply &amp; Aid</a></li>
                 <li><a href="/apply-and-aid/apply.aspx">How to Apply</a></li>
                 <li><a href="/apply-and-aid/new-student-checklist.aspx">New Student Checklist</a></li>
                 <li><a href="/apply-and-aid/financial-aid/">Financial Aid</a></li>
@@ -93,7 +93,6 @@
                 <li><a href="/apply-and-aid/financial-aid/types.aspx">Types of Aid</a></li>
                 <li><a href="/calendars/academic.aspx">Academic Calendar</a></li>
                 <li><a href="/apply-and-aid/cashiering/">Tuition &amp; Fees</a></li>
-
             </ul>
 
           </div>
@@ -107,6 +106,7 @@
 
           <div class="dropdown-menu">
             <ul>
+              <li class="d-lg-none"><a href="/apply-and-aid/campus-life.aspx">Campus Life</a></li>
                 <li><a href="/currentstudents/default.aspx">Current Students</a></li>
                 <li><a href="/athletics/">Athletics</a></li>
                 <li><a href="http://asg.shoreline.edu">Student Government</a></li>
@@ -128,6 +128,7 @@
 
           <div class="dropdown-menu">
             <ul>
+              <li class="d-lg-none"><a href="/about-shoreline/news-and-events.aspx">News &amp; Events</a></li>
                 <li><a href="/calendars/">Calendar of Events</a></li>
                 <li><a href="/theater/default.aspx">Theater</a></li>
                 <li><a href="http://news.shoreline.edu">News</a></li>
