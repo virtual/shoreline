@@ -3940,10 +3940,11 @@ header .alert, header .alert.alert-padded {
 
 header .alert .dismiss-alert {
   position: absolute;
-  right: 1rem;
-  top: 1rem;
+  right: 0;
+  top: 0;
   padding: 10px;
   background: rgba(0, 0, 0, 0.44);
+  width: 86px;
   cursor: pointer;
   display: inline-block;
 }
@@ -3957,14 +3958,8 @@ header .alert.bg-primary a {
   background-image: none;
 }
 
-header .alert-green .container-fluid {
-  background-image: url("../../resources/img/graphics/icon-alert.png");
-  background-repeat: no-repeat;
-  background-size: 50px auto;
-  background-position: 40px center;
-  padding-left: 120px;
-  padding-top: 27px;
-  padding-bottom: 27px;
+header .alert-green .alert-content {
+  padding-top: 25px;
 }
 
 header .alert.alert-primary .dismiss-alert {
@@ -3978,18 +3973,66 @@ header .alert .dismiss-alert:hover {
 header .alert {
   position: relative;
   margin-bottom: 0;
+  min-height: 75px;
 }
 
 /* shows with JS */
-header .alert {
-  display: none;
-}
-
 @media (min-width: 992px) {
   header .alert {
     margin-bottom: -1.5rem;
     margin-top: 1.5rem;
   }
+  header .alert-green .alert-content {
+    background-image: url("../../resources/img/graphics/icon-alert.png");
+    background-repeat: no-repeat;
+    background-size: 50px auto;
+    background-position: 40px center;
+    padding-left: 120px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+}
+
+header .alert .container-fluid {
+  position: relative;
+}
+
+header .alert .dismissed-expand-message {
+  display: none;
+  padding: 5px 60px 5px 0;
+}
+
+header .alert .dismissed-expand-message p {
+  margin: 0;
+  padding: 0;
+}
+
+.dismiss-alert-toggle:after {
+  content: "\F146";
+  font-family: 'Font Awesome 5 Free';
+  font-size: .8em;
+  padding: 0 .4em 0 .3em;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: initial;
+  white-space: nowrap;
+}
+
+header .alert.dismissed {
+  padding-bottom: 1rem;
+}
+
+header .alert.dismissed .alert-content {
+  display: none;
+}
+
+header .alert.dismissed .dismissed-expand-message {
+  display: block;
+}
+
+header .alert.dismissed .dismiss-alert-toggle:after {
+  content: "\F0FE";
 }
 
 .news-no-description p.description {

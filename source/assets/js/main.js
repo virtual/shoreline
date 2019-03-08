@@ -1512,6 +1512,16 @@ jQuery(document).ready(function () {
     }
   });
 
+  $("header .alert .dismiss-alert").click(function () {
+    if ($(this).closest(".alert").hasClass('dismissed')) {
+      $(this).closest(".alert").removeClass('dismissed');
+      $(this).children(".dismiss-alert-label").text('Hide');
+    } else {
+      $(this).closest(".alert").addClass('dismissed');
+      $(this).children(".dismiss-alert-label").text('Show');
+    }
+  });
+
   // Adds margins for 100% height cards in flexbox
   // TODO: Fix this for only direct descendants 
   $("[class*='col-sm-']:has('.card')").addClass('card-margin');
