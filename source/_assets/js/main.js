@@ -17,7 +17,7 @@ jQuery(document).ready(function() {
   $("[class*='col-sm-']:has('p.card-link')").addClass('card-link-margin');
   $("[class*='col-md-']:has('p.card-link')").addClass('card-link-margin');
 
-  $('body').on('click','.dropdown-toggle',function(e){
+  $('body').on('click','.megamenu .dropdown-toggle',function(e){
     e.preventDefault();
     e.stopPropagation();
 
@@ -107,6 +107,7 @@ jQuery(document).ready(function() {
 
   document.onkeydown = function(evt) {
     e = evt || window.event;    
+    console.log
     if ((e.target).parentNode.classList.contains(('dropdown'))) {
       if (e.keyCode == 39 || e.keyCode == 40) {      
         (e.target).parentNode.classList.add('show');

@@ -87,6 +87,18 @@
       <h1>Not much here</h1>
       <p>Empty template, looks nice on newer (not IE 11) browsers</p>
 
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+      <hr/>
+
 <div class="filtered-box">
     <div class="sort-by">
         <p>Sort by: <span class="sort-by-selected">Program Option</span></p>
