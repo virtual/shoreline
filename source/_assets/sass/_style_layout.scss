@@ -87,12 +87,14 @@ body {
     display: block;
     .header-content, .header-image { width: auto; flex: initial;}
   } 
-
+  .program-option .content-container {
+    min-height: 120px; 
+  }
   .layout-has-sidebar { 
     flex-direction: row;   
     max-width: $screen-xl;
     .sidebar-container { width: 25%; position: relative;}
-    .content-container { width:75%;}
+    .content-container { width:75%; }
     .sidebar-container.overview {
       position: static;
     }
