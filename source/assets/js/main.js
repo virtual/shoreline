@@ -1867,6 +1867,9 @@ var shoreline = {
     $('.breadcrumb li').each(function (index) {
       $(this).append('<meta property="position" content="' + (index + 1) + '" />');
     });
+  },
+  runBootstrapTooltips: function runBootstrapTooltips() {
+    $('[data-toggle="tooltip"]').tooltip();
   }
 };
 
@@ -1882,6 +1885,7 @@ shoreline.unWrapDuplicateULs();
 shoreline.tableHTML();
 shoreline.twoColNav();
 shoreline.addBreadcrumbPosition();
+shoreline.runBootstrapTooltips();
 
 // Detect breakpoint ResponsiveBootstrapToolkit
 var ResponsiveBootstrapToolkit = __webpack_require__("./node_modules/responsive-toolkit/src/bootstrap-toolkit.js");

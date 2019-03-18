@@ -370,6 +370,9 @@ var shoreline = {
     $('.breadcrumb li').each(function (index) {
       $(this).append('<meta property="position" content="' + (index+1) + '" />');
     });
+  },
+  runBootstrapTooltips: function() {
+    $('[data-toggle="tooltip"]').tooltip()
   }
 };
 
@@ -385,6 +388,7 @@ shoreline.unWrapDuplicateULs();
 shoreline.tableHTML();
 shoreline.twoColNav();
 shoreline.addBreadcrumbPosition();
+shoreline.runBootstrapTooltips();
 
 // Detect breakpoint ResponsiveBootstrapToolkit
 var ResponsiveBootstrapToolkit = require('responsive-toolkit');
