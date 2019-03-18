@@ -13,10 +13,13 @@ $btn-tertiary: transparent;
   padding-left: 1.5em;
   padding-right: 1.5em;
 }
+.btn.btn-link { min-width: auto; padding: .5rem; }
+
 .btn-sm {   font-size: 0.8125rem;  }
 .btn-lg {   font-size: 1.4875rem;  }
 a.btn { text-decoration: none; }
 .btn + .btn { margin-left: .5rem; }
+.btn.btn-link + .btn.btn-link { margin-left: 0; padding-left: 0;}
 .btn.btn-block + .btn.btn-block {
   margin-top: 1.625rem;
   margin-left: 0;
