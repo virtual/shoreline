@@ -3852,7 +3852,7 @@ main .breadcrumb ol, .sectional .breadcrumb ol, .content-container .breadcrumb o
   text-decoration: underline;
 }
 
-.alert.bg-primary, .alert.alert-green {
+.alert.bg-primary, .alert.alert.alert-primary {
   text-decoration: none;
 }
 
@@ -3945,32 +3945,33 @@ header .alert .dismiss-alert {
   position: absolute;
   right: 0;
   top: 0;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.44);
-  width: 86px;
+  -webkit-transition: background-color .2 ease-in-out;
+  transition: background-color .2 ease-in-out;
+  width: 156px;
   cursor: pointer;
-  display: inline-block;
+  text-decoration: none;
+  display: block;
 }
 
 header .alert .dismiss-alert .fas.fa-times {
   margin-right: 2px;
 }
 
-header .alert.bg-primary a {
+header .alert.alert-primary a {
   text-shadow: none;
   background-image: none;
 }
 
-header .alert-green .alert-content {
+header .alert.alert-primary .alert-content {
   padding-top: 25px;
 }
 
 header .alert.alert-primary .dismiss-alert {
-  color: #fff;
+  z-index: 1;
 }
 
 header .alert .dismiss-alert:hover {
-  background: rgba(0, 0, 0, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 header .alert {
@@ -3980,13 +3981,43 @@ header .alert {
 }
 
 /* shows with JS */
+.dismissed-expand-message {
+  background-image: url("../../resources/img/graphics/icon-alert-black.png");
+  background-repeat: no-repeat;
+  background-size: 40px auto;
+  background-position: 0px center;
+  display: block;
+  margin-bottom: 50px;
+  top: 50px;
+  position: relative;
+  padding: 5px 0px 5px 60px;
+  min-height: 40px;
+  clear: both;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.dismissed-expand-message p {
+  font-size: inherit;
+}
+
+@media (min-width: 600px) {
+  .dismissed-expand-message {
+    padding: 5px 160px 5px 60px;
+    min-height: 40px;
+    text-align: center;
+    margin-bottom: 0;
+    top: 0;
+  }
+}
+
 @media (min-width: 992px) {
   header .alert {
     margin-bottom: -1.5rem;
     margin-top: 1.5rem;
   }
-  header .alert-green .alert-content {
-    background-image: url("../../resources/img/graphics/icon-alert.png");
+  header .alert.alert-primary .alert-content {
+    background-image: url("../../resources/img/graphics/icon-alert-black.png");
     background-repeat: no-repeat;
     background-size: 50px auto;
     background-position: 40px center;
@@ -4000,9 +4031,13 @@ header .alert .container-fluid {
   position: relative;
 }
 
+header .alert .container-fluid h2 {
+  margin: 0;
+  padding-top: 2rem;
+}
+
 header .alert .dismissed-expand-message {
   display: none;
-  padding: 5px 60px 5px 0;
 }
 
 header .alert .dismissed-expand-message p {
@@ -4011,15 +4046,17 @@ header .alert .dismissed-expand-message p {
 }
 
 .dismiss-alert-toggle:after {
-  content: "\F146";
+  content: "\F068";
   font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
   font-size: .8em;
-  padding: 0 .4em 0 .3em;
+  padding: .1em .4em 0 .3em;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: initial;
   white-space: nowrap;
+  float: right;
 }
 
 header .alert.dismissed {
@@ -4035,7 +4072,7 @@ header .alert.dismissed .dismissed-expand-message {
 }
 
 header .alert.dismissed .dismiss-alert-toggle:after {
-  content: "\F0FE";
+  content: "\F067";
 }
 
 .news-no-description p.description {

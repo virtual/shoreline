@@ -9,13 +9,14 @@ jQuery(document).ready(function() {
     }
   });
 
-  $("header .alert .dismiss-alert").click(function(){
+  $("header .alert .dismiss-alert").click(function(e){
+    e.preventDefault();
     if ($("header .alert").hasClass('dismissed')) {
       $('header .alert').removeClass('dismissed');
-      $('header .alert .dismiss-alert-label').text('Hide');
+      $('header .alert .dismiss-alert-label').text('Hide Details');
     } else {
       $('header .alert').addClass('dismissed');
-      $('header .alert .dismiss-alert-label').text('Show');
+      $('header .alert .dismiss-alert-label').text('Show Details');
     } 
   });
  
