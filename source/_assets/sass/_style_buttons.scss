@@ -188,3 +188,15 @@ dl .btn-toggle { font-size: 1rem; }
     margin-top:0;
   }
 }
+
+
+.btn-caret:after {
+  content: "\f0d8";
+  font-family: $font-awesome; 
+  font-weight: 900;
+  font-size: .8em;
+  padding: .1em .4em 0 .3em;
+}
+.btn-caret.collapsed:after { 
+  content: "\f0d7";
+}

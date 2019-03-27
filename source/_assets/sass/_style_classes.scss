@@ -142,7 +142,7 @@ img.rounded { border-radius: 10px !important; }
   font-weight: 600;
 }
 .fa-link-external:after, .fa-link-pdf:after {
-  font-family: 'Font Awesome\ 5 Free';
+  font-family: $font-awesome;
   font-size: .8em;
   padding: 0 .4em 0 .3em;
   text-rendering: auto;

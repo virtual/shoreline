@@ -133,7 +133,7 @@ header .alert {
 }
 .dismiss-alert-toggle:after { 
   content: "\f068";
-  font-family: 'Font Awesome 5 Free';
+  font-family: $font-awesome; 
   font-weight: 900;
   font-size: .8em;
   padding: .1em .4em 0 .3em;

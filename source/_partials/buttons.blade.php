@@ -1,4 +1,61 @@
 
+
+<hr/>
+<p>Submit a completed Phlebotomy Program Application</p>
+<button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="left" title="" data-original-title="This is tooltippy"><span class="fas fa-info-circle"><span class="sr-only">More information</span></span></button>
+<p>Submit a completed Phlebotomy Program Application</p>
+<button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="left" title="" data-original-title="This is tooltippy"><span class="far fa-question-circle"><span class="sr-only">More information</span></span></button>
+<button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="left" title="" data-original-title="This is tooltippy"><span class="fas fa-info-circle"><span class="sr-only">More information</span></span></button>
+
+<hr/>
+<p class="d-inline"><kbd class="small">p.d-inline</kbd>Submit a completed Phlebotomy Program Application</p>
+<button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="left" title="" data-original-title="This is tooltippy"><span class="fas fa-info-circle"><span class="sr-only">More information</span></span></button>
+<p class="d-inline"><kbd class="small">p.d-inline</kbd>Submit a completed Phlebotomy Program Application</p>
+<button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="left" title="" data-original-title="This is tooltippy"><span class="far fa-question-circle"><span class="sr-only">More information</span></span></button>
+<button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="left" title="" data-original-title="This is tooltippy"><span class="fas fa-info-circle"><span class="sr-only">More information</span></span></button>
+
+<hr/>
+<a class="btn btn-primary" href="#" role="button">Pri</a>
+<a class="btn btn-secondary" href="#" role="button">Sec</a>
+<a class="btn btn-tertiary" href="#" role="button">Tert</a>
+<a class="btn btn-important" href="#" role="button">Impt</a>
+
+<hr/>
+
+<a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
+<a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
+
+<div class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-secondary">Left</button>
+  <button type="button" class="btn btn-secondary">Middle</button>
+  <button type="button" class="btn btn-secondary">Right</button>
+</div>
+<div class="py-3">
+  <button type="button" class="btn btn-important btn-block">Apply Now</button>
+</div>
+
+
+
+<h2>Button Collapse</h2>
+<p class="">
+  <a class="btn btn-primary btn-caret collapsed" data-toggle="collapse" href="#collapserand" role="button" aria-expanded="false" aria-controls="collapserand">
+     title
+     </a> 
+  
+</p>
+<div class="collapse" id="collapserand" style="">
+                                    
+  <div class="collapse-body">
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis reprehenderit quibusdam totam nisi
+      maxime corporis quam minus nihil enim odio, corrupti iste. Ea minus perferendis veniam aliquam voluptate enim
+      nisi? </p>
+     
+  </div>
+  
+</div>
+
+<hr/>
+
   
 
 <div class="fancy-list">
@@ -50,39 +107,9 @@
   <!-- / center align -->
 
 
-<hr/>
-<p>Submit a completed Phlebotomy Program Application</p>
-<button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="left" title="" data-original-title="This is tooltippy"><span class="fas fa-info-circle"><span class="sr-only">More information</span></span></button>
-<p>Submit a completed Phlebotomy Program Application</p>
-<button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="left" title="" data-original-title="This is tooltippy"><span class="far fa-question-circle"><span class="sr-only">More information</span></span></button>
-<button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="left" title="" data-original-title="This is tooltippy"><span class="fas fa-info-circle"><span class="sr-only">More information</span></span></button>
 
-<hr/>
-<p class="d-inline"><kbd class="small">p.d-inline</kbd>Submit a completed Phlebotomy Program Application</p>
-<button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="left" title="" data-original-title="This is tooltippy"><span class="fas fa-info-circle"><span class="sr-only">More information</span></span></button>
-<p class="d-inline"><kbd class="small">p.d-inline</kbd>Submit a completed Phlebotomy Program Application</p>
-<button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="left" title="" data-original-title="This is tooltippy"><span class="far fa-question-circle"><span class="sr-only">More information</span></span></button>
-<button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="left" title="" data-original-title="This is tooltippy"><span class="fas fa-info-circle"><span class="sr-only">More information</span></span></button>
 
-<hr/>
-<a class="btn btn-primary" href="#" role="button">Pri</a>
-<a class="btn btn-secondary" href="#" role="button">Sec</a>
-<a class="btn btn-tertiary" href="#" role="button">Tert</a>
-<a class="btn btn-important" href="#" role="button">Impt</a>
 
-<hr/>
-
-<a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
-<a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
-
-<div class="btn-group" role="group" aria-label="Basic example">
-  <button type="button" class="btn btn-secondary">Left</button>
-  <button type="button" class="btn btn-secondary">Middle</button>
-  <button type="button" class="btn btn-secondary">Right</button>
-</div>
-<div class="py-3">
-  <button type="button" class="btn btn-important btn-block">Apply Now</button>
-</div>
 <div class="row py-3">
   <div class="col-sm-6 py-3">
     <div class="p-5">
