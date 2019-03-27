@@ -94,6 +94,9 @@ header .alert {position:relative;  margin-bottom: 0; min-height: 75px; }
   p { font-size: inherit; }
 }
 
+.alert.alert-warning .dismissed-expand-message {
+  background-image: url('../../resources/img/graphics/icon-alert.png');
+}
 @media (min-width: 600px) {
   .dismissed-expand-message {
     padding: 5px 160px 5px 60px; min-height: 40px;
@@ -113,6 +116,11 @@ header .alert {position:relative;  margin-bottom: 0; min-height: 75px; }
     padding-left: 120px;
     padding-top: 27px;
     padding-bottom: 27px;
+  }
+  header .alert.alert-warning .alert-content {
+    background-image: url('../../resources/img/graphics/icon-alert.png');
+    background-size: 80px auto;
+    background-position: center left;
   }
 }
 header .alert {

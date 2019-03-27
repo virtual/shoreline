@@ -1,4 +1,4 @@
-<div class="alert alert-primary dismissed">
+<div class="alert alert-primary alert-warning dismissed">
   <div class="container-fluid">
     <a title="Toggle" href="#" class="dismiss-alert btn btn-primary btn-sm"><span class="dismiss-alert-label">Show Details</span> <span class="dismiss-alert-toggle" aria-label="Toggle alert"></span></a>
     
