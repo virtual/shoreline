@@ -141,9 +141,16 @@
 
 @media (min-width: $screen-lg) {
   .megamenu .dropdown .dropdown-menu {
-    width: 220px;
+    width: 400px;
     // border-top: 2px solid $primary;
+    padding: 10px 20px;
+    flex-direction: row; 
+    ul { padding: 0 20px; flex-basis: 0; flex-grow: 1; }
   }
+  .megamenu .dropdown:hover>.dropdown-menu, .megamenu .dropdown.show .dropdown-menu {
+    display: flex !important;
+  }
+
   .megamenu li.dropdown:last-child .dropdown-menu {
     right: 0;
     left: auto;
@@ -220,9 +227,6 @@
     display: inline-block;
   }
 
-  .megamenu .dropdown:hover>.dropdown-menu {
-    display: block;
-  } 
 }
 @media (min-width: $screen-xl - 80px) {
   .megamenu .dropdown-toggle.dropdown-toggle-split { 
