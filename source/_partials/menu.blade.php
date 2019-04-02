@@ -117,9 +117,9 @@
                 <li><a href="/athletics/">Athletics</a></li>
                 <li><a href="http://asg.shoreline.edu">Student Government</a></li>
                 <li><a href="http://asg.shoreline.edu/rso/">Clubs &amp; Organizations</a></li>
+                <li><a href="http://www.theebbtide.com" target="_blank">Ebbtide - Student Newspaper</a></li>
             </ul>
             <ul>
-                <li><a href="http://www.theebbtide.com" target="_blank">Ebbtide - Student Newspaper</a></li>
                 <li><a href="/athletics/intramurals.aspx">Health &amp; Wellness</a></li>
                 <li><a href="http://library.shoreline.edu/home">Library &amp; Technology Center</a></li>
                 <li><a href="/bookstore/">Bookstore</a></li>

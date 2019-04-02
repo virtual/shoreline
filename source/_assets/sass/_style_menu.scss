@@ -141,19 +141,41 @@
 
 @media (min-width: $screen-lg) {
   .megamenu .dropdown .dropdown-menu {
-    width: 400px;
     // border-top: 2px solid $primary;
-    padding: 10px 20px;
+    padding: 10px 10px 10px 15px;
     flex-direction: row; 
-    ul { padding: 0 20px; flex-basis: 0; flex-grow: 1; }
+    width: auto;
+    ul { padding: 0 10px 0 5px; flex-basis: 0; flex-grow: 1; 
+      min-width: 250px; max-width: 300px; }
   }
   .megamenu .dropdown:hover>.dropdown-menu, .megamenu .dropdown.show .dropdown-menu {
     display: flex !important;
   }
 
-  .megamenu li.dropdown:last-child .dropdown-menu {
-    right: 0;
-    left: auto;
+  .megamenu { 
+    li.dropdown   {
+      .dropdown-menu {
+        right: -100%;
+        // left: -100%;
+        
+        left: auto;
+        min-width: 250px;
+        max-width: auto;
+      }
+    }
+    li.dropdown:nth-of-type(5n+3), li.dropdown:nth-of-type(5n+4) {
+      .dropdown-menu {
+        right: -50%;
+        // left: -150%;
+      }
+
+
+    }
+    li.dropdown:nth-of-type(5n+5) {
+      .dropdown-menu {
+      right: 0;  
+      }
+    }
   }
   .megamenu {
     font-size: 1rem;
