@@ -141,7 +141,8 @@
 
 @media (min-width: $screen-lg) {
   .megamenu .dropdown .dropdown-menu {
-    padding: 10px 0px 10px 15px;
+    padding: 8px 0px 10px 15px;
+    border-top: 5px solid $secondary;
     flex-direction: row;
     width: auto;
     ul {

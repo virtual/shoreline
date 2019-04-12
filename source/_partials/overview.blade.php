@@ -2,9 +2,9 @@
   <dl class="list-inline">
     <dt class="icon-bg-completion">Completion Award </dt>
     <dd> Transfer</dd>
-    <dt class="icon-bg-calendar">Length</dt>
+    <dt class="icon-bg-clock-o">Length of Study</dt>
     <dd> 90</dd>
-    <dt class="icon-bg-clock-o">Enrollment Period </dt>
+    <dt class="icon-bg-calendar">Starting Quarter</dt>
     <dd> Fall, Spring </dd>
     <dt class="icon-bg-book">Application Deadline </dt>
     <dd> N/A</dd>
