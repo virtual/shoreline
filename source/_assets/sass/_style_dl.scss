@@ -11,26 +11,30 @@ dl.list-inline {
   [class*="icon-bg-"]:before {
     content: "";
     
-    background-size: 2rem;
+    background-size: 100% auto;
     background-repeat: no-repeat; 
     position: absolute;
-    height: 32px;
-    width: 32px;
-    left:0;
-    background-image:url('../../resources/img/icons/icons.svg');
+    height: 60px;
+    width: 60px;
+    transform:scale(.7, .7);
+    left: -10px; // neg((1 - scale) * 16) * 2
+    margin-top: -10px;
+    background-image:url('../../resources/img/icons/icons-overview.svg');
   } 
 
   [class*="icon-bg-"] {
     position:relative;
     padding-left: 3.1875rem; 
-    &.icon-bg-book:before { background-position:0 0;}
-    &.icon-bg-calendar:before{background-position:0 -32px;}
-    &.icon-bg-clock-o:before{background-position:0 -64px;}
-    &.icon-bg-credit-card:before{background-position:0 -96px;}
-    &.icon-bg-map-marker:before{background-position:0 -128px;}
-    &.icon-bg-money:before{background-position:0 -160px;}
-    &.icon-bg-mortar-board:before{background-position:0 -192px;}
-    &.icon-bg-trophy-board:before{background-position:0 -232px;}
+    &.icon-bg-clock-o:before{background-position:0 0px;}
+    &.icon-bg-credit-card:before{background-position:0 -60px;}
+    &.icon-bg-book:before, &.icon-bg-completion:before { background-position:0 -120px;}
+    &.icon-bg-map-marker:before{background-position:0 -180px;}
+    &.icon-bg-calendar:before{background-position:0 -240px;}
+    &.icon-bg-money:before{background-position:0 -300px;}
+    &.icon-bg-mortar-board:before{background-position:0 -360px;}
+    &.icon-bg-trophy-board:before{background-position:0 -420px;}
+    &.icon-bg-dollar:before{background-position:0 -480px;}
+    &.icon-bg-certificate-solid:before{background-position:0 -540px;}
   }
 }
 dl:after { content: ''; clear:both; display:block;}
@@ -66,6 +70,9 @@ dl:after { content: ''; clear:both; display:block;}
   dl.list-inline {
     dd { width:66.67%; }
     dt { width: 33.33%; }
+  }
+  dl.list-inline [class*="icon-bg-"]:before {
+    margin-top: -1rem;
   }
 }
 

@@ -1,6 +1,6 @@
 <section class="">
   <dl class="list-inline">
-    <dt class="icon-bg-completion">Completion Award </dt>
+    <dt class="icon-bg-certificate-solid">Completion Award </dt>
     <dd> Transfer</dd>
     <dt class="icon-bg-clock-o">Length of Study</dt>
     <dd> 90</dd>
@@ -10,7 +10,7 @@
     <dd> N/A</dd>
     <dt class="icon-bg-map-marker">Location </dt>
     <dd> On Campus</dd>
-    <dt class="icon-bg-credit-card">Tuition &amp; Fees </dt>
+    <dt class="icon-bg-dollar">Tuition &amp; Fees </dt>
     <dd>
       <button class="btn-toggle verbose btn collapsed" type="button" data-toggle="collapse" data-target="#tuitionfees" aria-expanded="false" aria-controls="tuitionfees">
         See
