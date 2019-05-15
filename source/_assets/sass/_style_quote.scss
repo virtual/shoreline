@@ -1,7 +1,6 @@
 
   blockquote {
-    font-size: 1.5rem; 
-    margin-left: 0;
+    font-size: 1.5rem;  
     color: $text-dark;
     position: relative;
     margin-left: 2rem;
@@ -79,9 +78,19 @@
       padding-left: 6rem;
     }
     .quote-feature-img {
-      flex: 0 0 25%;
+      // flex: 0 0 25%;
+      flex-grow: 0; 
+      flex-shrink: 0;
+      width: 25%;
+      flex-basis: 25%;
     } 
-    .quote-feature-img + .quote-feature-text { flex: 0 0 75%; }
+    .quote-feature-img + .quote-feature-text { 
+      // flex: 0 0 75%; 
+      flex-grow: 0; 
+      flex-shrink: 1;
+      width: 75%;
+      flex-basis: 75%; 
+    }
   }
 }
 @media (min-width: $screen-lg) {
@@ -95,4 +104,40 @@
   // Add extra padding; checked through main.js
     padding: 0 1.75rem;
   }
+}
+
+.testimonial-slider-container > div {
+  padding-left: 40px; 
+  padding-right: 40px; 
+}
+.testimonial-slider-container {
+  .quote-feature-text { text-align: center; 
+    blockquote { margin-right: 0; }
+  }
+  .quote-feature-img + .quote-feature-text { text-align: left; }
+}
+.testimonial-slider-container { 
+  .slick-track { display: flex; }  
+  .slick-slide { 
+    margin: auto;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    margin: auto;
+    flex-direction: column; 
+    flex-grow: 1; 
+  }
+  .slick-slider .slick-dots { left: 0; right: 0; }
+}
+@media (min-width: $screen-md) {
+
+  .testimonial-slider-container { 
+    & > div {
+      padding-left: 0; 
+      padding-right: 0px;  
+    }
+    .quote-feature-text { padding-right: 6rem; }
+    .quote-feature-img + .quote-feature-text {  padding-right: 2rem; } 
+  
+  }  
 }

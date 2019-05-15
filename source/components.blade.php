@@ -44,7 +44,7 @@
  </section>
 
  <section>
-    <div class="container-fluid py-5">
+    <div class="testimonial-slider-container container-fluid py-3">
       <div class="slick-slider">
         @include('_partials.quote', [ 
           'desc' => "As corny as it sounds, it has been amazing to be here and have the opportunities that I've had…",
@@ -52,6 +52,14 @@
           'attribution' => 'Pavielle Montes',
           'attribution2' => 'Associate of Arts and High School Diploma',
           'img' => '/resources/img/testimonials/shoreline-williams72.jpg',          
+          'link' => '#'
+          ]) 
+          @include('_partials.quote', [ 
+          'desc' => "As corny as it sounds, it has been amazing to be here and have the opportunities that I've had…",
+          'alt' => 'Pavielle Montes',
+          'attribution' => 'Pavielle Montes',
+          'attribution2' => 'Associate of Arts and High School Diploma',
+          'img' => '',          
           'link' => '#'
           ]) 
           @include('_partials.quote', [ 
@@ -65,6 +73,30 @@
         </div>
     </div>
  </section>
+
+
+ <section>
+  <div class="testimonial-slider-container container-fluid py-3">
+    <div class="slick-slider">
+      @include('_partials.quote', [ 
+        'desc' => "As corny as it sounds, it has been amazing to be here and have the opportunities that I've had…",
+        'alt' => 'Pavielle Montes',
+        'attribution' => 'Pavielle Montes',
+        'attribution2' => 'Associate of Arts and High School Diploma',
+        'img' => '',          
+        'link' => '#'
+        ]) 
+        @include('_partials.quote', [ 
+        'desc' => "I have come to believe that the whole world is an enigma, a harmless enigma that is made terrible by our own mad attempt to interpret it as though it had an underlying truth.",
+        'alt' => 'Pavielle Montes',
+        'attribution' => 'Pavielle Montes',
+        'attribution2' => 'Associate of Arts and High School Diploma',
+        'img' => '',          
+        'link' => '#'
+        ]) 
+      </div>
+  </div>
+</section>
 
 @endsection
 
