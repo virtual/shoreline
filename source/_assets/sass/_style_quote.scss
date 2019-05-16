@@ -129,6 +129,10 @@
   }
   .slick-slider .slick-dots { left: 0; right: 0; }
 }
+.testimonial-slider-container .bg-light {
+  .slick-prev { left: -65px; }
+  .slick-next { right: -65px; }
+}
 @media (min-width: $screen-md) {
 
   .testimonial-slider-container { 
@@ -137,6 +141,11 @@
       padding-right: 0px;  
     }
     .quote-feature-text { padding-right: 6rem; }
+    .bg-light .quote-feature-img { padding-left: 40px; }
+    .bg-light {
+      .slick-prev { left: -25px; }
+      .slick-next { right: -25px; }
+    }
     .quote-feature-img + .quote-feature-text {  padding-right: 2rem; } 
   
   }  

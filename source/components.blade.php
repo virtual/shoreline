@@ -45,7 +45,8 @@
 
  <section>
     <div class="testimonial-slider-container container-fluid py-3">
-      <div class="slick-slider">
+      <div class="py-3 bg-light">
+        <div class="slick-slider">
         @include('_partials.quote', [ 
           'desc' => "As corny as it sounds, it has been amazing to be here and have the opportunities that I've had…",
           'alt' => 'Pavielle Montes',
@@ -71,6 +72,7 @@
           'link' => '#'
           ]) 
         </div>
+      </div>
     </div>
  </section>
 
