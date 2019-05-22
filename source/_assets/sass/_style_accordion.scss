@@ -68,9 +68,13 @@
 
 // Trumba feed fix (don't affect print)
 @media screen {
+  .accordion .collapse.show {
+    visibility: visible;
+  } 
   .accordion .collapse:not(.show) {
     height: 0px;
     display: block;
     overflow:hidden;
+    visibility: hidden;
   }
 } 
