@@ -62,9 +62,11 @@
   figcaption { font-size: 1rem; color: $text-dark; line-height: 1.5 }
   figcaption strong { color:#000; }
 }
-.quote-feature-text.quote-feature-text-long blockquote {
+.quote-feature-text.quote-feature-text-long { 
+  blockquote, blockquote * {
   font-size: 1.2rem;
   line-height: 1.5;
+  }
 }
 @media (min-width: $screen-md) {
   .quote-feature {
