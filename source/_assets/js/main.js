@@ -31,16 +31,11 @@ jQuery(document).ready(function() {
     e.preventDefault();
     e.stopPropagation();
 
-    
+    // If not showing, show dropdown menu
     var _d=$(this).closest('.dropdown');
-    console.log(_d);
-
-    if ((_d).hasClass('show')) {
-      console.log('remove')
+    if ((_d).hasClass('show')) { // RemoveClass Show
       $(_d).removeClass('show')
-    } else {
-      console.log('add')
-      
+    } else { // AddClass Show
       $(_d).removeClass('show')
       _d.addClass('show');
     }
