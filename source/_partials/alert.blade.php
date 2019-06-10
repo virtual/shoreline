@@ -1,4 +1,4 @@
-<div class="alert alert-primary alert-warning dismissed">
+<!--<div class="alert alert-primary alert-warning dismissed">
   <div class="container-fluid">
     <a title="Toggle" href="#" class="dismiss-alert btn btn-primary btn-sm"><span class="dismiss-alert-label">Show Details</span> <span class="dismiss-alert-toggle" aria-label="Toggle alert"></span></a>
     
@@ -9,4 +9,4 @@
       <p><a class="btn btn-primary" href="https://www.shoreline.edu/alerts.aspx">Learn more</a></p>
     </div>
   </div>
-</div>
+</div>-->

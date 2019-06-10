@@ -84,9 +84,6 @@ header#header {
 } 
 
 @media (min-width: $screen-lg) {
-  header#header {
-    padding-bottom: 1.5rem;
-  }
   .searchbox input.form-control {
     display: none;
   }
