@@ -15,7 +15,7 @@ $btn-tertiary: transparent;
 }
 .btn.btn-link { min-width: auto; padding: .5rem; }
 
-.btn-sm {   font-size: 0.8125rem;  }
+.btn-sm {   font-size: 0.875rem;  }
 .btn-lg {   font-size: 1.4875rem;  }
 a.btn { text-decoration: none; }
 .btn + .btn { margin-left: .5rem; }
@@ -117,6 +117,7 @@ a.btn { text-decoration: none; }
 dl .btn-toggle { font-size: 1rem; }
 @media (min-width: $screen-md) {
   dl .btn-toggle { font-size: 1.1875rem; }
+  .btn-sm { font-size: .95rem; }
 }
 @media (max-width: $screen-sm - 1px) {
 .header-content {
