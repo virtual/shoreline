@@ -107,6 +107,7 @@ header .alert {position:relative;  margin-bottom: 0; min-height: 75px; }
 }
 
 @media (min-width: $screen-lg) {
+  header .alert { margin-bottom: -1.5rem;  margin-top: 1.5rem; }
   header .alert.alert-primary .alert-content {
     background-image: url('../../resources/img/graphics/icon-alert-black.png');
     background-repeat: no-repeat;
