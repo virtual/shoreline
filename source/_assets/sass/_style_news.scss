@@ -36,3 +36,9 @@
     .image-container, .image-container + .article-info-container { width: 50%; }
   }
 } 
+
+.news-article.news-article-stacked {   
+  flex-direction: column;
+  .datetime { padding-top:1rem;}
+  .image-container, .image-container + .article-info-container { width: 100%; }
+}
