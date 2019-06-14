@@ -61,3 +61,15 @@
   .datetime { padding-top:1rem;}
   .image-container, .image-container + .article-info-container { width: 100%; }
 }
+
+
+.bg-inverted, .sectional-inverted {
+  .news-article {
+    color: $light;
+    .datetime {
+      color: $light;
+      opacity: .9;
+    }
+    h2, h3, h4 { color: $light; }
+  }
+}

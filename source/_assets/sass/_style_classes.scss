@@ -176,3 +176,15 @@ pre code {
   border-top: 1px solid rgba(0,0,0,.1);
   &:last-child { border-bottom:1px solid rgba(0,0,0,.1); padding-bottom: 1rem; }
 }
+
+.bg-inverted, .sectional-inverted {
+  .contact-us-box {
+    border: solid 2px rgba(255, 255, 255, 0.1);
+    p, dd, strong { color: $light; } 
+    @include headings(1,6) { color: $light; }
+  }
+  a.more-arrow:after, ul.more-arrow > li a:after { 
+    // TODO: white version
+    background-image: url(../../resources/img/icons/arrow@3x.png);
+  }
+}

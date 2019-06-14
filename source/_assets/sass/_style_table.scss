@@ -221,4 +221,17 @@ div.table-wrapper div.scrollable table { margin-left: 35%; }
 div.table-wrapper div.scrollable { overflow: scroll; overflow-y: hidden; }	
 table.responsive td, table.responsive th { position: relative; white-space: nowrap; overflow: hidden; }
 table.responsive th:first-child, table.responsive td:first-child, table.responsive td:first-child, table.responsive.pinned td { display: none; }
-	
+  
+
+.bg-inverted, .sectional-inverted {
+  table thead th { background-color: rgba(0,0,0,.2); color: #fff; }
+  .pinned { background: darken($primary, 3); }
+  .responsive-table tbody {
+    th[scope="row"], td {
+    background-color: rgba(0,0,0,.05); color: #fff; 
+    }
+  }
+  .responsive-table tbody tr:nth-of-type(even) {
+    th[scope="row"], td { background-color: rgba(0,0,0,.15);  }
+  }
+}

@@ -347,3 +347,9 @@ main .slick-slider ul li:before { content: none; }
   }
   }
 }
+
+.bg-inverted, .sectional-inverted {
+  .slick-slider .slick-dots li button:before, .slick-slider .slick-dots li.slick-active button:before {
+    color: $light;
+  }
+}

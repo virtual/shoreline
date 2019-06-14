@@ -156,3 +156,10 @@
   
   }  
 }
+
+.bg-inverted, .sectional-inverted {
+  .quote-feature figcaption { color: $light;  
+    strong { color: #fff; }
+  } 
+  .testimonial-slider-container .bg-light { background-color: darken($primary, 3) !important; }
+}

@@ -16,17 +16,8 @@ main, .sectional, .content-container {
     padding: 0;
     li {
       list-style: none;
-      position: relative;
-      // text-indent: -1rem;
-    }
-    // li:before {
-    //     content:"\2022";
-    //     position: absolute;
-    //     left: -0.8em;          /* Adjust this value so that it appears where you want. */
-    //     font-size: 2em;   
-    //     top: auto;
-    //     bottom: auto;
-    // }
+      position: relative; 
+    } 
   }
 
   ul li:before {
@@ -390,3 +381,73 @@ ul.list-unstyled, ol.list-unstyled, %list-unstyled {
   }
 }
 // end IE 11
+.bg-inverted, .sectional-inverted {
+  .tab-content { color: $light;   }
+  a.nav-link:hover { text-shadow: none; }
+  .list-bulleted {
+    dt:before {
+      background: $light;
+    }
+  }
+  .list-bulleted.list-bulleted.list-ordered {
+    dt:before {
+      background-color: transparent;
+      color: $light;
+    }
+  }
+  ol li:before {
+    background-color: transparent;
+    color: $light;
+  }
+  ul li:before {
+    background: $light;
+  }
+  ol,
+  ul {
+
+    ol li:before,
+    ul li:before {
+      color: $light;
+    }
+  }
+  ul.features,
+  ul.icon-check,
+  ul.icon-x,
+  ul.icon-box {
+    li:before {
+      // TODO: white version
+      background-image: url('../../resources/img/icons/list-check.svg');
+    }
+  }
+  .large-list {
+    color: $light;
+  }
+}
+
+// .bg-inverted
+main,
+.sectional,
+.content-container {
+  .bg-inverted {
+    ol li:before {
+      background-color: transparent;
+      color: $light;
+    }
+
+    ul li:before {
+      background: $light;
+    }
+
+    ol,
+    ul {
+
+      ol li:before,
+      ul li:before {
+        color: $light;
+      }
+    }
+  }
+}
+
+
+// End bg-inverted
