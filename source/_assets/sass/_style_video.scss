@@ -1,5 +1,6 @@
 .video-container { clear:both; 
   margin-top: 1rem; margin-bottom: 1rem;
+  a, a:hover { text-shadow: none; background-image: none; }
   .video-lightbox { display:flex;
     align-items: center;
     justify-content: center;
@@ -78,3 +79,10 @@
   }
 }
 
+
+.bg-inverted, .sectional-inverted {
+  .video-container .video-lightbox img {
+    background:linear-gradient(lighten($primary, 3), lighten($primary, 3)) no-repeat 10px 10px;
+  }
+  .video-container .card-title { color: $light; }
+}

@@ -184,7 +184,6 @@ pre code {
     @include headings(1,6) { color: $light; }
   }
   a.more-arrow:after, ul.more-arrow > li a:after { 
-    // TODO: white version
-    background-image: url(../../resources/img/icons/arrow@3x.png);
+    background-image: url(../../resources/img/icons/inverse/arrow@3x.png);
   }
 }

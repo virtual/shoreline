@@ -382,6 +382,10 @@ ul.list-unstyled, ol.list-unstyled, %list-unstyled {
 }
 // end IE 11
 .bg-inverted, .sectional-inverted {
+  
+  .nav-tabs {
+    a, a:hover { text-shadow: none; background-image: none; }
+  }
   .tab-content { color: $light;   }
   a.nav-link:hover { text-shadow: none; }
   .list-bulleted {
@@ -414,9 +418,8 @@ ul.list-unstyled, ol.list-unstyled, %list-unstyled {
   ul.icon-check,
   ul.icon-x,
   ul.icon-box {
-    li:before {
-      // TODO: white version
-      background-image: url('../../resources/img/icons/list-check.svg');
+    li:before { 
+      background-image: url('../../resources/img/icons/inverse/list-check.svg');
     }
   }
   .large-list {

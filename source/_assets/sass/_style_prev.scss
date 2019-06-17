@@ -1072,6 +1072,10 @@ text-transform: uppercase;
     font-weight: 400;
     display: block;
     padding: 7px 15px;
+    text-shadow: none;
+    &:hover {
+      text-shadow: none;
+    }
   }
 }
 @media (min-width: $screen-sm) {
