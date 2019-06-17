@@ -18,6 +18,9 @@
   }
 }
 .card-title { font-size: 1.1875rem; }
+.card-text { font-size: 1rem;
+  line-height: 1.5;     
+  color: #444; margin-bottom: 1rem; }
 .card-margin {  margin-bottom: 0; margin-top:1rem; } 
 .card-margin > .accordion { margin-top: -1rem;}
 .card-link {

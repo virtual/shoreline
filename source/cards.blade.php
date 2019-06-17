@@ -112,6 +112,29 @@
         ])
        </div>
   </div>
+  <div class="row">
+    <div class="col-12 col-sm-6">  
+        @include('_partials.card', [
+        'heading' => 'Get help with enrollment',
+        'desc' => '<p>Our enrollment services team is here to help with financial aid, how to apply, and all the things that make Shoreline a <a href="#">great place to study</a> and pursue.</p><p>Any of our more than 100 degrees and certificates!</p>',
+        'iconalt' => 'quote',
+        'icon' => 'far fa-map',          
+        'theme' => 'secondary',
+        'link' => '#'
+        ])
+   </div>
+    <div class="col-12 col-sm-6">  
+       
+        @include('_partials.card', [
+        'heading' => 'Apply Today',
+        'iconalt' => '',
+        'icon' => '',   
+        'desc' => '<p>Your first step is to get a <strong>student ID</strong> – it\'s fast, easy, and free</p>',
+        'link' => 'http://www.shoreline.edu/communications-marketing/identity-guidelines/default.aspx',
+        'buttontext' => 'Request Info',
+        ])
+       </div>
+  </div>
 <div class="row">
 <div class="col-12 col-sm-6 col-md-6 col-lg-8">@include('_partials.card', [
     'heading' => 'Course Descriptions',

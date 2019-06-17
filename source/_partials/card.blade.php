@@ -9,7 +9,7 @@
         <a class="more-arrow" href="{{ $link }}">{{ $heading }}</a>
         @endif
     </h3>
-    <p class="card-text"><?php echo $desc; ?></p>
+    <div class="card-text"><?php echo $desc; ?></div>
     @if(!empty($buttontext))<p><a class="btn btn-primary" href="{{ $link }}">{{ $buttontext }}</a></p>@endif
   </div>
 </div>
