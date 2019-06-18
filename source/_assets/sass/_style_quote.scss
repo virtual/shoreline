@@ -163,3 +163,9 @@
   } 
   .testimonial-slider-container .bg-light { background-color: darken($primary, 3) !important; }
 }
+.sectional-inverted.theme-03 {
+  .testimonial-slider-container .bg-light { background-color: #222 !important; }
+}
+.sectional-inverted.theme-02 {
+  .testimonial-slider-container .bg-light { background-color: darken(#006ba6, 2) !important; }
+}

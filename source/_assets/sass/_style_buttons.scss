@@ -69,7 +69,7 @@ a.btn { text-decoration: none; }
 }
 
 // All classes that have inverse colored backgrounds, including alerts
-.bg-primary, .alert {
+.bg-primary, .sectional-inverted, .alert {
   $btn-primary: #fff;
   $btn-secondary: $primary;
   $btn-tertiary: $primary;

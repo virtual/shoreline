@@ -235,3 +235,10 @@ table.responsive th:first-child, table.responsive td:first-child, table.responsi
     th[scope="row"], td { background-color: rgba(0,0,0,.15);  }
   }
 }
+.sectional-inverted.theme-03 {
+  .pinned { background: #111; }
+}
+.sectional-inverted.theme-02 {
+  .pinned { background: darken(#006ba6, 2); }
+}
+
