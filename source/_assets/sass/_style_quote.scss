@@ -163,9 +163,13 @@
   } 
   .testimonial-slider-container .bg-light { background-color: darken($primary, 3) !important; }
 }
-.sectional-inverted.theme-03 {
+.sectional-inverted.theme-03 { // dark
   .testimonial-slider-container .bg-light { background-color: #222 !important; }
 }
-.sectional-inverted.theme-02 {
+.sectional-inverted.theme-02 { // blue
+  blockquote:before { background-image: url('../../resources/img/icons/quote-light@3x.png');  }
   .testimonial-slider-container .bg-light { background-color: darken(#006ba6, 2) !important; }
+  .quote-feature img {   
+    background:linear-gradient($light, $light) no-repeat 10px 10px;
+  }
 }

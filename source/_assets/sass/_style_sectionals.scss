@@ -36,21 +36,13 @@
 	background-color: rgba(0, 0, 0, 0.75);
 }
 .sectional-background.sectional.theme-04:before {
-	background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(240, 249, 248, 0.75);
 }
 .sectional-padded {
 	padding-top: 30px;
 	padding-bottom: 30px;
 } 
-// .sectional.theme-01, .sectional.theme-02, .sectional.theme-03 {
-//   color: #fff; 
-//   p, ul, dl, ol, div { color: inherit; }
-//   a { 
-//     text-shadow: none;
-//     background-image: none;
-//     color: #fff; 
-//   }
-// }
+
 .sectional.theme-01, .sectional.bg-primary  {
 	background-color: $primary;
 }
@@ -63,9 +55,7 @@
 .sectional.theme-04, .sectional.bg-light {
 	background-color: $light;
 }
-// .sectional-inverted * {
-// 	color: #fff;
-// }
+
 .sectional2 img {
 	max-width: initial;
 	width: 100%;
@@ -99,7 +89,7 @@
 	background-image: url("/_resources/img/graphics/arrow-double-down-white.png");
 }
 .sectional-inverted .accordion-handle.active:after {
-	background-image: url(/_resources/img/graphics/arrow-double-up-white.png);
+	background-image: url("/_resources/img/graphics/arrow-double-up-white.png");
 }
 .sectional .accordion-content {
 	display: none;

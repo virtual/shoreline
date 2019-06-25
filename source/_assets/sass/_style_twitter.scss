@@ -36,7 +36,10 @@
  
 
 .bg-inverted, .sectional-inverted {
-  .twitter-feed ul a { color: $light;  }
+  .twitter-feed ul {
+    li { border-color: rgba(255, 255, 255, 0.1);  }
+    a { color: $light;  }
+  }
   .twitter-module h3 { // TODO: White inverse image
     background-image: url('../../resources/img/graphics/icon-twitter-large-inverse.png');
   }

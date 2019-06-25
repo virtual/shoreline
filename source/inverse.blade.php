@@ -27,7 +27,7 @@
 @endsection
 
 @section('sectionals')
-<section class="sectional section1 sectional-padded theme-01 sectional-inverted bg-primary">
+<section class="sectional section1 sectional-padded theme-04">
     <div class="container-fluid">
 
 
