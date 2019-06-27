@@ -1594,6 +1594,7 @@ body {
     position: absolute;
     top: 0;
     clip: rect(0px, 1000px, 500px, 20px);
+    max-width: 1000px;
     right: 0;
     left: 50%;
     right: 0;
