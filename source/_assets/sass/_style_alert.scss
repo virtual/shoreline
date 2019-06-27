@@ -6,7 +6,7 @@ $alert-warning: $shoreline-orange;
 .alert {
   border-radius: .25rem;
   border-color: #fff; 
-  padding: 1rem 2rem 2rem 2rem;
+  padding: 2rem;
   * { color: inherit; }
 
   a { text-decoration: underline; }
@@ -14,6 +14,8 @@ $alert-warning: $shoreline-orange;
     text-decoration: none;
   }
   a:hover { color: inherit; }
+  &>*:first-child { margin-top: 0;}
+  &>*:last-child { margin-bottom: 0;}
 }
 .alert-primary, .alert-announcement {
   background: $alert-announcement;

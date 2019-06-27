@@ -1,3 +1,4 @@
+
 .card {
   padding:0;
   background: #FFFFFF;
@@ -281,6 +282,7 @@ main, .content-container, .sectional, * {
 .card.image-card {
   h2, h3, h4, h5 { color: $text-dark; }
 }
+.card-icons { width: 100%; min-width: 100%; max-width: 100%; }
 .card-icons > div {
   min-width: 48%;
   max-width: 48%;
@@ -317,11 +319,37 @@ main, .content-container, .sectional, * {
     max-width: initial;
     color: $link-blue;
     margin-bottom: 1rem;
-    transition: filter .3s ease-in-out;
+    transition: filter .2s ease-in-out;
   }
   &:hover .icon img {
     filter: brightness(80%);
   }
+}
+.card-icon.card-icon-compact {
+  padding-left: 2.5rem;  
+  .icon { 
+    // background-color: rgb(236, 140, 212); 
+    display: inline-block;
+    width: 1.5rem; 
+    line-height: 1;
+    position: absolute;
+    top: 30%;
+    left: auto;
+    margin-left: -2rem;
+    img { height: auto; width: 100%; margin-bottom: 0; display: inline-block; 
+      line-height: 1; } 
+    .fab, .fas, .fa, .far, .fal {
+      color: $link-blue;
+      width: 1.5rem; 
+      height: 1.5rem;
+      display: inline-block; 
+      line-height: 1;
+      font-size: 1.5rem; 
+    }
+  }
+  .icon + p { display: inline-block; 
+    margin-bottom: 0;
+    line-height: 1.38; } 
 }
 
 /* row of links with image headers */
@@ -346,5 +374,11 @@ main, .content-container, .sectional, * {
     }
     li {-webkit-column-break-inside:avoid;}
     .list-top { border-top:0 !important;} // class added via JS: twoColNav
+  }
+}
+
+.bg-inverted, .sectional-inverted {
+  .card-icon > p a {
+    color: $link-blue;
   }
 }
