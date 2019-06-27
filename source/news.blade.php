@@ -5,6 +5,18 @@
 @endsection
  
 @section('main-sidebar-content')  
+<div class="card callout card-program-heading">
+    <div class="card-body">
+       <h2>On this page</h2>
+       <ul class="list-unstyled">
+          <li><a class="scrollable" href="#link1">Link1</a></li>
+          <li><a class="scrollable" href="#link2">Link2</a></li>
+          <li><a class="scrollable" href="#link3">Link3</a></li>
+          <li><a class="scrollable" href="#link4">Link4</a></li>
+       </ul>
+       
+    </div>
+ </div>
 
 <div class="news-no-description">
 
@@ -44,6 +56,7 @@
     'datetime' => '2018-09-13 11:31'
     ])
   </div>
+  
   <h3>Feed</h3>
   <div class="news-feed news-no-description news-no-date2">
       @include('_partials.article', [

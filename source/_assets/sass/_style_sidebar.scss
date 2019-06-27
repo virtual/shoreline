@@ -1,18 +1,20 @@
 .sidebar-container .navbar-collapse {
   flex-direction: column;
 }
-.sidebar-container .card { width: 100%;  
+.sidebar-container .card { 
+  width: 100%;  
   ul { margin-bottom:0;}
   li { margin-bottom: .5rem; }
   li + li { margin-top: .5rem;}
 }
 // Overview TOC menu
-.sidebar-container .card-program-heading {
+.card-program-heading {
   h2 { color:#000; font-size: 1rem; font-weight: 600;
     a { color: inherit; text-decoration: none; 
-  }}
+  }} 
 }
 .card.card-program-heading { margin:0; margin-top: 1rem; }
+.sidebar-container .card.card-program-heading { margin-bottom: 1rem; }
 @media (min-width: $screen-md) {
   .card.card-program-heading { margin-top: 0; }
 }
