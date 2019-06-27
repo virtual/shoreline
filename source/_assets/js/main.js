@@ -96,7 +96,9 @@ jQuery(document).ready(function() {
   });
 
   //--- Gavin Smith 8-16-17 Merge data into page if any requests on page
-  LoadShorelineData();
+  if (typeof LoadShorelineData == 'function') { 
+    LoadShorelineData(); 
+  }
   
   // Smooth scroll to anchor
   $("a.scrollable").click(function (event) {
@@ -105,7 +107,11 @@ jQuery(document).ready(function() {
     if ($(goToId).length) { // If an anchor exists with this href
       $("html, body").animate({
         scrollTop: $($(this).attr("href")).offset().top - shoreline.scrollableOffset
-      }, 500);
+      }, 500); 
+      // Add tabindex -1 so the anchored text can be focused via JS
+      if ($(goToId).attr("tabindex") === undefined) {
+        $(goToId).attr('tabindex', '-1')
+      };
       $(goToId).focus(); 
     }  
   });

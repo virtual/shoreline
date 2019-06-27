@@ -18,6 +18,7 @@
     </div>
  </div>
 
+ <h2 id="link1">Link1</h2>
 <div class="news-no-description">
 
     @include('_partials.article', [
@@ -56,7 +57,7 @@
     'datetime' => '2018-09-13 11:31'
     ])
   </div>
-  
+  <h2 id="link2">Link2</h2>
   <h3>Feed</h3>
   <div class="news-feed news-no-description news-no-date2">
       @include('_partials.article', [
@@ -132,6 +133,7 @@
 </div>
 <p class="text-center xl pt-3"><a href="#" class="more-arrow">View all News</a></p>
         <hr/>
+        <h2 id="link3">Link3</h2>
 <h3>Feed</h3>
 <div class="news-feed news-no-description news-no-date2">
     @include('_partials.article', [
@@ -192,7 +194,7 @@
 
 <div class="py-5 bg-light">
     <div class="container-fluid">
-
+        <h2 id="link4">Link4</h2>
 <div class="news-no-description">
   <div class="row">
     <div class="col-sm-4">@include('_partials.article', [
