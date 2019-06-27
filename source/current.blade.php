@@ -159,8 +159,19 @@
 
   <div class="col-md-6">
       @include('_partials/accordion')
+    </div>
 </div>
- 
+ <hr/>
+ <h2>Compact Accordion</h2>
+ <div class="row">
+    <div class="col-md-6">
+        @include('_partials/accordion-compact')
+    </div>
+  
+    <div class="col-md-6">
+        @include('_partials/accordion-compact')
+      </div>
+  </div>
 
 
 @endsection
