@@ -301,6 +301,7 @@ main, .content-container, .sectional, * {
   border: solid 1px rgba(0, 0, 0, 0.05);
   position: relative;
   margin-bottom: 1rem;
+  transition: transform .2s ease-in-out;
   &>a {
       position: absolute;
       top: 0; left: 0;
@@ -313,13 +314,29 @@ main, .content-container, .sectional, * {
     &>a:focus {
       box-shadow: 0 0 0 0.2rem rgba(0, 104, 94, 0.5);
     }
-    &:hover a { text-decoration: underline; } 
-  .icon img { 
-    height: 72px; width: auto;
-    max-width: initial;
-    color: $link-blue;
+    &:hover {
+      transform: translateY(-1px);
+      a { text-decoration: underline; } 
+    }
+ 
+  .icon {
     margin-bottom: 1rem;
-    transition: filter .2s ease-in-out;
+    margin-top: 1rem;
+    img { 
+      height: 72px; width: auto;    
+      max-width: initial;
+      color: $link-blue;
+      transition: filter .2s ease-in-out;
+      margin-bottom: 0; display: inline-block; 
+      line-height: 1; } 
+    .fab, .fas, .fa, .far, .fal {
+      color: $link-blue;
+      width: 4rem; 
+      height: 4rem;
+      font-size: 4rem; 
+      display: inline-block; 
+      line-height: 1;
+    }
   }
   &:hover .icon img {
     filter: brightness(80%);
@@ -328,6 +345,9 @@ main, .content-container, .sectional, * {
 .card-icon.card-icon-compact {
   padding-left: 2.5rem;  
   .icon { 
+    margin-bottom: 0;
+    margin-top: 0;
+    img { height: auto; width: 100%; }
     // background-color: rgb(236, 140, 212); 
     display: inline-block;
     width: 1.5rem; 
@@ -336,14 +356,9 @@ main, .content-container, .sectional, * {
     top: 30%;
     left: auto;
     margin-left: -2rem;
-    img { height: auto; width: 100%; margin-bottom: 0; display: inline-block; 
-      line-height: 1; } 
     .fab, .fas, .fa, .far, .fal {
-      color: $link-blue;
       width: 1.5rem; 
       height: 1.5rem;
-      display: inline-block; 
-      line-height: 1;
       font-size: 1.5rem; 
     }
   }

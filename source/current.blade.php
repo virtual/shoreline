@@ -67,6 +67,16 @@
   <p><a tabindex="-1" href="https://www.shoreline.edu/currentstudents/email/">Email</a></p></div></div>
 </div>
 
+<div class="row">    
+  <div class="col-12 col-md-4"><div class="card-icon"><a href="https://www.shoreline.edu/currentstudents/email/">Facebook</a><div class="icon"><span class="fab fa-facebook" aria-hidden="true"></span><span class="sr-only">Facebook</span></div>
+  <p><a tabindex="-1" href="https://www.shoreline.edu/currentstudents/email/">Facebook</a></p></div></div>
+  <div class="col-12 col-md-4"><div class="card-icon"><a href="https://www.shoreline.edu/currentstudents/email/">Read this document</a><div class="icon"><i class="fal fa-file-pdf"></i><span class="sr-only">Twitter</span></div>
+  <p><a tabindex="-1" href="https://www.shoreline.edu/currentstudents/email/">Read this document</a></p></div></div>
+  
+  <div class="col-12 col-md-4"><div class="card-icon"><a href="https://www.shoreline.edu/currentstudents/email/">Twitter</a><div class="icon"><span class="fab fa-twitter" aria-hidden="true"></span><span class="sr-only">Twitter</span></div>
+  <p><a tabindex="-1" href="https://www.shoreline.edu/currentstudents/email/">Email</a></p></div></div>
+</div>
+
 <h2>Using Specific Classes</h2>
 <div class="card-icons d-md-flex d-inline-flex flex-wrap align-items-start justify-content-between justify-content-sm-start justify-content-md-between">
     <div class="flex">
