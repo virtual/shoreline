@@ -208,6 +208,77 @@ var shoreline = {
 
      
   },
+
+  // Pulls in JSON feed
+  getEventFeed(max = 3) {
+    var arrayFeeds = [];
+
+    function getDateData(container) {
+      var eventStr = '';
+      arrayFeeds.forEach(feedContainer => {
+        $.ajax({
+          url: feedContainer.getAttribute('href'),
+          success: function (data) {
+            var eventsSliced = data.slice(0, max);
+
+            // Print the calendar HTML for the whole feed (spliced)
+            printCal(eventsSliced, container);
+
+          }
+        })
+      });
+      console.log(eventStr)
+      return eventStr;
+    }
+
+    function getTime(d) {
+      var hr = d.getHours();
+      var min = d.getMinutes();
+      if (min < 10) {
+          min = "0" + min;
+      }
+      var ampm = "am";
+      if( hr > 12 ) {
+          hr -= 12;
+          ampm = "pm";
+      }
+      return hr + ":" + min + ampm;
+    }
+    // The printed layout of the HTML for the events
+    function printCal(data, container) {
+      var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+      data.forEach(dataEl => {
+        var timeStr = getTime(new Date(dataEl.startDateTime)) + " - " + getTime(new Date(dataEl.endDateTime));
+        if (timeStr === '0:00am - 0:00am') { timeStr = "All day"; }
+
+        container.find('.row').append(
+                    
+          '<div class="col-md-4"><div class="event"><div class="event-date"><div class="event-date-container"><span class="month">'
+          + months[new Date(dataEl.startDateTime).getMonth()] + // Aug
+          '</span><span class="day">'
+          + new Date(dataEl.startDateTime).getDate() + // 22
+          '</span></div></div>	<div class="event-content"><h4>' + 
+          '<a href="' + dataEl.permaLinkUrl + '">' + 
+          dataEl.title + '</a></h4>    <p><span class="caltime">' + 
+          timeStr + '<br></span><span class="callocation">' + 
+          dataEl.location + // Campus-wide
+          '</span>    </p>	</div></div></div>'
+          
+          )
+      });
+    }
+
+    // For each feed snippet on the page, get the data and print the calendar
+    ($(".ou-event-feed td a").get()).forEach(el => {
+      arrayFeeds.push(el);
+
+      var calFeedHolder = ($(el).closest('.ou-event-feed'));
+      calFeedHolder.html("<div class='row'></div>");
+      getDateData(calFeedHolder);
+    });
+  },
+
   changeScrollableOffset: function(px) {
     this.scrollableOffset = px;
   }, // end mobileScrolltoTab
@@ -391,6 +462,7 @@ shoreline.tableHTML();
 shoreline.twoColNav();
 shoreline.addBreadcrumbPosition();
 shoreline.runBootstrapTooltips();
+shoreline.getEventFeed();
 
 // Detect breakpoint ResponsiveBootstrapToolkit
 var ResponsiveBootstrapToolkit = require('responsive-toolkit');

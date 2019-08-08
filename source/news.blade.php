@@ -92,6 +92,12 @@
 
 @section('content')
 <h1>News</h1>
+
+
+<table class="ou-event-feed">
+    <tr><td><a href="../resources/json/trumba.json">Loading...</a></td></tr>
+  </table>
+
  
     @include('_partials.article', [
     'class' => 'news-article-stacked',
