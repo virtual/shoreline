@@ -16,10 +16,7 @@ table.standard-table { width: 100%;}
 th small { line-height: 1.3; display: inline-block;}
 .responsive-table {
   width: 100%;
-  margin-bottom: 1.5em;
-  // th, td {
-  //   border-bottom: 0;
-  // }
+  margin-bottom: 1.5em; 
 }
 @media (min-width: 48em) {
   .responsive-table {
@@ -162,11 +159,6 @@ th small { line-height: 1.3; display: inline-block;}
 }
 .responsive-table tbody td {
   text-align: right;
-}
-@media (min-width: 30em) {
-  .responsive-table tbody td {
-    // border-bottom: 1px solid #006c68;
-  }
 }
 @media (min-width: 48em) {
   .responsive-table tbody td {

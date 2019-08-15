@@ -14,11 +14,7 @@ main .slick-slider ul li:before { content: none; }
     -ms-touch-action: pan-y;
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
-    clear:both;
-    // width: 100%; 
-    // max-width: 100%;
-    //max-height: 100vh;
-    // flex-direction: row;
+    clear:both; 
     ul, li {
       list-style-type:none;
       li { 
@@ -88,13 +84,7 @@ main .slick-slider ul li:before { content: none; }
     }
 }
 .slick-slide {
-    float: left;    
-    // display:inline;
-    // max-width: 1170px;
-    // max-height: 450px; 
-    // overflow: hidden;
-    // height: 100%;
-    // width:100%;
+    float: left;     
     min-height: 1px;
     [dir="rtl"] & {
         float: right;
@@ -132,27 +122,7 @@ main .slick-slider ul li:before { content: none; }
 .slick-arrow.slick-hidden {
     display: none;
 }
-
-
-  
-
-// .content-feature {
-  
-//   &.slick-slider {     
-//     padding: 0 25px;
-//     margin: 0 25px;}
-// }
-
-
-// .slick-slider {
-//   .slick-prev, .slick-next { 
-//     z-index:3; 
-//     width: 3rem;
-//     &:before { font-size: 3rem;}
-//   }
-//   .slick-prev { left: -1rem;}
-//   .slick-next { right: -1rem;} 
-// }
+ 
 
 .slick-slider>div>.caption,.slick-slider>div{display:none;opacity:0}
 .slick-slider>div:first-child{display:block;}
@@ -170,43 +140,8 @@ main .slick-slider ul li:before { content: none; }
 .slick-slider .slick-dots li.slick-active button:before  { opacity: 1; }
 // end Correct for quote slide
 
-@media (min-width: 768px) {
-  .simple-slickslider {
-    // max-height:500px;
-  }
-}
-
 .slick-slider.carousel-slider .slick-dots { position: relative; }
-.slick-slider.carousel-slider .carousel-feature-text {
-
-}
-
-
-// .slick-arrow .fas {
-//   color: #062598;
-//   font-size: 2rem;
-//   position: relative;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   text-align:center;
-// }
-// .slick-arrow.slick-prev .fas{ left: -2px;}
-// .slick-arrow.slick-next .fas{ right: -2px;}
-// .slick-prev:before, .slick-next:before { content: none !important; }
-// .slick-slider .slick-arrow { width: 3rem; height: 3rem; border-radius: 50%;
-//   border: 1px solid #062598; background:rgba(49, 64, 125, 0.41);
-//   opacity: .3;
-//   transition: background cubic-bezier(0.65, 0.05, 0.36, 1) .2s;
-// }
-//   .slick-slider .slick-arrow:hover {
-//     opacity: 1;
-//     background: rgba(24, 30, 53, 1) !important;
-//     border: 1px solid #fff; 
-//     .fas { color:#fff;}
-//   }
-  
-
+ 
 .simple-slickslider {
   padding:0;
   padding-bottom: 1.5rem;
