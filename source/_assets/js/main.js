@@ -247,10 +247,14 @@ var shoreline = {
     // The printed layout of the HTML for the events
     function printCal(data, container) {
       var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+      var showLocation = false;
 
       data.forEach(dataEl => {
         var timeStr = getTime(new Date(dataEl.startDateTime)) + " - " + getTime(new Date(dataEl.endDateTime));
         if (timeStr === '0:00am - 0:00am') { timeStr = "All day"; }
+
+        var locationStr = '';
+        if (showLocation) { locationStr = '<span class="callocation">' + dataEl.location + '</span>'; }
 
         container.find('.row').append(
                     
@@ -261,9 +265,9 @@ var shoreline = {
           '</span></div></div>	<div class="event-content"><h4>' + 
           '<a href="' + dataEl.permaLinkUrl + '">' + 
           dataEl.title + '</a></h4>    <p><span class="caltime">' + 
-          timeStr + '<br></span><span class="callocation">' + 
-          dataEl.location + // Campus-wide
-          '</span>    </p>	</div></div></div>'
+          timeStr + '<br></span>' + 
+          locationStr +
+          '</p>	</div></div></div>'
           
           )
       });
