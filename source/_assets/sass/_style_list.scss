@@ -74,7 +74,7 @@ main, .sectional, .content-container {
     z-index: -99;
     overflow: hidden;
     background-color: #fff;
-    color: #000;
+    color: $text-black;
     content: counter(li-counter);
     counter-increment: li-counter;
     text-align: right;
@@ -109,7 +109,7 @@ main, .sectional, .content-container {
       left:auto;
       top: auto;
       position: relative;
-      color:#000;
+      color: $text-black;
     }
 
     
@@ -195,7 +195,7 @@ ul.icon-box li:before {
 }
 .large-list {
   font-size: 1.5rem;
-  color:#000;
+  color: $text-black;
   li, li p { color: inherit; } // Black text shown on large features
 }
 main ol.large-list li:before {
@@ -318,7 +318,7 @@ ul.list-unstyled, ol.list-unstyled, %list-unstyled {
     z-index: -99;
     overflow: hidden;
     background-color: #fff;
-    color: #000;
+    color: $text-black;
     content: counter(li-counter);
     counter-increment: li-counter;
     text-align: right;

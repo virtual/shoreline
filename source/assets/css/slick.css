@@ -146,7 +146,7 @@ main .slick-slider ul li:before {
 }
 
 .slick-slider .slick-dots li button:before, .slick-slider .slick-dots li.slick-active button:before {
-  color: #000;
+  color: rgba(17, 17, 17, 0.85);
 }
 
 .slick-slider .slick-dots li button:before {

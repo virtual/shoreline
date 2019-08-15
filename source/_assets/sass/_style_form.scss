@@ -92,7 +92,7 @@ input[type=radio] + label { color:#222; font-size: 19px; }
 input, input[type=checkbox]:checked + label,
 input[type=radio]:checked + label,
 label + input[type=checkbox]:checked,
-label + input[type=radio]:checked { font-weight: bold; color:#000;} 
+label + input[type=radio]:checked { font-weight: bold; color: $text-black;} 
 input::placeholder  { font-weight: normal; color: $text-midgray}
 }
 

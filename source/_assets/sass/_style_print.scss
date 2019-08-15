@@ -81,7 +81,7 @@
   h6 blockquote,
   pre {
       padding:0;
-      color: #000 !important;
+      color: $text-black !important;
       text-transform: none;
       font-style: normal;
       font-variant: normal;
@@ -112,7 +112,7 @@
       font-size: 13px;
   }
   p {
-    color:#000;
+    color: $text-black;
       font-size: 14px;
       font-weight: 400;
       line-height: 20px;
@@ -147,10 +147,10 @@
       .btn { font-size: 16px; background-color: #eee !important; }
     }
   }
-  button, .btn { text-align:center !important; border: 1px solid #000; font-size: 14px; text-decoration: none; color:#000; }
+  button, .btn { text-align:center !important; border: 1px solid #000; font-size: 14px; text-decoration: none; color: $text-black; }
   .accordion .btn-toggle:before { display:none; }
 
-  .btn-link { color:#000;}
+  .btn-link { color: $text-black; }
   .collapse {
     display: block;
 }
@@ -172,12 +172,13 @@
 
 // .content-header, #sectionals { padding-left: 10px; }
 .content-header, .content-header.bg-primary { 
-  color: #000; border-top:0; margin-top:0;
+  color: $text-black;
+  border-top:0; margin-top:0;
 }
 .bg-primary {
-  color: #000;
+  color: $text-black;
   background-color: transparent !important; 
-  ol, .btn, .btn-primary, .btn-secondary, .btn-tertiary, .btn-important { color:#000;}
+  ol, .btn, .btn-primary, .btn-secondary, .btn-tertiary, .btn-important { color: $text-black; }
 }
 
 }

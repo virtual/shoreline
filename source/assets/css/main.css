@@ -64,6 +64,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  color: rgba(17, 17, 17, 0.85);
 }
 
 html {
@@ -215,7 +216,7 @@ hr {
  */
 mark {
   background: #ff0;
-  color: #000;
+  color: rgba(17, 17, 17, 0.85);
 }
 
 /**
@@ -1937,7 +1938,7 @@ h2, h3, h4, h5, h6 {
 }
 
 .card-link h4 .btn, .card-link h3 .btn {
-  color: #000;
+  color: rgba(17, 17, 17, 0.85);
   font-weight: 600;
 }
 
@@ -2481,7 +2482,7 @@ main .card-links.card-links-compact a, .content-container .card-links.card-links
 }
 
 .accordion .accordion-header h1, .accordion .accordion-header h2, .accordion .accordion-header h3, .accordion .accordion-header h4, .accordion .accordion-header h5, .accordion .accordion-header h6 {
-  color: #000;
+  color: rgba(17, 17, 17, 0.85);
   margin: 0;
   padding: 0;
 }
@@ -2562,31 +2563,31 @@ main .card-links.card-links-compact a, .content-container .card-links.card-links
 }
 
 .dark {
-  color: #000;
+  color: rgba(17, 17, 17, 0.85);
 }
 
 .dark h1 {
-  color: #000;
+  color: rgba(17, 17, 17, 0.85);
 }
 
 .dark h2 {
-  color: #000;
+  color: rgba(17, 17, 17, 0.85);
 }
 
 .dark h3 {
-  color: #000;
+  color: rgba(17, 17, 17, 0.85);
 }
 
 .dark h4 {
-  color: #000;
+  color: rgba(17, 17, 17, 0.85);
 }
 
 .dark h5 {
-  color: #000;
+  color: rgba(17, 17, 17, 0.85);
 }
 
 .dark h6 {
-  color: #000;
+  color: rgba(17, 17, 17, 0.85);
 }
 
 .icon-watch:before {
@@ -2813,7 +2814,7 @@ p.gray.small, p.gray.medium, p.gray.large, ul.gray.small, ul.gray.medium, ul.gra
 }
 
 .contact-us-box h2 {
-  color: #000;
+  color: rgba(17, 17, 17, 0.85);
   font-size: 1.1875rem;
   line-height: 1.26;
 }
@@ -2838,7 +2839,7 @@ p.gray.small, p.gray.medium, p.gray.large, ul.gray.small, ul.gray.medium, ul.gra
 }
 
 .contact-us-box strong {
-  color: #000;
+  color: rgba(17, 17, 17, 0.85);
 }
 
 @media (min-width: 768px) {
@@ -3141,7 +3142,7 @@ blockquote cite, blockquote small {
 }
 
 blockquote cite strong, blockquote small strong {
-  color: #000;
+  color: rgba(17, 17, 17, 0.85);
 }
 
 blockquote:before {
@@ -3205,7 +3206,7 @@ blockquote:before {
 }
 
 .quote-feature figcaption strong {
-  color: #000;
+  color: rgba(17, 17, 17, 0.85);
 }
 
 .quote-feature-text.quote-feature-text-long blockquote, .quote-feature-text.quote-feature-text-long blockquote * {
@@ -3494,7 +3495,7 @@ label.custom-control-label {
 .custom-form label + input[type=checkbox]:checked,
 .custom-form label + input[type=radio]:checked {
   font-weight: bold;
-  color: #000;
+  color: rgba(17, 17, 17, 0.85);
 }
 
 .custom-form input::-webkit-input-placeholder {
@@ -3562,7 +3563,7 @@ table caption {
 }
 
 table tfoot {
-  color: #000;
+  color: rgba(17, 17, 17, 0.85);
   font-weight: 600;
 }
 
@@ -3601,7 +3602,7 @@ th small {
   height: 1px;
   width: 1px;
   overflow: hidden;
-  color: #000;
+  color: rgba(17, 17, 17, 0.85);
 }
 
 @media (min-width: 48em) {
@@ -3730,7 +3731,7 @@ th small {
 
 @media (min-width: 48em) {
   .responsive-table tbody th[scope="row"] {
-    color: #000;
+    color: rgba(17, 17, 17, 0.85);
     background-color: #fff;
     font-weight: bold;
     text-align: left;
@@ -4195,27 +4196,27 @@ main .breadcrumb ol, .sectional .breadcrumb ol, .content-container .breadcrumb o
 }
 
 .alert-primary h1, .alert-announcement h1 {
-  color: #000000;
+  color: rgba(17, 17, 17, 0.85);
 }
 
 .alert-primary h2, .alert-announcement h2 {
-  color: #000000;
+  color: rgba(17, 17, 17, 0.85);
 }
 
 .alert-primary h3, .alert-announcement h3 {
-  color: #000000;
+  color: rgba(17, 17, 17, 0.85);
 }
 
 .alert-primary h4, .alert-announcement h4 {
-  color: #000000;
+  color: rgba(17, 17, 17, 0.85);
 }
 
 .alert-primary h5, .alert-announcement h5 {
-  color: #000000;
+  color: rgba(17, 17, 17, 0.85);
 }
 
 .alert-primary h6, .alert-announcement h6 {
-  color: #000000;
+  color: rgba(17, 17, 17, 0.85);
 }
 
 .alert-secondary, .alert-warning {
@@ -5193,7 +5194,7 @@ main ol li:before, .sectional ol li:before, .content-container ol li:before {
   z-index: -99;
   overflow: hidden;
   background-color: #fff;
-  color: #000;
+  color: rgba(17, 17, 17, 0.85);
   content: counter(li-counter);
   counter-increment: li-counter;
   text-align: right;
@@ -5243,7 +5244,7 @@ main ol ol li:before, main ol ul li:before, main ul ol li:before, main ul ul li:
   left: auto;
   top: auto;
   position: relative;
-  color: #000;
+  color: rgba(17, 17, 17, 0.85);
 }
 
 ul.list-group li {
@@ -5328,7 +5329,7 @@ ul.icon-box li:before {
 
 .large-list {
   font-size: 1.5rem;
-  color: #000;
+  color: rgba(17, 17, 17, 0.85);
 }
 
 .large-list li, .large-list li p {
@@ -5490,7 +5491,7 @@ ul.list-unstyled li:before, ol.list-unstyled li:before, main .card-links li:befo
   z-index: -99;
   overflow: hidden;
   background-color: #fff;
-  color: #000;
+  color: rgba(17, 17, 17, 0.85);
   content: counter(li-counter);
   counter-increment: li-counter;
   text-align: right;
@@ -6088,7 +6089,7 @@ header#header {
 }
 
 .card-program-heading h2 {
-  color: #000;
+  color: rgba(17, 17, 17, 0.85);
   font-size: 1rem;
   font-weight: 600;
 }
@@ -6123,7 +6124,7 @@ header#header {
 
 .navmenu a {
   padding: 5px 10px;
-  color: #000;
+  color: rgba(17, 17, 17, 0.85);
   text-align: center;
   display: block;
 }
@@ -7620,7 +7621,7 @@ header#header {
   h6 blockquote,
   pre {
     padding: 0;
-    color: #000 !important;
+    color: rgba(17, 17, 17, 0.85) !important;
     text-transform: none;
     font-style: normal;
     font-variant: normal;
@@ -7649,7 +7650,7 @@ header#header {
     font-size: 13px;
   }
   p {
-    color: #000;
+    color: rgba(17, 17, 17, 0.85);
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
@@ -7678,13 +7679,13 @@ header#header {
     border: 1px solid #000;
     font-size: 14px;
     text-decoration: none;
-    color: #000;
+    color: rgba(17, 17, 17, 0.85);
   }
   .accordion .btn-toggle:before {
     display: none;
   }
   .btn-link {
-    color: #000;
+    color: rgba(17, 17, 17, 0.85);
   }
   .collapse {
     display: block;
@@ -7714,16 +7715,16 @@ header#header {
     margin: 0;
   }
   .content-header, .content-header.bg-primary {
-    color: #000;
+    color: rgba(17, 17, 17, 0.85);
     border-top: 0;
     margin-top: 0;
   }
   .bg-primary {
-    color: #000;
+    color: rgba(17, 17, 17, 0.85);
     background-color: transparent !important;
   }
   .bg-primary ol, .bg-primary .btn, .bg-primary .btn-primary, .bg-primary .btn-secondary, .bg-primary .btn-tertiary, .bg-primary .btn-important {
-    color: #000;
+    color: rgba(17, 17, 17, 0.85);
   }
 }
 

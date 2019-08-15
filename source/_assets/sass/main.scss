@@ -32,6 +32,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden; // prevent horizontal scroll on carousel arrows
+  color: $text-black;
 }
 html {
   font-size: 1rem; 

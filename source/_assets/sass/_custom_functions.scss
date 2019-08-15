@@ -41,7 +41,7 @@
 }
 @function set-heading-color($color) {
   @if (luminance($color) > .45) {
-    @return #000000; // Lighter backgorund, return dark color
+    @return rgba(17, 17, 17, .85); // Lighter backgorund, return dark color
   } @else {
     @return #ffffff; // Darker background, return light color
   }

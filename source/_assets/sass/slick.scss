@@ -162,7 +162,7 @@ main .slick-slider ul li:before { content: none; }
 .slick-slider .slick-dots li {
   margin:0;
 }
-.slick-slider .slick-dots li button:before, .slick-slider .slick-dots li.slick-active button:before {color: #000;}
+.slick-slider .slick-dots li button:before, .slick-slider .slick-dots li.slick-active button:before {color: rgba(17, 17, 17, .85);}
 .slick-slider .slick-dots li button:before {
   opacity: .3;
   font-size: 0.75rem; // needs extra tlc to get to the right size

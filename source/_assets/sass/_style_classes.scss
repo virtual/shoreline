@@ -1,8 +1,8 @@
 .primary { color: $primary;
   @include headings(1,6) { color: $primary; }
 }
-.dark { color: #000; 
-  @include headings(1,6) { color: #000; }
+.dark { color: $text-black; 
+  @include headings(1,6) { color: $text-black; }
 }
 
 .icon-watch:before { 
@@ -101,12 +101,12 @@ p, ul, dl, ol, div {
   margin-top: 1rem;
   margin-bottom: 1rem; 
   word-wrap: break-word; // for long links
-  h2 { color:#000; font-size: 1.1875rem; line-height: 1.26; }
+  h2 { color: $text-black; font-size: 1.1875rem; line-height: 1.26; }
   h3 { font-size: 1rem; line-height: 1.5; margin-top:2rem; margin-bottom:0; }
   dl, dd, dt, p, ul, ol, li, div { font-size: inherit;}
   dt { font-weight: 400; }
   p, dd { color: $text-midgray}
-  strong { color:#000; }
+  strong { color: $text-black; }
   // default to full width
 }
 

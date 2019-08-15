@@ -98,7 +98,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.6;
-  color: #000;
+  color: rgba(0, 0, 0, 0.85);
   text-align: left;
   background-color: #fff;
 }
@@ -2094,7 +2094,7 @@ select.form-control:focus::-ms-value {
   padding-bottom: 0.75rem;
   margin-bottom: 0;
   line-height: 1.37;
-  color: #000;
+  color: rgba(0, 0, 0, 0.85);
   background-color: transparent;
   border: solid transparent;
   border-width: 1px 0;
@@ -3245,7 +3245,7 @@ input[type="button"].btn-block {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
-  color: #000;
+  color: rgba(0, 0, 0, 0.85);
   text-align: left;
   list-style: none;
   background-color: #ffffff;
@@ -5492,7 +5492,7 @@ input[type="button"].btn-block {
 }
 
 .list-group-item-action:active {
-  color: #000;
+  color: rgba(0, 0, 0, 0.85);
   background-color: #e9ecef;
 }
 
@@ -6183,7 +6183,7 @@ button.close {
 
 .popover-body {
   padding: 0.5rem 0.75rem;
-  color: #000;
+  color: rgba(0, 0, 0, 0.85);
 }
 
 .carousel {
@@ -9423,7 +9423,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .text-body {
-  color: #000 !important;
+  color: rgba(0, 0, 0, 0.85) !important;
 }
 
 .text-muted {

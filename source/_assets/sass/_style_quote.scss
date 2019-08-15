@@ -11,7 +11,7 @@
       font-style: normal;  
       margin-top: .5rem;
       display: block;
-      strong { color: #000;}
+      strong { color: $text-black; }
     }
   }
   blockquote:before {
@@ -60,7 +60,7 @@
     top: auto;
   }
   figcaption { font-size: 1rem; color: $text-dark; line-height: 1.5 }
-  figcaption strong { color:#000; }
+  figcaption strong { color: $text-black; }
 }
 .quote-feature-text.quote-feature-text-long { 
   blockquote, blockquote * {
