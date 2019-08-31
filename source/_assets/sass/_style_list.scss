@@ -390,21 +390,23 @@ ul.list-unstyled, ol.list-unstyled, %list-unstyled {
   a.nav-link:hover { text-shadow: none; }
   .list-bulleted {
     dt:before {
-      background: $light;
+      background-color: $light;
     }
   }
   .list-bulleted.list-bulleted.list-ordered {
     dt:before {
       background-color: transparent;
       color: $light;
+      z-index: 0;
     }
   }
   ol li:before {
     background-color: transparent;
     color: $light;
+    z-index: 0;
   }
   ul li:before {
-    background: $light;
+    background-color: $light;
   }
   ol,
   ul {
@@ -419,8 +421,15 @@ ul.list-unstyled, ol.list-unstyled, %list-unstyled {
   ul.icon-x,
   ul.icon-box {
     li:before { 
-      background-image: url('../../resources/img/icons/inverse/list-check.svg');
+      background-color: transparent;
+      background-image: url('../../resources/img/icons/inverse/list-check.svg');      
     }
+  }
+  ul.icon-x li:before { 
+    background-image: url('../../resources/img/icons/inverse/times.svg');      
+  }
+  ul.icon-box li:before { 
+    background-image: url('../../resources/img/icons/inverse/square-o.svg');      
   }
   .large-list {
     color: $light;

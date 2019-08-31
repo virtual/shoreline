@@ -27,7 +27,7 @@
 @endsection
 
 @section('sectionals')
-<section class="sectional section1 sectional-padded theme-04">
+<section class="sectional section1 sectional-padded theme-01 sectional-inverted bg-primary">
     <div class="container-fluid">
 
 
@@ -40,6 +40,9 @@
 <p style="text-align: left;">
    <!-- Three Column List -->
 </p>
+
+
+@include('_partials.lists')
 
 <div class="row">
    <div class="col-md-4">
