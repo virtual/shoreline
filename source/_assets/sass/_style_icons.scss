@@ -16,7 +16,11 @@
     margin: 0 auto;
     display:block;
     text-align: center;
+    color: $primary;
     img { height: 80px; width: auto;}
+  }
+  .fa-icon {
+    font-size: 80px; 
   }
 }
 .featureicon-container { position: relative; z-index: 2;}

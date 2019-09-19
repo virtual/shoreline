@@ -132,7 +132,8 @@
         'heading' => '100+',
         'desc' => 'Transfer and professional/technical areas of study',
         'iconalt' => 'book',     
-        'icon' => './resources/img/icons/homepage/book.png',          
+        'fa' => 'fal fa-book',
+        'icon' => '',          
         'buttontext' => 'See all Programs',
         'link' => '#'
         ])
