@@ -24,12 +24,6 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-Bx4pytHkyTDy3aJKjGkGoHPt3tvv6zlwwjc3iqN7ktaiEMLDPqLSZYts2OjKcBx1" crossorigin="anonymous" />
   <noscript>
     <style>
-      .navbar-collapse,
-      .collapse,
-      .dropdown-menu {
-        display: block !important
-      }
-
       .subnav #submenu>ul ul {
         display: block;
       }
@@ -84,11 +78,11 @@
   @else
   <!-- INTERIOR TEMPLATE - Not program option template -->
   <div class="layout-master page-interior" id="maincontent">
-    @if (trim($__env->yieldContent('content-header-img'))) <div class="content-has-header-img">@else  <div class="content-no-header-img"> @endif
+    @if (trim($__env->yieldContent('content-header-img')) || trim($__env->yieldContent('content-header-carousel'))) <div class="content-has-header-img">@else  <div class="content-no-header-img"> @endif
     <!-- CONTENT HEADER ON -->
     @if (trim($__env->yieldContent('content-header'))) <!-- has content header -->
     @if (trim($__env->yieldContent('content-header-inverse'))) 
-    <div class="content-header bg-primary"> @else  <div class="content-header "> @endif
+    <div class="content-header bg-primary bg-inverted"> @else  <div class="content-header "> @endif
      <div class="container-fluid">
 
         <div class="breadcrumb" aria-label="breadcrumb">
@@ -106,6 +100,12 @@
               <div class="header-image-clip">
                 @yield('content-header-img')
               </div>
+            </div>
+            @endif
+
+            @if (trim($__env->yieldContent('content-header-carousel')))  
+            <div class="header-carousel">
+                @yield('content-header-carousel')
             </div>
             @endif
             

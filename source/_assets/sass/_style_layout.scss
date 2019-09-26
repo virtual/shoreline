@@ -85,7 +85,7 @@ body {
   }
   .program-option .content-header .header-info{
     display: block;
-    .header-content, .header-image { width: auto; flex: initial;}
+    .header-content, .header-image, .header-carousel { width: auto; flex: initial;}
   } 
   .program-option .content-container {
     min-height: 120px; 
@@ -129,7 +129,7 @@ body {
 @media (min-width: $screen-lg) {
   .content-has-header-img .content-header .header-info {
     display:flex; 
-    .header-content, .header-image { width: 50%; flex: 1; }
+    .header-content, .header-image, .header-carousel { width: 50%; flex: 1; }
   } 
   .content-has-header-img .content-header {
     .breadcrumb { width:50%; }
@@ -209,6 +209,8 @@ body {
 .homepage #maincontent+#sectionals { margin-top:0;}
 .program-option p.lead { margin-top: 1rem;}
 
+.header-carousel { margin-top: 1rem; }
+
 @media (min-width: $screen-md) {
   .layout-has-sidebar .content-container { padding-right: 40px; }  
   .content-has-header-img .content-header { margin-bottom: 2.5rem; }
@@ -217,7 +219,7 @@ body {
   } 
   .page-interior .header-image {
       margin-bottom: -90px; // breadcrumb affects this distance
-  }
+  }  
 }
 @media (min-width: $screen-lg){
   .page-interior {border-top: 1rem solid $minty-green; padding-top: 0rem;}
@@ -225,6 +227,7 @@ body {
   .content-header {   margin-top: 0rem;   border-top: 1rem solid $minty-green; }
   .content-header.bg-primary {  border-top: 1rem solid #01685e;}
   .page-interior .content-header {   margin-top: -1rem;   }
+  .header-carousel { margin-top: 0; }
 }
 
 @media (min-width: $onecol) {
