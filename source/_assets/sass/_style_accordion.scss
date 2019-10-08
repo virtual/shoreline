@@ -68,7 +68,7 @@
 }
 
 // Trumba feed fix (don't affect print)
-@media screen {
+@media screen { 
   .accordion .collapse.show {
     visibility: visible;
   } 
@@ -76,7 +76,7 @@
     height: 0px;
     display: block;
     overflow:hidden;
-    visibility: hidden;
+    // visibility: hidden; // Needed for accessibility, set in JS for table-responsive.table-r1 to work
   }
 } 
 .bg-inverted, .sectional-inverted {

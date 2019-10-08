@@ -63,6 +63,9 @@
       font-size: 16px;
       line-height: 1.6;
   } 
+  .accordion .collapse:not(.show) {
+    visibility: visible !important; 
+  }
   main ul > li {
       margin-bottom: 5px;
   }
