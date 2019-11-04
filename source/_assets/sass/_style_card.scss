@@ -2,10 +2,10 @@
 .card {
   padding:0;
   background: #FFFFFF;
-  border: 1px solid rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.05); 
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.05);
   border-radius: 5px;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem; 
   p, dl, ol { font-size: 1rem; line-height: 1.5;
     a { font-size: 1rem;}
   }
@@ -21,7 +21,16 @@
 .card-title { font-size: 1.1875rem; }
 .card-text { font-size: 1rem;
   line-height: 1.5;     
-  color: #444; margin-bottom: 1rem; }
+  color: #444; margin-bottom: 1rem; 
+  *:last-child {
+    margin-bottom: 0; 
+  }
+}
+.card-body {
+  *:last-child {
+    margin-bottom: 0; 
+  }
+}
 .card-margin {  margin-bottom: 0; margin-top:1rem; } 
 .card-margin > .accordion { margin-top: -1rem;}
 .card-link {
@@ -159,8 +168,8 @@ main, .content-container, .sectional, * {
 }
 .card-image-container {border-top-left-radius: 5px; border-top-right-radius: 5px;}
 .card.image-card {  border-top: 1px solid rgba(0,0,0,0.05);}
-.card-body { 
-  padding: 1rem;}
+.card-body { padding: 1rem;}
+.row > [class*="col"] > .card .card-body { padding: 1rem 1rem .5rem 1rem; }
 .card.theme-primary {
   border-top: 5px solid $primary;
 }
@@ -204,6 +213,7 @@ main, .content-container, .sectional, * {
 @media (min-width: $screen-md) {
   .card-title { font-size: 1.5rem; }
   .card-body { padding: 2rem; }
+  .row > [class*="col"] > .card .card-body { padding: 2rem 2rem 1rem 2rem; }
   
   img.card-img-top {
     min-height: 100%;

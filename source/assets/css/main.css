@@ -1921,6 +1921,14 @@ h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
 }
 
+.card-text *:last-child {
+  margin-bottom: 0;
+}
+
+.card-body *:last-child {
+  margin-bottom: 0;
+}
+
 .card-margin {
   margin-bottom: 0;
   margin-top: 1rem;
@@ -2130,6 +2138,10 @@ main .card-links.card-links-compact a, .content-container .card-links.card-links
   padding: 1rem;
 }
 
+.row > [class*="col"] > .card .card-body {
+  padding: 1rem 1rem .5rem 1rem;
+}
+
 .card.theme-primary {
   border-top: 5px solid #00685e;
 }
@@ -2177,6 +2189,9 @@ main .card-links.card-links-compact a, .content-container .card-links.card-links
   }
   .card-body {
     padding: 2rem;
+  }
+  .row > [class*="col"] > .card .card-body {
+    padding: 2rem 2rem 1rem 2rem;
   }
   img.card-img-top {
     min-height: 100%;
