@@ -4076,6 +4076,28 @@ dl:after {
   margin-bottom: 0;
 }
 
+dl.list-border-none {
+  border-bottom: 0;
+}
+
+dl.list-border-none dt, dl.list-border-none dd {
+  border-top: 0;
+}
+
+dl.list-compact.list-inline dd {
+  padding: 0 0 .5rem;
+}
+
+dl.list-compact.list-inline dt {
+  padding: .5rem 0 0 0;
+}
+
+@media (min-width: 768px) {
+  dl.list-compact.list-inline dd, dl.list-compact.list-inline dt {
+    padding: .5rem 0;
+  }
+}
+
 .breadcrumb {
   background: none;
   padding: 0;

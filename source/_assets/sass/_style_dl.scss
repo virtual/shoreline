@@ -22,6 +22,8 @@ dl.list-inline {
     background-image:url('../../resources/img/icons/icons-overview.svg');
   } 
 
+
+
   [class*="icon-bg-"] {
     position:relative;
     padding-left: 3.1875rem; 
@@ -38,7 +40,6 @@ dl.list-inline {
   }
 }
 dl:after { content: ''; clear:both; display:block;}
-
 
 @media (min-width: $screen-md) {
   dl.list-inline {
@@ -87,4 +88,23 @@ dl:after { content: ''; clear:both; display:block;}
   dt {    color: $text-midgray;font-size: 1rem;
     line-height: 1.5; font-weight: 400; }
     dl { margin-bottom: 0;}
+}
+
+dl.list-border-none {
+  border-bottom: 0;
+  dt, dd { border-top: 0; }
+}
+dl.list-compact { 
+  &.list-inline {
+    dd {padding: 0 0 .5rem; }
+    dt { padding: .5rem 0 0 0;  }
+  }
+}
+
+@media (min-width: $screen-md) {
+  dl.list-compact {
+    &.list-inline {
+      dd, dt {padding: .5rem 0;  }
+    }
+  }
 }
