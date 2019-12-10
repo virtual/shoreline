@@ -2633,35 +2633,36 @@ main .card-links.card-links-compact a, .content-container .card-links.card-links
   border-left: 0;
   border-top: 0;
   border-bottom: 0;
-  display: inline-block;
+}
+
+a.more-arrow, ul.more-arrow > li a {
+  padding-right: 1.4rem !important;
+  display: block;
 }
 
 a.more-arrow:after, ul.more-arrow > li a:after {
   content: "";
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
-  background-image: url(../../resources/img/icons/arrow@3x.png);
-  background-position: center;
-  margin: 0 auto;
+  background-image: url(../../resources/img/icons/arrow-gap@3x.png);
+  background-position: 50% 70%;
   background-repeat: no-repeat;
   height: 1rem;
-  width: 1rem;
-  background-size: contain;
+  width: 1.4rem;
+  margin: 0 auto;
+  background-size: 1.2rem;
   border-right: 0;
   border-left: 0;
   border-top: 0;
   border-bottom: 0;
-  transform: rotate(0);
-  padding-left: 1rem;
-  margin-left: .5rem;
-  -webkit-transition: margin-left .15s ease-in-out, margin-right .15s ease-in-out;
-  transition: margin-left .15s ease-in-out, margin-right .15s ease-in-out;
-  margin-right: .62rem;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: background-position .15s ease-in-out, margin-left .15s ease-in-out, margin-right .15s ease-in-out;
+  transition: background-position .15s ease-in-out, margin-left .15s ease-in-out, margin-right .15s ease-in-out;
+  margin-right: -1.4rem;
+  display: inline-block;
 }
 
 a.more-arrow:hover:after, ul.more-arrow > li a:hover:after {
-  margin-left: .62rem;
-  margin-right: .5rem;
+  background-position: 100% 70%;
 }
 
 .clear {
