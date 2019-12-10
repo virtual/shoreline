@@ -167,6 +167,45 @@
 ])
 
 
+
+
+<div class="row">
+  <div class="col-12 col-sm-4">
+      @include('_partials.featureicon', [
+      'class' => 'featureicon-small',
+      'heading' => '100+',
+      'desc' => 'Transfer and professional/technical areas of study',
+      'iconalt' => 'book',     
+      'fa' => 'fal fa-book',
+      'icon' => '',          
+      'buttontext' => 'See all Programs',
+      'link' => '#'
+      ])
+
+  </div>
+  <div class="col-12 col-sm-4">
+      @include('_partials.featureicon', [
+      'heading' => '900+',
+      'desc' => 'International students from around the world',
+      'iconalt' => 'globe',     
+      'buttontext' => 'Join Us',
+      'link' => '#'
+      ])
+
+  </div>
+  <div class="col-12 col-sm-4">
+      @include('_partials.featureicon', [
+      'desc' => 'Scholarships awarded annually',
+      'iconalt' => 'badge',
+      'icon' => '/icons/homepage/badge.png',          
+      'buttontext' => 'Find Scholarships',
+      'link' => '#'
+      ])
+
+  </div>
+</div>
+
+
 @endsection
 
 

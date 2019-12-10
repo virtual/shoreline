@@ -14,6 +14,7 @@
   a.btn { color: $link-blue; font-weight: 400; font-size: 1.1875rem;  }
   .icon {
     margin: 0 auto;
+    margin-bottom: 1rem;
     display:block;
     text-align: center;
     color: $primary;
@@ -21,6 +22,14 @@
   }
   .fa-icon {
     font-size: 80px; 
+  }
+}
+.featureicon-small.featureicon {
+  .fa-icon { font-size: 40px; }
+  h3 { margin-top: .5rem; }
+  .icon {
+    margin-bottom: .5rem;
+    img { height: 40px; }
   }
 }
 .featureicon-container { position: relative; z-index: 2;}

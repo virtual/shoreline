@@ -144,7 +144,7 @@
         'heading' => '900+',
         'desc' => 'International students from around the world',
         'iconalt' => 'globe',          
-        'icon' => './resources/img/icons/homepage/globe.png',          
+        'icon' => '/icons/homepage/globe.png',          
         'buttontext' => 'Join Us',
         'link' => '#'
         ])
@@ -155,7 +155,7 @@
         'heading' => '140+',
         'desc' => 'Scholarships awarded annually',
         'iconalt' => 'badge',
-        'icon' => './resources/img/icons/homepage/badge.png',          
+        'icon' => '/icons/homepage/badge.png',          
         'buttontext' => 'Find Scholarships',
         'link' => '#'
         ])
@@ -173,7 +173,7 @@
         'heading' => '14.4m',
         'desc' => 'Average amount of financial air awarded annually',
         'iconalt' => 'dollar',     
-        'icon' => './resources/img/icons/homepage/dollar.png',          
+        'icon' => '/icons/homepage/dollar.png',          
         'buttontext' => 'Apply for Financial Aid',
         'link' => '#'
         ])
@@ -184,7 +184,7 @@
         'heading' => '178+',
         'desc' => 'Universities to which our students have transferred',
         'iconalt' => 'arrows',          
-        'icon' => './resources/img/icons/homepage/arrows.png',          
+        'icon' => '/icons/homepage/arrows.png',          
         'buttontext' => 'See Transfer Destinations',
         'link' => '#'
         ])
@@ -195,7 +195,7 @@
         'heading' => '60+',
         'desc' => 'Shows & events in the campus theater each year',
         'iconalt' => 'mask',
-        'icon' => './resources/img/icons/homepage/mask.png',          
+        'icon' => '/icons/homepage/mask.png',          
         'buttontext' => 'More about the Theater',
         'link' => '#'
         ])
