@@ -6,9 +6,6 @@
 @import "_custom_functions.scss"; 
  
 
-p {
-  color: $text-dark;
-}
 html {scroll-behavior: smooth;}
 .padded { padding: 3rem 0 2.5rem 0;} 
 img { 
@@ -55,9 +52,9 @@ html {
 
 p, ul, dl, ol {
   font-size: 1rem;
-    line-height: 1.5; 
+  line-height: 1.5; 
+  color: $text-dark;
 } 
-
 .contact-section {
   flex: none;
 } 

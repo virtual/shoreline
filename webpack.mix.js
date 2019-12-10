@@ -18,10 +18,10 @@ mix.js('source/_assets/js/main.js', 'js')
   // .sass('source/_assets/sass/slick-theme.scss', 'css/slick-theme.css')
   .sass('source/_assets/sass/bootstrap.scss', 'css/bootstrap.css')
   .options({ processCssUrls: false })
-//   .postCss('source/assets/css/main.css', 'css/main-support.css', [
-//     require('autoprefixer')({
-//         browsers: ['> .001%'],
-//         grid: false
-//     })
-// ])
+  .postCss('source/assets/css/main.css', 'css/main-support.css', [
+    require('autoprefixer')({
+        browsers: ['> .001%'],
+        grid: false
+    })
+])
     .version();
