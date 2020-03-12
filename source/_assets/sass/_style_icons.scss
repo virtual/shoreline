@@ -72,3 +72,9 @@
     line-height: 1;
   }
 }
+
+.icon-circle.icon-circle-small { 
+  background-color: transparent;
+  color: $primary;
+  padding: .5rem 0 .8rem .5rem;
+}
