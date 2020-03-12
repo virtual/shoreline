@@ -125,6 +125,10 @@ header .alert {position:relative;  margin-bottom: 0; min-height: 75px; }
   }
 }
 header .alert {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  .alert-content { padding-bottom: 1rem;}
+  .alert-content p:last-child { margin-bottom: 0; }
   .container-fluid { position: relative; 
     h2 { margin:0; padding-top: 2rem; }
   }
@@ -146,7 +150,7 @@ header .alert {
   float: right;
 }
 header .alert.dismissed {
-  padding-bottom: 1rem;
+  // padding-bottom: 1rem;
   .alert-content { display: none; }
 }
 header .alert.dismissed  {
