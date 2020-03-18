@@ -90,10 +90,10 @@
 
   <div class="fancy-list-item">
     <div class="fancy-list-icon">
-      <div class="icon-circle icon-circle-small"><span class="icon-content"><span class="fas fa-address-book"></span></span></div>
+      <div class="icon-circle"><span class="icon-content"><span class="fas fa-address-book"></span></span></div>
     </div>
     <div class="fancy-list-content">
-      <h2 class="h3">Apply</h2>
+      <h2>Apply</h2>
       <p> <strong>Apply for Admission</strong> to the college online and receive your Student Identification Number (SID)</p>
         <!-- sub -->
     </div>
@@ -101,10 +101,10 @@
 
   <div class="fancy-list-item">
       <div class="fancy-list-icon">
-        <div class="icon-circle icon-circle-small"><span class="icon-content">1</span></div>
+        <div class="icon-circle"><span class="icon-content">1</span></div>
       </div>
       <div class="fancy-list-content">
-        <h2 class="h3">Advising and Placement</h2>
+        <h2>Advising and Placement</h2>
         <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis reprehenderit quibusdam totam nisi
           maxime corporis quam minus nihil enim odio, corrupti iste. Ea minus perferendis veniam aliquam voluptate enim
           nisi? </p>
