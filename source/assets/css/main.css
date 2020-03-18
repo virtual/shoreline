@@ -5615,8 +5615,8 @@ ul.list-unstyled li:before, ol.list-unstyled li:before, main .card-links li:befo
 .fancy-list-smaller .fancy-list-item .fancy-list-icon .icon-circle {
   background-color: transparent;
   color: #00685e;
-  padding-top: .75rem;
-  padding-bottom: 5rem;
+  padding: .65rem 0 .5rem .5rem;
+  font-size: 1.35rem;
 }
 
 .fancy-list-smaller .fancy-list-item .fancy-list-content h2 {
@@ -5626,6 +5626,10 @@ ul.list-unstyled li:before, ol.list-unstyled li:before, main .card-links li:befo
 
 .fancy-list-item + .fancy-list-item {
   margin-top: 1rem;
+}
+
+.fancy-list-smaller .fancy-list-item + .fancy-list-item {
+  margin-top: 0;
 }
 
 .card-links.d-grid {
