@@ -34,6 +34,7 @@
 'hours' => 'show',
 'cols' => '2'
 ])
+
 @endsection
 
 @section('content')
@@ -53,6 +54,19 @@
 'style' => 'icons'
 ])
 
+@include('_partials.address', [
+'heading' => 'Make an Appointment',
+'style' => 'icons',
+'hours' => 'show',
+'map' => 'show'
+])
+
+@include('_partials.address', [ 
+'style' => 'icons',
+'hours' => 'show',
+'cols' => '2',
+'map' => 'show'
+])
 
 <div class="row">
   <div class="col-md-4">

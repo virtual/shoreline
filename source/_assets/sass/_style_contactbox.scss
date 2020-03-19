@@ -72,8 +72,8 @@
 @media (min-width: $screen-md) {
 
   // Center middle column with 'shrink-to-fit width'
-  #interior>.contact-us-box .content-block:nth-of-type(3n+2):nth-of-type(3n-1) {
-    // background: rgba(90, 90, 90, 0.185);
+  #interior>.contact-us-box .content-block:nth-of-type(3n+2):nth-last-child(2) {
+    background: rgba(0, 255, 0, 0.185);
     justify-content: center;
 
     a.btn {
@@ -84,7 +84,7 @@
   
 
     .content-block-interior {
-      // background: rgba(0, 255, 0, 0.185);
+      background: rgba(0, 255, 0, 0.185);
       padding-right: 0px;
       display: flex;
       flex-direction: column;
@@ -99,10 +99,14 @@
   }
 }
 @media (min-width: $screen-lg) {
-  #interior>.contact-us-box .content-block:nth-of-type(3n+2):nth-of-type(3n-1) {
+  #interior>.contact-us-box .content-block:nth-of-type(3n+2):nth-last-child(2) {
+    
     .content-block-interior {
-    // background: rgba(0, 255, 0, 0.185);
+    background: rgba(0, 255, 0, 0.185);
     padding-right: 30px;
+    }
+    &:last-of-type {
+      .content-block-interior { padding-right: 0; }
     }
   }
 }
@@ -155,3 +159,16 @@ dl.list-icons {
     float: left;
   }
 }
+ .flex-iframe {
+   position: relative;
+
+   padding-bottom: 67.5%;
+   height: 0;
+   margin-bottom: 1rem;
+   overflow: hidden;
+
+   iframe {
+     width: 100%;
+     height: auto;
+   }
+ }

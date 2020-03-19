@@ -76,8 +76,12 @@
     @endif
     <div class="content-block">
       <div class="content-block-interior">
+        @if((!empty($map)))
+          @include('_partials/map')
+        @else
         <a href="#"><img src="{{ $page->baseUrl }}/resources/img/news/studying-in-library_news-crop.jpg"
             alt="students"></a>
+          @endif
       </div>
     </div>
   </div>

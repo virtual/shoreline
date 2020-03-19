@@ -6,6 +6,7 @@
         </li>
         <li><a class="nav-link" href="{{ $page->baseUrl }}/components/index.html">Components</a></li>
         <li><a class="nav-link" href="{{ $page->baseUrl }}/cards/index.html">Cards</a></li>
+        <li><a class="nav-link" href="{{ $page->baseUrl }}/contact/index.html">Contact</a></li>
         <li><a class="nav-link" href="{{ $page->baseUrl }}/typography/index.html">Type</a></li>
         <li><a class="nav-link" href="{{ $page->baseUrl }}/lists/index.html">Lists</a></li>
         <li><a class="nav-link" href="{{ $page->baseUrl }}/success/index.html">Success</a></li>
