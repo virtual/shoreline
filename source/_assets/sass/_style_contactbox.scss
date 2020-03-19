@@ -124,6 +124,10 @@ dl.list-icons {
     left: 0;
     // background: #0f0;
     overflow: visible;
+    span {
+        width: 1rem;
+        text-align: center;
+    }
   }
 
   &>dd {

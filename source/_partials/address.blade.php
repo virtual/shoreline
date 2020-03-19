@@ -18,6 +18,8 @@
           <dd><a href="mailto:contact@shoreline.edu">contact@shoreline.edu</a></dd>
           <dt><span class="far fa-fax" aria-hidden="true"></span><span class="sr-only">Fax</span></dt>
           <dd>(206) 533-5101</dd>
+          <dt><span class="far fa-user" aria-hidden="true"></span><span class="sr-only">Contact</span></dt>
+          <dd>Sandy McNeil</dd>
           <dt><span class="fas fa-map-marker-alt" aria-hidden="true"></span><span class="sr-only">Location</span></dt>
           <dd><a href="#">FOSS (5000) Building</a></dd>
 

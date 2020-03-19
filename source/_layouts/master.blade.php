@@ -18,7 +18,7 @@
   <link rel="image_src" href="{{ $page->baseUrl }}/images/thumbnail.jpg" />
 
   <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/bootstrap.css">
-  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/main.css?v=2">
+  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/main.css?v=3">
   <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/slick.css">
   <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/slick-theme.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous" />

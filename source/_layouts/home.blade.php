@@ -17,8 +17,8 @@
   <meta property="og:locale" content="en_us" />
   <link rel="image_src" href="{{ $page->baseUrl }}/images/thumbnail.jpg" />
   <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/bootstrap.css">
-  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/main.css?v=2">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-Bx4pytHkyTDy3aJKjGkGoHPt3tvv6zlwwjc3iqN7ktaiEMLDPqLSZYts2OjKcBx1" crossorigin="anonymous" />
+  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/main.css?v=3">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous" />
   <noscript>
     <style>
       .subnav #submenu>ul ul {
