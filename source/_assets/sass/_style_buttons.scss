@@ -78,6 +78,7 @@ a.btn { text-decoration: none; }
   $btn-secondary: $primary;
   $btn-tertiary: $primary;
   
+  .btn-unstyled { color: #fff; }
   .btn-primary {
     background-color: #fff;
     color: $primary;

@@ -94,38 +94,6 @@ p, ul, dl, ol, div {
   &.small, &.medium, &.large { color: darken($text-lightgray, 10)}
   }
 }
-.contact-us-box {
-  border: solid 2px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  font-size: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem; 
-  word-wrap: break-word; // for long links
-  h2 { color: $text-black; font-size: 1.1875rem; line-height: 1.26; }
-  h3 { font-size: 1rem; line-height: 1.5; margin-top:2rem; margin-bottom:0; }
-  dl, dd, dt, p, ul, ol, li, div { font-size: inherit;}
-  dt { font-weight: 400; }
-  p, dd { color: $text-midgray}
-  strong { color: $text-black; }
-  // default to full width
-}
-
-@media (min-width: $screen-md) {
-  .contact-us-box {
-    &> h2 { width: 100%; clear:both; text-align: center; margin-top:0; }
-    .content-blocks { display:flex; flex-direction: row; margin-bottom: 0; 
-      .content-block { flex-grow:1; padding-right: .5rem; flex-basis: 33%;}
-      h3 { margin-top:0;}
-    }
-  
-  }
-}
-
-.address-sidebar > .contact-us-box, .col-md-4 > .contact-us-box, .sidebar-container .contact-us-box {
-  &> h2 { text-align: left; }
-  .content-blocks { flex-direction: column; }
-  .content-block { width: 100%; flex-basis: auto; } /* flex basis auto for ie 11 */
-}
 
 img.rounded { border-radius: 10px !important; }
 @media (min-width: $screen-md) {
