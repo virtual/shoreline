@@ -74,15 +74,20 @@
       </div>
     </div>
     @endif
-    <div class="content-block">
+    @if((!empty($map)))
+    <div class="content-block content-block-iframe">
       <div class="content-block-interior">
-        @if((!empty($map)))
-          @include('_partials/map')
-        @else
-        <a href="#"><img src="{{ $page->baseUrl }}/resources/img/news/studying-in-library_news-crop.jpg"
-            alt="students"></a>
-          @endif
+        @include('_partials/map')
       </div>
     </div>
+    @else
+    <div class="content-block">
+      <div class="content-block-interior">
+        <a href="#"><img src="{{ $page->baseUrl }}/resources/img/news/studying-in-library_news-crop.jpg"
+            alt="students"></a>
+      </div>
+    </div>
+    @endif
+
   </div>
 </div>

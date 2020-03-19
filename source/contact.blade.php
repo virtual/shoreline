@@ -42,7 +42,6 @@
 <h1>Contact Boxes</h1>
 
 @include('_partials.address', [
-'heading' => 'Make an Appointment',
 'style' => 'icons',
 'hours' => 'show',
 'cols' => '2'
@@ -55,7 +54,6 @@
 ])
 
 @include('_partials.address', [
-'heading' => 'Make an Appointment',
 'style' => 'icons',
 'hours' => 'show',
 'map' => 'show'
