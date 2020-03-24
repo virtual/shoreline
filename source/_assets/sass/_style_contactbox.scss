@@ -7,7 +7,9 @@
   margin-bottom: 1rem; 
   word-wrap: break-word; // for long links
   h2 { color: $text-black; font-size: 1.1875rem; line-height: 1.26; }
-  h3 { font-size: 1rem; line-height: 1.5; margin-top:2rem; margin-bottom:0; }
+  h3 { font-size: 1rem; line-height: 1.5; margin-top:2rem; 
+    // margin-bottom:0; 
+  }
   dl, dd, dt, p, ul, ol, li, div { font-size: inherit;}
   dt { font-weight: 400; }
   p, dd { color: $text-midgray}
@@ -60,7 +62,7 @@
   word-break: break-word;
 }
 
-.contact-us-box .content-block+.content-block {
+.contact-us-box .content-block {
   padding-top: 1rem;
 }
 
@@ -86,6 +88,7 @@
       justify-content: center;
       align-items: center;
     }
+    &.content-block-iframe .flex-video { width: 100%; }
   }
 
   #interior>.contact-us-box .content-block+.content-block {
