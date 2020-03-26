@@ -21,6 +21,7 @@
   }
 }
 
+
 @media (min-width: $screen-md) {
   .contact-us-box {
     &> h2 { width: 100%; clear:both; text-align: center; margin-top:0; }
@@ -216,3 +217,14 @@ dl.list-icons {
     padding: 20px 30px;
   }
 } 
+.content-block-interior { width: 100%; }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+  .contact-us-box-flex.contact-us-box .content-block {
+    display: block;
+  }
+  .address-sidebar > .contact-us-box, .col-md-4 > .contact-us-box, .sidebar-container .contact-us-box {
+    .content-blocks {
+      display: block;
+    }
+  }
+}
