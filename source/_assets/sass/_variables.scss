@@ -68,6 +68,8 @@ $grid-breakpoints: (
   xl: $screen-xl
 ) !default;
  
+// Where the layout wraps the sidebar under the main column
+$onecol: 1025px;
   
 // Grid containers
 //
