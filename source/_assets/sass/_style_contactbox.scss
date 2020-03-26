@@ -15,6 +15,10 @@
   p, dd { color: $text-midgray}
   strong { color: $text-black; }
   // default to full width
+  .content-block > *:first-child, .content-block-interior > *:first-child {
+    margin-top: 0;
+    padding-top: 0;
+  }
 }
 
 @media (min-width: $screen-md) {
@@ -55,11 +59,12 @@
     margin-top: .5rem;
   }
 }
-
 .contact-us-box .content-block {
+  word-break: break-word;
+}
+.contact-us-box.contact-us-box-flex .content-block {
   display: flex;
   align-items: center;
-  word-break: break-word;
 }
 
 .contact-us-box .content-block {
@@ -76,7 +81,7 @@
   }
 
   // Center middle column with 'shrink-to-fit width'
-  #interior>.contact-us-box .content-block:nth-of-type(3n+2):nth-last-child(2) {
+  #interior>.contact-us-box.contact-us-box-flex .content-block:nth-of-type(3n+2):nth-last-child(2) {
     // background: rgba(0, 255, 0, 0.185);
     justify-content: center;
 
@@ -92,13 +97,17 @@
   }
 
   // TODO: Work out top alignment for 3-col desktop
-  #interior>.contact-us-box .content-block+.content-block {
-    padding-top: 0;
-    padding-left: 1rem;
+  #interior>.contact-us-box .content-block {
+    // padding-top: 0;
+    // padding-left: 1rem;
+    // border-right: 1rem solid cyan;
+  }
+  #interior>.contact-us-box .content-block:last-child {
+    // border-right: 0;
   }
 }
 @media (min-width: $screen-lg) {
-  #interior>.contact-us-box .content-block:nth-of-type(3n+2):nth-last-child(2) {
+  #interior>.contact-us-box.contact-us-box-flex .content-block:nth-of-type(3n+2):nth-last-child(2) {
     
     .content-block-interior {
     // background: rgba(0, 255, 0, 0.185);
@@ -172,3 +181,38 @@ dl.list-icons {
     margin-top: 30px;
   } 
 }
+
+
+
+// border styling
+@media (min-width: $screen-md) {
+  #interior > .contact-us-box > .content-blocks .content-block {
+    padding: 20px 20px;
+    position: relative; 
+    // background-color: rgba(119, 66, 119, 0.1);
+  }
+  #interior>.contact-us-box > .content-blocks .content-block:first-child:after {
+    border-right: 0;
+  }
+
+  #interior>.contact-us-box > .content-blocks .content-block:after  {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    top: 25%;
+    left:0;
+    height: 50%;
+    border-right: 2px solid #dedede;
+  }
+  #interior>.contact-us-box > .content-blocks .content-block.content-block-iframe:after {
+    display: none;
+  }
+}
+@media (min-width: $screen-lg) {
+  #interior > .contact-us-box > .content-blocks .content-block {
+    padding: 20px 50px;
+  }
+  .layout-has-sidebar #interior > .contact-us-box > .content-blocks .content-block {
+    padding: 20px 30px;
+  }
+} 
