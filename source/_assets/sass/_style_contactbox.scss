@@ -188,7 +188,7 @@ dl.list-icons {
 // border styling
 @media (min-width: $screen-md) {
   #interior > .contact-us-box > .content-blocks .content-block {
-    padding: 20px 20px;
+    // padding: 20px 20px;
     position: relative; 
     // background-color: rgba(119, 66, 119, 0.1);
   }
@@ -210,6 +210,11 @@ dl.list-icons {
   }
 }
 @media (min-width: $screen-lg) {
+  #interior > .contact-us-box > .content-blocks .content-block {
+    padding: 20px 20px;
+  }
+}
+@media (min-width: $screen-xl) {
   #interior > .contact-us-box > .content-blocks .content-block {
     padding: 20px 50px;
   }
