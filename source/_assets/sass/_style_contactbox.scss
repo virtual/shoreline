@@ -15,7 +15,8 @@
   p, dd { color: $text-midgray}
   strong { color: $text-black; }
   // default to full width
-  .content-block > *:first-child, .content-block-interior > *:first-child {
+  .content-block > *:first-child, .content-block-interior > *:first-child,
+  .content-block-interior-content > *:first-child {
     margin-top: 0;
     padding-top: 0;
   }
@@ -27,7 +28,7 @@
     &> h2 { width: 100%; clear:both; text-align: center; margin-top:0; }
     .content-blocks { display:flex; flex-direction: row; margin-bottom: 0; 
       .content-block { flex-grow:1; flex-basis: 33%;}
-      h3 { margin-top:0;}
+      
     }
   
   }
@@ -94,7 +95,7 @@
       justify-content: center;
       align-items: center;
     }
-    &.content-block-iframe .flex-video { width: 100%; }
+    // &.content-block-iframe .flex-video { width: 100%; }
   }
 
   // TODO: Work out top alignment for 3-col desktop
@@ -107,16 +108,37 @@
     // border-right: 0;
   }
 }
+
+// Debug
+// .content-block {
+//   background-color: rgba(195, 219, 195, 0.4);
+//   box-shadow: 0px 0px 2px #000;
+// }
+// .content-block-interior {
+//   background: rgba(0, 255, 0, 0.185);
+
+//   .content-block-interior-content {
+//     background: rgba(0, 255, 0, 0.185);
+//   }
+// }
+#interior>.contact-us-box.contact-us-box-flex .content-block:nth-of-type(3n+2):nth-last-child(2) {
+  .content-block-interior {
+    // background: rgba(174, 74, 194, 0.185);
+    // padding-right: 30px;
+    }
+}
+
 @media (min-width: $screen-lg) {
+
   #interior>.contact-us-box.contact-us-box-flex .content-block:nth-of-type(3n+2):nth-last-child(2) {
     
     .content-block-interior {
-    // background: rgba(0, 255, 0, 0.185);
-    padding-right: 30px;
+    // background: rgba(174, 74, 194, 0.185);
+    // padding-right: 30px;
     }
-    &:last-of-type {
-      .content-block-interior { padding-right: 0; }
-    }
+    // &:last-of-type {
+    //   .content-block-interior { padding-right: 0; }
+    // }
   }
 }
 
@@ -173,15 +195,15 @@ dl.list-icons {
   }
 }
 
-.contact-us-box .content-block.content-block-iframe {
-  display: block;
-  height: 100%;
-} 
-@media (min-width: $screen-md) {
-  .contact-us-box .content-block.content-block-iframe {
-    margin-top: 30px;
-  } 
-}
+// .contact-us-box .content-block.content-block-iframe {
+//   display: block;
+//   height: 100%;
+// } 
+// @media (min-width: $screen-md) {
+//   .contact-us-box .content-block.content-block-iframe {
+//     margin-top: 30px;
+//   } 
+// }
 
 
 
@@ -205,11 +227,21 @@ dl.list-icons {
     height: 50%;
     border-right: 2px solid #dedede;
   }
-  #interior>.contact-us-box > .content-blocks .content-block.content-block-iframe:after {
+  // No border on last column
+  #interior>.contact-us-box > .content-blocks .content-block:last-child {
+    padding-left: 0;
+  }
+  #interior>.contact-us-box > .content-blocks .content-block:last-child:after {
     display: none;
   }
+  // #interior>.contact-us-box > .content-blocks .content-block.content-block-iframe:after {
+  //   display: none;
+  // }
 }
-@media (min-width: $screen-lg) {
+// .content-blocks .content-block {
+//   padding: 10px 0px;
+// }
+@media (min-width: $screen-md) {
   #interior > .contact-us-box > .content-blocks .content-block {
     padding: 20px 20px;
   }

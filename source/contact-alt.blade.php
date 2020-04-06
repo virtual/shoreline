@@ -226,12 +226,5 @@
 </div>
 
 
-@include('_partials.address', [
-'style' => 'icons',
-'hours' => 'show',
-'cols' => '2'
-])
-
- 
 
 @endsection

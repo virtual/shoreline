@@ -2002,13 +2002,6 @@ var ResponsiveBootstrapToolkit = __webpack_require__("./node_modules/responsive-
 
 /***/ }),
 
-/***/ "./source/_assets/sass/bootstrap.scss":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ "./source/_assets/sass/main.scss":
 /***/ (function(module, exports) {
 
@@ -2020,8 +2013,7 @@ var ResponsiveBootstrapToolkit = __webpack_require__("./node_modules/responsive-
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__("./source/_assets/js/main.js");
-__webpack_require__("./source/_assets/sass/main.scss");
-module.exports = __webpack_require__("./source/_assets/sass/bootstrap.scss");
+module.exports = __webpack_require__("./source/_assets/sass/main.scss");
 
 
 /***/ })

@@ -7717,7 +7717,8 @@ header#header {
   color: rgba(17, 17, 17, 0.85);
 }
 
-.contact-us-box .content-block > *:first-child, .contact-us-box .content-block-interior > *:first-child {
+.contact-us-box .content-block > *:first-child, .contact-us-box .content-block-interior > *:first-child,
+.contact-us-box .content-block-interior-content > *:first-child {
   margin-top: 0;
   padding-top: 0;
 }
@@ -7745,9 +7746,6 @@ header#header {
             flex-grow: 1;
     -ms-flex-preferred-size: 33%;
         flex-basis: 33%;
-  }
-  .contact-us-box .content-blocks h3 {
-    margin-top: 0;
   }
 }
 
@@ -7838,18 +7836,6 @@ header#header {
         -ms-flex-align: center;
             align-items: center;
   }
-  #interior > .contact-us-box.contact-us-box-flex .content-block:nth-of-type(3n+2):nth-last-child(2).content-block-iframe .flex-video {
-    width: 100%;
-  }
-}
-
-@media (min-width: 992px) {
-  #interior > .contact-us-box.contact-us-box-flex .content-block:nth-of-type(3n+2):nth-last-child(2) .content-block-interior {
-    padding-right: 30px;
-  }
-  #interior > .contact-us-box.contact-us-box-flex .content-block:nth-of-type(3n+2):nth-last-child(2):last-of-type .content-block-interior {
-    padding-right: 0;
-  }
 }
 
 dl.list-icons {
@@ -7910,17 +7896,6 @@ dl.list-icons > dd {
   float: left;
 }
 
-.contact-us-box .content-block.content-block-iframe {
-  display: block;
-  height: 100%;
-}
-
-@media (min-width: 768px) {
-  .contact-us-box .content-block.content-block-iframe {
-    margin-top: 30px;
-  }
-}
-
 @media (min-width: 768px) {
   #interior > .contact-us-box > .content-blocks .content-block {
     position: relative;
@@ -7937,12 +7912,15 @@ dl.list-icons > dd {
     height: 50%;
     border-right: 2px solid #dedede;
   }
-  #interior > .contact-us-box > .content-blocks .content-block.content-block-iframe:after {
+  #interior > .contact-us-box > .content-blocks .content-block:last-child {
+    padding-left: 0;
+  }
+  #interior > .contact-us-box > .content-blocks .content-block:last-child:after {
     display: none;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #interior > .contact-us-box > .content-blocks .content-block {
     padding: 20px 20px;
   }
