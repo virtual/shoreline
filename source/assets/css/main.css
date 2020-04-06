@@ -4020,6 +4020,45 @@ dl.list-compact.list-inline dt {
   }
 }
 
+dl.list-icons {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+dl.list-icons > dt {
+  width: 1rem;
+  margin-right: 1rem;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  position: relative;
+  height: 0;
+  top: 0;
+  left: 0;
+  overflow: visible;
+}
+
+dl.list-icons > dt span {
+  width: 1rem;
+  text-align: center;
+}
+
+dl.list-icons > dd {
+  width: 100%;
+  margin-left: 2rem;
+  position: relative;
+}
+
 .breadcrumb {
   background: none;
   padding: 0;
@@ -7792,10 +7831,6 @@ header#header {
   margin-top: .5rem;
 }
 
-.contact-us-box .content-block {
-  word-break: break-word;
-}
-
 .contact-us-box.contact-us-box-flex .content-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7807,6 +7842,7 @@ header#header {
 
 .contact-us-box .content-block {
   padding-top: 1rem;
+  word-break: break-word;
 }
 
 @media (min-width: 768px) {
@@ -7836,45 +7872,6 @@ header#header {
         -ms-flex-align: center;
             align-items: center;
   }
-}
-
-dl.list-icons {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-dl.list-icons > dt {
-  width: 1rem;
-  margin-right: 1rem;
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-  position: relative;
-  height: 0;
-  top: 0;
-  left: 0;
-  overflow: visible;
-}
-
-dl.list-icons > dt span {
-  width: 1rem;
-  text-align: center;
-}
-
-dl.list-icons > dd {
-  width: 100%;
-  margin-left: 2rem;
-  position: relative;
 }
 
 .contact-hours {

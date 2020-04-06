@@ -108,3 +108,31 @@ dl.list-compact {
     }
   }
 }
+
+// Contact box icons
+dl.list-icons {
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &>dt {
+    width: 1rem;
+    margin-right: 1rem;
+    flex-grow: 0; 
+    position: relative;
+    height: 0;
+    top: 0;
+    left: 0; 
+    overflow: visible;
+    span {
+        width: 1rem;
+        text-align: center;
+    }
+  }
+  &>dd {
+    width: 100%;
+    margin-left: 2rem;
+    position: relative;
+  }
+}
