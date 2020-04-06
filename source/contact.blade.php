@@ -42,6 +42,15 @@
 <h1>Contact Boxes</h1>
 <p>View alternate styles for <a href="{{ $page->baseUrl }}/contact-alt">legacy contact us snippets.</a></p>
 
+
+
+@include('_partials.address', [
+'heading' => 'Make an Appointment',
+'style' => 'icons',
+'zoom' => 'true'
+])
+
+
 @include('_partials.address', [
 'style' => 'icons',
 'hours' => 'show',

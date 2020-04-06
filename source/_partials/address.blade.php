@@ -70,12 +70,26 @@
     <div class="content-block">
       <div class="content-block-interior">
         <div class="content-block-interior-content">
+
+          @if((!empty($zoom)) && ($zoom = 'true'))
+          <h3>Zoom Video Chat</h3>
+          <dl class="list-icons">
+            <dt><span class="far fa-video" aria-hidden="true"></span><span class="sr-only">Link</span></dt>
+            <dd><a class="fa-link-external" href="#">CEO Welcome Desk</a></dd>
+            <dt><span class="far fa-clock" aria-hidden="true"></span><span class="sr-only">Hours</span></dt>
+            <dd>10am - 2pm</dd>
+            <dt class="unformatted"></dt>
+            <dd><strong>ID:</strong> 528 531 4797</dd> 
+          </dl> 
+          @else
+
           <ul class="list-unstyled"> 
             <li><a href="#">Department Directory</a></li>
             <li><a href="#">Campus Directory</a></li>
             <li><a class="btn btn-sm btn-secondary" href="#">Visit Campus</a></li>
             <li><a class="btn btn-sm btn-primary" href="#">Get Started</a> </li>
           </ul>
+          @endif
         </div>
       </div>
     </div>
