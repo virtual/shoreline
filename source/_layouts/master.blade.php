@@ -63,7 +63,7 @@
          </main>
 
           <div id="sidebar-nav" class="sidebar-container overview">
-            <nav>
+            <nav aria-label="Overview Navigation">
               <a class="sr-only show-on-focus" href="#sectionals">Skip Navigation</a>
               @yield('overview-nav')
             </nav>
@@ -138,7 +138,7 @@
                 
         <!-- if left nav -->
         @if (trim($__env->yieldContent('left-nav')))
-        <nav class="left-nav">
+        <nav class="left-nav" aria-label="Section Navigation">
           <a class="sr-only show-on-focus" href="#interior">Skip Navigation</a>
           @yield('left-nav')
         </nav>

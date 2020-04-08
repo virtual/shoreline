@@ -8,6 +8,6 @@
     </span>
     <label for="search2"><span class="sr-only">Enter search terms</span>
     <input id="search2" type="search" name="EnterSearch" class="entersearch form-control border-left-0 border" placeholder="Search"
-      value=""></label>
+      value="" autocomplete="on"></label>
   </div>
 </form>
