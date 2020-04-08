@@ -115,6 +115,7 @@ dl.list-icons {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 0; // for multiple use of of dl
 
   &>dt {
     width: 1rem;
@@ -135,4 +136,7 @@ dl.list-icons {
     margin-left: 2rem;
     position: relative;
   }
+}
+dl.contact-hours dd {
+  margin-bottom: .25rem;
 }
