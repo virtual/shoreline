@@ -459,8 +459,41 @@ var shoreline = {
   },
   runBootstrapTooltips: function() {
     $('[data-toggle="tooltip"]').tooltip()
+  },
+  contactListDynamicHours: function () {
+    // Update to only expand the clicked hours
+    // Add slide?
+    function showTodayHours() {
+      var btn = '<button title="Expand to view all days" type="button" class="btn btn-link contact-hours-expand py-0 text-dark"><span class="fas fa-caret-down"></span><span class="sr-only">Expand</span></button>';
+      daysInWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+      $('.contact-hours dt').hide()
+      $('.contact-hours dd').hide();
+      $('.contact-hours').attr('aria-expanded', 'false'); 
+      var d = new Date();
+      var n = d.getDay()
+      var today = 'contact-hours-' + daysInWeek[n];
+      $('dd.' + today).append(btn);
+      $('.' + today).show();
+    }
+    function showAllHours(dl) {
+      $(dl).attr('aria-expanded', 'true');
+      $(dl.find('dt').slideDown(300));
+      $(dl.find('dd').slideDown(300));
+    }
+    // ready
+    showTodayHours();
+    $(".contact-hours-expand").click(function () {
+      var el = $(this).parents('.contact-hours');
+      $(el.find(".contact-hours-expand")).hide();
+      showAllHours(el);
+    });
+    // end ready
   }
 };
+
+
+
+
 
 shoreline.colorBox();
 if ( $( "#twitter-feed" ).length ) {
@@ -476,6 +509,9 @@ shoreline.twoColNav();
 shoreline.addBreadcrumbPosition();
 shoreline.runBootstrapTooltips();
 shoreline.getEventFeed();
+if ( $( ".contact-hours" ).length ) {
+  shoreline.contactListDynamicHours();
+} 
 
 // Detect breakpoint ResponsiveBootstrapToolkit
 var ResponsiveBootstrapToolkit = require('responsive-toolkit');

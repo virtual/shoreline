@@ -41,27 +41,24 @@
           <dl class="list-icons">
             <dt><span class="far fa-clock" aria-hidden="true"></span><span class="sr-only">Hours</span></dt>
             <dd>
-              <dl class="contact-hours">
-                <dt class="contact-hours-Monday" style="display: none;">Mon</dt>
-                <dd class="contact-hours-Monday" style="display: none;">8a - 5p</dd>
-                <dt class="contact-hours-Tuesday" style="display: none;">Tues</dt>
-                <dd class="contact-hours-Tuesday" style="display: none;">8a - 5p</dd>
-                <dt class="contact-hours-Wednesday" style="display: none;">Wed</dt>
-                <dd class="contact-hours-Wednesday" style="display: none;">8a - 5p</dd>
-                <dt class="contact-hours-Thursday" style="">Thurs</dt>
-                <dd class="contact-hours-Thursday" style="">8a - 5p<button type="button"
-                    class="btn btn-link contact-hours-expand py-0 text-dark"><span class="fas fa-caret-down"
-                      aria-hidden="true"></span><span class="sr-only">Expand</span></button></dd>
-                <dt class="contact-hours-Friday" style="display: none;">Fri</dt>
-                <dd class="contact-hours-Friday" style="display: none;">Closed</dd>
-                <dt class="contact-hours-Saturday" style="display: none;">Sat</dt>
-                <dd class="contact-hours-Saturday" style="display: none;">7a - 3p</dd>
-                <dt class="contact-hours-Sunday" style="display: none;">Sun</dt>
-                <dd class="contact-hours-Sunday" style="display: none;">Closed</dd>
-              </dl>
+               <dl class="contact-hours">
+                  <dt class="contact-hours-Monday">Mon</dt>
+                  <dd class="contact-hours-Monday">8a - 5p</dd>
+                  <dt class="contact-hours-Tuesday">Tues</dt>
+                  <dd class="contact-hours-Tuesday">8a - 5p</dd>
+                  <dt class="contact-hours-Wednesday">Wed</dt>
+                  <dd class="contact-hours-Wednesday">8a - 5p</dd>
+                  <dt class="contact-hours-Thursday">Thurs</dt>
+                  <dd class="contact-hours-Thursday">8a - 5p</dd>
+                  <dt class="contact-hours-Friday">Fri</dt>
+                  <dd class="contact-hours-Friday">Closed</dd>
+                  <dt class="contact-hours-Saturday">Sat</dt>
+                  <dd class="contact-hours-Saturday">7a - 3p</dd>
+                  <dt class="contact-hours-Sunday">Sun</dt>
+                  <dd class="contact-hours-Sunday">Closed</dd>
+               </dl>
             </dd>
-
-          </dl>
+         </dl>
           @endif
         </div>
       </div>
