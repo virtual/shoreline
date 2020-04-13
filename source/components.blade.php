@@ -13,6 +13,9 @@
 
 <h2>Steps for Planning your Payments</h2>
 @include('_partials.buttons')
+
+<p>Lorem ipsum dolor sit <abbr title="omniupdate">OU</abbr>, amet consectetur adipisicing elit. </p>
+
 @include('_partials.accordion')
 @include('_partials.nav-tab')
 @include('_partials.nav-tab')

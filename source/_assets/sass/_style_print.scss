@@ -181,5 +181,9 @@
   ol, .btn, .btn-primary, .btn-secondary, .btn-tertiary, .btn-important { color: $text-black; }
 }
 
+abbr[title]::after {
+  content: ' (' attr(title) ')';
+} 
+
 }
 /* end print */

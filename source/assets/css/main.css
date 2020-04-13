@@ -7536,6 +7536,10 @@ header#header {
   font-size: inherit;
 }
 
+abbr[title] {
+  text-decoration: none;
+}
+
 /* hero image banner */
 .interior-hero {
   position: relative;
@@ -8171,6 +8175,9 @@ header#header {
   }
   .bg-primary ol, .bg-primary .btn, .bg-primary .btn-primary, .bg-primary .btn-secondary, .bg-primary .btn-tertiary, .bg-primary .btn-important {
     color: rgba(17, 17, 17, 0.85);
+  }
+  abbr[title]::after {
+    content: " (" attr(title) ")";
   }
 }
 

@@ -138,10 +138,10 @@
                 
         <!-- if left nav -->
         @if (trim($__env->yieldContent('left-nav')))
-        <nav class="left-nav" aria-label="Section Navigation">
+        <div class="left-nav">
           <a class="sr-only show-on-focus" href="#interior">Skip Navigation</a>
           @yield('left-nav')
-        </nav>
+        </div>
         @endif
         <!-- end if left nav -->
 
