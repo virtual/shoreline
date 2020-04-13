@@ -30,7 +30,7 @@
                alt="Seattle International Film Festival Returns to Shoreline for Fourth Year"></a></div>
          <div class="article-info-container">
            <p class="datetime"><time datetime="May 22, 2019">May 22, 2019</time></p>
-           <h3><a
+           <h3 class="h4"><a
                href="https://news.shoreline.edu/2019/05/22/2019-seattle-international-film-festival-at-shoreline/">Seattle
                International Film Festival Returns to Shoreline for Fourth Year</a></h3>
            <p class="description">For the fourth consecutive year, the City of Shoreline and Shoreline Community
@@ -46,7 +46,7 @@
          </div>
          <div class="article-info-container">
            <p class="datetime"><time datetime="May 24, 2018">May 24, 2018</time></p>
-           <h3><a href="https://news.shoreline.edu/2018/05/24/siff-shoreline-2018/">Seattle International Film Festival
+           <h3 class="h4"><a href="https://news.shoreline.edu/2018/05/24/siff-shoreline-2018/">Seattle International Film Festival
                returns to Shoreline with 26 international films over nine days</a></h3>
            <p class="description">The City of Shoreline and Shoreline Community College are pleased to announce the
              Seattle International Film Festival (S...</p>
@@ -61,7 +61,7 @@
                alt="Local colleges collaborate to debut September 11 play at Erickson Theatre"></a></div>
          <div class="article-info-container">
            <p class="datetime"><time datetime="Nov 01, 2017">Nov 01, 2017</time></p>
-           <h3><a href="https://news.shoreline.edu/2017/11/01/steel-play-erickson-theatre-2017/">Local colleges
+           <h3 class="h4"><a href="https://news.shoreline.edu/2017/11/01/steel-play-erickson-theatre-2017/">Local colleges
                collaborate to debut September 11 play at Erickson Theatre</a></h3>
            <p class="description">Theatrum Orbis and a collective of theater and film artists from Shoreline Community
              College, Seattle Central College, a...</p>
@@ -82,7 +82,7 @@
                alt="Seattle International Film Festival Returns to Shoreline for Fourth Year"></a></div>
          <div class="article-info-container">
            <p class="datetime"><time datetime="May 22, 2019">May 22, 2019</time></p>
-           <h3><a
+           <h3 class="h4"><a
                href="https://news.shoreline.edu/2019/05/22/2019-seattle-international-film-festival-at-shoreline/">Seattle
                International Film Festival Returns to Shoreline for Fourth Year</a></h3>
            <p class="description">For the fourth consecutive year, the City of Shoreline and Shoreline Community College
@@ -98,7 +98,7 @@
          </div>
          <div class="article-info-container">
            <p class="datetime"><time datetime="May 24, 2018">May 24, 2018</time></p>
-           <h3><a href="https://news.shoreline.edu/2018/05/24/siff-shoreline-2018/">Seattle International Film Festival
+           <h3 class="h4"><a href="https://news.shoreline.edu/2018/05/24/siff-shoreline-2018/">Seattle International Film Festival
                returns to Shoreline with 26 international films over nine days</a></h3>
            <p class="description">The City of Shoreline and Shoreline Community College are pleased to announce the
              Seattle International Film Festival (S...</p>
@@ -113,7 +113,7 @@
                alt="Local colleges collaborate to debut September 11 play at Erickson Theatre"></a></div>
          <div class="article-info-container">
            <p class="datetime"><time datetime="Nov 01, 2017">Nov 01, 2017</time></p>
-           <h3><a href="https://news.shoreline.edu/2017/11/01/steel-play-erickson-theatre-2017/">Local colleges
+           <h3 class="h4"><a href="https://news.shoreline.edu/2017/11/01/steel-play-erickson-theatre-2017/">Local colleges
                collaborate to debut September 11 play at Erickson Theatre</a></h3>
            <p class="description">Theatrum Orbis and a collective of theater and film artists from Shoreline Community
              College, Seattle Central College, a...</p>
@@ -128,7 +128,7 @@
                alt="Jellyfish at Shoreline? 3-D Design class brings art into public spaces around campus"></a></div>
          <div class="article-info-container">
            <p class="datetime"><time datetime="Mar 14, 2016">Mar 14, 2016</time></p>
-           <h3><a href="https://news.shoreline.edu/2016/03/14/3-d-design-public-art-winter-2016/">Jellyfish at Shoreline?
+           <h3 class="h4"><a href="https://news.shoreline.edu/2016/03/14/3-d-design-public-art-winter-2016/">Jellyfish at Shoreline?
                3-D Design class brings art into public spaces around campus</a></h3>
            <p class="description">Members of the campus community may have noticed some new public art around campus,
              most visibly the archway just southw...</p>
@@ -144,7 +144,7 @@
          </div>
          <div class="article-info-container">
            <p class="datetime"><time datetime="Apr 01, 2015">Apr 01, 2015</time></p>
-           <h3><a
+           <h3 class="h4"><a
                href="https://news.shoreline.edu/2015/04/01/sculptor-jean-behnke-qa-talks-making-unreasonable-art-and-career-advice-for-art-students/">Sculptor
                Jean Behnke Q+A: Talks Making “Unreasonable” Art and Career Advice for Art Students</a></h3>
            <p class="description">Jean Behnke's exhibit, 'The Geisha and the Hawthorn Stump,' is on display in the
@@ -169,7 +169,7 @@
              alt="Seattle International Film Festival Returns to Shoreline for Fourth Year"></a></div>
        <div class="article-info-container">
          <p class="datetime"><time datetime="May 22, 2019">May 22, 2019</time></p>
-         <h3><a
+         <h3 class="h4"><a
              href="https://news.shoreline.edu/2019/05/22/2019-seattle-international-film-festival-at-shoreline/">Seattle
              International Film Festival Returns to Shoreline for Fourth Year</a></h3>
          <p class="description">For the fourth consecutive year, the City of Shoreline and Shoreline Community College
@@ -185,7 +185,7 @@
        </div>
        <div class="article-info-container">
          <p class="datetime"><time datetime="May 24, 2018">May 24, 2018</time></p>
-         <h3><a href="https://news.shoreline.edu/2018/05/24/siff-shoreline-2018/">Seattle International Film Festival
+         <h3 class="h4"><a href="https://news.shoreline.edu/2018/05/24/siff-shoreline-2018/">Seattle International Film Festival
              returns to Shoreline with 26 international films over nine days</a></h3>
          <p class="description">The City of Shoreline and Shoreline Community College are pleased to announce the
            Seattle International Film Festival (S...</p>
@@ -200,7 +200,7 @@
              alt="Local colleges collaborate to debut September 11 play at Erickson Theatre"></a></div>
        <div class="article-info-container">
          <p class="datetime"><time datetime="Nov 01, 2017">Nov 01, 2017</time></p>
-         <h3><a href="https://news.shoreline.edu/2017/11/01/steel-play-erickson-theatre-2017/">Local colleges
+         <h3 class="h4"><a href="https://news.shoreline.edu/2017/11/01/steel-play-erickson-theatre-2017/">Local colleges
              collaborate to debut September 11 play at Erickson Theatre</a></h3>
          <p class="description">Theatrum Orbis and a collective of theater and film artists from Shoreline Community
            College, Seattle Central College, a...</p>
@@ -215,7 +215,7 @@
              alt="Jellyfish at Shoreline? 3-D Design class brings art into public spaces around campus"></a></div>
        <div class="article-info-container">
          <p class="datetime"><time datetime="Mar 14, 2016">Mar 14, 2016</time></p>
-         <h3><a href="https://news.shoreline.edu/2016/03/14/3-d-design-public-art-winter-2016/">Jellyfish at Shoreline?
+         <h3 class="h4"><a href="https://news.shoreline.edu/2016/03/14/3-d-design-public-art-winter-2016/">Jellyfish at Shoreline?
              3-D Design class brings art into public spaces around campus</a></h3>
          <p class="description">Members of the campus community may have noticed some new public art around campus,
            most visibly the archway just southw...</p>
@@ -231,7 +231,7 @@
        </div>
        <div class="article-info-container">
          <p class="datetime"><time datetime="Apr 01, 2015">Apr 01, 2015</time></p>
-         <h3><a
+         <h3 class="h4"><a
              href="https://news.shoreline.edu/2015/04/01/sculptor-jean-behnke-qa-talks-making-unreasonable-art-and-career-advice-for-art-students/">Sculptor
              Jean Behnke Q+A: Talks Making “Unreasonable” Art and Career Advice for Art Students</a></h3>
          <p class="description">Jean Behnke's exhibit, 'The Geisha and the Hawthorn Stump,' is on display in the
@@ -296,7 +296,7 @@
     ])
   </div>
   <h2 id="link2">Link2</h2>
-  <h3>Feed</h3>
+  <h3 class="h4">Feed</h3>
   <div class="news-feed news-no-description news-no-date2">
       @include('_partials.article', [
       'heading' => 'Seven back-to-school tips for college students',
@@ -347,7 +347,7 @@
                 alt="Seattle International Film Festival Returns to Shoreline for Fourth Year"></a></div>
           <div class="article-info-container">
             <p class="datetime"><time datetime="May 22, 2019">May 22, 2019</time></p>
-            <h3><a
+            <h3 class="h4"><a
                 href="https://news.shoreline.edu/2019/05/22/2019-seattle-international-film-festival-at-shoreline/">Seattle
                 International Film Festival Returns to Shoreline for Fourth Year</a></h3>
             <p class="description">For the fourth consecutive year, the City of Shoreline and Shoreline Community
@@ -363,7 +363,7 @@
           </div>
           <div class="article-info-container">
             <p class="datetime"><time datetime="May 24, 2018">May 24, 2018</time></p>
-            <h3><a href="https://news.shoreline.edu/2018/05/24/siff-shoreline-2018/">Seattle International Film Festival
+            <h3 class="h4"><a href="https://news.shoreline.edu/2018/05/24/siff-shoreline-2018/">Seattle International Film Festival
                 returns to Shoreline with 26 international films over nine days</a></h3>
             <p class="description">The City of Shoreline and Shoreline Community College are pleased to announce the
               Seattle International Film Festival (S...</p>
@@ -378,7 +378,7 @@
                 alt="Local colleges collaborate to debut September 11 play at Erickson Theatre"></a></div>
           <div class="article-info-container">
             <p class="datetime"><time datetime="Nov 01, 2017">Nov 01, 2017</time></p>
-            <h3><a href="https://news.shoreline.edu/2017/11/01/steel-play-erickson-theatre-2017/">Local colleges
+            <h3 class="h4"><a href="https://news.shoreline.edu/2017/11/01/steel-play-erickson-theatre-2017/">Local colleges
                 collaborate to debut September 11 play at Erickson Theatre</a></h3>
             <p class="description">Theatrum Orbis and a collective of theater and film artists from Shoreline Community
               College, Seattle Central College, a...</p>
@@ -399,7 +399,7 @@
                 alt="Seattle International Film Festival Returns to Shoreline for Fourth Year"></a></div>
           <div class="article-info-container">
             <p class="datetime"><time datetime="May 22, 2019">May 22, 2019</time></p>
-            <h3><a
+            <h3 class="h4"><a
                 href="https://news.shoreline.edu/2019/05/22/2019-seattle-international-film-festival-at-shoreline/">Seattle
                 International Film Festival Returns to Shoreline for Fourth Year</a></h3>
             <p class="description">For the fourth consecutive year, the City of Shoreline and Shoreline Community College
@@ -415,7 +415,7 @@
           </div>
           <div class="article-info-container">
             <p class="datetime"><time datetime="May 24, 2018">May 24, 2018</time></p>
-            <h3><a href="https://news.shoreline.edu/2018/05/24/siff-shoreline-2018/">Seattle International Film Festival
+            <h3 class="h4"><a href="https://news.shoreline.edu/2018/05/24/siff-shoreline-2018/">Seattle International Film Festival
                 returns to Shoreline with 26 international films over nine days</a></h3>
             <p class="description">The City of Shoreline and Shoreline Community College are pleased to announce the
               Seattle International Film Festival (S...</p>
@@ -430,7 +430,7 @@
                 alt="Local colleges collaborate to debut September 11 play at Erickson Theatre"></a></div>
           <div class="article-info-container">
             <p class="datetime"><time datetime="Nov 01, 2017">Nov 01, 2017</time></p>
-            <h3><a href="https://news.shoreline.edu/2017/11/01/steel-play-erickson-theatre-2017/">Local colleges
+            <h3 class="h4"><a href="https://news.shoreline.edu/2017/11/01/steel-play-erickson-theatre-2017/">Local colleges
                 collaborate to debut September 11 play at Erickson Theatre</a></h3>
             <p class="description">Theatrum Orbis and a collective of theater and film artists from Shoreline Community
               College, Seattle Central College, a...</p>
@@ -445,7 +445,7 @@
                 alt="Jellyfish at Shoreline? 3-D Design class brings art into public spaces around campus"></a></div>
           <div class="article-info-container">
             <p class="datetime"><time datetime="Mar 14, 2016">Mar 14, 2016</time></p>
-            <h3><a href="https://news.shoreline.edu/2016/03/14/3-d-design-public-art-winter-2016/">Jellyfish at Shoreline?
+            <h3 class="h4"><a href="https://news.shoreline.edu/2016/03/14/3-d-design-public-art-winter-2016/">Jellyfish at Shoreline?
                 3-D Design class brings art into public spaces around campus</a></h3>
             <p class="description">Members of the campus community may have noticed some new public art around campus,
               most visibly the archway just southw...</p>
@@ -461,7 +461,7 @@
           </div>
           <div class="article-info-container">
             <p class="datetime"><time datetime="Apr 01, 2015">Apr 01, 2015</time></p>
-            <h3><a
+            <h3 class="h4"><a
                 href="https://news.shoreline.edu/2015/04/01/sculptor-jean-behnke-qa-talks-making-unreasonable-art-and-career-advice-for-art-students/">Sculptor
                 Jean Behnke Q+A: Talks Making “Unreasonable” Art and Career Advice for Art Students</a></h3>
             <p class="description">Jean Behnke's exhibit, 'The Geisha and the Hawthorn Stump,' is on display in the
@@ -486,7 +486,7 @@
               alt="Seattle International Film Festival Returns to Shoreline for Fourth Year"></a></div>
         <div class="article-info-container">
           <p class="datetime"><time datetime="May 22, 2019">May 22, 2019</time></p>
-          <h3><a
+          <h3 class="h4"><a
               href="https://news.shoreline.edu/2019/05/22/2019-seattle-international-film-festival-at-shoreline/">Seattle
               International Film Festival Returns to Shoreline for Fourth Year</a></h3>
           <p class="description">For the fourth consecutive year, the City of Shoreline and Shoreline Community College
@@ -502,7 +502,7 @@
         </div>
         <div class="article-info-container">
           <p class="datetime"><time datetime="May 24, 2018">May 24, 2018</time></p>
-          <h3><a href="https://news.shoreline.edu/2018/05/24/siff-shoreline-2018/">Seattle International Film Festival
+          <h3 class="h4"><a href="https://news.shoreline.edu/2018/05/24/siff-shoreline-2018/">Seattle International Film Festival
               returns to Shoreline with 26 international films over nine days</a></h3>
           <p class="description">The City of Shoreline and Shoreline Community College are pleased to announce the
             Seattle International Film Festival (S...</p>
@@ -517,7 +517,7 @@
               alt="Local colleges collaborate to debut September 11 play at Erickson Theatre"></a></div>
         <div class="article-info-container">
           <p class="datetime"><time datetime="Nov 01, 2017">Nov 01, 2017</time></p>
-          <h3><a href="https://news.shoreline.edu/2017/11/01/steel-play-erickson-theatre-2017/">Local colleges
+          <h3 class="h4"><a href="https://news.shoreline.edu/2017/11/01/steel-play-erickson-theatre-2017/">Local colleges
               collaborate to debut September 11 play at Erickson Theatre</a></h3>
           <p class="description">Theatrum Orbis and a collective of theater and film artists from Shoreline Community
             College, Seattle Central College, a...</p>
@@ -532,7 +532,7 @@
               alt="Jellyfish at Shoreline? 3-D Design class brings art into public spaces around campus"></a></div>
         <div class="article-info-container">
           <p class="datetime"><time datetime="Mar 14, 2016">Mar 14, 2016</time></p>
-          <h3><a href="https://news.shoreline.edu/2016/03/14/3-d-design-public-art-winter-2016/">Jellyfish at Shoreline?
+          <h3 class="h4"><a href="https://news.shoreline.edu/2016/03/14/3-d-design-public-art-winter-2016/">Jellyfish at Shoreline?
               3-D Design class brings art into public spaces around campus</a></h3>
           <p class="description">Members of the campus community may have noticed some new public art around campus,
             most visibly the archway just southw...</p>
@@ -548,7 +548,7 @@
         </div>
         <div class="article-info-container">
           <p class="datetime"><time datetime="Apr 01, 2015">Apr 01, 2015</time></p>
-          <h3><a
+          <h3 class="h4"><a
               href="https://news.shoreline.edu/2015/04/01/sculptor-jean-behnke-qa-talks-making-unreasonable-art-and-career-advice-for-art-students/">Sculptor
               Jean Behnke Q+A: Talks Making “Unreasonable” Art and Career Advice for Art Students</a></h3>
           <p class="description">Jean Behnke's exhibit, 'The Geisha and the Hawthorn Stump,' is on display in the
@@ -621,7 +621,7 @@
 <p class="text-center xl pt-3"><a href="#" class="more-arrow">View all News</a></p>
         <hr/>
         <h2 id="link3">Link3</h2>
-<h3>Feed</h3>
+<h3 class="h4">Feed</h3>
 <div class="news-feed news-no-description news-no-date2">
     @include('_partials.article', [
     'heading' => 'Seven back-to-school tips for college students',

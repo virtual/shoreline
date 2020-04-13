@@ -3,7 +3,9 @@
 }
 
 .news-article {
-  p.description { margin-bottom: 0; }
+  p.description { margin-bottom: 0; 
+    font-size: 1rem;
+  }
   .datetime {
     color: $text-midgray;
     font-size: 1rem;
@@ -38,10 +40,10 @@
       width: 100%;
     }
 
-    h3 {
-      font-size: 1.1875rem;
-      line-height: 1.68;
-    }
+    // h3 {
+    //   font-size: 1.1875rem;
+    //   line-height: 1.68;
+    // }
   }
 }
 
