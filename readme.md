@@ -21,6 +21,10 @@
 - `npm run prod`
 - Get CSS from assets/css/main-support.css
 - Comment lines 21-26 in webpack.mix.js (postCss)
+
+### Stylelinting
+- All .scss comments should be on their own line to prevent bugs
+- `npx stylelint source/_assets/sass/FILE.scss --fix` to autofix
  
 ## New Dev Environments
 
