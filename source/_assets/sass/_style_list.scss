@@ -136,12 +136,12 @@ ul.list-group li {
 }
 ul.list-inline li {
   text-indent: initial;
+  display: inline-block; 
   text-indent: 0; // ie
   padding:0;
   &:before { content: none;}
 }
 ul.list-inline.inline-list-padded li {
-  display: inline-block; 
   margin-right: 30px;
   margin-top: .5rem;
   margin-bottom: .5rem;
