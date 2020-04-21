@@ -18,14 +18,17 @@
         "laravel-mix": "^2.1.14",
         "node-cmd": "^3.0.0",
         "on-build-webpack": "^0.1.0",
+        "stylelint": "^13.3.3",
+        "stylelint-config-rational-order": "^0.1.2",
+        "stylelint-order": "^4.0.0",
         "webpack-watch": "^0.2.0",
         "yargs": "^4.6.0"
     },
     "dependencies": {
-        "bootstrap": "^4.3.1",
+        "bootstrap": "^4.4.1",
         "jquery-colorbox": "^1.6.4",
         "livereload": "^0.7.0",
         "responsive-toolkit": "^2.6.3",
-        "twitter-fetcher": "^18.0.2"
+        "twitter-fetcher": "^18.0.4"
     }
 }

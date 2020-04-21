@@ -2411,8 +2411,10 @@ main .card-links.card-links-compact a, .content-container .card-links.card-links
 @media (min-width: 768px) {
   .option-explore-nav .card-body ul {
     -webkit-column-count: 2;
+       -moz-column-count: 2;
             column-count: 2;
     -webkit-column-gap: 40px;
+       -moz-column-gap: 40px;
             column-gap: 40px;
   }
   .option-explore-nav li {
@@ -3455,7 +3457,7 @@ label.custom-control-label {
   color: #757575;
 }
 
-.custom-form input:-ms-input-placeholder {
+.custom-form input::-moz-placeholder {
   font-weight: normal;
   color: #757575;
 }
