@@ -26,13 +26,15 @@
 @include('_partials.address', [
 'heading' => 'Make an Appointment',
 'style' => 'icons',
-'hours' => 'show' 
+'hours' => 'show' ,
+'class' => 'contact-us-box-valign-center'
 ])
 
 @include('_partials.address', [ 
 'style' => 'icons',
 'hours' => 'show',
-'cols' => '2'
+'cols' => '2',
+'class' => 'contact-us-box-valign-center'
 ])
 
 @endsection
@@ -42,45 +44,93 @@
 <h1>Contact Boxes</h1>
 <p>View alternate styles for <a href="{{ $page->baseUrl }}/contact-alt">legacy contact us snippets.</a></p>
 
-
+<h2>Vertical Align Center</h2>
 
 @include('_partials.address', [
 'heading' => 'Make an Appointment',
 'style' => 'icons',
-'zoom' => 'true'
+'zoom' => 'true',
+'class' => 'contact-us-box-valign-center'
 ])
 
 
 @include('_partials.address', [
 'style' => 'icons',
 'hours' => 'show',
-'cols' => '2'
+'cols' => '2',
+'class' => 'contact-us-box-valign-center'
 ])
 
 
 @include('_partials.address', [
 'heading' => 'Make an Appointment',
-'style' => 'icons'
+'style' => 'icons',
+'class' => 'contact-us-box-valign-center'
 ])
 
 @include('_partials.address', [
 'style' => 'icons',
 'hours' => 'show',
-'map' => 'show'
+'map' => 'show',
+'class' => 'contact-us-box-valign-center'
 ])
 
 @include('_partials.address', [ 
 'style' => 'icons',
 'hours' => 'show',
 'cols' => '2',
-'map' => 'show'
+'map' => 'show',
+'class' => 'contact-us-box-valign-center'
 ])
+
+
+
+<h2>Top Align</h2>
+
+@include('_partials.address', [
+'heading' => 'Make an Appointment',
+'style' => 'icons',
+'zoom' => 'true',
+'class' => ''
+])
+
+
+@include('_partials.address', [
+'style' => 'icons',
+'hours' => 'show',
+'cols' => '2',
+'class' => ''
+])
+
+
+@include('_partials.address', [
+'heading' => 'Make an Appointment',
+'style' => 'icons',
+'class' => ''
+])
+
+@include('_partials.address', [
+'style' => 'icons',
+'hours' => 'show',
+'map' => 'show',
+'class' => ''
+])
+
+@include('_partials.address', [ 
+'style' => 'icons',
+'hours' => 'show',
+'cols' => '2',
+'map' => 'show',
+'class' => ''
+])
+
 
 <div class="row">
   <div class="col-md-4">
     @include('_partials.address', [ 
 'style' => 'icons', 
-'cols' => '2'
+'cols' => '2',
+'class' => 'contact-us-box-valign-center'
 ])
   </div>
   <div class="col-md-4">
@@ -113,7 +163,8 @@
     @include('_partials.address', [
     'heading' => 'Make an Appointment',
     'style' => 'icons',
-    'hours' => 'show'
+    'hours' => 'show',
+    'class' => 'contact-us-box-valign-center'
     ])
   </div>
 </div>

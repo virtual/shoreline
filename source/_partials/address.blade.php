@@ -1,4 +1,4 @@
-<div class="contact-us-box contact-us-box-flex">
+<div class="contact-us-box contact-us-box-flex {{$class}}">
   @if((!empty($heading)))
   <h2>{{ $heading }}</h2>
   @else
