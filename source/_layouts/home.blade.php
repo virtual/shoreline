@@ -8,6 +8,7 @@
 
   <meta name="theme-color" content="#00685e">
   <title>Shoreline Community College</title>
+  <meta name="description" content="Shoreline Community College...">
   <meta property="og:title" content="Shoreline Community College" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="images/thumbnail.jpg" />
@@ -98,7 +99,7 @@
     <div id="footer">
       @include('_partials/footer')
     </div>
-    <script src="{{ $page->baseUrl }}/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="{{ $page->baseUrl }}/assets/js/jquery-3.5.0.min.js"></script>
     <script src="{{ $page->baseUrl }}/assets/js/popper.min.js"></script>
     <script src="{{ $page->baseUrl }}/assets/js/bootstrap.min.js"></script>
     <script src="{{ $page->baseUrl }}/assets/js/main.js"></script>  
