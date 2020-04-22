@@ -194,7 +194,7 @@
     <div id="footer">
       @include('_partials/footer')
     </div>
-    <script src="{{ $page->baseUrl }}/assets/js/jquery-3.5.0.min.js"></script>
+    <script src="{{ $page->baseUrl }}/assets/js/jquery-3.4.1.min.js"></script>
     <script src="{{ $page->baseUrl }}/assets/js/popper.min.js"></script>
     <script src="{{ $page->baseUrl }}/assets/js/bootstrap.min.js"></script>
     <script src="{{ $page->baseUrl }}/assets/js/main.js"></script>
