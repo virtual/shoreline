@@ -125,7 +125,7 @@ jQuery(document).ready(function() {
 
   document.onkeydown = function(evt) {
     e = evt || window.event;    
-    console.log
+    // console.log
     if ((e.target).parentNode.classList.contains(('dropdown'))) {
       if (e.keyCode == 39 || e.keyCode == 40) {      
         (e.target).parentNode.classList.add('show');
@@ -236,7 +236,7 @@ var shoreline = {
           }
         })
       });
-      console.log(eventStr)
+      // console.log(eventStr)
       return eventStr;
     }
 
@@ -528,7 +528,7 @@ var ResponsiveBootstrapToolkit = require('responsive-toolkit');
   viewport.use('custom', visibilityDivs);
 
   var showBreakpoint = function() {
-      console.log('Current breakpoint: ', viewport.current());
+      // console.log('Current breakpoint: ', viewport.current());
   }
 
   // on resize
