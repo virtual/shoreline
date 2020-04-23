@@ -13,6 +13,9 @@ mix.webpackConfig({
 
 mix.js('source/_assets/js/main.js', 'js')
   // .js('source/_assets/js/slick-app.js', 'js')
+  // .sourceMaps()
+  .sourceMaps(productionToo = true, type = 'eval-source-map')
+  
   .sass('source/_assets/sass/main.scss', 'css/main.css')
   // .sass('source/_assets/sass/slick.scss', 'css/slick.css')
   // .sass('source/_assets/sass/slick-theme.scss', 'css/slick-theme.css')

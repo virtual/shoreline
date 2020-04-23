@@ -1,5 +1,16 @@
 {
-    "/js/main.js": "/js/main.js?id=f61760eeb990faa13eab",
-    "/css/main.css": "/css/main.css?id=6abe53e4060d43121c5e",
-    "/css/main-support.css": "/css/main-support.css?id=96ee580b030bda79707f"
+    "/js/main.js": "/js/main.js?id=3cdbbf28ab02266b552a",
+    "/css/main.css": "/css/main.css?id=31376330a33ad2192552",
+    "/css/slick.css": "/css/slick.css?id=2d184ead71246bb5278b",
+    "/css/slick-theme.css": "/css/slick-theme.css?id=838eb599d35ce08fc68b",
+    "/css/bootstrap.css": "/css/bootstrap.css?id=93cb36199074843ea9be",
+    "/css/main-support.css": "/css/main-support.css?id=4ba90eb47ff86a3bbbb6",
+    "/js/main.js.map": "/js/main.js.map?id=87de8a4fde66c6319019",
+    "/css/main.css.map": "/css/main.css.map?id=6746a3a074f3f1a7df59",
+    "/css/slick.css.map": "/css/slick.css.map?id=6d93aa6cac1579a721fe",
+    "/css/slick-theme.css.map": "/css/slick-theme.css.map?id=57fd8d31dcab6a11d24a",
+    "/css/bootstrap.css.map": "/css/bootstrap.css.map?id=6d00ebc710a47f0f3554",
+    "/css/main-support.css.map": "/css/main-support.css.map?id=758cbccf4c8f620547b1",
+    "/js/slick-app.js": "/js/slick-app.js?id=f4425bb6b304fd8052ea",
+    "/js/slick-app.js.map": "/js/slick-app.js.map?id=46a2db0567ba6a390396"
 }
