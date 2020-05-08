@@ -48,6 +48,16 @@ main .slick-slider ul li:before { content: none; }
         cursor: hand;
     }
 }
+.slick-slider .slick-arrow:focus,
+.carousel-slider .slick-dots li button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 89, 138, 0.7);
+}
+.bg-inverted, sectional-inverted {
+  .slick-slider .slick-arrow:focus,
+  .carousel-slider .slick-dots li button:focus {
+      box-shadow: 0 0 0 0.2rem $secondary;
+  }
+}
 .slick-slider .slick-track,
 .slick-slider .slick-list {
     -webkit-transform: translate3d(0, 0, 0);

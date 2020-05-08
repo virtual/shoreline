@@ -7247,8 +7247,8 @@ header#header {
 }
 
 .alert .btn-primary:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 116, 179, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(0, 116, 179, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 89, 138, 0.7);
+          box-shadow: 0 0 0 0.2rem rgba(0, 89, 138, 0.7);
 }
 
 .alert-secondary, .alert-warning {

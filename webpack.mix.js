@@ -17,7 +17,7 @@ mix.js('source/_assets/js/main.js', 'js')
   .sourceMaps(productionToo = true, type = 'eval-source-map')
   
   .sass('source/_assets/sass/main.scss', 'css/main.css')
-  // .sass('source/_assets/sass/slick.scss', 'css/slick.css')
+  .sass('source/_assets/sass/slick.scss', 'css/slick.css')
   // .sass('source/_assets/sass/slick-theme.scss', 'css/slick-theme.css')
   // .sass('source/_assets/sass/bootstrap.scss', 'css/bootstrap.css') // uncomment to recompile
   .options({ processCssUrls: false })

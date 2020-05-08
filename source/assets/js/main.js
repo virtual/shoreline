@@ -100,11 +100,19 @@ eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourc
 
 /***/ }),
 
+/***/ "./source/_assets/sass/slick.scss":
+/***/ (function(module, exports) {
+
+eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zb3VyY2UvX2Fzc2V0cy9zYXNzL3NsaWNrLnNjc3M/YWZjOSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsImZpbGUiOiIuL3NvdXJjZS9fYXNzZXRzL3Nhc3Mvc2xpY2suc2Nzcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIHJlbW92ZWQgYnkgZXh0cmFjdC10ZXh0LXdlYnBhY2stcGx1Z2luXG5cblxuLy8vLy8vLy8vLy8vLy8vLy8vXG4vLyBXRUJQQUNLIEZPT1RFUlxuLy8gLi9zb3VyY2UvX2Fzc2V0cy9zYXNzL3NsaWNrLnNjc3Ncbi8vIG1vZHVsZSBpZCA9IC4vc291cmNlL19hc3NldHMvc2Fzcy9zbGljay5zY3NzXG4vLyBtb2R1bGUgY2h1bmtzID0gMCJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./source/_assets/sass/slick.scss\n");
+
+/***/ }),
+
 /***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__("./source/_assets/js/main.js");
-module.exports = __webpack_require__("./source/_assets/sass/main.scss");
+__webpack_require__("./source/_assets/sass/main.scss");
+module.exports = __webpack_require__("./source/_assets/sass/slick.scss");
 
 
 /***/ })
