@@ -17,7 +17,7 @@ $(function () {
     arrows: true,
     dots: true,
     customPaging: function(slider, i) {
-      return $('<button aria-live="polite" type="button" />').text(i + 1);
+      return $('<button aria-live="polite" type="button" />').text('Slide ' + (i + 1));
     },
     cssEase: 'linear', 
     variableWidth: true,
@@ -74,7 +74,6 @@ $(function () {
     }
   }));
    
-
   $('.slick-slider.flex-items').slick({
     infinite: true,
     slidesToShow: 4,
