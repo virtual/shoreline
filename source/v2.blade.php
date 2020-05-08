@@ -19,8 +19,7 @@
 
 
 @section('left-nav')
-<nav role="navigation" aria-label="Section Navigation">
-    <h2 class="sr-only">Directory Navigation</h2>
+<nav role="navigation" aria-label="Section Navigation"> 
     <div class="list-wrapper">
 <ul class="nav nav-stacked">
     <li class="menu-heading">Future Students

@@ -18,21 +18,24 @@ $alert-warning: $shoreline-orange;
   &>*:last-child { margin-bottom: 0;}
 }
 .alert-primary, .alert-announcement {
-  background: $alert-announcement;
   color: set-text-color($alert-announcement);
+  background: $alert-announcement;
   @include headings(1, 6) {color: set-heading-color($alert-announcement);}
 }
+.alert {
+  .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 116, 179, .5);
+  }
+}
 .alert-secondary, .alert-warning {
-  background: $alert-warning;
   color: set-text-color($alert-warning);
+  background: $alert-warning;
   @include headings(1, 6) {color: set-heading-color($alert-warning);}  
 }
 .alert-warning{
   border-top: .5rem solid $shoreline-yellow;
 }
-@media (min-width: $screen-sm) {
- 
-  
+@media (min-width: $screen-sm) {  
   .alert.alert-padded {
     padding: 2.5rem;
     }
@@ -44,14 +47,15 @@ $alert-warning: $shoreline-orange;
 }
 
 header .alert, header .alert.alert-padded { 
-  border-radius: 0; border:0; padding-left:20px; padding-right:20px;}
+  border-radius: 0; 
+  border:0; 
+  padding-left:20px; 
+  padding-right:20px;
+}
 header .alert .dismiss-alert {
   position: absolute;
   right: 0;
-  top: 0;
-  // padding: 8px 10px;
-  // border: 2px solid transparent;
-  // background-color:  rgba(255, 255, 255, 1);
+  top: 0; 
   transition: background-color .2 ease-in-out;
   width: 163px;
   cursor: pointer;
@@ -59,8 +63,7 @@ header .alert .dismiss-alert {
   display: block;
   .fas.fa-times {
     margin-right: 2px;
-  }
-  // &:focus {  background-color:  rgba(255, 255, 255, .9);  }
+  } 
 }
 header .alert.alert-primary a {
   text-shadow: none;
@@ -76,8 +79,6 @@ header .alert .dismiss-alert:hover {
 header .alert {position:relative;  margin-bottom: 0; min-height: 75px; }
 /* shows with JS */
 // header .alert { display:none;}
-
-
 .dismissed-expand-message {
   background-image: url('../../resources/img/graphics/icon-alert-black.png');
   background-repeat: no-repeat;
@@ -100,7 +101,8 @@ header .alert {position:relative;  margin-bottom: 0; min-height: 75px; }
 }
 @media (min-width: 600px) {
   .dismissed-expand-message {
-    padding: 5px 160px 5px 60px; min-height: 40px;
+    padding: 5px 160px 5px 60px; 
+    min-height: 40px;
     text-align: center;
     margin-bottom: 0;
     top: 0; 
