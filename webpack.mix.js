@@ -12,7 +12,7 @@ mix.webpackConfig({
 });
 
 mix.js('source/_assets/js/main.js', 'js')
-  // .js('source/_assets/js/slick-app.js', 'js')
+  .js('source/_assets/js/slick-app.js', 'js')
   // .sourceMaps()
   .sourceMaps(productionToo = true, type = 'eval-source-map')
   

@@ -11,12 +11,14 @@ $(function () {
     nextArrow:"<button type='button' aria-label='Next' class='slick-next pull-right'><span class='fas fa-chevron-right' aria-hidden='true'></span></button>"
   };
   contentfeatureslider.slick(contentfeatureOptions);
-
    
   carouselslider = $('.slick-slider.carousel-slider');
   carouselsliderOptions = {
     arrows: true,
     dots: true,
+    customPaging: function(slider, i) {
+      return $('<button aria-live="polite" type="button" />').text(i + 1);
+    },
     cssEase: 'linear', 
     variableWidth: true,
     infinite: true,
@@ -80,6 +82,9 @@ $(function () {
     autoplaySpeed: 5000,
     autoplay: false,
     dots: true, 
+    customPaging: function(slider, i) {
+      return $('<button aria-live="polite" type="button" />').text(i + 1);
+    },
     arrows: true,
     prevArrow: buttonPrev,
     nextArrow: buttonNext,
@@ -134,6 +139,7 @@ $(function () {
           arrows: true,
           infinite: true,
           dots: true,
+          
           prevArrow: buttonPrev,
           nextArrow: buttonNext
         });
