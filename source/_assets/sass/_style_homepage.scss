@@ -2,18 +2,18 @@
   width: 8rem;
 }
 .homepage-banner { 
-  background:$primary;   
-  background-size: contain;
-  background-position: top;
-  background-repeat: no-repeat;
-  overflow: hidden; 
   position: relative; 
+  overflow: hidden; 
+  background-color: $primary;   
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
 
   .heading {
+    margin-top:0;
+    font-weight: 900;
     font-size: 2.4375rem;
     line-height: 1.16;
-    font-weight: 900;
-    margin-top:0;
   }
   p { font-size: 1.5rem;  }
 }
@@ -37,25 +37,25 @@
   }
 }
 .homepage-banner .hero .hero-image-wrapper {
-  background-size: cover;
   position: absolute;
-  z-index:1;
   top: 0;
   left: 0;
+  z-index:1;
   width: 100%;
   height: 100%;
   background-position: center bottom;
+  background-size: cover;
 }
 .homepage-banner .hero-caption {
   position: relative;
-  bottom: 0;
-  margin: 0 auto;
-  width: 100%; 
-  max-width: $screen-xl;
-  display: block;
   right: 0;
+  bottom: 0;
   left: 0;
   z-index: 2; 
+  display: block;
+  width: 100%; 
+  max-width: $screen-xl;
+  margin: 0 auto;
   .heading, .desc {
     max-width: $screen-xl/2;
   }
@@ -66,12 +66,12 @@
   } 
 }
 .homepage-expand {
-  transform: scaleY(0); 
-  max-height: 0;
-  overflow: none;
-  transition: max-height 500ms ease-in-out;
   position: relative;
   z-index: 1;
+  max-height: 0;
+  overflow: none;
+  transform: scaleY(0); 
+  transition: max-height 500ms ease-in-out;
 
   &>.container-fluid { 
     position: relative;
@@ -79,8 +79,8 @@
     padding-bottom: 2rem;
     visibility: hidden;
     .row {
-      z-index: 4;
       position: relative;
+      z-index: 4;
     }
   }
   &>.arrow-marker { 
@@ -89,17 +89,17 @@
     margin: 0 auto;
   }
   &>.arrow-marker::before {
-    content: "";
-    display: none; 
     position: absolute;
+    top: -.5rem;
     left: 4.5rem;
+    z-index: 2;
+    display: none; 
     width: 2rem;
     height: 2rem;
-    top: -.5rem;
     background-color: #fff;
     border-color: transparent;
-    z-index: 2;
     transform: rotate(45deg);
+    content: "";
   } 
 }
 .homepage-expand.show { 
@@ -113,21 +113,21 @@
 }
 @media (min-width: $screen-sm) {
   .homepage-expand>.arrow-marker::before {
-    left: 6rem;
     top: -1rem;
+    left: 6rem;
   }
   .homepage-banner {
-    background: #000;
-    background-size: cover;
+    background-color: #000;
     background-position: center;
+    background-size: cover;
  
     p, .heading {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
     }
     .hero {
-      padding-bottom: 0;
-      padding-top:0;
       min-height: 400px;
+      padding-top:0;
+      padding-bottom: 0;
     }
     .hero .hero-image-wrapper {
       background: linear-gradient(
@@ -160,12 +160,15 @@
     height: 100%;
   }
   .homepage-banner .hero-caption { 
-    top: auto;  flex:1; bottom: auto; height: auto;  
-    margin: auto; 
+    top: auto;  
+    bottom: auto; 
     display: flex;
+    flex:1; 
     flex-direction: column;
     justify-content: center;
+    height: auto;  
+    height: 100px; // after auto, ie 11
     min-height: 100%;
-    height: 100px; // ie 11
-    } 
+    margin: auto; 
+  } 
 }
