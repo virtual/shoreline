@@ -3,22 +3,28 @@ $btn-primary: $primary;
 $btn-secondary: transparent;
 $btn-tertiary: transparent;
 .btn {
-  white-space: normal;
+  width: 100%;
   min-width: 100px;
-  cursor: pointer;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
   font-weight: 700;
+  font-size: 1.1875rem; 
+  white-space: normal;
   border: 0; 
   border-radius: 999px;  
-  font-size: 1.1875rem; 
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  width: 100%;
+  cursor: pointer;
 }
-.btn.btn-link { width: auto; min-width: auto; padding: .5rem; }
+.btn.btn-link { 
+  width: auto; 
+  min-width: auto; 
+  padding: .5rem; 
+}
 .btn-group, .btn + .btn { margin-top: .5rem; }
 .btn-group .btn + .btn, .btn.btn-link + .btn.btn-link { margin-top: 0; }
-.btn-sm {   font-size: 0.925rem; 
-  padding-top: .5rem; padding-bottom: .5rem; // can this be overrode in bs
+.btn-sm {   
+  padding-top: .5rem; 
+  padding-bottom: .5rem; // can this be overrode in bs
+  font-size: 0.925rem; 
 }
 .btn-lg {   font-size: 1.4875rem;  }
 a.btn { text-decoration: none; }
@@ -32,41 +38,32 @@ a.btn { text-decoration: none; }
 .btn-block:last-child { margin-bottom: 1.1875rem; }
 
 .btn-important, a.btn-important {
-  background-color: $btn-important;
-  // border: solid 2px $btn-important;
   color: set-text-color($btn-important);
+  background-color: $btn-important;
   &:hover {
     background-color: darken($btn-important, 5);
   }
 }
-
 .btn-primary {
-  background-color: $btn-primary;
   color: set-text-color($btn-primary); 
+  background-color: $btn-primary;
 }
-
 .btn-secondary {
-  background-color: $btn-secondary;
-  color: $primary;
-  // border: solid 2px rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.10);
-  // border-radius: 1.6875rem; // 25px + 2px padding for secondary
   margin-top: 0;
-  // line-height: 1.37;
+  color: $primary;
+  background-color: $btn-secondary;
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.38);
   &:hover, &:focus, &:active {
-    background-color: inherit;
-    // border: solid 2px $primary;
-    
-  box-shadow: inset 0 0 0px 2px $primary;
     color: $primary;
+    background-color: inherit;
+    box-shadow: inset 0 0 0px 2px $primary;
   }
 }
 
 .btn-tertiary {
-  background-color: $btn-tertiary;
   color: $primary;
+  background-color: $btn-tertiary;
   border: transparent; 
-  // line-height: 1.15;
   &:hover {
     background-color: $pale-gray;
   }
@@ -80,9 +77,8 @@ a.btn { text-decoration: none; }
   
   .btn-unstyled { color: #fff; }
   .btn-primary {
-    background-color: #fff;
     color: $primary;
-    // border: transparent;
+    background-color: #fff;
     &:hover {
       color: $primary;
       background-color: #fff;     
@@ -92,15 +88,17 @@ a.btn { text-decoration: none; }
       box-shadow:0 0 0 0.2rem rgba(255, 255, 255, 0.5);
     }
   }
-  .btn-primary:hover:visited, .btn-primary:visited { color:$primary}
+  .btn-primary:hover:visited, .btn-primary:visited { 
+    color:$primary;
+  }
   
   .btn-secondary,
   .btn-tertiary {
-    background-color: $primary;
     color: set-text-color($primary);
+    background-color: $primary;
     &:hover {
-      background-color: rgba(0, 0, 0, 0.1);
       color: set-text-color($primary);
+      background-color: rgba(0, 0, 0, 0.1);
     }
     &:focus {
       box-shadow:0 0 0 0.2rem rgba(255, 255, 255, 0.5);
@@ -111,12 +109,7 @@ a.btn { text-decoration: none; }
     }
   }
   .btn-secondary {
-    
-    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.2);
-    // border: solid 2px rgba(255, 255, 255, 0.3);
-    &:hover {
-      // border: solid 2px rgba(255, 255, 255, 0.3);
-    }
+    box-shadow: inset 0 0 0 2px rgba(204, 255, 249, 0.55);
   }
 }
 dl .btn-toggle { font-size: 1rem; }
@@ -132,48 +125,42 @@ dl .btn-toggle { font-size: 1rem; }
 }
 @media (min-width: $screen-sm) {
   .btn {
-    min-width: 150px; 
-    // font-size: 1.1875rem; 
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem; // .9062 for 55px high
-    // line-height: 1.15;
     width: auto; 
-  
+    min-width: 150px; 
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem; // .9062 for 55px high  
   } 
   .btn.btn-block { width: 100%; }
-  .btn + .btn { margin-left: 22px; margin-top: 0; }
+  .btn + .btn { 
+    margin-top: 0; 
+    margin-left: 22px; 
+  }
   .btn-group { margin-top: 0; }
 }
-
-
-
 .btn-toggle {
+  width: 100%;
+  padding: 0;
+  color: $link-blue;
   font-weight: normal;
   text-align: left; 
-  color: $link-blue;
   background: transparent;
-  padding: 0;
   border-radius: 0;
-  width: 100%;
 }
-
-
 .btn-toggle:before {
-  content: " ";
   float:right;
+  width: 30px;  
+  height: 30px;
+  margin-top: -3px;
   font-size: 1rem;
   line-height: 1.5;
   background: none;
-  background-size: 30px;
-  background-repeat: no-repeat;  
-  transition: background-color .1s ease-in-out;
   background-image: url(../../resources/img/icons/toggle/icons.svg); // closed-blue-transparent
+  background-repeat: no-repeat;  
   background-position:0 0;
-  height: 30px;
-  width: 30px;  
-  margin-top: -3px;
+  background-size: 30px;
+  transition: background-color .1s ease-in-out;
+  content: " ";
 } 
-
 .btn-toggle[aria-expanded=true]:before {  
   background-image: url(../../resources/img/icons/toggle/icons.svg); // open-blue-bordered
   background-position:0 -60px;
@@ -181,10 +168,10 @@ dl .btn-toggle { font-size: 1rem; }
 
 @media (min-width: 320px) {
   .btn-toggle.verbose:after {
-    content: "collapse";
+    float:right;
     width: auto;  
     padding-right: .5rem; 
-    float:right;
+    content: "collapse";
   }
   .btn-toggle.verbose.collapsed:after {
     content: "expand";
@@ -195,14 +182,12 @@ dl .btn-toggle { font-size: 1rem; }
     margin-top:0;
   }
 }
-
-
 .btn-caret:after {
-  content: "\f0d8";
-  font-family: $font-awesome; 
+  padding: .1em .4em 0 .3em;
   font-weight: 900;
   font-size: .8em;
-  padding: .1em .4em 0 .3em;
+  font-family: $font-awesome; 
+  content: "\f0d8";
 }
 .btn-caret.collapsed:after { 
   content: "\f0d7";
