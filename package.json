@@ -26,6 +26,7 @@
         "yargs": "^4.6.0"
     },
     "dependencies": {
+        "@danielfarrell/bootstrap-combobox": "^1.1.8",
         "bootstrap": "^4.4.1",
         "jquery-colorbox": "^1.6.4",
         "livereload": "^0.7.0",

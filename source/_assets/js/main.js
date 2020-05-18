@@ -513,6 +513,14 @@ if ( $( ".contact-hours" ).length ) {
   shoreline.contactListDynamicHours();
 } 
 
+// bootstrapCombobox
+if ( $( ".dynamic-selectbox" ).length ) {
+var bootstrapCombobox = require('@danielfarrell/bootstrap-combobox');
+(function($, bootstrapCombobox){
+    $('.dynamic-selectbox').combobox({bsVersion: '4'}) 
+  })(jQuery, bootstrapCombobox);
+}
+
 // Detect breakpoint ResponsiveBootstrapToolkit
 var ResponsiveBootstrapToolkit = require('responsive-toolkit');
 (function($, viewport){
