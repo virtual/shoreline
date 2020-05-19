@@ -512,12 +512,28 @@ shoreline.getEventFeed();
 if ( $( ".contact-hours" ).length ) {
   shoreline.contactListDynamicHours();
 } 
-
+ 
 // @danielfarrell/bootstrap-combobox
 if ( $( ".dynamic-selectbox" ).length ) {
 var bootstrapCombobox = require('@danielfarrell/bootstrap-combobox');
 (function($, bootstrapCombobox){
-    $('.dynamic-selectbox').combobox({bsVersion: '4'}) 
+    $('.dynamic-selectbox').combobox({
+      bsVersion: '4',
+      appendId: 'Selector', // otherwise defaults to undefined
+      template: function() {
+        return '<form class="combobox-container"> <input class="link-redirect" type="hidden" /><div class="input-group"> <input class="dropdown-toggle" type="text" autocomplete="off" data-dropdown="dropdown" /><button class="input-group-append input-group-text dropdown-toggle" data-dropdown="dropdown"><span class="sr-only">Expand list</span></button></div></form>';
+      },
+      menu: '<ul class="typeahead typeahead-long dropdown-menu card-links card-links-compact" style="display: none;"></ul>'
+      , item: '<li class="px-3"><a href="#"></a></li>'       
+    }) 
+
+    $(".combobox-container button").click(function(event){
+      event.preventDefault();
+    });
+    $( ".link-redirect" ).change(function() {
+      if (this.value)
+      window.location.href = this.value;
+    });
   })(jQuery, bootstrapCombobox);
 }
 
