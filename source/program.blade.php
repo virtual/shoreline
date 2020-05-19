@@ -13,8 +13,6 @@
      style="background-image: url('{{ $page->baseUrl }}/resources/img/stock/image.jpg');">
      <img alt="" src="{{ $page->baseUrl }}/resources/img/stock/image.jpg"/>
 </div>
-
-
 @endsection
 
 @section('content-header')

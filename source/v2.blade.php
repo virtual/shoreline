@@ -8,15 +8,6 @@
   </ol>
 @endsection
 
-@section('content-header-img-backup')
-<div class="center-cropped" 
-     style="background-image: url('{{ $page->baseUrl }}/resources/img/stock/image.jpg');">
-     <img alt="" src="{{ $page->baseUrl }}/resources/img/stock/image.jpg"/>
-</div>
-
-
-@endsection
-
 
 @section('left-nav')
 <nav role="navigation" aria-label="Section Navigation"> 

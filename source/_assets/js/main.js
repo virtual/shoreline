@@ -513,7 +513,7 @@ if ( $( ".contact-hours" ).length ) {
   shoreline.contactListDynamicHours();
 } 
 
-// bootstrapCombobox
+// @danielfarrell/bootstrap-combobox
 if ( $( ".dynamic-selectbox" ).length ) {
 var bootstrapCombobox = require('@danielfarrell/bootstrap-combobox');
 (function($, bootstrapCombobox){

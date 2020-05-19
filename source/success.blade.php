@@ -9,8 +9,6 @@
      style="background-image: url('{{ $page->baseUrl }}/resources/img/stock/shoreline.williams260.jpg');">
      <img alt="" src="{{ $page->baseUrl }}/resources/img/stock/shoreline.williams260.jpg"/>
 </div>
-
-
 @endsection
 
 @section('content-header')
