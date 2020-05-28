@@ -1,6 +1,6 @@
 // Line 189: %list-unstyled
 // ul, dl, ol { color: #222; } 
-main, .sectional, .content-container {
+main, .sectional, .content-container, .header-info {
   ol, ul {
     li { margin-bottom: .75rem; margin-top: .75rem; }
   }
@@ -452,7 +452,8 @@ ul.list-unstyled, ol.list-unstyled, %list-unstyled {
 // .bg-inverted
 main,
 .sectional,
-.content-container {
+.content-container,
+.header-info {
   .bg-inverted {
     ol li:before {
       background-color: transparent;
@@ -473,6 +474,4 @@ main,
     }
   }
 }
-
-
 // End bg-inverted

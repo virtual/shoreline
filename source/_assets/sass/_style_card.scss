@@ -180,11 +180,20 @@ main, .content-container, .sectional, * {
   .card-image-container { background-image: none !important; }
   // To prevent arrow overlaying over text
   .card-links a,  a.card-link, .card-link a { padding-right: 1.5rem !important; }
+  // arrow to right on mobile
   a.card-link:after, .card-link a:after, .card-links a:after {  
       position: absolute;
       top:1.5rem;
       right: 0;
       font-size: 2rem;
+  }
+  .card-link,  .card-links {
+    a.more-arrow:after {
+      margin-right: 0;
+    }
+  }
+  ul.card-links.more-arrow > li a:after {
+    margin-right: 0;
   }
   a.card-link:after, .card-link a:after {
     top:.25rem;

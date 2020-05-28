@@ -48,6 +48,7 @@
     <h1>Varient 1</h1>
     <p class="xxl">The future is visual</p>
     <kbd class="ouc">Edit</kbd>
+    @include('_partials.lists')
     <a href="#" class="btn btn-important">Important</a>
     <a href="#" class="btn btn-secondary">Secondary</a>
 @endsection
