@@ -153,11 +153,15 @@
  <h2>Compact Accordion</h2>
  <div class="row">
     <div class="col-md-6">
-        @include('_partials/accordion-compact')
+        @include('_partials/accordion', [
+        'addclass' => 'accordion-compact'
+        ])
     </div>
   
     <div class="col-md-6">
-        @include('_partials/accordion-compact')
+        @include('_partials/accordion', [
+        'addclass' => 'accordion-compact'
+        ])
       </div>
   </div>
 

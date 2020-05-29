@@ -2457,7 +2457,7 @@ main .card-links.card-links-compact a, .content-container .card-links.card-links
 .accordion .accordion-header {
   border-bottom: 0;
   background-color: transparent;
-  color: #fff;
+  color: #444;
   text-align: left;
   padding: 0;
   margin: 0;
@@ -2553,6 +2553,10 @@ main .card-links.card-links-compact a, .content-container .card-links.card-links
     display: block;
     overflow: hidden;
   }
+}
+
+.bg-inverted .accordion .accordion-header, .sectional-inverted .accordion .accordion-header {
+  color: #F2FAF9;
 }
 
 .bg-inverted .accordion .accordion-header h1, .bg-inverted .accordion .accordion-header h2, .bg-inverted .accordion .accordion-header h3, .bg-inverted .accordion .accordion-header h4, .bg-inverted .accordion .accordion-header h5, .bg-inverted .accordion .accordion-header h6, .sectional-inverted .accordion .accordion-header h1, .sectional-inverted .accordion .accordion-header h2, .sectional-inverted .accordion .accordion-header h3, .sectional-inverted .accordion .accordion-header h4, .sectional-inverted .accordion .accordion-header h5, .sectional-inverted .accordion .accordion-header h6 {
