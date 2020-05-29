@@ -50,7 +50,7 @@
 
 @section('content-header')
  
-    <h1>Varient 2 has a pretty long title</h1>
+    <h1>Variant 2 has a pretty long title</h1>
     <p class="xxl">WIP with no image. The future is visual. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit unde est voluptatibus provident iure. </p>
     <kbd class="ouc">Edit</kbd>
     <a href="#" class="btn btn-primary">Primary</a>

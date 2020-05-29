@@ -7,13 +7,17 @@
   li { margin-bottom: .5rem; }
   li + li { margin-top: .5rem;}
 }
+.sidebar-container .card .card-links {   
+  li { margin-bottom: 0; }
+  li + li { margin-top: 0;}
+}
 // Overview TOC menu
-.card-program-heading {
+.card-program-heading, .card.card-program-heading {
   h2 { color: $text-black; font-size: 1rem; font-weight: 600;
     a { color: inherit; text-decoration: none; 
   }}   
-  li { margin-bottom: .5rem !important; }
-  li + li { margin-top: .5rem !important;}
+  li { margin-bottom: .5rem; }
+  li + li { margin-top: .5rem;}
 }
 .card.card-program-heading { margin:0; margin-top: 1rem; }
 .sidebar-container .card.card-program-heading { margin-bottom: 1rem; }

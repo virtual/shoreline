@@ -203,6 +203,8 @@ body {
 
 // PADDING AND MARGIN
 .content-header{ padding-bottom: 1rem; }
+.header-info-editable { margin-top: 1rem; }
+.header-info-editable:empty { margin-top: 0; }
 .content-has-header-img .content-header .header-info .header-content {   
   margin-bottom: 2rem; 
 }

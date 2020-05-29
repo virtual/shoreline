@@ -45,7 +45,7 @@
 
 @section('content-header')
  
-    <h1>Varient 1</h1>
+    <h1>Variant 1</h1>
     <p class="xxl">The future is visual</p>
     <kbd class="ouc">Edit</kbd> 
     <a href="#" class="btn btn-important">Important</a>

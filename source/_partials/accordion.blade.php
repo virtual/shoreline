@@ -3,9 +3,9 @@
 <div class="accordion {{$class}}" id="accordion{{$uniqueID}}">
     <div class="accordion-card">
       <div class="accordion-header" id="heading{{$uniqueID}}One">
-          <button class="btn btn-toggle" type="button" data-toggle="collapse" data-target="#collapse{{$uniqueID}}One" aria-expanded="false" aria-controls="collapse{{$uniqueID}}One">
+          <h3><button class="btn btn-toggle" type="button" data-toggle="collapse" data-target="#collapse{{$uniqueID}}One" aria-expanded="false" aria-controls="collapse{{$uniqueID}}One">
             Collapsible Group Item #1
-          </button>
+          </button></h3>
       </div>
   
       <div id="collapse{{$uniqueID}}One" class="collapse" aria-labelledby="heading{{$uniqueID}}One" data-parent="#accordion{{$uniqueID}}">
@@ -16,9 +16,9 @@
     </div>
     <div class="accordion-card">
       <div class="accordion-header" id="heading{{$uniqueID}}Two">
-          <button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse{{$uniqueID}}Two" aria-expanded="false" aria-controls="collapse{{$uniqueID}}Two">
+          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse{{$uniqueID}}Two" aria-expanded="false" aria-controls="collapse{{$uniqueID}}Two">
             Collapsible Group Item #2
-          </button>
+          </button></h3>
       </div>
       <div id="collapse{{$uniqueID}}Two" class="collapse" aria-labelledby="heading{{$uniqueID}}Two" data-parent="#accordion{{$uniqueID}}">
         <div class="accordion-body">
@@ -33,9 +33,9 @@
     </div>
     <div class="accordion-card">
       <div class="accordion-header" id="heading{{$uniqueID}}Three">
-          <button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse{{$uniqueID}}Three" aria-expanded="false" aria-controls="collapse{{$uniqueID}}Three">
+          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse{{$uniqueID}}Three" aria-expanded="false" aria-controls="collapse{{$uniqueID}}Three">
             Collapsible Group Item #3
-          </button>
+          </button></h3>
       </div>
       <div id="collapse{{$uniqueID}}Three" class="collapse" aria-labelledby="heading{{$uniqueID}}Three" data-parent="#accordion{{$uniqueID}}">
         <div class="accordion-body">
