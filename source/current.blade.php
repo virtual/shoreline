@@ -9,7 +9,7 @@
 
 @section('content')
 <h1>Current Students</h1>
-<p class="lead">View <a href="../current2">icon box grid snippets</a></p>
+<p class="lead">View <a href="../current-grid">icon box grid snippets</a></p>
 
 <h2>Using Sized Columns</h2>
 <div class="alert alert-info"><p>Unsized columns are an issue in IE11</p></div>
