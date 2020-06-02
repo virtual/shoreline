@@ -9,7 +9,7 @@
 
 @section('content')
 <h1>Current Students</h1>
- 
+<p class="lead">View <a href="../current2">icon box grid snippets</a></p>
 
 <h2>Using Sized Columns</h2>
 <div class="alert alert-info"><p>Unsized columns are an issue in IE11</p></div>
@@ -61,7 +61,7 @@
     'img' => '../resources/img/icons/current/icon-canvas.png',
     'alt' => 'canvas',     
     'link' => 'https://wts.shoreline.edu/waci002.html',
-    'addclass' => 'https://canvas.shoreline.edu/'
+    'addclass' => 'card-icon-compact'
     ])   
   </div>
 </div>
