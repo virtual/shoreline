@@ -164,6 +164,30 @@
 <div class="icon-box-grid rows-2 cols-3">
   @include('_partials.card-icon-box-grid')
 </div>
+<h3>5 Rows, 5 Cols</h3>
+<div class="icon-box-grid rows-5 cols-5">
+  @include('_partials.card-icon-box-grid') 
+
+  <div class="div7">MyDiv 7</div>
+<div class="div8">MyDiv 8</div>
+<div class="div9">MyDiv 9</div>
+<div class="div10">MyDiv 10</div>
+<div class="div11">MyDiv 11</div>
+<div class="div12">MyDiv 12</div>
+<div class="div13">MyDiv 13</div>
+<div class="div14">MyDiv 14</div>
+<div class="div15">MyDiv 15</div>
+<div class="div16">MyDiv 16</div>
+<div class="div17">MyDiv 17</div>
+<div class="div18">MyDiv 18</div>
+<div class="div19">MyDiv 19</div>
+<div class="div20">MyDiv 20</div>
+<div class="div21">MyDiv 21</div>
+<div class="div22">MyDiv 22</div>
+<div class="div23">MyDiv 23</div>
+<div class="div24">MyDiv 24</div>
+<div class="div25">MyDiv 25</div>
+</div>
 @endsection 
 
  
