@@ -45,10 +45,10 @@
 </div>
 <div class="div6">    
   @include('_partials.card-icon-button', [
-  'heading' => 'Class Schedule',
-  'img' => '../resources/img/icons/current/icon-schedule.png',
-  'alt' => 'schedule',     
-  'link' => 'http://app.shoreline.edu/class-schedule',
+  'heading' => 'Phonebook',
+  'img' => '../resources/img/icons/current/icon-directory.png',
+  'alt' => 'phone',     
+  'link' => '#',
   'addclass' => 'card-icon-compact'
   ])  
 </div>

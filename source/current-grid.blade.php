@@ -21,8 +21,8 @@
 
 
 <h2>Icon Box Grid</h2>
-<h3>2 Rows, 2 Cols</h3>
-<div class="icon-box-grid rows-2 cols-2">
+<h3>3 Rows, 2 Cols</h3>
+<div class="icon-box-grid rows-3 cols-2">
   @include('_partials.card-icon-box-grid')
 </div>
 <h3>2 Rows, 4 Cols</h3>
@@ -32,6 +32,10 @@
 </div>
 <h3>2 Rows, 3 Cols</h3>
 <div class="icon-box-grid rows-2 cols-3">
+  @include('_partials.card-icon-box-grid')
+</div>
+<h3>1 Row, 6 Cols (Full width pages only)</h3>
+<div class="icon-box-grid rows-1 cols-6">
   @include('_partials.card-icon-box-grid')
 </div>
 
@@ -162,6 +166,10 @@
 </div>
 <h3>2 Rows, 3 Cols</h3>
 <div class="icon-box-grid rows-2 cols-3">
+  @include('_partials.card-icon-box-grid')
+</div>
+<h3>1 Row, 6 Cols (Full width pages only)</h3>
+<div class="icon-box-grid rows-1 cols-6">
   @include('_partials.card-icon-box-grid')
 </div>
 <h3>5 Rows, 5 Cols</h3>
