@@ -51,7 +51,9 @@
       <div class="layout-has-sidebar">
     <div class="content-container"> 
 
-      @include('_partials.overview')
+      @include('_partials.overview', [ 
+      'tuition' => 'show'
+      ])
 
      </div>
      <div class="sidebar-container">

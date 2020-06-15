@@ -10,6 +10,7 @@
     <dd> N/A</dd>
     <dt class="icon-bg-map-marker">Location </dt>
     <dd> On Campus</dd>
+    @if(!empty($tuition))
     <dt class="icon-bg-dollar">Tuition &amp; Fees </dt>
     <dd>
       <button class="btn-toggle verbose btn collapsed" type="button" data-toggle="collapse" data-target="#tuitionfees" aria-expanded="false" aria-controls="tuitionfees">
@@ -31,5 +32,6 @@
 
       </div>
     </dd>
+    @endif
   </dl> 
 </section>

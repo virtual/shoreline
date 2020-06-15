@@ -64,10 +64,9 @@
         <div class="card callout card-program-heading">
           <div class="card-body">
             <nav role="navigation" aria-label="Section Navigation">
-              <h2 tabindex="-1" id="explore">Related Department Links</h3>
+              <h2 tabindex="-1" id="explore">Explore the Visual Arts Department</h3>
                 <!-- ouc:div label="/busad/_nav.inc" path="/busad/_nav.inc"-->
                 <ul class="card-links card-links-compact">
-                  <li><a href="/business-dept">Visual Arts Department (dyn?)</a></li>
                   <li><a href="/business-dept/programs.aspx">Programs</a></li>
                   <li class="list-top"><a href="/business-dept/courses.aspx">Courses</a></li>
                   <li><a href="/business-dept/faculty-staff.aspx">Faculty &amp; Staff</a></li>
