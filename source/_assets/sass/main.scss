@@ -50,11 +50,7 @@ html {
   min-height: 1px;
 }
 
-p, ul, dl, ol {
-  font-size: 1rem;
-  line-height: 1.5; 
-  color: $text-dark;
-} 
+
 .contact-section {
   flex: none;
 } 
@@ -104,10 +100,6 @@ kbd.ouc {
 }
 
 @media (min-width: $screen-md) {
-  p, ul, dl, ol, div {
-    font-size: 1.1875rem;
-    line-height: 1.68;
-    }
   footer, header {
     div { font-size: 1rem; line-height: 1.5; }
   }  

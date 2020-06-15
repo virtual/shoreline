@@ -87,12 +87,6 @@ html {
   min-height: 1px;
 }
 
-p, ul, dl, ol {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #444;
-}
-
 .contact-section {
   -webkit-box-flex: 0;
       -ms-flex: none;
@@ -145,10 +139,6 @@ kbd.ouc {
 }
 
 @media (min-width: 768px) {
-  p, ul, dl, ol, div {
-    font-size: 1.1875rem;
-    line-height: 1.68;
-  }
   footer div, header div {
     font-size: 1rem;
     line-height: 1.5;
@@ -1748,6 +1738,19 @@ body {
   }
 }
 
+p, ul, dl, ol {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+@media (min-width: 768px) {
+  p, ul, dl, ol, div {
+    font-size: 1.1875rem;
+    line-height: 1.68;
+  }
+}
+
 .text-light a, .text-white a {
   color: #fff;
 }
@@ -1793,28 +1796,36 @@ h1, .h1, h2, .h2 {
 }
 
 h1, .h1 {
-  line-height: 1.25;
   font-weight: 900;
+  line-height: 1.25;
+}
+
+h1, .h1 {
+  margin-top: 0;
+}
+
+h2, h3, h4, h5, h6,
+.h2, .h3, .h4, .h5, .h6 {
+  margin-top: .75em;
 }
 
 h3, .h3 {
-  line-height: 1.33;
+  font-size: 1.5rem;
+  line-height: 1.67;
 }
 
 h4, .h4 {
-  line-height: 1.26;
+  font-size: 1.1875rem;
+  line-height: 1.68;
 }
 
 h5, .h5 {
+  font-size: 1rem;
   line-height: 1.5;
 }
 
 h6, .h6 {
   line-height: 1.85;
-}
-
-h2, h3, h4, h5, h6 {
-  margin-top: .75em;
 }
 
 @media (min-width: 768px) {
@@ -1826,66 +1837,31 @@ h2, h3, h4, h5, h6 {
     font-size: 2rem;
     line-height: 1.25;
   }
-  h3, .h3 {
-    font-size: 1.5rem;
-    line-height: 1.67;
-  }
-  h4, .h4 {
-    font-size: 1.1875rem;
-    line-height: 1.68;
-  }
-  h5, .h5 {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
 }
 
 .small {
-  font-size: 0.625rem;
-  line-height: 1.85;
-}
-
-.medium {
-  font-size: .75rem;
-  line-height: 1.85;
-}
-
-.large {
   font-size: 0.8125rem;
   line-height: 1.85;
 }
 
-.xl {
+.medium {
   font-size: 1rem;
   line-height: 1.5;
 }
 
-.xxl {
+.large {
   font-size: 1.1875rem;
-  line-height: 2rem;
+  line-height: 1.68;
 }
 
-@media (min-width: 768px) {
-  .small {
-    font-size: 0.8125rem;
-    line-height: 1.85;
-  }
-  .medium {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-  .large {
-    font-size: 1.1875rem;
-    line-height: 1.68;
-  }
-  .xl {
-    font-size: 1.5rem;
-    line-height: 1.67;
-  }
-  .xxl {
-    font-size: 2rem;
-    line-height: 1.25;
-  }
+.xl {
+  font-size: 1.5rem;
+  line-height: 1.67;
+}
+
+.xxl {
+  font-size: 2rem;
+  line-height: 1.25;
 }
 
 .card {
