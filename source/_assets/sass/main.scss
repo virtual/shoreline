@@ -50,6 +50,11 @@ html {
   min-height: 1px;
 }
 
+p, ul, dl, ol {
+  font-size: 1.1875rem;
+  line-height: 1.68; 
+  color: $text-dark;
+}  
 
 .contact-section {
   flex: none;

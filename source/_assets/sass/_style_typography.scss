@@ -1,15 +1,3 @@
-p, ul, dl, ol {
-  font-size: 1rem;
-  line-height: 1.5; 
-  color: $text-dark;
-} 
-@media (min-width: $screen-md) {
-  p, ul, dl, ol, div {
-    font-size: 1.1875rem;
-    line-height: 1.68; 
-  }
-}
-
 .text-light, .text-white {
   a { color: #fff;   }
 }
@@ -37,6 +25,10 @@ h1, .h1 { margin-top: 0; }
 h2, h3, h4, h5, h6,
 .h2, .h3, .h4, .h5, .h6 {
   margin-top:.75em;
+}
+h3, h4, h5, h6,
+.h3, .h4, .h5, .h6 {
+  color: $text-black;
 }
 
 h3, .h3 { 

@@ -1,5 +1,7 @@
 <?php $class = !(empty($class)) ? $class : ''; ?>
-<div class="{{$class}}"></div>
+@if(!empty($class))
+<{{$class}}>{{$class}} heading</{{$class}}>
+@endif
 
 <h1 class="{{$class}}">Lorem ipsum dolor sit amet </h1>
 <h2 class="{{$class}}">Aenean commodo <a href="#">link</a> ligula eget </h2>
