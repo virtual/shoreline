@@ -101,8 +101,7 @@
               </h3>
             </div>
 
-            <div id="collapse{{$uniqueID}}One" class="collapse" aria-labelledby="heading{{$uniqueID}}One"
-              data-parent="#accordion{{$uniqueID}}">
+            <div id="collapse{{$uniqueID}}One" class="collapse" aria-labelledby="heading{{$uniqueID}}One">
               <div class="accordion-body">
                 <ol start="1">
 
@@ -136,8 +135,7 @@
                   Course Outlines & Requirements
                 </button></h3>
             </div>
-            <div id="collapse{{$uniqueID}}Two" class="collapse" aria-labelledby="heading{{$uniqueID}}Two"
-              data-parent="#accordion{{$uniqueID}}">
+            <div id="collapse{{$uniqueID}}Two" class="collapse" aria-labelledby="heading{{$uniqueID}}Two">
               <div class="accordion-body">
                 <p>Acalog feed</p>
                 <p>Planning Guide
@@ -153,8 +151,7 @@
                   Careers & Opportunities
                 </button></h3>
             </div>
-            <div id="collapse{{$uniqueID}}Three" class="collapse" aria-labelledby="heading{{$uniqueID}}Three"
-              data-parent="#accordion{{$uniqueID}}">
+            <div id="collapse{{$uniqueID}}Three" class="collapse" aria-labelledby="heading{{$uniqueID}}Three">
               <div class="accordion-body">
                 <div>
                   <p>The job outlook for accounting-related occupations is very good. Graduates may be
@@ -181,8 +178,7 @@
                   Tuition & Fees
                 </button></h3>
             </div>
-            <div id="collapse{{$uniqueID}}Four" class="collapse" aria-labelledby="heading{{$uniqueID}}Four"
-              data-parent="#accordion{{$uniqueID}}">
+            <div id="collapse{{$uniqueID}}Four" class="collapse" aria-labelledby="heading{{$uniqueID}}Four">
               <div class="accordion-body">
                 <p>Asset?</p>
                 @include('_partials.table-stacked')
