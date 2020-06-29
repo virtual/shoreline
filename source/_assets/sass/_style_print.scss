@@ -18,12 +18,11 @@
   .layout-has-left-nav.layout-has-sidebar .content-container {
     width: 100%;
   }
-
-  .center-cropped img {
-    max-width: 300px;
-    padding: 15px 15px;
-    opacity: 1;
+  .layout-has-left-nav .left-nav {
+    display: none; 
   }
+
+
 
   body {
     margin: 10px !important;
@@ -44,7 +43,7 @@
     border-color: #ccc !important;
   }
 
-  th {
+  thead th {
     font-size: 15px;
     border-bottom: 1px solid #000 !important;
   }
@@ -169,7 +168,7 @@
     color: $text-black;
     font-weight: 400;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 1.5;
   }
 
   blockquote {
@@ -187,6 +186,9 @@
   main img {
     max-height: none !important;
     padding: 8px 10px;
+  }
+  main .card-icon .icon img {
+    padding: 0;
   }
 
   /* toggles */
@@ -210,8 +212,12 @@
     text-align: center !important;
     text-decoration: none;
     background-color: #eee !important;
-    border: 1px solid #000;
+    border: 1px solid #000 !important;
   }
+  .accordion .accordion-header .btn {
+    border: 0 !important;
+  }
+  .btn.btn-link + .btn.btn-link { padding-left: .5rem; }
 
   .accordion .btn-toggle:before {
     display: none;
@@ -281,6 +287,68 @@
     content: ' ('attr(title) ')';
   }
 
+  .alert {
+    background: #eee;
+    * {
+      color: #000; 
+    }
+  }
+  .alert.alert-padded {
+    padding: 2.5rem;
+  }
+  body > .alert, header#header > .alert {
+    display: none;
+  }
+  .card-program-heading {
+    display: none;
+  }
+  .center-cropped {
+    height: auto;
+    background: none !important;
+  }
+  .center-cropped img {
+    width: 300px;    
+    max-width: 100%;
+    height: auto;
+    padding: 15px 15px;
+    opacity: 1;
+  }
+
+
+  // list icons inverse
+  .bg-inverted, .sectional-inverted {
+    .tab-content,
+    .list-bulleted dt:before,
+    .list-bulleted.list-bulleted.list-ordered  dt:before,
+    ol li:before,    
+    .large-list      
+     { color: $text-black;   } 
+ 
+    ul li:before {
+      background-color: $text-black;
+    }
+    ol,
+    ul {
+      ol li:before,
+      ul li:before {
+        color: $text-black;
+      }
+    }
+    ul.features,
+    ul.icon-check,
+    ul.icon-x,
+    ul.icon-box {
+      li:before {  
+        background-image: url('../../resources/img/icons/list-check.svg');      
+      }
+    }
+    ul.icon-x li:before { 
+      background-image: url('../../resources/img/icons/times.svg');      
+    }
+    ul.icon-box li:before { 
+      background-image: url('../../resources/img/icons/square-o.svg');      
+    }
+  }
 }
 
 /* end print */
