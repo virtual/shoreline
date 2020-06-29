@@ -32,6 +32,9 @@
       @include ('_partials.menu')
       </div>
     </div>
+    <div class="row"> 
+
+    </div>
     
   </div>
   @include('_partials.alert')
