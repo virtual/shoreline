@@ -1,4 +1,4 @@
-<?php $uniqueID = substr(md5(rand()), 0, 10); ?>
+<?php $uniqueID = substr(md5(rand()), 0, 8); ?>
 <li class="dropdown-list">
   <button aria-controls="{{$uniqueID}}sub" aria-expanded="false"><?php echo $uniqueID; ?></button>
   <div id="{{$uniqueID}}ub" class="dropdown-menu">

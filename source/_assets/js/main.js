@@ -122,74 +122,60 @@ jQuery(document).ready(function() {
       $(goToId).focus(); 
     }  
   });
-
-  // Key for dropdown-list
-  // Megamenu
-  // keys to successful implementation will be aria-expanded on the button 
-  // that triggers the submenu, and a keyboard model that includes support for 
-  // Escape, with focus returning to the button (top menu item) when the submenu closes.
-  document.onkeydown = function (evt) {
+ 
+  // When tabbing close the menu back up when reaching the end of the dropdown-menu
+  $(".dropdown-list > button").focus(function() { 
+    $('.dropdown-list.show > button').attr('aria-expanded', 'false')
+    $('.dropdown-list.show').removeClass('show');
+  });  
+  $(".dropdown-list > button").click(function (evt) {
     e = evt || window.event;
-    console.log(e)
-    if ((e.target).parentNode.classList.contains(('dropdown-list'))) {
-      if (e.key === ' ' || e.key === 'Spacebar' || e.key === 'Enter') {
-        // ' ' is standard, 'Spacebar' was used by IE9 and Firefox < 37
-        (e.target).parentNode.classList.toggle('show');
-        console.log('Space/Enter pressed')
-      } else if (e.key === 'Tab') {
-        if ((e.target).parentNode.classList.contains('show')) {
-          // tab inside
-        } else {
-          (e.target).parentNode.classList.remove('show');
-        }
-      } 
-      // else {
-      //   if (e.key == 'ArrowRight' || e.key == 'ArrowDown') {
-      //     (e.target).parentNode.classList.add('show');
-      //   }
-      //   if (e.key == 'ArrowLeft' || e.key == 'ArrowUp') {
-      //     (e.target).parentNode.classList.remove('show');
-      //   }
-      // }
-      // e.preventDefault()
-
-    } else if (e.key === 'Escape') {
-      var currentMenu = document.querySelector("#navbarCollapse").querySelector('.dropdown-list.show')
-      currentMenu.classList.remove('show');
-      currentMenu.querySelector('button').focus();
-      console.log('Esc pressed')
+    toggleDropdownMenu((e.target).parentNode);
+  });
+  document.onkeydown = function (evt) {
+    e = evt || window.event;   
+    console.log('onkeydown', e.key)
+    if ((e.key === ' ' || e.key === 'Spacebar' || e.key === 'Enter' || e.key === 'Escape')) {
+      console.log('checkDropdownKey')
+      checkDropdownKey(e)    
     }
   };
-
-  // When tabbing close the menu back up when reaching the end of the dropdown-menu
-  $(".dropdown-list > button").focus(function() {
-    console.log('close them')
-    $('.dropdown-list.show').removeClass('show');
-  });
-
-
-/* from Shoreline */
-	// table-stacked js DUPLICATE?
-	// $('.table-r1').each( function(e) {
-	// 	var headerNames = [];
-  //   var rowTitles = [];
-	// 	$(this).find('thead th').each( function(e, item) {
-	// 		headerNames.push(item.innerText); // context causes errors, removed
-  //   });
-	// 	$(this).find('tbody th').each( function(e, item) {			
-	// 		rowTitles.push(item.innerText); // context causes errors, removed
-  //   });
-	// 	$(this).find('tbody tr').each( function(e) {
-	// 		$(this).children('th').text(rowTitles[e]); 
-	// 		$(this).children('td').each( function(e) {
-	// 			$(this).attr('data-title', headerNames[e+1]) 
-	// 		});
-	// 	}); 
-  // });
-  
 }); 
 // END FUNCTION READY
 
+// Megamenu dropdown
+// Keys to successful implementation will be aria-expanded on the button 
+// that triggers the submenu, and a keyboard model that includes support for 
+// Escape, with focus returning to the button (top menu item) when the submenu closes. 
+function hideDropdownMenu(el) {
+  el.classList.remove('show');
+  el.querySelector('button').setAttribute("aria-expanded", 'false');
+}
+function toggleDropdownMenu(el) {
+  if (el.classList.contains('show')) {
+    hideDropdownMenu(el)
+  } else {
+    el.classList.add('show');
+    el.querySelector('button').setAttribute("aria-expanded", 'true');
+  }
+}
+function checkDropdownKey(e) {
+  if ((e.target).parentNode.classList.contains(('dropdown-list'))) { 
+    if (e.key === ' ' || e.key === 'Spacebar' || e.key === 'Enter') {
+      e.preventDefault(); // prevent click function
+      toggleDropdownMenu((e.target).parentNode);
+    } else if (e.key === 'Tab') {
+      if (!((e.target).parentNode.classList.contains('show'))) {
+        hideDropdownMenu((e.target).parentNode);
+      }
+    } 
+  } else if (e.key === 'Escape') {
+    var currentMenu = document.querySelector("#navbarCollapse").querySelector('.dropdown-list.show');
+    hideDropdownMenu(currentMenu);
+    currentMenu.querySelector('button').focus(); 
+  }
+}
+// End Megamenu dropdown menu functions
 
 function calcOverviewOffset() {
   //var sidebarOffset = $('#sidebar-nav').offset().top; // doesn't matter
@@ -239,9 +225,6 @@ var shoreline = {
           $("body").removeClass('menu-open');
         }
       });
-  
-
-     
   },
 
   // Pulls in JSON feed
