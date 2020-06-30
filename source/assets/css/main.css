@@ -6072,10 +6072,10 @@ header#header {
 }
 
 .navmenu a {
+  display: block;
   padding: 5px 10px;
   color: rgba(17, 17, 17, 0.85);
   text-align: center;
-  display: block;
 }
 
 .navmenu .dropdown-menu a {
@@ -6087,15 +6087,15 @@ header#header {
 }
 
 .flex-button {
-  text-align: left;
+  position: relative;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   -ms-flex-negative: 1;
       flex-shrink: 1;
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
-  position: relative;
+  text-align: left;
 }
 
 .flex-button .navbar-toggler {
@@ -6117,13 +6117,13 @@ header#header {
 
 .megamenu {
   position: fixed;
-  background-color: #fff;
   top: 0;
   right: 0;
   left: 0;
   z-index: 1030;
   color: #00685e;
   font-size: 1.1rem;
+  background-color: #fff;
   -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
           box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
 }
@@ -6136,27 +6136,27 @@ header#header {
 
 .megamenu li {
   display: block;
-  color: #00685e;
   width: 100%;
+  color: #00685e;
 }
 
 .megamenu li a,
 .megamenu li .nav-link {
-  color: #00685e;
   display: block;
+  color: #00685e;
   padding: 10px 15px;
 }
 
 .megamenu .dropdown-menu {
-  color: inherit;
   padding: 0;
+  color: inherit;
   border: 0;
 }
 
 .megamenu .dropdown-menu a {
-  color: inherit;
   display: block;
   padding: 5px 15px;
+  color: inherit;
 }
 
 .megamenu .dropdown.show .dropdown-menu {
@@ -6181,14 +6181,14 @@ header#header {
 }
 
 #searchCollapse p {
-  padding: .5rem;
   margin: 0;
+  padding: .5rem;
   font-size: .8rem;
 }
 
 .searchform-mobile {
-  padding-bottom: 1rem;
   padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .searchform-mobile label {
@@ -6211,12 +6211,12 @@ header#header {
 
 @media (min-width: 992px) {
   .megamenu .dropdown .dropdown-menu {
-    padding: 8px 0px 10px 15px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     width: 100%;
+    padding: 8px 0px 10px 15px;
   }
   .megamenu .dropdown:hover > .dropdown-menu,
   .megamenu .dropdown.show .dropdown-menu {
@@ -6225,24 +6225,24 @@ header#header {
     display: flex !important;
   }
   .megamenu {
-    font-size: 1rem;
     position: relative;
+    font-size: 1rem;
+    background-color: transparent;
     -webkit-box-shadow: none;
             box-shadow: none;
-    background-color: transparent;
   }
   .megamenu li {
     width: auto;
   }
   .megamenu .dropdown-menu {
-    background: #f9f9f9;
     margin-top: -2px;
+    background: #f9f9f9;
   }
   .megamenu .dropdown-menu a {
     padding: 12px 20px;
-    font-size: 16px;
-    font-weight: 500;
     color: #373737;
+    font-weight: 500;
+    font-size: 16px;
   }
   .megamenu .dropdown-menu .nav-link {
     padding: 10px 8px;
@@ -6251,8 +6251,8 @@ header#header {
     background: #F2FAF9;
   }
   .megamenu .dropdown-menu li {
-    border-bottom: 1px solid #dfdfdf;
     display: block;
+    border-bottom: 1px solid #dfdfdf;
     width: auto;
     width: initial;
   }
@@ -6269,27 +6269,27 @@ header#header {
             transform: rotate(90deg);
   }
   .megamenu .dropdown:hover .dropdown-toggle:after, .megamenu .dropdown.show .dropdown-toggle:after {
+    background-image: url(../../resources/img/icons/arrow@3x.png);
     -webkit-transform: rotate(0);
             transform: rotate(0);
-    background-image: url(../../resources/img/icons/arrow@3x.png);
   }
   ul.navbar-nav.ml-auto {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   ul.distributed {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 100%;
   }
   ul.distributed li {
@@ -6303,13 +6303,13 @@ header#header {
 
 @media (max-width: 991px) {
   .megamenu .dropdown .dropdown-menu {
-    float: none !important;
     position: relative !important;
-    -webkit-transform: none !important;
-            transform: none !important;
-    background: rgba(0, 104, 94, 0.05);
+    float: none !important;
     padding-top: .5rem;
     padding-bottom: .5rem;
+    background: rgba(0, 104, 94, 0.05);
+    -webkit-transform: none !important;
+            transform: none !important;
   }
   .megamenu li.dropdown {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -6336,8 +6336,8 @@ header#header {
   }
   #navbarCollapse {
     height: 70%;
-    max-height: 70%;
     height: calc(100vh - 61px);
+    max-height: 70%;
     max-height: calc(100vh - 61px);
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
@@ -6357,12 +6357,11 @@ header#header {
   left: 0;
   z-index: 1000;
   display: none;
-  float: left;
   min-width: 10rem;
-  padding: .5rem 0;
   margin: .125rem 0 0;
-  font-size: 1rem;
+  padding: .5rem 0;
   color: rgba(0, 0, 0, 0.85);
+  font-size: 1rem;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -6379,12 +6378,12 @@ header#header {
 
 .megamenu button {
   color: #00685e;
-  font-size: 20px;
   font-weight: 600;
+  font-size: 20px;
   background: none;
+  border: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
-  border: 0;
 }
 
 .megamenu button:focus {
@@ -6400,12 +6399,12 @@ header#header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 100%;
 }
 
@@ -6419,8 +6418,8 @@ header#header > .container-fluid {
 
 .dropdown, .navbar-expand-lg .navbar-collapse, .megamenu, .menu, .nav > .container-fluid, .col-lg-10.col-xl-10 {
   position: initial;
-  left: 0;
   right: 0;
+  left: 0;
 }
 
 .dropdown .row {
