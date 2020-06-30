@@ -123,22 +123,48 @@ jQuery(document).ready(function() {
     }  
   });
 
-  document.onkeydown = function(evt) {
-    e = evt || window.event;    
-    // console.log
-    if ((e.target).parentNode.classList.contains(('dropdown'))) {
-      if (e.keyCode == 39 || e.keyCode == 40) {      
-        (e.target).parentNode.classList.add('show');
-      }
-      if (e.keyCode == 37 || e.keyCode == 38) {   
-        (e.target).parentNode.classList.remove('show');
-      }
-    } 
+  // Key for dropdown-list
+  // Megamenu
+  // keys to successful implementation will be aria-expanded on the button 
+  // that triggers the submenu, and a keyboard model that includes support for 
+  // Escape, with focus returning to the button (top menu item) when the submenu closes.
+  document.onkeydown = function (evt) {
+    e = evt || window.event;
+    console.log(e)
+    if ((e.target).parentNode.classList.contains(('dropdown-list'))) {
+      if (e.key === ' ' || e.key === 'Spacebar' || e.key === 'Enter') {
+        // ' ' is standard, 'Spacebar' was used by IE9 and Firefox < 37
+        (e.target).parentNode.classList.toggle('show');
+        console.log('Space/Enter pressed')
+      } else if (e.key === 'Tab') {
+        if ((e.target).parentNode.classList.contains('show')) {
+          // tab inside
+        } else {
+          (e.target).parentNode.classList.remove('show');
+        }
+      } 
+      // else {
+      //   if (e.key == 'ArrowRight' || e.key == 'ArrowDown') {
+      //     (e.target).parentNode.classList.add('show');
+      //   }
+      //   if (e.key == 'ArrowLeft' || e.key == 'ArrowUp') {
+      //     (e.target).parentNode.classList.remove('show');
+      //   }
+      // }
+      // e.preventDefault()
+
+    } else if (e.key === 'Escape') {
+      var currentMenu = document.querySelector("#navbarCollapse").querySelector('.dropdown-list.show')
+      currentMenu.classList.remove('show');
+      currentMenu.querySelector('button').focus();
+      console.log('Esc pressed')
+    }
   };
 
-  // When tabbing close the menu back up when tabbed out
-  $(".dropdown>a").focus(function() {
-    $('.dropdown.show').removeClass('show');
+  // When tabbing close the menu back up when reaching the end of the dropdown-menu
+  $(".dropdown-list > button").focus(function() {
+    console.log('close them')
+    $('.dropdown-list.show').removeClass('show');
   });
 
 

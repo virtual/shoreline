@@ -1,11 +1,11 @@
 <?php $uniqueID = substr(md5(rand()), 0, 10); ?>
-<li class="dropdown">
-  <button aria-controls="{{$uniqueID}}sub" aria-expanded="false" ><?php echo $uniqueID; ?></button>
+<li class="dropdown-list">
+  <button aria-controls="{{$uniqueID}}sub" aria-expanded="false"><?php echo $uniqueID; ?></button>
   <div id="{{$uniqueID}}ub" class="dropdown-menu">
     <div class="row">
       <div class="col-3">
         <ul>
-          <li><a href="/about-shoreline/contact-us.aspx">Explore Student Life</a></li>
+          <li><a href="/about-shoreline/contact-us.aspx">Explore <?php echo $uniqueID; ?> Life</a></li>
           <li><a href="http://app.shoreline.edu/campus-directory/">View Student Support Resources</a></li>
         </ul>
       </div>
