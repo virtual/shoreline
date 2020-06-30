@@ -191,9 +191,7 @@
     @endif
 
     <!-- FOOTER -->
-    <div id="footer">
-      @include('_partials/footer')
-    </div>
+    @include('_partials/footer')
     <script src="{{ $page->baseUrl }}/assets/js/jquery-3.4.1.min.js"></script>
     <script src="{{ $page->baseUrl }}/assets/js/popper.min.js"></script>
     <script src="{{ $page->baseUrl }}/assets/js/bootstrap.min.js"></script>
