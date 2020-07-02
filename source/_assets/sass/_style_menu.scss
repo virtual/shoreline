@@ -43,22 +43,7 @@
   font-size: 1.1rem;
   background-color:#fff;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
-  ul,
-  div {
-    margin-bottom: 0; 
-    padding-left: 0;
-  }
-  li {
-    display: block;
-    width: 100%;
-    color: $primary;
-    a,
-    .nav-link {
-      display: block;
-      color: $primary;
-      padding: 10px 15px;
-    }
-  }
+  
   .dropdown-menu {
     padding: 0;
     color: inherit;
@@ -113,13 +98,13 @@
   .dropdown-list.show .dropdown-menu {
     display: block !important;
   }
-  .dropdown-list .dropdown-menu {
-    border-radius: 0;
-    width: 100%;
-    a {
-      padding-left: 15px;
-    }
-  }
+  // .dropdown-list .dropdown-menu {
+  //   border-radius: 0;
+  //   width: 100%;
+  //   a {
+  //     padding-left: 15px;
+  //   }
+  // }
 }
 #searchCollapse {
   border-top: 1px solid #dfdfdf;
@@ -154,10 +139,10 @@
 }
 
 @media (min-width: $screen-lg) {
-  .megamenu .dropdown-list .dropdown-menu {
-    flex-direction: row;
-    width: 100%;
-    padding: 8px 0px 10px 15px;
+  // .megamenu .dropdown-list .dropdown-menu {
+  //   flex-direction: row;
+  //   width: 100%;
+  //   padding: 8px 0px 10px 15px;
     // border-top: 5px solid $secondary;
     // border-radius: 5px;
     // ul {
@@ -168,7 +153,7 @@
     //   max-width: 250px; // IE 11
     //   width: 250px;
     // }
-  }
+  // }
   // .megamenu .dropdown-list:hover>.dropdown-menu,
   // .megamenu .dropdown-list.show .dropdown-menu {
   //   display: flex !important;
@@ -187,31 +172,31 @@
     background-color: transparent;
     box-shadow: none;
     li { width: auto;}   
-    .dropdown-menu {
-      margin-top: -2px;
-      background: #f9f9f9;
-      a {
-        padding: 12px 20px;
-        color: #373737;
-        font-weight: 500;
-        font-size: 16px;
-      }
-      .nav-link {
-        padding: 10px 8px
-      }
-      a:hover {
-        background: $light;
-      }
-      li {
-        display: block;
-        border-bottom: 1px solid #dfdfdf;
-        width: auto;
-        width: initial;
-      }
-      li:last-child {
-        border-bottom: 0;
-      }
-    }
+    // .dropdown-menu {
+    //   margin-top: -2px;
+    //   background: #f9f9f9;
+    //   a {
+    //     padding: 12px 20px;
+    //     color: #373737;
+    //     font-weight: 500;
+    //     font-size: 16px;
+    //   }
+    //   .nav-link {
+    //     padding: 10px 8px
+    //   }
+    //   a:hover {
+    //     background: $light;
+    //   }
+    //   li {
+    //     display: block;
+    //     border-bottom: 1px solid #dfdfdf;
+    //     width: auto;
+    //     width: initial;
+    //   }
+    //   li:last-child {
+    //     border-bottom: 0;
+    //   }
+    // }
     // li.dropdown-list>a {
     //   padding-right: 1.5rem !important;
     //   position: relative;
@@ -262,20 +247,20 @@
 // }
 
 @media (max-width: $screen-lg - 1px) {
-  .megamenu .dropdown-list .dropdown-menu {
-    position: relative !important;
-    float: none !important;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    background: rgba($primary, .05);
-    transform: none !important;
-  }
+  // .megamenu .dropdown-list .dropdown-menu {
+  //   position: relative !important;
+  //   float: none !important;
+  //   padding-top: .5rem;
+  //   padding-bottom: .5rem;
+  //   background: rgba($primary, .05);
+  //   transform: none !important;
+  // }
   .megamenu li.dropdown-list {
     border-top: 1px solid rgba(0, 0, 0, 0.1); 
   }
-  .megamenu .dropdown-list .dropdown-menu a {
-    padding-left: 25px;
-  }
+  // .megamenu .dropdown-list .dropdown-menu a {
+  //   padding-left: 25px;
+  // }
   .navmenu ul li a {
     text-align: left;
   }
@@ -290,17 +275,17 @@
   //   width: 100%;
   //   text-align: right;
   // }
-  .megamenu>div>div {
-    width: 100%;
-  }
+  // .megamenu>div>div {
+  //   width: 100%;
+  // }
   .megamenu .dropdown-toggle:after {
     position: absolute;
     right: 20px;
   }
-  #navbarCollapse>ul>li>a,
-  #navbarCollapse>div>ul>li>a {
-    position: relative; 
-  }
+  // #navbarCollapse>ul>li>a,
+  // #navbarCollapse>div>ul>li>a {
+  //   position: relative; 
+  // }
   #navbarCollapse>ul>li>a { 
     overflow:hidden;
   }
@@ -322,31 +307,12 @@
 
 
 
-// testing
-.dropdown-menu2 {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
-  display: none;
-  // float: left;
-  min-width: 10rem;
-  margin: .125rem 0 0;
-  padding: .5rem 0;
-  color: rgba(0,0,0,.85);
-  font-size: 1rem;
-  text-align: left;
-  list-style: none;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid rgba(0,0,0,.15);
-  border-radius: .25rem;
-}
-.dropdown-menu {
-  right: 0;
-  left: 0;
-  width: $screen-xl;
-}
+// testing 
+// .dropdown-menu {
+//   right: 0;
+//   left: 0;
+//   width: $screen-xl;
+// }
 
 // .megamenu li.dropdown, .megamenu li.dropdown .dropdown-menu {
 //   width: 100%;
@@ -378,11 +344,54 @@ header#header > .container-fluid {
 }
 
 .dropdown-list, .navbar-expand-lg .navbar-collapse, .megamenu, .menu, .nav > .container-fluid, .col-lg-10.col-xl-10 {
-  position: initial;
-  right: 0;
-  left: 0;
+  position: static;
+  // right: 0;
+  // left: 0;
 }
 
-.dropdown-list .row {
-  width: 100%;
+// .dropdown-list .row {
+//   width: 100%;
+// }
+
+// https://github.com/virtual/motlow/commit/a6a43f3b945be8968c9f7135cfdd939b1866b511
+// Full width dropdown-menus
+@media (min-width: $screen-lg) { 
+  .dropdown-menu {
+    background: $white;
+    width: 100vw;
+    width: calc(100vw - 18px); // IE 11
+    width: calc(100vw - var(--scrollbar-width));
+    border-radius: 0;
+    // margin-left: calc(-50vw + 992px/2); // IE 11
+    // margin-left: calc(-50vw + 992px/2 + var(--scrollbar-width)/2);
+    margin-left: 0;  
+    padding: .5rem 1rem;
+    // .container-fluid {
+    //   padding-left: 0;
+    //   padding-right: 0;
+    // }
+    ul {
+      margin-bottom: 0; 
+      padding-left: 0;
+    }
+    li {
+      display: block;
+      width: 100%;
+      color: $primary;
+      a,
+      .nav-link {
+        display: block;
+        color: $primary;
+        padding: 10px 15px;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-xl) { // 1280
+  .dropdown-menu {
+      margin-left: calc(-50vw + 1280px/2 + 9px); // IE 11
+      margin-left: calc(-50vw + 1280px/2 + var(--scrollbar-width)/2);
+    
+  }  
 }

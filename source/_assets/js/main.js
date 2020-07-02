@@ -1,5 +1,7 @@
 jQuery(document).ready(function() {
-  
+  // Scroll-bar width for 100vw sections
+  document.documentElement.style.setProperty('--scrollbar-width', (window.innerWidth - document.documentElement.clientWidth) + "px");
+
   // Check testimonial picture if vertical for spacing
   $('.quote-feature-img').each(function () {
     var $this = $(this);

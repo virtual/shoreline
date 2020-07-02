@@ -6128,25 +6128,6 @@ header#header {
           box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
 }
 
-.megamenu ul,
-.megamenu div {
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
-.megamenu li {
-  display: block;
-  width: 100%;
-  color: #00685e;
-}
-
-.megamenu li a,
-.megamenu li .nav-link {
-  display: block;
-  color: #00685e;
-  padding: 10px 15px;
-}
-
 .megamenu .dropdown-menu {
   padding: 0;
   color: inherit;
@@ -6198,15 +6179,6 @@ header#header {
   display: block !important;
 }
 
-.megamenu .dropdown-list .dropdown-menu {
-  border-radius: 0;
-  width: 100%;
-}
-
-.megamenu .dropdown-list .dropdown-menu a {
-  padding-left: 15px;
-}
-
 #searchCollapse {
   border-top: 1px solid #dfdfdf;
 }
@@ -6245,14 +6217,6 @@ header#header {
 }
 
 @media (min-width: 992px) {
-  .megamenu .dropdown-list .dropdown-menu {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    width: 100%;
-    padding: 8px 0px 10px 15px;
-  }
   .megamenu {
     position: relative;
     font-size: 1rem;
@@ -6262,31 +6226,6 @@ header#header {
   }
   .megamenu li {
     width: auto;
-  }
-  .megamenu .dropdown-menu {
-    margin-top: -2px;
-    background: #f9f9f9;
-  }
-  .megamenu .dropdown-menu a {
-    padding: 12px 20px;
-    color: #373737;
-    font-weight: 500;
-    font-size: 16px;
-  }
-  .megamenu .dropdown-menu .nav-link {
-    padding: 10px 8px;
-  }
-  .megamenu .dropdown-menu a:hover {
-    background: #F2FAF9;
-  }
-  .megamenu .dropdown-menu li {
-    display: block;
-    border-bottom: 1px solid #dfdfdf;
-    width: auto;
-    width: initial;
-  }
-  .megamenu .dropdown-menu li:last-child {
-    border-bottom: 0;
   }
   .megamenu .dropdown-list + .dropdown-list {
     margin-left: .5rem;
@@ -6334,34 +6273,15 @@ header#header {
 }
 
 @media (max-width: 991px) {
-  .megamenu .dropdown-list .dropdown-menu {
-    position: relative !important;
-    float: none !important;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    background: rgba(0, 104, 94, 0.05);
-    -webkit-transform: none !important;
-            transform: none !important;
-  }
   .megamenu li.dropdown-list {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-  }
-  .megamenu .dropdown-list .dropdown-menu a {
-    padding-left: 25px;
   }
   .navmenu ul li a {
     text-align: left;
   }
-  .megamenu > div > div {
-    width: 100%;
-  }
   .megamenu .dropdown-toggle:after {
     position: absolute;
     right: 20px;
-  }
-  #navbarCollapse > ul > li > a,
-  #navbarCollapse > div > ul > li > a {
-    position: relative;
   }
   #navbarCollapse > ul > li > a {
     overflow: hidden;
@@ -6381,31 +6301,6 @@ header#header {
   body {
     padding-top: 61px;
   }
-}
-
-.dropdown-menu2 {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
-  display: none;
-  min-width: 10rem;
-  margin: .125rem 0 0;
-  padding: .5rem 0;
-  color: rgba(0, 0, 0, 0.85);
-  font-size: 1rem;
-  text-align: left;
-  list-style: none;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: .25rem;
-}
-
-.dropdown-menu {
-  right: 0;
-  left: 0;
-  width: 1280px;
 }
 
 .megamenu ul.menu {
@@ -6430,13 +6325,41 @@ header#header > .container-fluid {
 }
 
 .dropdown-list, .navbar-expand-lg .navbar-collapse, .megamenu, .menu, .nav > .container-fluid, .col-lg-10.col-xl-10 {
-  position: initial;
-  right: 0;
-  left: 0;
+  position: static;
 }
 
-.dropdown-list .row {
-  width: 100%;
+@media (min-width: 992px) {
+  .dropdown-menu {
+    background: #ffffff;
+    width: 100vw;
+    width: calc(100vw - 18px);
+    width: calc(100vw - var(--scrollbar-width));
+    border-radius: 0;
+    margin-left: 0;
+    padding: .5rem 1rem;
+  }
+  .dropdown-menu ul {
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  .dropdown-menu li {
+    display: block;
+    width: 100%;
+    color: #00685e;
+  }
+  .dropdown-menu li a,
+  .dropdown-menu li .nav-link {
+    display: block;
+    color: #00685e;
+    padding: 10px 15px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .dropdown-menu {
+    margin-left: calc(-50vw + 1280px/2 + 9px);
+    margin-left: calc(-50vw + 1280px/2 + var(--scrollbar-width)/2);
+  }
 }
 
 .left-nav {
