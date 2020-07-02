@@ -6129,6 +6129,7 @@ header#header {
 }
 
 .megamenu .dropdown-menu {
+  position: relative;
   padding: 0;
   color: inherit;
   border: 0;
@@ -6140,6 +6141,24 @@ header#header {
   color: inherit;
 }
 
+.megamenu .dropdown-menu ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.megamenu .dropdown-menu li {
+  display: block;
+  width: 100%;
+  color: #00685e;
+}
+
+.megamenu .dropdown-menu li a,
+.megamenu .dropdown-menu li .nav-link {
+  display: block;
+  color: #00685e;
+  padding: 10px 15px;
+}
+
 .megamenu .dropdown-list > button {
   padding-right: 1rem;
   color: #00685e;
@@ -6147,30 +6166,39 @@ header#header {
   font-size: 20px;
   background: none;
   border: 0;
-  border-bottom: 4px solid #fff;
   -webkit-box-shadow: none;
           box-shadow: none;
-  -webkit-transition: border-color .2s ease-in-out;
-  transition: border-color .2s ease-in-out;
 }
 
-.megamenu .dropdown-list > button[aria-expanded="true"] {
+.megamenu .dropdown-list > button > .button-text {
+  display: inline-block;
+  border-bottom: 4px solid #fff;
+  -webkit-transition: border-color .2s ease-in-out;
+  transition: border-color .2s ease-in-out;
+  position: relative;
+  padding-right: 1rem;
+}
+
+.megamenu .dropdown-list > button[aria-expanded="true"] > .button-text {
   border-color: #ffb500;
 }
 
-.megamenu .dropdown-list > button:after {
-  position: absolute;
-  display: inline-block;
-  padding: 3px;
-  font-weight: 900;
-  font-size: 1rem;
-  font-family: "Font Awesome 5 Pro";
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-  content: "\F0D7";
+.megamenu .dropdown-list > button > span {
+  pointer-events: none;
 }
 
-.megamenu .dropdown-list > button[aria-expanded="true"]:after {
+.megamenu .dropdown-list > button .button-expand {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  padding: 3px;
+  font-size: 1rem;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.megamenu .dropdown-list > button[aria-expanded="true"] .button-expand {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -6217,6 +6245,9 @@ header#header {
 }
 
 @media (min-width: 992px) {
+  .megamenu .dropdown-menu {
+    position: absolute;
+  }
   .megamenu {
     position: relative;
     font-size: 1rem;
@@ -6273,8 +6304,10 @@ header#header {
 }
 
 @media (max-width: 991px) {
-  .megamenu li.dropdown-list {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  .megamenu li.dropdown-list > button {
+    padding: 1rem;
+    width: 100%;
+    text-align: left;
   }
   .navmenu ul li a {
     text-align: left;
@@ -6303,17 +6336,19 @@ header#header {
   }
 }
 
-.megamenu ul.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 100%;
+@media (min-width: 992px) {
+  .megamenu ul.menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%;
+  }
 }
 
 div#menucontent, div#menucontent > div {
@@ -6322,6 +6357,17 @@ div#menucontent, div#menucontent > div {
 
 header#header > .container-fluid {
   position: relative;
+}
+
+@media (max-width: 991px) {
+  header#header > .container-fluid, .dropdown-menu > .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.megamenu ul.menu {
+  padding-left: 0;
 }
 
 .dropdown-list, .navbar-expand-lg .navbar-collapse, .megamenu, .menu, .nav > .container-fluid, .col-lg-10.col-xl-10 {
@@ -6337,21 +6383,6 @@ header#header > .container-fluid {
     border-radius: 0;
     margin-left: 0;
     padding: .5rem 1rem;
-  }
-  .dropdown-menu ul {
-    margin-bottom: 0;
-    padding-left: 0;
-  }
-  .dropdown-menu li {
-    display: block;
-    width: 100%;
-    color: #00685e;
-  }
-  .dropdown-menu li a,
-  .dropdown-menu li .nav-link {
-    display: block;
-    color: #00685e;
-    padding: 10px 15px;
   }
 }
 
