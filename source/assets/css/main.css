@@ -2940,6 +2940,34 @@ hr {
   margin-bottom: 2rem;
 }
 
+/* offset backgrounds */
+.bg-offset-yellow-wave {
+  background-color: #ffb500;
+  background-image: url("../../resources/img/graphics/bg-offset-yellow.png");
+}
+
+.bg-offset-bottom-right {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.bg-offset-bottom-right > * {
+  position: relative;
+  right: 10px;
+  bottom: 10px;
+}
+
+@media (min-width: 992px) {
+  .bg-offset-bottom-right {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .bg-offset-bottom-right > * {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
 .topnav {
   background-color: #0c2321;
 }
@@ -6837,6 +6865,28 @@ footer#footer .back-to-top:before {
     width: 15px;
     height: 15px;
     margin-left: -7.5px;
+  }
+}
+
+.footer-map {
+  margin-top: -5.25rem;
+  margin-bottom: 2rem;
+}
+
+.location-square-feature {
+  width: 100%;
+  padding-bottom: 56.25%;
+  background-image: url("../../resources/img/graphics/shoreline-google-map.jpg");
+  background-size: cover;
+}
+
+@media (min-width: 992px) {
+  .footer-map {
+    margin-top: -6.5rem;
+    margin-bottom: 1rem;
+  }
+  .location-square-feature {
+    padding-bottom: 80%;
   }
 }
 

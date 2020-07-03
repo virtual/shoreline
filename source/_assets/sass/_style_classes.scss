@@ -159,3 +159,28 @@ hr {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
+/* offset backgrounds */
+.bg-offset-yellow-wave {
+  background-color: $secondary;
+  background-image: url('../../resources/img/graphics/bg-offset-yellow.png')
+}
+.bg-offset-bottom-right { 
+  margin-top: 10px;
+  margin-left: 10px; 
+}
+.bg-offset-bottom-right > * { 
+    position: relative; 
+    right: 10px;
+    bottom: 10px;
+}
+@media (min-width: $screen-lg) {
+  .bg-offset-bottom-right { 
+    margin-top: 20px;
+    margin-left: 20px; 
+  }
+  .bg-offset-bottom-right > * {  
+    right: 20px;
+    bottom: 20px;
+  }
+}

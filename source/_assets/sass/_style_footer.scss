@@ -125,3 +125,22 @@ footer#footer .back-to-top {
     }
   } 
 }
+.footer-map {
+  margin-top: -5.25rem;
+  margin-bottom: 2rem;
+}
+.location-square-feature {
+  width: 100%;
+  padding-bottom: 56.25%;
+  background-image: url('../../resources/img/graphics/shoreline-google-map.jpg');
+  background-size: cover;
+}
+@media (min-width: $screen-lg) {
+  .footer-map {
+    margin-top: -6.5rem;
+    margin-bottom: 1rem;
+  } 
+  .location-square-feature {    
+    padding-bottom: 80%;
+  }
+}
