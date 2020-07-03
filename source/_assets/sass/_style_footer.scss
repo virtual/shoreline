@@ -1,6 +1,6 @@
 footer#footer { 
   padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-bottom: 1.5rem;
   color: $white;
   font-size: 1rem; 
   text-align:center;
@@ -161,4 +161,15 @@ footer#footer .back-to-top {
   &.list-unstyled li {
     margin: .5rem .25rem;
   }  
+}
+.subfooter {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  h2, h3 { margin-top: 0; }
+}
+@media (min-width: $screen-lg) {
+  .subfooter {
+    padding-top: 5rem;
+    padding-bottom: 5.375rem;
+  } 
 }
