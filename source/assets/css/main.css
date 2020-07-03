@@ -6158,7 +6158,6 @@ header#header {
   right: 0;
   left: 0;
   z-index: 1030;
-  color: #00685e;
   font-size: 1.1rem;
   background-color: #fff;
   -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
@@ -6168,14 +6167,11 @@ header#header {
 .megamenu .dropdown-menu {
   position: relative;
   padding: 0;
-  color: inherit;
-  border: 0;
 }
 
 .megamenu .dropdown-menu a {
   display: block;
   padding: 5px 15px;
-  color: inherit;
 }
 
 .megamenu .dropdown-menu ul {
@@ -6186,18 +6182,15 @@ header#header {
 .megamenu .dropdown-menu li {
   display: block;
   width: 100%;
-  color: #00685e;
 }
 
 .megamenu .dropdown-menu li a,
 .megamenu .dropdown-menu li .nav-link {
   display: block;
-  color: #00685e;
   padding: 10px 15px;
 }
 
 .megamenu .dropdown-list > button {
-  padding-right: 1rem;
   color: #00685e;
   font-weight: 600;
   font-size: 20px;
@@ -6421,12 +6414,56 @@ header#header > .container-fluid {
     margin-left: 0;
     padding: .5rem 1rem;
   }
+  .dropdown-menu .container-fluid {
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+  }
 }
 
 @media (min-width: 1280px) {
   .dropdown-menu {
     margin-left: calc(-50vw + 1280px/2 + 9px);
     margin-left: calc(-50vw + 1280px/2 + var(--scrollbar-width)/2);
+  }
+}
+
+.dropdown-menu {
+  border: 0;
+}
+
+.dropdown-menu h2, .dropdown-menu h3, .dropdown-menu h4 {
+  color: #444;
+  font-size: 1.1875rem;
+  line-height: 1.68;
+}
+
+.megamenu .dropdown-menu .dropdown-column-2 ul {
+  padding-left: 1rem;
+}
+
+@media (min-width: 992px) {
+  .dropdown-menu {
+    -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+  }
+  .dropdown-menu .dropdown-column-1 > *:first-child, .dropdown-menu .dropdown-column-2 > *:first-child, .dropdown-menu .dropdown-column-3 > *:first-child {
+    margin-top: 0;
+  }
+  .dropdown-menu .dropdown-column-2 {
+    border-right: 1px solid #dedede;
+    border-left: 1px solid #dedede;
+  }
+  .dropdown-menu .dropdown-column-2 ul {
+    -webkit-columns: 2;
+       -moz-columns: 2;
+            columns: 2;
+  }
+  .dropdown-menu .dropdown-column-2 h2, .dropdown-menu .dropdown-column-2 h3, .dropdown-menu .dropdown-column-2 h4 {
+    display: block;
+    width: 100%;
+  }
+  .megamenu .dropdown-menu .dropdown-column-2 ul {
+    padding-left: 0;
   }
 }
 
