@@ -21,21 +21,41 @@
               <br><a href="tel:2065464101">206-546-4101</a>
             </address>
           </div>
-          <ul class="list-unstyled list-inline inline-list-padded footer-social">
+          <ul class="list-unstyled list-inline footer-social">
             <li>
-               <a title="Shoreline Community College on Facebook" href="https://www.facebook.com/ShorelineCommunityCollege"><span class="fab fa-2x fa-facebook-f" aria-hidden="true"></span> <span class="sr-only">Facebook</span></a>
+               <a class="icon-circle" title="Shoreline Community College on Facebook" href="https://www.facebook.com/ShorelineCommunityCollege">
+                <span class="icon-content">
+                <span class="fab fa-facebook-f" aria-hidden="true"></span> <span class="sr-only">Facebook</span>
+                </span>
+                </a>
             </li>
             <li>
-               <a title="Shoreline Community College on LinkedIn" href="https://www.linkedin.com/groups/4420614"><span class="fab fa-2x fa-linkedin-in" aria-hidden="true"></span> <span class="sr-only">LinkedIn</span></a>
+               <a class="icon-circle" title="Shoreline Community College on LinkedIn" href="https://www.linkedin.com/groups/4420614">
+                <span class="icon-content">
+                <span class="fab fa-linkedin-in" aria-hidden="true"></span> <span class="sr-only">LinkedIn</span>
+                </span>
+                </a>
             </li>
             <li>
-               <a title="Shoreline Community College on Twitter" href="https://twitter.com/shorelinecc"><span class="fab fa-2x fa-twitter" aria-hidden="true"></span> <span class="sr-only">Twitter</span></a>
+               <a class="icon-circle" title="Shoreline Community College on Twitter" href="https://twitter.com/shorelinecc">
+                <span class="icon-content">
+                <span class="fab fa-twitter" aria-hidden="true"></span> <span class="sr-only">Twitter</span>
+                </span>
+                </a>
             </li>
             <li>
-               <a title="Shoreline Community College on Youtube" href="https://www.youtube.com/user/ShorelineCCvideos"><span class="fab fa-2x fa-youtube" aria-hidden="true"></span> <span class="sr-only">Youtube</span></a>
+               <a class="icon-circle" title="Shoreline Community College on Youtube" href="https://www.youtube.com/user/ShorelineCCvideos">
+                <span class="icon-content">
+                <span class="fab fa-youtube" aria-hidden="true"></span> <span class="sr-only">Youtube</span>
+                </span>
+                </a>
             </li>
             <li>
-               <a title="Shoreline Community College on Instagram" href="https://www.instagram.com/shorelinecollege/"><span class="fab fa-2x fa-instagram" aria-hidden="true"></span> <span class="sr-only">Instagram</span></a>
+               <a class="icon-circle" title="Shoreline Community College on Instagram" href="https://www.instagram.com/shorelinecollege/">
+                <span class="icon-content">
+                <span class="fab fa-instagram" aria-hidden="true"></span> <span class="sr-only">Instagram</span>
+                </span>
+                </a>
             </li>
          </ul>
           <p class="copyright">
