@@ -440,6 +440,9 @@ header#header > .container-fluid {
   padding-left: 1rem;
 }
 @media (min-width: $screen-lg) {
+  #navbarCollapse { // always show desktop nav even if hidden on mobile 
+    visibility: visible !important;
+  }
   .dropdown-menu {
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
     .dropdown-column-1, .dropdown-column-2, .dropdown-column-3 {
