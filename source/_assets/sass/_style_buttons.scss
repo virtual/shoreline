@@ -42,6 +42,7 @@ a.btn { text-decoration: none; }
   color: set-text-color($btn-important);
   background-color: $btn-important;
   &:hover {
+    color: set-text-color($btn-important);
     background-color: darken($btn-important, 5);
   }
 }

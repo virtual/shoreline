@@ -201,8 +201,8 @@ hr {
     //   @include link-underline(#fff, darken($link-blue, 5), darken($link-blue, 5));
     // }
     a.btn:hover {
-      background-image: none;
       text-shadow: none;
+      background-image: none;
     }
     h1, .h1, h2, .h2 { color: $primary; }
     h3, h4, h5, h6,
