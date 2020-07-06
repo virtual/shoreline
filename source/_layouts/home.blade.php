@@ -95,6 +95,7 @@
     <script src="{{ $page->baseUrl }}/assets/js/jquery-3.5.1.min.js" defer="defer"></script>
     <script src="{{ $page->baseUrl }}/assets/js/bootstrap.bundle.min.js" defer="defer"></script>
     <script src="{{ $page->baseUrl }}/assets/js/main.js" defer="defer"></script>  
+    <script src="{{ $page->baseUrl }}/assets/js/lazyload.min.js" defer="defer"></script>  
     <script>
       (function() {
         var css = document.createElement('link');
