@@ -11,22 +11,15 @@
   <meta name="description" content="Shoreline Community College...">
   <meta property="og:title" content="Shoreline Community College" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="images/thumbnail.jpg" />
+  <meta property="og:image" content="{{ $page->baseUrl }}/resources/images/meta/thumbnail.jpg" />
   <meta property="og:url" content="http://www.Shorelinecollege.edu/" />
   <meta property="og:site_name" content="Shoreline Community College" />
   <meta property="og:description" content="Shoreline Community College..." />
   <meta property="og:locale" content="en_us" />
-  <link rel="image_src" href="{{ $page->baseUrl }}/images/thumbnail.jpg" />
+  <link rel="image_src" href="{{ $page->baseUrl }}/resources/images/meta/thumbnail.jpg" />
   <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/bootstrap.css">
   <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/main.css?v=3">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous" />
-  <noscript>
-    <style>
-      .subnav #submenu>ul ul {
-        display: block;
-      }
-    </style>
-  </noscript>
+  <link rel="stylesheet" href="{{ $page->baseUrl }}/resources/fonts/fa-subset/fontawesome.min.css?v=101" />
 
   <!-- Analytics -->
 </head>
@@ -99,10 +92,20 @@
     <div id="footer">
       @include('_partials/footer')
     </div>
-    <script src="{{ $page->baseUrl }}/assets/js/jquery-3.4.1.min.js" defer="defer"></script>
-    <script src="{{ $page->baseUrl }}/assets/js/popper.min.js" defer="defer"></script>
-    <script src="{{ $page->baseUrl }}/assets/js/bootstrap.min.js" defer="defer"></script>
+    <script src="{{ $page->baseUrl }}/assets/js/jquery-3.5.1.min.js" defer="defer"></script>
+    <script src="{{ $page->baseUrl }}/assets/js/bootstrap.bundle.min.js" defer="defer"></script>
     <script src="{{ $page->baseUrl }}/assets/js/main.js" defer="defer"></script>  
+    <script>
+      (function() {
+        var css = document.createElement('link');
+        css.href = '//pro.fontawesome.com/releases/v5.13.0/css/all.css';
+        css.rel = 'stylesheet';
+        css.type = 'text/css';
+        css.integrity = "sha384-IIED/eyOkM6ihtOiQsX2zizxFBphgnv1zbe1bKA+njdFzkr6cDNy16jfIKWu4FNH";
+        css.crossOrigin = "anonymous";
+        document.getElementsByTagName('head')[0].appendChild(css);
+      })();
+    </script>
 </body>
 
 </html>

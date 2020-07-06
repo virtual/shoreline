@@ -136,9 +136,7 @@ jQuery(document).ready(function() {
   });
   document.onkeydown = function (evt) {
     e = evt || window.event;   
-    console.log('onkeydown', e.key)
     if ((e.key === ' ' || e.key === 'Spacebar' || e.key === 'Enter' || e.key === 'Escape')) {
-      console.log('checkDropdownKey')
       checkDropdownKey(e)    
     }
   };
@@ -179,16 +177,16 @@ function checkDropdownKey(e) {
 }
 // End Megamenu dropdown menu functions
 
-function calcOverviewOffset() {
-  //var sidebarOffset = $('#sidebar-nav').offset().top; // doesn't matter
-  var contentHeaderOffset = $('.content-header').offset().top;
-  return contentHeaderOffset + 50;
-}
+// function calcOverviewOffset() {
+//   //var sidebarOffset = $('#sidebar-nav').offset().top; // doesn't matter
+//   var contentHeaderOffset = $('.content-header').offset().top;
+//   return contentHeaderOffset + 50;
+// }
 
-function setOverviewOffset(offset) {
-  document.getElementById('sidebar-nav').setAttribute('style', "top: -" + offset + "px");
-  return true;
-}
+// function setOverviewOffset(offset) {
+//   document.getElementById('sidebar-nav').setAttribute('style', "top: -" + offset + "px");
+//   return true;
+// }
 
 require('jquery-colorbox');
 var twitterFetcher = require('twitter-fetcher');
@@ -230,6 +228,7 @@ var shoreline = {
   },
 
   // Pulls in JSON feed
+  // Requires full jQuery (not Slim)
   getEventFeed(max = 3) {
     var arrayFeeds = [];
 
