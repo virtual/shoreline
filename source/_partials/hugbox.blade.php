@@ -43,16 +43,27 @@
 <section class="sectional sectional-padded bg-primary lazy"
   data-bg="{{ $page->baseUrl }}/resources/img/stock/shoreline.williams73.jpg">
   <div class="container-fluid">
-    <h2>Lazy load background</h2>
-    <div class="card">
-      <div class="card-body">
-        <ul>
-          <li>Lorem ipsum </li>
-          <li>Dolor sit amet</li>
-          <li>Consectetur adipiscing</li>
-          <li>Elit nunc nec ex</li>
-          <li>Id felis </li>
-        </ul>
+    <div class="row">
+      <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+        <h2 class="text-center">Reimagine your path // Lazy load background</h2>
+        <p class="lead text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae iusto amet atque
+          laborum
+          voluptatibus deserunt eius, minima pariatur praesentium, beatae maiores optio quo totam voluptates omnis
+          libero eaque nesciunt nulla!</p>
+        <div class="bg-offset-yellow-wave bg-offset-bottom-right">
+          <div class="bg-light py-3 px-5">
+            <h3>Things</h3>
+            <div class="toc-links-icons">
+              <ul class="list-unstyled"> 
+                <li><a href="#">Arts & Communication</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Health & Medical</a></li>
+                <li><a href="#">Science, Technology, Engineering & Math</a></li>
+                <li><a href="#">Social Sciences & Education</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

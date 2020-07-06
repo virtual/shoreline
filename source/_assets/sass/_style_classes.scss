@@ -152,7 +152,7 @@ pre code {
     @include headings(1,6) { color: $light; }
   }
   a.more-arrow:after, ul.more-arrow > li a:after { 
-    background-image: url(../../resources/img/icons/inverse/arrow@3x.png);
+    background-image: url('../../resources/img/icons/inverse/arrow@3x.png');
   }
 }
 hr {
@@ -182,5 +182,32 @@ hr {
   .bg-offset-bottom-right > * {  
     right: 20px;
     bottom: 20px;
+  }
+}
+.bg-primary, .sectional-inverted {
+  .bg-white, .bg-light {
+    color: $text-dark;
+    * { color: inherit; } 
+    p, ul, dl, ol { 
+      color: $text-dark;
+    }  
+    a {
+      color: inherit;
+      text-shadow: none;
+      @include link-reset($link-blue);
+    } 
+    // a:hover {
+    //   // border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    //   @include link-underline(#fff, darken($link-blue, 5), darken($link-blue, 5));
+    // }
+    a.btn:hover {
+      background-image: none;
+      text-shadow: none;
+    }
+    h1, .h1, h2, .h2 { color: $primary; }
+    h3, h4, h5, h6,
+    .h3, .h4, .h5, .h6 {
+      color: $text-black;
+    }
   }
 }

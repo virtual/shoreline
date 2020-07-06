@@ -2932,7 +2932,7 @@ pre code {
 }
 
 .bg-inverted a.more-arrow:after, .bg-inverted ul.more-arrow > li a:after, .sectional-inverted a.more-arrow:after, .sectional-inverted ul.more-arrow > li a:after {
-  background-image: url(../../resources/img/icons/inverse/arrow@3x.png);
+  background-image: url("../../resources/img/icons/inverse/arrow@3x.png");
 }
 
 hr {
@@ -2966,6 +2966,63 @@ hr {
     right: 20px;
     bottom: 20px;
   }
+}
+
+.bg-primary .bg-white, .bg-primary .bg-light, .sectional-inverted .bg-white, .sectional-inverted .bg-light {
+  color: #444;
+}
+
+.bg-primary .bg-white *, .bg-primary .bg-light *, .sectional-inverted .bg-white *, .sectional-inverted .bg-light * {
+  color: inherit;
+}
+
+.bg-primary .bg-white p, .bg-primary .bg-white ul, .bg-primary .bg-white dl, .bg-primary .bg-white ol, .bg-primary .bg-light p, .bg-primary .bg-light ul, .bg-primary .bg-light dl, .bg-primary .bg-light ol, .sectional-inverted .bg-white p, .sectional-inverted .bg-white ul, .sectional-inverted .bg-white dl, .sectional-inverted .bg-white ol, .sectional-inverted .bg-light p, .sectional-inverted .bg-light ul, .sectional-inverted .bg-light dl, .sectional-inverted .bg-light ol {
+  color: #444;
+}
+
+.bg-primary .bg-white a, .bg-primary .bg-light a, .sectional-inverted .bg-white a, .sectional-inverted .bg-light a {
+  color: inherit;
+  text-shadow: none;
+  color: #0074b3;
+  text-shadow: none;
+  background-image: none;
+}
+
+.bg-primary .bg-white a:hover, .bg-primary .bg-white a:focus, .bg-primary .bg-light a:hover, .bg-primary .bg-light a:focus, .sectional-inverted .bg-white a:hover, .sectional-inverted .bg-white a:focus, .sectional-inverted .bg-light a:hover, .sectional-inverted .bg-light a:focus {
+  color: #00639a;
+  text-decoration: underline;
+}
+
+.bg-primary .bg-white a::-moz-selection, .bg-primary .bg-light a::-moz-selection, .sectional-inverted .bg-white a::-moz-selection, .sectional-inverted .bg-light a::-moz-selection {
+  text-shadow: 0.03em 0 #00685e, -0.03em 0 #00685e, 0 0.03em #00685e, 0 -0.03em #00685e, 0.06em 0 #00685e, -0.06em 0 #00685e, 0.09em 0 #00685e, -0.09em 0 #00685e, 0.12em 0 #00685e, -0.12em 0 #00685e, 0.15em 0 #00685e, -0.15em 0 #00685e;
+  background: #00685e;
+}
+
+.bg-primary .bg-white a::selection, .bg-primary .bg-light a::selection, .sectional-inverted .bg-white a::selection, .sectional-inverted .bg-light a::selection {
+  text-shadow: 0.03em 0 #00685e, -0.03em 0 #00685e, 0 0.03em #00685e, 0 -0.03em #00685e, 0.06em 0 #00685e, -0.06em 0 #00685e, 0.09em 0 #00685e, -0.09em 0 #00685e, 0.12em 0 #00685e, -0.12em 0 #00685e, 0.15em 0 #00685e, -0.15em 0 #00685e;
+  background: #00685e;
+}
+
+.bg-primary .bg-white a::-moz-selection, .bg-primary .bg-light a::-moz-selection, .sectional-inverted .bg-white a::-moz-selection, .sectional-inverted .bg-light a::-moz-selection {
+  text-shadow: 0.03em 0 #00685e, -0.03em 0 #00685e, 0 0.03em #00685e, 0 -0.03em #00685e, 0.06em 0 #00685e, -0.06em 0 #00685e, 0.09em 0 #00685e, -0.09em 0 #00685e, 0.12em 0 #00685e, -0.12em 0 #00685e, 0.15em 0 #00685e, -0.15em 0 #00685e;
+  background: #00685e;
+}
+
+.bg-primary .bg-white a.btn:hover, .bg-primary .bg-light a.btn:hover, .sectional-inverted .bg-white a.btn:hover, .sectional-inverted .bg-light a.btn:hover {
+  background-image: none;
+  text-shadow: none;
+}
+
+.bg-primary .bg-white h1, .bg-primary .bg-white .h1, .bg-primary .bg-white h2, .bg-primary .bg-white .h2, .bg-primary .bg-light h1, .bg-primary .bg-light .h1, .bg-primary .bg-light h2, .bg-primary .bg-light .h2, .sectional-inverted .bg-white h1, .sectional-inverted .bg-white .h1, .sectional-inverted .bg-white h2, .sectional-inverted .bg-white .h2, .sectional-inverted .bg-light h1, .sectional-inverted .bg-light .h1, .sectional-inverted .bg-light h2, .sectional-inverted .bg-light .h2 {
+  color: #00685e;
+}
+
+.bg-primary .bg-white h3, .bg-primary .bg-white h4, .bg-primary .bg-white h5, .bg-primary .bg-white h6,
+.bg-primary .bg-white .h3, .bg-primary .bg-white .h4, .bg-primary .bg-white .h5, .bg-primary .bg-white .h6, .bg-primary .bg-light h3, .bg-primary .bg-light h4, .bg-primary .bg-light h5, .bg-primary .bg-light h6,
+.bg-primary .bg-light .h3, .bg-primary .bg-light .h4, .bg-primary .bg-light .h5, .bg-primary .bg-light .h6, .sectional-inverted .bg-white h3, .sectional-inverted .bg-white h4, .sectional-inverted .bg-white h5, .sectional-inverted .bg-white h6,
+.sectional-inverted .bg-white .h3, .sectional-inverted .bg-white .h4, .sectional-inverted .bg-white .h5, .sectional-inverted .bg-white .h6, .sectional-inverted .bg-light h3, .sectional-inverted .bg-light h4, .sectional-inverted .bg-light h5, .sectional-inverted .bg-light h6,
+.sectional-inverted .bg-light .h3, .sectional-inverted .bg-light .h4, .sectional-inverted .bg-light .h5, .sectional-inverted .bg-light .h6 {
+  color: rgba(17, 17, 17, 0.85);
 }
 
 .topnav {
@@ -7270,6 +7327,10 @@ footer#footer .back-to-top:before {
     min-height: 100%;
     margin: auto;
   }
+}
+
+.toc-links-icons ul a, .toc-links-icons dl a {
+  text-decoration: none;
 }
 
 .alert {
