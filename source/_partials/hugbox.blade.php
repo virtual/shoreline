@@ -33,7 +33,27 @@
     </section>
     <section class="sectional sectional-padded">
       <h2>Lazy load image</h2>
-      <img class="lazy" data-src="{{ $page->baseUrl }}/resources/img/stock/shoreline.williams260.jpg" alt="a big image"/>
+      <img class="lazy" data-src="{{ $page->baseUrl }}/resources/img/stock/shoreline.williams260.jpg"
+        alt="a big image" />
     </section>
   </div>
 </div>
+
+
+<section class="sectional sectional-padded bg-primary lazy"
+  data-bg="{{ $page->baseUrl }}/resources/img/stock/shoreline.williams73.jpg">
+  <div class="container-fluid">
+    <h2>Lazy load background</h2>
+    <div class="card">
+      <div class="card-body">
+        <ul>
+          <li>Lorem ipsum </li>
+          <li>Dolor sit amet</li>
+          <li>Consectetur adipiscing</li>
+          <li>Elit nunc nec ex</li>
+          <li>Id felis </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
