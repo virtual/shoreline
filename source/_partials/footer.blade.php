@@ -6,7 +6,10 @@
         <div class="col-12 col-md-6 col-lg-6">
           <div class="footer-map">
             <div class="bg-offset-bottom-right bg-offset-yellow-wave">
-              <div class="location-square-feature">Map</div>              
+              <div class="location-square-feature">
+                <!-- https://support.google.com/maps/answer/144361?co=GENIE.Platform%3DDesktop&hl=en -->
+                <p class="sr-only">Map of Shoreline Community College</p>
+              </div>              
             </div>
           </div>
         </div>

@@ -193,3 +193,17 @@ header#header {
     }
   }
 }
+nav a.btn-important {
+  display: inline-block;
+  width: auto;
+  min-width: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  color: #fff;  
+  text-align: center;
+  &:hover {
+    color: #fff;
+  }
+}

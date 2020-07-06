@@ -12,7 +12,7 @@
     padding: 5px 10px;
     color: $text-black;
     text-align: center;
-  }
+  } 
   .dropdown-menu a {
     text-align: left;
   }
@@ -35,6 +35,9 @@
 }
 .flex-button-right {
   text-align: right;
+  p {
+    margin-bottom: 0;
+  }
 }
 .megamenu .navbar-brand {
   flex-grow: 1;
@@ -476,5 +479,9 @@ header#header > .container-fluid {
   }
   .megamenu .dropdown-menu .dropdown-column-2 ul {
       padding-left: 0;
+  }
+  .megamenu > .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
   }
 }

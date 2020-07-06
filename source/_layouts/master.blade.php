@@ -192,12 +192,12 @@
 
     <!-- FOOTER -->
     @include('_partials/footer')
-    <script src="{{ $page->baseUrl }}/assets/js/jquery-3.4.1.min.js"></script>
-    <script src="{{ $page->baseUrl }}/assets/js/popper.min.js"></script>
-    <script src="{{ $page->baseUrl }}/assets/js/bootstrap.min.js"></script>
-    <script src="{{ $page->baseUrl }}/assets/js/main.js"></script>
-    <script src="{{ $page->baseUrl }}/assets/js/slick.min.js"></script>
-    <script src="{{ $page->baseUrl }}/assets/js/slick-app.js?v=4"></script>
+    <script src="{{ $page->baseUrl }}/assets/js/jquery-3.4.1.min.js" defer="defer"></script>
+    <script src="{{ $page->baseUrl }}/assets/js/popper.min.js" defer="defer"></script>
+    <script src="{{ $page->baseUrl }}/assets/js/bootstrap.min.js" defer="defer"></script>
+    <script src="{{ $page->baseUrl }}/assets/js/main.js" defer="defer"></script>  
+    <script src="{{ $page->baseUrl }}/assets/js/slick.min.js" defer="defer"></script>
+    <script src="{{ $page->baseUrl }}/assets/js/slick-app.js?v=4" defer="defer"></script>
 </body>
 
 </html>
