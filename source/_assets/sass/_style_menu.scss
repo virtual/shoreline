@@ -1,4 +1,11 @@
-// ! TODO: When menu is hidden on mobile, force it back on desktop
+// ! Questions
+// If the menu is fixed, the content below it gets hidden
+// If the menu is inline, the menu will no longer follow the page when scrolled
+// If menu is inline, is it okay for small banner to above it? (Natural placement)
+// Is hover still desired for desktop megamenu?
+// How does search "button?" work?
+// Are these mobile buttons approved?
+
 .navmenu {
   a {
     display: block;
@@ -33,12 +40,13 @@
   flex-grow: 1;
   margin-right:0; 
 }
+
 .megamenu {
-  position: fixed;
+  position: static;
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1030;
+  z-index: 1030;  
   // color: $primary;
   font-size: 1.1rem;
   background-color:#fff;
@@ -81,11 +89,11 @@
     box-shadow: none; 
   }
   .dropdown-list > button > .button-text {    
+    position: relative;
     display: inline-block;
+    padding-right: 1rem;
     border-bottom: 4px solid #fff; 
     transition: border-color .2s ease-in-out;
-    position: relative;
-    padding-right: 1rem;
   }
   .dropdown-list > button[aria-expanded="true"] > .button-text {
     border-color: $secondary;
@@ -196,7 +204,7 @@
   //   }
   // }
   .megamenu {
-    position: relative;
+    // position: relative;
     font-size: 1rem;
     background-color: transparent;
     box-shadow: none;
@@ -276,6 +284,9 @@
 // }
 
 @media (max-width: $screen-lg - 1px) {
+  .navbar-overlay .megamenu {
+    position: fixed;
+  }
   // .megamenu .dropdown-list .dropdown-menu {
   //   position: relative !important;
   //   float: none !important;
@@ -322,7 +333,7 @@
     overflow:hidden;
   }
   // menu about 61, search about 74
-  #navbarCollapse { // allow for scrolling with fixed navbar
+  .navbar-overlay #navbarCollapse { // allow for scrolling with fixed navbar
     height: 70%;
     height: calc(100vh - 61px);
     max-height: 70%;
@@ -330,11 +341,11 @@
     overflow-y: scroll;
     -webkit-overflow-scrolling:touch; 
   }
-  #searchCollapse.show + #navbarCollapse.show {
+  .navbar-overlay #searchCollapse.show + #navbarCollapse.show {
     height: calc(100vh - 135px);
     max-height: calc(100vh - 135px);
   }
-  body { padding-top: 61px;}
+  body.navbar-overlay { padding-top: 61px;}
 }
 
 
@@ -386,19 +397,22 @@ header#header > .container-fluid {
 .megamenu ul.menu {
   padding-left: 0;
 }
-.dropdown-list, .navbar-expand-lg .navbar-collapse, .megamenu, .menu, .nav > .container-fluid, .col-lg-10.col-xl-10 {
-  position: static;
-  // right: 0;
-  // left: 0;
-}
+
 
 // .dropdown-list .row {
 //   width: 100%;
 // }
-
+ 
 // https://github.com/virtual/motlow/commit/a6a43f3b945be8968c9f7135cfdd939b1866b511
 // Full width dropdown-menus
 @media (min-width: $screen-lg) { 
+  .dropdown-list, .navbar-expand-lg .navbar-collapse, 
+  // .navbar-overlay .megamenu, 
+  .menu, .nav > .container-fluid, .col-lg-10.col-xl-10 {
+    position: static;
+    // right: 0;
+    // left: 0;
+  }
   .dropdown-menu {
     background: $white;
     width: 100vw;
