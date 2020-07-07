@@ -523,9 +523,9 @@ if ( $( ".contact-hours" ).length ) {
   shoreline.contactListDynamicHours();
 } 
  
-// @danielfarrell/bootstrap-combobox
+// @bootstrap-combobox/bootstrap-combobox
 if ( $( ".dynamic-selectbox" ).length ) {
-var bootstrapCombobox = require('@danielfarrell/bootstrap-combobox');
+var bootstrapCombobox = require('@bootstrap-combobox/bootstrap-combobox');
 (function($, bootstrapCombobox){
     $('.dynamic-selectbox').combobox({
       bsVersion: '4',
