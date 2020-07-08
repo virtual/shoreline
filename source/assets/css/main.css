@@ -4628,8 +4628,13 @@ main .breadcrumb ol, .sectional .breadcrumb ol, .content-container .breadcrumb o
 }
 
 .sectional-padded {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.sectional-padded-lg {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .sectional.theme-01, .sectional.bg-primary {

@@ -28,26 +28,10 @@
   @include('_partials.topbar') @include('_partials.header')
   <main id="maincontent">
  
-    <h2>Reimagine Possible</h2>
-<p>Wherever you want to go, we'll help you get there.</p>
-<p><a href="#" class="btn btn-primary">Explore Programs</a></p>
-<p><a href="#" class="more-arrow">Find a class</a></p>
-
-<div class="row">
-  <div class="col-12 col-md-6">
-    <p>
-      <strong>Fall Quarter Starts</strong><br/>
-      Sept 18, 2020
-    </p>
-  </div>
-  <div class="col-12 col-md-6">
+    <div class="container">
+      @yield('hero')
+    </div>
     
-    <p>
-      <strong>Winter Quarter Starts</strong><br/>
-      Jan 1, 2021
-</p>
-  </div>
-</div>
 
 
 @yield('content')
