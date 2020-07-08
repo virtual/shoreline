@@ -165,6 +165,10 @@ hr {
   background-color: $secondary;
   background-image: url('../../resources/img/graphics/bg-offset-yellow.png')
 }
+.bg-offset-primary-wave {
+  background-color: $primary;
+  background-image: url('../../resources/img/graphics/bg-offset-green.png')
+}
 .bg-offset-bottom-right { 
   margin-top: 10px;
   margin-left: 10px; 
@@ -210,4 +214,34 @@ hr {
       color: $text-black;
     }
   }
+}
+.hero-bg-container {
+  position: relative;
+  width: 100%;
+  min-height: 3rem;
+}
+.hero-bg-offset {
+  position: absolute;
+    // height: 100%;
+    // width: 100%;
+    right: 0;
+    
+    // left: auto;
+    // top: auto;
+    // bottom: auto;
+}
+// .hero-bg-offset .bg-feature {
+//   width: 100%;
+//   padding-bottom: 56.25%;
+//   background-image: url(../../resources/img/stock/girl-listening.jpg);
+//   background-size: cover;
+// }
+
+.bg-primary-gradient-top-down {
+  background: rgba(0,104,94,1);
+  background: linear-gradient(to bottom, rgba(0,104,94,1) 0%, rgba(0,104,94,1) 10%, rgba(0,104,94,0.59) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00685e', endColorstr='#00685e', GradientType=0 );
+}
+.bg-cover {
+  background-size: cover;
 }

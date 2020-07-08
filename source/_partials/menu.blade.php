@@ -36,12 +36,7 @@
 
       <ul class="menu">
 
-        @include ('_partials.menu-content') 
-        @include ('_partials.menu-content') 
-        @include ('_partials.menu-content') 
-        @include ('_partials.menu-content') 
-        @include ('_partials.menu-content') 
-  
+        @include ('_partials.menu-content-all')   
      
       </ul>
       <ul class="menu">

@@ -1,17 +1,3 @@
-.debug {
-  background: rgba(186, 218, 85, 0.8);
-  color: #7b971d;
-  padding: 10px;
-  position: relative;
-  font-size: 10px;
-  top: 0;
-  z-index: 30;
-}
-
-.debug {
-  display: none;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -2946,6 +2932,11 @@ hr {
   background-image: url("../../resources/img/graphics/bg-offset-yellow.png");
 }
 
+.bg-offset-primary-wave {
+  background-color: #00685e;
+  background-image: url("../../resources/img/graphics/bg-offset-green.png");
+}
+
 .bg-offset-bottom-right {
   margin-top: 10px;
   margin-left: 10px;
@@ -3023,6 +3014,28 @@ hr {
 .sectional-inverted .bg-white .h3, .sectional-inverted .bg-white .h4, .sectional-inverted .bg-white .h5, .sectional-inverted .bg-white .h6, .sectional-inverted .bg-light h3, .sectional-inverted .bg-light h4, .sectional-inverted .bg-light h5, .sectional-inverted .bg-light h6,
 .sectional-inverted .bg-light .h3, .sectional-inverted .bg-light .h4, .sectional-inverted .bg-light .h5, .sectional-inverted .bg-light .h6 {
   color: rgba(17, 17, 17, 0.85);
+}
+
+.hero-bg-container {
+  position: relative;
+  width: 100%;
+  min-height: 3rem;
+}
+
+.hero-bg-offset {
+  position: absolute;
+  right: 0;
+}
+
+.bg-primary-gradient-top-down {
+  background: #00685e;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00685e), color-stop(10%, #00685e), to(rgba(0, 104, 94, 0.59)));
+  background: linear-gradient(to bottom, #00685e 0%, #00685e 10%, rgba(0, 104, 94, 0.59) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00685e', endColorstr='#00685e', GradientType=0 );
+}
+
+.bg-cover {
+  background-size: cover;
 }
 
 .topnav {

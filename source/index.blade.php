@@ -2,9 +2,16 @@
 
 
 @section('hero')
+<div class="hero-bg-container">
+  <div class="hero-bg-offset">
+    <div class="bg-offset-bottom-right bg-offset-primary-wave">
+      <img src="{{ $page->baseUrl }}/resources/img/stock/girl-listening.jpg" alt="a student listening" />
+    </div>
+  </div>
+</div>
 <div class="row">
   <div class="col-12 col-md-5">
-    <div class="bg-light py-3 px-5 primary">
+    <div class="bg-light p-5 primary">
       <h2 class="h1">Reimagine Possible</h2>
       <p class="primary xl">Wherever you want to go, we'll help you get there.</p>
       <p><a href="#" class="btn btn-primary">Explore Programs</a></p>
@@ -14,20 +21,20 @@
         <div class="col-12 col-md-6">
           <p class="primary medium">
             <strong>Fall Quarter Starts</strong><br />
-            Sept 18, 2020
+            Sept 23, 2020
           </p>
         </div>
         <div class="col-12 col-md-6">
 
           <p class="primary medium">
             <strong>Winter Quarter Starts</strong><br />
-            Jan 1, 2021
+            Jan 6, 2021
           </p>
         </div>
       </div>
     </div>
   </div>
-</div>
+</div> 
 
 @endsection
 
@@ -82,7 +89,8 @@
   <section class="primary sectional sectional-padded-lg">
     <div class="row">
       <div class="col-12 col-md-6">
-        <p class="text-center">cap graphic</p>
+        <p class="text-center"><img src="{{ $page->baseUrl }}/resources/img/homepage/grad-cap.png" alt="grad cap" /></p>
+        
       </div>
       <div class="col-12 col-md-6">
         <h2 class="h1">Don’t let money hold you back</h2>
@@ -106,12 +114,13 @@
 
 
 
-<section class="sectional sectional-padded-lg bg-primary lazy"
+<section class="sectional bg-primary lazy bg-cover"
   data-bg="{{ $page->baseUrl }}/resources/img/stock/shoreline.williams73.jpg">
+  <div class=" bg-primary-gradient-top-down sectional-padded-lg ">
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-        <h2 class="h1 text-center">Reimagine your path // Lazy load background</h2>
+        <h2 class="h1 text-center">Reimagine your path</h2>
         <p class="text-center xl pb-5">Shoreline offers more than 100 areas of study and Lorem ipsum, dolor sit amet
           consectetur adipisicing elit. Molestias qui molestiae natus.</p>
         <div class="bg-offset-yellow-wave bg-offset-bottom-right">
@@ -131,6 +140,7 @@
       </div>
     </div>
   </div>
+</div>
 </section>
 
 <div class="bg-light">
@@ -228,12 +238,16 @@
     <!-- end ref -->
   </section>
 
-  <section class="sectional sectional-padded-lg primary">
-    <h2 class="h1">Lazy load image</h2>
-    <img class="lazy" data-src="{{ $page->baseUrl }}/resources/img/stock/shoreline.williams260.jpg" alt="a big image" />
-  </section>
+  
 </div>
 
+@endsection
+
+@section('archive')
+<section class="sectional sectional-padded-lg primary">
+  <h2 class="h1">Lazy load image</h2>
+  <img class="lazy" data-src="{{ $page->baseUrl }}/resources/img/stock/shoreline.williams260.jpg" alt="a big image" />
+</section>
 @endsection
 
 
