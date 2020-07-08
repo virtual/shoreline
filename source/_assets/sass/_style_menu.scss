@@ -180,6 +180,57 @@
   .megamenu .dropdown-menu {
       position: absolute;
   }
+
+
+.megamenu {
+
+  .dropdown-list:hover .button-expand {
+    transform: rotate(180deg);
+  }
+
+  .dropdown-list:hover .button-text {
+    border-color: $secondary;
+  }
+
+  .dropdown-list>.dropdown-menu {
+    display: block !important;
+    visibility: hidden;
+    opacity: (0);
+    //mouseleave
+    transition: opacity 200ms cubic-bezier(.65, .07, .83, .12) 200ms,
+      visibility 200ms cubic-bezier(.65, .07, .83, .12) 200ms;
+    // transition-duration:(50ms, 200ms);
+    // transition-property:(opacity, visibility);
+    // transition-delay:(50ms);
+  }
+
+  .dropdown-list:hover>.dropdown-menu,
+  .dropdown-list.show .dropdown-menu {
+
+    // display: block !important;
+    visibility: visible;
+    opacity: (1);
+    transition: opacity 200ms ease-in 50ms,
+      visibility 200ms ease-in 50ms;
+    // transition-duration:(100ms, 200ms);
+    // transition-property:(visibility, opacity);
+    // transition-delay:(0);
+
+  }
+
+  // If menu is open, but we hover over an earlier one, override z-index
+  .dropdown-list:hover>.dropdown-menu {
+    z-index: 1001;
+  }
+}
+
+
+
+
+
+
+
+
   // .megamenu .dropdown-list .dropdown-menu {
   //   flex-direction: row;
   //   width: 100%;
@@ -243,20 +294,20 @@
     //   position: relative;
     // } 
     .dropdown-list + .dropdown-list { margin-left: .5rem}
-    li.dropdown-list:hover>a,
-    li.dropdown-list.show>a { 
-      color: $link-blue;
-      text-decoration: none;
-    } 
-    .dropdown-toggle:after {
-      transform: rotate(90deg);
-    }
-    .dropdown-list:hover, .dropdown-list.show { 
-      .dropdown-toggle:after {
-        background-image: url(../../resources/img/icons/arrow@3x.png);
-      transform: rotate(0);
-      }
-    }
+    // li.dropdown-list:hover>a,
+    // li.dropdown-list.show>a { 
+    //   color: $link-blue;
+    //   text-decoration: none;
+    // } 
+    // .dropdown-toggle:after {
+    //   transform: rotate(90deg);
+    // }
+    // .dropdown-list:hover, .dropdown-list.show { 
+    //   .dropdown-toggle:after {
+    //     background-image: url(../../resources/img/icons/arrow@3x.png);
+    //   transform: rotate(0);
+    //   }
+    // }
   }
   ul.navbar-nav.ml-auto {
     flex-wrap: wrap;
