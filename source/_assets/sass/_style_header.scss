@@ -37,9 +37,19 @@ header#header {
     border-radius: 1.5625rem;
   }  
 }
+form.siteSearch {
+  width: 100%;
+}
 .main-search{
   width: 100%; 
   min-width: 165px; // IE 11 
+  
+    label { 
+      width: calc(100% - 50px);
+      margin-bottom: 0; 
+    } 
+  
+  
   &.input-group > label .form-control {
     background-color: transparent;
     border-top-right-radius: 999px;
@@ -47,7 +57,7 @@ header#header {
   }
   &.input-group > .input-group-prepend > .input-group-text {
     margin-right: 1px;
-    padding: .375rem .75rem;
+    padding: .375rem .75rem .375rem 1.25rem;
     border-color: rgba(0, 0, 0, 0.2);
     border-width: 2px;
     border-right: 0;
@@ -56,11 +66,11 @@ header#header {
   }
   .entersearch {        
     height: auto; 
-    padding-top: .40625rem;
+    padding-top: .5rem;
     padding-right: .5rem;
-    padding-bottom: .40625rem;
+    padding-bottom: .5rem;
     padding-left: 0;
-    font-size: 1rem;
+    font-size: 1.1875rem;
     border-color: rgba(0, 0, 0, 0.2) !important;
   }
   .entersearch.border {
@@ -188,15 +198,4 @@ header#header {
       color: #fff;
     }
   }
-}
-nav a.btn-important {
-  display: inline-block;
-  width: auto;
-  min-width: auto;
-  padding-top: .5rem;
-  padding-right: 1rem;
-  padding-bottom: .5rem;
-  padding-left: 1rem;
-  color: #fff;  
-  text-align: center;
 }

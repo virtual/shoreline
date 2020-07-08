@@ -147,6 +147,13 @@ jQuery(document).ready(function() {
     $('.dropdown-list.show > button').attr('aria-expanded', 'false')
     $('.dropdown-list.show').removeClass('show');
   })
+
+  // Add keyboard escape for search section
+  $('body').on('click', '#searchtoggler', function (e) {
+    setTimeout(function () {
+      document.getElementById('search1').focus();
+    }, 500);
+  });
 }); 
 // END FUNCTION READY
 

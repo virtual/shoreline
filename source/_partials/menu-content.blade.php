@@ -1,7 +1,7 @@
 <?php $uniqueID = substr(md5(rand()), 0, 8); ?>
 <li class="dropdown-list">
   <button aria-controls="{{$uniqueID}}sub" aria-expanded="false"><span class="button-text"><?php echo $uniqueID; ?> <span class="fas fa-caret-down button-expand" aria-hidden="true"></span></span></button>
-  <div id="{{$uniqueID}}ub" class="dropdown-menu">
+  <div id="{{$uniqueID}}sub" class="dropdown-menu">
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 col-lg-3 dropdown-column-1">

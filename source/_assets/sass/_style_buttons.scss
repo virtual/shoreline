@@ -191,3 +191,13 @@ dl .btn-toggle { font-size: 1rem; }
 .btn-caret.collapsed:after { 
   content: "\f0d7";
 }
+.btn-tags {
+  .btn {
+    margin-bottom: .5rem;
+    font-weight: 400;
+    background-color: rgba(0, 116, 179, .1);
+  }
+  .btn-sm {
+    padding: .25rem .75rem !important;
+  }
+}

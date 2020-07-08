@@ -35,7 +35,7 @@
 // }
 @media (min-width: $screen-sm) {
   .quicklinks.list-1, .quicklinks.list-2 {
-    li a {
+    li a, li .btn {
       font-size: .875rem;
     }
     // a.btn-important {
@@ -60,10 +60,10 @@
 // }
 
 @media (min-width: $screen-md) {
-  .quicklinks.list-2 {
-    padding: 1.1875rem 0;
-    a { padding-right: 10px; padding-left: 10px;}
-  }
+  // .quicklinks.list-2 {
+  //   padding: 1.1875rem 0;
+  //   // a, .btn { padding-right: 10px; padding-left: 10px;}
+  // }
   
   .quicklinks {
     &.list-1, &.list-2 {
@@ -95,7 +95,20 @@
       padding-right: .5rem; 
       padding-left: .5rem; 
     }
-  }
+    a.btn, button.btn {
+      display: inline-block;
+      width: auto;
+      min-width: auto;
+      padding-top: .5rem;
+      padding-right: 1rem;
+      padding-bottom: .5rem;
+      padding-left: 1rem;
+      text-align: center;
+    } 
+    a.btn-important {
+      color: #fff;  
+    }
+  } 
   .megamenu .quicklinks li {
     display: inline-block;
     width: auto;
@@ -105,8 +118,10 @@
     // a { border-right: 1px solid #ccc; }
     // li:last-child a { border-right:0;}
   }
-  .quicklinks,
   .quicklinks.list-2 {
+    margin-top: .5rem;
+  }
+  .quicklinks {
     border-bottom: 0;
     padding: 0;
   }

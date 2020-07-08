@@ -80,6 +80,10 @@
         padding: 10px 15px;
       }
     }
+    ul.list-inline li {
+      display: inline-block;
+      width: auto;
+    }
   }
     
 
@@ -164,7 +168,7 @@
     margin-bottom: 0;
   }
 } 
- 
+
 @media (min-width: 280px) {
   .searchform-mobile label {
       width: 80%;
@@ -434,6 +438,10 @@
     align-items: center;
     justify-content: flex-end;
     width: 100%;
+  }
+  // search menu
+  .megamenu ul.menu + .menu {
+    width: auto;
   }
 }
 div#menucontent, div#menucontent> div {
