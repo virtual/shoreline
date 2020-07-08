@@ -27,58 +27,31 @@
 <body class="homepage navbar-overlay-unused">
   @include('_partials.topbar') @include('_partials.header')
   <main id="maincontent">
-<div class="homepage-banner-container">
-  <div class="homepage-banner hero-1 ">
-    @yield('hero1')
+ 
+    <h2>Reimagine Possible</h2>
+<p>Wherever you want to go, we'll help you get there.</p>
+<p><a href="#" class="btn btn-primary">Explore Programs</a></p>
+<p><a href="#" class="more-arrow">Find a class</a></p>
 
+<div class="row">
+  <div class="col-12 col-md-6">
+    <p>
+      <strong>Fall Quarter Starts</strong><br/>
+      Sept 18, 2020
+    </p>
   </div>
-  <div class="homepage-expand hero-1">
-    <div class="arrow-marker"></div>
-    <div class="container-fluid">
-
-      @yield('content')
-    </div>
-  </div>
-</div>
-
-
-<div class="featureicon-container py-5 bg-light">
-  <div class="container-fluid">
-    @yield('icons1')
-  </div>
-</div>
-
-<div class="homepage-banner-container">
-  <div class="homepage-banner hero-2 ">
-    @yield('hero2')
-  </div>
-
-  <div class="homepage-expand hero-2">
-    <div class="arrow-marker"></div>
-    <div class="container-fluid">
-      @yield('content')
-    </div>
+  <div class="col-12 col-md-6">
+    
+    <p>
+      <strong>Winter Quarter Starts</strong><br/>
+      Jan 1, 2021
+</p>
   </div>
 </div>
 
-<div class="featureicon-container py-5 bg-light">
-  <div class="container-fluid">
-    @yield('icons2')
-  </div>
-</div>
 
-<div class="homepage-banner-container">
-  <div class="homepage-banner hero-3 ">
-    @yield('hero3')
-  </div>
+@yield('content')
 
-  <div class="homepage-expand hero-3">
-    <div class="arrow-marker"></div>
-    <div class="container-fluid">
-      @yield('content')
-    </div>
-  </div>
-</div>
 </main>
 
 

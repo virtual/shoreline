@@ -1,208 +1,94 @@
 @extends('_layouts.home')
-
-@section('hero1')
-<section class="hero left bg-primary">
-    <div class="hero-image-wrapper"></div>
-    <style type="text/css">
- .homepage-banner.hero-1{
-   background-image: url(./resources/img/homepage/a1/large.jpg);
- }
  
- @media screen and (max-width: 900px) { 						
-  .homepage-banner.hero-1 {
-   background-image: url(./resources/img/homepage/a1/medium.jpg);
-   }
- } 
- 
- @media screen and (max-width: 479px) {  
-  .homepage-banner.hero-1 {
-   background-image: url(./resources/img/homepage/a1/small.jpg);
-   }
- } 						 
-</style>
-<div class="hero-caption">
-       <h2 class="heading">What type of student are you?</h2>
-       <p class="desc">Shoreline has programs for all stages of life</p>
-       <div class="expand-wrapper"><button aria-expanded="false" class="expand-button btn btn-primary">Expand</button></div>
-    </div>
- </section>
-@endsection
-
-
-@section('hero2')
-<section class="hero left bg-primary">
-    <div class="hero-image-wrapper"></div>
-    <style type="text/css">
-      .homepage-banner.hero-2{
-        background-image: url(./resources/img/homepage/a2/large.jpg);
-      }
-      
-      @media screen and (max-width: 900px) { 						
-       .homepage-banner.hero-2 {
-        background-image: url(./resources/img/homepage/a2/medium.jpg);
-        }
-      } 
-      
-      @media screen and (max-width: 479px) {  
-       .homepage-banner.hero-2 {
-        background-image: url(./resources/img/homepage/a2/small.jpg);
-        }
-      } 						 
-     </style>
-<div class="hero-caption">
-       <h2 class="heading">Fully invest in 
-        your future</h2>
-       <p class="desc">We help you inside and outside the classroom</p>
-       <div class="expand-wrapper"><button aria-expanded="false" class="scrollable expand-button btn btn-primary">Expand</button></div>
-    </div>
- </section>
-@endsection
-
-@section('hero3')
-<section class="hero left bg-primary">
-    <div class="hero-image-wrapper"></div>
-    <style type="text/css">
-      .homepage-banner.hero-3{
-        background-image: url(./resources/img/homepage/a3/large.jpg);
-      }
-      
-      @media screen and (max-width: 900px) { 						
-       .homepage-banner.hero-3 {
-        background-image: url(./resources/img/homepage/a3/medium.jpg);
-        }
-      } 
-      
-      @media screen and (max-width: 479px) {  
-       .homepage-banner.hero-3 {
-        background-image: url(./resources/img/homepage/a3/small.jpg);
-        }
-      } 						 
-     </style>
-<div class="hero-caption">
-       <h2 class="heading">Build a career and community</h2>
-       <p class="desc">Forming partnerships for a healthy human, economic, and natural environment</p>
-       <div class="expand-wrapper"><button aria-expanded="false" class="expand-button btn btn-primary">Expand</button></div>
-    </div>
- </section>
-@endsection
 
 
 @section('content')
+ <div class="container-fluid">
+<section>
+  On-campus housing
+
+  Small class sizes
+  
+  Close to Seattle
+</section>
  
 
-<div class="hero-expandcontent row" aria-hidden="true">
+<section>
+  <div class="row">
+    <div class="col-12 col-md-6">cap graphic</div>
+    <div class="col-12 col-md-6">
+      <h2>Don’t let money hold you back</h2>
+      <p>Get help with tuition, fees, food, housing, and transportation</p>
+      <p><a href="#" class="btn btn-primary">Explore Programs</a></p>
+  <p><a href="#" class="more-arrow">Find a class</a></p>
+    </div>
+  </div>
 
-  <div class="col-12 col-md-12 col-lg-8">
+ 
+</section>
+
+
+<section>
+  
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <h2>Reimagine Community</h2>
+      <p>We're more than just educators - we're your success squard, supporting you every step of the way.</p>
+      <p><a href="#" class="more-arrow">Find a class</a></p>
+    </div>
+    <div class="col-12 col-md-6">
+      @include('_partials.quote', [ 
+          'desc' => "As corny as it sounds, it has been amazing to be here and have the opportunities that I've had…",
+          'alt' => 'Pavielle Montes',
+          'attribution' => 'Pavielle Montes',
+          'attribution2' => 'Associate of Arts and High School Diploma',
+          'img' => '/resources/img/testimonials/shoreline-williams72.jpg',          
+          'link' => '#'
+          ]) 
+    </div>
+  </div>
+
+</section>
+
+<section class="sectional sectional-padded">
+  <h2>Lazy load image</h2>
+  <img class="lazy" data-src="{{ $page->baseUrl }}/resources/img/stock/shoreline.williams260.jpg"
+    alt="a big image" />
+</section>
+</div>
+
+<section class="sectional sectional-padded bg-primary lazy"
+  data-bg="{{ $page->baseUrl }}/resources/img/stock/shoreline.williams73.jpg">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-md-6">
-        <ul class="card-links">
-          <li><a href="#" class="more-arrow">College/University Transfer</a></li>
-          <li><a href="#" class="more-arrow">Professional & Technical</a></li>
-          <li><a href="#" class="more-arrow">International Students</a></li>
-          <li><a href="#" class="more-arrow">Transitional (ESL, HS21, I-Best GED…)</a></li>
-        </ul>
-      </div>
-      <div class="col-md-6">
-        <ul class="card-links">
-          <li><a href="#" class="more-arrow">Continuing Education</a></li>
-          <li><a href="#" class="more-arrow">Learn Online</a></li>
-          <li><a href="#" class="more-arrow">Veteran</a></li>
-          <li><a href="#" class="more-arrow">Browse All Programs</a></li>
-        </ul>
+      <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+        <h2 class="text-center">Reimagine your path // Lazy load background</h2>
+        <p class="lead text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae iusto amet atque
+          laborum
+          voluptatibus deserunt eius, minima pariatur praesentium, beatae maiores optio quo totam voluptates omnis
+          libero eaque nesciunt nulla!</p>
+        <div class="bg-offset-yellow-wave bg-offset-bottom-right">
+          <div class="bg-light py-3 px-5">
+            <h3>Things</h3>
+            <div class="toc-links-icons">
+              <ul class="list-unstyled"> 
+                <li><a href="#">Arts & Communication</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Health & Medical</a></li>
+                <li><a href="#">Science, Technology, Engineering & Math</a></li>
+                <li><a href="#">Social Sciences & Education</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="col-12 col-lg-4">
-    <a class="btn btn-important btn-block" href="/apply-and-aid/apply.aspx">Apply Now</a>
-    <a class="btn btn-secondary btn-block" href="/apply-and-aid/apply.aspx">Ask a Question</a>
-    <a class="btn btn-secondary btn-block" href="/apply-and-aid/apply.aspx">Visit Campus</a>
-  </div>
-
-</div>
-
+</section>
   
 @endsection
 
-
-@section ('icons1') 
-
-<div class="row">
-    <div class="col-12 col-sm-4">
-        @include('_partials.featureicon', [
-        'heading' => '100+',
-        'desc' => 'Transfer and professional/technical areas of study',
-        'iconalt' => 'book',     
-        'fa' => 'fal fa-book',
-        'icon' => '',          
-        'buttontext' => 'See all Programs',
-        'link' => '#'
-        ])
   
-    </div>
-    <div class="col-12 col-sm-4">
-        @include('_partials.featureicon', [
-        'heading' => '900+',
-        'desc' => 'International students from around the world',
-        'iconalt' => 'globe',          
-        'icon' => '/icons/homepage/globe.png',          
-        'buttontext' => 'Join Us',
-        'link' => '#'
-        ])
-  
-    </div>
-    <div class="col-12 col-sm-4">
-        @include('_partials.featureicon', [
-        'heading' => '140+',
-        'desc' => 'Scholarships awarded annually',
-        'iconalt' => 'badge',
-        'icon' => '/icons/homepage/badge.png',          
-        'buttontext' => 'Find Scholarships',
-        'link' => '#'
-        ])
-  
-    </div>
-</div>
-@endsection
-
-
-@section ('icons2') 
-
-<div class="row">
-    <div class="col-12 col-sm-4">
-        @include('_partials.featureicon', [
-        'heading' => '14.4m',
-        'desc' => 'Average amount of financial air awarded annually',
-        'iconalt' => 'dollar',     
-        'icon' => '/icons/homepage/dollar.png',          
-        'buttontext' => 'Apply for Financial Aid',
-        'link' => '#'
-        ])
-  
-    </div>
-    <div class="col-12 col-sm-4">
-        @include('_partials.featureicon', [
-        'heading' => '178+',
-        'desc' => 'Universities to which our students have transferred',
-        'iconalt' => 'arrows',          
-        'icon' => '/icons/homepage/arrows.png',          
-        'buttontext' => 'See Transfer Destinations',
-        'link' => '#'
-        ])
-  
-    </div>
-    <div class="col-12 col-sm-4">
-        @include('_partials.featureicon', [
-        'heading' => '60+',
-        'desc' => 'Shows & events in the campus theater each year',
-        'iconalt' => 'mask',
-        'icon' => '/icons/homepage/mask.png',          
-        'buttontext' => 'More about the Theater',
-        'link' => '#'
-        ])
-  
-    </div>
-</div>
-@endsection
  
 
   @section('sectionals')
