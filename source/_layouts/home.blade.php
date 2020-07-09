@@ -20,7 +20,8 @@
   <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/bootstrap.css">
   <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/main.css?v=3">
   <link rel="stylesheet" href="{{ $page->baseUrl }}/resources/fonts/fa-subset/fontawesome.min.css?v=101" />
-
+  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/slick.css">
+  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/slick-theme.css">
   <!-- Analytics -->
 </head>
 <!-- * add class navbar-overlay to body if overlay wanted instead of inline -->
@@ -54,6 +55,8 @@
     <script src="{{ $page->baseUrl }}/assets/js/bootstrap.bundle.min.js" defer="defer"></script>
     <script src="{{ $page->baseUrl }}/assets/js/main.js" defer="defer"></script>  
     <script src="{{ $page->baseUrl }}/assets/js/lazyload.min.js" defer="defer"></script>  
+    <script src="{{ $page->baseUrl }}/assets/js/slick.min.js" defer="defer"></script>
+    <script src="{{ $page->baseUrl }}/assets/js/slick-app.js?v=4" defer="defer"></script>
     <script>
       (function() {
         var css = document.createElement('link');
