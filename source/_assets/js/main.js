@@ -154,8 +154,21 @@ jQuery(document).ready(function() {
       document.getElementById('search1').focus();
     }, 500);
   });
+
+  $("a").attr('href', "#");  
+ 
 }); 
 // END FUNCTION READY
+
+// trymyui disable links
+if (window.addEventListener) {
+  document.addEventListener('click', function (e) {
+    if (e.target.nodeName === 'A') {
+      e.preventDefault();
+      $('.toast').toast('show')
+    }
+  });
+}
 
 // Megamenu dropdown
 // Keys to successful implementation will be aria-expanded on the button 

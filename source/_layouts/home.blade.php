@@ -51,6 +51,23 @@
     <div id="footer">
       @include('_partials/footer')
     </div>
+    
+<div aria-live="polite" aria-atomic="true" style="z-index: 1002; position: fixed; bottom: 10px; right: 10px;">
+  <!-- Position it --> 
+
+    <div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-delay="5000">
+      <div class="toast-header"> 
+        <strong class="mr-auto"><span class="far fa-info-circle fa-orange"><span class="sr-only">Info</span></span> Note</strong> 
+        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="toast-body">
+        Links are inactive for this demo.
+      </div>
+    </div> 
+</div>
+
     <script src="{{ $page->baseUrl }}/assets/js/jquery-3.5.1.min.js" defer="defer"></script>
     <script src="{{ $page->baseUrl }}/assets/js/bootstrap.bundle.min.js" defer="defer"></script>
     <script src="{{ $page->baseUrl }}/assets/js/main.js" defer="defer"></script>  
