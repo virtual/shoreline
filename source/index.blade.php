@@ -8,7 +8,7 @@
       <picture>
         <source srcset="{{ $page->baseUrl }}/resources/img/homepage/hero/large.jpg" media="(min-width: 768px)">
         <source srcset="{{ $page->baseUrl }}/resources/img/homepage/hero/medium.jpg" media="(min-width: 480px)">
-        <img srcset="{{ $page->baseUrl }}/resources/img/homepage/hero/small.jpg" alt="two students look at books in a library">
+        <img src="{{ $page->baseUrl }}/resources/img/homepage/hero/small.jpg" alt="two students look at books in a library">
       </picture>
     </div>
   </div>

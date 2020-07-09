@@ -47,10 +47,9 @@
 
 
 
-    <!-- FOOTER -->
-    <div id="footer">
-      @include('_partials/footer')
-    </div>
+<!-- FOOTER -->
+@include('_partials/footer')
+    
     
 <div aria-live="polite" aria-atomic="true" style="z-index: 1002; position: fixed; bottom: 10px; right: 10px;">
   <!-- Position it --> 
