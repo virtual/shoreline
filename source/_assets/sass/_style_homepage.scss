@@ -173,10 +173,21 @@
   } 
 }
 .toc-links-icons {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   ul, dl {
     a {
+      display: block;
+      padding: 1.5rem 0;
       text-decoration: none;
+    }
+    .fa, .fas, .far, .fal {
+      float: left;
+      width: 5rem;
+      font-size: 2rem; 
+      text-align: center;
     }
   }
   
 }
+

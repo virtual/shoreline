@@ -15,7 +15,7 @@
       <h2 class="h1">Reimagine Possible</h2>
       <p class="primary xl">Wherever you want to go, we'll help you get there.</p>
       <p><a href="#" class="btn btn-primary">Explore Programs</a></p>
-      <p><a href="#" class="more-arrow">Find a class</a></p>
+      <p><a href="#" class="more-arrow"><strong>Find a class</strong></a></p>
 
       <div class="row">
         <div class="col-12 col-md-6">
@@ -96,7 +96,7 @@
         <h2 class="h1">Don’t let money hold you back</h2>
         <p class="primary xl">Get help with tuition, fees, food, housing, and transportation</p>
         <p><a href="#" class="btn btn-primary">Find Funding &amp; Aid</a></p>
-        <p><a href="#" class="more-arrow">How much does it cost?</a></p>
+        <p><a href="#" class="more-arrow"><strong>How much does it cost?</strong></a></p>
       </div>
     </div>
 
@@ -121,20 +121,20 @@
     <div class="row">
       <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
         <h2 class="h1 text-center">Reimagine your path</h2>
-        <p class="text-center xl pb-5">Shoreline offers more than 100 areas of study and Lorem ipsum, dolor sit amet
+        <p class="text-center xl pb-5">Shoreline offers more than 100 areas of study and ipsum, dolor sit amet
           consectetur adipisicing elit. Molestias qui molestiae natus.</p>
         <div class="bg-offset-yellow-wave bg-offset-bottom-right">
-          <div class="bg-light py-3 px-5">
+          <div class="bg-light pt-3 pb-5 px-5">
             <div class="toc-links-icons">
               <ul class="list-unstyled">
-                <li><a href="#">Arts & Communication</a></li>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">Health & Medical</a></li>
-                <li><a href="#">Science, Technology, Engineering & Math</a></li>
-                <li><a href="#">Social Sciences & Education</a></li>
+                <li><a href="#"><span class="fa-primary fal fa-eye" aria-hidden="true"></span> Arts & Communication</a></li>
+                <li><a href="#"><span class="fa-bright-green fal fa-chart-line" aria-hidden="true"></span> Business</a></li>
+                <li><a href="#"><span class="fa-orange fal fa-briefcase-medical" aria-hidden="true"></span> Health & Medical</a></li>
+                <li><a href="#"><span class="fa-secondary fal fa-atom" aria-hidden="true"></span> Science, Technology, Engineering & Math</a></li>
+                <li><a href="#"><span class="fa-linkblue fal fa-book-open" aria-hidden="true"></span> Social Sciences & Education</a></li>
               </ul>
             </div>
-            <p class="text-center"><a href="#" class="more-arrow">Browse all degrees &amp; certificates</a></p>
+            <p class="text-center"><a href="#" class="more-arrow"><strong>Browse all degrees &amp; certificates</strong></a></p>
           </div>
         </div>
       </div>
@@ -151,9 +151,9 @@
       <div class="row">
         <div class="col-12 col-md-6">
           <h2 class="h1">Reimagine Community</h2>
-          <p class="primary xl">We're more than just educators - we're your success squard, supporting you every step of
+          <p class="primary xl">We're more than just educators - we're your success squad, supporting you every step of
             the way.</p>
-          <p><a href="#" class="more-arrow">Find support services</a></p>
+          <p><a href="#" class="more-arrow"><strong>Find support services</strong></a></p>
         </div>
         <div class="col-12 col-md-6">
           @include('_partials.quote', [
@@ -186,14 +186,13 @@
                   src="{{ $page->baseUrl }}/resources/img/stock/shoreline.williams81.jpg"
                   alt="Physical education classes boost immune system, help de-stress during COVID-19"></a></div>
             <div class="article-info-container">
+              <ul class="list-inline news-labels labels mb-0">
+                <li class="mb-0"><a class="dark medium" href="https://news.shoreline.edu/category/in-the-classroom/">In the Classroom</a></li>
+              </ul>
               <h3 class="h4"><a
                   href="https://news.shoreline.edu/2020/06/24/physical-education-classes-boost-immune-system-help-de-stress-during-covid-19/">Physical
                   education classes boost immune system, help de-stress during COVID-19</a></h3>
-              <ul class="list-inline news-labels labels mb-0">
-                <li><a href="https://news.shoreline.edu/category/in-the-classroom/"
-                    class="badge badge-primary badge-sm"><span class="fa fa-tag" aria-hidden="true"></span><span
-                      class="sr-only">tag</span> In the Classroom</a></li>
-              </ul>
+               
             </div>
           </article>
         </div>
@@ -204,14 +203,13 @@
                   src="{{ $page->baseUrl }}/resources/img/stock/shoreline.williams53.jpg"
                   alt="Commencement speaker Travis Tribble finds long-awaited success at Shoreline"></a></div>
             <div class="article-info-container">
+              <ul class="list-inline news-labels labels mb-0">
+                <li class="mb-0"><a class="dark medium" href="https://news.shoreline.edu/category/alumni-and-student/">Alumni &amp; Student Spotlight</a></li>
+              </ul>
               <h3 class="h4"><a
                   href="https://news.shoreline.edu/2020/06/19/commencement-speaker-travis-tribble-finds-long-awaited-success-at-shoreline/">Commencement
                   speaker Travis Tribble finds long-awaited success at Shoreline</a></h3>
-              <ul class="list-inline news-labels labels mb-0">
-                <li><a href="https://news.shoreline.edu/category/alumni-and-student/"
-                    class="badge badge-primary badge-sm"><span class="fa fa-tag" aria-hidden="true"></span><span
-                      class="sr-only">tag</span> Alumni &amp; Student Spotlight</a></li>
-              </ul>
+               
             </div>
           </article>
         </div>
@@ -222,20 +220,20 @@
                   src="{{ $page->baseUrl }}/resources/img/stock/shoreline.williams21.jpg"
                   alt="Shoreline Community College celebrates its first virtual Commencement"></a></div>
             <div class="article-info-container">
+              <ul class="list-inline news-labels labels mb-0">
+                <li class="mb-0"><a class="dark medium" href="https://news.shoreline.edu/category/awards/">Awards &amp;
+                    Scholarships</a></li>
+              </ul>
               <h3 class="h4"><a
                   href="https://news.shoreline.edu/2020/06/18/shoreline-community-college-celebrates-its-first-virtual-commencement/">Shoreline
                   Community College celebrates its first virtual Commencement</a></h3>
-              <ul class="list-inline news-labels labels mb-0">
-                <li><a href="https://news.shoreline.edu/category/awards/" class="badge badge-primary badge-sm"><span
-                      class="fa fa-tag" aria-hidden="true"></span><span class="sr-only">tag</span> Awards &amp;
-                    Scholarships</a></li>
-              </ul>
             </div>
           </article>
         </div>
       </div>
     </div>
     <!-- end ref -->
+    <p class="text-center"><a href="#" class="more-arrow"><strong>Read more campus news</strong></a></p>
   </section>
 
   

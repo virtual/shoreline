@@ -3038,6 +3038,26 @@ hr {
   background-size: cover;
 }
 
+.fa-primary {
+  color: #00685e !important;
+}
+
+.fa-secondary {
+  color: #ffb500 !important;
+}
+
+.fa-orange {
+  color: #d43c00 !important;
+}
+
+.fa-bright-green {
+  color: #00c278 !important;
+}
+
+.fa-linkblue {
+  color: #0074b3 !important;
+}
+
 .topnav {
   background-color: #0c2321;
 }
@@ -7400,8 +7420,22 @@ footer#footer .back-to-top:before {
   }
 }
 
+.toc-links-icons {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .toc-links-icons ul a, .toc-links-icons dl a {
+  display: block;
+  padding: 1.5rem 0;
   text-decoration: none;
+}
+
+.toc-links-icons ul .fa, .toc-links-icons ul .fas, .toc-links-icons ul .far, .toc-links-icons ul .fal, .toc-links-icons dl .fa, .toc-links-icons dl .fas, .toc-links-icons dl .far, .toc-links-icons dl .fal {
+  float: left;
+  width: 5rem;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .alert {
