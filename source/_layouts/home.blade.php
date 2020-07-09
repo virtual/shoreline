@@ -25,7 +25,8 @@
 </head>
 <!-- * add class navbar-overlay to body if overlay wanted instead of inline -->
 <body class="homepage navbar-overlay-unused">
-  @include('_partials.topbar') @include('_partials.header')
+  <!-- _partials.topbar' -->
+  @include('_partials.header')
   <main id="maincontent">
  
     <div class="container">

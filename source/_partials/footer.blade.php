@@ -15,7 +15,7 @@
         </div>
         <div class="col-12 col-md-6 col-lg-6">
           <div class="footer-logo">
-            @include ('_partials.logo')
+            @include ('_partials.logo-inverse')
           </div>
 
           <div class="logo-address">

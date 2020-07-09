@@ -144,8 +144,8 @@ jQuery(document).ready(function() {
 
   // If megamenu is open and you click on the main content, close the megamenu
   $('body').on('click', '#maincontent', function(e){
-    $('.dropdown-list.show > button').attr('aria-expanded', 'false')
-    $('.dropdown-list.show').removeClass('show');
+    $('.megamenu .dropdown-list.show > button').attr('aria-expanded', 'false')
+    $('.megamenu .dropdown-list.show').removeClass('show');
   })
 
   // Add keyboard escape for search section

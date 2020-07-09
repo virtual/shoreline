@@ -184,52 +184,39 @@
   .megamenu .dropdown-menu {
       position: absolute;
   }
+ 
+.dropdown-list.show .dropdown-menu {
+  display: block !important;
+}
 
-
-.megamenu {
-
+.megamenu.megamenu-hover {
   .dropdown-list:hover .button-expand {
     transform: rotate(180deg);
   }
-
   .dropdown-list:hover .button-text {
     border-color: $secondary;
   }
-
   .dropdown-list>.dropdown-menu {
     display: block !important;
     visibility: hidden;
     opacity: (0);
     //mouseleave
     transition: opacity 200ms cubic-bezier(.65, .07, .83, .12) 200ms,
-      visibility 200ms cubic-bezier(.65, .07, .83, .12) 200ms;
-    // transition-duration:(50ms, 200ms);
-    // transition-property:(opacity, visibility);
-    // transition-delay:(50ms);
+    visibility 200ms cubic-bezier(.65, .07, .83, .12) 200ms; 
   }
-
   .dropdown-list:hover>.dropdown-menu,
   .dropdown-list.show .dropdown-menu {
-
     // display: block !important;
     visibility: visible;
     opacity: (1);
     transition: opacity 200ms ease-in 50ms,
-      visibility 200ms ease-in 50ms;
-    // transition-duration:(100ms, 200ms);
-    // transition-property:(visibility, opacity);
-    // transition-delay:(0);
-
+    visibility 200ms ease-in 50ms; 
   }
-
   // If menu is open, but we hover over an earlier one, override z-index
   .dropdown-list:hover>.dropdown-menu {
     z-index: 1001;
   }
 }
-
-
-
 
 
 

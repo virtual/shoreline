@@ -2,6 +2,9 @@
   <div id="skiptocontent">
     <a href="#maincontent" title="Skip Main Navigation">Skip Main Navigation</a>
   </div>
+       
+        @include ('_partials.menu-content-search')       
+     
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-2 col-xl-2 header-logo d-none d-lg-block">
@@ -41,5 +44,5 @@
     </div>
     
   </div>
-  @include('_partials.alert')
+  <!-- _partials/alert -->
 </header>

@@ -39,10 +39,9 @@
         @include ('_partials.menu-content-all')   
      
       </ul>
-      <ul class="menu">
-        
-        @include ('_partials.menu-content-search') 
-      </ul>
+      <!-- <ul class="menu">
+        _partials.menu-content-search
+      </ul> -->
       <div class="d-block d-lg-none"> 
         @include ('_partials.quicklinks') 
       </div>
