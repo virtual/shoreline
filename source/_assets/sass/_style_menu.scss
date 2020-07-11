@@ -517,13 +517,18 @@ header#header > .container-fluid {
       }
     }
     .dropdown-column-2{ 
-      border-right: 1px solid #dedede;
       border-left: 1px solid #dedede;
       ul { columns: 2; }
       h2, h3, h4 {
         display: block;
         width: 100%; 
       }
+    }
+    .dropdown-column-3 {
+      border-left: 1px solid #dedede;
+    }
+    .dropdown-column-3:empty {
+      border-left: 0;
     }
   }
   .megamenu .dropdown-menu .dropdown-column-2 ul {

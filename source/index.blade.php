@@ -43,16 +43,16 @@
 @endsection
 
 @section('content')
-<div class="container-fluid mt-3">
+<div class="container-fluid mt-5 pt-5">
 
-  <section class="primary sectional sectional-padded-lg">
-    <p class="primary text-center xl pt-5 pb-4">A short sentence that sets up the following benefits</p>
+  <section class="primary sectional sectional-padded">
+    <p class="d-none primary text-center xl pt-5 pb-4">A short sentence that sets up the following benefits</p>
 
     <div class="row">
       <div class="col-6 col-md-3">
         @include('_partials.card-icon-image-round', [
-        'buttontext' => 'On-campus housing',
-        'img' => '/stock/square/shoreline.williams185.jpg',
+        'buttontext' => 'On-Campus Housing',
+        'img' => '/stock/square/housing.jpg',
         'alt' => 'housing',
         'link' => 'https://wts.shoreline.edu/waci002.html',
         'addclass' => 'p-5'
@@ -60,7 +60,7 @@
       </div>
       <div class="col-6 col-md-3">
         @include('_partials.card-icon-image-round', [
-        'buttontext' => 'Small class sizes',
+        'buttontext' => 'Small Class Sizes',
         'img' => '/stock/square/shoreline.williams292.jpg',
         'alt' => 'housing',
         'link' => 'https://wts.shoreline.edu/waci002.html',
@@ -69,8 +69,8 @@
       </div>
       <div class="col-6 col-md-3">
         @include('_partials.card-icon-image-round', [
-        'buttontext' => 'On-campus housing',
-        'img' => '/stock/square/shoreline.williams73.jpg',
+        'buttontext' => '18+ Years of Online Courses',
+        'img' => '/stock/square/online-learning.jpg',
         'alt' => 'housing',
         'link' => 'https://wts.shoreline.edu/waci002.html',
         'addclass' => 'p-5'
@@ -79,7 +79,7 @@
       <div class="col-6 col-md-3">
         @include('_partials.card-icon-image-round', [
         'buttontext' => 'Close to Seattle',
-        'img' => '/stock/square/shoreline.williams224.jpg',
+        'img' => '/stock/square/seattle.jpg',
         'alt' => 'housing',
         'link' => 'https://wts.shoreline.edu/waci002.html',
         'addclass' => 'p-5'
@@ -119,14 +119,13 @@
 
 
 <section class="sectional bg-primary lazy bg-cover"
-  data-bg="{{ $page->baseUrl }}/resources/img/stock/shoreline.williams73.jpg">
+  data-bg="{{ $page->baseUrl }}/resources/img/stock/backgrounds/explore2.jpg">
   <div class=" bg-primary-gradient-top-down sectional-padded-lg ">
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-        <h2 class="h1 text-center">Reimagine your path</h2>
-        <p class="text-center xl pb-5">Shoreline offers more than 100 areas of study and ipsum, dolor sit amet
-          consectetur adipisicing elit. Molestias qui molestiae natus.</p>
+        <h2 class="h1 text-center">Find your path</h2>
+        <p class="text-center xl pb-5">Shoreline's areas of study offer you the option to take classes in subjects you like to help you find a career you'll love.</p>
         <div class="bg-offset-yellow-wave bg-offset-bottom-right">
           <div class="bg-light pt-3 pb-5 px-5">
             <div class="toc-links-icons">
@@ -166,26 +165,26 @@
             <div class="pr-5">
               <div class="slick-slider">
               @include('_partials.quote', [ 
-                'desc' => "As corny as it sounds, it has been amazing to be here and have the opportunities that I've had…",
+                'desc' => "I joined different clubs, worked as a student tutor, and served on ASG. These experiences changed my college experience and my life.",
                 'alt' => 'Pavielle Montes',
                 'attribution' => 'Pavielle Montes',
-                'attribution2' => 'Associate of Arts and High School Diploma',
+                'attribution2' => 'Dental Hygiene AAAS',
                 'img' => '',          
                 'link' => '#'
                 ]) 
                 @include('_partials.quote', [ 
-                'desc' => "As corny as it sounds, it has been amazing to be here and have the opportunities that I've had…",
-                'alt' => 'Pavielle Montes',
-                'attribution' => 'Pavielle Montes',
-                'attribution2' => 'Associate of Arts and High School Diploma',
+                'desc' => "Shoreline has a great atmosphere where I can focus on my academics and has great facilities like the computer labs.",
+                'alt' => 'Jane Smith',
+                'attribution' => 'Jane Smith',
+                'attribution2' => 'Automotive Service Technician AAAS',
                 'img' => '',          
                 'link' => '#'
                 ]) 
                 @include('_partials.quote', [ 
-                'desc' => "I have come to believe that the whole world is an enigma, a harmless enigma that is made terrible by our own mad attempt to interpret it as though it had an underlying truth.",
-                'alt' => 'Pavielle Montes',
-                'attribution' => 'Pavielle Montes',
-                'attribution2' => 'Associate of Arts and High School Diploma',
+                'desc' => "Shoreline habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+                'alt' => 'Teri Lewis',
+                'attribution' => 'Teri Lewis',
+                'attribution2' => 'Geology & Earth Sciences Pre-Major',
                 'img' => '',          
                 'link' => '#'
                 ]) 
