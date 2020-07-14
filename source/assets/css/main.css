@@ -6920,18 +6920,17 @@ footer#footer .navbar-brand img {
   max-width: initial;
 }
 
-footer#footer .links a {
-  color: #0074b3;
-}
-
-footer#footer .links ul {
+footer#footer .links {
   padding: 0;
   list-style: none;
 }
 
-footer#footer .links li {
-  padding-bottom: .5rem;
-  line-height: 1rem;
+footer#footer .links a {
+  color: #fff;
+}
+
+footer#footer .links a:hover {
+  text-decoration: underline;
 }
 
 footer#footer .links li + li {
@@ -6956,6 +6955,10 @@ footer#footer .links .list-inline li + li {
   footer#footer .footer-logo img {
     width: auto;
     max-height: 80px;
+  }
+  footer#footer .links-utility li {
+    display: inline;
+    padding-right: .75rem;
   }
   .footer-buttons .btn:first-child {
     margin-top: 0;
@@ -7060,7 +7063,7 @@ footer#footer .back-to-top:before {
     margin-bottom: 1rem;
   }
   .location-square-feature {
-    padding-bottom: 80%;
+    padding-bottom: 120%;
   }
 }
 

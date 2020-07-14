@@ -3,7 +3,7 @@
   <div class="large-footer container-fluid">
     <div class="inner">
       <div class="row">
-        <div class="col-12 col-md-6 col-lg-6">
+        <div class="col-12 col-sm-8 offset-sm-2 col-lg-4 offset-lg-0">
           <div class="footer-map">
             <div class="bg-offset-bottom-right bg-offset-yellow-wave">
               <div class="location-square-feature">
@@ -13,7 +13,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-6">
+        <div class="col-12 col-md-6 col-lg-5 col-xl-4">
           <div class="footer-logo">
             @include ('_partials.logo-inverse')
           </div>
@@ -65,13 +65,26 @@
             <a id="de"
               href="http://a.cms.omniupdate.com/10?skin=oucampus&amp;account=shoreline&amp;site=www&amp;action=de&amp;path=/default.pcf">&copy;</a>
             2020 Shoreline Community College
-             
-            <a href="/currentstudents/privacyandnondiscrimination.aspx">Privacy &amp; Non-Discrimination</a>
-           
-            <a href="/title-ix/default.aspx">Title IX</a>
-          
-            <a href="/accessibility/default.aspx">Accessibility Statement</a>
           </p> 
+            <ul class="mt-0 list-unstyled links links-utility">
+              <li><a href="/currentstudents/privacyandnondiscrimination.aspx">Privacy &amp; Non-Discrimination</a></li>
+              <li><a href="/title-ix/default.aspx">Title IX</a></li>
+              <li><a href="/accessibility/default.aspx">Accessibility Statement</a></li>
+            </ul>
+          
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 col-xl-4">
+                <ul class="list-unstyled links">
+              <li class="py-3"><a href="#"><span class="far fa-user-circle"><span class="sr-only">User</span></span> <strong>Faculty and Staff Portal</strong></a></li>
+              <li><a href="/about-shoreline/hours-of-operation.aspx">Hours, Maps &amp; Directions</a></li>
+              <li><a href="/hr/default.aspx">Jobs</a></li>
+              <li><a href="/sitemap/">Sitemap</a></li>
+              <li><a href="https://www.shoreline.edu/campus-directory/">Employee Directory</a></li>
+              <li><a href="#">Alumni</a></li>
+              <li><a href="#">Community Members</a></li>
+              <li><a href="#">Donors</a></li> 
+              <li><a href="https://shoreline.formstack.com/forms/website_feedback">Website Feedback</a></li> 
+            </ul> 
         </div>
       </div><!-- end row -->
     </div>
