@@ -168,21 +168,21 @@
   padding-bottom: 1rem;
   label {
     display: block;
-    width: 70%;
+    // width: 70%;
     margin-bottom: 0;
   }
 } 
 
-@media (min-width: 280px) {
-  .searchform-mobile label {
-      width: 80%;
-    }
-}
-@media (min-width: $screen-sm) {
-  .searchform-mobile label {
-      width: 90%;
-    }
-}
+// @media (min-width: 280px) {
+//   .searchform-mobile label {
+//       width: 80%;
+//     }
+// }
+// @media (min-width: $screen-sm) {
+//   .searchform-mobile label {
+//       width: 90%;
+//     }
+// }
 
 @media (min-width: $screen-lg) {
   .megamenu .dropdown-menu {
@@ -543,3 +543,5 @@ header#header > .container-fluid {
     padding-left: 0;
   }
 }
+
+.megamenu #searchmenusub { display: block !important;}
