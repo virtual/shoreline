@@ -54,7 +54,11 @@
   font-size: 1.1rem;
   background-color:#fff;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
-  
+  a.btn.btn-important {
+    display: inline-block;
+    min-width: auto;
+    color: #fff;
+  } 
   .dropdown-menu {
     position: relative;
     padding: 0;

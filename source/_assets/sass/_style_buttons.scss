@@ -49,6 +49,10 @@ a.btn { text-decoration: none; }
 .btn-primary {
   color: set-text-color($btn-primary); 
   background-color: $btn-primary;
+  &:hover {
+    color: set-text-color($btn-primary);
+    background-color: darken($btn-primary, 5);
+  }
 }
 .btn-secondary {
   margin-top: 0;
