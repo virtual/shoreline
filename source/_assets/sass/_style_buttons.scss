@@ -38,20 +38,14 @@ a.btn { text-decoration: none; }
 .btn-block:first-child { margin-top: 1.1875rem; }
 .btn-block:last-child { margin-bottom: 1.1875rem; }
 
-.btn-important, a.btn-important {
-  color: set-text-color($btn-important);
-  background-color: $btn-important;
-  &:hover {
-    color: set-text-color($btn-important);
-    background-color: darken($btn-important, 5);
-  }
-}
 .btn-primary {
   color: set-text-color($btn-primary); 
   background-color: $btn-primary;
-  &:hover {
+  &:hover, &:focus, &:active {
+    &:not(:disabled):not(.disabled) {
     color: set-text-color($btn-primary);
     background-color: darken($btn-primary, 5);
+    }
   }
 }
 .btn-secondary {
@@ -73,28 +67,42 @@ a.btn { text-decoration: none; }
     background-color: $pale-gray;
   }
 }
-
+.btn-important, a.btn-important {
+  color: set-text-color($btn-important);
+  background-color: $btn-important;
+  &:hover {
+    color: set-text-color($btn-important);
+    background-color: darken($btn-important, 5);
+  }
+}
 // All classes that have inverse colored backgrounds, including alerts
 .bg-primary, .sectional-inverted, .alert {
-  $btn-primary: #fff;
+  $btn-primary: $link-blue;
   $btn-secondary: $primary;
   $btn-tertiary: $primary;
   
   .btn-unstyled { color: #fff; }
   .btn-primary {
-    color: $primary;
+    color: $btn-primary;
     background-color: #fff;
-    &:hover {
-      color: $primary;
-      background-color: #fff;     
-      opacity: 0.9;
-    }
+    // &:hover {
+    //   color: $btn-primary;
+    //   background-color: #fff;     
+    //   opacity: 0.9;
+    // }
     &:focus {
       box-shadow:0 0 0 0.2rem rgba(255, 255, 255, 0.5);
     }
+    &:hover, &:focus, &:active {
+      &:not(:disabled):not(.disabled) {
+        color: $btn-primary;
+        background-color: #fff;     
+        opacity: 0.9;
+      }
+    }
   }
   .btn-primary:hover:visited, .btn-primary:visited { 
-    color:$primary;
+    color: $btn-primary;
   }  
   .btn-secondary,
   .btn-tertiary {

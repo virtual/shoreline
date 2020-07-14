@@ -13,7 +13,7 @@
  
 .quicklinks.list-1 li a {
   color: $text-dark;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 // @media (max-width: $screen-md - 1px) {
@@ -34,7 +34,12 @@
 //   }
 // }
 @media (min-width: $screen-sm) {
-  .quicklinks.list-1, .quicklinks.list-2 {
+  .quicklinks.list-1 {
+    li a {
+      font-size: 1rem;
+    }
+  }
+  .quicklinks.list-2 {
     li a, li .btn {
       font-size: .875rem;
     }
