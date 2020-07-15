@@ -15,7 +15,7 @@
       <button id="mobile-search-button" class="navbar-toggler primary" type="button" data-toggle="collapse" data-target="#searchCollapse" aria-controls="searchCollapse"
         aria-expanded="false" aria-label="Toggle search">
         <span aria-hidden="true" class="fas fa-search"></span>
-        <span class="sr-only">Search</span>
+        <span class="menubartext">Search</span>
       </button>
       <!-- <p><a href="#" class="btn btn-sm btn-important">Get Started</a></p> -->
       </div>

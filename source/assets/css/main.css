@@ -2929,12 +2929,17 @@ hr {
 /* offset backgrounds */
 .bg-offset-yellow-wave {
   background-color: #ffb500;
-  background-image: url("../../resources/img/graphics/bg-offset-yellow.png");
+  background-image: url("../../resources/img/graphics/backgrounds/pattern-yellow-waves.png");
 }
 
 .bg-offset-primary-wave {
   background-color: #00685e;
-  background-image: url("../../resources/img/graphics/bg-offset-green.png");
+  background-image: url("../../resources/img/graphics/backgrounds/pattern-green-waves.png");
+}
+
+.bg-offset-blue-wave {
+  background-color: #0074b3;
+  background-image: url("../../resources/img/graphics/backgrounds/pattern-blue-waves.png");
 }
 
 .bg-offset-bottom-right {
@@ -3066,7 +3071,8 @@ hr {
   width: 100%;
 }
 
-.topnav ul, .topnav li {
+.topnav ul,
+.topnav li {
   list-style: none;
   display: inline-block;
   margin: 0;
@@ -3102,6 +3108,26 @@ hr {
   top: 0px;
 }
 
+.menubartext {
+  display: inline-block;
+  position: relative;
+  top: -.1rem;
+  font-size: 14px;
+  padding-left: .5rem;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.85;
+  letter-spacing: normal;
+}
+
+.menubaricon,
+.menubartext {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 #mobile-menu-button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3116,25 +3142,6 @@ hr {
 #mobile-menu-button .menubaricon {
   width: 1.3rem;
   height: 1.3rem;
-}
-
-#mobile-menu-button .menubartext {
-  display: inline-block;
-  position: relative;
-  top: -.1rem;
-  font-size: 14px;
-  padding-left: .5rem;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.85;
-  letter-spacing: normal;
-}
-
-#mobile-menu-button .menubaricon, #mobile-menu-button .menubartext {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
 }
 
 #mobile-menu-button .menubaricon rect {
@@ -3154,7 +3161,8 @@ hr {
 }
 
 /* close */
-#mobile-menu-button[aria-expanded=true], #mobile-search-button[aria-expanded=true] {
+#mobile-menu-button[aria-expanded=true],
+#mobile-search-button[aria-expanded=true] {
   background: #01685e;
   color: #fff;
 }

@@ -161,13 +161,18 @@ hr {
 }
 
 /* offset backgrounds */
+// TODO: make versions for different resolutions? 2x 3x? 
 .bg-offset-yellow-wave {
   background-color: $secondary;
-  background-image: url('../../resources/img/graphics/bg-offset-yellow.png')
+  background-image: url('../../resources/img/graphics/backgrounds/pattern-yellow-waves.png')
 }
 .bg-offset-primary-wave {
   background-color: $primary;
-  background-image: url('../../resources/img/graphics/bg-offset-green.png')
+  background-image: url('../../resources/img/graphics/backgrounds/pattern-green-waves.png')
+}
+.bg-offset-blue-wave {
+  background-color: $link-blue;
+  background-image: url('../../resources/img/graphics/backgrounds/pattern-blue-waves.png')
 }
 .bg-offset-bottom-right { 
   margin-top: 10px;
