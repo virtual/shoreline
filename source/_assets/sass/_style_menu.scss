@@ -7,12 +7,16 @@
 // Are these mobile buttons approved?
 
 .navmenu {
-  a {
+  a:not(.btn) {
     display: block;
     padding: 5px 10px;
     color: $text-black;
     text-align: center;
   } 
+  a.btn:not(.btn-link) {
+    margin-bottom: .5rem;
+    text-align: center;
+  }
   .dropdown-menu a {
     text-align: left;
   }

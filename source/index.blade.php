@@ -4,24 +4,23 @@
 @section('hero')
 <div class="hero-bg-container">
   <div class="hero-offset-bg bg-offset-yellow-wave">
-    <div class="hero-content pt-5 px-5 pb-3 bg-inverted bg-primary">
-      <h2 class="h1">Reimagine Possible</h2>
+    <div class="hero-content bg-inverted bg-primary">
+      <h2 class="h1">Reimagine<br/>Possible</h2>
       <p class="primary xl">Wherever you want to go,<br/>we'll help you get there.</p>
-      <p class="pb-2"><a href="#" class="btn btn-primary">Explore Programs</a></p>
-      <p class="pt-3 pb-4"><a href="#" class="more-arrow"><strong>Find a class</strong></a></p>
+      <p class="hero-cta"><a href="#" class="btn btn-primary">Explore Programs</a></p>
+      <p class="hero-cta-sub"><a href="#" class="more-arrow"><strong>Find a class</strong></a></p>
 
       <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-sm-6">
           <p class="primary medium">
-            <strong>Fall Quarter Starts</strong><br />
-            Sept 23, 2020
+            <strong>Fall Quarter</strong><br />
+            starts Sept 23, 2020
           </p>
         </div>
-        <div class="col-12 col-md-6">
-
+        <div class="col-12 col-sm-6">
           <p class="primary medium">
-            <strong>Winter Quarter Starts</strong><br />
-            Jan 6, 2021
+            <strong>Winter Quarter</strong><br />
+            starts Jan 6, 2021
           </p>
         </div>
       </div>

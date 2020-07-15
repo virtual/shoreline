@@ -196,7 +196,7 @@ $hero-offset: 1rem;
 .hero-bg-container {
   margin-right: 0;
   margin-left: 0;
-  padding-top: 5rem;
+  padding-top: 2rem;
   .hero-offset-bg {
     position: relative;
     display: flex;
@@ -207,8 +207,12 @@ $hero-offset: 1rem;
   .hero-content {
     z-index: 2;
     margin-top: $hero-offset * -1;
-    padding: 10px; 
+    padding: 2.8125rem 1.5rem 2rem; 
+    text-align: center;
     word-wrap: break-all; 
+    .btn {
+      width: 100%;
+    }
   }
   .hero-bg-offset-image {
     margin-bottom: $hero-offset * -2;
@@ -218,17 +222,33 @@ $hero-offset: 1rem;
       margin: 0 0 0 auto;
     }
   }
+  .hero-cta {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .hero-cta-sub {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+}
+@media (min-width: $screen-sm) {
+  .hero-bg-container .hero-content .btn {
+    width: auto;
+  }
 }
 @media (min-width: $screen-md) {
   .hero-bg-container {
-    margin-right: $hero-offset * -1;
-    margin-left: $hero-offset * -1;
+    // margin-right: $hero-offset * -1;
+    // margin-left: $hero-offset * -1;
+    padding-top: 5rem;
     .hero-offset-bg {
       flex-direction: row;
       padding-right: 0;
     }
     .hero-content {
-      flex-basis: 30%;
+      flex-basis: 48%;
+      padding: 64px 32px; 
+      text-align: left;      
     }  
     .hero-bg-offset-image {
       position: absolute;
@@ -249,4 +269,30 @@ $hero-offset: 1rem;
       }
     }
   }  
+  .hero-cta {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .hero-cta-sub {
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
 }
+
+@media (min-width: $screen-lg) {
+  .hero-bg-container {
+    width: calc(100% + 32px);
+    margin-right: $hero-offset * -1;
+    margin-left: $hero-offset * -1;
+  }
+.hero-bg-container .hero-content {
+    flex-basis: 43%;
+    padding: 72px 42px; 
+  }  
+}
+@media (min-width: $screen-xl) {
+  .hero-bg-container .hero-content {
+      flex-basis: 38%;
+      padding: 87px 42px 87px 55px; 
+    }  
+  }
