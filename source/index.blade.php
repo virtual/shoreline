@@ -57,7 +57,7 @@
         'img' => '/stock/square/housing.jpg',
         'alt' => 'housing',
         'link' => 'https://wts.shoreline.edu/waci002.html',
-        'addclass' => 'p-5'
+        'addclass' => ''
         ])
       </div>
       <div class="col-6 col-md-3">
@@ -66,7 +66,7 @@
         'img' => '/stock/square/shoreline.williams292.jpg',
         'alt' => 'housing',
         'link' => 'https://wts.shoreline.edu/waci002.html',
-        'addclass' => 'p-5'
+        'addclass' => ''
         ])
       </div>
       <div class="col-6 col-md-3">
@@ -75,7 +75,7 @@
         'img' => '/stock/square/online-learning.jpg',
         'alt' => 'housing',
         'link' => 'https://wts.shoreline.edu/waci002.html',
-        'addclass' => 'p-5'
+        'addclass' => ''
         ])
       </div>
       <div class="col-6 col-md-3">
@@ -84,7 +84,7 @@
         'img' => '/stock/square/seattle.jpg',
         'alt' => 'housing',
         'link' => 'https://wts.shoreline.edu/waci002.html',
-        'addclass' => 'p-5'
+        'addclass' => ''
         ])
       </div>
     </div>
