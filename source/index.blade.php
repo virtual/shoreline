@@ -3,19 +3,8 @@
 
 @section('hero')
 <div class="hero-bg-container">
-  <div class="hero-bg-offset">
-    <div class="bg-offset-bottom-right bg-offset-primary-wave">
-      <picture>
-        <source srcset="{{ $page->baseUrl }}/resources/img/homepage/hero/large.jpg" media="(min-width: 768px)">
-        <source srcset="{{ $page->baseUrl }}/resources/img/homepage/hero/medium.jpg" media="(min-width: 480px)">
-        <img src="{{ $page->baseUrl }}/resources/img/homepage/hero/small.jpg" alt="two students look at books in a library">
-      </picture>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-12 col-md-5">
-    <div class="bg-light pt-5 px-5 pb-3 primary">
+  <div class="hero-offset-bg bg-offset-yellow-wave">
+    <div class="hero-content pt-5 px-5 pb-3 bg-inverted bg-primary">
       <h2 class="h1">Reimagine Possible</h2>
       <p class="primary xl">Wherever you want to go,<br/>we'll help you get there.</p>
       <p class="pb-2"><a href="#" class="btn btn-primary">Explore Programs</a></p>
@@ -37,9 +26,23 @@
         </div>
       </div>
     </div>
+    <div class="hero-bg-offset-image">
+      <picture class="d-none">
+        <source srcset="https://via.placeholder.com/1200x1200" media="(min-width: 992px)">
+        <source srcset="https://via.placeholder.com/800x1200/face8d" media="(min-width: 768px)">
+        <source srcset="https://via.placeholder.com/768x480/003f7f" media="(min-width: 480px)">
+        <img src="https://via.placeholder.com/480x300" alt="two students look at books in a library">
+      </picture>
+      <picture>
+        <source srcset="{{ $page->baseUrl }}/resources/img/homepage/hero/explore/xl.jpg" media="(min-width: 992px)">
+        <source srcset="{{ $page->baseUrl }}/resources/img/homepage/hero/explore/lg.jpg" media="(min-width: 768px)">
+        <source srcset="{{ $page->baseUrl }}/resources/img/homepage/hero/explore/med.jpg" media="(min-width: 480px)">
+        <img width="1080" height="720" src="{{ $page->baseUrl }}/resources/img/homepage/hero/explore/sm.jpg" alt="two students walk outside in warm sunlight near trees">
+      </picture>
+    </div>
   </div>
-</div> 
-
+</div>
+ 
 @endsection
 
 @section('content')

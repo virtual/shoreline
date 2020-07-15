@@ -1,3 +1,5 @@
+// offset overlay: https://codepen.io/virtual/pen/XWXPVMR
+$hero-offset: 1rem;
 .homepage-banner .expand-button { 
   width: 8rem;
 }
@@ -191,3 +193,60 @@
   
 }
 
+.hero-bg-container {
+  margin-right: 0;
+  margin-left: 0;
+  padding-top: 5rem;
+  .hero-offset-bg {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: $hero-offset;
+    padding-top: 0;
+  }
+  .hero-content {
+    z-index: 2;
+    margin-top: $hero-offset * -1;
+    padding: 10px; 
+    word-wrap: break-all; 
+  }
+  .hero-bg-offset-image {
+    margin-bottom: $hero-offset * -2;
+    // box-shadow: 0 0 1px #f00;
+    img, picture {
+      width: 100%;
+      margin: 0 0 0 auto;
+    }
+  }
+}
+@media (min-width: $screen-md) {
+  .hero-bg-container {
+    margin-right: $hero-offset * -1;
+    margin-left: $hero-offset * -1;
+    .hero-offset-bg {
+      flex-direction: row;
+      padding-right: 0;
+    }
+    .hero-content {
+      flex-basis: 30%;
+    }  
+    .hero-bg-offset-image {
+      position: absolute;
+      top: -56px;
+      right: 0;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      width: 80%;
+      height: calc(100% + 80px);
+      margin-bottom: 0;
+      padding-right: $hero-offset;
+      overflow: hidden;
+      // margin:0 auto;
+      img, picture {
+        width: 100%;
+        margin: 0 0 0 auto;
+      }
+    }
+  }  
+}

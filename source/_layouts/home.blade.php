@@ -30,7 +30,7 @@
   @include('_partials.header')
   <main id="maincontent">
  
-    <div class="container">
+    <div class="container-fluid">
       @yield('hero')
     </div>
     
