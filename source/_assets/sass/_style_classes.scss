@@ -266,6 +266,11 @@ hr {
 .bg-cover {
   background-size: cover;
 }
+@media (max-width: $screen-sm - 1px) {
+  .bg-image-mobile-none {
+    background-image: none !important;
+  }    
+}
 
 .toc-icon-primary { color: $primary !important;
   path, line, polygon { fill: $primary !important; } 
@@ -285,39 +290,65 @@ hr {
  
 
 .toc-links-icons {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 1rem;
+  ul {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
   ul, dl {
     a {
       display: flex;
       flex-direction: row;
       align-items: center;
-      padding: 1.25rem 0;
+      padding: .5rem 0;
       text-decoration: none;
     }
+    // todo: review mismatch .fa, versus svg/img
     .fa, .fas, .far, .fa, .fal {
       float: left;
       width: 5rem;
       font-size: 2rem; 
       text-align: center;
     }
-    .svg-icon-50 {
+    .svg-icon-medium {
       position: relative;
       top: -.25em;
       margin-right: .75rem;
       margin-bottom: -.5em;
       margin-left: .75rem;
-      svg {
-        width: 50px;
-      }
+      
     }
   }
   .toc-title {
     flex-grow: 1;
   }
 }
-.svg-icon-50 {
+.svg-icon-medium {
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
+  svg {
+    width: 35px;
+  }
 }
+@media (min-width: $screen-lg) {
+  .toc-links-icons {    
+    padding: 1.5rem 3rem 3rem;
+    ul {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+    ul, dl {
+      a { 
+        padding: 1.25rem 0; 
+      }
+    } 
+  }
+  .svg-icon-medium { 
+    width: 50px;
+    height: 50px;
+    svg {
+      width: 50px;
+    }
+  }
+} 

@@ -19,7 +19,7 @@ mix.js('source/_assets/js/main.js', 'js')
   .sass('source/_assets/sass/main.scss', 'css/main.css')
   // .sass('source/_assets/sass/slick.scss', 'css/slick.css')
   // .sass('source/_assets/sass/slick-theme.scss', 'css/slick-theme.css')
-  .sass('source/_assets/sass/bootstrap.scss', 'css/bootstrap.css') // uncomment to recompile
+  // .sass('source/_assets/sass/bootstrap.scss', 'css/bootstrap.css') // uncomment to recompile
   .options({ processCssUrls: false })
   // .postCss('source/assets/css/main.css', 'css/main-support.css', [
   //   require('autoprefixer')({

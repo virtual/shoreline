@@ -214,6 +214,10 @@ body {
     margin-bottom: 0;
   }
 }
+body.homepage #maincontent { 
+  margin-bottom: 0;
+}
+
 #maincontent + #footer   { margin-top: 1.5rem;}
 #maincontent + #sectionals { margin-top: -1.5rem; } 
 .homepage #maincontent+#sectionals { margin-top:0;}

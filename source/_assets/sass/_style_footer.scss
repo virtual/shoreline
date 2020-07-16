@@ -176,8 +176,18 @@ footer#footer .back-to-top {
   padding-top: 3rem;
   padding-bottom: 4rem;
   h2, h3 { margin-top: 0; }
+  li { 
+    display: block; 
+    width: 100%;
 }
-@media (min-width: $screen-lg) {
+}
+@media (min-width: $screen-sm) {
+  .subfooter li {
+    display: inline-block;
+    width: auto; 
+  }
+}
+  @media (min-width: $screen-lg) {
   .subfooter {
     padding-top: 5rem;
     padding-bottom: 5.375rem;

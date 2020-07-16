@@ -46,8 +46,8 @@
 @endsection
 
 @section('content')
-<div class="bg-wave-mint-top">
-  <div class="container-fluid mt-5 pt-5 pb-3">
+<div class="content-1 bg-wave-mint-top">
+  <div class="container-fluid mt-5 pt-5">
     <section class="primary sectional sectional-padded">
       <p class="d-none primary text-center xl pt-5 pb-4">A short sentence that sets up the following benefits</p>
 
@@ -93,8 +93,8 @@
     </section>
   </div>
 </div>
-<div class="bg-light">
-  <div class="container-fluid pt-5 ">
+<div class="content-2 bg-light">
+  <div class="container-fluid">
 
     <section class="primary sectional sectional-padded-lg">
       <div class="row">
@@ -125,7 +125,7 @@
 
 
 
-<section class="sectional bg-primary lazy bg-cover"
+<section class="sectional bg-primary lazy bg-cover bg-image-mobile-none"
   data-bg="{{ $page->baseUrl }}/resources/img/stock/backgrounds/explore2.jpg">
   <div class=" bg-primary-gradient-top-down sectional-padded-lg ">
     <div class="container-fluid">
@@ -135,24 +135,23 @@
           <p class="text-center xl pb-5">Shoreline's areas of study offer you the option to take classes in subjects you
             like to help you find a career you'll love.</p>
           <div class="bg-offset-yellow-wave bg-offset-bottom-right">
-            <div class="bg-white pt-3 pb-5 px-5">
-              <div class="toc-links-icons">
-                <ul class="list-unstyled">
-                  <li><a href="#"><span class="toc-icon-primary svg-icon-50">@include('_svg/aos-arts')</span> <span class="toc-title">Arts &
-                      Communication</span></a></li>
-                  <li><a href="#"><span class="toc-icon-bright-green svg-icon-50">@include('_svg/aos-business')</span>
+            <div class="bg-light toc-links-icons"> 
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="toc-icon-primary svg-icon-medium">@include('_svg/aos-arts')</span> <span class="toc-title">Arts &
+                    Communication</span></a></li>
+                <li><a href="#"><span class="toc-icon-bright-green svg-icon-medium">@include('_svg/aos-business')</span>
 <span class="toc-title">                      Business</span></a></li>
-                  <li><a href="#"><span class="toc-icon-orange svg-icon-50">@include('_svg/aos-health')</span> <span class="toc-title">Health &
-                      Medical</span></a></li>
-                  <li><a href="#"><span class="toc-icon-secondary svg-icon-50">@include('_svg/aos-stem')</span> <span class="toc-title">Science, Technology,
-                      Engineering & Math</span></a></li>
-                  <li><a href="#"><span class="toc-icon-linkblue svg-icon-50">@include('_svg/aos-social')</span> <span class="toc-title">Social Sciences
-                      & Education</span></a></li>
-                </ul>
-              </div>
+                <li><a href="#"><span class="toc-icon-orange svg-icon-medium">@include('_svg/aos-health')</span> <span class="toc-title">Health &
+                    Medical</span></a></li>
+                <li><a href="#"><span class="toc-icon-secondary svg-icon-medium">@include('_svg/aos-stem')</span> <span class="toc-title">Science, Technology,
+                    Engineering & Math</span></a></li>
+                <li><a href="#"><span class="toc-icon-linkblue svg-icon-medium">@include('_svg/aos-social')</span> <span class="toc-title">Social Sciences
+                    & Education</span></a></li>
+              </ul>
               <p class="text-center"><a href="#" class="more-arrow"><strong>Browse all degrees &amp;
-                    certificates</strong></a></p>
-            </div>
+                certificates</strong></a></p>
+              </div>
+          
           </div>
         </div>
       </div>
@@ -166,7 +165,7 @@
     <section class="primary sectional sectional-padded-lg">
 
       <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-lg-6">
           <div class="pr-4">
             <h2 class="h1">Reimagine Community</h2>
             <p class="primary xl">We're more than just educators - we're your success squad, supporting you every step
@@ -175,9 +174,8 @@
             <p><a href="#" class="more-arrow"><strong>Find support services</strong></a></p>
           </div>
         </div>
-        <div class="col-12 col-md-6">
-          <div class="testimonial-slider-container container-fluid py-3">
-            <div class="pr-5">
+        <div class="col-12 col-lg-6">
+          <div class="testimonial-slider-container">
               <div class="slick-slider">
                 @include('_partials.quote', [
                 'desc' => "I joined different clubs, worked as a student tutor, and served on ASG. These experiences
@@ -205,9 +203,9 @@
                 'img' => '',
                 'link' => '#'
                 ])
-              </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
 
