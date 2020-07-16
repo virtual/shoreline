@@ -141,7 +141,12 @@ footer#footer .back-to-top {
     margin-bottom: 1rem;
   } 
   .location-square-feature {    
-    padding-bottom: 120%;
+    padding-bottom: 150%;
+  }
+}
+@media (min-width: $screen-xl) {
+  .location-square-feature {    
+    padding-bottom: 130%;
   }
 }
 .footer-social {

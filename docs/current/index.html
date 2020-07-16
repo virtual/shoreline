@@ -69,7 +69,7 @@
     <a href="#maincontent" title="Skip Main Navigation">Skip Main Navigation</a>
   </div>
        
-        <section id="searchmenusub" class="bg-light collapse pt-4" aria-label="Search">
+        <section id="searchmenusub" class="bg-white collapse pt-4" aria-label="Search">
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
@@ -154,49 +154,86 @@
         <img src="https://www.satinflame.com/ou/shoreline/resources/img/logos/logo-full-mobile.png" srcset="https://www.satinflame.com/ou/shoreline/resources/img/logos/logo-full-mobile2x.png 2x, https://www.satinflame.com/ou/shoreline/resources/img/logos/logo-full-mobile3x.png 3x, https://www.satinflame.com/ou/shoreline/resources/img/logos/logo-full-mobile4x.png 4x" alt="Shoreline Community College" />
       </a>
       <div class="flex-button flex-button-right">
-      <!-- <button id="mobile-search-button" class="navbar-toggler primary" type="button" data-toggle="collapse" data-target="#searchCollapse" aria-controls="searchCollapse"
+      <button id="mobile-search-button" class="navbar-toggler primary" type="button" data-toggle="collapse" data-target="#searchCollapse" aria-controls="searchCollapse"
         aria-expanded="false" aria-label="Toggle search">
         <span aria-hidden="true" class="fas fa-search"></span>
-        <span class="sr-only">Search</span>
-      </button> -->
-      <p><a href="#" class="btn btn-sm btn-important">Get Started</a></p>
+        <span class="menubartext">Search</span>
+      </button>
+      <!-- <p><a href="#" class="btn btn-sm btn-important">Get Started</a></p> -->
       </div>
     </div>
-    <!-- <div class="collapse navbar-collapse" id="searchCollapse">
+    <div class="collapse navbar-collapse" id="searchCollapse">
       <div class="container">
-        <div class="searchform-mobile">
-          <form class="siteSearch" role="search" method="GET" action="/search/SearchRedir.aspx">
-  <div class="input-group main-search" role="search">
-    <span class="input-group-prepend">
-      <button tabindex="-1" class="input-group-text bg-transparent" name="SubmitSearch" type="submit">
-        <span class="fa fa-search primary"></span>
-        <span class="sr-only">Search</span>
-      </button>
-    </span>
-    <label for="search2"><span class="sr-only">Enter search terms</span>
-    <input id="search2" type="search" name="EnterSearch" class="entersearch form-control border-left-0 border" placeholder="Search"
-      value="" autocomplete="on"></label>
-  </div>
-</form>        </div>
+        <div class="searchform-mobile"> 
+          <div class="d-flex">
+
+  <form class="siteSearch" role="search" method="GET" action="/search/SearchRedir.aspx">
+    <div class="input-group main-search" role="search">
+      <span class="input-group-prepend">
+        <button tabindex="-1" class="input-group-text bg-transparent" name="SubmitSearch" type="submit">
+          <span class="fa fa-search primary"></span>
+          <span class="sr-only">Search</span>
+        </button>
+      </span>
+      <label for="search2"><span class="sr-only">Enter search terms</span>
+        <input id="search2" type="search" name="EnterSearch" class="entersearch form-control border-left-0 border"
+          placeholder="Search" value="" autocomplete="on"></label>
+    </div>
+  </form>
+
+
+  <button class="btn btn-link ml-3" data-toggle="collapse" data-target="#searchCollapse" aria-controls="searchCollapse"
+    aria-expanded="true">Cancel</button>
+</div>
+<div class="pt-3 pb-3">
+  <p class="medium"><strong>Frequently Searched</strong></p>
+  <ul class="list-unstyled list-inline btn-tags mb-0">
+    <li><a class="btn btn-link btn-sm" href="#">Canvas</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Library</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Class Schedule</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Planning Guides</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Transcripts</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Calendars</a></li>
+  </ul>
+</div>  
+        </div>
       </div>
-    </div> -->
+    </div>
     <div class="collapse navbar-collapse" id="navbarCollapse">
-      <div class="container-fluid d-block d-lg-none">
+      <!-- <div class="container-fluid d-block d-lg-none">
         <div class="searchform-mobile">
-          <form class="siteSearch" role="search" method="GET" action="/search/SearchRedir.aspx">
-  <div class="input-group main-search" role="search">
-    <span class="input-group-prepend">
-      <button tabindex="-1" class="input-group-text bg-transparent" name="SubmitSearch" type="submit">
-        <span class="fa fa-search primary"></span>
-        <span class="sr-only">Search</span>
-      </button>
-    </span>
-    <label for="search2"><span class="sr-only">Enter search terms</span>
-    <input id="search2" type="search" name="EnterSearch" class="entersearch form-control border-left-0 border" placeholder="Search"
-      value="" autocomplete="on"></label>
-  </div>
-</form>        </div>
-      </div>
+          <div class="d-flex">
+
+  <form class="siteSearch" role="search" method="GET" action="/search/SearchRedir.aspx">
+    <div class="input-group main-search" role="search">
+      <span class="input-group-prepend">
+        <button tabindex="-1" class="input-group-text bg-transparent" name="SubmitSearch" type="submit">
+          <span class="fa fa-search primary"></span>
+          <span class="sr-only">Search</span>
+        </button>
+      </span>
+      <label for="search2"><span class="sr-only">Enter search terms</span>
+        <input id="search2" type="search" name="EnterSearch" class="entersearch form-control border-left-0 border"
+          placeholder="Search" value="" autocomplete="on"></label>
+    </div>
+  </form>
+
+
+  <button class="btn btn-link ml-3" data-toggle="collapse" data-target="#searchCollapse" aria-controls="searchCollapse"
+    aria-expanded="true">Cancel</button>
+</div>
+<div class="pt-3 pb-3">
+  <p class="medium"><strong>Frequently Searched</strong></p>
+  <ul class="list-unstyled list-inline btn-tags mb-0">
+    <li><a class="btn btn-link btn-sm" href="#">Canvas</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Library</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Class Schedule</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Planning Guides</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Transcripts</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Calendars</a></li>
+  </ul>
+</div>        </div>
+      </div> -->
 
       <ul class="menu">
 
@@ -652,15 +689,15 @@
 <h2 class="sr-only">Resources</h2>
 <div class="row">
   <div class="col-md-6">
-      <div class="accordion " id="accordionb17">
+      <div class="accordion " id="accordion751">
     <div class="accordion-card">
-      <div class="accordion-header" id="headingb17One">
-          <h3><button class="btn btn-toggle" type="button" data-toggle="collapse" data-target="#collapseb17One" aria-expanded="false" aria-controls="collapseb17One">
+      <div class="accordion-header" id="heading751One">
+          <h3><button class="btn btn-toggle" type="button" data-toggle="collapse" data-target="#collapse751One" aria-expanded="false" aria-controls="collapse751One">
             Collapsible Group Item #1
           </button></h3>
       </div>
   
-      <div id="collapseb17One" class="collapse" aria-labelledby="headingb17One">
+      <div id="collapse751One" class="collapse" aria-labelledby="heading751One">
         <div class="accordion-body">
           <div class="ou-help">
   <p>Right click a table cell to select deletion of a row or column in order to size the table according to your needs.</p>
@@ -715,12 +752,12 @@
       </div>
     </div>
     <div class="accordion-card">
-      <div class="accordion-header" id="headingb17Two">
-          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapseb17Two" aria-expanded="false" aria-controls="collapseb17Two">
+      <div class="accordion-header" id="heading751Two">
+          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse751Two" aria-expanded="false" aria-controls="collapse751Two">
             Collapsible Group Item #2
           </button></h3>
       </div>
-      <div id="collapseb17Two" class="collapse" aria-labelledby="headingb17Two">
+      <div id="collapse751Two" class="collapse" aria-labelledby="heading751Two">
         <div class="accordion-body">
           <ul>
             <li><a href="#">Anim pariatur cliche reprehenderit,</a></li>
@@ -732,12 +769,12 @@
       </div>
     </div>
     <div class="accordion-card">
-      <div class="accordion-header" id="headingb17Three">
-          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapseb17Three" aria-expanded="false" aria-controls="collapseb17Three">
+      <div class="accordion-header" id="heading751Three">
+          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse751Three" aria-expanded="false" aria-controls="collapse751Three">
             Collapsible Group Item #3
           </button></h3>
       </div>
-      <div id="collapseb17Three" class="collapse" aria-labelledby="headingb17Three">
+      <div id="collapse751Three" class="collapse" aria-labelledby="heading751Three">
         <div class="accordion-body">
           <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
         </div>
@@ -746,15 +783,15 @@
   </div>  </div>
 
   <div class="col-md-6">
-      <div class="accordion " id="accordion3fd">
+      <div class="accordion " id="accordionc06">
     <div class="accordion-card">
-      <div class="accordion-header" id="heading3fdOne">
-          <h3><button class="btn btn-toggle" type="button" data-toggle="collapse" data-target="#collapse3fdOne" aria-expanded="false" aria-controls="collapse3fdOne">
+      <div class="accordion-header" id="headingc06One">
+          <h3><button class="btn btn-toggle" type="button" data-toggle="collapse" data-target="#collapsec06One" aria-expanded="false" aria-controls="collapsec06One">
             Collapsible Group Item #1
           </button></h3>
       </div>
   
-      <div id="collapse3fdOne" class="collapse" aria-labelledby="heading3fdOne">
+      <div id="collapsec06One" class="collapse" aria-labelledby="headingc06One">
         <div class="accordion-body">
           <div class="ou-help">
   <p>Right click a table cell to select deletion of a row or column in order to size the table according to your needs.</p>
@@ -809,12 +846,12 @@
       </div>
     </div>
     <div class="accordion-card">
-      <div class="accordion-header" id="heading3fdTwo">
-          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse3fdTwo" aria-expanded="false" aria-controls="collapse3fdTwo">
+      <div class="accordion-header" id="headingc06Two">
+          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapsec06Two" aria-expanded="false" aria-controls="collapsec06Two">
             Collapsible Group Item #2
           </button></h3>
       </div>
-      <div id="collapse3fdTwo" class="collapse" aria-labelledby="heading3fdTwo">
+      <div id="collapsec06Two" class="collapse" aria-labelledby="headingc06Two">
         <div class="accordion-body">
           <ul>
             <li><a href="#">Anim pariatur cliche reprehenderit,</a></li>
@@ -826,12 +863,12 @@
       </div>
     </div>
     <div class="accordion-card">
-      <div class="accordion-header" id="heading3fdThree">
-          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse3fdThree" aria-expanded="false" aria-controls="collapse3fdThree">
+      <div class="accordion-header" id="headingc06Three">
+          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapsec06Three" aria-expanded="false" aria-controls="collapsec06Three">
             Collapsible Group Item #3
           </button></h3>
       </div>
-      <div id="collapse3fdThree" class="collapse" aria-labelledby="heading3fdThree">
+      <div id="collapsec06Three" class="collapse" aria-labelledby="headingc06Three">
         <div class="accordion-body">
           <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
         </div>
@@ -843,15 +880,15 @@
  <h2>Compact Accordion</h2>
  <div class="row">
     <div class="col-md-6">
-         <div class="accordion accordion-compact" id="accordion737">
+         <div class="accordion accordion-compact" id="accordion4fb">
     <div class="accordion-card">
-      <div class="accordion-header" id="heading737One">
-          <h3><button class="btn btn-toggle" type="button" data-toggle="collapse" data-target="#collapse737One" aria-expanded="false" aria-controls="collapse737One">
+      <div class="accordion-header" id="heading4fbOne">
+          <h3><button class="btn btn-toggle" type="button" data-toggle="collapse" data-target="#collapse4fbOne" aria-expanded="false" aria-controls="collapse4fbOne">
             Collapsible Group Item #1
           </button></h3>
       </div>
   
-      <div id="collapse737One" class="collapse" aria-labelledby="heading737One">
+      <div id="collapse4fbOne" class="collapse" aria-labelledby="heading4fbOne">
         <div class="accordion-body">
           <div class="ou-help">
   <p>Right click a table cell to select deletion of a row or column in order to size the table according to your needs.</p>
@@ -906,12 +943,12 @@
       </div>
     </div>
     <div class="accordion-card">
-      <div class="accordion-header" id="heading737Two">
-          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse737Two" aria-expanded="false" aria-controls="collapse737Two">
+      <div class="accordion-header" id="heading4fbTwo">
+          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse4fbTwo" aria-expanded="false" aria-controls="collapse4fbTwo">
             Collapsible Group Item #2
           </button></h3>
       </div>
-      <div id="collapse737Two" class="collapse" aria-labelledby="heading737Two">
+      <div id="collapse4fbTwo" class="collapse" aria-labelledby="heading4fbTwo">
         <div class="accordion-body">
           <ul>
             <li><a href="#">Anim pariatur cliche reprehenderit,</a></li>
@@ -923,12 +960,12 @@
       </div>
     </div>
     <div class="accordion-card">
-      <div class="accordion-header" id="heading737Three">
-          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse737Three" aria-expanded="false" aria-controls="collapse737Three">
+      <div class="accordion-header" id="heading4fbThree">
+          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse4fbThree" aria-expanded="false" aria-controls="collapse4fbThree">
             Collapsible Group Item #3
           </button></h3>
       </div>
-      <div id="collapse737Three" class="collapse" aria-labelledby="heading737Three">
+      <div id="collapse4fbThree" class="collapse" aria-labelledby="heading4fbThree">
         <div class="accordion-body">
           <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
         </div>
@@ -937,15 +974,15 @@
   </div>    </div>
   
     <div class="col-md-6">
-         <div class="accordion accordion-compact" id="accordionae6">
+         <div class="accordion accordion-compact" id="accordion582">
     <div class="accordion-card">
-      <div class="accordion-header" id="headingae6One">
-          <h3><button class="btn btn-toggle" type="button" data-toggle="collapse" data-target="#collapseae6One" aria-expanded="false" aria-controls="collapseae6One">
+      <div class="accordion-header" id="heading582One">
+          <h3><button class="btn btn-toggle" type="button" data-toggle="collapse" data-target="#collapse582One" aria-expanded="false" aria-controls="collapse582One">
             Collapsible Group Item #1
           </button></h3>
       </div>
   
-      <div id="collapseae6One" class="collapse" aria-labelledby="headingae6One">
+      <div id="collapse582One" class="collapse" aria-labelledby="heading582One">
         <div class="accordion-body">
           <div class="ou-help">
   <p>Right click a table cell to select deletion of a row or column in order to size the table according to your needs.</p>
@@ -1000,12 +1037,12 @@
       </div>
     </div>
     <div class="accordion-card">
-      <div class="accordion-header" id="headingae6Two">
-          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapseae6Two" aria-expanded="false" aria-controls="collapseae6Two">
+      <div class="accordion-header" id="heading582Two">
+          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse582Two" aria-expanded="false" aria-controls="collapse582Two">
             Collapsible Group Item #2
           </button></h3>
       </div>
-      <div id="collapseae6Two" class="collapse" aria-labelledby="headingae6Two">
+      <div id="collapse582Two" class="collapse" aria-labelledby="heading582Two">
         <div class="accordion-body">
           <ul>
             <li><a href="#">Anim pariatur cliche reprehenderit,</a></li>
@@ -1017,12 +1054,12 @@
       </div>
     </div>
     <div class="accordion-card">
-      <div class="accordion-header" id="headingae6Three">
-          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapseae6Three" aria-expanded="false" aria-controls="collapseae6Three">
+      <div class="accordion-header" id="heading582Three">
+          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse582Three" aria-expanded="false" aria-controls="collapse582Three">
             Collapsible Group Item #3
           </button></h3>
       </div>
-      <div id="collapseae6Three" class="collapse" aria-labelledby="headingae6Three">
+      <div id="collapse582Three" class="collapse" aria-labelledby="heading582Three">
         <div class="accordion-body">
           <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
         </div>
@@ -1055,7 +1092,7 @@
   <div class="large-footer container-fluid">
     <div class="inner">
       <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-12 text-center">
           <h2>Ready to take the next step?</h2> 
 
           <ul class="pt-3 list-unstyled list-inline footer-buttons">
@@ -1064,21 +1101,7 @@
             <li><a class="btn btn-link" href="/apply-and-aid/campus-tour.aspx">Visit Us</a></li>
           </ul>
         </div>
-
-        <div class="col-12 col-md-6">
-          <div class="links">
-            <ul class="list-unstyled list-cols-2">
-              <li><a href="/about-shoreline/hours-of-operation.aspx">Hours, Maps &amp; Directions</a></li>
-              <li><a href="/hr/default.aspx">Jobs</a></li>
-              <li><a href="/sitemap/">Sitemap</a></li>
-              <li><a href="https://www.shoreline.edu/campus-directory/">Employee Directory</a></li>
-              <li><a href="#">Alumni</a></li>
-              <li><a href="#">Community Members</a></li>
-              <li><a href="#">Donors</a></li> 
-              <li><a href="https://shoreline.formstack.com/forms/website_feedback">Website Feedback</a></li>
-            </ul>
-          </div>
-        </div>
+ 
       </div>
     </div>
   </div>
@@ -1086,7 +1109,7 @@
   <div class="large-footer container-fluid">
     <div class="inner">
       <div class="row">
-        <div class="col-12 col-md-6 col-lg-6">
+        <div class="col-12 col-sm-8 offset-sm-2 col-lg-4 offset-lg-0">
           <div class="footer-map">
             <div class="bg-offset-bottom-right bg-offset-yellow-wave">
               <div class="location-square-feature">
@@ -1096,7 +1119,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-6">
+        <div class="col-12 col-md-6 col-lg-5 col-xl-4">
           <div class="footer-logo">
             <a class="navbar-brand" href="/">
 	<img height="96" width="160" src="https://www.satinflame.com/ou/shoreline/resources/img/logos/logo-full-inverse.png" alt="Shoreline Community College" />
@@ -1149,13 +1172,26 @@
             <a id="de"
               href="http://a.cms.omniupdate.com/10?skin=oucampus&amp;account=shoreline&amp;site=www&amp;action=de&amp;path=/default.pcf">&copy;</a>
             2020 Shoreline Community College
-             
-            <a href="/currentstudents/privacyandnondiscrimination.aspx">Privacy &amp; Non-Discrimination</a>
-           
-            <a href="/title-ix/default.aspx">Title IX</a>
-          
-            <a href="/accessibility/default.aspx">Accessibility Statement</a>
           </p> 
+            <ul class="mt-0 list-unstyled links links-utility">
+              <li><a href="/currentstudents/privacyandnondiscrimination.aspx">Privacy &amp; Non-Discrimination</a></li>
+              <li><a href="/title-ix/default.aspx">Title IX</a></li>
+              <li><a href="/accessibility/default.aspx">Accessibility Statement</a></li>
+            </ul>
+          
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 col-xl-4">
+                <ul class="list-unstyled links">
+              <li class="py-3"><a href="#"><span class="far fa-user-circle"><span class="sr-only">User</span></span> <strong>Faculty and Staff Portal</strong></a></li>
+              <li><a href="/about-shoreline/hours-of-operation.aspx">Hours, Maps &amp; Directions</a></li>
+              <li><a href="/hr/default.aspx">Jobs</a></li>
+              <li><a href="/sitemap/">Sitemap</a></li>
+              <li><a href="https://www.shoreline.edu/campus-directory/">Employee Directory</a></li>
+              <li><a href="#">Alumni</a></li>
+              <li><a href="#">Community Members</a></li>
+              <li><a href="#">Donors</a></li> 
+              <li><a href="https://shoreline.formstack.com/forms/website_feedback">Website Feedback</a></li> 
+            </ul> 
         </div>
       </div><!-- end row -->
     </div>

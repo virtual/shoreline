@@ -32,7 +32,7 @@
     <a href="#maincontent" title="Skip Main Navigation">Skip Main Navigation</a>
   </div>
        
-        <section id="searchmenusub" class="bg-light collapse pt-4" aria-label="Search">
+        <section id="searchmenusub" class="bg-white collapse pt-4" aria-label="Search">
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
@@ -120,49 +120,86 @@
         <img src="https://www.satinflame.com/ou/shoreline/resources/img/logos/logo-full-mobile.png" srcset="https://www.satinflame.com/ou/shoreline/resources/img/logos/logo-full-mobile2x.png 2x, https://www.satinflame.com/ou/shoreline/resources/img/logos/logo-full-mobile3x.png 3x, https://www.satinflame.com/ou/shoreline/resources/img/logos/logo-full-mobile4x.png 4x" alt="Shoreline Community College" />
       </a>
       <div class="flex-button flex-button-right">
-      <!-- <button id="mobile-search-button" class="navbar-toggler primary" type="button" data-toggle="collapse" data-target="#searchCollapse" aria-controls="searchCollapse"
+      <button id="mobile-search-button" class="navbar-toggler primary" type="button" data-toggle="collapse" data-target="#searchCollapse" aria-controls="searchCollapse"
         aria-expanded="false" aria-label="Toggle search">
         <span aria-hidden="true" class="fas fa-search"></span>
-        <span class="sr-only">Search</span>
-      </button> -->
-      <p><a href="#" class="btn btn-sm btn-important">Get Started</a></p>
+        <span class="menubartext">Search</span>
+      </button>
+      <!-- <p><a href="#" class="btn btn-sm btn-important">Get Started</a></p> -->
       </div>
     </div>
-    <!-- <div class="collapse navbar-collapse" id="searchCollapse">
+    <div class="collapse navbar-collapse" id="searchCollapse">
       <div class="container">
-        <div class="searchform-mobile">
-          <form class="siteSearch" role="search" method="GET" action="/search/SearchRedir.aspx">
-  <div class="input-group main-search" role="search">
-    <span class="input-group-prepend">
-      <button tabindex="-1" class="input-group-text bg-transparent" name="SubmitSearch" type="submit">
-        <span class="fa fa-search primary"></span>
-        <span class="sr-only">Search</span>
-      </button>
-    </span>
-    <label for="search2"><span class="sr-only">Enter search terms</span>
-    <input id="search2" type="search" name="EnterSearch" class="entersearch form-control border-left-0 border" placeholder="Search"
-      value="" autocomplete="on"></label>
-  </div>
-</form>        </div>
+        <div class="searchform-mobile"> 
+          <div class="d-flex">
+
+  <form class="siteSearch" role="search" method="GET" action="/search/SearchRedir.aspx">
+    <div class="input-group main-search" role="search">
+      <span class="input-group-prepend">
+        <button tabindex="-1" class="input-group-text bg-transparent" name="SubmitSearch" type="submit">
+          <span class="fa fa-search primary"></span>
+          <span class="sr-only">Search</span>
+        </button>
+      </span>
+      <label for="search2"><span class="sr-only">Enter search terms</span>
+        <input id="search2" type="search" name="EnterSearch" class="entersearch form-control border-left-0 border"
+          placeholder="Search" value="" autocomplete="on"></label>
+    </div>
+  </form>
+
+
+  <button class="btn btn-link ml-3" data-toggle="collapse" data-target="#searchCollapse" aria-controls="searchCollapse"
+    aria-expanded="true">Cancel</button>
+</div>
+<div class="pt-3 pb-3">
+  <p class="medium"><strong>Frequently Searched</strong></p>
+  <ul class="list-unstyled list-inline btn-tags mb-0">
+    <li><a class="btn btn-link btn-sm" href="#">Canvas</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Library</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Class Schedule</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Planning Guides</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Transcripts</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Calendars</a></li>
+  </ul>
+</div>  
+        </div>
       </div>
-    </div> -->
+    </div>
     <div class="collapse navbar-collapse" id="navbarCollapse">
-      <div class="container-fluid d-block d-lg-none">
+      <!-- <div class="container-fluid d-block d-lg-none">
         <div class="searchform-mobile">
-          <form class="siteSearch" role="search" method="GET" action="/search/SearchRedir.aspx">
-  <div class="input-group main-search" role="search">
-    <span class="input-group-prepend">
-      <button tabindex="-1" class="input-group-text bg-transparent" name="SubmitSearch" type="submit">
-        <span class="fa fa-search primary"></span>
-        <span class="sr-only">Search</span>
-      </button>
-    </span>
-    <label for="search2"><span class="sr-only">Enter search terms</span>
-    <input id="search2" type="search" name="EnterSearch" class="entersearch form-control border-left-0 border" placeholder="Search"
-      value="" autocomplete="on"></label>
-  </div>
-</form>        </div>
-      </div>
+          <div class="d-flex">
+
+  <form class="siteSearch" role="search" method="GET" action="/search/SearchRedir.aspx">
+    <div class="input-group main-search" role="search">
+      <span class="input-group-prepend">
+        <button tabindex="-1" class="input-group-text bg-transparent" name="SubmitSearch" type="submit">
+          <span class="fa fa-search primary"></span>
+          <span class="sr-only">Search</span>
+        </button>
+      </span>
+      <label for="search2"><span class="sr-only">Enter search terms</span>
+        <input id="search2" type="search" name="EnterSearch" class="entersearch form-control border-left-0 border"
+          placeholder="Search" value="" autocomplete="on"></label>
+    </div>
+  </form>
+
+
+  <button class="btn btn-link ml-3" data-toggle="collapse" data-target="#searchCollapse" aria-controls="searchCollapse"
+    aria-expanded="true">Cancel</button>
+</div>
+<div class="pt-3 pb-3">
+  <p class="medium"><strong>Frequently Searched</strong></p>
+  <ul class="list-unstyled list-inline btn-tags mb-0">
+    <li><a class="btn btn-link btn-sm" href="#">Canvas</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Library</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Class Schedule</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Planning Guides</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Transcripts</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Calendars</a></li>
+  </ul>
+</div>        </div>
+      </div> -->
 
       <ul class="menu">
 
@@ -361,93 +398,104 @@
   <!-- _partials/alert -->
 </header>  <main id="maincontent">
  
-    <div class="container">
+    <div class="container-fluid">
       <div class="hero-bg-container">
-  <div class="hero-bg-offset">
-    <div class="bg-offset-bottom-right bg-offset-primary-wave">
-      <picture>
-        <source srcset="https://www.satinflame.com/ou/shoreline/resources/img/homepage/hero/large.jpg" media="(min-width: 768px)">
-        <source srcset="https://www.satinflame.com/ou/shoreline/resources/img/homepage/hero/medium.jpg" media="(min-width: 480px)">
-        <img src="https://www.satinflame.com/ou/shoreline/resources/img/homepage/hero/small.jpg" alt="two students look at books in a library">
-      </picture>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-12 col-md-5">
-    <div class="bg-light pt-5 px-5 pb-3 primary">
-      <h2 class="h1">Reimagine Possible</h2>
-      <p class="primary xl">Wherever you want to go,<br/>we'll help you get there.</p>
-      <p class="pb-2"><a href="#" class="btn btn-primary">Explore Programs</a></p>
-      <p class="pt-3 pb-4"><a href="#" class="more-arrow"><strong>Find a class</strong></a></p>
+  <div class="hero-offset-bg bg-offset-yellow-wave">
+    <div class="hero-content bg-inverted bg-primary">
+      <h2 class="h1">Reimagine<br />Possible</h2>
+      <p class="primary xl">Wherever you want to go,<br />we'll help you get there.</p>
+      <p class="hero-cta"><a href="#" class="btn btn-primary">Explore Programs</a></p>
+      <p class="hero-cta-sub"><a href="#" class="more-arrow"><strong>Find a class</strong></a></p>
 
       <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-sm-6">
           <p class="primary medium">
-            <strong>Fall Quarter Starts</strong><br />
-            Sept 23, 2020
+            <strong>Fall Quarter</strong><br />
+            starts Sept 23, 2020
           </p>
         </div>
-        <div class="col-12 col-md-6">
-
+        <div class="col-12 col-sm-6">
           <p class="primary medium">
-            <strong>Winter Quarter Starts</strong><br />
-            Jan 6, 2021
+            <strong>Winter Quarter</strong><br />
+            starts Jan 6, 2021
           </p>
         </div>
       </div>
     </div>
+    <div class="hero-bg-offset-image">
+      <picture class="d-none">
+        <source srcset="https://via.placeholder.com/1200x1200" media="(min-width: 992px)">
+        <source srcset="https://via.placeholder.com/800x1200/face8d" media="(min-width: 768px)">
+        <source srcset="https://via.placeholder.com/768x480/003f7f" media="(min-width: 480px)">
+        <img src="https://via.placeholder.com/480x300" alt="two students look at books in a library">
+      </picture>
+      <picture>
+        <source srcset="https://www.satinflame.com/ou/shoreline/resources/img/homepage/hero/explore/xl.jpg" media="(min-width: 992px)">
+        <source srcset="https://www.satinflame.com/ou/shoreline/resources/img/homepage/hero/explore/lg.jpg" media="(min-width: 768px)">
+        <source srcset="https://www.satinflame.com/ou/shoreline/resources/img/homepage/hero/explore/med.jpg" media="(min-width: 480px)">
+        <img width="1080" height="720" src="https://www.satinflame.com/ou/shoreline/resources/img/homepage/hero/explore/sm.jpg"
+          alt="two students walk outside in warm sunlight near trees">
+      </picture>
+    </div>
   </div>
-</div> 
+</div>
 
     </div>
     
 
 
-<div class="container-fluid mt-5 pt-5">
+<div class="bg-wave-mint-top">
+  <div class="container-fluid mt-5 pt-5 pb-3">
+    <section class="primary sectional sectional-padded">
+      <p class="d-none primary text-center xl pt-5 pb-4">A short sentence that sets up the following benefits</p>
 
-  <section class="primary sectional sectional-padded">
-    <p class="d-none primary text-center xl pt-5 pb-4">A short sentence that sets up the following benefits</p>
-
-    <div class="row">
-      <div class="col-6 col-md-3">
-        <div class="p-5"> 
+      <div class="row">
+        <div class="col-6 col-md-3">
+          <div class="card-icon-image-round "> 
+  <a href="https://www.mscc.edu/students/">On-Campus Housing</a>
   <div class="image"><img height="400" width="400" class="rounded-circle" src="https://www.satinflame.com/ou/shoreline/resources/img/stock/square/housing.jpg" alt="housing" /></div>
-  <p class="pt-2 text-center"><a class="primary" href="https://wts.shoreline.edu/waci002.html">On-Campus Housing</a></p></div>      </div>
-      <div class="col-6 col-md-3">
-        <div class="p-5"> 
+  <p class="primary xl">On-Campus Housing</p></div>        </div>
+        <div class="col-6 col-md-3">
+          <div class="card-icon-image-round "> 
+  <a href="https://www.mscc.edu/students/">Small Class Sizes</a>
   <div class="image"><img height="400" width="400" class="rounded-circle" src="https://www.satinflame.com/ou/shoreline/resources/img/stock/square/shoreline.williams292.jpg" alt="housing" /></div>
-  <p class="pt-2 text-center"><a class="primary" href="https://wts.shoreline.edu/waci002.html">Small Class Sizes</a></p></div>      </div>
-      <div class="col-6 col-md-3">
-        <div class="p-5"> 
+  <p class="primary xl">Small Class Sizes</p></div>        </div>
+        <div class="col-6 col-md-3">
+          <div class="card-icon-image-round "> 
+  <a href="https://www.mscc.edu/students/">18+ Years of Online Courses</a>
   <div class="image"><img height="400" width="400" class="rounded-circle" src="https://www.satinflame.com/ou/shoreline/resources/img/stock/square/online-learning.jpg" alt="housing" /></div>
-  <p class="pt-2 text-center"><a class="primary" href="https://wts.shoreline.edu/waci002.html">18+ Years of Online Courses</a></p></div>      </div>
-      <div class="col-6 col-md-3">
-        <div class="p-5"> 
+  <p class="primary xl">18+ Years of Online Courses</p></div>        </div>
+        <div class="col-6 col-md-3">
+          <div class="card-icon-image-round "> 
+  <a href="https://www.mscc.edu/students/">Close to Seattle</a>
   <div class="image"><img height="400" width="400" class="rounded-circle" src="https://www.satinflame.com/ou/shoreline/resources/img/stock/square/seattle.jpg" alt="housing" /></div>
-  <p class="pt-2 text-center"><a class="primary" href="https://wts.shoreline.edu/waci002.html">Close to Seattle</a></p></div>      </div>
-    </div>
-
-  </section>
-
-
-  <section class="primary sectional sectional-padded-lg">
-    <div class="row">
-      <div class="col-12 col-md-6">
-        <p class="text-center"><img src="https://www.satinflame.com/ou/shoreline/resources/img/homepage/grad-cap.png" alt="grad cap" /></p>
-        
+  <p class="primary xl">Close to Seattle</p></div>        </div>
       </div>
-      <div class="col-12 col-md-6">
-        <h2 class="h1">Don’t let money hold you back</h2>
-        <p class="primary xl">Get help with tuition, fees, food, housing, and transportation</p>
-        <p><a href="#" class="btn btn-primary">Find Funding &amp; Aid</a></p>
-        <p><a href="#" class="more-arrow"><strong>How much does it cost?</strong></a></p>
+
+    </section>
+  </div>
+</div>
+<div class="bg-light">
+  <div class="container-fluid pt-5 ">
+
+    <section class="primary sectional sectional-padded-lg">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <p class="text-center"><img src="https://www.satinflame.com/ou/shoreline/resources/img/homepage/grad-cap.png" alt="grad cap" />
+          </p>
+
+        </div>
+        <div class="col-12 col-md-6">
+          <h2 class="h1">Don’t let money hold you back</h2>
+          <p class="primary xl">Get help with tuition, fees, food, housing, and transportation</p>
+          <p><a href="#" class="btn btn-primary">Find Funding &amp; Aid</a></p>
+          <p><a href="#" class="more-arrow"><strong>How much does it cost?</strong></a></p>
+        </div>
       </div>
-    </div>
 
 
-  </section>
-
+    </section>
+  </div>
 </div>
 
 
@@ -462,29 +510,109 @@
 <section class="sectional bg-primary lazy bg-cover"
   data-bg="https://www.satinflame.com/ou/shoreline/resources/img/stock/backgrounds/explore2.jpg">
   <div class=" bg-primary-gradient-top-down sectional-padded-lg ">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-        <h2 class="h1 text-center">Find your path</h2>
-        <p class="text-center xl pb-5">Shoreline's areas of study offer you the option to take classes in subjects you like to help you find a career you'll love.</p>
-        <div class="bg-offset-yellow-wave bg-offset-bottom-right">
-          <div class="bg-light pt-3 pb-5 px-5">
-            <div class="toc-links-icons">
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="fa-primary fal fa-eye" aria-hidden="true"></span> Arts & Communication</a></li>
-                <li><a href="#"><span class="fa-bright-green fal fa-chart-line" aria-hidden="true"></span> Business</a></li>
-                <li><a href="#"><span class="fa-orange fal fa-briefcase-medical" aria-hidden="true"></span> Health & Medical</a></li>
-                <li><a href="#"><span class="fa-secondary fal fa-atom" aria-hidden="true"></span> Science, Technology, Engineering & Math</a></li>
-                <li><a href="#"><span class="fa-linkblue fal fa-book-open" aria-hidden="true"></span> Social Sciences & Education</a></li>
-              </ul>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+          <h2 class="h1 text-center">Find your path</h2>
+          <p class="text-center xl pb-5">Shoreline's areas of study offer you the option to take classes in subjects you
+            like to help you find a career you'll love.</p>
+          <div class="bg-offset-yellow-wave bg-offset-bottom-right">
+            <div class="bg-white pt-3 pb-5 px-5">
+              <div class="toc-links-icons">
+                <ul class="list-unstyled">
+                  <li><a href="#"><span class="toc-icon-primary svg-icon-50"><svg version="1.1" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<desc>a wide eye with eyelashes</desc>
+<g>
+  <path fill="#000000" d="M25.01,21c7.453,0,14.423,3.038,19.475,8.3l0.32,0.339l1.262,1.359l-1.261,1.359
+  C39.73,37.832,32.621,41,25.01,41c-7.453,0-14.423-3.038-19.476-8.3l-0.319-0.339l-1.263-1.359l1.262-1.359
+  C10.289,24.168,17.397,21,25.01,21z M25.01,23l-0.25,0.004c-4.301,0.131-7.75,3.661-7.75,7.996c0,4.418,3.582,8,8,8s8-3.582,8-8
+  S29.428,23,25.01,23z M32.199,24.05l0.152,0.16c1.65,1.783,2.658,4.17,2.658,6.79c0,2.7-1.07,5.15-2.811,6.95
+  c4.32-1.294,8.15-3.728,11.141-6.951C40.35,27.777,36.52,25.344,32.199,24.05L32.199,24.05z M17.819,24.05l-0.054,0.017
+  C13.467,25.365,9.657,27.79,6.681,31c2.99,3.223,6.818,5.654,11.139,6.95c-1.74-1.8-2.81-4.25-2.81-6.95S16.079,25.85,17.819,24.05
+  z M25.01,26c2.762,0,5,2.239,5,5s-2.238,5-5,5c-2.761,0-5-2.239-5-5S22.249,26,25.01,26z M25.01,28c-1.657,0-3,1.343-3,3
+  s1.343,3,3,3s3-1.343,3-3S26.667,28,25.01,28z M1.548,18.157l6.743,4.306l-1.077,1.686l-6.742-4.306L1.548,18.157z M48.49,18.145
+  l1.039,1.711l-6.84,4.15l-1.037-1.71l6.84-4.149L48.49,18.145z M11.814,11.407l4.746,6.44l-1.61,1.187l-4.746-6.44L11.814,11.407z
+   M38.205,11.407l1.609,1.186l-4.746,6.44l-1.609-1.186L38.205,11.407z M26.01,9v8h-2V9H26.01z"/>
+</g>
+</svg></span> <span class="toc-title">Arts &
+                      Communication</span></a></li>
+                  <li><a href="#"><span class="toc-icon-bright-green svg-icon-50"><svg version="1.1" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<desc>a chart showing an upward growth trend</desc>
+<g>
+  <path fill="#000000" d="M42.25,13.25v12l-4.939-4.94L27.25,30.371l-5.042-5.042l-11.94,11.022c-0.571,0.527-1.441,0.527-2.01,0.023
+  l-0.11-0.107c-0.527-0.57-0.527-1.439-0.023-2.01l0.108-0.111L22.292,21.17l4.958,4.96l7.939-7.94l-4.939-4.94H42.25z"/>
+</g>
+</svg></span>
+<span class="toc-title">                      Business</span></a></li>
+                  <li><a href="#"><span class="toc-icon-orange svg-icon-50"><svg version="1.1" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<desc>a medical health sign</desc>
+<g>
+  <path fill="#000000" d="M32,8H18v10H8v14h10v10h14V32h10V18H32V8z M30,10v10h10v10H30v10H20V30H10V20h10V10H30z"/>
+</g>
+</svg></span> <span class="toc-title">Health &
+                      Medical</span></a></li>
+                  <li><a href="#"><span class="toc-icon-secondary svg-icon-50"><svg version="1.1" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<desc>STEM logo</desc>
+<g>
+  <path fill="#000000" d="M25,5c2.875,0,5.23,3.375,6.625,8.525C36.782,12.157,40.883,12.51,42.32,15
+		c1.437,2.49-0.309,6.219-4.072,10c3.764,3.782,5.509,7.51,4.072,10c-1.438,2.49-5.541,2.843-10.696,1.475
+		C30.23,41.624,27.875,45,25,45s-5.231-3.375-6.625-8.525C13.22,37.843,9.117,37.49,7.68,35s0.308-6.218,4.07-10
+		c-3.762-3.779-5.507-7.51-4.07-10c1.438-2.49,5.54-2.843,10.697-1.474C19.769,8.376,22.125,5,25,5z M25,34.018l-0.01,0.004
+		c-1.607,0.75-3.18,1.379-4.688,1.877C21.45,40.219,23.21,43,25,43s3.55-2.779,4.697-7.1C28.188,35.4,26.609,34.77,25,34.018
+		L25,34.018z M13.214,26.381l-0.137,0.137C10.001,29.618,8.53,32.473,9.412,34c0.894,1.55,4.183,1.686,8.497,0.518
+		c-0.322-1.559-0.565-3.24-0.718-5.01C15.735,28.491,14.401,27.439,13.214,26.381L13.214,26.381z M36.789,26.381l-0.098,0.087
+		c-1.164,1.03-2.465,2.05-3.881,3.04c-0.153,1.77-0.396,3.451-0.72,5.008c4.315,1.17,7.604,1.034,8.498-0.516
+		C41.484,32.45,39.957,29.535,36.789,26.381L36.789,26.381z M19.36,30.943l0.008,0.06c0.13,1.021,0.29,2,0.476,2.927
+		c0.913-0.308,1.859-0.666,2.826-1.074c-0.555-0.295-1.113-0.604-1.671-0.926C20.441,31.607,19.894,31.279,19.36,30.943z
+		 M30.637,30.945l-0.197,0.123c-0.471,0.291-0.95,0.578-1.44,0.861c-0.558,0.321-1.116,0.631-1.671,0.926
+		c0.968,0.41,1.913,0.767,2.826,1.074C30.344,32.984,30.507,31.986,30.637,30.945z M25,18.207l-0.016,0.007
+		c-0.986,0.481-1.984,1.013-2.985,1.591l-0.363,0.211c-0.875,0.517-1.717,1.047-2.52,1.588C19.04,22.702,19,23.838,19,25l0.002,0.42
+		c0.008,1.016,0.047,2.01,0.114,2.977c0.914,0.617,1.878,1.219,2.884,1.801c1.006,0.58,2.01,1.113,3,1.598
+		c0.99-0.484,1.994-1.018,3-1.6c1.006-0.579,1.971-1.182,2.884-1.799C30.96,27.297,31,26.162,31,25s-0.04-2.297-0.116-3.396
+		c-0.913-0.617-1.878-1.219-2.884-1.801l-0.365-0.207C26.752,19.096,25.871,18.632,25,18.207L25,18.207z M25,22c1.657,0,3,1.343,3,3
+		s-1.343,3-3,3s-3-1.343-3-3S23.343,22,25,22z M17.034,23.089l-0.17,0.13c-0.775,0.592-1.5,1.188-2.174,1.781
+		c0.723,0.637,1.506,1.277,2.344,1.911C17.01,26.282,17,25.645,17,25l0.002-0.412C17.005,24.083,17.016,23.584,17.034,23.089
+		L17.034,23.089z M32.966,23.089l0.011,0.275C32.992,23.904,33,24.449,33,25c0,0.645-0.012,1.282-0.034,1.911
+		c0.839-0.634,1.621-1.274,2.345-1.91C34.587,24.363,33.805,23.723,32.966,23.089z M17.91,15.483
+		C13.595,14.315,10.306,14.45,9.412,16c-0.895,1.55,0.632,4.466,3.801,7.619c1.187-1.059,2.521-2.11,3.977-3.127
+		c0.147-1.68,0.373-3.281,0.672-4.772L17.91,15.483z M40.588,16c-0.895-1.55-4.184-1.685-8.497-0.518
+		c0.322,1.559,0.565,3.241,0.718,5.01c1.457,1.017,2.791,2.068,3.979,3.126C39.956,20.465,41.482,17.55,40.588,16z M19.845,16.072
+		l-0.011,0.057c-0.186,0.928-0.345,1.906-0.472,2.928c0.533-0.334,1.08-0.662,1.638-0.984l0.358-0.205
+		c0.439-0.249,0.877-0.49,1.315-0.723C21.704,16.737,20.758,16.379,19.845,16.072z M30.154,16.072l-0.174,0.059
+		c-0.858,0.293-1.746,0.632-2.651,1.014c0.555,0.297,1.112,0.605,1.671,0.928l0.355,0.207c0.436,0.256,0.862,0.515,1.283,0.777
+		C30.508,18.014,30.346,17.016,30.154,16.072L30.154,16.072z M25,7c-1.79,0-3.55,2.78-4.697,7.1c1.51,0.5,3.087,1.13,4.696,1.883
+    c1.61-0.752,3.188-1.383,4.699-1.882C28.551,9.781,26.79,7,25,7z"/>
+  </g>
+</svg></span> <span class="toc-title">Science, Technology,
+                      Engineering & Math</span></a></li>
+                  <li><a href="#"><span class="toc-icon-linkblue svg-icon-50"><svg version="1.1" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<desc>an open book</desc>
+<g>
+  <path fill="#000000" d="M40,7.5v3.125c1.667-0.083,3.333-0.125,5-0.125v30c-6.667,0-13.333,0.667-20,2c-6.667-1.333-13.333-2-20-2
+  v-30c1.667,0,3.334,0.042,5,0.125V7.5c4,0,9,1.667,15,5C31,9.167,36,7.5,40,7.5z M43,12.521l-0.307,0.006
+  c-0.897,0.021-1.795,0.055-2.693,0.1V35.5c-3.132,0-6.878,1.43-11.236,4.293c4.609-0.734,9.223-1.156,13.836-1.266l0.4-0.006
+  V12.521z M7,12.521v26l0.4,0.006c4.612,0.109,9.224,0.531,13.835,1.265C16.877,36.932,13.132,35.5,10,35.5V12.628
+  c-0.897-0.046-1.796-0.08-2.694-0.1L7,12.521L7,12.521z M12,9.645v24.009l0.339,0.054c3.439,0.595,7.312,2.458,11.661,5.553V14.233
+  l-0.51-0.28c-4.284-2.331-7.976-3.737-11.05-4.241L12,9.645z M38,33.652V9.645l-0.073,0.01c-3.151,0.45-6.973,1.878-11.438,4.308
+  L26,14.232V39.26c4.35-3.095,8.223-4.957,11.661-5.552L38,33.652z"/>
+</g>
+</svg></span> <span class="toc-title">Social Sciences
+                      & Education</span></a></li>
+                </ul>
+              </div>
+              <p class="text-center"><a href="#" class="more-arrow"><strong>Browse all degrees &amp;
+                    certificates</strong></a></p>
             </div>
-            <p class="text-center"><a href="#" class="more-arrow"><strong>Browse all degrees &amp; certificates</strong></a></p>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 </section>
 
 <div class="bg-light">
@@ -496,7 +624,8 @@
         <div class="col-12 col-md-6">
           <div class="pr-4">
             <h2 class="h1">Reimagine Community</h2>
-            <p class="primary xl">We're more than just educators - we're your success squad, supporting you every step of
+            <p class="primary xl">We're more than just educators - we're your success squad, supporting you every step
+              of
               the way.</p>
             <p><a href="#" class="more-arrow"><strong>Find support services</strong></a></p>
           </div>
@@ -505,31 +634,31 @@
           <div class="testimonial-slider-container container-fluid py-3">
             <div class="pr-5">
               <div class="slick-slider">
-              <div>
+                <div>
   <figure class="quote-feature ">
         <div class="quote-feature-text">
       <blockquote>
-        I joined different clubs, worked as a student tutor, and served on ASG. These experiences changed my college experience and my life.
+        I joined different clubs, worked as a student tutor, and served on ASG. These experiences
+                changed my college experience and my life.
       </blockquote>
       <figcaption>
          <strong>Pavielle Montes</strong>          <br />         Dental Hygiene AAAS
       </figcaption>
     </div>
   </figure>
-</div> 
-                <div>
+</div>                <div>
   <figure class="quote-feature ">
         <div class="quote-feature-text">
       <blockquote>
-        Shoreline has a great atmosphere where I can focus on my academics and has great facilities like the computer labs.
+        Shoreline has a great atmosphere where I can focus on my academics and has great facilities
+                like the computer labs.
       </blockquote>
       <figcaption>
          <strong>Jane Smith</strong>          <br />         Automotive Service Technician AAAS
       </figcaption>
     </div>
   </figure>
-</div> 
-                <div>
+</div>                <div>
   <figure class="quote-feature ">
         <div class="quote-feature-text">
       <blockquote>
@@ -540,8 +669,7 @@
       </figcaption>
     </div>
   </figure>
-</div> 
-              </div>
+</div>              </div>
             </div>
           </div>
         </div>
@@ -567,12 +695,13 @@
                   alt="Physical education classes boost immune system, help de-stress during COVID-19"></a></div>
             <div class="article-info-container">
               <ul class="list-inline news-labels labels mb-0">
-                <li class="mb-0"><a class="dark medium" href="https://news.shoreline.edu/category/in-the-classroom/">In the Classroom</a></li>
+                <li class="mb-0"><a class="dark medium" href="https://news.shoreline.edu/category/in-the-classroom/">In
+                    the Classroom</a></li>
               </ul>
               <h3 class="h4"><a
                   href="https://news.shoreline.edu/2020/06/24/physical-education-classes-boost-immune-system-help-de-stress-during-covid-19/">Physical
                   education classes boost immune system, help de-stress during COVID-19</a></h3>
-               
+
             </div>
           </article>
         </div>
@@ -584,12 +713,14 @@
                   alt="Commencement speaker Travis Tribble finds long-awaited success at Shoreline"></a></div>
             <div class="article-info-container">
               <ul class="list-inline news-labels labels mb-0">
-                <li class="mb-0"><a class="dark medium" href="https://news.shoreline.edu/category/alumni-and-student/">Alumni &amp; Student Spotlight</a></li>
+                <li class="mb-0"><a class="dark medium"
+                    href="https://news.shoreline.edu/category/alumni-and-student/">Alumni &amp; Student Spotlight</a>
+                </li>
               </ul>
               <h3 class="h4"><a
                   href="https://news.shoreline.edu/2020/06/19/commencement-speaker-travis-tribble-finds-long-awaited-success-at-shoreline/">Commencement
                   speaker Travis Tribble finds long-awaited success at Shoreline</a></h3>
-               
+
             </div>
           </article>
         </div>
@@ -616,7 +747,7 @@
     <p class="pt-5 text-center"><a href="#" class="more-arrow"><strong>Read more campus news</strong></a></p>
   </section>
 
-  
+
 </div>
 
  
@@ -627,7 +758,7 @@
   <div class="large-footer container-fluid">
     <div class="inner">
       <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-12 text-center">
           <h2>Ready to take the next step?</h2> 
 
           <ul class="pt-3 list-unstyled list-inline footer-buttons">
@@ -636,21 +767,7 @@
             <li><a class="btn btn-link" href="/apply-and-aid/campus-tour.aspx">Visit Us</a></li>
           </ul>
         </div>
-
-        <div class="col-12 col-md-6">
-          <div class="links">
-            <ul class="list-unstyled list-cols-2">
-              <li><a href="/about-shoreline/hours-of-operation.aspx">Hours, Maps &amp; Directions</a></li>
-              <li><a href="/hr/default.aspx">Jobs</a></li>
-              <li><a href="/sitemap/">Sitemap</a></li>
-              <li><a href="https://www.shoreline.edu/campus-directory/">Employee Directory</a></li>
-              <li><a href="#">Alumni</a></li>
-              <li><a href="#">Community Members</a></li>
-              <li><a href="#">Donors</a></li> 
-              <li><a href="https://shoreline.formstack.com/forms/website_feedback">Website Feedback</a></li>
-            </ul>
-          </div>
-        </div>
+ 
       </div>
     </div>
   </div>
@@ -658,7 +775,7 @@
   <div class="large-footer container-fluid">
     <div class="inner">
       <div class="row">
-        <div class="col-12 col-md-6 col-lg-6">
+        <div class="col-12 col-sm-8 offset-sm-2 col-lg-4 offset-lg-0">
           <div class="footer-map">
             <div class="bg-offset-bottom-right bg-offset-yellow-wave">
               <div class="location-square-feature">
@@ -668,7 +785,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-6">
+        <div class="col-12 col-md-6 col-lg-5 col-xl-4">
           <div class="footer-logo">
             <a class="navbar-brand" href="/">
 	<img height="96" width="160" src="https://www.satinflame.com/ou/shoreline/resources/img/logos/logo-full-inverse.png" alt="Shoreline Community College" />
@@ -721,13 +838,26 @@
             <a id="de"
               href="http://a.cms.omniupdate.com/10?skin=oucampus&amp;account=shoreline&amp;site=www&amp;action=de&amp;path=/default.pcf">&copy;</a>
             2020 Shoreline Community College
-             
-            <a href="/currentstudents/privacyandnondiscrimination.aspx">Privacy &amp; Non-Discrimination</a>
-           
-            <a href="/title-ix/default.aspx">Title IX</a>
-          
-            <a href="/accessibility/default.aspx">Accessibility Statement</a>
           </p> 
+            <ul class="mt-0 list-unstyled links links-utility">
+              <li><a href="/currentstudents/privacyandnondiscrimination.aspx">Privacy &amp; Non-Discrimination</a></li>
+              <li><a href="/title-ix/default.aspx">Title IX</a></li>
+              <li><a href="/accessibility/default.aspx">Accessibility Statement</a></li>
+            </ul>
+          
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 col-xl-4">
+                <ul class="list-unstyled links">
+              <li class="py-3"><a href="#"><span class="far fa-user-circle"><span class="sr-only">User</span></span> <strong>Faculty and Staff Portal</strong></a></li>
+              <li><a href="/about-shoreline/hours-of-operation.aspx">Hours, Maps &amp; Directions</a></li>
+              <li><a href="/hr/default.aspx">Jobs</a></li>
+              <li><a href="/sitemap/">Sitemap</a></li>
+              <li><a href="https://www.shoreline.edu/campus-directory/">Employee Directory</a></li>
+              <li><a href="#">Alumni</a></li>
+              <li><a href="#">Community Members</a></li>
+              <li><a href="#">Donors</a></li> 
+              <li><a href="https://shoreline.formstack.com/forms/website_feedback">Website Feedback</a></li> 
+            </ul> 
         </div>
       </div><!-- end row -->
     </div>

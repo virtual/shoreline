@@ -141,7 +141,7 @@
     <a href="#maincontent" title="Skip Main Navigation">Skip Main Navigation</a>
   </div>
        
-        <section id="searchmenusub" class="bg-light collapse pt-4" aria-label="Search">
+        <section id="searchmenusub" class="bg-white collapse pt-4" aria-label="Search">
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
@@ -226,49 +226,86 @@
         <img src="https://www.satinflame.com/ou/shoreline/resources/img/logos/logo-full-mobile.png" srcset="https://www.satinflame.com/ou/shoreline/resources/img/logos/logo-full-mobile2x.png 2x, https://www.satinflame.com/ou/shoreline/resources/img/logos/logo-full-mobile3x.png 3x, https://www.satinflame.com/ou/shoreline/resources/img/logos/logo-full-mobile4x.png 4x" alt="Shoreline Community College" />
       </a>
       <div class="flex-button flex-button-right">
-      <!-- <button id="mobile-search-button" class="navbar-toggler primary" type="button" data-toggle="collapse" data-target="#searchCollapse" aria-controls="searchCollapse"
+      <button id="mobile-search-button" class="navbar-toggler primary" type="button" data-toggle="collapse" data-target="#searchCollapse" aria-controls="searchCollapse"
         aria-expanded="false" aria-label="Toggle search">
         <span aria-hidden="true" class="fas fa-search"></span>
-        <span class="sr-only">Search</span>
-      </button> -->
-      <p><a href="#" class="btn btn-sm btn-important">Get Started</a></p>
+        <span class="menubartext">Search</span>
+      </button>
+      <!-- <p><a href="#" class="btn btn-sm btn-important">Get Started</a></p> -->
       </div>
     </div>
-    <!-- <div class="collapse navbar-collapse" id="searchCollapse">
+    <div class="collapse navbar-collapse" id="searchCollapse">
       <div class="container">
-        <div class="searchform-mobile">
-          <form class="siteSearch" role="search" method="GET" action="/search/SearchRedir.aspx">
-  <div class="input-group main-search" role="search">
-    <span class="input-group-prepend">
-      <button tabindex="-1" class="input-group-text bg-transparent" name="SubmitSearch" type="submit">
-        <span class="fa fa-search primary"></span>
-        <span class="sr-only">Search</span>
-      </button>
-    </span>
-    <label for="search2"><span class="sr-only">Enter search terms</span>
-    <input id="search2" type="search" name="EnterSearch" class="entersearch form-control border-left-0 border" placeholder="Search"
-      value="" autocomplete="on"></label>
-  </div>
-</form>        </div>
+        <div class="searchform-mobile"> 
+          <div class="d-flex">
+
+  <form class="siteSearch" role="search" method="GET" action="/search/SearchRedir.aspx">
+    <div class="input-group main-search" role="search">
+      <span class="input-group-prepend">
+        <button tabindex="-1" class="input-group-text bg-transparent" name="SubmitSearch" type="submit">
+          <span class="fa fa-search primary"></span>
+          <span class="sr-only">Search</span>
+        </button>
+      </span>
+      <label for="search2"><span class="sr-only">Enter search terms</span>
+        <input id="search2" type="search" name="EnterSearch" class="entersearch form-control border-left-0 border"
+          placeholder="Search" value="" autocomplete="on"></label>
+    </div>
+  </form>
+
+
+  <button class="btn btn-link ml-3" data-toggle="collapse" data-target="#searchCollapse" aria-controls="searchCollapse"
+    aria-expanded="true">Cancel</button>
+</div>
+<div class="pt-3 pb-3">
+  <p class="medium"><strong>Frequently Searched</strong></p>
+  <ul class="list-unstyled list-inline btn-tags mb-0">
+    <li><a class="btn btn-link btn-sm" href="#">Canvas</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Library</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Class Schedule</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Planning Guides</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Transcripts</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Calendars</a></li>
+  </ul>
+</div>  
+        </div>
       </div>
-    </div> -->
+    </div>
     <div class="collapse navbar-collapse" id="navbarCollapse">
-      <div class="container-fluid d-block d-lg-none">
+      <!-- <div class="container-fluid d-block d-lg-none">
         <div class="searchform-mobile">
-          <form class="siteSearch" role="search" method="GET" action="/search/SearchRedir.aspx">
-  <div class="input-group main-search" role="search">
-    <span class="input-group-prepend">
-      <button tabindex="-1" class="input-group-text bg-transparent" name="SubmitSearch" type="submit">
-        <span class="fa fa-search primary"></span>
-        <span class="sr-only">Search</span>
-      </button>
-    </span>
-    <label for="search2"><span class="sr-only">Enter search terms</span>
-    <input id="search2" type="search" name="EnterSearch" class="entersearch form-control border-left-0 border" placeholder="Search"
-      value="" autocomplete="on"></label>
-  </div>
-</form>        </div>
-      </div>
+          <div class="d-flex">
+
+  <form class="siteSearch" role="search" method="GET" action="/search/SearchRedir.aspx">
+    <div class="input-group main-search" role="search">
+      <span class="input-group-prepend">
+        <button tabindex="-1" class="input-group-text bg-transparent" name="SubmitSearch" type="submit">
+          <span class="fa fa-search primary"></span>
+          <span class="sr-only">Search</span>
+        </button>
+      </span>
+      <label for="search2"><span class="sr-only">Enter search terms</span>
+        <input id="search2" type="search" name="EnterSearch" class="entersearch form-control border-left-0 border"
+          placeholder="Search" value="" autocomplete="on"></label>
+    </div>
+  </form>
+
+
+  <button class="btn btn-link ml-3" data-toggle="collapse" data-target="#searchCollapse" aria-controls="searchCollapse"
+    aria-expanded="true">Cancel</button>
+</div>
+<div class="pt-3 pb-3">
+  <p class="medium"><strong>Frequently Searched</strong></p>
+  <ul class="list-unstyled list-inline btn-tags mb-0">
+    <li><a class="btn btn-link btn-sm" href="#">Canvas</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Library</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Class Schedule</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Planning Guides</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Transcripts</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Calendars</a></li>
+  </ul>
+</div>        </div>
+      </div> -->
 
       <ul class="menu">
 
@@ -622,7 +659,7 @@
   <div class="large-footer container-fluid">
     <div class="inner">
       <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-12 text-center">
           <h2>Ready to take the next step?</h2> 
 
           <ul class="pt-3 list-unstyled list-inline footer-buttons">
@@ -631,21 +668,7 @@
             <li><a class="btn btn-link" href="/apply-and-aid/campus-tour.aspx">Visit Us</a></li>
           </ul>
         </div>
-
-        <div class="col-12 col-md-6">
-          <div class="links">
-            <ul class="list-unstyled list-cols-2">
-              <li><a href="/about-shoreline/hours-of-operation.aspx">Hours, Maps &amp; Directions</a></li>
-              <li><a href="/hr/default.aspx">Jobs</a></li>
-              <li><a href="/sitemap/">Sitemap</a></li>
-              <li><a href="https://www.shoreline.edu/campus-directory/">Employee Directory</a></li>
-              <li><a href="#">Alumni</a></li>
-              <li><a href="#">Community Members</a></li>
-              <li><a href="#">Donors</a></li> 
-              <li><a href="https://shoreline.formstack.com/forms/website_feedback">Website Feedback</a></li>
-            </ul>
-          </div>
-        </div>
+ 
       </div>
     </div>
   </div>
@@ -653,7 +676,7 @@
   <div class="large-footer container-fluid">
     <div class="inner">
       <div class="row">
-        <div class="col-12 col-md-6 col-lg-6">
+        <div class="col-12 col-sm-8 offset-sm-2 col-lg-4 offset-lg-0">
           <div class="footer-map">
             <div class="bg-offset-bottom-right bg-offset-yellow-wave">
               <div class="location-square-feature">
@@ -663,7 +686,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-6">
+        <div class="col-12 col-md-6 col-lg-5 col-xl-4">
           <div class="footer-logo">
             <a class="navbar-brand" href="/">
 	<img height="96" width="160" src="https://www.satinflame.com/ou/shoreline/resources/img/logos/logo-full-inverse.png" alt="Shoreline Community College" />
@@ -716,13 +739,26 @@
             <a id="de"
               href="http://a.cms.omniupdate.com/10?skin=oucampus&amp;account=shoreline&amp;site=www&amp;action=de&amp;path=/default.pcf">&copy;</a>
             2020 Shoreline Community College
-             
-            <a href="/currentstudents/privacyandnondiscrimination.aspx">Privacy &amp; Non-Discrimination</a>
-           
-            <a href="/title-ix/default.aspx">Title IX</a>
-          
-            <a href="/accessibility/default.aspx">Accessibility Statement</a>
           </p> 
+            <ul class="mt-0 list-unstyled links links-utility">
+              <li><a href="/currentstudents/privacyandnondiscrimination.aspx">Privacy &amp; Non-Discrimination</a></li>
+              <li><a href="/title-ix/default.aspx">Title IX</a></li>
+              <li><a href="/accessibility/default.aspx">Accessibility Statement</a></li>
+            </ul>
+          
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 col-xl-4">
+                <ul class="list-unstyled links">
+              <li class="py-3"><a href="#"><span class="far fa-user-circle"><span class="sr-only">User</span></span> <strong>Faculty and Staff Portal</strong></a></li>
+              <li><a href="/about-shoreline/hours-of-operation.aspx">Hours, Maps &amp; Directions</a></li>
+              <li><a href="/hr/default.aspx">Jobs</a></li>
+              <li><a href="/sitemap/">Sitemap</a></li>
+              <li><a href="https://www.shoreline.edu/campus-directory/">Employee Directory</a></li>
+              <li><a href="#">Alumni</a></li>
+              <li><a href="#">Community Members</a></li>
+              <li><a href="#">Donors</a></li> 
+              <li><a href="https://shoreline.formstack.com/forms/website_feedback">Website Feedback</a></li> 
+            </ul> 
         </div>
       </div><!-- end row -->
     </div>

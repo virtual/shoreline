@@ -173,6 +173,12 @@ hr {
   background-color: $link-blue;
   background-image: url('../../resources/img/graphics/backgrounds/pattern-blue-waves.png')
 }
+.bg-wave-mint-top {
+  background-image: url('../../resources/img/graphics/backgrounds/wave-mint-top.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
   .bg-offset-yellow-wave {
     background-image: url('../../resources/img/graphics/backgrounds/pattern-yellow-waves@2x.png')
@@ -261,8 +267,57 @@ hr {
   background-size: cover;
 }
 
-.fa-primary { color: $primary !important; }
-.fa-secondary { color: $secondary !important; }
-.fa-orange { color: $shoreline-orange !important; }
-.fa-bright-green { color: $shoreline-bright-green !important; }
-.fa-linkblue { color: $link-blue !important; }
+.toc-icon-primary { color: $primary !important;
+  path, line, polygon { fill: $primary !important; } 
+}
+.toc-icon-secondary { color: $secondary !important;
+  path, line, polygon { fill: $secondary !important; } 
+}
+.toc-icon-orange { color: $shoreline-orange !important;
+  path, line, polygon { fill: $shoreline-orange !important; } 
+}
+.toc-icon-bright-green { color: $shoreline-bright-green !important;
+  path, line, polygon { fill: $shoreline-bright-green !important; } 
+}
+.toc-icon-linkblue { color: $link-blue !important;
+  path, line, polygon { fill: $link-blue !important; } 
+}
+ 
+
+.toc-links-icons {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  ul, dl {
+    a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 1.25rem 0;
+      text-decoration: none;
+    }
+    .fa, .fas, .far, .fa, .fal {
+      float: left;
+      width: 5rem;
+      font-size: 2rem; 
+      text-align: center;
+    }
+    .svg-icon-50 {
+      position: relative;
+      top: -.25em;
+      margin-right: .75rem;
+      margin-bottom: -.5em;
+      margin-left: .75rem;
+      svg {
+        width: 50px;
+      }
+    }
+  }
+  .toc-title {
+    flex-grow: 1;
+  }
+}
+.svg-icon-50 {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
