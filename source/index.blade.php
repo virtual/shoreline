@@ -45,6 +45,15 @@
 
 @endsection
 
+@section('footcode')
+<script>
+  $(document).ready(function () {
+    $("a").attr('href', "https://www.satinflame.com/ou/shoreline/");
+  });
+</script>
+@endsection
+
+
 @section('content')
 <div class="content-1 bg-wave-mint-top">
   <div class="container-fluid mt-5 pt-5">
@@ -135,23 +144,27 @@
           <p class="text-center xl pb-5">Shoreline's areas of study offer you the option to take classes in subjects you
             like to help you find a career you'll love.</p>
           <div class="bg-offset-yellow-wave bg-offset-bottom-right">
-            <div class="bg-white toc-links-icons"> 
+            <div class="bg-white toc-links-icons">
               <ul class="list-unstyled">
-                <li><a href="#"><span class="toc-icon-primary svg-icon-medium">@include('_svg/aos-arts')</span> <span class="toc-title">Arts &
-                    Communication</span></a></li>
+                <li><a href="#"><span class="toc-icon-primary svg-icon-medium">@include('_svg/aos-arts')</span> <span
+                      class="toc-title">Arts &
+                      Communication</span></a></li>
                 <li><a href="#"><span class="toc-icon-bright-green svg-icon-medium">@include('_svg/aos-business')</span>
-<span class="toc-title">                      Business</span></a></li>
-                <li><a href="#"><span class="toc-icon-orange svg-icon-medium">@include('_svg/aos-health')</span> <span class="toc-title">Health &
-                    Medical</span></a></li>
-                <li><a href="#"><span class="toc-icon-secondary svg-icon-medium">@include('_svg/aos-stem')</span> <span class="toc-title">Science, Technology,
-                    Engineering & Math</span></a></li>
-                <li><a href="#"><span class="toc-icon-linkblue svg-icon-medium">@include('_svg/aos-social')</span> <span class="toc-title">Social Sciences
-                    & Education</span></a></li>
+                    <span class="toc-title"> Business</span></a></li>
+                <li><a href="#"><span class="toc-icon-orange svg-icon-medium">@include('_svg/aos-health')</span> <span
+                      class="toc-title">Health &
+                      Medical</span></a></li>
+                <li><a href="#"><span class="toc-icon-secondary svg-icon-medium">@include('_svg/aos-stem')</span> <span
+                      class="toc-title">Science, Technology,
+                      Engineering & Math</span></a></li>
+                <li><a href="#"><span class="toc-icon-linkblue svg-icon-medium">@include('_svg/aos-social')</span> <span
+                      class="toc-title">Social Sciences
+                      & Education</span></a></li>
               </ul>
               <p class="text-center"><a href="#" class="more-arrow"><strong>Browse all degrees &amp;
-                certificates</strong></a></p>
-              </div>
-          
+                    certificates</strong></a></p>
+            </div>
+
           </div>
         </div>
       </div>
@@ -176,36 +189,35 @@
         </div>
         <div class="col-12 col-lg-6">
           <div class="testimonial-slider-container">
-              <div class="slick-slider">
-                @include('_partials.quote', [
-                'desc' => "I joined different clubs, worked as a student tutor, and served on ASG. These experiences
-                changed my college experience and my life.",
-                'alt' => 'Pavielle Montes',
-                'attribution' => 'Pavielle Montes',
-                'attribution2' => 'Dental Hygiene AAAS',
-                'img' => '',
-                'link' => '#'
-                ])
-                @include('_partials.quote', [
-                'desc' => "Shoreline has a great atmosphere where I can focus on my academics and has great facilities
-                like the computer labs.",
-                'alt' => 'Jane Smith',
-                'attribution' => 'Jane Smith',
-                'attribution2' => 'Automotive Service Technician AAAS',
-                'img' => '',
-                'link' => '#'
-                ])
-                @include('_partials.quote', [
-                'desc' => "Shoreline habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
-                'alt' => 'Teri Lewis',
-                'attribution' => 'Teri Lewis',
-                'attribution2' => 'Geology & Earth Sciences Pre-Major',
-                'img' => '',
-                'link' => '#'
-                ])
+            <div class="slick-slider">
+              @include('_partials.quote', [
+              'desc' => "I joined different clubs, worked as a student tutor, and served on ASG. These experiences
+              changed my college experience and my life.",
+              'alt' => 'Pavielle Montes',
+              'attribution' => 'Pavielle Montes',
+              'attribution2' => 'Dental Hygiene AAAS',
+              'img' => '',
+              'link' => '#'
+              ])
+              @include('_partials.quote', [
+              'desc' => "Shoreline has a great atmosphere where I can focus on my academics and has great facilities
+              like the computer labs.",
+              'alt' => 'Jane Smith',
+              'attribution' => 'Jane Smith',
+              'attribution2' => 'Automotive Service Technician AAAS',
+              'img' => '',
+              'link' => '#'
+              ])
+              @include('_partials.quote', [
+              'desc' => "Shoreline habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+              'alt' => 'Teri Lewis',
+              'attribution' => 'Teri Lewis',
+              'attribution2' => 'Geology & Earth Sciences Pre-Major',
+              'img' => '',
+              'link' => '#'
+              ])
             </div>
           </div>
-        </div>
         </div>
       </div>
 
@@ -226,7 +238,8 @@
             <div class="image-container"><a
                 href="https://news.shoreline.edu/2020/06/24/physical-education-classes-boost-immune-system-help-de-stress-during-covid-19/"><img
                   src="{{ $page->baseUrl }}/resources/img/stock/shoreline.williams81.jpg"
-                  alt="Physical education classes boost immune system, help de-stress during COVID-19" height="300" width="400"></a></div>
+                  alt="Physical education classes boost immune system, help de-stress during COVID-19" height="300"
+                  width="400"></a></div>
             <div class="article-info-container">
               <ul class="list-inline news-labels labels mb-0">
                 <li class="mb-0"><a class="dark medium" href="https://news.shoreline.edu/category/in-the-classroom/">In
@@ -244,7 +257,8 @@
             <div class="image-container"><a
                 href="https://news.shoreline.edu/2020/06/19/commencement-speaker-travis-tribble-finds-long-awaited-success-at-shoreline/"><img
                   src="{{ $page->baseUrl }}/resources/img/stock/shoreline.williams53.jpg"
-                  alt="Commencement speaker Travis Tribble finds long-awaited success at Shoreline" height="300" width="400"></a></div>
+                  alt="Commencement speaker Travis Tribble finds long-awaited success at Shoreline" height="300"
+                  width="400"></a></div>
             <div class="article-info-container">
               <ul class="list-inline news-labels labels mb-0">
                 <li class="mb-0"><a class="dark medium"
@@ -263,7 +277,8 @@
             <div class="image-container"><a
                 href="https://news.shoreline.edu/2020/06/18/shoreline-community-college-celebrates-its-first-virtual-commencement/"><img
                   src="{{ $page->baseUrl }}/resources/img/stock/shoreline.williams21.jpg"
-                  alt="Shoreline Community College celebrates its first virtual Commencement" height="300" width="400"></a></div>
+                  alt="Shoreline Community College celebrates its first virtual Commencement" height="300"
+                  width="400"></a></div>
             <div class="article-info-container">
               <ul class="list-inline news-labels labels mb-0">
                 <li class="mb-0"><a class="dark medium" href="https://news.shoreline.edu/category/awards/">Awards &amp;

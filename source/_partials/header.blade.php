@@ -23,7 +23,7 @@
         <div class="header-actions d-none d-lg-flex">
         <div class="navbar-container">
 
-          <nav class="navbar navbar-expand-sm navmenu utility-wrapper" role="navigation" aria-label="Ancillary Navigation">
+          <nav class="navbar navbar-expand-sm navmenu utility-wrapper" aria-label="Ancillary Navigation">
             @include ('_partials.quicklinks')
             
           </nav>

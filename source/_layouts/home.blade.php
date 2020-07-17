@@ -23,6 +23,9 @@
   <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/slick.css">
   <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/slick-theme.css">
   <!-- Analytics -->
+  @if (trim($__env->yieldContent('headcode')))
+  @yield('headcode')
+  @endif
 </head>
 <!-- * add class navbar-overlay to body if overlay wanted instead of inline -->
 <body class="homepage navbar-overlay-unused">
@@ -51,7 +54,7 @@
 @include('_partials/footer')
 
 
-    <script src="{{ $page->baseUrl }}/assets/js/jquery-3.5.1.min.js" defer="defer"></script>
+    <script src="{{ $page->baseUrl }}/assets/js/jquery-3.5.1.min.js"></script>
     <script src="{{ $page->baseUrl }}/assets/js/bootstrap.bundle.min.js" defer="defer"></script>
     <script src="{{ $page->baseUrl }}/assets/js/main.js" defer="defer"></script>  
     <script src="{{ $page->baseUrl }}/assets/js/lazyload.min.js" defer="defer"></script>  
@@ -68,6 +71,7 @@
         document.getElementsByTagName('head')[0].appendChild(css);
       })();
     </script>
+    @if (trim($__env->yieldContent('footcode'))) @yield('footcode') @endif
 </body>
 
 </html>

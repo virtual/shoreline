@@ -8838,6 +8838,8 @@ abbr[title] {
     display: block !important;
   }
   #footer,
+  .subfooter,
+  #searchmenusub,
   nav,
   #skiptocontent,
   .header-actions,
@@ -8847,10 +8849,10 @@ abbr[title] {
   }
   #header .navbar-brand {
     padding: 0;
+    padding-left: 1rem;
   }
-  #header .navbar-brand img {
-    max-width: 120px;
-    height: auto;
+  #header .navbar-brand svg polygon, #header .navbar-brand svg path, #header .navbar-brand svg line {
+    fill: #000;
   }
   .padded,
   .main-content {

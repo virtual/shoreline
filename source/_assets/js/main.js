@@ -155,7 +155,7 @@ jQuery(document).ready(function() {
     }, 500);
   });
 
-  $("a").attr('href', "https://www.satinflame.com/ou/shoreline/");  
+  // $("a").attr('href', "https://www.satinflame.com/ou/shoreline/");  
  
 }); 
 // END FUNCTION READY
