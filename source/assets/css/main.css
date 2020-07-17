@@ -6336,9 +6336,6 @@ form.siteSearch {
   .navbar-nav {
     display: block;
   }
-  .searchform-mobile {
-    margin-bottom: 1rem;
-  }
   .searchform-mobile .form-inline .input-group {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6578,10 +6575,6 @@ form.siteSearch {
 
 .megamenu .dropdown-list.show .dropdown-menu {
   display: block !important;
-}
-
-#searchCollapse {
-  border-top: 1px solid #dfdfdf;
 }
 
 #searchCollapse .container {
