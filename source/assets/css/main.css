@@ -7202,10 +7202,6 @@ footer#footer .back-to-top:before {
 }
 
 @media (min-width: 992px) {
-  .footer-map {
-    margin-top: -6.5rem;
-    margin-bottom: 1rem;
-  }
   .location-square-feature {
     padding-bottom: 150%;
   }
@@ -7286,6 +7282,13 @@ footer#footer .column-3 {
   .footer-map {
     margin-top: -5.25rem;
     margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-map {
+    margin-top: -6.5rem;
+    margin-bottom: 1rem;
   }
 }
 
