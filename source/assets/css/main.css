@@ -6226,6 +6226,7 @@ form.siteSearch {
 @media (min-width: 992px) {
   header#header {
     padding-bottom: 1.5rem;
+    overflow-x: visible;
   }
   .searchbox input.form-control {
     display: none;
@@ -6504,6 +6505,8 @@ form.siteSearch {
 .megamenu .dropdown-menu ul {
   margin-bottom: 0;
   padding-left: 0;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .megamenu .dropdown-menu li {
@@ -6596,6 +6599,10 @@ form.siteSearch {
 @media (min-width: 992px) {
   .megamenu .dropdown-menu {
     position: absolute;
+  }
+  .megamenu .dropdown-menu ul {
+    font-size: 1.1875rem;
+    line-height: 1.68;
   }
   .dropdown-list.show .dropdown-menu {
     display: block !important;
@@ -6816,8 +6823,16 @@ header#header > .container-fluid {
   }
 }
 
-.megamenu #searchmenusub {
-  display: block !important;
+@media (max-width: 991px) {
+  #searchmenusub {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .megamenu #searchCollapse {
+    display: none;
+  }
 }
 
 .left-nav {
@@ -6935,6 +6950,7 @@ header#header > .container-fluid {
 .quicklinks {
   position: relative;
   padding-left: 0;
+  clear: both;
 }
 
 .quicklinks a {
@@ -6942,42 +6958,26 @@ header#header > .container-fluid {
 }
 
 .quicklinks.list-1 li a {
+  padding: .5rem 1rem;
   color: #444;
-  font-weight: 400;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: left;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 992px) {
   .quicklinks.list-1 li a {
+    padding: 5px 10px;
+    font-weight: 400;
     font-size: 1rem;
+    text-align: center;
   }
   .quicklinks.list-2 li a, .quicklinks.list-2 li .btn {
     font-size: .875rem;
   }
 }
 
-@media (min-width: 768px) {
-  .quicklinks.list-1, .quicklinks.list-2 {
-    display: inherit;
-  }
-  .quicklinks.list-1 li, .quicklinks.list-2 li {
-    -webkit-box-flex: 0;
-        -ms-flex: none;
-            flex: none;
-  }
-}
-
-@media (max-width: 479px) {
-  .megamenu .quicklinks.list-2 {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .megamenu .quicklinks li.has-button:before {
-    content: " ";
-    clear: both;
-    width: 100%;
-    min-width: 300px;
-    display: block;
-  }
+@media (max-width: 991px) {
   .megamenu .quicklinks li.has-button {
     width: 100%;
     display: block;
@@ -6986,12 +6986,6 @@ header#header > .container-fluid {
     padding-left: 15px;
     padding-top: 8px;
     padding-bottom: 8px;
-  }
-}
-
-@media (min-width: 480px) {
-  .megamenu .quicklinks li.has-button {
-    padding-right: 15px;
   }
 }
 
@@ -7016,9 +7010,6 @@ header#header > .container-fluid {
   .megamenu .quicklinks li {
     display: inline-block;
     width: auto;
-  }
-  .quicklinks.list-1 {
-    float: none;
   }
   .quicklinks.list-2 {
     margin-top: .5rem;

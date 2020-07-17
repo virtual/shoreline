@@ -102,6 +102,7 @@ form.siteSearch {
 @media (min-width: $screen-lg) {
   header#header {
     padding-bottom: 1.5rem;
+    overflow-x: visible;
   }
   .searchbox input.form-control {
     display: none;
