@@ -3,7 +3,7 @@
   <div class="large-footer container-fluid">
     <div class="inner">
       <div class="row">
-        <div class="col-12 col-sm-8 offset-sm-2 col-lg-4 offset-lg-0">
+        <div class="column-1 col-12 col-sm-8 offset-sm-2 col-lg-4 offset-lg-0">
           <div class="footer-map">
             <div class="bg-offset-bottom-right bg-offset-yellow-wave">
               <div class="location-square-feature">
@@ -13,11 +13,10 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+        <div class="column-2 col-12 col-md-6 col-lg-5 col-xl-4">
           <div class="footer-logo">
-            @include ('_partials.logo-inverse')
+            @include ('_partials.logo')
           </div>
-
           <div class="logo-address">
             <address>16101 Greenwood Avenue North
               <br>Shoreline,&nbsp;WA 98133-5696
@@ -70,10 +69,9 @@
               <li><a href="/currentstudents/privacyandnondiscrimination.aspx">Privacy &amp; Non-Discrimination</a></li>
               <li><a href="/title-ix/default.aspx">Title IX</a></li>
               <li><a href="/accessibility/default.aspx">Accessibility Statement</a></li>
-            </ul>
-          
+            </ul>          
         </div>
-        <div class="col-12 col-md-6 col-lg-3 col-xl-4">
+        <div class="column-3 col-12 col-md-6 col-lg-3 col-xl-4">
                 <ul class="list-unstyled links">
               <li class="py-3"><a href="#"><span class="far fa-user-circle"><span class="sr-only">User</span></span> <strong>Faculty and Staff Portal</strong></a></li>
               <li><a href="/about-shoreline/hours-of-operation.aspx">Hours, Maps &amp; Directions</a></li>

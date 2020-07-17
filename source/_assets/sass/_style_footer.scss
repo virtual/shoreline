@@ -4,18 +4,19 @@ footer#footer {
   color: $white;
   font-size: 1rem; 
   text-align:center;
-  .navbar-brand { padding-top: 0;}
+  .navbar-brand { 
+    max-width: 134px;
+    padding-top: 0;
+    path, polygon, rect {
+      fill: #fff;
+    }
+  }
   .col-12 { order:2;}
   
   p, a, dl, ul, ol { font-size: inherit;}
   .footer-logo {
-    margin-bottom: 3rem; 
-    img { 
-      width: auto; 
-      max-height: 120px;  
-    }
+    margin-bottom: 1rem; 
   } 
-  .navbar-brand img { max-width: initial; }
 
   .links { 
     padding:0;
@@ -24,11 +25,7 @@ footer#footer {
       &:hover {
         text-decoration: underline;
       }
-    }
-    li {
-      // padding-bottom: .5rem;
-      // line-height: 1rem;
-    }
+    } 
     li + li {padding-top: .5rem;}
     .list-inline li { 
       margin-right: 1rem;
@@ -40,10 +37,6 @@ footer#footer {
 }
 @media (min-width: $screen-md) {
   footer#footer { text-align: left; 
-    .footer-logo {
-      margin-bottom: 1rem;      
-    img { width: auto; max-height: 80px;  }
-    }
     .links-utility {
       li { 
         display: inline; 
@@ -125,15 +118,13 @@ footer#footer .back-to-top {
     }
   } 
 }
-.footer-map {
-  margin-top: -5.25rem;
-  margin-bottom: 2rem;
-}
+
 .location-square-feature {
   width: 100%;
   padding-bottom: 56.25%;
-  background-image: url('../../resources/img/graphics/shoreline-google-map.jpg');
+  background-image: url('../../resources/img/graphics/shoreline-custom-map.jpg');
   background-size: cover;
+  background-position: center;
 }
 @media (min-width: $screen-lg) {
   .footer-map {
@@ -172,6 +163,29 @@ footer#footer .back-to-top {
     margin: .5rem .25rem;
   }  
 }
+
+footer#footer {
+  .column-1 { order: 2; }
+  .column-2 { order: 3; }
+  .column-3 { order: 1; }
+  
+}
+.footer-map {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+@media (min-width: $screen-md) {
+  footer#footer {
+    .column-1 { order: 1; }
+    .column-2 { order: 2; }
+    .column-3 { order: 3; }
+  }  
+  .footer-map {
+    margin-top: -5.25rem; 
+    margin-bottom: 2rem;
+  }
+}
+
 .subfooter {
   padding-top: 3rem;
   padding-bottom: 4rem;

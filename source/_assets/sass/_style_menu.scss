@@ -43,9 +43,17 @@
     margin-bottom: 0;
   }
 }
-.megamenu .navbar-brand {
+.megamenu.navmenu .navbar-brand {
   flex-grow: 1;
+  width: auto;
+  height: 45px;
   margin-right:0; 
+  padding: 0;
+  color: $primary;
+  svg {
+    width: auto;
+    height: 45px;
+  }
 }
 
 .megamenu {

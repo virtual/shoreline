@@ -135,7 +135,7 @@
           <p class="text-center xl pb-5">Shoreline's areas of study offer you the option to take classes in subjects you
             like to help you find a career you'll love.</p>
           <div class="bg-offset-yellow-wave bg-offset-bottom-right">
-            <div class="bg-light toc-links-icons"> 
+            <div class="bg-white toc-links-icons"> 
               <ul class="list-unstyled">
                 <li><a href="#"><span class="toc-icon-primary svg-icon-medium">@include('_svg/aos-arts')</span> <span class="toc-title">Arts &
                     Communication</span></a></li>

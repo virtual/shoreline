@@ -292,15 +292,15 @@ hr {
 .toc-links-icons {
   padding: 1rem;
   ul {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
   }
   ul, dl {
     a {
       display: flex;
       flex-direction: row;
       align-items: center;
-      padding: .5rem 0;
+      padding: 1rem 0;
       text-decoration: none;
     }
     // todo: review mismatch .fa, versus svg/img

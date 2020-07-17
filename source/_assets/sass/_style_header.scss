@@ -11,9 +11,16 @@ header#header {
   padding: 5px 0; 
   text-align: center;
   margin-right:0;
+  max-width: 160px;
   color: $primary;
+  path, polygon, rect {
+    fill: $primary;
+  }
 }
-
+.navbar-brand svg {
+  width: 100%;
+  height: auto;
+}
 .navmenu a.navbar-brand {
   color: $primary;
 }
