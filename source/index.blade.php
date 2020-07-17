@@ -226,7 +226,7 @@
             <div class="image-container"><a
                 href="https://news.shoreline.edu/2020/06/24/physical-education-classes-boost-immune-system-help-de-stress-during-covid-19/"><img
                   src="{{ $page->baseUrl }}/resources/img/stock/shoreline.williams81.jpg"
-                  alt="Physical education classes boost immune system, help de-stress during COVID-19"></a></div>
+                  alt="Physical education classes boost immune system, help de-stress during COVID-19" height="300" width="400"></a></div>
             <div class="article-info-container">
               <ul class="list-inline news-labels labels mb-0">
                 <li class="mb-0"><a class="dark medium" href="https://news.shoreline.edu/category/in-the-classroom/">In
@@ -244,7 +244,7 @@
             <div class="image-container"><a
                 href="https://news.shoreline.edu/2020/06/19/commencement-speaker-travis-tribble-finds-long-awaited-success-at-shoreline/"><img
                   src="{{ $page->baseUrl }}/resources/img/stock/shoreline.williams53.jpg"
-                  alt="Commencement speaker Travis Tribble finds long-awaited success at Shoreline"></a></div>
+                  alt="Commencement speaker Travis Tribble finds long-awaited success at Shoreline" height="300" width="400"></a></div>
             <div class="article-info-container">
               <ul class="list-inline news-labels labels mb-0">
                 <li class="mb-0"><a class="dark medium"
@@ -263,7 +263,7 @@
             <div class="image-container"><a
                 href="https://news.shoreline.edu/2020/06/18/shoreline-community-college-celebrates-its-first-virtual-commencement/"><img
                   src="{{ $page->baseUrl }}/resources/img/stock/shoreline.williams21.jpg"
-                  alt="Shoreline Community College celebrates its first virtual Commencement"></a></div>
+                  alt="Shoreline Community College celebrates its first virtual Commencement" height="300" width="400"></a></div>
             <div class="article-info-container">
               <ul class="list-inline news-labels labels mb-0">
                 <li class="mb-0"><a class="dark medium" href="https://news.shoreline.edu/category/awards/">Awards &amp;
