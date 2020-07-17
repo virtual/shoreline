@@ -2956,10 +2956,18 @@ hr {
 }
 
 .bg-wave-mint-top {
-  background-image: url("../../resources/img/graphics/backgrounds/wave-mint-top.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: url("../../resources/img/graphics/backgrounds/wave-mint-top-tall-mobile.svg");
+  background: url("../../resources/img/graphics/backgrounds/wave-mint-top-tall-mobile.svg") center 30%/contain no-repeat, -webkit-gradient(linear, left bottom, left top, color-stop(70%, #e6f7f5), color-stop(70%, transparent));
+  background: url("../../resources/img/graphics/backgrounds/wave-mint-top-tall-mobile.svg") center 30%/contain no-repeat, linear-gradient(0deg, #e6f7f5 70%, transparent 70%);
+}
+
+@media (min-width: 768px) {
+  .bg-wave-mint-top {
+    background: url("../../resources/img/graphics/backgrounds/wave-mint-top-tall-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    background-size: cover;
+  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {

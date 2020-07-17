@@ -173,11 +173,17 @@ hr {
   background-color: $link-blue;
   background-image: url('../../resources/img/graphics/backgrounds/pattern-blue-waves.png')
 }
-.bg-wave-mint-top {
-  background-image: url('../../resources/img/graphics/backgrounds/wave-mint-top.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.bg-wave-mint-top { 
+  background: url('../../resources/img/graphics/backgrounds/wave-mint-top-tall-mobile.svg');
+  background: url("../../resources/img/graphics/backgrounds/wave-mint-top-tall-mobile.svg") center 30% / contain no-repeat, linear-gradient(0deg, $light 70%, transparent 70%);
+}
+@media (min-width: $screen-md) {
+  .bg-wave-mint-top {
+    background: url('../../resources/img/graphics/backgrounds/wave-mint-top-tall-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    background-size: cover;
+  }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
   .bg-offset-yellow-wave {
