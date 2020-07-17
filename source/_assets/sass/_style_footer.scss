@@ -4,6 +4,10 @@ footer#footer {
   color: $white;
   font-size: 1rem; 
   text-align:center;
+  a { 
+    color: $white;
+    &:hover { text-decoration: underline;}
+  }
   .navbar-brand { 
     max-width: 134px;
     padding-top: 0;
@@ -146,6 +150,7 @@ footer#footer .back-to-top {
   }
   a:hover { 
     color: $white;
+    text-decoration: none !important;
     background-color: rgba($white, .1);
   }
   a:focus {

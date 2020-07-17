@@ -7060,6 +7060,14 @@ footer#footer {
   text-align: center;
 }
 
+footer#footer a {
+  color: #ffffff;
+}
+
+footer#footer a:hover {
+  text-decoration: underline;
+}
+
 footer#footer .navbar-brand {
   max-width: 134px;
   padding-top: 0;
@@ -7232,6 +7240,7 @@ footer#footer .back-to-top:before {
 
 .footer-social a:hover {
   color: #ffffff;
+  text-decoration: none !important;
   background-color: rgba(255, 255, 255, 0.1);
 }
 

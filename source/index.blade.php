@@ -57,7 +57,7 @@
 @section('content')
 <div class="content-1 bg-wave-mint-top">
   <div class="container-fluid mt-5 pt-5">
-    <section class="primary sectional sectional-padded">
+    <div class="primary sectional sectional-padded">
       <p class="d-none primary text-center xl pt-5 pb-4">A short sentence that sets up the following benefits</p>
 
       <div class="row">
@@ -99,13 +99,13 @@
         </div>
       </div>
 
-    </section>
+    </div>
   </div>
 </div>
 <div class="content-2 bg-light">
   <div class="container-fluid">
 
-    <section class="primary sectional sectional-padded-lg">
+    <div class="primary sectional sectional-padded-lg">
       <div class="row">
         <div class="col-12 col-md-6">
           <p class="text-center"><img src="{{ $page->baseUrl }}/resources/img/homepage/grad-cap.png" alt="grad cap" />
@@ -121,7 +121,7 @@
       </div>
 
 
-    </section>
+    </div>
   </div>
 </div>
 
@@ -135,12 +135,12 @@
 
 
 <section class="sectional bg-primary lazy bg-cover bg-image-mobile-none"
-  data-bg="{{ $page->baseUrl }}/resources/img/stock/backgrounds/explore2.jpg">
+  data-bg="{{ $page->baseUrl }}/resources/img/stock/backgrounds/explore2.jpg" aria-labelledby="sectionstudy">
   <div class=" bg-primary-gradient-top-down sectional-padded-lg ">
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-          <h2 class="h1 text-center">Find your path</h2>
+          <h2 id="sectionstudy" class="h1 text-center">Find your path</h2>
           <p class="text-center xl pb-5">Shoreline's areas of study offer you the option to take classes in subjects you
             like to help you find a career you'll love.</p>
           <div class="bg-offset-yellow-wave bg-offset-bottom-right">
@@ -175,12 +175,12 @@
 <div class="bg-light">
   <div class="container-fluid">
 
-    <section class="primary sectional sectional-padded-lg">
+    <section class="primary sectional sectional-padded-lg" aria-labelledby="sectioncommunity">
 
       <div class="row">
         <div class="col-12 col-lg-6">
           <div class="pr-4">
-            <h2 class="h1">Reimagine Community</h2>
+            <h2 id="sectioncommunity" class="h1">Reimagine Community</h2>
             <p class="primary xl">We're more than just educators - we're your success squad, supporting you every step
               of
               the way.</p>
@@ -226,8 +226,8 @@
 </div>
 
 <div class="container-fluid">
-  <section class="sectional sectional-padded-lg primary">
-    <h2 class="h1">Campus News</h2>
+  <section class="sectional sectional-padded-lg primary" aria-labelledby="sectionnews">
+    <h2 id="sectionnews" class="h1">Campus News</h2>
     <p class="primary pt-3 pb-5 xl">Things are happening at Shoreline</p>
 
     <!-- ref https://www.shoreline.edu/_z-test/jeanine/news.aspx -->
