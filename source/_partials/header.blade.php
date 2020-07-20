@@ -2,6 +2,9 @@
   <div id="skiptocontent">
     <a href="#maincontent" title="Skip Main Navigation">Skip Main Navigation</a>
   </div>
+  @if (!(trim($__env->yieldContent('homepage'))))
+  @include ('_partials.alert-top')  
+  @endif
        
         @include ('_partials.menu-content-search')       
      
