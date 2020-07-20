@@ -3,8 +3,8 @@
 
 @section('hero')
 <div class="hero-bg-container">
-  <div class="hero-offset-bg bg-offset-yellow-wave">
-    <div class="hero-content bg-inverted bg-primary">
+  <div class="hero-offset-bg bg-offset-primary-wave">
+    <div class="hero-content bg-light primary">
       <h2 class="h1">Reimagine<br />Possible</h2>
       <p class="primary xl">Wherever you want to go,<br />we'll help you get there.</p>
       <p class="hero-cta"><a href="#" class="btn btn-primary">Explore Programs</a></p>

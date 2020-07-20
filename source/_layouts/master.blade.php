@@ -18,10 +18,10 @@
   <meta property="og:locale" content="en_us" />
   <link rel="image_src" href="{{ $page->baseUrl }}/resources/images/meta/thumbnail.jpg" />
 
-  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/bootstrap.css">
-  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/main.css?v=3">
-  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/slick.css">
-  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/slick-theme.css">
+  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/bootstrap.css?v=5">
+  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/main.css?v=5">
+  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/slick.css?v=5">
+  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/slick-theme.css?v=5">
   <link rel="stylesheet" href="{{ $page->baseUrl }}/resources/fonts/fa-subset/fontawesome.min.css?v=101" />
 
   @if (trim($__env->yieldContent('headcode')))
@@ -186,10 +186,10 @@
     <!-- FOOTER -->
     @include('_partials/footer')
     <script src="{{ $page->baseUrl }}/assets/js/jquery-3.5.1.min.js"></script>
-    <script src="{{ $page->baseUrl }}/assets/js/bootstrap.bundle.min.js" defer="defer"></script>
-    <script src="{{ $page->baseUrl }}/assets/js/main.js" defer="defer"></script>   
-    <script src="{{ $page->baseUrl }}/assets/js/slick.min.js" defer="defer"></script>
-    <script src="{{ $page->baseUrl }}/assets/js/slick-app.js?v=4" defer="defer"></script>
+    <script src="{{ $page->baseUrl }}/assets/js/bootstrap.bundle.min.js?v=5" defer="defer"></script>
+    <script src="{{ $page->baseUrl }}/assets/js/main.js?v=5" defer="defer"></script>   
+    <script src="{{ $page->baseUrl }}/assets/js/slick.min.js?v=5" defer="defer"></script>
+    <script src="{{ $page->baseUrl }}/assets/js/slick-app.js?v=5" defer="defer"></script>
     <script>
       (function() {
         var css = document.createElement('link');
