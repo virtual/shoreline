@@ -245,6 +245,11 @@ form.siteSearch {
   &.alert-dismissible .container-fluid {
     padding-right: 3.5rem;
   }
+  &.bg-inverted {
+    p, ul, ol, dl {
+      color: #fff;
+    }
+  }
 }
 .header-alert + .header-alert {
   padding-top: 1.125rem;

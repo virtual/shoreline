@@ -7,6 +7,13 @@
     </p>
   </div>
 </div>
+<div class="header-alert alert alert-unstyled bg-inverted bg-orange">
+  <div class="container-fluid">
+    <p>Contact by phone or email or Live Chat (available M-F 10a-2p).
+      <a href="#">Spring Quarter Student Guide</a>
+    </p>
+  </div>
+</div>
 <div class="header-alert alert alert-unstyled bg-secondary">
   <div class="container-fluid">
     <p>Student portal is down. We are working to resolve the issue <a

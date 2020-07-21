@@ -108,7 +108,8 @@
     <div class="primary sectional sectional-padded-lg">
       <div class="row">
         <div class="col-12 col-md-6">
-          <p class="text-center"><img src="{{ $page->baseUrl }}/resources/img/homepage/grad-cap.png" alt="grad cap" />
+          <p class="text-center">
+            @include('_svg/grad-cap')
           </p>
 
         </div>

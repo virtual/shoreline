@@ -113,8 +113,23 @@ $hero-offset: 1rem;
   }  
 }
 @media (min-width: $screen-xl) {
-  .hero-bg-container .hero-content {
-      flex-basis: 38%;
-      padding: 87px 42px 87px 55px; 
-    }  
-  }
+.hero-bg-container .hero-content {
+    flex-basis: 38%;
+    padding: 87px 42px 87px 55px; 
+  }  
+}
+
+.grad-cap-coin {
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+.grad-cap-icon:hover .grad-cap-coin {
+    animation-name: bounce-3; 
+}
+@keyframes bounce-3 {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(2px); }
+  40%  { transform: translateY(0); }
+  100% { transform: translateY(0); }
+}
