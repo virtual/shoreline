@@ -86,24 +86,24 @@ jQuery(document).ready(function() {
         $(this).css('visibility', 'hidden');
     });
 
-  $(".header-actions .searchicon").click(function (event) {
-    if (!($(this).hasClass('active'))) {
-      $(this).addClass('active');
-      event.preventDefault();
-      $('.header-actions .searchbox input').show(); //noscript 
-      $('.header-actions .searchbox input').focus();
-      }
-      else {
-        if ($('.header-actions .searchbox input')[0].value === '') {
-          // console.log('no text!')
-          event.preventDefault();
-          $('.header-actions .searchbox input').hide();
-          $(this).removeClass('active');
-        } else {
-          // submit
-        }
-      }
-  });
+  // $(".header-actions .searchicon").click(function (event) {
+  //   if (!($(this).hasClass('active'))) {
+  //     $(this).addClass('active');
+  //     event.preventDefault();
+  //     $('.header-actions .searchbox input').show(); //noscript 
+  //     $('.header-actions .searchbox input').focus();
+  //     }
+  //     else {
+  //       if ($('.header-actions .searchbox input')[0].value === '') {
+  //         // console.log('no text!')
+  //         event.preventDefault();
+  //         $('.header-actions .searchbox input').hide();
+  //         $(this).removeClass('active');
+  //       } else {
+  //         // submit
+  //       }
+  //     }
+  // });
 
   //--- Gavin Smith 8-16-17 Merge data into page if any requests on page
   if (typeof LoadShorelineData == 'function') { 
@@ -154,6 +154,13 @@ jQuery(document).ready(function() {
       document.getElementById('search1').focus();
     }, 500);
   });
+  $('body').on('click', '#mobile-search-button', function (e) {
+    setTimeout(function () {
+      document.getElementById('search2').focus();
+    }, 500);
+  });
+
+ 
 
   // $("a").attr('href', "https://www.satinflame.com/ou/shoreline/");  
  
