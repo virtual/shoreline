@@ -159,7 +159,18 @@ jQuery(document).ready(function() {
       document.getElementById('search2').focus();
     }, 500);
   });
+  $('body').on('click', '#searchcancel1', function (e) {
+    setTimeout(function () {
+      document.getElementById('searchtoggler').focus();
+    }, 500);
+  });
+  $('body').on('click', '#searchcancel2', function (e) {
+    setTimeout(function () {
+      document.getElementById('mobile-search-button').focus();
+    }, 500);
+  });
 
+  
  
 
   // $("a").attr('href', "https://www.satinflame.com/ou/shoreline/");  

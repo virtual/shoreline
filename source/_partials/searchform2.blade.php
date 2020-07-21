@@ -15,7 +15,7 @@
   </form>
 
 
-  <button class="btn btn-link ml-3" data-toggle="collapse" data-target="#searchCollapse" aria-controls="searchCollapse"
+  <button id="searchcancel2" class="btn btn-link ml-3" data-toggle="collapse" data-target="#searchCollapse" aria-controls="searchCollapse"
     aria-expanded="true">Cancel</button>
 </div>
 <div class="pt-3 pb-3">

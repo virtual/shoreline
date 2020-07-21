@@ -4,7 +4,7 @@
       <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
         <div class="d-flex">
           @include ('_partials.searchform')
-          <button class="btn btn-link ml-3" data-toggle="collapse" data-target="#searchmenusub"
+          <button id="searchcancel1" class="btn btn-link ml-3" data-toggle="collapse" data-target="#searchmenusub"
             aria-controls="searchmenusub" aria-expanded="true">Cancel</button>
         </div>
         <div class="pt-3 pb-3">
