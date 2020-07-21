@@ -1,6 +1,6 @@
 <svg version="1.1" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-<desc>an open book</desc>
+<title>an open book</title>
 <g>
   <path fill="#000000" d="M40,7.5v3.125c1.667-0.083,3.333-0.125,5-0.125v30c-6.667,0-13.333,0.667-20,2c-6.667-1.333-13.333-2-20-2
   v-30c1.667,0,3.334,0.042,5,0.125V7.5c4,0,9,1.667,15,5C31,9.167,36,7.5,40,7.5z M43,12.521l-0.307,0.006

@@ -1,7 +1,7 @@
 <svg version="1.1" class="svg-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   x="0px" y="0px" width="232px" height="138px" viewBox="0 0 232 138" style="enable-background:new 0 0 232 138;"
   enable-background="new 0 0 232 138" xml:space="preserve">
-  <desc>Shoreline Community College</desc>
+  <title>Shoreline Community College</title>
   <g>
     <path fill="#006C67" d="M1.908,17.749c1.231-5.758,9.477-13.857,21.144-11.187c3.011,0.549,4.204,0.618,6.464-0.209
 		c0.891-0.341,1.301,0.48,0.619,2.879c-0.682,2.399-0.069,6.667,0.069,7.766s-2.487,3.561-2.626,1.23

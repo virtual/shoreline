@@ -1,6 +1,6 @@
 <svg version="1.1" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-<desc>STEM logo</desc>
+<title>STEM logo</title>
 <g>
   <path fill="#000000" d="M25,5c2.875,0,5.23,3.375,6.625,8.525C36.782,12.157,40.883,12.51,42.32,15
 		c1.437,2.49-0.309,6.219-4.072,10c3.764,3.782,5.509,7.51,4.072,10c-1.438,2.49-5.541,2.843-10.696,1.475

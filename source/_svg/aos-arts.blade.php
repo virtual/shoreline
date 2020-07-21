@@ -1,6 +1,6 @@
 <svg version="1.1" class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-<desc>a wide eye with eyelashes</desc>
+<title>a wide eye with eyelashes</title>
 <g>
   <path fill="#000000" d="M25.01,21c7.453,0,14.423,3.038,19.475,8.3l0.32,0.339l1.262,1.359l-1.261,1.359
   C39.73,37.832,32.621,41,25.01,41c-7.453,0-14.423-3.038-19.476-8.3l-0.319-0.339l-1.263-1.359l1.262-1.359

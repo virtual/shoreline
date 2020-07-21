@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg class="grad-cap-icon" version="1.1" id="grad-cap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    width="407px" height="336px" viewBox="0 0 407 336" enable-background="new 0 0 407 336" xml:space="preserve">
-   <desc>a coin falls into a graduation cap with a coin slot</desc>
+   <title>a coin falls into a graduation cap with a coin slot</title>
 <g id="grad-cap_1_">
 	<path fill="#FFFFFF" d="M112,306C-3.07,237.867-20,152,19,121s125.534-43.786,253.51-37.925C400.483,88.935,418,172,402,242
 		S227.07,374.133,112,306z"/>
