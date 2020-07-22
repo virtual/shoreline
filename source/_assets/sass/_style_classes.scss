@@ -185,17 +185,17 @@ hr {
     background-size: cover;
   }
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-  .bg-offset-yellow-wave {
-    background-image: url('../../resources/img/graphics/backgrounds/pattern-yellow-waves@2x.png')
-  }
-  .bg-offset-primary-wave {
-    background-image: url('../../resources/img/graphics/backgrounds/pattern-green-waves@2x.png')
-  }
-  .bg-offset-blue-wave {
-    background-image: url('../../resources/img/graphics/backgrounds/pattern-blue-waves@2x.png')
-  }
-}
+// @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+//   .bg-offset-yellow-wave {
+//     background-image: url('../../resources/img/graphics/backgrounds/pattern-yellow-waves@2x.png')
+//   }
+//   .bg-offset-primary-wave {
+//     background-image: url('../../resources/img/graphics/backgrounds/pattern-green-waves@2x.png')
+//   }
+//   .bg-offset-blue-wave {
+//     background-image: url('../../resources/img/graphics/backgrounds/pattern-blue-waves@2x.png')
+//   }
+// }
 .bg-offset-bottom-right { 
   margin-top: 10px;
   margin-left: 10px; 

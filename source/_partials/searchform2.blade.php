@@ -12,6 +12,6 @@
           placeholder="Search" value="" autocomplete="on"></label>
     </div>
   </form>
-  <button id="searchcancel2" class="btn btn-link ml-3" data-toggle="collapse" data-target="#searchCollapse" aria-controls="searchCollapse"
-    aria-expanded="true">Cancel</button>
+  <!-- <button id="searchcancel2" class="btn btn-link ml-3" data-toggle="collapse" data-target="#searchCollapse" aria-controls="searchCollapse"
+    aria-expanded="true">Cancel</button> -->
 </div>

@@ -11,7 +11,7 @@
           </ul>
         </div>
         <div class="col-12 col-lg-6 dropdown-column-2">
-          <h2><a href="#">Academics</a></h2>
+          <h2><a class="more-arrow btn btn-link" href="#">Explore Programs</a></h2>
           <ul>
             <li><a href="#">Transfer</a></li>
             <li><a href="#">Professional Technical</a></li>
@@ -51,7 +51,7 @@
           </ul>
         </div>
         <div class="col-12 col-lg-6 dropdown-column-2">
-          <h2><a href="#">Enrollment &amp; Aid</a></h2>
+          <h2><a class="more-arrow btn btn-link" href="#">Enrollment &amp; Aid Services</a></h2>
           <ul>
             <li><a href="#">Apply</a></li>
             <li><a href="#">Funding &amp; Aid</a></li>
@@ -92,7 +92,7 @@
           </ul>
         </div>
         <div class="col-12 col-lg-6 dropdown-column-2">
-          <h2><a href="#">Campus Life</a></h2>
+          <h2><a class="more-arrow btn btn-link" href="#">Campus Life Overview</a></h2>
           <ul> 
             <li><a href="#">Transportation</a></li>
             <li><a href="#">Theater</a></li>
@@ -124,7 +124,7 @@
           </ul>
         </div>
         <div class="col-12 col-lg-6 dropdown-column-2">
-          <h2><a href="#">Student Support</a></h2>
+          <h2><a class="more-arrow btn btn-link" href="#">Student Support Services</a></h2>
           <ul>
             <li><a href="#">Career &amp; Personal Support</a></li>
             <li><a href="#">Technology &amp; Canvas Support</a></li>
@@ -153,7 +153,7 @@
           </ul>
         </div>
         <div class="col-12 col-lg-6 dropdown-column-2">
-          <h2><a href="#">About</a></h2>
+          <h2><a class="more-arrow btn btn-link" href="#">About Shoreline</a></h2>
           <ul> 
             <li><a href="#">At a Glance</a></li>
             <li><a href="#">Vision &amp; Mission</a></li>
