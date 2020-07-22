@@ -113,8 +113,15 @@
     border-bottom: 4px solid #fff; 
     transition: border-color .2s ease-in-out;
   }
+  .dropdown-list > button:hover > .button-text {
+    border-color: rgba($secondary, .5);
+  }
+  .dropdown-list > button:focus > .button-text, 
   .dropdown-list > button[aria-expanded="true"] > .button-text {
     border-color: $secondary;
+  }
+  .dropdown-list > button:focus {
+    outline: none;
   }
   .dropdown-list > button > span {
     pointer-events: none; // allow for clicking button even on span

@@ -1,5 +1,7 @@
 // offset overlay: https://codepen.io/virtual/pen/XWXPVMR
-$hero-offset: 1rem;
+$hero-offset: 20px;
+
+
 @media(min-width: $screen-lg) {
   .homepage .content-1 {
     padding-bottom: 1.5rem;
@@ -62,7 +64,7 @@ $hero-offset: 1rem;
   .hero-bg-container {
     // margin-right: $hero-offset * -1;
     // margin-left: $hero-offset * -1;
-    padding-top: 5rem;
+    padding-top: 5.25rem;
     .hero-offset-bg {
       flex-direction: row;
       padding-right: 0;
@@ -74,15 +76,15 @@ $hero-offset: 1rem;
     }  
     .hero-bg-offset-image {
       position: absolute;
-      top: -56px;
+      top: -60px;
       right: 0;
       z-index: 1;
       display: flex;
       align-items: center;
       width: 80%;
       height: calc(100% + 80px);
-      margin-bottom: 0;
-      padding-right: $hero-offset;
+      margin-bottom: 0;      
+      padding-right: $hero-offset / 2;
       overflow: hidden;
       // margin:0 auto;
       img, picture {
@@ -100,12 +102,25 @@ $hero-offset: 1rem;
     margin-bottom: 2.5rem;
   }
 }
+@media(max-width: $screen-lg - 1px) {
+  .hero-bg-container {
+    .hero-offset-bg {
+      padding: $hero-offset / 2;
+    }
+    .hero-bg-offset-image {
+      margin-bottom: $hero-offset / 2 * -2;
+    }
+  }
+}
 
 @media (min-width: $screen-lg) {
   .hero-bg-container {
     width: calc(100% + 32px);
     margin-right: $hero-offset * -1;
     margin-left: $hero-offset * -1;
+    .hero-bg-offset-image {
+      padding-right: $hero-offset;
+    }
   }
 .hero-bg-container .hero-content {
     flex-basis: 43%;

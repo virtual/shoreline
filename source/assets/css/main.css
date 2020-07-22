@@ -6525,8 +6525,17 @@ header#header .alert.header-alert {
   transition: border-color .2s ease-in-out;
 }
 
+.megamenu .dropdown-list > button:hover > .button-text {
+  border-color: rgba(255, 181, 0, 0.5);
+}
+
+.megamenu .dropdown-list > button:focus > .button-text,
 .megamenu .dropdown-list > button[aria-expanded="true"] > .button-text {
   border-color: #ffb500;
+}
+
+.megamenu .dropdown-list > button:focus {
+  outline: none;
 }
 
 .megamenu .dropdown-list > button > span {
@@ -7457,13 +7466,13 @@ footer#footer .back-to-top:before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 1rem;
+  padding: 20px;
   padding-top: 0;
 }
 
 .hero-bg-container .hero-content {
   z-index: 2;
-  margin-top: -1rem;
+  margin-top: -20px;
   padding: 2.8125rem 1.5rem 2rem;
   text-align: center;
   word-wrap: break-all;
@@ -7474,7 +7483,7 @@ footer#footer .back-to-top:before {
 }
 
 .hero-bg-container .hero-bg-offset-image {
-  margin-bottom: -2rem;
+  margin-bottom: -40px;
 }
 
 .hero-bg-container .hero-bg-offset-image img, .hero-bg-container .hero-bg-offset-image picture {
@@ -7500,7 +7509,7 @@ footer#footer .back-to-top:before {
 
 @media (min-width: 768px) {
   .hero-bg-container {
-    padding-top: 5rem;
+    padding-top: 5.25rem;
   }
   .hero-bg-container .hero-offset-bg {
     -webkit-box-orient: horizontal;
@@ -7517,7 +7526,7 @@ footer#footer .back-to-top:before {
   }
   .hero-bg-container .hero-bg-offset-image {
     position: absolute;
-    top: -56px;
+    top: -60px;
     right: 0;
     z-index: 1;
     display: -webkit-box;
@@ -7529,7 +7538,7 @@ footer#footer .back-to-top:before {
     width: 80%;
     height: calc(100% + 80px);
     margin-bottom: 0;
-    padding-right: 1rem;
+    padding-right: 10px;
     overflow: hidden;
   }
   .hero-bg-container .hero-bg-offset-image img, .hero-bg-container .hero-bg-offset-image picture {
@@ -7546,11 +7555,23 @@ footer#footer .back-to-top:before {
   }
 }
 
+@media (max-width: 991px) {
+  .hero-bg-container .hero-offset-bg {
+    padding: 10px;
+  }
+  .hero-bg-container .hero-bg-offset-image {
+    margin-bottom: -20px;
+  }
+}
+
 @media (min-width: 992px) {
   .hero-bg-container {
     width: calc(100% + 32px);
-    margin-right: -1rem;
-    margin-left: -1rem;
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+  .hero-bg-container .hero-bg-offset-image {
+    padding-right: 20px;
   }
   .hero-bg-container .hero-content {
     -ms-flex-preferred-size: 43%;
