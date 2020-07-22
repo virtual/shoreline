@@ -15,13 +15,10 @@ footer#footer {
       fill: #fff;
     }
   }
-  .col-12 { order:2;}
-  
   p, a, dl, ul, ol { font-size: inherit;}
   .footer-logo {
     margin-bottom: 1rem; 
   } 
-
   .links { 
     padding:0;
     list-style: none; 
@@ -50,85 +47,12 @@ footer#footer {
   }
   .footer-buttons .btn:first-child { margin-top:0;}
 }
-footer#footer .back-to-top {
-  position: fixed;
-  right: 30px;
-  bottom: 25px;
-  z-index: 20;
-  display: block;
-  color: white;
-  font-weight: 700;
-  font-size: .9rem;
-  line-height: 1.3;
-  text-align: center;
-  text-transform: uppercase;
-  &.visible {
-    opacity: 1;
-  }
-  &:hover {
-    text-decoration: none;
-  }
-  &:hover:before {
-    background-color: darken($primary,10);
-  }
-  &:after {
-    position: absolute;
-    top: -20px;
-    left: 25px;
-    display: block;
-    width: 15px;
-    height: 15px;
-    background-image: url("../../resources/img/icons/arrow-up-white.png");
-    background-repeat: no-repeat;
-    background-position: top left;
-    background-size: 100%;
-    content: "";    
-  }
-  &:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    display: block;
-    width: 90px;
-    height: 90px;
-    margin-top: -36px;
-    margin-left: -11px;
-    background-color: #006c68;
-    border-radius: 50%;
-    transition: background-color .2s ease-in-out;
-    content: "";
-  }
-}
-@media screen and (max-width: 1025px) {
-  footer#footer .back-to-top {
-    position: relative;
-    right: auto;
-    bottom: auto;
-    padding-top: 50px;
-    padding-bottom: 15px;
-    &:before {
-      top: 15px;
-      left: 50%;
-      margin: 0 auto;
-      margin-left: -45px;
-    }
-    &:after {
-      top: 30px;
-      left: 50%;
-      width: 15px;
-      height: 15px;
-      margin-left: -7.5px;
-    }
-  } 
-}
-
 .location-square-feature {
   width: 100%;
   padding-bottom: 90%;
   background-image: url('../../resources/img/graphics/shoreline-custom-map.jpg');
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 }
 @media (min-width: $screen-lg) {
   .location-square-feature {    
@@ -164,12 +88,10 @@ footer#footer .back-to-top {
     margin: .5rem .25rem;
   }  
 }
-
 footer#footer {
   .column-1 { order: 2; }
   .column-2 { order: 3; }
   .column-3 { order: 1; }
-  
 }
 .footer-map {
   margin-top: 2rem;
@@ -192,7 +114,7 @@ footer#footer {
     margin-bottom: 1rem;
   } 
 }
-
+/* subfooter */
 .subfooter {
   padding-top: 3rem;
   padding-bottom: 4rem;
@@ -200,7 +122,7 @@ footer#footer {
   li { 
     display: block; 
     width: 100%;
-}
+  }
 }
 @media (min-width: $screen-sm) {
   .subfooter li {
@@ -208,7 +130,7 @@ footer#footer {
     width: auto; 
   }
 }
-  @media (min-width: $screen-lg) {
+@media (min-width: $screen-lg) {
   .subfooter {
     padding-top: 5rem;
     padding-bottom: 5.375rem;

@@ -7,12 +7,12 @@ header#header {
 }
 .header-logo { padding-right:0;}
 .navbar-brand {
-  line-height: 1.2rem;
-  padding: 5px 0; 
-  text-align: center;
-  margin-right:0;
   max-width: 160px;
+  margin-right:0;
+  padding: 5px 0; 
   color: $primary;
+  line-height: 1.2rem;
+  text-align: center;
   path, polygon, rect {
     fill: $primary;
   }
@@ -24,26 +24,8 @@ header#header {
 .navmenu a.navbar-brand {
   color: $primary;
 }
-
-.navbar-brand img {
-  max-width: 160px; // chged from 200px per convo w/ Adam
-  height: auto;
-  width: 100%;
-}
-
 .navbar {
   padding: 0;
-}
-.search-container {
-  label {
-    flex: 1;
-    margin-bottom: 0;
-  }
-  input {
-    line-height: 1.15;
-    border: solid 2px transparent;
-    border-radius: 1.5625rem;
-  }  
 }
 form.siteSearch {
   width: 100%;
@@ -51,13 +33,10 @@ form.siteSearch {
 .main-search{
   width: 100%; 
   min-width: 165px; // IE 11 
-  
-    label { 
-      width: calc(100% - 50px);
-      margin-bottom: 0; 
-    } 
-  
-  
+  label { 
+    width: calc(100% - 50px);
+    margin-bottom: 0; 
+  } 
   &.input-group > label .form-control {
     background-color: transparent;
     border-top-right-radius: 999px;
@@ -94,9 +73,6 @@ form.siteSearch {
 }
 .navmenu .navbar-brand {
   padding: 8px 0;
-  img {
-    width: 75px;
-  }
 } 
 
 @media (min-width: $screen-lg) {
@@ -109,34 +85,14 @@ form.siteSearch {
   }
   #searchCollapse.navbar-collapse {
     display: none !important;
-  }
-  .searchbox .btn {
-    color: $primary;
-    background-color: transparent;
-    border: 0;
-    border-radius: 0;
-  }
-  .searchbox.active .btn {
-    color: #fff;
-    background: $primary;
-  }
-  .search-container,
+  } 
   .navbar-container {
     flex-wrap: wrap;
     justify-content: flex-end;
-  }
-  .search-container {
-    max-width: 165px;
-    padding: 0 .5rem
-  }
+  } 
   .header-actions {
     flex-wrap: nowrap;
-    justify-content: flex-end;
-    .search-container {
-      position: relative;
-      top: -.25rem;
-      .btn { margin-top:0; margin-bottom:0;}
-    }
+    justify-content: flex-end; 
   }
   .navbar-container {
     width: 100%; 
@@ -145,8 +101,7 @@ form.siteSearch {
       flex-wrap: wrap;
       justify-content: flex-end;
       margin: 0;
-    }
-   
+    }   
   }
   .searchbox input.form-control {
     position: absolute;
@@ -161,58 +116,10 @@ form.siteSearch {
   }
   .navbar-brand {
     padding-top: 24px;
-  }
-  // .searchicon .fa-search {
-  //   display: none;
-  // }
-}
+  } 
+} 
 
-@media (min-width: 1025px) {
-  .search-container {
-    max-width: 237px;
-  }
-}
-
-@media (max-width: $screen-lg - 1) {
-  .navbar-collapse .search-container,
-  .navbar-collapse .search-container .searchbox,
-  .form-inline {
-    position: relative;
-    display: block !important;
-    clear: both;
-    color: #fff;
-  }
-  .col-sm-9.d-flex.header-actions {
-    display: block !important;
-  }
-  .searchbox .btn {
-    color: #fff;
-  }
-  .navbar-nav {
-    display: block;
-  }
-  .searchform-mobile {
-    // margin-bottom: 1rem;
-    .form-inline .input-group {
-      display: flex;
-      width: 100%;
-    }
-  
-    // button.searchicon.btn.btn-primary {
-    //   background: rgba(0, 0, 0, 0.2);
-    //   border: 1px solid rgba(255, 255, 255, 0.2);
-    // }
-    p a {
-      padding: .5rem;
-      color: #fff;
-    }
-  }
-}
-
-/* new alert styles */
-// .header-alert .container-fluid {
-//   position: relative;
-// }
+/* new alert styles */ 
 .header-alert.alert-unstyled {
   padding-top: 1.5rem;
   padding-bottom: 1.125rem;
