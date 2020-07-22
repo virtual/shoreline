@@ -21,25 +21,17 @@
     <div class="collapse navbar-collapse" id="searchCollapse">
       <div class="container">
         <div class="searchform-mobile"> 
-          @include ('_partials.searchform2')  
+          @include ('_partials.searchform2')         
+          @include ('_partials.search-frequent')
         </div>
       </div>
     </div>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <!-- <div class="container-fluid d-block d-lg-none">
-        <div class="searchform-mobile">
-          @include ('_partials.searchform2')
-        </div>
-      </div> -->
-
+    <div class="collapse navbar-collapse" id="navbarCollapse"> 
       <ul class="menu">
 
         @include ('_partials.menu-content-all')   
      
-      </ul>
-      <!-- <ul class="menu">
-        _partials.menu-content-search
-      </ul> -->
+      </ul> 
       <div class="d-block d-lg-none"> 
         @include ('_partials.quicklinks') 
       </div>

@@ -6315,9 +6315,6 @@ form.siteSearch {
   .navbar-brand {
     padding-top: 24px;
   }
-  .searchicon .fa-search {
-    display: none;
-  }
 }
 
 @media (min-width: 1025px) {
@@ -6349,10 +6346,6 @@ form.siteSearch {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-  }
-  .searchform-mobile button.searchicon.btn.btn-primary {
-    background: rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.2);
   }
   .searchform-mobile p a {
     padding: .5rem;
@@ -6820,6 +6813,10 @@ header#header > .container-fluid {
 
 .megamenu ul.menu {
   padding-left: 0;
+}
+
+.megamenu .dropdown-menu {
+  width: 100%;
 }
 
 @media (min-width: 992px) {

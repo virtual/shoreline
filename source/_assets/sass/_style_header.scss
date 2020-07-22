@@ -162,9 +162,9 @@ form.siteSearch {
   .navbar-brand {
     padding-top: 24px;
   }
-  .searchicon .fa-search {
-    display: none;
-  }
+  // .searchicon .fa-search {
+  //   display: none;
+  // }
 }
 
 @media (min-width: 1025px) {
@@ -198,10 +198,10 @@ form.siteSearch {
       width: 100%;
     }
   
-    button.searchicon.btn.btn-primary {
-      background: rgba(0, 0, 0, 0.2);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-    }
+    // button.searchicon.btn.btn-primary {
+    //   background: rgba(0, 0, 0, 0.2);
+    //   border: 1px solid rgba(255, 255, 255, 0.2);
+    // }
     p a {
       padding: .5rem;
       color: #fff;
