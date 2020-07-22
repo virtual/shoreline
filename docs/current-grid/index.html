@@ -67,6 +67,13 @@
     </p>
   </div>
 </div>
+<div class="header-alert alert alert-unstyled bg-inverted bg-orange">
+  <div class="container-fluid">
+    <p>Contact by phone or email or Live Chat (available M-F 10a-2p).
+      <a href="#">Spring Quarter Student Guide</a>
+    </p>
+  </div>
+</div>
 <div class="header-alert alert alert-unstyled bg-secondary">
   <div class="container-fluid">
     <p>Student portal is down. We are working to resolve the issue <a
@@ -86,34 +93,35 @@
         <section id="searchmenusub" class="bg-white collapse pt-4" aria-label="Search">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-        <div class="d-flex">
-          <form class="siteSearch" role="search" method="GET" action="/search/SearchRedir.aspx">
-  <div class="input-group main-search">
-    <span class="input-group-prepend">
-      <button tabindex="-1" class="input-group-text bg-transparent" name="SubmitSearch" type="submit">
-        <span class="fa fa-search"></span>
-        <span class="sr-only">Search</span>
-      </button>
-    </span>
-    <label for="search1"><span class="sr-only">Enter search terms</span>
-    <input id="search1" type="search" name="EnterSearch" class="entersearch form-control border-left-0 border" placeholder="Search Shoreline"
-      value="" autocomplete="on"></label>
-  </div>
-</form>          <button class="btn btn-link ml-3" data-toggle="collapse" data-target="#searchmenusub"
-            aria-controls="searchmenusub" aria-expanded="true">Cancel</button>
-        </div>
-        <div class="pt-3 pb-3">
-          <p class="medium"><strong>Frequently Searched</strong></p>
-          <ul class="list-unstyled list-inline btn-tags mb-0">
-            <li><a class="btn btn-link btn-sm" href="#">Canvas</a></li>
-            <li><a class="btn btn-link btn-sm" href="#">Library</a></li>
-            <li><a class="btn btn-link btn-sm" href="#">Class Schedule</a></li>
-            <li><a class="btn btn-link btn-sm" href="#">Planning Guides</a></li>
-            <li><a class="btn btn-link btn-sm" href="#">Transcripts</a></li>
-            <li><a class="btn btn-link btn-sm" href="#">Calendars</a></li>
-          </ul>
-        </div>
+      <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">        
+          <div class="d-flex">
+  <form class="siteSearch" role="search" method="GET" action="/search/SearchRedir.aspx">
+    <div class="input-group main-search">
+      <span class="input-group-prepend">
+        <button tabindex="-1" class="input-group-text bg-transparent" name="SubmitSearch" type="submit">
+          <span class="fa fa-search"></span>
+          <span class="sr-only">Search</span>
+        </button>
+      </span>
+      <label for="search1"><span class="sr-only">Enter search terms</span>
+        <input id="search1" type="search" name="EnterSearch" class="entersearch form-control border-left-0 border"
+          placeholder="Search Shoreline" value="" autocomplete="on"></label>
+    </div>
+  </form>
+  <button id="searchcancel1" class="btn btn-link ml-3" data-toggle="collapse" data-target="#searchmenusub"
+    aria-controls="searchmenusub" aria-expanded="true">Cancel</button>
+</div>         
+          <div class="pt-3 pb-3">
+  <p class="medium"><strong>Frequently Searched</strong></p>
+  <ul class="list-unstyled list-inline btn-tags mb-0">
+    <li><a class="btn btn-link btn-sm" href="#">Canvas</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Library</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Class Schedule</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Planning Guides</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Transcripts</a></li>
+    <li><a class="btn btn-link btn-sm" href="#">Calendars</a></li>
+  </ul>
+</div>        </div>
       </div>
     </div>
   </div>
@@ -127,7 +135,7 @@
 	<svg version="1.1" class="svg-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   x="0px" y="0px" width="232px" height="138px" viewBox="0 0 232 138" style="enable-background:new 0 0 232 138;"
   enable-background="new 0 0 232 138" xml:space="preserve">
-  <desc>Shoreline Community College</desc>
+  <title>Shoreline Community College</title>
   <g>
     <path fill="#006C67" d="M1.908,17.749c1.231-5.758,9.477-13.857,21.144-11.187c3.011,0.549,4.204,0.618,6.464-0.209
 		c0.891-0.341,1.301,0.48,0.619,2.879c-0.682,2.399-0.069,6.667,0.069,7.766s-2.487,3.561-2.626,1.23
@@ -249,7 +257,7 @@
 <ul class="quicklinks list-inline list-2">
   <li class="has-button"><a class="btn btn-important btn-sm" href="/apply-and-aid/apply.aspx">Get Started</a></li>
   <li class="has-button d-none d-lg-block">
-    <button class="btn btn-secondary btn-sm" data-toggle="collapse" data-target="#searchmenusub" aria-controls="searchmenusub" aria-expanded="false"><span class="fa fa-search primary" aria-hidden="true"></span>
+    <button class="btn btn-secondary btn-sm" id="searchtoggler" data-toggle="collapse" data-target="#searchmenusub" aria-controls="searchmenusub" aria-expanded="false"><span class="fa fa-search primary" aria-hidden="true"></span>
       Search</button>
   </li>
 </ul>            
@@ -277,7 +285,7 @@
 	<svg version="1.1" class="svg-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   x="0px" y="0px" width="232px" height="138px" viewBox="0 0 232 138" style="enable-background:new 0 0 232 138;"
   enable-background="new 0 0 232 138" xml:space="preserve">
-  <desc>Shoreline Community College</desc>
+  <title>Shoreline Community College</title>
   <g>
     <path fill="#006C67" d="M1.908,17.749c1.231-5.758,9.477-13.857,21.144-11.187c3.011,0.549,4.204,0.618,6.464-0.209
 		c0.891-0.341,1.301,0.48,0.619,2.879c-0.682,2.399-0.069,6.667,0.069,7.766s-2.487,3.561-2.626,1.23
@@ -397,7 +405,6 @@
       <div class="container">
         <div class="searchform-mobile"> 
           <div class="d-flex">
-
   <form class="siteSearch" role="search" method="GET" action="/search/SearchRedir.aspx">
     <div class="input-group main-search">
       <span class="input-group-prepend">
@@ -411,49 +418,10 @@
           placeholder="Search" value="" autocomplete="on"></label>
     </div>
   </form>
-
-
-  <button class="btn btn-link ml-3" data-toggle="collapse" data-target="#searchCollapse" aria-controls="searchCollapse"
+  <button id="searchcancel2" class="btn btn-link ml-3" data-toggle="collapse" data-target="#searchCollapse" aria-controls="searchCollapse"
     aria-expanded="true">Cancel</button>
-</div>
-<div class="pt-3 pb-3">
-  <p class="medium"><strong>Frequently Searched</strong></p>
-  <ul class="list-unstyled list-inline btn-tags mb-0">
-    <li><a class="btn btn-link btn-sm" href="#">Canvas</a></li>
-    <li><a class="btn btn-link btn-sm" href="#">Library</a></li>
-    <li><a class="btn btn-link btn-sm" href="#">Class Schedule</a></li>
-    <li><a class="btn btn-link btn-sm" href="#">Planning Guides</a></li>
-    <li><a class="btn btn-link btn-sm" href="#">Transcripts</a></li>
-    <li><a class="btn btn-link btn-sm" href="#">Calendars</a></li>
-  </ul>
-</div>  
-        </div>
-      </div>
-    </div>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <!-- <div class="container-fluid d-block d-lg-none">
-        <div class="searchform-mobile">
-          <div class="d-flex">
-
-  <form class="siteSearch" role="search" method="GET" action="/search/SearchRedir.aspx">
-    <div class="input-group main-search">
-      <span class="input-group-prepend">
-        <button tabindex="-1" class="input-group-text bg-transparent" name="SubmitSearch" type="submit">
-          <span class="fa fa-search primary"></span>
-          <span class="sr-only">Search</span>
-        </button>
-      </span>
-      <label for="search2"><span class="sr-only">Enter search terms</span>
-        <input id="search2" type="search" name="EnterSearch" class="entersearch form-control border-left-0 border"
-          placeholder="Search" value="" autocomplete="on"></label>
-    </div>
-  </form>
-
-
-  <button class="btn btn-link ml-3" data-toggle="collapse" data-target="#searchCollapse" aria-controls="searchCollapse"
-    aria-expanded="true">Cancel</button>
-</div>
-<div class="pt-3 pb-3">
+</div>         
+          <div class="pt-3 pb-3">
   <p class="medium"><strong>Frequently Searched</strong></p>
   <ul class="list-unstyled list-inline btn-tags mb-0">
     <li><a class="btn btn-link btn-sm" href="#">Canvas</a></li>
@@ -464,8 +432,9 @@
     <li><a class="btn btn-link btn-sm" href="#">Calendars</a></li>
   </ul>
 </div>        </div>
-      </div> -->
-
+      </div>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarCollapse"> 
       <ul class="menu">
 
         <li class="dropdown-list">
@@ -638,10 +607,7 @@
   </div>
 </li>   
      
-      </ul>
-      <!-- <ul class="menu">
-        _partials.menu-content-search
-      </ul> -->
+      </ul> 
       <div class="d-block d-lg-none"> 
         <ul class="quicklinks list-1">
   <li><a href="/currentstudents/"><span class="far fa-user-circle"><span class="sr-only">User</span></span> Current Students</a></li>
@@ -652,7 +618,7 @@
 <ul class="quicklinks list-inline list-2">
   <li class="has-button"><a class="btn btn-important btn-sm" href="/apply-and-aid/apply.aspx">Get Started</a></li>
   <li class="has-button d-none d-lg-block">
-    <button class="btn btn-secondary btn-sm" data-toggle="collapse" data-target="#searchmenusub" aria-controls="searchmenusub" aria-expanded="false"><span class="fa fa-search primary" aria-hidden="true"></span>
+    <button class="btn btn-secondary btn-sm" id="searchtoggler" data-toggle="collapse" data-target="#searchmenusub" aria-controls="searchmenusub" aria-expanded="false"><span class="fa fa-search primary" aria-hidden="true"></span>
       Search</button>
   </li>
 </ul> 
@@ -1746,7 +1712,7 @@
 	<svg version="1.1" class="svg-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   x="0px" y="0px" width="232px" height="138px" viewBox="0 0 232 138" style="enable-background:new 0 0 232 138;"
   enable-background="new 0 0 232 138" xml:space="preserve">
-  <desc>Shoreline Community College</desc>
+  <title>Shoreline Community College</title>
   <g>
     <path fill="#006C67" d="M1.908,17.749c1.231-5.758,9.477-13.857,21.144-11.187c3.011,0.549,4.204,0.618,6.464-0.209
 		c0.891-0.341,1.301,0.48,0.619,2.879c-0.682,2.399-0.069,6.667,0.069,7.766s-2.487,3.561-2.626,1.23
