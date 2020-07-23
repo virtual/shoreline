@@ -95,13 +95,16 @@
     padding: 0;
   }
   .header-actions {
-    padding-top: 22px;
-    padding-bottom: 22px;
-    .has-button {
-      top: -.25rem;
+    padding-top: 15px;
+    padding-bottom: 18px;
+    .navmenu .has-button {
+      top: -.1rem;
       position: relative;
       margin-left: 10px;
-      .btn { margin-top:0; margin-bottom:0;}
+      .btn { 
+        margin-top:0; 
+        margin-bottom:0;
+      }
     }
   } 
   .navmenu .quicklinks a strong {

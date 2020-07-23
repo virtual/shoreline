@@ -260,3 +260,22 @@ body.homepage #maincontent {
     width: 320px; // can't be dynamic due to static positioning
   }
 }
+
+// Directory variable overrides
+// hide-layout-main-menu hide-layout-search-bar 
+.hide-layout-main-menu {
+  .quicklinks.list-1,
+  .quicklinks.list-2 li:first-child,
+  #navbarCollapse,
+  #mobile-menu-button {
+    display: none !important;
+  }
+}
+.hide-layout-search-bar {
+  #mobile-search-button,
+  #searchCollapse,
+  .quicklinks.list-2 li:last-child,
+  #searchmenusub {
+    display: none !important;
+  }
+}

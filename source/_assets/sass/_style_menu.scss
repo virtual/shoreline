@@ -38,9 +38,9 @@
 .megamenu.navmenu .navbar-brand {
   flex-grow: 1;
   width: auto;
-  height: 45px;
+  height: 57px;
   margin-right:0; 
-  padding: 0;
+  padding: 6px 0;
   color: $primary;
   svg {
     width: auto;
@@ -101,7 +101,7 @@
     // padding-right: 1rem; 
     color: $primary;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 19px;
     background: none; 
     border: 0;
     box-shadow: none; 
@@ -446,6 +446,7 @@
     align-items: center;
     justify-content: flex-end;
     width: 100%;
+    margin-bottom: 0;
   }
   // search menu
   .megamenu ul.menu + .menu {
