@@ -189,7 +189,7 @@
           </div>
         </div>
         <div class="col-12 col-lg-6">
-          <div class="testimonial-slider-container">
+          <div class="testimonial-slider-container slick-slider-tabbed">
             <div class="slick-slider">
               @include('_partials.quote', [
               'desc' => "I joined different clubs, worked as a student tutor, and served on ASG. These experiences
@@ -197,8 +197,9 @@
               'alt' => 'Pavielle Montes',
               'attribution' => 'Pavielle Montes',
               'attribution2' => 'Dental Hygiene AAAS',
-              'img' => '',
-              'link' => '#'
+              'img' => '/resources/img/stock/square/shoreline.williams73.jpg',
+              'link' => '#',
+              'class' => 'small-image'
               ])
               @include('_partials.quote', [
               'desc' => "Shoreline has a great atmosphere where I can focus on my academics and has great facilities
@@ -206,16 +207,18 @@
               'alt' => 'Jane Smith',
               'attribution' => 'Jane Smith',
               'attribution2' => 'Automotive Service Technician AAAS',
-              'img' => '',
-              'link' => '#'
+              'img' => '/resources/img/stock/square/shoreline.williams79.jpg',
+              'link' => '#',
+              'class' => 'small-image'
               ])
               @include('_partials.quote', [
               'desc' => "Shoreline habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
               'alt' => 'Teri Lewis',
               'attribution' => 'Teri Lewis',
               'attribution2' => 'Geology & Earth Sciences Pre-Major',
-              'img' => '',
-              'link' => '#'
+              'img' => '/resources/img/stock/square/shoreline.williams185.jpg',
+              'link' => '#',
+              'class' => 'small-image'
               ])
             </div>
           </div>
