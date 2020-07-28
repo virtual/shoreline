@@ -82,7 +82,7 @@
 </div>
 <div class="header-alert alert alert-unstyled bg-pale-gray alert-dismissible fade show" role="alert">
   <div class="container-fluid">    
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <button type="button" class="dismiss-alert close" data-dismiss="alert" aria-label="Close">
       <span aria-hidden="true">&times;</span>
     </button>
     <p><strong>Campus will be closed</strong> Monday, 5/23 for Memorial Day <a href="#">Learn more</a>
@@ -656,15 +656,15 @@
             <div id="interior">
                     <h1>Accordions</h1>
       <p>Empty template, looks nice on newer (not IE 11) browsers</p>
-      <div class="accordion " id="accordionbd5">
+      <div class="accordion " id="accordion3f2">
     <div class="accordion-card">
-      <div class="accordion-header" id="headingbd5One">
-          <h3><button class="btn btn-toggle" type="button" data-toggle="collapse" data-target="#collapsebd5One" aria-expanded="false" aria-controls="collapsebd5One">
+      <div class="accordion-header" id="heading3f2One">
+          <h3><button class="btn btn-toggle" type="button" data-toggle="collapse" data-target="#collapse3f2One" aria-expanded="false" aria-controls="collapse3f2One">
             Collapsible Group Item #1
           </button></h3>
       </div>
   
-      <div id="collapsebd5One" class="collapse" aria-labelledby="headingbd5One">
+      <div id="collapse3f2One" class="collapse" aria-labelledby="heading3f2One">
         <div class="accordion-body">
           <div class="ou-help">
   <p>Right click a table cell to select deletion of a row or column in order to size the table according to your needs.</p>
@@ -719,12 +719,12 @@
       </div>
     </div>
     <div class="accordion-card">
-      <div class="accordion-header" id="headingbd5Two">
-          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapsebd5Two" aria-expanded="false" aria-controls="collapsebd5Two">
+      <div class="accordion-header" id="heading3f2Two">
+          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse3f2Two" aria-expanded="false" aria-controls="collapse3f2Two">
             Collapsible Group Item #2
           </button></h3>
       </div>
-      <div id="collapsebd5Two" class="collapse" aria-labelledby="headingbd5Two">
+      <div id="collapse3f2Two" class="collapse" aria-labelledby="heading3f2Two">
         <div class="accordion-body">
           <ul>
             <li><a href="#">Anim pariatur cliche reprehenderit,</a></li>
@@ -736,12 +736,12 @@
       </div>
     </div>
     <div class="accordion-card">
-      <div class="accordion-header" id="headingbd5Three">
-          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapsebd5Three" aria-expanded="false" aria-controls="collapsebd5Three">
+      <div class="accordion-header" id="heading3f2Three">
+          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse3f2Three" aria-expanded="false" aria-controls="collapse3f2Three">
             Collapsible Group Item #3
           </button></h3>
       </div>
-      <div id="collapsebd5Three" class="collapse" aria-labelledby="headingbd5Three">
+      <div id="collapse3f2Three" class="collapse" aria-labelledby="heading3f2Three">
         <div class="accordion-body">
           <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
         </div>
@@ -1055,7 +1055,12 @@
         document.getElementsByTagName('head')[0].appendChild(css);
       })();
     </script>
-    
+        <noscript>
+      <style>.header-alert.alert.alert-dismissible { display:block;}</style>
+   </noscript>
+   <script>var alerttimestamp = "20-07-13--11-37-53";</script>
+    <script src="https://www.satinflame.com/ou/shoreline/assets/js/alert.js?v=5" defer="defer"></script>
+
 </body>
 
 </html>

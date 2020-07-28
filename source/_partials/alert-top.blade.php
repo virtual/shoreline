@@ -22,7 +22,7 @@
 </div>
 <div class="header-alert alert alert-unstyled bg-pale-gray alert-dismissible fade show" role="alert">
   <div class="container-fluid">    
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <button type="button" class="dismiss-alert close" data-dismiss="alert" aria-label="Close">
       <span aria-hidden="true">&times;</span>
     </button>
     <p><strong>Campus will be closed</strong> Monday, 5/23 for Memorial Day <a href="#">Learn more</a>

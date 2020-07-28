@@ -82,7 +82,7 @@
 </div>
 <div class="header-alert alert alert-unstyled bg-pale-gray alert-dismissible fade show" role="alert">
   <div class="container-fluid">    
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <button type="button" class="dismiss-alert close" data-dismiss="alert" aria-label="Close">
       <span aria-hidden="true">&times;</span>
     </button>
     <p><strong>Campus will be closed</strong> Monday, 5/23 for Memorial Day <a href="#">Learn more</a>
@@ -1604,7 +1604,12 @@
         document.getElementsByTagName('head')[0].appendChild(css);
       })();
     </script>
-    
+        <noscript>
+      <style>.header-alert.alert.alert-dismissible { display:block;}</style>
+   </noscript>
+   <script>var alerttimestamp = "20-07-13--11-37-53";</script>
+    <script src="https://www.satinflame.com/ou/shoreline/assets/js/alert.js?v=5" defer="defer"></script>
+
 </body>
 
 </html>

@@ -72,6 +72,12 @@
       })();
     </script>
     @if (trim($__env->yieldContent('footcode'))) @yield('footcode') @endif
+    <noscript>
+      <style>.header-alert.alert.alert-dismissible { display:block;}</style>
+   </noscript>
+   <script>var alerttimestamp = "20-07-13--11-37-53";</script>
+    <script src="{{ $page->baseUrl }}/assets/js/alert.js?v=5" defer="defer"></script>
+
 </body>
 
 </html>
