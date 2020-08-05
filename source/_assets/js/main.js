@@ -1,5 +1,7 @@
 jQuery(document).ready(function() {
-  
+  // Scroll-bar width for 100vw sections
+  document.documentElement.style.setProperty('--scrollbar-width', (window.innerWidth - document.documentElement.clientWidth) + "px");
+
   // Check testimonial picture if vertical for spacing
   $('.quote-feature-img').each(function () {
     var $this = $(this);
@@ -9,16 +11,6 @@ jQuery(document).ready(function() {
     }
   });
 
-  $("header .alert .dismiss-alert").click(function(e){
-    e.preventDefault();
-    if ($("header .alert").hasClass('dismissed')) {
-      $('header .alert').removeClass('dismissed');
-      $('header .alert .dismiss-alert-label').text('Hide Details');
-    } else {
-      $('header .alert').addClass('dismissed');
-      $('header .alert .dismiss-alert-label').text('Show Details');
-    } 
-  });
  
   // Adds margins for 100% height cards in flexbox
   // TODO: Fix this for only direct descendants 
@@ -27,45 +19,46 @@ jQuery(document).ready(function() {
   $("[class*='col-sm-']:has('p.card-link')").addClass('card-link-margin');
   $("[class*='col-md-']:has('p.card-link')").addClass('card-link-margin');
 
-  $('body').on('click','.megamenu .dropdown-toggle',function(e){
-    e.preventDefault();
-    e.stopPropagation();
 
-    // If not showing, show dropdown menu
-    var _d=$(this).closest('.dropdown');
-    if ((_d).hasClass('show')) { // RemoveClass Show
-      $(_d).removeClass('show')
-    } else { // AddClass Show
-      $(_d).removeClass('show')
-      _d.addClass('show');
-    }
+  // $('body').on('click','.megamenu .dropdown-toggle',function(e){
+  //   e.preventDefault();
+  //   e.stopPropagation();
+
+  //   // If not showing, show dropdown menu
+  //   var _d=$(this).closest('.dropdown');
+  //   if ((_d).hasClass('show')) { // RemoveClass Show
+  //     $(_d).removeClass('show')
+  //   } else { // AddClass Show
+  //     $(_d).removeClass('show')
+  //     _d.addClass('show');
+  //   }
      
-  });
+  // });
 
-  $('body').on('click','.expand-button',function(e){
-    e.preventDefault();
-    e.stopPropagation();
+  // $('body').on('click','.expand-button',function(e){
+  //   e.preventDefault();
+  //   e.stopPropagation();
     
-    var _d=$(this).closest('.homepage-banner').siblings('.homepage-expand');
-    if ((_d).hasClass('show')) {
-      // Close the element, change it to hidden
-      $(this).parents('.homepage-banner-container').removeClass("expanded");
-      $(this).attr('aria-expanded', 'false').text('Expand');      
-      $(_d).removeClass('show')      
-      $(_d).find('.hero-expandcontent').attr('aria-hidden', 'true');
+  //   var _d=$(this).closest('.homepage-banner').siblings('.homepage-expand');
+  //   if ((_d).hasClass('show')) {
+  //     // Close the element, change it to hidden
+  //     $(this).parents('.homepage-banner-container').removeClass("expanded");
+  //     $(this).attr('aria-expanded', 'false').text('Expand');      
+  //     $(_d).removeClass('show')      
+  //     $(_d).find('.hero-expandcontent').attr('aria-hidden', 'true');
 
-    } else {
-      $(this).parents('.homepage-banner-container').addClass("expanded");
-      $(this).attr('aria-expanded', 'true').text('Close');
-      $(_d).addClass('show');
-      $(_d).find('.hero-expandcontent').attr('aria-hidden', 'false');
+  //   } else {
+  //     $(this).parents('.homepage-banner-container').addClass("expanded");
+  //     $(this).attr('aria-expanded', 'true').text('Close');
+  //     $(_d).addClass('show');
+  //     $(_d).find('.hero-expandcontent').attr('aria-hidden', 'false');
       
-      // Scroll to open area when expanded
-      $("html, body").animate({
-        scrollTop: $(_d).offset().top - 40
-      }, 100);
-    }
-  });
+  //     // Scroll to open area when expanded
+  //     $("html, body").animate({
+  //       scrollTop: $(_d).offset().top - 40
+  //     }, 100);
+  //   }
+  // });
 
   
   $('.accordion .collapse:not(.show) ').each( function () {
@@ -83,24 +76,24 @@ jQuery(document).ready(function() {
         $(this).css('visibility', 'hidden');
     });
 
-  $(".header-actions .searchicon").click(function (event) {
-    if (!($(this).hasClass('active'))) {
-      $(this).addClass('active');
-      event.preventDefault();
-      $('.header-actions .searchbox input').show(); //noscript 
-      $('.header-actions .searchbox input').focus();
-      }
-      else {
-        if ($('.header-actions .searchbox input')[0].value === '') {
-          // console.log('no text!')
-          event.preventDefault();
-          $('.header-actions .searchbox input').hide();
-          $(this).removeClass('active');
-        } else {
-          // submit
-        }
-      }
-  });
+  // $(".header-actions .searchicon").click(function (event) {
+  //   if (!($(this).hasClass('active'))) {
+  //     $(this).addClass('active');
+  //     event.preventDefault();
+  //     $('.header-actions .searchbox input').show(); //noscript 
+  //     $('.header-actions .searchbox input').focus();
+  //     }
+  //     else {
+  //       if ($('.header-actions .searchbox input')[0].value === '') {
+  //         // console.log('no text!')
+  //         event.preventDefault();
+  //         $('.header-actions .searchbox input').hide();
+  //         $(this).removeClass('active');
+  //       } else {
+  //         // submit
+  //       }
+  //     }
+  // });
 
   //--- Gavin Smith 8-16-17 Merge data into page if any requests on page
   if (typeof LoadShorelineData == 'function') { 
@@ -122,59 +115,113 @@ jQuery(document).ready(function() {
       $(goToId).focus(); 
     }  
   });
-
-  document.onkeydown = function(evt) {
-    e = evt || window.event;    
-    // console.log
-    if ((e.target).parentNode.classList.contains(('dropdown'))) {
-      if (e.keyCode == 39 || e.keyCode == 40) {      
-        (e.target).parentNode.classList.add('show');
-      }
-      if (e.keyCode == 37 || e.keyCode == 38) {   
-        (e.target).parentNode.classList.remove('show');
-      }
-    } 
+ 
+  // When tabbing close the menu back up when reaching the end of the dropdown-menu
+  $(".dropdown-list > button").focus(function() { 
+    $('.dropdown-list.show > button').attr('aria-expanded', 'false')
+    $('.dropdown-list.show').removeClass('show');
+  });  
+  $(".dropdown-list > button").click(function (evt) {
+    e = evt || window.event;
+    toggleDropdownMenu((e.target).parentNode);
+  });
+  document.onkeydown = function (evt) {
+    e = evt || window.event;   
+    if ((e.key === ' ' || e.key === 'Spacebar' || e.key === 'Enter' || e.key === 'Escape')) {
+      checkDropdownKey(e)    
+    }
   };
 
-  // When tabbing close the menu back up when tabbed out
-  $(".dropdown>a").focus(function() {
-    $('.dropdown.show').removeClass('show');
+  // If megamenu is open and you click on the main content, close the megamenu
+  $('body').on('click', '#maincontent', function(e){
+    $('.megamenu .dropdown-list.show > button').attr('aria-expanded', 'false')
+    $('.megamenu .dropdown-list.show').removeClass('show');
+  })
+
+  // Add keyboard escape for search section
+  $('body').on('click', '#searchtoggler', function (e) {
+    setTimeout(function () {
+      document.getElementById('search1').focus();
+    }, 500);
+  });
+  $('body').on('click', '#mobile-search-button', function (e) {
+    setTimeout(function () {
+      document.getElementById('search2').focus();
+    }, 500);
+  });
+  $('body').on('click', '#searchcancel1', function (e) {
+    setTimeout(function () {
+      document.getElementById('searchtoggler').focus();
+    }, 500);
+  });
+  $('body').on('click', '#searchcancel2', function (e) {
+    setTimeout(function () {
+      document.getElementById('mobile-search-button').focus();
+    }, 500);
   });
 
-
-/* from Shoreline */
-	// table-stacked js DUPLICATE?
-	// $('.table-r1').each( function(e) {
-	// 	var headerNames = [];
-  //   var rowTitles = [];
-	// 	$(this).find('thead th').each( function(e, item) {
-	// 		headerNames.push(item.innerText); // context causes errors, removed
-  //   });
-	// 	$(this).find('tbody th').each( function(e, item) {			
-	// 		rowTitles.push(item.innerText); // context causes errors, removed
-  //   });
-	// 	$(this).find('tbody tr').each( function(e) {
-	// 		$(this).children('th').text(rowTitles[e]); 
-	// 		$(this).children('td').each( function(e) {
-	// 			$(this).attr('data-title', headerNames[e+1]) 
-	// 		});
-	// 	}); 
-  // });
   
+ 
+
+  // $("a").attr('href', "https://www.satinflame.com/ou/shoreline/");  
+ 
 }); 
 // END FUNCTION READY
 
+// trymyui disable links
+// if (window.addEventListener) {
+//   document.addEventListener('click', function (e) {
+//     if (e.target.nodeName === 'A') {
+//       // e.preventDefault();
+//       // $('.toast').toast('show')
+//     }
+//   });
+// }
 
-function calcOverviewOffset() {
-  //var sidebarOffset = $('#sidebar-nav').offset().top; // doesn't matter
-  var contentHeaderOffset = $('.content-header').offset().top;
-  return contentHeaderOffset + 50;
+// Megamenu dropdown
+// Keys to successful implementation will be aria-expanded on the button 
+// that triggers the submenu, and a keyboard model that includes support for 
+// Escape, with focus returning to the button (top menu item) when the submenu closes. 
+function hideDropdownMenu(el) {
+  el.classList.remove('show');
+  el.querySelector('button').setAttribute("aria-expanded", 'false');
 }
+function toggleDropdownMenu(el) {
+  if (el.classList.contains('show')) {
+    hideDropdownMenu(el)
+  } else {
+    el.classList.add('show');
+    el.querySelector('button').setAttribute("aria-expanded", 'true');
+  }
+}
+function checkDropdownKey(e) {
+  if ((e.target).parentNode.classList.contains(('dropdown-list'))) { 
+    if (e.key === ' ' || e.key === 'Spacebar' || e.key === 'Enter') {
+      e.preventDefault(); // prevent click function
+      toggleDropdownMenu((e.target).parentNode);
+    } else if (e.key === 'Tab') {
+      if (!((e.target).parentNode.classList.contains('show'))) {
+        hideDropdownMenu((e.target).parentNode);
+      }
+    } 
+  } else if (e.key === 'Escape') {
+    var currentMenu = document.querySelector("#navbarCollapse").querySelector('.dropdown-list.show');
+    hideDropdownMenu(currentMenu);
+    currentMenu.querySelector('button').focus(); 
+  }
+}
+// End Megamenu dropdown menu functions
 
-function setOverviewOffset(offset) {
-  document.getElementById('sidebar-nav').setAttribute('style', "top: -" + offset + "px");
-  return true;
-}
+// function calcOverviewOffset() {
+//   //var sidebarOffset = $('#sidebar-nav').offset().top; // doesn't matter
+//   var contentHeaderOffset = $('.content-header').offset().top;
+//   return contentHeaderOffset + 50;
+// }
+
+// function setOverviewOffset(offset) {
+//   document.getElementById('sidebar-nav').setAttribute('style', "top: -" + offset + "px");
+//   return true;
+// }
 
 require('jquery-colorbox');
 var twitterFetcher = require('twitter-fetcher');
@@ -213,12 +260,10 @@ var shoreline = {
           $("body").removeClass('menu-open');
         }
       });
-  
-
-     
   },
 
   // Pulls in JSON feed
+  // Requires full jQuery (not Slim)
   getEventFeed(max = 3) {
     var arrayFeeds = [];
 
@@ -513,9 +558,9 @@ if ( $( ".contact-hours" ).length ) {
   shoreline.contactListDynamicHours();
 } 
  
-// @danielfarrell/bootstrap-combobox
+// @bootstrap-combobox/bootstrap-combobox
 if ( $( ".dynamic-selectbox" ).length ) {
-var bootstrapCombobox = require('@danielfarrell/bootstrap-combobox');
+var bootstrapCombobox = require('@bootstrap-combobox/bootstrap-combobox');
 (function($, bootstrapCombobox){
     $('.dynamic-selectbox').combobox({
       bsVersion: '4',

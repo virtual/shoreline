@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'baseUrl' => 'https://virtual.github.io/shoreline',
+    'baseUrl' => 'https://www.satinflame.com/ou/shoreline',
     'production' => true
 ];

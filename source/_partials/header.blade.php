@@ -2,6 +2,12 @@
   <div id="skiptocontent">
     <a href="#maincontent" title="Skip Main Navigation">Skip Main Navigation</a>
   </div>
+  @if (!(trim($__env->yieldContent('homepage'))))
+  @include ('_partials.alert-top')  
+  @endif
+       
+        @include ('_partials.menu-content-search')       
+     
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-2 col-xl-2 header-logo d-none d-lg-block">
@@ -20,19 +26,20 @@
         <div class="header-actions d-none d-lg-flex">
         <div class="navbar-container">
 
-          <nav class="navbar navbar-expand-sm navmenu utility-wrapper" role="navigation" aria-label="Ancillary Navigation">
+          <nav class="navbar navbar-expand-sm navmenu utility-wrapper" aria-label="Ancillary Navigation">
             @include ('_partials.quicklinks')
+            
           </nav>
-        </div>
-        <div class="search-container ">
-          @include ('_partials.searchform')
-        </div>
+        </div> 
       </div>
 
       @include ('_partials.menu')
       </div>
     </div>
+    <div class="row"> 
+
+    </div>
     
   </div>
-  @include('_partials.alert')
+  <!-- _partials/alert -->
 </header>

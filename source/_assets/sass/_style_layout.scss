@@ -214,6 +214,10 @@ body {
     margin-bottom: 0;
   }
 }
+body.homepage #maincontent { 
+  margin-bottom: 0;
+}
+
 #maincontent + #footer   { margin-top: 1.5rem;}
 #maincontent + #sectionals { margin-top: -1.5rem; } 
 .homepage #maincontent+#sectionals { margin-top:0;}
@@ -254,5 +258,24 @@ body {
 @media (min-width: $screen-xl) {
   .layout-has-sidebar #sidebar-nav nav {
     width: 320px; // can't be dynamic due to static positioning
+  }
+}
+
+// Directory variable overrides
+// hide-layout-main-menu hide-layout-search-bar 
+.hide-layout-main-menu {
+  .quicklinks.list-1,
+  .quicklinks.list-2 li:first-child,
+  #navbarCollapse,
+  #mobile-menu-button {
+    display: none !important;
+  }
+}
+.hide-layout-search-bar {
+  #mobile-search-button,
+  #searchCollapse,
+  .quicklinks.list-2 li:last-child,
+  #searchmenusub {
+    display: none !important;
   }
 }

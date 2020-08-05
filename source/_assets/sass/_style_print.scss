@@ -53,6 +53,8 @@
   }
 
   #footer,
+  .subfooter,
+  #searchmenusub,
   nav,
   #skiptocontent,
   .header-actions,
@@ -63,11 +65,12 @@
 
   #header .navbar-brand {
     padding: 0;
-  }
-
-  #header .navbar-brand img {
-    max-width: 120px;
-    height: auto;
+    padding-left: 1rem;
+    svg {
+      polygon, path, line {
+        fill: #000;
+      }
+    }
   }
 
   .padded,

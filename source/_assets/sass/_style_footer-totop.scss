@@ -1,0 +1,72 @@
+footer#footer .back-to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 25px;
+  z-index: 20;
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: .9rem;
+  line-height: 1.3;
+  text-align: center;
+  text-transform: uppercase;
+  &.visible {
+    opacity: 1;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+  &:hover:before {
+    background-color: darken($primary,10);
+  }
+  &:after {
+    position: absolute;
+    top: -20px;
+    left: 25px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url("../../resources/img/icons/arrow-up-white.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100%;
+    content: "";    
+  }
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    width: 90px;
+    height: 90px;
+    margin-top: -36px;
+    margin-left: -11px;
+    background-color: #006c68;
+    border-radius: 50%;
+    transition: background-color .2s ease-in-out;
+    content: "";
+  }
+}
+@media screen and (max-width: 1025px) {
+  footer#footer .back-to-top {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    &:before {
+      top: 15px;
+      left: 50%;
+      margin: 0 auto;
+      margin-left: -45px;
+    }
+    &:after {
+      top: 30px;
+      left: 50%;
+      width: 15px;
+      height: 15px;
+      margin-left: -7.5px;
+    }
+  } 
+}

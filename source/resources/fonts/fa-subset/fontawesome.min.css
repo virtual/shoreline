@@ -1,0 +1,7 @@
+/*!
+ * Font Awesome Pro 5.13.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ */
+.fa,.fab,.fad,.fal,.far,.fas{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1}
+@font-face{font-family:"Font Awesome 5 Pro";font-style:normal;font-weight:900;font-display:block;src:url(./webfonts/fa-solid-900.eot);src:url(./webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),url(./webfonts/fa-solid-900.woff2) format("woff2"),url(./webfonts/fa-solid-900.woff) format("woff"),url(./webfonts/fa-solid-900.ttf) format("truetype"),url(./webfonts/fa-solid-900.svg#fontawesome) format("svg")}.fa,.fas{font-family:"Font Awesome 5 Pro";font-weight:900}
+.fa-stack{display:inline-block;height:2em;line-height:2em;position:relative;vertical-align:middle;width:2.5em}.fa-stack-1x,.fa-stack-2x{left:0;position:absolute;text-align:center;width:100%}.fa-stack-1x{line-height:inherit}.fa-stack-2x{font-size:2em}.fa-inverse{color:#fff}.fa-caret-down:before{content:"\f0d7"}.fa-chevron-right:before{content:"\f054"}.fa-minus:before{content:"\f068"}.fa-plus:before{content:"\f067"}.fa-search:before{content:"\f002"}

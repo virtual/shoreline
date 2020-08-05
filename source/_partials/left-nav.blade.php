@@ -1,4 +1,4 @@
-<nav role="navigation" aria-label="Section Navigation"> 
+<nav aria-label="Section Navigation"> 
   <div class="list-wrapper">
     <ul class="nav nav-stacked" id="subnav_parent">
         <li><a href="/about-shoreline/">About Shoreline</a></li>

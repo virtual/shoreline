@@ -28,7 +28,7 @@
  
 ## New Dev Environments
 
-- Install Vagrant and VirtualBox per [Laravel Homestead guide](https://laravel.com/docs/5.6/homestead)
+- Install Vagrant and VirtualBox per [Laravel Homestead guide](https://laravel.com/docs/5.6/homestead), currently using Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-112-generic x86_64)
 - `cd ~/Homestead`
 - `vagrant up` (and if everything's missing reload provision)
 - Add site path (homestead.test) to /etc/hosts`192.168.10.10 shoreline.test`

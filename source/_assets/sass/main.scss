@@ -1,5 +1,6 @@
-.debug { background: rgba(186, 218, 85, 0.8); color:rgb(123, 151, 29); padding: 10px; position: relative; font-size: 10px; top: 0; z-index:30; }
-.debug { display: none;}
+// @import "_style_debug";
+// .debug { background: rgba(186, 218, 85, 0.8); color:rgb(123, 151, 29); padding: 10px; position: relative; font-size: 10px; top: 0; z-index:30; }
+// .debug { display: none;}
 // Variables
 @import "variables";
 
@@ -8,7 +9,7 @@
 
 html {scroll-behavior: smooth;}
 .padded { padding: 3rem 0 2.5rem 0;} 
-img { 
+img, svg, picture { 
   max-width: 100%; 
   height: auto;  
 }
@@ -142,6 +143,7 @@ kbd.ouc {
 @import "_style_leftnav.scss"; 
 @import "_style_quicklinks.scss"; 
 @import "_style_footer.scss"; 
+@import "_style_footer-totop.scss"; 
 @import "_style_icons.scss"; 
 @import "_style_homepage.scss"; 
 @import "_style_alert.scss"; 

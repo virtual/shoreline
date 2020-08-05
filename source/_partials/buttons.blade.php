@@ -22,8 +22,8 @@
 
 <hr/>
 
-<a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
-<a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
+<a href="#" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Primary link</a>
+<a href="#" class="btn btn-secondary btn-lg" role="button" aria-pressed="true">Link</a>
 
 <div class="btn-group" role="group" aria-label="Basic example">
   <button type="button" class="btn btn-secondary">Left</button>

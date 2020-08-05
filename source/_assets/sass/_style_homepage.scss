@@ -1,174 +1,150 @@
-.homepage-banner .expand-button { 
-  width: 8rem;
-}
-.homepage-banner { 
-  position: relative; 
-  overflow: hidden; 
-  background-color: $primary;   
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: contain;
+// offset overlay: https://codepen.io/virtual/pen/XWXPVMR
+$hero-offset: 20px;
 
-  .heading {
-    margin-top:0;
-    font-weight: 900;
-    font-size: 2.4375rem;
-    line-height: 1.16;
+
+@media(min-width: $screen-lg) {
+  .homepage .content-1 {
+    padding-bottom: 1.5rem;
   }
-  p { font-size: 1.5rem;  }
-}
-.homepage #maincontent { margin-bottom: 0; }
-.homepage-banner .hero {
-  min-height: auto;
-  margin-top: 0;
-  padding-top: 50%;
-}
-.homepage-banner .hero.bg-primary {
-  background-color:transparent !important;
-}
-.homepage-banner .hero-caption {
-  padding: 1.5rem 1.5rem 2.5rem 1.5rem;
-}
-@media screen and (max-width: 900px) {
-  .homepage-banner .hero .hero-image-wrapper {
-    position: relative;
-    height: auto;
-    padding-bottom: 50%;
-  }
-}
-.homepage-banner .hero .hero-image-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index:1;
-  width: 100%;
-  height: 100%;
-  background-position: center bottom;
-  background-size: cover;
-}
-.homepage-banner .hero-caption {
-  position: relative;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 2; 
-  display: block;
-  width: 100%; 
-  max-width: $screen-xl;
-  margin: 0 auto;
-  .heading, .desc {
-    max-width: $screen-xl/2;
-  }
-}
-.homepage-expand.show {
-  &>.arrow-marker::before { 
-    display: block; 
+  .homepage .content-2 { 
+    padding-top: 0;
   } 
 }
-.homepage-expand {
-  position: relative;
-  z-index: 1;
-  max-height: 0;
-  overflow: none;
-  transform: scaleY(0); 
-  transition: max-height 500ms ease-in-out;
+.homepage .testimonial-slider-container {
+  margin-top: 2rem;
+  // padding-right: 1.75rem;
+  // padding-left: 1.75rem;
+} 
 
-  &>.container-fluid { 
+
+.hero-bg-container {
+  margin-right: 0;
+  margin-left: 0;
+  padding-top: 2rem;
+  .hero-offset-bg {
     position: relative;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    visibility: hidden;
-    .row {
-      position: relative;
-      z-index: 4;
+    display: flex;
+    flex-direction: column;
+    padding: $hero-offset;
+    padding-top: 0;
+  }
+  .hero-content {
+    z-index: 2;
+    margin-top: $hero-offset * -1;
+    padding: 2.8125rem 1.5rem 2rem; 
+    text-align: center;
+    word-wrap: break-all; 
+    .btn {
+      width: 100%;
     }
   }
-  &>.arrow-marker { 
-    position: relative;
-    max-width: $screen-xl;  
-    margin: 0 auto;
+  .hero-bg-offset-image {
+    margin-bottom: $hero-offset * -2;
+    // box-shadow: 0 0 1px #f00;
+    img, picture {
+      width: 100%;
+      margin: 0 0 0 auto;
+    }
   }
-  &>.arrow-marker::before {
-    position: absolute;
-    top: -.5rem;
-    left: 4.5rem;
-    z-index: 2;
-    display: none; 
-    width: 2rem;
-    height: 2rem;
-    background-color: #fff;
-    border-color: transparent;
-    transform: rotate(45deg);
-    content: "";
-  } 
-}
-.homepage-expand.show { 
-  max-height: 999px;
-   overflow: initial; 
-  transform: scaleY(1); 
-  transition: max-height 500ms ease-in-out;
-  &>.container-fluid { 
-    visibility: visible;
+  .hero-cta {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .hero-cta-sub {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
   }
 }
 @media (min-width: $screen-sm) {
-  .homepage-expand>.arrow-marker::before {
-    top: -1rem;
-    left: 6rem;
-  }
-  .homepage-banner {
-    background-color: #000;
-    background-position: center;
-    background-size: cover;
- 
-    p, .heading {
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-    }
-    .hero {
-      min-height: 400px;
-      padding-top:0;
-      padding-bottom: 0;
-    }
-    .hero .hero-image-wrapper {
-      background: linear-gradient(
-        to top,
-        #000,
-        rgba(#000, 0)
-      );
-      opacity:.5;
-    }
-    .hero-caption { 
-      position: absolute;
-      padding: 2.5rem;
-    }
+  .hero-bg-container .hero-content .btn {
+    width: auto;
   }
 }
-@media (min-width: $screen-lg) { 
-  .homepage-banner .hero {
-      min-height: 670px; 
+@media (min-width: $screen-md) {
+  .hero-bg-container {
+    // margin-right: $hero-offset * -1;
+    // margin-left: $hero-offset * -1;
+    padding-top: 5.25rem;
+    .hero-offset-bg {
+      flex-direction: row;
+      padding-right: 0;
+    }
+    .hero-content {
+      flex-basis: 48%;
+      padding: 64px 32px; 
+      text-align: left;      
+    }  
+    .hero-bg-offset-image {
+      position: absolute;
+      top: -60px;
+      right: 0;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      width: 80%;
+      height: calc(100% + 80px);
+      margin-bottom: 0;      
+      padding-right: $hero-offset / 2;
+      overflow: hidden;
+      // margin:0 auto;
+      img, picture {
+        width: 100%;
+        margin: 0 0 0 auto;
+      }
+    }
+  }  
+  .hero-cta {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
   }
-  .homepage-banner .heading {
-    font-size: 3.4375rem;  
+  .hero-cta-sub {
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
+@media(max-width: $screen-lg - 1px) {
+  .hero-bg-container {
+    .hero-offset-bg {
+      padding: $hero-offset / 2;
+    }
+    .hero-bg-offset-image {
+      margin-bottom: $hero-offset / 2 * -2;
+    }
   }
 }
 
-// Vertically center text on homepage banner
-@media (min-width: $screen-sm) { 
-  .homepage-banner .hero { 
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+@media (min-width: $screen-lg) {
+  .hero-bg-container {
+    width: calc(100% + 32px);
+    margin-right: $hero-offset * -1;
+    margin-left: $hero-offset * -1;
+    .hero-bg-offset-image {
+      padding-right: $hero-offset;
+    }
   }
-  .homepage-banner .hero-caption { 
-    top: auto;  
-    bottom: auto; 
-    display: flex;
-    flex:1; 
-    flex-direction: column;
-    justify-content: center;
-    height: auto;  
-    height: 100px; // after auto, ie 11
-    min-height: 100%;
-    margin: auto; 
-  } 
+.hero-bg-container .hero-content {
+    flex-basis: 43%;
+    padding: 72px 42px; 
+  }  
+}
+@media (min-width: $screen-xl) {
+.hero-bg-container .hero-content {
+    flex-basis: 38%;
+    padding: 87px 42px 87px 55px; 
+  }  
+}
+
+.grad-cap-coin {
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+.grad-cap-icon:hover .grad-cap-coin {
+    animation-name: bounce-3; 
+}
+@keyframes bounce-3 {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(2px); }
+  40%  { transform: translateY(0); }
+  100% { transform: translateY(0); }
 }

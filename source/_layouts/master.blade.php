@@ -11,25 +11,18 @@
   <meta name="description" content="Shoreline Community College...">
   <meta property="og:title" content="Shoreline Community College" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="images/thumbnail.jpg" />
+  <meta property="og:image" content="{{ $page->baseUrl }}/resources/images/meta/thumbnail.jpg" />
   <meta property="og:url" content="http://www.Shorelinecollege.edu/" />
   <meta property="og:site_name" content="Shoreline Community College" />
   <meta property="og:description" content="Shoreline Community College..." />
   <meta property="og:locale" content="en_us" />
-  <link rel="image_src" href="{{ $page->baseUrl }}/images/thumbnail.jpg" />
+  <link rel="image_src" href="{{ $page->baseUrl }}/resources/images/meta/thumbnail.jpg" />
 
-  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/bootstrap.css">
-  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/main.css?v=3">
-  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/slick.css">
-  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/slick-theme.css">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous" />
-  <noscript>
-    <style>
-      .subnav #submenu>ul ul {
-        display: block;
-      }
-    </style>
-  </noscript>
+  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/bootstrap.css?v=5">
+  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/main.css?v=5">
+  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/slick.css?v=5">
+  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/slick-theme.css?v=5">
+  <link rel="stylesheet" href="{{ $page->baseUrl }}/resources/fonts/fa-subset/fontawesome.min.css?v=101" />
 
   @if (trim($__env->yieldContent('headcode')))
   @yield('headcode')
@@ -191,15 +184,30 @@
     @endif
 
     <!-- FOOTER -->
-    <div id="footer">
-      @include('_partials/footer')
-    </div>
-    <script src="{{ $page->baseUrl }}/assets/js/jquery-3.4.1.min.js"></script>
-    <script src="{{ $page->baseUrl }}/assets/js/popper.min.js"></script>
-    <script src="{{ $page->baseUrl }}/assets/js/bootstrap.min.js"></script>
-    <script src="{{ $page->baseUrl }}/assets/js/main.js"></script>
-    <script src="{{ $page->baseUrl }}/assets/js/slick.min.js"></script>
-    <script src="{{ $page->baseUrl }}/assets/js/slick-app.js?v=4"></script>
+    @include('_partials/footer')
+    <script src="{{ $page->baseUrl }}/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="{{ $page->baseUrl }}/assets/js/bootstrap.bundle.min.js?v=5" defer="defer"></script>
+    <script src="{{ $page->baseUrl }}/assets/js/main.js?v=5" defer="defer"></script>   
+    <script src="{{ $page->baseUrl }}/assets/js/slick.min.js?v=5" defer="defer"></script>
+    <script src="{{ $page->baseUrl }}/assets/js/slick-app.js?v=5" defer="defer"></script>
+    <script>
+      (function() {
+        var css = document.createElement('link');
+        css.href = '//pro.fontawesome.com/releases/v5.13.0/css/all.css';
+        css.rel = 'stylesheet';
+        css.type = 'text/css';
+        css.integrity = "sha384-IIED/eyOkM6ihtOiQsX2zizxFBphgnv1zbe1bKA+njdFzkr6cDNy16jfIKWu4FNH";
+        css.crossOrigin = "anonymous";
+        document.getElementsByTagName('head')[0].appendChild(css);
+      })();
+    </script>
+    @if (trim($__env->yieldContent('footcode'))) @yield('footcode') @endif
+    <noscript>
+      <style>.header-alert.alert.alert-dismissible { display:block;}</style>
+   </noscript>
+   <script>var alerttimestamp = "20-07-13--11-37-53";</script>
+    <script src="{{ $page->baseUrl }}/assets/js/alert.js?v=5" defer="defer"></script>
+
 </body>
 
 </html>

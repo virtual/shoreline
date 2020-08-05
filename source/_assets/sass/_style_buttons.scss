@@ -1,5 +1,5 @@
 $btn-important: $shoreline-orange;
-$btn-primary: $primary;
+$btn-primary: $link-blue;
 $btn-secondary: transparent;
 $btn-tertiary: transparent;
 .btn {
@@ -18,6 +18,7 @@ $btn-tertiary: transparent;
   width: auto; 
   min-width: auto; 
   padding: .5rem; 
+  color: $link-blue;
 }
 .btn-group, .btn + .btn { margin-top: .5rem; }
 .btn-group .btn + .btn, .btn.btn-link + .btn.btn-link { margin-top: 0; }
@@ -37,16 +38,15 @@ a.btn { text-decoration: none; }
 .btn-block:first-child { margin-top: 1.1875rem; }
 .btn-block:last-child { margin-bottom: 1.1875rem; }
 
-.btn-important, a.btn-important {
-  color: set-text-color($btn-important);
-  background-color: $btn-important;
-  &:hover {
-    background-color: darken($btn-important, 5);
-  }
-}
 .btn-primary {
   color: set-text-color($btn-primary); 
   background-color: $btn-primary;
+  &:hover, &:focus, &:active {
+    &:not(:disabled):not(.disabled) {
+    color: set-text-color($btn-primary);
+    background-color: darken($btn-primary, 5);
+    }
+  }
 }
 .btn-secondary {
   margin-top: 0;
@@ -67,28 +67,42 @@ a.btn { text-decoration: none; }
     background-color: $pale-gray;
   }
 }
-
+.btn-important, a.btn-important {
+  color: set-text-color($btn-important);
+  background-color: $btn-important;
+  &:hover {
+    color: set-text-color($btn-important);
+    background-color: darken($btn-important, 5);
+  }
+}
 // All classes that have inverse colored backgrounds, including alerts
 .bg-primary, .sectional-inverted, .alert {
-  $btn-primary: #fff;
+  $btn-primary: $link-blue;
   $btn-secondary: $primary;
   $btn-tertiary: $primary;
   
   .btn-unstyled { color: #fff; }
   .btn-primary {
-    color: $primary;
+    color: $btn-primary;
     background-color: #fff;
-    &:hover {
-      color: $primary;
-      background-color: #fff;     
-      opacity: 0.9;
-    }
+    // &:hover {
+    //   color: $btn-primary;
+    //   background-color: #fff;     
+    //   opacity: 0.9;
+    // }
     &:focus {
       box-shadow:0 0 0 0.2rem rgba(255, 255, 255, 0.5);
     }
+    &:hover, &:focus, &:active {
+      &:not(:disabled):not(.disabled) {
+        color: $btn-primary;
+        background-color: #fff;     
+        opacity: 0.9;
+      }
+    }
   }
   .btn-primary:hover:visited, .btn-primary:visited { 
-    color:$primary;
+    color: $btn-primary;
   }  
   .btn-secondary,
   .btn-tertiary {
@@ -188,4 +202,14 @@ dl .btn-toggle { font-size: 1rem; }
 }
 .btn-caret.collapsed:after { 
   content: "\f0d7";
+}
+.btn-tags {
+  .btn {
+    margin-bottom: .5rem;
+    font-weight: 400;
+    background-color: rgba(0, 116, 179, .1);
+  }
+  .btn-sm {
+    padding: .25rem .75rem !important;
+  }
 }

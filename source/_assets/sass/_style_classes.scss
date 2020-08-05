@@ -152,10 +152,215 @@ pre code {
     @include headings(1,6) { color: $light; }
   }
   a.more-arrow:after, ul.more-arrow > li a:after { 
-    background-image: url(../../resources/img/icons/inverse/arrow@3x.png);
+    background-image: url('../../resources/img/icons/inverse/arrow@3x.png');
   }
 }
 hr {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
+/* offset backgrounds */
+.bg-offset-yellow-wave {
+  background-color: $secondary;
+  background-image: url('../../resources/img/graphics/backgrounds/pattern-yellow-waves.png')
+}
+.bg-offset-primary-wave {
+  background-color: $primary;
+  background-image: url('../../resources/img/graphics/backgrounds/pattern-green-waves.png')
+}
+.bg-offset-blue-wave {
+  background-color: $link-blue;
+  background-image: url('../../resources/img/graphics/backgrounds/pattern-blue-waves.png')
+}
+.bg-wave-mint-top { 
+  background: url('../../resources/img/graphics/backgrounds/wave-mint-top-tall-mobile.svg');
+  background: url("../../resources/img/graphics/backgrounds/wave-mint-top-tall-mobile.svg") center 30% / contain no-repeat, linear-gradient(0deg, $light 70%, transparent 70%);
+}
+@media (min-width: $screen-md) {
+  .bg-wave-mint-top {
+    background: url('../../resources/img/graphics/backgrounds/wave-mint-top-tall-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    background-size: cover;
+  }
+}
+// @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+//   .bg-offset-yellow-wave {
+//     background-image: url('../../resources/img/graphics/backgrounds/pattern-yellow-waves@2x.png')
+//   }
+//   .bg-offset-primary-wave {
+//     background-image: url('../../resources/img/graphics/backgrounds/pattern-green-waves@2x.png')
+//   }
+//   .bg-offset-blue-wave {
+//     background-image: url('../../resources/img/graphics/backgrounds/pattern-blue-waves@2x.png')
+//   }
+// }
+.bg-offset-bottom-right { 
+  margin-top: 10px;
+  margin-left: 10px; 
+}
+.bg-offset-bottom-right > * { 
+    position: relative; 
+    right: 10px;
+    bottom: 10px;
+}
+@media (min-width: $screen-lg) {
+  .bg-offset-bottom-right { 
+    margin-top: 20px;
+    margin-left: 20px; 
+  }
+  .bg-offset-bottom-right > * {  
+    right: 20px;
+    bottom: 20px;
+  }
+}
+.bg-pale-grey, .bg-pale-gray {
+  background-color: $pale-grey;
+}
+.bg-orange {
+  background-color: $shoreline-orange;
+}
+.bg-primary, .sectional-inverted {
+  .bg-white, .bg-light {
+    color: $text-dark;
+    * { color: inherit; } 
+    p, ul, dl, ol { 
+      color: $text-dark;
+    }  
+    a {
+      color: inherit;
+      text-shadow: none;
+      @include link-reset($link-blue);
+    } 
+    // a:hover {
+    //   // border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    //   @include link-underline(#fff, darken($link-blue, 5), darken($link-blue, 5));
+    // }
+    a.btn:hover {
+      text-shadow: none;
+      background-image: none;
+    }
+    h1, .h1, h2, .h2 { color: $primary; }
+    h3, h4, h5, h6,
+    .h3, .h4, .h5, .h6 {
+      color: $text-black;
+    }
+  }
+}
+.hero-bg-container {
+  position: relative;
+  width: 100%;
+  min-height: 3rem;
+}
+.hero-bg-offset {
+  position: absolute;
+    // height: 100%;
+    // width: 100%;
+    right: 0;
+    
+    // left: auto;
+    // top: auto;
+    // bottom: auto;
+}
+// .hero-bg-offset .bg-feature {
+//   width: 100%;
+//   padding-bottom: 56.25%;
+//   background-image: url(../../resources/img/stock/girl-listening.jpg);
+//   background-size: cover;
+// }
+
+.bg-primary-gradient-top-down {
+  background: rgba(0,104,94,1);
+  background: linear-gradient(to bottom, rgba(0,104,94,1) 0%, rgba(0,104,94,1) 10%, rgba(0,104,94,0.59) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00685e', endColorstr='#00685e', GradientType=0 );
+}
+.bg-cover {
+  background-size: cover;
+}
+@media (max-width: $screen-sm - 1px) {
+  .bg-image-mobile-none {
+    background-image: none !important;
+  }    
+}
+
+.toc-icon-primary { color: $primary !important;
+  path, line, polygon { fill: $primary !important; } 
+}
+.toc-icon-secondary { color: $secondary !important;
+  path, line, polygon { fill: $secondary !important; } 
+}
+.toc-icon-orange { color: $shoreline-orange !important;
+  path, line, polygon { fill: $shoreline-orange !important; } 
+}
+.toc-icon-bright-green { color: $shoreline-bright-green !important;
+  path, line, polygon { fill: $shoreline-bright-green !important; } 
+}
+.toc-icon-linkblue { color: $link-blue !important;
+  path, line, polygon { fill: $link-blue !important; } 
+}
+ 
+
+.toc-links-icons {
+  padding: 1rem;
+  ul {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+  ul, dl {
+    a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 1rem 0;
+      text-decoration: none;
+    }
+    // todo: review mismatch .fa, versus svg/img
+    .fa, .fas, .far, .fa, .fal {
+      float: left;
+      width: 5rem;
+      font-size: 2rem; 
+      text-align: center;
+    }
+    .svg-icon-medium {
+      position: relative;
+      top: -.25em;
+      margin-right: .75rem;
+      margin-bottom: -.5em;
+      margin-left: .75rem;
+      
+    }
+  }
+  .toc-title {
+    flex-grow: 1;
+  }
+}
+.svg-icon-medium {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  svg {
+    width: 35px;
+  }
+}
+@media (min-width: $screen-lg) {
+  .toc-links-icons {    
+    padding: 3rem;
+    ul {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+    ul, dl {
+      a { 
+        padding: 1.25rem 0; 
+      }
+    } 
+  }
+  .svg-icon-medium { 
+    width: 50px;
+    height: 50px;
+    svg {
+      width: 50px;
+    }
+  }
+} 

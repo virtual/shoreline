@@ -39,10 +39,23 @@
   background-color: rgba(240, 249, 248, 0.75);
 }
 .sectional-padded {
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 1.75rem;
+	padding-bottom: 1.75rem;
 } 
-
+.sectional-padded-lg {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+} 
+@media (min-width: $screen-md) {
+  .sectional-padded {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  } 
+  .sectional-padded-lg {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  } 
+}
 .sectional.theme-01, .sectional.bg-primary  {
 	background-color: $primary;
 }

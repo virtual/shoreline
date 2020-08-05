@@ -1,130 +1,117 @@
-.quicklinks:first-of-type {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-
 .quicklinks {
-  font-size: .875rem;
   position: relative;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  a { padding: 2px 16px; }
-  a.btn-important {
-    color: #fff; 
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    font-size: inherit;
-    text-align: center;
-  }
-
+  padding-left: 0; 
+  
+  clear: both;
+  a { padding: .5rem 1rem; } 
+} 
+.quicklinks.list-1 li a {
+  padding: .5rem 1rem;
+  color: $text-dark;
+  font-weight: 600;
+  font-size: 1rem;   
+  text-align: left;
 }
- 
-.megamenu .quicklinks.list-1 li a {
-  color: $link-blue;
-}
-
-@media (max-width: $screen-md - 1px) {
-  .quicklinks {
-    &.list-1, &.list-2 {
-      display:flex;
-      padding-top: 0.5625rem;
-      padding-bottom: 0.5625rem;
-      justify-content: space-between;
-      align-items: center;
-      li a {
-        font-size: .8125rem;
-      }  
-      a.btn-important {
-        min-width: auto;
-       }
-    }    
-  }
-}
-@media (min-width: $screen-sm) {
-  .quicklinks.list-1, .quicklinks.list-2 {
+@media (min-width: $screen-lg) {
+  .quicklinks.list-1 {
     li a {
-      font-size: .875rem;
+      padding: 5px 10px;
+      font-weight: 400;
+      font-size: 1rem;      
+      text-align: center;
     }
+  }
+  .quicklinks.list-2 {
+    li a, li .btn {
+      font-size: .875rem;
+    } 
+  } 
+} 
+// @media (min-width: $screen-md) {
+ 
+//   .quicklinks {
+//     background: #face8d;
+//     // &.list-1, &.list-2 {
+//     //   display: inherit;
+//     //   li { flex: none;}
+//     // }
+//   }
+// }
+@media (max-width: $screen-lg - 1px) {
+// .megamenu .quicklinks.list-2 { 
+//   flex-wrap: wrap;
+// }
+// .megamenu .quicklinks li.has-button:before {
+//   content: " ";
+//   clear: both;
+//   width: 100%; 
+//   display: block;
+// }
+.megamenu .quicklinks li.has-button { 
+  width: 100%; 
+  display:block; 
+  min-width: 300px; 
+  padding-right: 15px; 
+  padding-left:15px; 
+  padding-top:8px; 
+  padding-bottom: 8px; 
+}
+}
+// @media (min-width: $screen-sm) { 
+//   .megamenu .quicklinks li.has-button  { padding-right: 15px;}
+// }
+@media (min-width: $screen-lg) { 
+  .quicklinks {
+    a { 
+      padding-right: .5rem; 
+      padding-left: .5rem; 
+    }
+    a.btn, button.btn {
+      display: inline-block;
+      width: auto;
+      min-width: auto;
+      padding-top: .5rem;
+      padding-right: 1rem;
+      padding-bottom: .5rem;
+      padding-left: 1rem;
+      text-align: center;
+    } 
     a.btn-important {
-     min-width: 97px;
+      color: #fff;  
     }
   } 
-}
-.megamenu .quicklinks li {
-  display: inline-block;
-  width: auto;
-}
-
-.megamenu .quicklinks li a {
-  color: $text-dark; // display:inline-block;
-  strong {
-    color: $primary;
+  .megamenu .quicklinks li {
+    display: inline-block;
+    width: auto;
   }
-  &.btn-important {
-    color: #fff;
-  }
-}
-
-@media (min-width: $screen-md) {
+  // .quicklinks.list-1 {
+  //   float:none; 
+  // }
   .quicklinks.list-2 {
-    padding: 1.1875rem 0;
-    a { padding-right: 10px; padding-left: 10px;}
+    margin-top: .5rem;
   }
-  
   .quicklinks {
-    &.list-1, &.list-2 {
-      display: inherit;
-      li { flex: none;}
-    }
-  }
-}
-@media (max-width: $screen-sm - 1px) {
-.megamenu .quicklinks.list-2 { 
-  flex-wrap: wrap;
-}
-.megamenu .quicklinks li.has-button:before {
-  content: " ";
-  clear: both;
-  width: 100%;
-  min-width: 300px;
-  display: block;
-}
-.megamenu .quicklinks li.has-button { width: 100%; display:block; 
-  min-width: 300px; padding-right: 15px; padding-left:15px; padding-top:8px; padding-bottom: 8px; }
-}
-@media (min-width: $screen-sm) { 
-  .megamenu .quicklinks li.has-button  { padding-right: 15px;}
-}
-@media (min-width: $screen-lg) { 
-  .quicklinks.list-1 {
-    float:none;
-    a { border-right: 1px solid #ccc; }
-    li:last-child a { border-right:0;}
-  }
-  .quicklinks,
-  .quicklinks.list-2 {
     border-bottom: 0;
     padding: 0;
   }
   .header-actions {
-    padding-top: 22px;
-    padding-bottom: 22px;
-    .has-button {
-      top: -.25rem;
+    padding-top: 15px;
+    padding-bottom: 18px;
+    .navmenu .has-button {
+      top: -.1rem;
       position: relative;
       margin-left: 10px;
-      .btn { margin-top:0; margin-bottom:0;}
+      .btn { 
+        margin-top:0; 
+        margin-bottom:0;
+      }
     }
-  }
-  .quicklinks:first-of-type {
-    border-top: 0;
-    a {
-      color: $link-blue;
-    }
-  }
+  } 
   .navmenu .quicklinks a strong {
     color: $primary
   }
   .navbar.utility-wrapper {
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-end;
   }
 }

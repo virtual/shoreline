@@ -109,6 +109,17 @@
     color: $text;
   }
 }
+// To reset links to a more normal appearance
+@mixin link-reset($text) {
+  color: $text;
+  text-shadow: none;
+  background-image: none;
+  &:hover, &:focus {
+    color: darken($text, 5);
+    text-decoration: underline;
+  }
+  @include text-selection($primary);
+}
 
 
 @mixin truncate($truncation-boundary) {
