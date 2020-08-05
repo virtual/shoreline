@@ -58,43 +58,13 @@
   <div id="skiptocontent">
     <a href="#maincontent" title="Skip Main Navigation">Skip Main Navigation</a>
   </div>
-    <div class="header-alert alert alert-unstyled bg-inverted bg-primary">
-  <div class="container-fluid">
-    <p><strong>Spring classes are online. </strong>
-      Shoreline Community College is physically closed to student and public access but our caring staff and faculty are
-      here to help you remotely! <a href="#">Connect with us</a> by phone or email or Live Chat (available M-F 10a-2p).
-      <a href="#">Spring Quarter Student Guide</a> <a href="#">Read the latest COVID-19 updates</a>
-    </p>
-  </div>
-</div>
-<div class="header-alert alert alert-unstyled bg-inverted bg-orange">
-  <div class="container-fluid">
-    <p>Contact by phone or email or Live Chat (available M-F 10a-2p).
-      <a href="#">Spring Quarter Student Guide</a>
-    </p>
-  </div>
-</div>
-<div class="header-alert alert alert-unstyled bg-secondary">
-  <div class="container-fluid">
-    <p>Student portal is down. We are working to resolve the issue <a
-        href="#">Learn more</a></p>
-  </div>
-</div>
-<div class="header-alert alert alert-unstyled bg-pale-gray alert-dismissible fade show" role="alert">
-  <div class="container-fluid">    
-    <button type="button" class="dismiss-alert close" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-    <p><strong>Campus will be closed</strong> Monday, 5/23 for Memorial Day <a href="#">Learn more</a>
-    </p>
-  </div>
-</div>  
-         
-        <section id="searchmenusub" class="bg-white collapse pt-4" aria-label="Search">
+    <!-- include ('_partials.alert-top') -->
+  
+  <section id="searchmenusub" class="bg-white collapse pt-4" aria-label="Search">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">        
-          <div class="d-flex">
+      <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+        <div class="d-flex">
   <form class="siteSearch" role="search" method="GET" action="/search/SearchRedir.aspx">
     <div class="input-group main-search">
       <span class="input-group-prepend">
@@ -110,8 +80,7 @@
   </form>
   <button id="searchcancel1" class="btn btn-link ml-3" data-toggle="collapse" data-target="#searchmenusub"
     aria-controls="searchmenusub" aria-expanded="true">Cancel</button>
-</div>         
-          <div class="pt-3 pb-3">
+</div>        <div class="pt-3 pb-3">
   <p class="medium"><strong>Frequently Searched</strong></p>
   <ul class="list-unstyled list-inline btn-tags mb-0">
     <li><a class="btn btn-link btn-sm" href="#">Canvas</a></li>
@@ -121,17 +90,16 @@
     <li><a class="btn btn-link btn-sm" href="#">Transcripts</a></li>
     <li><a class="btn btn-link btn-sm" href="#">Calendars</a></li>
   </ul>
-</div>        </div>
+</div>        <!-- between -->
       </div>
     </div>
   </div>
-</section>       
-     
+</section>
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-2 col-xl-2 header-logo d-none d-lg-block">
 
-                  <a class="navbar-brand" href="/">
+                <a class="navbar-brand" href="/">
 	<svg version="1.1" class="svg-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   x="0px" y="0px" width="232px" height="138px" viewBox="0 0 232 138" style="enable-background:new 0 0 232 138;"
   enable-background="new 0 0 232 138" xml:space="preserve">
@@ -245,10 +213,10 @@
       </div>
       <div class="col-lg-10 col-xl-10">
         <div class="header-actions d-none d-lg-flex">
-        <div class="navbar-container">
+          <div class="navbar-container">
 
-          <nav class="navbar navbar-expand-sm navmenu utility-wrapper" aria-label="Ancillary Navigation">
-            <ul class="quicklinks list-1">
+            <nav class="navbar navbar-expand-sm navmenu utility-wrapper" aria-label="Ancillary Navigation">
+              <ul class="quicklinks list-1">
   <li><a href="/currentstudents/"><span class="far fa-user-circle"><span class="sr-only">User</span></span> Current Students</a></li>
   <li><a href="/international/">International</a></li>
   <li><a href="/about-shoreline/contact-us.aspx">Contact</a></li> 
@@ -260,12 +228,12 @@
     <button class="btn btn-secondary btn-sm" id="searchtoggler" data-toggle="collapse" data-target="#searchmenusub" aria-controls="searchmenusub" aria-expanded="false"><span class="fa fa-search primary" aria-hidden="true"></span>
       Search</button>
   </li>
-</ul>            
-          </nav>
-        </div> 
-      </div>
+</ul> 
+            </nav>
+          </div>
+        </div>
 
-      <nav class="nav nav-underline megamenu navbar-expand-lg navmenu" aria-label="Main Navigation">
+        <nav class="nav nav-underline megamenu navbar-expand-lg navmenu" aria-label="Main Navigation">
   <div class="container-fluid">
     <div class="d-flex d-block d-lg-none justify-content-between align-items-center">
       <div  class="flex-button">
@@ -603,7 +571,7 @@
 <ul class="quicklinks list-inline list-2">
   <li class="has-button"><a class="btn btn-important btn-sm" href="/apply-and-aid/apply.aspx">Get Started</a></li>
   <li class="has-button d-none d-lg-block">
-    <button class="btn btn-secondary btn-sm" id="searchtoggler" data-toggle="collapse" data-target="#searchmenusub" aria-controls="searchmenusub" aria-expanded="false"><span class="fa fa-search primary" aria-hidden="true"></span>
+    <button class="btn btn-secondary btn-sm" id="searchtoggler2" data-toggle="collapse" data-target="#searchmenusub" aria-controls="searchmenusub" aria-expanded="false"><span class="fa fa-search primary" aria-hidden="true"></span>
       Search</button>
   </li>
 </ul> 
@@ -613,10 +581,6 @@
 </nav>
        </div>
     </div>
-    <div class="row"> 
-
-    </div>
-    
   </div>
   <!-- _partials/alert -->
 </header>
@@ -875,15 +839,15 @@
 </div>
 <p>Lorem ipsum dolor sit <abbr title="omniupdate">OU</abbr>, amet consectetur adipisicing elit. </p>
 
-<div class="accordion " id="accordion316">
+<div class="accordion " id="accordion7ce">
     <div class="accordion-card">
-      <div class="accordion-header" id="heading316One">
-          <h3><button class="btn btn-toggle" type="button" data-toggle="collapse" data-target="#collapse316One" aria-expanded="false" aria-controls="collapse316One">
+      <div class="accordion-header" id="heading7ceOne">
+          <h3><button class="btn btn-toggle" type="button" data-toggle="collapse" data-target="#collapse7ceOne" aria-expanded="false" aria-controls="collapse7ceOne">
             Collapsible Group Item #1
           </button></h3>
       </div>
   
-      <div id="collapse316One" class="collapse" aria-labelledby="heading316One">
+      <div id="collapse7ceOne" class="collapse" aria-labelledby="heading7ceOne">
         <div class="accordion-body">
           <div class="ou-help">
   <p>Right click a table cell to select deletion of a row or column in order to size the table according to your needs.</p>
@@ -938,12 +902,12 @@
       </div>
     </div>
     <div class="accordion-card">
-      <div class="accordion-header" id="heading316Two">
-          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse316Two" aria-expanded="false" aria-controls="collapse316Two">
+      <div class="accordion-header" id="heading7ceTwo">
+          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse7ceTwo" aria-expanded="false" aria-controls="collapse7ceTwo">
             Collapsible Group Item #2
           </button></h3>
       </div>
-      <div id="collapse316Two" class="collapse" aria-labelledby="heading316Two">
+      <div id="collapse7ceTwo" class="collapse" aria-labelledby="heading7ceTwo">
         <div class="accordion-body">
           <ul>
             <li><a href="#">Anim pariatur cliche reprehenderit,</a></li>
@@ -955,31 +919,31 @@
       </div>
     </div>
     <div class="accordion-card">
-      <div class="accordion-header" id="heading316Three">
-          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse316Three" aria-expanded="false" aria-controls="collapse316Three">
+      <div class="accordion-header" id="heading7ceThree">
+          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse7ceThree" aria-expanded="false" aria-controls="collapse7ceThree">
             Collapsible Group Item #3
           </button></h3>
       </div>
-      <div id="collapse316Three" class="collapse" aria-labelledby="heading316Three">
+      <div id="collapse7ceThree" class="collapse" aria-labelledby="heading7ceThree">
         <div class="accordion-body">
           <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
         </div>
       </div>
     </div>
-  </div><ul class="list-unstyled nav nav-tabs" id="navtab00f">
+  </div><ul class="list-unstyled nav nav-tabs" id="navtab0c8">
   <li>
-    <a class="nav-link active" id="tab00f1" data-toggle="tab" href="#tab00f1-content" aria-controls="tab00f1-content" aria-selected="true">Deadlines &amp; Dates</a>
+    <a class="nav-link active" id="tab0c81" data-toggle="tab" href="#tab0c81-content" aria-controls="tab0c81-content" aria-selected="true">Deadlines &amp; Dates</a>
   </li>
   <li>
-    <a class="nav-link" id="tab00f2" data-toggle="tab" href="#tab00f2-content" aria-controls="tab00f2-content" aria-selected="false">Start a Plan</a>
+    <a class="nav-link" id="tab0c82" data-toggle="tab" href="#tab0c82-content" aria-controls="tab0c82-content" aria-selected="false">Start a Plan</a>
   </li>
   <li>
-    <a class="nav-link" id="tab00f3" data-toggle="tab" href="#tab00f3-content" aria-controls="tab00f3-content" aria-selected="false">Questions?</a>
+    <a class="nav-link" id="tab0c83" data-toggle="tab" href="#tab0c83-content" aria-controls="tab0c83-content" aria-selected="false">Questions?</a>
   </li>
 
 </ul>
 <div class="tab-content">
-  <div class="tab-pane fade show active" id="tab00f1-content" aria-labelledby="tab00f1">
+  <div class="tab-pane fade show active" id="tab0c81-content" aria-labelledby="tab0c81">
     <p>NOTE: All down and full payments are processed immediately!</p>
     <table>
   <caption>2018 - 2019 Award year</caption>
@@ -1021,7 +985,7 @@
 </table>
   </div>
 
-  <div class="tab-pane fade" id="tab00f2-content" aria-labelledby="tab00f2">
+  <div class="tab-pane fade" id="tab0c82-content" aria-labelledby="tab0c82">
     <table class="data">
   <caption>Also fun caption</caption>
   <thead>
@@ -1059,27 +1023,27 @@
   </table>  </div>
 
 
-  <div class="tab-pane fade" id="tab00f3-content" aria-labelledby="tab00f3">
+  <div class="tab-pane fade" id="tab0c83-content" aria-labelledby="tab0c83">
     <p class="xxl">Lorem ipsum dolor sit amet.</p> 
 <p class="xl">Lorem ipsum dolor <a href="#" class="fa-link-pdf">sit amet</a>.</p>
 <p class="large">Lorem ipsum dolor sit amet.</p>
 <p class="medium">Lorem <a href="#" class="fa-link-external">sit amet</a> dolor sit amet.</p>
 <p class="small">Lorem ipsum dolor sit amet.</p>  </div>
 
-</div><ul class="list-unstyled nav nav-tabs" id="navtabc2f">
+</div><ul class="list-unstyled nav nav-tabs" id="navtabbd1">
   <li>
-    <a class="nav-link active" id="tabc2f1" data-toggle="tab" href="#tabc2f1-content" aria-controls="tabc2f1-content" aria-selected="true">Deadlines &amp; Dates</a>
+    <a class="nav-link active" id="tabbd11" data-toggle="tab" href="#tabbd11-content" aria-controls="tabbd11-content" aria-selected="true">Deadlines &amp; Dates</a>
   </li>
   <li>
-    <a class="nav-link" id="tabc2f2" data-toggle="tab" href="#tabc2f2-content" aria-controls="tabc2f2-content" aria-selected="false">Start a Plan</a>
+    <a class="nav-link" id="tabbd12" data-toggle="tab" href="#tabbd12-content" aria-controls="tabbd12-content" aria-selected="false">Start a Plan</a>
   </li>
   <li>
-    <a class="nav-link" id="tabc2f3" data-toggle="tab" href="#tabc2f3-content" aria-controls="tabc2f3-content" aria-selected="false">Questions?</a>
+    <a class="nav-link" id="tabbd13" data-toggle="tab" href="#tabbd13-content" aria-controls="tabbd13-content" aria-selected="false">Questions?</a>
   </li>
 
 </ul>
 <div class="tab-content">
-  <div class="tab-pane fade show active" id="tabc2f1-content" aria-labelledby="tabc2f1">
+  <div class="tab-pane fade show active" id="tabbd11-content" aria-labelledby="tabbd11">
     <p>NOTE: All down and full payments are processed immediately!</p>
     <table>
   <caption>2018 - 2019 Award year</caption>
@@ -1121,7 +1085,7 @@
 </table>
   </div>
 
-  <div class="tab-pane fade" id="tabc2f2-content" aria-labelledby="tabc2f2">
+  <div class="tab-pane fade" id="tabbd12-content" aria-labelledby="tabbd12">
     <table class="data">
   <caption>Also fun caption</caption>
   <thead>
@@ -1159,7 +1123,7 @@
   </table>  </div>
 
 
-  <div class="tab-pane fade" id="tabc2f3-content" aria-labelledby="tabc2f3">
+  <div class="tab-pane fade" id="tabbd13-content" aria-labelledby="tabbd13">
     <p class="xxl">Lorem ipsum dolor sit amet.</p> 
 <p class="xl">Lorem ipsum dolor <a href="#" class="fa-link-pdf">sit amet</a>.</p>
 <p class="large">Lorem ipsum dolor sit amet.</p>
@@ -1541,7 +1505,7 @@
             <div class="bg-offset-bottom-right bg-offset-yellow-wave">
               <a href="https://www.shoreline.edu/map/directions-to-campus.aspx">
                 <span class="location-square-feature">
-                  <p class="sr-only">View Directions to Campus</p>
+                  <span class="sr-only">View Directions to Campus</span>
                 </span>
               </a>              
             </div>

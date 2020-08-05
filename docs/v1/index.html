@@ -58,43 +58,13 @@
   <div id="skiptocontent">
     <a href="#maincontent" title="Skip Main Navigation">Skip Main Navigation</a>
   </div>
-    <div class="header-alert alert alert-unstyled bg-inverted bg-primary">
-  <div class="container-fluid">
-    <p><strong>Spring classes are online. </strong>
-      Shoreline Community College is physically closed to student and public access but our caring staff and faculty are
-      here to help you remotely! <a href="#">Connect with us</a> by phone or email or Live Chat (available M-F 10a-2p).
-      <a href="#">Spring Quarter Student Guide</a> <a href="#">Read the latest COVID-19 updates</a>
-    </p>
-  </div>
-</div>
-<div class="header-alert alert alert-unstyled bg-inverted bg-orange">
-  <div class="container-fluid">
-    <p>Contact by phone or email or Live Chat (available M-F 10a-2p).
-      <a href="#">Spring Quarter Student Guide</a>
-    </p>
-  </div>
-</div>
-<div class="header-alert alert alert-unstyled bg-secondary">
-  <div class="container-fluid">
-    <p>Student portal is down. We are working to resolve the issue <a
-        href="#">Learn more</a></p>
-  </div>
-</div>
-<div class="header-alert alert alert-unstyled bg-pale-gray alert-dismissible fade show" role="alert">
-  <div class="container-fluid">    
-    <button type="button" class="dismiss-alert close" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-    <p><strong>Campus will be closed</strong> Monday, 5/23 for Memorial Day <a href="#">Learn more</a>
-    </p>
-  </div>
-</div>  
-         
-        <section id="searchmenusub" class="bg-white collapse pt-4" aria-label="Search">
+    <!-- include ('_partials.alert-top') -->
+  
+  <section id="searchmenusub" class="bg-white collapse pt-4" aria-label="Search">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">        
-          <div class="d-flex">
+      <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+        <div class="d-flex">
   <form class="siteSearch" role="search" method="GET" action="/search/SearchRedir.aspx">
     <div class="input-group main-search">
       <span class="input-group-prepend">
@@ -110,8 +80,7 @@
   </form>
   <button id="searchcancel1" class="btn btn-link ml-3" data-toggle="collapse" data-target="#searchmenusub"
     aria-controls="searchmenusub" aria-expanded="true">Cancel</button>
-</div>         
-          <div class="pt-3 pb-3">
+</div>        <div class="pt-3 pb-3">
   <p class="medium"><strong>Frequently Searched</strong></p>
   <ul class="list-unstyled list-inline btn-tags mb-0">
     <li><a class="btn btn-link btn-sm" href="#">Canvas</a></li>
@@ -121,17 +90,16 @@
     <li><a class="btn btn-link btn-sm" href="#">Transcripts</a></li>
     <li><a class="btn btn-link btn-sm" href="#">Calendars</a></li>
   </ul>
-</div>        </div>
+</div>        <!-- between -->
       </div>
     </div>
   </div>
-</section>       
-     
+</section>
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-2 col-xl-2 header-logo d-none d-lg-block">
 
-                  <a class="navbar-brand" href="/">
+                <a class="navbar-brand" href="/">
 	<svg version="1.1" class="svg-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   x="0px" y="0px" width="232px" height="138px" viewBox="0 0 232 138" style="enable-background:new 0 0 232 138;"
   enable-background="new 0 0 232 138" xml:space="preserve">
@@ -245,10 +213,10 @@
       </div>
       <div class="col-lg-10 col-xl-10">
         <div class="header-actions d-none d-lg-flex">
-        <div class="navbar-container">
+          <div class="navbar-container">
 
-          <nav class="navbar navbar-expand-sm navmenu utility-wrapper" aria-label="Ancillary Navigation">
-            <ul class="quicklinks list-1">
+            <nav class="navbar navbar-expand-sm navmenu utility-wrapper" aria-label="Ancillary Navigation">
+              <ul class="quicklinks list-1">
   <li><a href="/currentstudents/"><span class="far fa-user-circle"><span class="sr-only">User</span></span> Current Students</a></li>
   <li><a href="/international/">International</a></li>
   <li><a href="/about-shoreline/contact-us.aspx">Contact</a></li> 
@@ -260,12 +228,12 @@
     <button class="btn btn-secondary btn-sm" id="searchtoggler" data-toggle="collapse" data-target="#searchmenusub" aria-controls="searchmenusub" aria-expanded="false"><span class="fa fa-search primary" aria-hidden="true"></span>
       Search</button>
   </li>
-</ul>            
-          </nav>
-        </div> 
-      </div>
+</ul> 
+            </nav>
+          </div>
+        </div>
 
-      <nav class="nav nav-underline megamenu navbar-expand-lg navmenu" aria-label="Main Navigation">
+        <nav class="nav nav-underline megamenu navbar-expand-lg navmenu" aria-label="Main Navigation">
   <div class="container-fluid">
     <div class="d-flex d-block d-lg-none justify-content-between align-items-center">
       <div  class="flex-button">
@@ -603,7 +571,7 @@
 <ul class="quicklinks list-inline list-2">
   <li class="has-button"><a class="btn btn-important btn-sm" href="/apply-and-aid/apply.aspx">Get Started</a></li>
   <li class="has-button d-none d-lg-block">
-    <button class="btn btn-secondary btn-sm" id="searchtoggler" data-toggle="collapse" data-target="#searchmenusub" aria-controls="searchmenusub" aria-expanded="false"><span class="fa fa-search primary" aria-hidden="true"></span>
+    <button class="btn btn-secondary btn-sm" id="searchtoggler2" data-toggle="collapse" data-target="#searchmenusub" aria-controls="searchmenusub" aria-expanded="false"><span class="fa fa-search primary" aria-hidden="true"></span>
       Search</button>
   </li>
 </ul> 
@@ -613,10 +581,6 @@
 </nav>
        </div>
     </div>
-    <div class="row"> 
-
-    </div>
-    
   </div>
   <!-- _partials/alert -->
 </header>
@@ -955,7 +919,7 @@
             <div class="bg-offset-bottom-right bg-offset-yellow-wave">
               <a href="https://www.shoreline.edu/map/directions-to-campus.aspx">
                 <span class="location-square-feature">
-                  <p class="sr-only">View Directions to Campus</p>
+                  <span class="sr-only">View Directions to Campus</span>
                 </span>
               </a>              
             </div>

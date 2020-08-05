@@ -8,7 +8,7 @@
             <div class="bg-offset-bottom-right bg-offset-yellow-wave">
               <a href="https://www.shoreline.edu/map/directions-to-campus.aspx">
                 <span class="location-square-feature">
-                  <p class="sr-only">View Directions to Campus</p>
+                  <span class="sr-only">View Directions to Campus</span>
                 </span>
               </a>              
             </div>

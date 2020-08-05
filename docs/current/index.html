@@ -58,43 +58,13 @@
   <div id="skiptocontent">
     <a href="#maincontent" title="Skip Main Navigation">Skip Main Navigation</a>
   </div>
-    <div class="header-alert alert alert-unstyled bg-inverted bg-primary">
-  <div class="container-fluid">
-    <p><strong>Spring classes are online. </strong>
-      Shoreline Community College is physically closed to student and public access but our caring staff and faculty are
-      here to help you remotely! <a href="#">Connect with us</a> by phone or email or Live Chat (available M-F 10a-2p).
-      <a href="#">Spring Quarter Student Guide</a> <a href="#">Read the latest COVID-19 updates</a>
-    </p>
-  </div>
-</div>
-<div class="header-alert alert alert-unstyled bg-inverted bg-orange">
-  <div class="container-fluid">
-    <p>Contact by phone or email or Live Chat (available M-F 10a-2p).
-      <a href="#">Spring Quarter Student Guide</a>
-    </p>
-  </div>
-</div>
-<div class="header-alert alert alert-unstyled bg-secondary">
-  <div class="container-fluid">
-    <p>Student portal is down. We are working to resolve the issue <a
-        href="#">Learn more</a></p>
-  </div>
-</div>
-<div class="header-alert alert alert-unstyled bg-pale-gray alert-dismissible fade show" role="alert">
-  <div class="container-fluid">    
-    <button type="button" class="dismiss-alert close" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-    <p><strong>Campus will be closed</strong> Monday, 5/23 for Memorial Day <a href="#">Learn more</a>
-    </p>
-  </div>
-</div>  
-         
-        <section id="searchmenusub" class="bg-white collapse pt-4" aria-label="Search">
+    <!-- include ('_partials.alert-top') -->
+  
+  <section id="searchmenusub" class="bg-white collapse pt-4" aria-label="Search">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">        
-          <div class="d-flex">
+      <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+        <div class="d-flex">
   <form class="siteSearch" role="search" method="GET" action="/search/SearchRedir.aspx">
     <div class="input-group main-search">
       <span class="input-group-prepend">
@@ -110,8 +80,7 @@
   </form>
   <button id="searchcancel1" class="btn btn-link ml-3" data-toggle="collapse" data-target="#searchmenusub"
     aria-controls="searchmenusub" aria-expanded="true">Cancel</button>
-</div>         
-          <div class="pt-3 pb-3">
+</div>        <div class="pt-3 pb-3">
   <p class="medium"><strong>Frequently Searched</strong></p>
   <ul class="list-unstyled list-inline btn-tags mb-0">
     <li><a class="btn btn-link btn-sm" href="#">Canvas</a></li>
@@ -121,17 +90,16 @@
     <li><a class="btn btn-link btn-sm" href="#">Transcripts</a></li>
     <li><a class="btn btn-link btn-sm" href="#">Calendars</a></li>
   </ul>
-</div>        </div>
+</div>        <!-- between -->
       </div>
     </div>
   </div>
-</section>       
-     
+</section>
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-2 col-xl-2 header-logo d-none d-lg-block">
 
-                  <a class="navbar-brand" href="/">
+                <a class="navbar-brand" href="/">
 	<svg version="1.1" class="svg-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   x="0px" y="0px" width="232px" height="138px" viewBox="0 0 232 138" style="enable-background:new 0 0 232 138;"
   enable-background="new 0 0 232 138" xml:space="preserve">
@@ -245,10 +213,10 @@
       </div>
       <div class="col-lg-10 col-xl-10">
         <div class="header-actions d-none d-lg-flex">
-        <div class="navbar-container">
+          <div class="navbar-container">
 
-          <nav class="navbar navbar-expand-sm navmenu utility-wrapper" aria-label="Ancillary Navigation">
-            <ul class="quicklinks list-1">
+            <nav class="navbar navbar-expand-sm navmenu utility-wrapper" aria-label="Ancillary Navigation">
+              <ul class="quicklinks list-1">
   <li><a href="/currentstudents/"><span class="far fa-user-circle"><span class="sr-only">User</span></span> Current Students</a></li>
   <li><a href="/international/">International</a></li>
   <li><a href="/about-shoreline/contact-us.aspx">Contact</a></li> 
@@ -260,12 +228,12 @@
     <button class="btn btn-secondary btn-sm" id="searchtoggler" data-toggle="collapse" data-target="#searchmenusub" aria-controls="searchmenusub" aria-expanded="false"><span class="fa fa-search primary" aria-hidden="true"></span>
       Search</button>
   </li>
-</ul>            
-          </nav>
-        </div> 
-      </div>
+</ul> 
+            </nav>
+          </div>
+        </div>
 
-      <nav class="nav nav-underline megamenu navbar-expand-lg navmenu" aria-label="Main Navigation">
+        <nav class="nav nav-underline megamenu navbar-expand-lg navmenu" aria-label="Main Navigation">
   <div class="container-fluid">
     <div class="d-flex d-block d-lg-none justify-content-between align-items-center">
       <div  class="flex-button">
@@ -603,7 +571,7 @@
 <ul class="quicklinks list-inline list-2">
   <li class="has-button"><a class="btn btn-important btn-sm" href="/apply-and-aid/apply.aspx">Get Started</a></li>
   <li class="has-button d-none d-lg-block">
-    <button class="btn btn-secondary btn-sm" id="searchtoggler" data-toggle="collapse" data-target="#searchmenusub" aria-controls="searchmenusub" aria-expanded="false"><span class="fa fa-search primary" aria-hidden="true"></span>
+    <button class="btn btn-secondary btn-sm" id="searchtoggler2" data-toggle="collapse" data-target="#searchmenusub" aria-controls="searchmenusub" aria-expanded="false"><span class="fa fa-search primary" aria-hidden="true"></span>
       Search</button>
   </li>
 </ul> 
@@ -613,10 +581,6 @@
 </nav>
        </div>
     </div>
-    <div class="row"> 
-
-    </div>
-    
   </div>
   <!-- _partials/alert -->
 </header>
@@ -878,15 +842,15 @@
 <h2 class="sr-only">Resources</h2>
 <div class="row">
   <div class="col-md-6">
-      <div class="accordion " id="accordion852">
+      <div class="accordion " id="accordionc0e">
     <div class="accordion-card">
-      <div class="accordion-header" id="heading852One">
-          <h3><button class="btn btn-toggle" type="button" data-toggle="collapse" data-target="#collapse852One" aria-expanded="false" aria-controls="collapse852One">
+      <div class="accordion-header" id="headingc0eOne">
+          <h3><button class="btn btn-toggle" type="button" data-toggle="collapse" data-target="#collapsec0eOne" aria-expanded="false" aria-controls="collapsec0eOne">
             Collapsible Group Item #1
           </button></h3>
       </div>
   
-      <div id="collapse852One" class="collapse" aria-labelledby="heading852One">
+      <div id="collapsec0eOne" class="collapse" aria-labelledby="headingc0eOne">
         <div class="accordion-body">
           <div class="ou-help">
   <p>Right click a table cell to select deletion of a row or column in order to size the table according to your needs.</p>
@@ -941,12 +905,12 @@
       </div>
     </div>
     <div class="accordion-card">
-      <div class="accordion-header" id="heading852Two">
-          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse852Two" aria-expanded="false" aria-controls="collapse852Two">
+      <div class="accordion-header" id="headingc0eTwo">
+          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapsec0eTwo" aria-expanded="false" aria-controls="collapsec0eTwo">
             Collapsible Group Item #2
           </button></h3>
       </div>
-      <div id="collapse852Two" class="collapse" aria-labelledby="heading852Two">
+      <div id="collapsec0eTwo" class="collapse" aria-labelledby="headingc0eTwo">
         <div class="accordion-body">
           <ul>
             <li><a href="#">Anim pariatur cliche reprehenderit,</a></li>
@@ -958,12 +922,12 @@
       </div>
     </div>
     <div class="accordion-card">
-      <div class="accordion-header" id="heading852Three">
-          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse852Three" aria-expanded="false" aria-controls="collapse852Three">
+      <div class="accordion-header" id="headingc0eThree">
+          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapsec0eThree" aria-expanded="false" aria-controls="collapsec0eThree">
             Collapsible Group Item #3
           </button></h3>
       </div>
-      <div id="collapse852Three" class="collapse" aria-labelledby="heading852Three">
+      <div id="collapsec0eThree" class="collapse" aria-labelledby="headingc0eThree">
         <div class="accordion-body">
           <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
         </div>
@@ -972,15 +936,15 @@
   </div>  </div>
 
   <div class="col-md-6">
-      <div class="accordion " id="accordion98e">
+      <div class="accordion " id="accordion962">
     <div class="accordion-card">
-      <div class="accordion-header" id="heading98eOne">
-          <h3><button class="btn btn-toggle" type="button" data-toggle="collapse" data-target="#collapse98eOne" aria-expanded="false" aria-controls="collapse98eOne">
+      <div class="accordion-header" id="heading962One">
+          <h3><button class="btn btn-toggle" type="button" data-toggle="collapse" data-target="#collapse962One" aria-expanded="false" aria-controls="collapse962One">
             Collapsible Group Item #1
           </button></h3>
       </div>
   
-      <div id="collapse98eOne" class="collapse" aria-labelledby="heading98eOne">
+      <div id="collapse962One" class="collapse" aria-labelledby="heading962One">
         <div class="accordion-body">
           <div class="ou-help">
   <p>Right click a table cell to select deletion of a row or column in order to size the table according to your needs.</p>
@@ -1035,12 +999,12 @@
       </div>
     </div>
     <div class="accordion-card">
-      <div class="accordion-header" id="heading98eTwo">
-          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse98eTwo" aria-expanded="false" aria-controls="collapse98eTwo">
+      <div class="accordion-header" id="heading962Two">
+          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse962Two" aria-expanded="false" aria-controls="collapse962Two">
             Collapsible Group Item #2
           </button></h3>
       </div>
-      <div id="collapse98eTwo" class="collapse" aria-labelledby="heading98eTwo">
+      <div id="collapse962Two" class="collapse" aria-labelledby="heading962Two">
         <div class="accordion-body">
           <ul>
             <li><a href="#">Anim pariatur cliche reprehenderit,</a></li>
@@ -1052,12 +1016,12 @@
       </div>
     </div>
     <div class="accordion-card">
-      <div class="accordion-header" id="heading98eThree">
-          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse98eThree" aria-expanded="false" aria-controls="collapse98eThree">
+      <div class="accordion-header" id="heading962Three">
+          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse962Three" aria-expanded="false" aria-controls="collapse962Three">
             Collapsible Group Item #3
           </button></h3>
       </div>
-      <div id="collapse98eThree" class="collapse" aria-labelledby="heading98eThree">
+      <div id="collapse962Three" class="collapse" aria-labelledby="heading962Three">
         <div class="accordion-body">
           <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
         </div>
@@ -1069,15 +1033,15 @@
  <h2>Compact Accordion</h2>
  <div class="row">
     <div class="col-md-6">
-         <div class="accordion accordion-compact" id="accordione7f">
+         <div class="accordion accordion-compact" id="accordionec5">
     <div class="accordion-card">
-      <div class="accordion-header" id="headinge7fOne">
-          <h3><button class="btn btn-toggle" type="button" data-toggle="collapse" data-target="#collapsee7fOne" aria-expanded="false" aria-controls="collapsee7fOne">
+      <div class="accordion-header" id="headingec5One">
+          <h3><button class="btn btn-toggle" type="button" data-toggle="collapse" data-target="#collapseec5One" aria-expanded="false" aria-controls="collapseec5One">
             Collapsible Group Item #1
           </button></h3>
       </div>
   
-      <div id="collapsee7fOne" class="collapse" aria-labelledby="headinge7fOne">
+      <div id="collapseec5One" class="collapse" aria-labelledby="headingec5One">
         <div class="accordion-body">
           <div class="ou-help">
   <p>Right click a table cell to select deletion of a row or column in order to size the table according to your needs.</p>
@@ -1132,12 +1096,12 @@
       </div>
     </div>
     <div class="accordion-card">
-      <div class="accordion-header" id="headinge7fTwo">
-          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapsee7fTwo" aria-expanded="false" aria-controls="collapsee7fTwo">
+      <div class="accordion-header" id="headingec5Two">
+          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapseec5Two" aria-expanded="false" aria-controls="collapseec5Two">
             Collapsible Group Item #2
           </button></h3>
       </div>
-      <div id="collapsee7fTwo" class="collapse" aria-labelledby="headinge7fTwo">
+      <div id="collapseec5Two" class="collapse" aria-labelledby="headingec5Two">
         <div class="accordion-body">
           <ul>
             <li><a href="#">Anim pariatur cliche reprehenderit,</a></li>
@@ -1149,12 +1113,12 @@
       </div>
     </div>
     <div class="accordion-card">
-      <div class="accordion-header" id="headinge7fThree">
-          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapsee7fThree" aria-expanded="false" aria-controls="collapsee7fThree">
+      <div class="accordion-header" id="headingec5Three">
+          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapseec5Three" aria-expanded="false" aria-controls="collapseec5Three">
             Collapsible Group Item #3
           </button></h3>
       </div>
-      <div id="collapsee7fThree" class="collapse" aria-labelledby="headinge7fThree">
+      <div id="collapseec5Three" class="collapse" aria-labelledby="headingec5Three">
         <div class="accordion-body">
           <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
         </div>
@@ -1163,15 +1127,15 @@
   </div>    </div>
   
     <div class="col-md-6">
-         <div class="accordion accordion-compact" id="accordion21c">
+         <div class="accordion accordion-compact" id="accordiona7e">
     <div class="accordion-card">
-      <div class="accordion-header" id="heading21cOne">
-          <h3><button class="btn btn-toggle" type="button" data-toggle="collapse" data-target="#collapse21cOne" aria-expanded="false" aria-controls="collapse21cOne">
+      <div class="accordion-header" id="headinga7eOne">
+          <h3><button class="btn btn-toggle" type="button" data-toggle="collapse" data-target="#collapsea7eOne" aria-expanded="false" aria-controls="collapsea7eOne">
             Collapsible Group Item #1
           </button></h3>
       </div>
   
-      <div id="collapse21cOne" class="collapse" aria-labelledby="heading21cOne">
+      <div id="collapsea7eOne" class="collapse" aria-labelledby="headinga7eOne">
         <div class="accordion-body">
           <div class="ou-help">
   <p>Right click a table cell to select deletion of a row or column in order to size the table according to your needs.</p>
@@ -1226,12 +1190,12 @@
       </div>
     </div>
     <div class="accordion-card">
-      <div class="accordion-header" id="heading21cTwo">
-          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse21cTwo" aria-expanded="false" aria-controls="collapse21cTwo">
+      <div class="accordion-header" id="headinga7eTwo">
+          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapsea7eTwo" aria-expanded="false" aria-controls="collapsea7eTwo">
             Collapsible Group Item #2
           </button></h3>
       </div>
-      <div id="collapse21cTwo" class="collapse" aria-labelledby="heading21cTwo">
+      <div id="collapsea7eTwo" class="collapse" aria-labelledby="headinga7eTwo">
         <div class="accordion-body">
           <ul>
             <li><a href="#">Anim pariatur cliche reprehenderit,</a></li>
@@ -1243,12 +1207,12 @@
       </div>
     </div>
     <div class="accordion-card">
-      <div class="accordion-header" id="heading21cThree">
-          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse21cThree" aria-expanded="false" aria-controls="collapse21cThree">
+      <div class="accordion-header" id="headinga7eThree">
+          <h3><button class="btn btn-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapsea7eThree" aria-expanded="false" aria-controls="collapsea7eThree">
             Collapsible Group Item #3
           </button></h3>
       </div>
-      <div id="collapse21cThree" class="collapse" aria-labelledby="heading21cThree">
+      <div id="collapsea7eThree" class="collapse" aria-labelledby="headinga7eThree">
         <div class="accordion-body">
           <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
         </div>
@@ -1303,7 +1267,7 @@
             <div class="bg-offset-bottom-right bg-offset-yellow-wave">
               <a href="https://www.shoreline.edu/map/directions-to-campus.aspx">
                 <span class="location-square-feature">
-                  <p class="sr-only">View Directions to Campus</p>
+                  <span class="sr-only">View Directions to Campus</span>
                 </span>
               </a>              
             </div>

@@ -117,6 +117,12 @@ jQuery(document).ready(function() {
   });
  
   // When tabbing close the menu back up when reaching the end of the dropdown-menu
+  /* NOTE:
+  Focus doesn't work on Mac: "Turns out the issue was not with Firefox, 
+  it was with Mac OSX. Apparently if you do not have full keyboard access on 
+  in your system preferences, then firefox will not tab to anything that 
+  is not a link."
+  */
   $(".dropdown-list > button").focus(function() { 
     $('.dropdown-list.show > button').attr('aria-expanded', 'false')
     $('.dropdown-list.show').removeClass('show');
@@ -159,24 +165,9 @@ jQuery(document).ready(function() {
       document.getElementById('mobile-search-button').focus();
     }, 500);
   });
-
-  
- 
-
-  // $("a").attr('href', "https://www.satinflame.com/ou/shoreline/");  
  
 }); 
 // END FUNCTION READY
-
-// trymyui disable links
-// if (window.addEventListener) {
-//   document.addEventListener('click', function (e) {
-//     if (e.target.nodeName === 'A') {
-//       // e.preventDefault();
-//       // $('.toast').toast('show')
-//     }
-//   });
-// }
 
 // Megamenu dropdown
 // Keys to successful implementation will be aria-expanded on the button 
@@ -187,6 +178,9 @@ function hideDropdownMenu(el) {
   el.querySelector('button').setAttribute("aria-expanded", 'false');
 }
 function toggleDropdownMenu(el) {
+  $(el).siblings('.dropdown-list.show').children('button').attr('aria-expanded', 'false');
+  $(el).siblings('.dropdown-list.show').removeClass('show');
+
   if (el.classList.contains('show')) {
     hideDropdownMenu(el)
   } else {

@@ -45,7 +45,7 @@
 
 @endsection
 
-@section('footcode')
+@section('footcode2')
 <script>
   $(document).ready(function () {
     $("a").attr('href', "https://www.satinflame.com/ou/shoreline/");

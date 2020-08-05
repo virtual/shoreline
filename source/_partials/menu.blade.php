@@ -33,7 +33,9 @@
      
       </ul> 
       <div class="d-block d-lg-none"> 
-        @include ('_partials.quicklinks') 
+        @include ('_partials.quicklinks', [
+          'id' => 'searchtoggler2'
+        ]) 
       </div>
     </div>
   </div>
