@@ -87,7 +87,7 @@
       .nav-link {
         display: block;
         // color: $primary;
-        padding: 10px 15px;
+        padding: 8px 15px;
       }
     }
     ul.list-inline li {
@@ -185,7 +185,11 @@
     margin-bottom: 0;
   }
 } 
-
+.megamenu .dropdown-menu { 
+  .dropdown-column-1 {
+    display: none;
+  }
+}
 // @media (min-width: 280px) {
 //   .searchform-mobile label {
 //       width: 80%;
@@ -201,7 +205,7 @@
   .megamenu .dropdown-menu {
       position: absolute;
       ul {
-        font-size: 1.1875rem;
+        font-size: 1rem;
         line-height: 1.68;
       }
   }
@@ -521,12 +525,17 @@ header#header > .container-fluid {
 .megamenu .dropdown-menu {
   border: 0;
   h2, h3, h4 {
+    padding: 5px 16px;
     color: $text-dark;
-    font-size: 1.1875rem;
+    font-size: 1.125rem;
     line-height: 1.68; 
+    a {
+      padding: 0;
+    }
   }
 }
-.megamenu .dropdown-menu .dropdown-column-2 ul {
+.megamenu .dropdown-menu .dropdown-column-2 ul,
+.megamenu .dropdown-menu .dropdown-column-3 ul {
   padding-left: 1rem;
 }
 @media (min-width: $screen-lg) {
@@ -534,13 +543,19 @@ header#header > .container-fluid {
     visibility: visible !important;
   }
   .megamenu .dropdown-menu {
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.1);
+    .dropdown-column-1 {
+      display: block;
+    }
     .dropdown-column-1, .dropdown-column-2, .dropdown-column-3 {
       > *:first-child {
         margin-top: 0;
       }
     }
-    .dropdown-column-2{ 
+    h2, h3, h4 {
+      padding-left: 15px;
+    }
+    .dropdown-column-2 { 
       border-left: 1px solid #dedede;
       ul { columns: 2; }
       h2, h3, h4 {
@@ -550,12 +565,17 @@ header#header > .container-fluid {
     }
     .dropdown-column-3 {
       border-left: 1px solid #dedede;
+      h2, h3, h4 {
+        display: block;
+        width: 100%; 
+      }
     }
-    .dropdown-column-3:empty {
+    .dropdown-column-3:empty, .dropdown-column-3.no-border {
       border-left: 0;
     }
   }
-  .megamenu .dropdown-menu .dropdown-column-2 ul {
+  .megamenu .dropdown-menu .dropdown-column-2 ul,
+  .megamenu .dropdown-menu .dropdown-column-3 ul {
       padding-left: 0;
   }
   .megamenu > .container-fluid {

@@ -5,7 +5,9 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 col-lg-3 dropdown-column-1">
- 
+          <p>
+            <img src="{{ $page->baseUrl }}/resources/img/stock/square/shoreline.williams79.jpg" alt="shoreline" />
+          </p>
         </div>
         <div class="col-12 col-lg-6 dropdown-column-2">
           <h2><a class="more-arrow btn btn-link" href="#">Explore Programs</a></h2>
@@ -42,7 +44,9 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 col-lg-3 dropdown-column-1">
-     
+          <p>
+            <img src="{{ $page->baseUrl }}/resources/img/stock/square/shoreline.williams260.jpg" alt="shoreline" />
+          </p>
         </div>
         <div class="col-12 col-lg-6 dropdown-column-2">
           <h2><a class="more-arrow btn btn-link" href="#">Enrollment &amp; Aid Services</a></h2>
@@ -59,7 +63,7 @@
            </ul>
         </div>
         <div class="col-12 col-lg-3 dropdown-column-3">
-          <h2><a href="#">Quickstart Guides</a></h2>
+          <h2>Quickstart Guides</h2>
           <ul>
             <li><a href="#">New Student Checklist</a></li>
             <li><a href="#">International Admissions</a></li>
@@ -79,7 +83,9 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 col-lg-3 dropdown-column-1">
-   
+          <p>
+            <img src="{{ $page->baseUrl }}/resources/img/stock/square/shoreline.williams292.jpg" alt="shoreline" />
+          </p>
         </div>
         <div class="col-12 col-lg-6 dropdown-column-2">
           <h2><a class="more-arrow btn btn-link" href="#">Campus Life Overview</a></h2>
@@ -109,7 +115,9 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 col-lg-3 dropdown-column-1">
-       
+          <p>
+            <img src="{{ $page->baseUrl }}/resources/img/stock/square/shoreline.williams185.jpg" alt="shoreline" />
+          </p>
         </div>
         <div class="col-12 col-lg-6 dropdown-column-2">
           <h2><a class="more-arrow btn btn-link" href="#">Student Support Services</a></h2>
@@ -135,7 +143,9 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 col-lg-3 dropdown-column-1">
-     
+          <p>
+            <img src="{{ $page->baseUrl }}/resources/img/stock/square/shoreline.williams73.jpg" alt="shoreline" />
+          </p>
         </div>
         <div class="col-12 col-lg-6 dropdown-column-2">
           <h2><a class="more-arrow btn btn-link" href="#">About Shoreline</a></h2>
