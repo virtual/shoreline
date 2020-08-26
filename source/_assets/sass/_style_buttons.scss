@@ -78,8 +78,8 @@ a.btn { text-decoration: none; }
 // All classes that have inverse colored backgrounds, including alerts
 .bg-primary, .sectional-inverted, .alert {
   $btn-primary: $link-blue;
-  $btn-secondary: transparent;
-  $btn-tertiary: transparent;
+  // $btn-secondary: transparent;
+  // $btn-tertiary: transparent;
   
   .btn-unstyled { color: #fff; }
   .btn-primary {

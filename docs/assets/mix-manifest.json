@@ -1,10 +1,8 @@
 {
-    "/js/main.js": "/js/main.js?id=ffab50a5e98aa709b934",
-    "/css/main.css": "/css/main.css?id=5d7a4c089e2cf57bd213",
-    "/css/bootstrap.css": "/css/bootstrap.css?id=ac645574a7b4400a9422",
-    "/css/main-support.css": "/css/main-support.css?id=745a4b2c732819489b37",
-    "/js/main.js.map": "/js/main.js.map?id=3df5546ccffff983edce",
-    "/css/main.css.map": "/css/main.css.map?id=1e29a5d9c4345facfb56",
-    "/css/bootstrap.css.map": "/css/bootstrap.css.map?id=34075a06ac2d4e5fd494",
-    "/css/main-support.css.map": "/css/main-support.css.map?id=2257a6905329cfdc8f4e"
+    "/js/main.js": "/js/main.js?id=ddc03d505899e0b885ec",
+    "/css/main.css": "/css/main.css?id=b87e2b59d6a1692ba848",
+    "/css/main-support.css": "/css/main-support.css?id=08d987d6a04ab5fcf2e6",
+    "/js/main.js.map": "/js/main.js.map?id=398760bdb2273f92000c",
+    "/css/main.css.map": "/css/main.css.map?id=64cc32a4a899181fbb0e",
+    "/css/main-support.css.map": "/css/main-support.css.map?id=0773ffaa72c08ad265e4"
 }
