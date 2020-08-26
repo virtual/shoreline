@@ -30,7 +30,7 @@
   <!-- Analytics -->
 </head>
 
-<body>
+<body class="interior">
   @include('_partials.topbar') 
   @include('_partials.header')
 
@@ -188,6 +188,7 @@
     <script src="{{ $page->baseUrl }}/assets/js/jquery-3.5.1.min.js"></script>
     <script src="{{ $page->baseUrl }}/assets/js/bootstrap.bundle.min.js?v=5" defer="defer"></script>
     <script src="{{ $page->baseUrl }}/assets/js/main.js?v=5" defer="defer"></script>   
+    <script src="{{ $page->baseUrl }}/assets/js/lazyload.min.js?v=5" defer="defer"></script>  
     <script src="{{ $page->baseUrl }}/assets/js/slick.min.js?v=5" defer="defer"></script>
     <script src="{{ $page->baseUrl }}/assets/js/slick-app.js?v=5" defer="defer"></script>
     <script>

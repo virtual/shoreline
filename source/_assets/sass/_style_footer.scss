@@ -37,13 +37,18 @@ footer#footer {
   }
 }
 @media (min-width: $screen-md) {
-  footer#footer { text-align: left; 
+  footer#footer { 
+    margin-top: 3rem;
+    text-align: left; 
     .links-utility {
       li { 
         display: inline; 
         padding-right: .75rem; 
       }      
     }
+  }
+  .subfooter {
+    margin-bottom: -3rem;
   }
   .footer-buttons .btn:first-child { margin-top:0;}
 }
@@ -150,5 +155,8 @@ footer#footer.footer-simple {
   .subfooter {
     padding-top: 5rem;
     padding-bottom: 5.375rem;
-  } 
+  }  
+  .layout-master.program-option ~ .subfooter { 
+    margin-top: 1.5rem;
+  }
 }

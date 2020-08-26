@@ -240,3 +240,30 @@
     }
   }
 }
+ul.list-inline.news-labels li {
+  display: inline-block;
+  margin: 8px 8px 0 0;
+}
+.news-labels {
+  .badge-primary {
+    padding: 12px 16px;
+    color: #00685E;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    white-space: normal;
+    word-wrap: break-word;
+    background-color: transparent;
+    border: 2px solid #e6f0ef;
+    transition: border .2s ease-in-out;
+    .fa-tag {
+      margin-right: 2px;
+      opacity: .9;
+    }
+  }
+  .badge-primary:hover, .badge-primary:focus {
+    color: #00685E;
+    background-color: transparent;
+    border: 2px solid #00685E;
+  }
+}  

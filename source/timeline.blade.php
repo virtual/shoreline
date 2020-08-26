@@ -1,9 +1,7 @@
 @extends('_layouts.master')
 
 @section('content')
- <h1>Timeline</h1>
- <p>8/27 — Pushed back two weeks</p>
- <p>10/17 — Changed go-live date to 11/5</p>
+ <h1>Timeline</h1> 
   <div class="timeline">
     <div class="line text-muted"></div>
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -121,6 +119,13 @@
         'heading' => 'Wordpress Theme (June 30, 2019)',
         'desc' => "Develop Wordpress theme for news.shoreline.edu        ",
         'id' => '11', 
+        'img' => ''
+        ])
+        
+        @include('_partials.timelinelist', [
+        'heading' => 'Redesign Homepage and Header/Footer (August 2020)',
+        'desc' => "Design updates for homepage content, expanding megamenu, subfooter and footer ",
+        'id' => '12', 
         'img' => ''
         ])
     </div>

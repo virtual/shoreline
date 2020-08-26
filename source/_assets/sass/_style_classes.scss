@@ -337,6 +337,7 @@ hr {
 }
 .svg-icon-medium {
   display: inline-block;
+  flex-shrink: 0;
   width: 35px;
   height: 35px;
   svg {
@@ -364,3 +365,11 @@ hr {
     }
   }
 } 
+/* for square background images in div */
+.image-background {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.image-background-100 {
+padding-bottom: 100%;
+}
