@@ -5361,21 +5361,21 @@ a.btn {
 
 .btn-secondary {
   margin-top: 0;
-  color: #00685e;
+  color: #0074b3;
   background-color: transparent;
   -webkit-box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.38);
           box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.38);
 }
 
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
-  color: #00685e;
+  color: #0074b3;
   background-color: inherit;
-  -webkit-box-shadow: inset 0 0 0px 2px #00685e;
-          box-shadow: inset 0 0 0px 2px #00685e;
+  -webkit-box-shadow: inset 0 0 0px 2px #0074b3;
+          box-shadow: inset 0 0 0px 2px #0074b3;
 }
 
 .btn-tertiary {
-  color: #00685e;
+  color: #0074b3;
   background-color: transparent;
   border: transparent;
 }
