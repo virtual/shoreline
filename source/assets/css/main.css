@@ -8600,12 +8600,12 @@ abbr[title] {
     max-width: 100%;
     margin: 0 auto;
   }
-  #interior > .contact-us-box.contact-us-box-flex .content-block:nth-of-type(3n+2):nth-last-child(2) {
+  #interior > .contact-us-box.contact-us-box-flex .content-block:nth-of-type(3n+2):nth-last-child(2), .sectional > .contact-us-box.contact-us-box-flex .content-block:nth-of-type(3n+2):nth-last-child(2), .sectional > .container-fluid > .contact-us-box.contact-us-box-flex .content-block:nth-of-type(3n+2):nth-last-child(2) {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #interior > .contact-us-box.contact-us-box-flex .content-block:nth-of-type(3n+2):nth-last-child(2) .content-block-interior {
+  #interior > .contact-us-box.contact-us-box-flex .content-block:nth-of-type(3n+2):nth-last-child(2) .content-block-interior, .sectional > .contact-us-box.contact-us-box-flex .content-block:nth-of-type(3n+2):nth-last-child(2) .content-block-interior, .sectional > .container-fluid > .contact-us-box.contact-us-box-flex .content-block:nth-of-type(3n+2):nth-last-child(2) .content-block-interior {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -8643,13 +8643,13 @@ abbr[title] {
 }
 
 @media (min-width: 768px) {
-  #interior > .contact-us-box > .content-blocks .content-block {
+  #interior > .contact-us-box > .content-blocks .content-block, .sectional > .contact-us-box > .content-blocks .content-block, .sectional > .container-fluid > .contact-us-box > .content-blocks .content-block {
     position: relative;
   }
-  #interior > .contact-us-box.contact-us-box-flex > .content-blocks .content-block:first-child:after {
+  #interior > .contact-us-box.contact-us-box-flex > .content-blocks .content-block:first-child:after, .sectional > .contact-us-box.contact-us-box-flex > .content-blocks .content-block:first-child:after, .sectional > .container-fluid > .contact-us-box.contact-us-box-flex > .content-blocks .content-block:first-child:after {
     border-right: 0;
   }
-  #interior > .contact-us-box.contact-us-box-flex > .content-blocks .content-block:after {
+  #interior > .contact-us-box.contact-us-box-flex > .content-blocks .content-block:after, .sectional > .contact-us-box.contact-us-box-flex > .content-blocks .content-block:after, .sectional > .container-fluid > .contact-us-box.contact-us-box-flex > .content-blocks .content-block:after {
     position: absolute;
     top: 5%;
     bottom: 0;
@@ -8658,26 +8658,26 @@ abbr[title] {
     border-right: 2px solid #dedede;
     content: '';
   }
-  #interior > .contact-us-box.contact-us-box-flex.contact-us-box-valign-center > .content-blocks .content-block:after {
+  #interior > .contact-us-box.contact-us-box-flex.contact-us-box-valign-center > .content-blocks .content-block:after, .sectional > .contact-us-box.contact-us-box-flex.contact-us-box-valign-center > .content-blocks .content-block:after, .sectional > .container-fluid > .contact-us-box.contact-us-box-flex.contact-us-box-valign-center > .content-blocks .content-block:after {
     top: 25%;
     height: 50%;
   }
-  #interior > .contact-us-box.contact-us-box-flex > .content-blocks .content-block:last-child {
+  #interior > .contact-us-box.contact-us-box-flex > .content-blocks .content-block:last-child, .sectional > .contact-us-box.contact-us-box-flex > .content-blocks .content-block:last-child, .sectional > .container-fluid > .contact-us-box.contact-us-box-flex > .content-blocks .content-block:last-child {
     padding-left: 0;
   }
-  #interior > .contact-us-box.contact-us-box-flex > .content-blocks .content-block:last-child:after {
+  #interior > .contact-us-box.contact-us-box-flex > .content-blocks .content-block:last-child:after, .sectional > .contact-us-box.contact-us-box-flex > .content-blocks .content-block:last-child:after, .sectional > .container-fluid > .contact-us-box.contact-us-box-flex > .content-blocks .content-block:last-child:after {
     display: none;
   }
 }
 
 @media (min-width: 768px) {
-  #interior > .contact-us-box > .content-blocks .content-block {
+  #interior > .contact-us-box > .content-blocks .content-block, .sectional > .contact-us-box > .content-blocks .content-block, .sectional > .container-fluid > .contact-us-box > .content-blocks .content-block {
     padding: 20px 20px;
   }
 }
 
 @media (min-width: 1280px) {
-  #interior > .contact-us-box > .content-blocks .content-block {
+  #interior > .contact-us-box > .content-blocks .content-block, .sectional > .contact-us-box > .content-blocks .content-block, .sectional > .container-fluid > .contact-us-box > .content-blocks .content-block {
     padding: 20px 50px;
   }
   .layout-has-sidebar #interior > .contact-us-box > .content-blocks .content-block {
