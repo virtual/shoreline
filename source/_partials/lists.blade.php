@@ -59,15 +59,15 @@
 <h2>Grid Link Lists</h2>
 <ul class="more-arrow card-links d-grid">
   <li><a href="#">Associate in Fine Arts</a></li>
-  <li><a href="#">Associate in Fine Arts</a></li>
+  <li><a href="#">Associate in Music</a></li>
 </ul>
 
 
 <h2>Grid Link Lists</h2>
-<ul class="more-arrow card-links d-grid">
-  <li><a href="#">Associate in Fine Arts</a></li>
-  <li><a href="#">Associate in Fine Arts</a></li>
-  <li><a href="#">Associate in Fine Arts</a></li>
+<ul class="more-arrow card-links d-grid"> 
+  <li><a href="#">Lorem ipsum dolor</a> sit, amet consectetur adipisicing.</li>
+  <li><a href="#">Cupiditate id at</a> enim, architecto veritatis amet.</li>
+  <li><a href="#">Neque eaque ducimus</a> id laborum, aliquid deleniti?</li> 
 </ul>
 
 <h2>Grid Link Lists</h2>
@@ -82,25 +82,28 @@
 
 <h2>Grid Link Lists</h2>
 <ul class="more-arrow card-links d-grid">
-  <li><a href="#">Associate in Music</a> And this one has some extra text</li>
-  <li><a href="#">Associate in Music</a> And this one has some extra text</li>
-  <li><a href="#">Associate in Music</a> And this one has some extra text</li>
-  <li><a href="#">Associate in Music</a> And this one has some extra text</li>
-  <li><a href="#">Associate in Music</a> And this one has some extra text</li>
-  <li><a href="#">Associate in Music</a> And this one has some extra text</li>
-  <li><a href="#">Associate in Music</a> And this one has some extra text</li>
-  <li><a href="#">Associate in Music</a> And this one has some extra text</li>
-  <li><a href="#">Associate in Music</a> And this one has some extra text</li>
-  <li><a href="#">Associate in Music</a> And this one has some extra text</li>
-  <li><a href="#">Associate in Music</a> And this one has some extra text</li>
-  <li><a href="#">Associate in Music</a> And this one has some extra text</li>
-  <li><a href="#">Associate in Music</a> And this one has some extra text</li>
+    <li><a href="#">Lorem ipsum dolor</a> sit, amet consectetur adipisicing.</li>
+    <li><a href="#">Cupiditate id at</a> enim, architecto veritatis amet.</li>
+    <li><a href="#">Neque eaque ducimus</a> id laborum, aliquid deleniti?</li>
+    <li><a href="#">Facere fuga quod</a> ex similique doloremque dignissimos!</li>
+    <li><a href="#">Mollitia, maxime</a> Neque corporis laudantium cupiditate pariatur!</li>
+    <li><a href="#">Corporis nostrum quisquam</a> quia fugit hic maiores.</li>
+    <li><a href="#">Totam adipisci odio</a> ex esse iusto nobis!</li>
+    <li><a href="#">Ut expedita tempora</a> vitae corrupti et sequi.</li>
+    <li><a href="#">Deserunt facilis,</a> ratione libero fugiat dolor delectus.</li>
+    <li><a href="#">Nesciunt ullam mollitia</a> dolores facilis rerum assumenda.</li>
+    <li><a href="#">Inventore magni nostrum</a> repellendus fugiat ut amet.</li>
+    <li><a href="#">Rem laudantium,</a> soluta ipsa praesentium voluptatem similique.</li>
+    <li><a href="#">Iste veniam ut</a> temporibus at incidunt possimus.</li>
+    <li><a href="#">Commodi inventore tempore</a> rerum, natus necessitatibus magni.</li>
+    <li><a href="#">Sed, voluptas</a> consequatur corporis est porro blanditiis.</li>
+    <li><a href="#">Corrupti, laudantium</a> dignissimos voluptas harum quasi animi?</li>
 </ul>
 
 <h2>Grid Link Lists (Compact)</h2>
 <ul class="more-arrow card-links card-links-compact d-grid">
-  <li><a href="#">Associate in Fine Arts</a></li>
-  <li><a href="#">Associate in Fine Arts</a></li>
+  <li><a href="#">Commodi inventore tempore</a></li>
+  <li><a href="#">Sed, voluptas</a></li>
 </ul>
 
 <h2>Grid Link Lists (Compact)</h2>
@@ -108,6 +111,9 @@
   <li><a href="#">Associate in Fine Arts</a></li>
   <li><a href="#">Associate in Music</a> And this one has some extra text</li>
   <li><a href="#">Track 1</a></li>
+  <li><a href="#">Rem laudantium,</a> soluta ipsa praesentium voluptatem similique.</li>
+  <li><a href="#">Iste veniam ut</a></li>
+  <li><a href="#">Commodi inventore tempore</a> rerum, natus necessitatibus magni.</li>
 </ul>
 
 <h2>Grid Link Lists (Compact)</h2>

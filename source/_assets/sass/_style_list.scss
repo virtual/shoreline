@@ -127,7 +127,9 @@ main, .sectional, .content-container, .header-info {
   //   list-style-type: disc;
   // }
 }
-
+.sectional ol li:before { 
+  z-index: 1; 
+}
 ul.list-group li {
   text-indent: initial; 
   text-indent: 0; // ie

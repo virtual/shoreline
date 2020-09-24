@@ -1,5 +1,9 @@
 /* lintHTMLwithCSS */
 
+html {
+  filter: grayscale(1);
+}
+
 :root {
   --lint: 2px dashed red;
 }
