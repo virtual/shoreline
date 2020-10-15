@@ -76,7 +76,11 @@ a.btn { text-decoration: none; }
   }
 }
 // All classes that have inverse colored backgrounds, including alerts
-.bg-primary, .sectional-inverted, .alert {
+.bg-primary, .sectional-inverted, 
+.alert-primary,
+.alert-secondary, 
+.alert-announcement,
+.alert-warning {
   $btn-primary: $link-blue;
   // $btn-secondary: transparent;
   // $btn-tertiary: transparent;
@@ -212,4 +216,7 @@ dl .btn-toggle { font-size: 1rem; }
   .btn-sm {
     padding: .25rem .75rem !important;
   }
+}
+.tooltip {
+  font-size: .8rem;
 }
