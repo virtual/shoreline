@@ -220,3 +220,16 @@ dl .btn-toggle { font-size: 1rem; }
 .tooltip {
   font-size: .8rem;
 }
+.paragraph-has-tooltip {
+  display: block;
+  clear: both; 
+  margin-bottom: 1rem;
+  p, button[data-toggle=tooltip] {
+    display: inline;
+  }
+  button[data-toggle=tooltip] {
+    margin-top: -.25rem;
+    padding-top: .125rem;
+    padding-bottom: .125rem;
+  }
+}

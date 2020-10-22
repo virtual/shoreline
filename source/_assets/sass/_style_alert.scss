@@ -10,10 +10,10 @@ $alert-warning: $shoreline-orange;
   * { color: inherit; }
 
   a:not(.btn) { text-decoration: underline; }
-  a.btn-primary {
+  .btn-primary {
     color: #fff;
   }
-  a.btn-secondary, a.btn-tertiary {
+  .btn-secondary, .btn-tertiary {
     color: $link-blue;
   }
   &.bg-primary, &.alert.alert-primary {
@@ -33,6 +33,9 @@ $alert-warning: $shoreline-orange;
   .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(0, 89, 138, 0.7);
   }
+}
+.alert-primary, .alert-secondary, .alert-warning {
+  .btn-primary { color: $link-blue; }
 }
 .alert-secondary, .alert-warning {
   color: set-text-color($alert-warning);

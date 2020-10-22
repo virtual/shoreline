@@ -13,7 +13,20 @@
 <p class="d-inline"><kbd class="small">p.d-inline</kbd>Submit a completed Phlebotomy Program Application</p>
 <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="left" title="" data-original-title="This is tooltippy"><span class="far fa-question-circle"><span class="sr-only">More information</span></span></button>
 <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="left" title="" data-original-title="This is tooltippy"><span class="fas fa-info-circle"><span class="sr-only">More information</span></span></button>
+<div class="paragraph-has-tooltip">
+  <h3>title</h3>
+  <p>Submit a completed Phlebotomy Program Application</p>
+  <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="left" title="" data-original-title="This is tooltippy"><span class="far fa-question-circle"><span class="sr-only">More information</span></span></button>
+</div>
 
+<p>Submit a completed Phlebotomy Program Application</p>
+<p>Submit a completed Phlebotomy Program Application</p>
+<div class="paragraph-has-tooltip">
+  <p>Submit a completed Phlebotomy Program Application</p>
+  <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="left" title="" data-original-title="This is tooltippy"><span class="far fa-question-circle"><span class="sr-only">More information</span></span></button>
+</div>
+<p>Submit a completed Phlebotomy Program Application</p>
+<p>Submit a completed Phlebotomy Program Application</p>
 <hr/>
 <a class="btn btn-primary" href="#" role="button">Pri</a>
 <a class="btn btn-secondary" href="#" role="button">Sec</a>
